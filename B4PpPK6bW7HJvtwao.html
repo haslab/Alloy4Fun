@@ -1,0 +1,200 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="metrics.css">
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+<h1>B4PpPK6bW7HJvtwao (2020-12-01)</h1>
+<h2>Overall stats</h2>
+Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Challenge name</dt><dd>unknown</dd>
+<dt>Creation date</dt><dd>2020-11-27</dd>
+<dt># sub-challenges</dt><dd>4</dd>
+<dt>Metric catalog</dt><dd>Example metric catalog</dd>
+</dl><dl><dt>Total entries</dt><dd>1</dd>
+<dt>Total executions</dt><dd>0</dd>
+<dt>Total satisfiable executions</dt><dd>0</dd>
+<dt>Total unsatisfiable executions</dt><dd>0</dd>
+<dt>Total executions with warnings</dt><dd>0 sat, 0 unsat</dd>
+<dt>Total errored executions</dt><dd>0</dd>
+<dt>Total shares</dt><dd>1</d>
+</dl><dl><dt>Total sessions</dt><dd>0</d>
+<dt>Shared sessions</dt><dd>0</d>
+<dt>Longest session</dt><dd>1</d>
+</dl><h2>Evolution over time</h2>
+The graph below shows, from the creation date of the challenge until today, the number of satisfiable, unsatisfiable and errored executions, as well as shared models. This analysis may contain executions of commands other than the sub-challenges, if declared by the user.<canvas id="time_stats" width="1400"></canvas><h2>Execution stats by sub-challenge</h2>
+The graph below shows, for each sub-challenge, the number of satisfiable and unsatisfiable executions. Errored executions are not considered in this analysis. Note that for challenges correctness is unsatisfiability.<canvas id="cmd_stats" width="1400"></canvas><h2>Execution stats by sessions</h2>
+The graph below shows the number of sessions (i.e., a branch of the original model) in which a certain number of distinct sub-challenges has been correctly solved. Only sub-challeges are considered in this analysis (i.e., user-defined commands are ignored). Note that for challenges correctness is unsatisfiability.<canvas id="session_stats" width="1400"></canvas><h2>Overall metric stats</h2>
+For each user-defined metric r, show the number of satisfiable, unsatisfiable and errored executions with r=0, r=1, r=2 and r>2. Note that for challenges correctness is unsatisfiability. This analysis may contain executions of commands other than the sub-challenges, if declared by the user.<canvas id="rule_charts" width="1400"></canvas><h2>Rule stats by sub-challenge</h2>
+The graphs below show, for each sub-challenge and for each user-defined metric r, the number of satisfiable and unsatisfiable executions with r=0, r=1, r=2 and r>2. Errored executions are not considered in this analysis. Note that for challenges correctness is unsatisfiability.<h3>Inv1OK</h3>
+<canvas id="rule_charts_Inv1OK" width="1400"></canvas><h3>Inv2OK</h3>
+<canvas id="rule_charts_Inv2OK" width="1400"></canvas><h3>Inv3OK</h3>
+<canvas id="rule_charts_Inv3OK" width="1400"></canvas><h3>Inv4OK</h3>
+<canvas id="rule_charts_Inv4OK" width="1400"></canvas></dl><h2>Error messages</h2>
+Occurrence of error messages throughout all executions, merged according to type.<ul></ul><h2>Warning messages</h2>
+Occurrence of warning messages throughout all executions, merged according to type.<ul></ul><h2>Derivation tree</h2>
+<div class="just-padding">
+<div class="list-group list-group-root well">
+<a href="#item-B4PpPK6bW7HJvtwao" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:0px">
+    <i id="icon-B4PpPK6bW7HJvtwao" class="glyphicon glyphicon-minus"></i>B4PpPK6bW7HJvtwao, 2020-11-27 15:28:19 (share)</a>
+  <div class="list-group collapse show" id="item-B4PpPK6bW7HJvtwao"></div>
+</div>
+</div><script>
+  var chart = new Chart(time_stats, {
+   type: 'bar',
+   data: {
+      labels: ['2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01',],      datasets: [
+{label: 'sat', backgroundColor: '#f0e878', data: [0,0,0,0,0,]},{label: 'unsat', backgroundColor: '#93e388', data: [0,0,0,0,0,]},{label: 'errors', backgroundColor: '#f06779', data: [0,0,0,0,0,]},{label: 'shares', backgroundColor: '#6c79ad', data: [1,0,0,0,0,]},]},
+   options: {
+      responsive: false,
+      legend: {
+         position: 'right' // place legend on the right side of chart
+      },
+      scales: {
+         xAxes: [{
+            stacked: true // this should be set to make the bars stacked
+         }],
+         yAxes: [{
+            stacked: true // this also..
+         }]
+      }
+   }
+});
+</script><script>
+  var chart = new Chart(cmd_stats, {
+   type: 'bar',
+   data: {
+      labels: ['Inv1OK','Inv2OK','Inv3OK','Inv4OK',],      datasets: [
+{label: 'sat', backgroundColor: '#f0e878', data: [0,0,0,0,]},{label: 'unsat', backgroundColor: '#93e388', data: [0,0,0,0,]},]},
+   options: {
+      responsive: false,
+      legend: {
+         position: 'right' // place legend on the right side of chart
+      },
+      scales: {
+         xAxes: [{
+            stacked: true // this should be set to make the bars stacked
+         }],
+         yAxes: [{
+            stacked: true // this also..
+         }]
+      }
+   }
+});
+</script><script>
+  var chart = new Chart(session_stats, {
+   type: 'bar',
+   data: {
+      labels: [],      datasets: [
+{backgroundColor: '#6c79ad', data: []},]},
+   options: {
+      responsive: false,
+      legend: {
+         display: false
+      },
+      scales: {
+         xAxes: [{
+            stacked: true // this should be set to make the bars stacked
+         }],
+         yAxes: [{
+            stacked: true // this also..
+         }]
+      }
+   }
+});
+</script><script> var chart = new Chart(rule_charts, {
+   type: 'bar',
+   data: {
+        labels: [],
+        datasets: [{ label: 'sat 0',
+backgroundColor: '#f0e878',
+stack: 'Stack 0',
+data: [
+]
+},{ label: 'unsat 0',
+backgroundColor: '#93e388',
+stack: 'Stack 0',
+data: [
+]
+},{ label: 'error 0',
+backgroundColor: '#f06779',
+stack: 'Stack 0',
+data: [
+]
+},{ label: 'sat 1',
+backgroundColor: '#f0e878',
+stack: 'Stack 1',
+data: [
+]
+},{ label: 'unsat 1',
+backgroundColor: '#93e388',
+stack: 'Stack 1',
+data: [
+]
+},{ label: 'error 1',
+backgroundColor: '#f06779',
+stack: 'Stack 1',
+data: [
+]
+},{ label: 'sat 2',
+backgroundColor: '#f0e878',
+stack: 'Stack 2',
+data: [
+]
+},{ label: 'unsat 2',
+backgroundColor: '#93e388',
+stack: 'Stack 2',
+data: [
+]
+},{ label: 'error 2',
+backgroundColor: '#f06779',
+stack: 'Stack 2',
+data: [
+]
+},{ label: 'sat >2',
+backgroundColor: '#f0e878',
+stack: 'Stack >2',
+data: [
+]
+},{ label: 'unsat >2',
+backgroundColor: '#93e388',
+stack: 'Stack >2',
+data: [
+]
+},{ label: 'error >2',
+backgroundColor: '#f06779',
+stack: 'Stack >2',
+data: [
+]
+},]
+
+    },
+   options: {
+      responsive: false,
+      legend: {
+         display: false
+      },
+      scales: {
+         xAxes: [{
+            stacked: true // this should be set to make the bars stacked
+         }],
+         yAxes: [{
+            stacked: true // this also..
+         }]
+      }
+   }
+});</script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+  $(".more").click(function() {  
+  
+  icon = $(this).find("i");
+  icon.toggleClass("glyphicon-chevron-right glyphicon-chevron-up");
+  });
+</script>
+</body>
