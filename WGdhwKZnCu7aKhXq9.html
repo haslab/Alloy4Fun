@@ -9,122 +9,1704 @@
 </head>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-<h1>WGdhwKZnCu7aKhXq9 (2020-12-01)</h1>
-<h2>Overall stats</h2>
-Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Challenge name</dt><dd>unknown</dd>
-<dt>Creation date</dt><dd>2020-11-23</dd>
+<h1>WGdhwKZnCu7aKhXq9 (2020-12-04)</h1>
+<h2>Meta-data</h2>
+<dl><dt>Challenge name</dt><dd>unknown</dd>
+<dt>Creation time</dt><dd>2020-11-23</dd>
 <dt># sub-challenges</dt><dd>4</dd>
 <dt>Metric catalog</dt><dd>Example metric catalog</dd>
-</dl><dl><dt>Total entries</dt><dd>99</dd>
-<dt>Total executions</dt><dd>98</dd>
-<dt>Total satisfiable executions</dt><dd>58</dd>
-<dt>Total unsatisfiable executions</dt><dd>15</dd>
-<dt>Total executions with warnings</dt><dd>6 sat, 0 unsat</dd>
-<dt>Total errored executions</dt><dd>25</dd>
-<dt>Total shares</dt><dd>1</d>
-</dl><dl><dt>Total sessions</dt><dd>5</d>
-<dt>Shared sessions</dt><dd>0</d>
-<dt>Longest session</dt><dd>44</d>
-</dl><h2>Evolution over time</h2>
-The graph below shows, from the creation date of the challenge until today, the number of satisfiable, unsatisfiable and errored executions, as well as shared models. This analysis may contain executions of commands other than the sub-challenges, if declared by the user.<canvas id="time_stats" width="1400"></canvas><h2>Execution stats by sub-challenge</h2>
-The graph below shows, for each sub-challenge, the number of satisfiable and unsatisfiable executions. Errored executions are not considered in this analysis. Note that for challenges correctness is unsatisfiability.<canvas id="cmd_stats" width="1400"></canvas><h2>Execution stats by sessions</h2>
-The graph below shows the number of sessions (i.e., a branch of the original model) in which a certain number of distinct sub-challenges has been correctly solved. Only sub-challeges are considered in this analysis (i.e., user-defined commands are ignored). Note that for challenges correctness is unsatisfiability.<canvas id="session_stats" width="1400"></canvas><h2>Overall metric stats</h2>
-For each user-defined metric r, show the number of satisfiable, unsatisfiable and errored executions with r=0, r=1, r=2 and r>2. Note that for challenges correctness is unsatisfiability. This analysis may contain executions of commands other than the sub-challenges, if declared by the user.<canvas id="rule_charts" width="1400"></canvas><h2>Rule stats by sub-challenge</h2>
-The graphs below show, for each sub-challenge and for each user-defined metric r, the number of satisfiable and unsatisfiable executions with r=0, r=1, r=2 and r>2. Errored executions are not considered in this analysis. Note that for challenges correctness is unsatisfiability.<h3>Inv1OK</h3>
-<canvas id="rule_charts_Inv1OK" width="1400"></canvas><h3>Inv2OK</h3>
-<canvas id="rule_charts_Inv2OK" width="1400"></canvas><h3>Inv3OK</h3>
-<canvas id="rule_charts_Inv3OK" width="1400"></canvas><h3>Inv4OK</h3>
-<canvas id="rule_charts_Inv4OK" width="1400"></canvas></dl><h2>Error messages</h2>
-Occurrence of error messages throughout all executions, merged according to type.<ul><li>There are 38 possible tokens that can appear here:
-! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~: 10 occurrences</li>
-<li>= can be used only between 2 expressions of the same arity, or between 2 integer expressions.
-Left type = {_}
-Right type = {_}: 3 occurrences</li>
-<li>This must be a set or relation.
-Instead, it has the following possible type(s):
-{_}: 3 occurrences</li>
-<li>The name _ cannot be found.: 2 occurrences</li>
-<li>in can be used only between 2 expressions of the same arity.
-Left type = {_}
-Right type = {_}: 1 occurrences</li>
-<li>& can be used only between 2 expressions of the same arity.
-Left type = {_}
-Right type = {_}: 1 occurrences</li>
-<li>This must be a formula expression.
-Instead, it has the following possible type(s):
-{_}: 1 occurrences</li>
-<li>There are 3 possible tokens that can appear here:
-,  { |: 1 occurrences</li>
-<li>This cannot be a legal relational join where
-left hand side is _(_)
-right hand side is _(_): 1 occurrences</li>
-<li>^ can be used only with a binary relation.
-Instead, its possible type(s) are:
-{_}: 1 occurrences</li>
-<li>There are 1 possible tokens that can appear here:
-): 1 occurrences</li>
-</ul><h2>Warning messages</h2>
-Occurrence of warning messages throughout all executions, merged according to type.<ul><li>The join operation here always yields an empty set.
-Left type = {_}
-Right type = {_}: 4 occurrences</li>
-<li>^(_) is redundant since its domain and range are disjoint: {_}: 1 occurrences</li>
-<li>Subset operator is redundant, because the left and right subexpressions are always disjoint.
-Left type = {_}
-Right type = {_}: 1 occurrences</li>
-</ul><h2>Derivation tree</h2>
+</dl><h2>Overall metric statistics</h2>
+Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total entries</dt><dd>102</dd>
+<dt>Total executions</dt><dd>74</dd>
+<dt>Total error messages</dt><dd>27</dd>
+<dt>Total warning messages</dt><dd>13</dd>
+<dt>Total solutions</dt><dd>74</d>
+<dt>Total sessions</dt><dd>6</d>
+</dl><h2>Scalar metrics</h2>
+<dl><dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions with warnings</dt><dd>6</dd>
+<dt data-toggle="tooltip" title="The size of the longest session. A session is a full branch of the derivation tree.">Longest session</dt><dd>43</dd>
+<dt data-toggle="tooltip" title="Counts the number of incorrect executions. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions</dt><dd>59</dd>
+<dt data-toggle="tooltip" title="Counts the number of correct executions. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions</dt><dd>15</dd>
+</dl><h2>Overall metrics</h2>
+<h3>Sessions by length</h3>
+<p>The number of sessions with a certain length. A session is a full branch of the derivation tree.</p>
+<canvas id="Sessionsbylength" width="1400"></canvas><script>
+  var chart = new Chart(Sessionsbylength, {
+   type: 'bar',
+   data: {
+      labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43',],      datasets: [
+{backgroundColor: '#6c79ad', data: [2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,]},]},
+   options: {
+      responsive: false,
+      legend: {
+         display: false
+      },
+      scales: {
+         xAxes: [{
+                ticks: {
+                    autoSkip: true,
+                    minRotation:0,
+                    maxRotation:20,
+                }
+            }],
+      }
+   }
+});
+</script><h3>Sessions by # of solved sub-challenges</h3>
+<p>The number of sessions with a certain number of sub-challenges correctly solved. A session is a full branch of the derivation tree.</p>
+<canvas id="Sessionsbyofsolvedsubchallenges" width="1400"></canvas><script>
+  var chart = new Chart(Sessionsbyofsolvedsubchallenges, {
+   type: 'bar',
+   data: {
+      labels: ['0','1','2',],      datasets: [
+{backgroundColor: '#6c79ad', data: [2,2,2,]},]},
+   options: {
+      responsive: false,
+      legend: {
+         display: false
+      },
+      scales: {
+         xAxes: [{
+                ticks: {
+                    autoSkip: true,
+                    minRotation:0,
+                    maxRotation:20,
+                }
+            }],
+      }
+   }
+});
+</script><h3>Warnings by type</h3>
+<p>The number of warnings by normalized message. Each entry may throw multiple warning messages.</p>
+<canvas id="Warningsbytype" width="1400"></canvas><script>
+  var chart = new Chart(Warningsbytype, {
+   type: 'bar',
+   data: {
+      labels: ['^(_) is redundant since its domain and range are disjoint: {_}','Subset operator is redundant, because both subexpressions are always empty. Left type = {_} Right type = {_}','Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}','Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}','The join operation here always yields an empty set. Left type = {_} Right type = {_}',],      datasets: [
+{backgroundColor: '#6c79ad', data: [1,1,2,2,7,]},]},
+   options: {
+      responsive: false,
+      legend: {
+         display: false
+      },
+      scales: {
+         xAxes: [{
+                ticks: {
+                    autoSkip: false,
+                    minRotation:90,
+                    maxRotation:90,
+                }
+            }],
+      }
+   }
+});
+</script><h3>Entries over time</h3>
+<p>The number of entries by date. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
+<canvas id="Entriesovertime" width="1400"></canvas><script>
+  var chart = new Chart(Entriesovertime, {
+   type: 'bar',
+   data: {
+      labels: ['2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03',],      datasets: [
+{backgroundColor: '#6c79ad', data: [26,30,0,43,0,0,0,0,3,0,0,]},]},
+   options: {
+      responsive: false,
+      legend: {
+         display: false
+      },
+      scales: {
+         xAxes: [{
+                ticks: {
+                    autoSkip: true,
+                    minRotation:0,
+                    maxRotation:20,
+                }
+            }],
+      }
+   }
+});
+</script><h3>Errors by type</h3>
+<p>The number of errors by normalized message.</p>
+<canvas id="Errorsbytype" width="1400"></canvas><script>
+  var chart = new Chart(Errorsbytype, {
+   type: 'bar',
+   data: {
+      labels: ['= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','The name _ cannot be found.','& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This must be a set or relation. Instead, it has the following possible type(s): {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','This must be a formula expression. Instead, it has the following possible type(s): {_}','There are 1 possible tokens that can appear here: ) ','^ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 3 possible tokens that can appear here: ,  { | ',],      datasets: [
+{backgroundColor: '#6c79ad', data: [3,1,1,2,1,3,10,3,1,1,1,]},]},
+   options: {
+      responsive: false,
+      legend: {
+         display: false
+      },
+      scales: {
+         xAxes: [{
+                ticks: {
+                    autoSkip: false,
+                    minRotation:90,
+                    maxRotation:90,
+                }
+            }],
+      }
+   }
+});
+</script><h2>Overall metrics, classified</h2>
+<h3>Executions over time</h3>
+<p>The number of entries by date, classified by result. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
+<canvas id="Executionsovertime" ></canvas><script>
+  var chart = new Chart(Executionsovertime, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03',],      datasets: [
+{label: 'correct', backgroundColor: '#93e388', data: [10,1,0,4,0,0,0,0,0,0,0,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [11,23,0,24,0,0,0,0,1,0,0,]},{label: 'share', backgroundColor: '#6c79ad', data: [1,0,0,0,0,0,0,0,0,0,0,]},{label: 'error', backgroundColor: '#f06779', data: [4,6,0,15,0,0,0,0,2,0,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Execution results by sub-challenge</h3>
+<p>The number of successful executions by sub-challenge, classified by result. Errored executions are not considered.</p>
+<canvas id="Executionresultsbysubchallenge" ></canvas><script>
+  var chart = new Chart(Executionresultsbysubchallenge, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['Inv3OK','Inv4OK','Inv1OK','Inv2OK',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [15,40,2,2,]},{label: 'correct', backgroundColor: '#93e388', data: [0,10,3,2,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Session results by sub-challenge</h3>
+<p>The number of sessions in which a certain sub-challenge has been correctly solved.</p>
+<canvas id="Sessionresultsbysubchallenge" ></canvas><script>
+  var chart = new Chart(Sessionresultsbysubchallenge, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['Inv3OK','Inv4OK','Inv1OK','Inv2OK',],      datasets: [
+{label: 'solved', backgroundColor: '#93e388', data: [0,3,2,1,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [6,3,4,5,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h2>Metrics by sub-challenge, classified</h2>
+<h3>Size in 10s of nodes</h3>
+<p>The number of executions, for a particular challenge, by the size of a command AST in tens of nodes, grouped by result.</p>
+<h4>Inv3OK</h4>
+<canvas id="SizeinsofnodesInvOK" ></canvas><script>
+  var chart = new Chart(SizeinsofnodesInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['12','13','14','15','16','17',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [2,1,7,1,3,1,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv4OK</h4>
+<canvas id="SizeinsofnodesInvOK" ></canvas><script>
+  var chart = new Chart(SizeinsofnodesInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['12','13','14','15','16',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [4,0,19,16,1,]},{label: 'correct', backgroundColor: '#93e388', data: [0,0,0,10,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv1OK</h4>
+<canvas id="SizeinsofnodesInvOK" ></canvas><script>
+  var chart = new Chart(SizeinsofnodesInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['10','11',],      datasets: [
+{label: 'correct', backgroundColor: '#93e388', data: [1,2,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [0,2,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv2OK</h4>
+<canvas id="SizeinsofnodesInvOK" ></canvas><script>
+  var chart = new Chart(SizeinsofnodesInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['12','13',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [1,1,]},{label: 'correct', backgroundColor: '#93e388', data: [2,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Number of disj quantifications</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring disjoint first-order quantifications, grouped by result.</p>
+<h4>Inv3OK</h4>
+<canvas id="NumberofdisjquantificationsInvOK" ></canvas><script>
+  var chart = new Chart(NumberofdisjquantificationsInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['3',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [15,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv4OK</h4>
+<canvas id="NumberofdisjquantificationsInvOK" ></canvas><script>
+  var chart = new Chart(NumberofdisjquantificationsInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['3','4','5',],      datasets: [
+{label: 'correct', backgroundColor: '#93e388', data: [7,0,3,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [28,0,12,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv1OK</h4>
+<canvas id="NumberofdisjquantificationsInvOK" ></canvas><script>
+  var chart = new Chart(NumberofdisjquantificationsInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['2',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [2,]},{label: 'correct', backgroundColor: '#93e388', data: [3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv2OK</h4>
+<canvas id="NumberofdisjquantificationsInvOK" ></canvas><script>
+  var chart = new Chart(NumberofdisjquantificationsInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['2',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [2,]},{label: 'correct', backgroundColor: '#93e388', data: [2,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Number multiplicity arrows</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring multiplicity arrow tests, grouped by result.</p>
+<h4>Inv3OK</h4>
+<canvas id="NumbermultiplicityarrowsInvOK" ></canvas><script>
+  var chart = new Chart(NumbermultiplicityarrowsInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [15,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv4OK</h4>
+<canvas id="NumbermultiplicityarrowsInvOK" ></canvas><script>
+  var chart = new Chart(NumbermultiplicityarrowsInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'correct', backgroundColor: '#93e388', data: [10,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [40,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv1OK</h4>
+<canvas id="NumbermultiplicityarrowsInvOK" ></canvas><script>
+  var chart = new Chart(NumbermultiplicityarrowsInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [2,]},{label: 'correct', backgroundColor: '#93e388', data: [3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv2OK</h4>
+<canvas id="NumbermultiplicityarrowsInvOK" ></canvas><script>
+  var chart = new Chart(NumbermultiplicityarrowsInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [2,]},{label: 'correct', backgroundColor: '#93e388', data: [2,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Number of binary temporal operators</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring binary temporal operators, grouped by result..</p>
+<h4>Inv3OK</h4>
+<canvas id="NumberofbinarytemporaloperatorsInvOK" ></canvas><script>
+  var chart = new Chart(NumberofbinarytemporaloperatorsInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [15,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv4OK</h4>
+<canvas id="NumberofbinarytemporaloperatorsInvOK" ></canvas><script>
+  var chart = new Chart(NumberofbinarytemporaloperatorsInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'correct', backgroundColor: '#93e388', data: [10,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [40,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv1OK</h4>
+<canvas id="NumberofbinarytemporaloperatorsInvOK" ></canvas><script>
+  var chart = new Chart(NumberofbinarytemporaloperatorsInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [2,]},{label: 'correct', backgroundColor: '#93e388', data: [3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv2OK</h4>
+<canvas id="NumberofbinarytemporaloperatorsInvOK" ></canvas><script>
+  var chart = new Chart(NumberofbinarytemporaloperatorsInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [2,]},{label: 'correct', backgroundColor: '#93e388', data: [2,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Number of quantifiers</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
+<h4>Inv3OK</h4>
+<canvas id="NumberofquantifiersInvOK" ></canvas><script>
+  var chart = new Chart(NumberofquantifiersInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['7','8','9',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [8,0,7,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv4OK</h4>
+<canvas id="NumberofquantifiersInvOK" ></canvas><script>
+  var chart = new Chart(NumberofquantifiersInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['7','8','9',],      datasets: [
+{label: 'correct', backgroundColor: '#93e388', data: [9,0,1,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [16,0,24,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv1OK</h4>
+<canvas id="NumberofquantifiersInvOK" ></canvas><script>
+  var chart = new Chart(NumberofquantifiersInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['5','6','7',],      datasets: [
+{label: 'correct', backgroundColor: '#93e388', data: [1,0,2,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [0,0,2,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv2OK</h4>
+<canvas id="NumberofquantifiersInvOK" ></canvas><script>
+  var chart = new Chart(NumberofquantifiersInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['7','8','9',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [1,0,1,]},{label: 'correct', backgroundColor: '#93e388', data: [2,0,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Number of inverted navigation expressions</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring expressions of the shape x.~r, grouped by result.</p>
+<h4>Inv3OK</h4>
+<canvas id="NumberofinvertednavigationexpressionsInvOK" ></canvas><script>
+  var chart = new Chart(NumberofinvertednavigationexpressionsInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [15,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv4OK</h4>
+<canvas id="NumberofinvertednavigationexpressionsInvOK" ></canvas><script>
+  var chart = new Chart(NumberofinvertednavigationexpressionsInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'correct', backgroundColor: '#93e388', data: [10,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [40,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv1OK</h4>
+<canvas id="NumberofinvertednavigationexpressionsInvOK" ></canvas><script>
+  var chart = new Chart(NumberofinvertednavigationexpressionsInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [2,]},{label: 'correct', backgroundColor: '#93e388', data: [3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv2OK</h4>
+<canvas id="NumberofinvertednavigationexpressionsInvOK" ></canvas><script>
+  var chart = new Chart(NumberofinvertednavigationexpressionsInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [2,]},{label: 'correct', backgroundColor: '#93e388', data: [2,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Max nested temporal operator level</h3>
+<p>The number of executions, for a particular challenge, by the maximum nested level temporal operators, grouped by result.</p>
+<h4>Inv3OK</h4>
+<canvas id="MaxnestedtemporaloperatorlevelInvOK" ></canvas><script>
+  var chart = new Chart(MaxnestedtemporaloperatorlevelInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [15,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv4OK</h4>
+<canvas id="MaxnestedtemporaloperatorlevelInvOK" ></canvas><script>
+  var chart = new Chart(MaxnestedtemporaloperatorlevelInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'correct', backgroundColor: '#93e388', data: [10,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [40,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv1OK</h4>
+<canvas id="MaxnestedtemporaloperatorlevelInvOK" ></canvas><script>
+  var chart = new Chart(MaxnestedtemporaloperatorlevelInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [2,]},{label: 'correct', backgroundColor: '#93e388', data: [3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv2OK</h4>
+<canvas id="MaxnestedtemporaloperatorlevelInvOK" ></canvas><script>
+  var chart = new Chart(MaxnestedtemporaloperatorlevelInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [2,]},{label: 'correct', backgroundColor: '#93e388', data: [2,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Number of lone/one quantifiers</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring lone/one quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
+<h4>Inv3OK</h4>
+<canvas id="NumberofloneonequantifiersInvOK" ></canvas><script>
+  var chart = new Chart(NumberofloneonequantifiersInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [15,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv4OK</h4>
+<canvas id="NumberofloneonequantifiersInvOK" ></canvas><script>
+  var chart = new Chart(NumberofloneonequantifiersInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'correct', backgroundColor: '#93e388', data: [10,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [40,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv1OK</h4>
+<canvas id="NumberofloneonequantifiersInvOK" ></canvas><script>
+  var chart = new Chart(NumberofloneonequantifiersInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [2,]},{label: 'correct', backgroundColor: '#93e388', data: [3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv2OK</h4>
+<canvas id="NumberofloneonequantifiersInvOK" ></canvas><script>
+  var chart = new Chart(NumberofloneonequantifiersInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [2,]},{label: 'correct', backgroundColor: '#93e388', data: [2,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Max nested quantifier level</h3>
+<p>The number of executions, for a particular challenge, by the maximum nested level of first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
+<h4>Inv3OK</h4>
+<canvas id="MaxnestedquantifierlevelInvOK" ></canvas><script>
+  var chart = new Chart(MaxnestedquantifierlevelInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['1','2',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [8,7,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv4OK</h4>
+<canvas id="MaxnestedquantifierlevelInvOK" ></canvas><script>
+  var chart = new Chart(MaxnestedquantifierlevelInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['1','2',],      datasets: [
+{label: 'correct', backgroundColor: '#93e388', data: [9,1,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [16,24,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv1OK</h4>
+<canvas id="MaxnestedquantifierlevelInvOK" ></canvas><script>
+  var chart = new Chart(MaxnestedquantifierlevelInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['1',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [2,]},{label: 'correct', backgroundColor: '#93e388', data: [3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv2OK</h4>
+<canvas id="MaxnestedquantifierlevelInvOK" ></canvas><script>
+  var chart = new Chart(MaxnestedquantifierlevelInvOK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['1','2',],      datasets: [
+{label: 'incorrect', backgroundColor: '#f0e878', data: [1,1,]},{label: 'correct', backgroundColor: '#93e388', data: [2,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h2>Derivation tree</h2>
 <div class="just-padding">
 <div class="list-group list-group-root well">
 <a href="#item-WGdhwKZnCu7aKhXq9" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:0px">
-    <i id="icon-WGdhwKZnCu7aKhXq9" class="glyphicon glyphicon-chevron-right"></i>WGdhwKZnCu7aKhXq9, 2020-11-23 11:22:44 (share)</a>
+    <i id="icon-WGdhwKZnCu7aKhXq9" class="glyphicon glyphicon-chevron-right"></i>WGdhwKZnCu7aKhXq9, 2020-11-23T11:22:44 (share)</a>
   <div class="list-group collapse show" id="item-WGdhwKZnCu7aKhXq9"><a href="#item-23QEg5E9DkcDzbLFt" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:10px">
-    <i id="icon-23QEg5E9DkcDzbLFt" class="glyphicon glyphicon-minus"></i>23QEg5E9DkcDzbLFt, 2020-11-23 11:23:28 (Inv4OK,sat,check,)</a>
+    <i id="icon-23QEg5E9DkcDzbLFt" class="glyphicon glyphicon-minus"></i>23QEg5E9DkcDzbLFt, 2020-11-23T11:23:28 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-23QEg5E9DkcDzbLFt"></div>
 <a href="#item-vnRiFCLHTXwn9jEiZ" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:10px">
-    <i id="icon-vnRiFCLHTXwn9jEiZ" class="glyphicon glyphicon-chevron-right"></i>vnRiFCLHTXwn9jEiZ, 2020-11-23 12:50:08 (Inv1OK,unsat,check,)</a>
+    <i id="icon-vnRiFCLHTXwn9jEiZ" class="glyphicon glyphicon-chevron-right"></i>vnRiFCLHTXwn9jEiZ, 2020-11-23T12:50:08 (Inv1OK,correct,check,)</a>
   <div class="list-group collapse show" id="item-vnRiFCLHTXwn9jEiZ"><a href="#item-Sm4kKZzXq97CaQF67" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:20px">
-    <i id="icon-Sm4kKZzXq97CaQF67" class="glyphicon glyphicon-chevron-right"></i>Sm4kKZzXq97CaQF67, 2020-11-23 12:50:58 (Inv4OK,sat,check,)</a>
+    <i id="icon-Sm4kKZzXq97CaQF67" class="glyphicon glyphicon-chevron-right"></i>Sm4kKZzXq97CaQF67, 2020-11-23T12:50:58 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-Sm4kKZzXq97CaQF67"><a href="#item-25xrM6Fpd2ygh7w2k" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:30px">
-    <i id="icon-25xrM6Fpd2ygh7w2k" class="glyphicon glyphicon-chevron-right"></i>25xrM6Fpd2ygh7w2k, 2020-11-23 12:57:50 (Inv4OK,sat,check,)</a>
+    <i id="icon-25xrM6Fpd2ygh7w2k" class="glyphicon glyphicon-chevron-right"></i>25xrM6Fpd2ygh7w2k, 2020-11-23T12:57:50 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-25xrM6Fpd2ygh7w2k"><a href="#item-vmFkLNfdtzdg7sbh6" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:40px">
-    <i id="icon-vmFkLNfdtzdg7sbh6" class="glyphicon glyphicon-chevron-right"></i>vmFkLNfdtzdg7sbh6, 2020-11-23 12:57:57 (Inv4OK,sat,check,)</a>
+    <i id="icon-vmFkLNfdtzdg7sbh6" class="glyphicon glyphicon-chevron-right"></i>vmFkLNfdtzdg7sbh6, 2020-11-23T12:57:57 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-vmFkLNfdtzdg7sbh6"><a href="#item-yWZoExNQsvAjka8Qa" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:50px">
-    <i id="icon-yWZoExNQsvAjka8Qa" class="glyphicon glyphicon-chevron-right"></i>yWZoExNQsvAjka8Qa, 2020-11-23 12:58:01 (Inv4OK,sat,check,)</a>
+    <i id="icon-yWZoExNQsvAjka8Qa" class="glyphicon glyphicon-chevron-right"></i>yWZoExNQsvAjka8Qa, 2020-11-23T12:58:01 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-yWZoExNQsvAjka8Qa"><a href="#item-y5AYkTK2dd3fMGSzR" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:60px">
-    <i id="icon-y5AYkTK2dd3fMGSzR" class="glyphicon glyphicon-chevron-right"></i>y5AYkTK2dd3fMGSzR, 2020-11-23 13:03:28 (Inv4OK,sat,check,)</a>
+    <i id="icon-y5AYkTK2dd3fMGSzR" class="glyphicon glyphicon-chevron-right"></i>y5AYkTK2dd3fMGSzR, 2020-11-23T13:03:28 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-y5AYkTK2dd3fMGSzR"><a href="#item-Qi7JtDLn3i8iQCjCt" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:70px">
-    <i id="icon-Qi7JtDLn3i8iQCjCt" class="glyphicon glyphicon-chevron-right"></i>Qi7JtDLn3i8iQCjCt, 2020-11-23 13:04:15 (Inv4OK,sat,check,)</a>
+    <i id="icon-Qi7JtDLn3i8iQCjCt" class="glyphicon glyphicon-chevron-right"></i>Qi7JtDLn3i8iQCjCt, 2020-11-23T13:04:15 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-Qi7JtDLn3i8iQCjCt"><a href="#item-Fkr86cmFHHZ2ra3qZ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:80px">
-    <i id="icon-Fkr86cmFHHZ2ra3qZ" class="glyphicon glyphicon-chevron-right"></i>Fkr86cmFHHZ2ra3qZ, 2020-11-23 13:05:46 (Inv4OK,sat,check,)</a>
+    <i id="icon-Fkr86cmFHHZ2ra3qZ" class="glyphicon glyphicon-chevron-right"></i>Fkr86cmFHHZ2ra3qZ, 2020-11-23T13:05:46 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-Fkr86cmFHHZ2ra3qZ"><a href="#item-oMSxwpMxQzdtKsp3J" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:90px">
-    <i id="icon-oMSxwpMxQzdtKsp3J" class="glyphicon glyphicon-chevron-right"></i>oMSxwpMxQzdtKsp3J, 2020-11-23 13:06:09 (Inv4OK,sat,check,)</a>
+    <i id="icon-oMSxwpMxQzdtKsp3J" class="glyphicon glyphicon-chevron-right"></i>oMSxwpMxQzdtKsp3J, 2020-11-23T13:06:09 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-oMSxwpMxQzdtKsp3J"><a href="#item-dcJL4LFMmipB53emu" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:100px">
-    <i id="icon-dcJL4LFMmipB53emu" class="glyphicon glyphicon-chevron-right"></i>dcJL4LFMmipB53emu, 2020-11-23 13:10:48 (Inv4OK,sat,check,)</a>
+    <i id="icon-dcJL4LFMmipB53emu" class="glyphicon glyphicon-chevron-right"></i>dcJL4LFMmipB53emu, 2020-11-23T13:10:48 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-dcJL4LFMmipB53emu"><a href="#item-6uCDz8LPcehsRMgCm" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:110px">
-    <i id="icon-6uCDz8LPcehsRMgCm" class="glyphicon glyphicon-chevron-right"></i>6uCDz8LPcehsRMgCm, 2020-11-23 13:17:58 (Inv4OK,sat,check,)</a>
+    <i id="icon-6uCDz8LPcehsRMgCm" class="glyphicon glyphicon-chevron-right"></i>6uCDz8LPcehsRMgCm, 2020-11-23T13:17:58 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-6uCDz8LPcehsRMgCm"><a href="#item-iymMqre5JtJunhJNe" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:120px">
-    <i id="icon-iymMqre5JtJunhJNe" class="glyphicon glyphicon-chevron-right"></i>iymMqre5JtJunhJNe, 2020-11-23 13:19:10 (Inv4OK,unsat,check,)</a>
+    <i id="icon-iymMqre5JtJunhJNe" class="glyphicon glyphicon-chevron-right"></i>iymMqre5JtJunhJNe, 2020-11-23T13:19:10 (Inv4OK,correct,check,)</a>
   <div class="list-group collapse show" id="item-iymMqre5JtJunhJNe"><a href="#item-bkGWYheH7EYCzRgvg" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:130px">
-    <i id="icon-bkGWYheH7EYCzRgvg" class="glyphicon glyphicon-chevron-right"></i>bkGWYheH7EYCzRgvg, 2020-11-23 13:19:19 (Inv4OK,unsat,check,)</a>
+    <i id="icon-bkGWYheH7EYCzRgvg" class="glyphicon glyphicon-chevron-right"></i>bkGWYheH7EYCzRgvg, 2020-11-23T13:19:19 (Inv4OK,correct,check,)</a>
   <div class="list-group collapse show" id="item-bkGWYheH7EYCzRgvg"><a href="#item-gpoBvBKhNyX8cNWqQ" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-gpoBvBKhNyX8cNWqQ" class="glyphicon glyphicon-chevron-right"></i>gpoBvBKhNyX8cNWqQ, 2020-11-23 13:19:23 (Inv4OK,unsat,check,)</a>
+    <i id="icon-gpoBvBKhNyX8cNWqQ" class="glyphicon glyphicon-chevron-right"></i>gpoBvBKhNyX8cNWqQ, 2020-11-23T13:19:23 (Inv4OK,correct,check,)</a>
   <div class="list-group collapse show" id="item-gpoBvBKhNyX8cNWqQ"><a href="#item-EgFCWGDXArEKhtrgJ" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:150px">
-    <i id="icon-EgFCWGDXArEKhtrgJ" class="glyphicon glyphicon-chevron-right"></i>EgFCWGDXArEKhtrgJ, 2020-11-23 13:37:55 (Inv4OK,unsat,check,)</a>
+    <i id="icon-EgFCWGDXArEKhtrgJ" class="glyphicon glyphicon-chevron-right"></i>EgFCWGDXArEKhtrgJ, 2020-11-23T13:37:55 (Inv4OK,correct,check,)</a>
   <div class="list-group collapse show" id="item-EgFCWGDXArEKhtrgJ"><a href="#item-F9Sx6aPMKxvpHGFG3" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:160px">
-    <i id="icon-F9Sx6aPMKxvpHGFG3" class="glyphicon glyphicon-chevron-right"></i>F9Sx6aPMKxvpHGFG3, 2020-11-23 13:56:33 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+    <i id="icon-F9Sx6aPMKxvpHGFG3" class="glyphicon glyphicon-chevron-right"></i>F9Sx6aPMKxvpHGFG3, 2020-11-23T13:56:33 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
   <div class="list-group collapse show" id="item-F9Sx6aPMKxvpHGFG3"><a href="#item-Ar4EzMv4dfAocxhPh" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:170px">
-    <i id="icon-Ar4EzMv4dfAocxhPh" class="glyphicon glyphicon-chevron-right"></i>Ar4EzMv4dfAocxhPh, 2020-11-23 13:56:38 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+    <i id="icon-Ar4EzMv4dfAocxhPh" class="glyphicon glyphicon-chevron-right"></i>Ar4EzMv4dfAocxhPh, 2020-11-23T13:56:38 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
   <div class="list-group collapse show" id="item-Ar4EzMv4dfAocxhPh"><a href="#item-6YpRDJA3xEXDL8gJ2" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:180px">
-    <i id="icon-6YpRDJA3xEXDL8gJ2" class="glyphicon glyphicon-chevron-right"></i>6YpRDJA3xEXDL8gJ2, 2020-11-23 13:56:58 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+    <i id="icon-6YpRDJA3xEXDL8gJ2" class="glyphicon glyphicon-chevron-right"></i>6YpRDJA3xEXDL8gJ2, 2020-11-23T13:56:58 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
   <div class="list-group collapse show" id="item-6YpRDJA3xEXDL8gJ2"><a href="#item-TMfd3K3KkPepYaTdP" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:190px">
-    <i id="icon-TMfd3K3KkPepYaTdP" class="glyphicon glyphicon-chevron-right"></i>TMfd3K3KkPepYaTdP, 2020-11-23 13:57:50 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+    <i id="icon-TMfd3K3KkPepYaTdP" class="glyphicon glyphicon-chevron-right"></i>TMfd3K3KkPepYaTdP, 2020-11-23T13:57:50 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
   <div class="list-group collapse show" id="item-TMfd3K3KkPepYaTdP"><a href="#item-H8dSSbLtgyzY95ETN" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:200px">
-    <i id="icon-H8dSSbLtgyzY95ETN" class="glyphicon glyphicon-chevron-right"></i>H8dSSbLtgyzY95ETN, 2020-11-23 13:57:57 (Inv4OK,unsat,check,)</a>
+    <i id="icon-H8dSSbLtgyzY95ETN" class="glyphicon glyphicon-chevron-right"></i>H8dSSbLtgyzY95ETN, 2020-11-23T13:57:57 (Inv4OK,correct,check,)</a>
   <div class="list-group collapse show" id="item-H8dSSbLtgyzY95ETN"><a href="#item-T56uAyWtGEDjXvSr3" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:210px">
-    <i id="icon-T56uAyWtGEDjXvSr3" class="glyphicon glyphicon-chevron-right"></i>T56uAyWtGEDjXvSr3, 2020-11-23 13:58:07 (Inv4OK,unsat,check,)</a>
+    <i id="icon-T56uAyWtGEDjXvSr3" class="glyphicon glyphicon-chevron-right"></i>T56uAyWtGEDjXvSr3, 2020-11-23T13:58:07 (Inv4OK,correct,check,)</a>
   <div class="list-group collapse show" id="item-T56uAyWtGEDjXvSr3"><a href="#item-cqCymmtRQsX3zT2B8" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:220px">
-    <i id="icon-cqCymmtRQsX3zT2B8" class="glyphicon glyphicon-chevron-right"></i>cqCymmtRQsX3zT2B8, 2020-11-23 13:59:34 (Inv4OK,unsat,check,)</a>
+    <i id="icon-cqCymmtRQsX3zT2B8" class="glyphicon glyphicon-chevron-right"></i>cqCymmtRQsX3zT2B8, 2020-11-23T13:59:34 (Inv4OK,correct,check,)</a>
   <div class="list-group collapse show" id="item-cqCymmtRQsX3zT2B8"><a href="#item-8CTiYGxedGbb7yH85" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:230px">
-    <i id="icon-8CTiYGxedGbb7yH85" class="glyphicon glyphicon-minus"></i>8CTiYGxedGbb7yH85, 2020-11-23 14:04:30 (Inv4OK,unsat,check,)</a>
+    <i id="icon-8CTiYGxedGbb7yH85" class="glyphicon glyphicon-minus"></i>8CTiYGxedGbb7yH85, 2020-11-23T14:04:30 (Inv4OK,correct,check,)</a>
   <div class="list-group collapse show" id="item-8CTiYGxedGbb7yH85"></div>
 </div>
 </div>
@@ -149,68 +1731,68 @@ Right type = {_}: 1 occurrences</li>
 </div>
 </div>
 <a href="#item-BWDKruFXT5NsRhSer" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:10px">
-    <i id="icon-BWDKruFXT5NsRhSer" class="glyphicon glyphicon-minus"></i>BWDKruFXT5NsRhSer, 2020-11-23 14:33:36 (Inv4OK,unsat,check,)</a>
+    <i id="icon-BWDKruFXT5NsRhSer" class="glyphicon glyphicon-minus"></i>BWDKruFXT5NsRhSer, 2020-11-23T14:33:36 (Inv4OK,correct,check,)</a>
   <div class="list-group collapse show" id="item-BWDKruFXT5NsRhSer"></div>
 <a href="#item-BwQ4NtcipnohSfDDT" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:10px">
-    <i id="icon-BwQ4NtcipnohSfDDT" class="glyphicon glyphicon-chevron-right"></i>BwQ4NtcipnohSfDDT, 2020-11-24 11:26:00 (Inv4OK,sat,check,^ (this/Work <: ids) is redundant since its domain and range are disjoint: {this/Work->this/Id})</a>
+    <i id="icon-BwQ4NtcipnohSfDDT" class="glyphicon glyphicon-chevron-right"></i>BwQ4NtcipnohSfDDT, 2020-11-24T11:26 (Inv4OK,incorrect,check,^ (this/Work <: ids) is redundant since its domain and range are disjoint: {this/Work->this/Id})</a>
   <div class="list-group collapse show" id="item-BwQ4NtcipnohSfDDT"><a href="#item-Tfof9b9XwADcwtrfQ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:20px">
-    <i id="icon-Tfof9b9XwADcwtrfQ" class="glyphicon glyphicon-chevron-right"></i>Tfof9b9XwADcwtrfQ, 2020-11-24 11:35:47 (Inv4OK,sat,check,)</a>
+    <i id="icon-Tfof9b9XwADcwtrfQ" class="glyphicon glyphicon-chevron-right"></i>Tfof9b9XwADcwtrfQ, 2020-11-24T11:35:47 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-Tfof9b9XwADcwtrfQ"><a href="#item-f5xZMkN3c78uoyg3L" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:30px">
-    <i id="icon-f5xZMkN3c78uoyg3L" class="glyphicon glyphicon-chevron-right"></i>f5xZMkN3c78uoyg3L, 2020-11-24 11:38:26 (Inv4OK,sat,check,)</a>
+    <i id="icon-f5xZMkN3c78uoyg3L" class="glyphicon glyphicon-chevron-right"></i>f5xZMkN3c78uoyg3L, 2020-11-24T11:38:26 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-f5xZMkN3c78uoyg3L"><a href="#item-pWhfCiKCArpRx3Ezm" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:40px">
-    <i id="icon-pWhfCiKCArpRx3Ezm" class="glyphicon glyphicon-chevron-right"></i>pWhfCiKCArpRx3Ezm, 2020-11-24 11:39:30 (Inv4OK,sat,check,)</a>
+    <i id="icon-pWhfCiKCArpRx3Ezm" class="glyphicon glyphicon-chevron-right"></i>pWhfCiKCArpRx3Ezm, 2020-11-24T11:39:30 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-pWhfCiKCArpRx3Ezm"><a href="#item-cRYstWNiWBsEjbXAH" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:50px">
-    <i id="icon-cRYstWNiWBsEjbXAH" class="glyphicon glyphicon-chevron-right"></i>cRYstWNiWBsEjbXAH, 2020-11-24 11:40:02 (Inv4OK,sat,check,)</a>
+    <i id="icon-cRYstWNiWBsEjbXAH" class="glyphicon glyphicon-chevron-right"></i>cRYstWNiWBsEjbXAH, 2020-11-24T11:40:02 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-cRYstWNiWBsEjbXAH"><a href="#item-u4kawM76SSv6XGeyb" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:60px">
-    <i id="icon-u4kawM76SSv6XGeyb" class="glyphicon glyphicon-chevron-right"></i>u4kawM76SSv6XGeyb, 2020-11-24 11:40:57 (Inv4OK,sat,check,)</a>
+    <i id="icon-u4kawM76SSv6XGeyb" class="glyphicon glyphicon-chevron-right"></i>u4kawM76SSv6XGeyb, 2020-11-24T11:40:57 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-u4kawM76SSv6XGeyb"><a href="#item-J3C8szYqBqH6a3su7" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:70px">
-    <i id="icon-J3C8szYqBqH6a3su7" class="glyphicon glyphicon-chevron-right"></i>J3C8szYqBqH6a3su7, 2020-11-24 11:41:04 (Inv4OK,sat,check,)</a>
+    <i id="icon-J3C8szYqBqH6a3su7" class="glyphicon glyphicon-chevron-right"></i>J3C8szYqBqH6a3su7, 2020-11-24T11:41:04 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-J3C8szYqBqH6a3su7"><a href="#item-KGnvpJ2nbxMR2wt4K" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:80px">
-    <i id="icon-KGnvpJ2nbxMR2wt4K" class="glyphicon glyphicon-chevron-right"></i>KGnvpJ2nbxMR2wt4K, 2020-11-24 11:41:07 (Inv4OK,sat,check,)</a>
+    <i id="icon-KGnvpJ2nbxMR2wt4K" class="glyphicon glyphicon-chevron-right"></i>KGnvpJ2nbxMR2wt4K, 2020-11-24T11:41:07 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-KGnvpJ2nbxMR2wt4K"><a href="#item-PbLpPh8au5znQyi7E" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:90px">
-    <i id="icon-PbLpPh8au5znQyi7E" class="glyphicon glyphicon-chevron-right"></i>PbLpPh8au5znQyi7E, 2020-11-24 11:41:31 (Inv4OK,sat,check,)</a>
+    <i id="icon-PbLpPh8au5znQyi7E" class="glyphicon glyphicon-chevron-right"></i>PbLpPh8au5znQyi7E, 2020-11-24T11:41:31 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-PbLpPh8au5znQyi7E"><a href="#item-9wSNXytY9iRPb9T63" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:100px">
-    <i id="icon-9wSNXytY9iRPb9T63" class="glyphicon glyphicon-chevron-right"></i>9wSNXytY9iRPb9T63, 2020-11-24 11:56:43 (Inv4OK,sat,check,)</a>
+    <i id="icon-9wSNXytY9iRPb9T63" class="glyphicon glyphicon-chevron-right"></i>9wSNXytY9iRPb9T63, 2020-11-24T11:56:43 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-9wSNXytY9iRPb9T63"><a href="#item-sJ3J7LovMtRLfoySR" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:110px">
-    <i id="icon-sJ3J7LovMtRLfoySR" class="glyphicon glyphicon-chevron-right"></i>sJ3J7LovMtRLfoySR, 2020-11-24 11:56:48 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/Id})</a>
+    <i id="icon-sJ3J7LovMtRLfoySR" class="glyphicon glyphicon-chevron-right"></i>sJ3J7LovMtRLfoySR, 2020-11-24T11:56:48 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/Id})</a>
   <div class="list-group collapse show" id="item-sJ3J7LovMtRLfoySR"><a href="#item-rNoKyo8XiG6mezrAP" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:120px">
-    <i id="icon-rNoKyo8XiG6mezrAP" class="glyphicon glyphicon-chevron-right"></i>rNoKyo8XiG6mezrAP, 2020-11-24 11:56:54 (There are 1 possible tokens that can appear here: ))</a>
+    <i id="icon-rNoKyo8XiG6mezrAP" class="glyphicon glyphicon-chevron-right"></i>rNoKyo8XiG6mezrAP, 2020-11-24T11:56:54 (There are 1 possible tokens that can appear here: ))</a>
   <div class="list-group collapse show" id="item-rNoKyo8XiG6mezrAP"><a href="#item-v8oqbJudhGaLwJxr4" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:130px">
-    <i id="icon-v8oqbJudhGaLwJxr4" class="glyphicon glyphicon-chevron-right"></i>v8oqbJudhGaLwJxr4, 2020-11-24 11:57:24 (Inv4OK,sat,check,)</a>
+    <i id="icon-v8oqbJudhGaLwJxr4" class="glyphicon glyphicon-chevron-right"></i>v8oqbJudhGaLwJxr4, 2020-11-24T11:57:24 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-v8oqbJudhGaLwJxr4"><a href="#item-AXb6yYRciSJxF3Ecj" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-AXb6yYRciSJxF3Ecj" class="glyphicon glyphicon-chevron-right"></i>AXb6yYRciSJxF3Ecj, 2020-11-24 11:58:28 (Inv4OK,sat,check,)</a>
+    <i id="icon-AXb6yYRciSJxF3Ecj" class="glyphicon glyphicon-chevron-right"></i>AXb6yYRciSJxF3Ecj, 2020-11-24T11:58:28 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-AXb6yYRciSJxF3Ecj"><a href="#item-p65WKPKmjQ38iavQs" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:150px">
-    <i id="icon-p65WKPKmjQ38iavQs" class="glyphicon glyphicon-chevron-right"></i>p65WKPKmjQ38iavQs, 2020-11-24 11:58:33 (Inv4OK,sat,check,)</a>
+    <i id="icon-p65WKPKmjQ38iavQs" class="glyphicon glyphicon-chevron-right"></i>p65WKPKmjQ38iavQs, 2020-11-24T11:58:33 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-p65WKPKmjQ38iavQs"><a href="#item-7ctEJhbxgHTagkyWL" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:160px">
-    <i id="icon-7ctEJhbxgHTagkyWL" class="glyphicon glyphicon-chevron-right"></i>7ctEJhbxgHTagkyWL, 2020-11-24 12:01:02 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+    <i id="icon-7ctEJhbxgHTagkyWL" class="glyphicon glyphicon-chevron-right"></i>7ctEJhbxgHTagkyWL, 2020-11-24T12:01:02 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
   <div class="list-group collapse show" id="item-7ctEJhbxgHTagkyWL"><a href="#item-3ycq5XwBZpuZfnChn" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:170px">
-    <i id="icon-3ycq5XwBZpuZfnChn" class="glyphicon glyphicon-chevron-right"></i>3ycq5XwBZpuZfnChn, 2020-11-24 12:01:06 (Inv4OK,sat,check,)</a>
+    <i id="icon-3ycq5XwBZpuZfnChn" class="glyphicon glyphicon-chevron-right"></i>3ycq5XwBZpuZfnChn, 2020-11-24T12:01:06 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-3ycq5XwBZpuZfnChn"><a href="#item-upvcWnQpFugRmfDh7" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:180px">
-    <i id="icon-upvcWnQpFugRmfDh7" class="glyphicon glyphicon-chevron-right"></i>upvcWnQpFugRmfDh7, 2020-11-24 12:09:41 (Inv4OK,sat,check,)</a>
+    <i id="icon-upvcWnQpFugRmfDh7" class="glyphicon glyphicon-chevron-right"></i>upvcWnQpFugRmfDh7, 2020-11-24T12:09:41 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-upvcWnQpFugRmfDh7"><a href="#item-zrrB8fuims863ihmg" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:190px">
-    <i id="icon-zrrB8fuims863ihmg" class="glyphicon glyphicon-chevron-right"></i>zrrB8fuims863ihmg, 2020-11-24 12:18:55 (Inv4OK,sat,check,)</a>
+    <i id="icon-zrrB8fuims863ihmg" class="glyphicon glyphicon-chevron-right"></i>zrrB8fuims863ihmg, 2020-11-24T12:18:55 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-zrrB8fuims863ihmg"><a href="#item-jFFvncSMTCucsGdwd" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:200px">
-    <i id="icon-jFFvncSMTCucsGdwd" class="glyphicon glyphicon-chevron-right"></i>jFFvncSMTCucsGdwd, 2020-11-24 12:20:39 (Inv4OK,sat,check,)</a>
+    <i id="icon-jFFvncSMTCucsGdwd" class="glyphicon glyphicon-chevron-right"></i>jFFvncSMTCucsGdwd, 2020-11-24T12:20:39 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-jFFvncSMTCucsGdwd"><a href="#item-RXyJSyKnDLHQwujcq" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:210px">
-    <i id="icon-RXyJSyKnDLHQwujcq" class="glyphicon glyphicon-chevron-right"></i>RXyJSyKnDLHQwujcq, 2020-11-24 12:21:40 (Inv4OK,sat,check,)</a>
+    <i id="icon-RXyJSyKnDLHQwujcq" class="glyphicon glyphicon-chevron-right"></i>RXyJSyKnDLHQwujcq, 2020-11-24T12:21:40 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-RXyJSyKnDLHQwujcq"><a href="#item-b5tGwWoiX2ZzEytBY" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:220px">
-    <i id="icon-b5tGwWoiX2ZzEytBY" class="glyphicon glyphicon-chevron-right"></i>b5tGwWoiX2ZzEytBY, 2020-11-24 12:21:53 (Inv4OK,sat,check,)</a>
+    <i id="icon-b5tGwWoiX2ZzEytBY" class="glyphicon glyphicon-chevron-right"></i>b5tGwWoiX2ZzEytBY, 2020-11-24T12:21:53 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-b5tGwWoiX2ZzEytBY"><a href="#item-ZHAPn5W7btnfLETEq" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:230px">
-    <i id="icon-ZHAPn5W7btnfLETEq" class="glyphicon glyphicon-chevron-right"></i>ZHAPn5W7btnfLETEq, 2020-11-24 12:25:58 (This must be a formula expression. Instead, it has the following possible type(s): {this/Work})</a>
+    <i id="icon-ZHAPn5W7btnfLETEq" class="glyphicon glyphicon-chevron-right"></i>ZHAPn5W7btnfLETEq, 2020-11-24T12:25:58 (This must be a formula expression. Instead, it has the following possible type(s): {this/Work})</a>
   <div class="list-group collapse show" id="item-ZHAPn5W7btnfLETEq"><a href="#item-QwriCyuyEpSej7Ef9" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:240px">
-    <i id="icon-QwriCyuyEpSej7Ef9" class="glyphicon glyphicon-chevron-right"></i>QwriCyuyEpSej7Ef9, 2020-11-24 12:26:02 (Inv4OK,sat,check,)</a>
+    <i id="icon-QwriCyuyEpSej7Ef9" class="glyphicon glyphicon-chevron-right"></i>QwriCyuyEpSej7Ef9, 2020-11-24T12:26:02 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-QwriCyuyEpSej7Ef9"><a href="#item-4hKQmptX3Zv83ger3" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:250px">
-    <i id="icon-4hKQmptX3Zv83ger3" class="glyphicon glyphicon-chevron-right"></i>4hKQmptX3Zv83ger3, 2020-11-24 12:27:41 (Inv4OK,sat,check,)</a>
+    <i id="icon-4hKQmptX3Zv83ger3" class="glyphicon glyphicon-chevron-right"></i>4hKQmptX3Zv83ger3, 2020-11-24T12:27:41 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-4hKQmptX3Zv83ger3"><a href="#item-46e5Zs8WnEXEQG8i5" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:260px">
-    <i id="icon-46e5Zs8WnEXEQG8i5" class="glyphicon glyphicon-chevron-right"></i>46e5Zs8WnEXEQG8i5, 2020-11-24 12:29:58 (in can be used only between 2 expressions of the same arity. Left type = {this/Id} Right type = {univ->univ})</a>
+    <i id="icon-46e5Zs8WnEXEQG8i5" class="glyphicon glyphicon-chevron-right"></i>46e5Zs8WnEXEQG8i5, 2020-11-24T12:29:58 (in can be used only between 2 expressions of the same arity. Left type = {this/Id} Right type = {univ->univ})</a>
   <div class="list-group collapse show" id="item-46e5Zs8WnEXEQG8i5"><a href="#item-E9e3aNtWDSNG6Xdz2" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:270px">
-    <i id="icon-E9e3aNtWDSNG6Xdz2" class="glyphicon glyphicon-chevron-right"></i>E9e3aNtWDSNG6Xdz2, 2020-11-24 12:30:55 (& can be used only between 2 expressions of the same arity. Left type = {this/Id} Right type = {univ->univ})</a>
+    <i id="icon-E9e3aNtWDSNG6Xdz2" class="glyphicon glyphicon-chevron-right"></i>E9e3aNtWDSNG6Xdz2, 2020-11-24T12:30:55 (& can be used only between 2 expressions of the same arity. Left type = {this/Id} Right type = {univ->univ})</a>
   <div class="list-group collapse show" id="item-E9e3aNtWDSNG6Xdz2"><a href="#item-wfzGeqcJXGEejeWbk" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:280px">
-    <i id="icon-wfzGeqcJXGEejeWbk" class="glyphicon glyphicon-chevron-right"></i>wfzGeqcJXGEejeWbk, 2020-11-24 12:34:34 (Inv4OK,sat,check,)</a>
+    <i id="icon-wfzGeqcJXGEejeWbk" class="glyphicon glyphicon-chevron-right"></i>wfzGeqcJXGEejeWbk, 2020-11-24T12:34:34 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-wfzGeqcJXGEejeWbk"><a href="#item-eGCJHHgWF6a4Qesy5" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:290px">
-    <i id="icon-eGCJHHgWF6a4Qesy5" class="glyphicon glyphicon-chevron-right"></i>eGCJHHgWF6a4Qesy5, 2020-11-24 12:36:24 (Inv4OK,sat,check,)</a>
+    <i id="icon-eGCJHHgWF6a4Qesy5" class="glyphicon glyphicon-chevron-right"></i>eGCJHHgWF6a4Qesy5, 2020-11-24T12:36:24 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-eGCJHHgWF6a4Qesy5"><a href="#item-ZpG7jHL5yPv6uCm8C" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:300px">
-    <i id="icon-ZpG7jHL5yPv6uCm8C" class="glyphicon glyphicon-minus"></i>ZpG7jHL5yPv6uCm8C, 2020-11-24 12:39:19 (Inv4OK,unsat,check,)</a>
+    <i id="icon-ZpG7jHL5yPv6uCm8C" class="glyphicon glyphicon-minus"></i>ZpG7jHL5yPv6uCm8C, 2020-11-24T12:39:19 (Inv4OK,correct,check,)</a>
   <div class="list-group collapse show" id="item-ZpG7jHL5yPv6uCm8C"></div>
 </div>
 </div>
@@ -242,91 +1824,91 @@ Right type = {_}: 1 occurrences</li>
 </div>
 </div>
 <a href="#item-HWQa8dbKztDXaQkiD" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:10px">
-    <i id="icon-HWQa8dbKztDXaQkiD" class="glyphicon glyphicon-chevron-right"></i>HWQa8dbKztDXaQkiD, 2020-11-26 16:48:11 (Inv1OK,sat,check,The join operation here always yields an empty set. Left type = {this/Work} Right type = {this/User->this/Work})</a>
+    <i id="icon-HWQa8dbKztDXaQkiD" class="glyphicon glyphicon-chevron-right"></i>HWQa8dbKztDXaQkiD, 2020-11-26T16:48:11 (Inv1OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Work} Right type = {this/User->this/Work})</a>
   <div class="list-group collapse show" id="item-HWQa8dbKztDXaQkiD"><a href="#item-dvh4iwu68bEKAZq3E" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:20px">
-    <i id="icon-dvh4iwu68bEKAZq3E" class="glyphicon glyphicon-chevron-right"></i>dvh4iwu68bEKAZq3E, 2020-11-26 16:48:40 (Inv1OK,unsat,check,)</a>
+    <i id="icon-dvh4iwu68bEKAZq3E" class="glyphicon glyphicon-chevron-right"></i>dvh4iwu68bEKAZq3E, 2020-11-26T16:48:40 (Inv1OK,correct,check,)</a>
   <div class="list-group collapse show" id="item-dvh4iwu68bEKAZq3E"><a href="#item-iKzY9jPFtQBpsugzu" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:30px">
-    <i id="icon-iKzY9jPFtQBpsugzu" class="glyphicon glyphicon-chevron-right"></i>iKzY9jPFtQBpsugzu, 2020-11-26 16:50:20 (Inv2OK,sat,check,)</a>
+    <i id="icon-iKzY9jPFtQBpsugzu" class="glyphicon glyphicon-chevron-right"></i>iKzY9jPFtQBpsugzu, 2020-11-26T16:50:20 (Inv2OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-iKzY9jPFtQBpsugzu"><a href="#item-bT73ToJKc96iAugzy" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:40px">
-    <i id="icon-bT73ToJKc96iAugzy" class="glyphicon glyphicon-chevron-right"></i>bT73ToJKc96iAugzy, 2020-11-26 16:50:38 (Inv2OK,sat,check,)</a>
+    <i id="icon-bT73ToJKc96iAugzy" class="glyphicon glyphicon-chevron-right"></i>bT73ToJKc96iAugzy, 2020-11-26T16:50:38 (Inv2OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-bT73ToJKc96iAugzy"><a href="#item-PuF23k7NGTnQd5KLy" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:50px">
-    <i id="icon-PuF23k7NGTnQd5KLy" class="glyphicon glyphicon-chevron-right"></i>PuF23k7NGTnQd5KLy, 2020-11-26 16:51:03 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+    <i id="icon-PuF23k7NGTnQd5KLy" class="glyphicon glyphicon-chevron-right"></i>PuF23k7NGTnQd5KLy, 2020-11-26T16:51:03 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
   <div class="list-group collapse show" id="item-PuF23k7NGTnQd5KLy"><a href="#item-Qtk5jB6csx7gpbTrt" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:60px">
-    <i id="icon-Qtk5jB6csx7gpbTrt" class="glyphicon glyphicon-chevron-right"></i>Qtk5jB6csx7gpbTrt, 2020-11-26 16:51:09 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+    <i id="icon-Qtk5jB6csx7gpbTrt" class="glyphicon glyphicon-chevron-right"></i>Qtk5jB6csx7gpbTrt, 2020-11-26T16:51:09 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
   <div class="list-group collapse show" id="item-Qtk5jB6csx7gpbTrt"><a href="#item-ER4DYe27yDT3WB5at" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:70px">
-    <i id="icon-ER4DYe27yDT3WB5at" class="glyphicon glyphicon-chevron-right"></i>ER4DYe27yDT3WB5at, 2020-11-26 16:51:20 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {none})</a>
+    <i id="icon-ER4DYe27yDT3WB5at" class="glyphicon glyphicon-chevron-right"></i>ER4DYe27yDT3WB5at, 2020-11-26T16:51:20 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {none})</a>
   <div class="list-group collapse show" id="item-ER4DYe27yDT3WB5at"><a href="#item-itZwxM5bQccnRE7YX" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:80px">
-    <i id="icon-itZwxM5bQccnRE7YX" class="glyphicon glyphicon-chevron-right"></i>itZwxM5bQccnRE7YX, 2020-11-26 16:51:26 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {none})</a>
+    <i id="icon-itZwxM5bQccnRE7YX" class="glyphicon glyphicon-chevron-right"></i>itZwxM5bQccnRE7YX, 2020-11-26T16:51:26 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {none})</a>
   <div class="list-group collapse show" id="item-itZwxM5bQccnRE7YX"><a href="#item-9E4CEbnthL2Q9vcd5" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:90px">
-    <i id="icon-9E4CEbnthL2Q9vcd5" class="glyphicon glyphicon-chevron-right"></i>9E4CEbnthL2Q9vcd5, 2020-11-26 16:51:48 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {none})</a>
+    <i id="icon-9E4CEbnthL2Q9vcd5" class="glyphicon glyphicon-chevron-right"></i>9E4CEbnthL2Q9vcd5, 2020-11-26T16:51:48 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {none})</a>
   <div class="list-group collapse show" id="item-9E4CEbnthL2Q9vcd5"><a href="#item-9Abu3zZet9MDTwux2" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:100px">
-    <i id="icon-9Abu3zZet9MDTwux2" class="glyphicon glyphicon-chevron-right"></i>9Abu3zZet9MDTwux2, 2020-11-26 16:51:57 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+    <i id="icon-9Abu3zZet9MDTwux2" class="glyphicon glyphicon-chevron-right"></i>9Abu3zZet9MDTwux2, 2020-11-26T16:51:57 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
   <div class="list-group collapse show" id="item-9Abu3zZet9MDTwux2"><a href="#item-yD7JXmqpBs9nQTTB9" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:110px">
-    <i id="icon-yD7JXmqpBs9nQTTB9" class="glyphicon glyphicon-chevron-right"></i>yD7JXmqpBs9nQTTB9, 2020-11-26 16:52:24 (Inv2OK,unsat,check,)</a>
+    <i id="icon-yD7JXmqpBs9nQTTB9" class="glyphicon glyphicon-chevron-right"></i>yD7JXmqpBs9nQTTB9, 2020-11-26T16:52:24 (Inv2OK,correct,check,)</a>
   <div class="list-group collapse show" id="item-yD7JXmqpBs9nQTTB9"><a href="#item-Zu5LzCxQGrL2kQLcD" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:120px">
-    <i id="icon-Zu5LzCxQGrL2kQLcD" class="glyphicon glyphicon-chevron-right"></i>Zu5LzCxQGrL2kQLcD, 2020-11-26 16:53:37 (Inv3OK,sat,check,The join operation here always yields an empty set. Left type = {this/User} Right type = {this/Work->this/Id})</a>
+    <i id="icon-Zu5LzCxQGrL2kQLcD" class="glyphicon glyphicon-chevron-right"></i>Zu5LzCxQGrL2kQLcD, 2020-11-26T16:53:37 (Inv3OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/User} Right type = {this/Work->this/Id})</a>
   <div class="list-group collapse show" id="item-Zu5LzCxQGrL2kQLcD"><a href="#item-cL8EusGq4rPGN5khw" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:130px">
-    <i id="icon-cL8EusGq4rPGN5khw" class="glyphicon glyphicon-chevron-right"></i>cL8EusGq4rPGN5khw, 2020-11-26 17:40:24 (Inv2OK,unsat,check,)</a>
+    <i id="icon-cL8EusGq4rPGN5khw" class="glyphicon glyphicon-chevron-right"></i>cL8EusGq4rPGN5khw, 2020-11-26T17:40:24 (Inv2OK,correct,check,)</a>
   <div class="list-group collapse show" id="item-cL8EusGq4rPGN5khw"><a href="#item-6QP7km3vTtceS9nGY" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-6QP7km3vTtceS9nGY" class="glyphicon glyphicon-chevron-right"></i>6QP7km3vTtceS9nGY, 2020-11-26 17:40:28 (Inv1OK,unsat,check,)</a>
+    <i id="icon-6QP7km3vTtceS9nGY" class="glyphicon glyphicon-chevron-right"></i>6QP7km3vTtceS9nGY, 2020-11-26T17:40:28 (Inv1OK,correct,check,)</a>
   <div class="list-group collapse show" id="item-6QP7km3vTtceS9nGY"><a href="#item-GGqDCyMcj6BA5ujMT" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:150px">
-    <i id="icon-GGqDCyMcj6BA5ujMT" class="glyphicon glyphicon-chevron-right"></i>GGqDCyMcj6BA5ujMT, 2020-11-26 17:43:31 (Inv3OK,sat,check,)</a>
+    <i id="icon-GGqDCyMcj6BA5ujMT" class="glyphicon glyphicon-chevron-right"></i>GGqDCyMcj6BA5ujMT, 2020-11-26T17:43:31 (Inv3OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-GGqDCyMcj6BA5ujMT"><a href="#item-siDnkjxvNxXNymWdE" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:160px">
-    <i id="icon-siDnkjxvNxXNymWdE" class="glyphicon glyphicon-chevron-right"></i>siDnkjxvNxXNymWdE, 2020-11-26 17:45:36 (Inv3OK,sat,check,)</a>
+    <i id="icon-siDnkjxvNxXNymWdE" class="glyphicon glyphicon-chevron-right"></i>siDnkjxvNxXNymWdE, 2020-11-26T17:45:36 (Inv3OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-siDnkjxvNxXNymWdE"><a href="#item-vcJ5oNaFeuKxboPvm" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:170px">
-    <i id="icon-vcJ5oNaFeuKxboPvm" class="glyphicon glyphicon-chevron-right"></i>vcJ5oNaFeuKxboPvm, 2020-11-26 17:45:50 (Inv3OK,sat,check,)</a>
+    <i id="icon-vcJ5oNaFeuKxboPvm" class="glyphicon glyphicon-chevron-right"></i>vcJ5oNaFeuKxboPvm, 2020-11-26T17:45:50 (Inv3OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-vcJ5oNaFeuKxboPvm"><a href="#item-QQ5qbh7bijex7gZg4" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:180px">
-    <i id="icon-QQ5qbh7bijex7gZg4" class="glyphicon glyphicon-chevron-right"></i>QQ5qbh7bijex7gZg4, 2020-11-26 17:46:20 (Inv3OK,sat,check,)</a>
+    <i id="icon-QQ5qbh7bijex7gZg4" class="glyphicon glyphicon-chevron-right"></i>QQ5qbh7bijex7gZg4, 2020-11-26T17:46:20 (Inv3OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-QQ5qbh7bijex7gZg4"><a href="#item-aDgFJEQE4xRRgGnhe" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:190px">
-    <i id="icon-aDgFJEQE4xRRgGnhe" class="glyphicon glyphicon-chevron-right"></i>aDgFJEQE4xRRgGnhe, 2020-11-26 17:47:05 (This cannot be a legal relational join where left hand side is u . (this/User <: profile) (type = {this/Work}) right hand side is id1 (type = {this/Id}))</a>
+    <i id="icon-aDgFJEQE4xRRgGnhe" class="glyphicon glyphicon-chevron-right"></i>aDgFJEQE4xRRgGnhe, 2020-11-26T17:47:05 (This cannot be a legal relational join where left hand side is u . (this/User <: profile) (type = {this/Work}) right hand side is id1 (type = {this/Id}))</a>
   <div class="list-group collapse show" id="item-aDgFJEQE4xRRgGnhe"><a href="#item-w9Pni26pDKcTHJHrJ" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:200px">
-    <i id="icon-w9Pni26pDKcTHJHrJ" class="glyphicon glyphicon-chevron-right"></i>w9Pni26pDKcTHJHrJ, 2020-11-26 18:16:15 (The name "s2" cannot be found.)</a>
+    <i id="icon-w9Pni26pDKcTHJHrJ" class="glyphicon glyphicon-chevron-right"></i>w9Pni26pDKcTHJHrJ, 2020-11-26T18:16:15 (The name "s2" cannot be found.)</a>
   <div class="list-group collapse show" id="item-w9Pni26pDKcTHJHrJ"><a href="#item-BhkzvuH6NKJtcHW2t" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:210px">
-    <i id="icon-BhkzvuH6NKJtcHW2t" class="glyphicon glyphicon-chevron-right"></i>BhkzvuH6NKJtcHW2t, 2020-11-26 18:16:21 (Inv4OK,sat,check,)</a>
+    <i id="icon-BhkzvuH6NKJtcHW2t" class="glyphicon glyphicon-chevron-right"></i>BhkzvuH6NKJtcHW2t, 2020-11-26T18:16:21 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-BhkzvuH6NKJtcHW2t"><a href="#item-tZ3f4hRENJQkR3yxi" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:220px">
-    <i id="icon-tZ3f4hRENJQkR3yxi" class="glyphicon glyphicon-chevron-right"></i>tZ3f4hRENJQkR3yxi, 2020-11-26 18:18:57 (Inv3OK,sat,check,)</a>
+    <i id="icon-tZ3f4hRENJQkR3yxi" class="glyphicon glyphicon-chevron-right"></i>tZ3f4hRENJQkR3yxi, 2020-11-26T18:18:57 (Inv3OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-tZ3f4hRENJQkR3yxi"><a href="#item-MBMQyMNLGPwmn2fNd" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:230px">
-    <i id="icon-MBMQyMNLGPwmn2fNd" class="glyphicon glyphicon-chevron-right"></i>MBMQyMNLGPwmn2fNd, 2020-11-26 18:19:11 (Inv3OK,sat,check,)</a>
+    <i id="icon-MBMQyMNLGPwmn2fNd" class="glyphicon glyphicon-chevron-right"></i>MBMQyMNLGPwmn2fNd, 2020-11-26T18:19:11 (Inv3OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-MBMQyMNLGPwmn2fNd"><a href="#item-w2bDYx8vjxE6fLwyZ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:240px">
-    <i id="icon-w2bDYx8vjxE6fLwyZ" class="glyphicon glyphicon-chevron-right"></i>w2bDYx8vjxE6fLwyZ, 2020-11-26 18:20:04 (Inv3OK,sat,check,)</a>
+    <i id="icon-w2bDYx8vjxE6fLwyZ" class="glyphicon glyphicon-chevron-right"></i>w2bDYx8vjxE6fLwyZ, 2020-11-26T18:20:04 (Inv3OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-w2bDYx8vjxE6fLwyZ"><a href="#item-ft6mSZtHT6uQ2ZDTm" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:250px">
-    <i id="icon-ft6mSZtHT6uQ2ZDTm" class="glyphicon glyphicon-chevron-right"></i>ft6mSZtHT6uQ2ZDTm, 2020-11-26 18:21:03 (Inv3OK,sat,check,)</a>
+    <i id="icon-ft6mSZtHT6uQ2ZDTm" class="glyphicon glyphicon-chevron-right"></i>ft6mSZtHT6uQ2ZDTm, 2020-11-26T18:21:03 (Inv3OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-ft6mSZtHT6uQ2ZDTm"><a href="#item-yDJJBvokXkC7pMXZx" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:260px">
-    <i id="icon-yDJJBvokXkC7pMXZx" class="glyphicon glyphicon-chevron-right"></i>yDJJBvokXkC7pMXZx, 2020-11-26 18:24:12 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+    <i id="icon-yDJJBvokXkC7pMXZx" class="glyphicon glyphicon-chevron-right"></i>yDJJBvokXkC7pMXZx, 2020-11-26T18:24:12 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
   <div class="list-group collapse show" id="item-yDJJBvokXkC7pMXZx"><a href="#item-DBtcKqpffQZ7iDa9C" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:270px">
-    <i id="icon-DBtcKqpffQZ7iDa9C" class="glyphicon glyphicon-chevron-right"></i>DBtcKqpffQZ7iDa9C, 2020-11-26 18:24:53 (There are 3 possible tokens that can appear here: ,  { |)</a>
+    <i id="icon-DBtcKqpffQZ7iDa9C" class="glyphicon glyphicon-chevron-right"></i>DBtcKqpffQZ7iDa9C, 2020-11-26T18:24:53 (There are 3 possible tokens that can appear here: ,  { |)</a>
   <div class="list-group collapse show" id="item-DBtcKqpffQZ7iDa9C"><a href="#item-R3nMWarNsMJH4va8n" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:280px">
-    <i id="icon-R3nMWarNsMJH4va8n" class="glyphicon glyphicon-chevron-right"></i>R3nMWarNsMJH4va8n, 2020-11-26 18:29:35 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+    <i id="icon-R3nMWarNsMJH4va8n" class="glyphicon glyphicon-chevron-right"></i>R3nMWarNsMJH4va8n, 2020-11-26T18:29:35 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
   <div class="list-group collapse show" id="item-R3nMWarNsMJH4va8n"><a href="#item-RWtGkwkDbh2w96sPm" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:290px">
-    <i id="icon-RWtGkwkDbh2w96sPm" class="glyphicon glyphicon-chevron-right"></i>RWtGkwkDbh2w96sPm, 2020-11-26 18:33:01 (Inv3OK,sat,check,)</a>
+    <i id="icon-RWtGkwkDbh2w96sPm" class="glyphicon glyphicon-chevron-right"></i>RWtGkwkDbh2w96sPm, 2020-11-26T18:33:01 (Inv3OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-RWtGkwkDbh2w96sPm"><a href="#item-5YCp5EYvFSqApvPPr" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:300px">
-    <i id="icon-5YCp5EYvFSqApvPPr" class="glyphicon glyphicon-chevron-right"></i>5YCp5EYvFSqApvPPr, 2020-11-26 18:34:02 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+    <i id="icon-5YCp5EYvFSqApvPPr" class="glyphicon glyphicon-chevron-right"></i>5YCp5EYvFSqApvPPr, 2020-11-26T18:34:02 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
   <div class="list-group collapse show" id="item-5YCp5EYvFSqApvPPr"><a href="#item-egWKPBMZEBkujFzQ7" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:310px">
-    <i id="icon-egWKPBMZEBkujFzQ7" class="glyphicon glyphicon-chevron-right"></i>egWKPBMZEBkujFzQ7, 2020-11-26 18:34:24 (Inv3OK,sat,check,)</a>
+    <i id="icon-egWKPBMZEBkujFzQ7" class="glyphicon glyphicon-chevron-right"></i>egWKPBMZEBkujFzQ7, 2020-11-26T18:34:24 (Inv3OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-egWKPBMZEBkujFzQ7"><a href="#item-oqq5F7w4bf3ygfPDT" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:320px">
-    <i id="icon-oqq5F7w4bf3ygfPDT" class="glyphicon glyphicon-chevron-right"></i>oqq5F7w4bf3ygfPDT, 2020-11-26 19:26:15 (Inv3OK,sat,check,)</a>
+    <i id="icon-oqq5F7w4bf3ygfPDT" class="glyphicon glyphicon-chevron-right"></i>oqq5F7w4bf3ygfPDT, 2020-11-26T19:26:15 (Inv3OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-oqq5F7w4bf3ygfPDT"><a href="#item-x56GPuttebDmdvXdR" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:330px">
-    <i id="icon-x56GPuttebDmdvXdR" class="glyphicon glyphicon-chevron-right"></i>x56GPuttebDmdvXdR, 2020-11-26 19:28:55 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+    <i id="icon-x56GPuttebDmdvXdR" class="glyphicon glyphicon-chevron-right"></i>x56GPuttebDmdvXdR, 2020-11-26T19:28:55 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
   <div class="list-group collapse show" id="item-x56GPuttebDmdvXdR"><a href="#item-3gpmotHKyDdE8AhFh" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:340px">
-    <i id="icon-3gpmotHKyDdE8AhFh" class="glyphicon glyphicon-chevron-right"></i>3gpmotHKyDdE8AhFh, 2020-11-26 19:29:33 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+    <i id="icon-3gpmotHKyDdE8AhFh" class="glyphicon glyphicon-chevron-right"></i>3gpmotHKyDdE8AhFh, 2020-11-26T19:29:33 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
   <div class="list-group collapse show" id="item-3gpmotHKyDdE8AhFh"><a href="#item-PMBoBekFv9nqzeHqL" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:350px">
-    <i id="icon-PMBoBekFv9nqzeHqL" class="glyphicon glyphicon-chevron-right"></i>PMBoBekFv9nqzeHqL, 2020-11-26 19:29:43 (Inv3OK,sat,check,The join operation here always yields an empty set. Left type = {this/Id} Right type = {this/Work->this/Id})</a>
+    <i id="icon-PMBoBekFv9nqzeHqL" class="glyphicon glyphicon-chevron-right"></i>PMBoBekFv9nqzeHqL, 2020-11-26T19:29:43 (Inv3OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Id} Right type = {this/Work->this/Id})</a>
   <div class="list-group collapse show" id="item-PMBoBekFv9nqzeHqL"><a href="#item-ptyCZduGqkNe7sEJN" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:360px">
-    <i id="icon-ptyCZduGqkNe7sEJN" class="glyphicon glyphicon-chevron-right"></i>ptyCZduGqkNe7sEJN, 2020-11-26 19:31:34 (Inv3OK,sat,check,)</a>
+    <i id="icon-ptyCZduGqkNe7sEJN" class="glyphicon glyphicon-chevron-right"></i>ptyCZduGqkNe7sEJN, 2020-11-26T19:31:34 (Inv3OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-ptyCZduGqkNe7sEJN"><a href="#item-8j8uYwvAo9c3e2qsY" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:370px">
-    <i id="icon-8j8uYwvAo9c3e2qsY" class="glyphicon glyphicon-chevron-right"></i>8j8uYwvAo9c3e2qsY, 2020-11-26 19:34:49 (Inv3OK,sat,check,)</a>
+    <i id="icon-8j8uYwvAo9c3e2qsY" class="glyphicon glyphicon-chevron-right"></i>8j8uYwvAo9c3e2qsY, 2020-11-26T19:34:49 (Inv3OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-8j8uYwvAo9c3e2qsY"><a href="#item-CMnRFqpnfjZDkHtaa" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:380px">
-    <i id="icon-CMnRFqpnfjZDkHtaa" class="glyphicon glyphicon-chevron-right"></i>CMnRFqpnfjZDkHtaa, 2020-11-26 19:38:32 (Inv4OK,sat,check,The join operation here always yields an empty set. Left type = {this/Work} Right type = {this/User->this/Work})</a>
+    <i id="icon-CMnRFqpnfjZDkHtaa" class="glyphicon glyphicon-chevron-right"></i>CMnRFqpnfjZDkHtaa, 2020-11-26T19:38:32 (Inv4OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Work} Right type = {this/User->this/Work})</a>
   <div class="list-group collapse show" id="item-CMnRFqpnfjZDkHtaa"><a href="#item-vt2xY5hgHaeJ3MTQa" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:390px">
-    <i id="icon-vt2xY5hgHaeJ3MTQa" class="glyphicon glyphicon-chevron-right"></i>vt2xY5hgHaeJ3MTQa, 2020-11-26 19:38:51 (Inv4OK,sat,check,)</a>
+    <i id="icon-vt2xY5hgHaeJ3MTQa" class="glyphicon glyphicon-chevron-right"></i>vt2xY5hgHaeJ3MTQa, 2020-11-26T19:38:51 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-vt2xY5hgHaeJ3MTQa"><a href="#item-dGb3fpcxxymrRaTiF" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:400px">
-    <i id="icon-dGb3fpcxxymrRaTiF" class="glyphicon glyphicon-chevron-right"></i>dGb3fpcxxymrRaTiF, 2020-11-26 19:38:57 (Inv4OK,sat,check,)</a>
+    <i id="icon-dGb3fpcxxymrRaTiF" class="glyphicon glyphicon-chevron-right"></i>dGb3fpcxxymrRaTiF, 2020-11-26T19:38:57 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-dGb3fpcxxymrRaTiF"><a href="#item-bP3CwtY4N7JAuGYXb" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:410px">
-    <i id="icon-bP3CwtY4N7JAuGYXb" class="glyphicon glyphicon-chevron-right"></i>bP3CwtY4N7JAuGYXb, 2020-11-26 19:39:54 (Inv4OK,sat,check,)</a>
+    <i id="icon-bP3CwtY4N7JAuGYXb" class="glyphicon glyphicon-chevron-right"></i>bP3CwtY4N7JAuGYXb, 2020-11-26T19:39:54 (Inv4OK,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-bP3CwtY4N7JAuGYXb"><a href="#item-HZ8LBFSoKCR3N3frc" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:420px">
-    <i id="icon-HZ8LBFSoKCR3N3frc" class="glyphicon glyphicon-chevron-right"></i>HZ8LBFSoKCR3N3frc, 2020-11-26 19:40:59 (The name "u" cannot be found.)</a>
+    <i id="icon-HZ8LBFSoKCR3N3frc" class="glyphicon glyphicon-chevron-right"></i>HZ8LBFSoKCR3N3frc, 2020-11-26T19:40:59 (The name "u" cannot be found.)</a>
   <div class="list-group collapse show" id="item-HZ8LBFSoKCR3N3frc"><a href="#item-i9fxpK5p98K8HbLD3" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:430px">
-    <i id="icon-i9fxpK5p98K8HbLD3" class="glyphicon glyphicon-minus"></i>i9fxpK5p98K8HbLD3, 2020-11-26 19:41:14 (Inv4OK,sat,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Work} Right type = {this/User})</a>
+    <i id="icon-i9fxpK5p98K8HbLD3" class="glyphicon glyphicon-minus"></i>i9fxpK5p98K8HbLD3, 2020-11-26T19:41:14 (Inv4OK,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Work} Right type = {this/User})</a>
   <div class="list-group collapse show" id="item-i9fxpK5p98K8HbLD3"></div>
 </div>
 </div>
@@ -370,477 +1952,18 @@ Right type = {_}: 1 occurrences</li>
 </div>
 </div>
 </div>
+<a href="#item-rHJYxWMo5Z9y2p4zR" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-rHJYxWMo5Z9y2p4zR" class="glyphicon glyphicon-chevron-right"></i>rHJYxWMo5Z9y2p4zR, 2020-12-01T22:55:37 (This must be a formula expression. Instead, it has the following possible type(s): {this/User})</a>
+  <div class="list-group collapse show" id="item-rHJYxWMo5Z9y2p4zR"><a href="#item-CJ6dWq2fFZKftneLf" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-CJ6dWq2fFZKftneLf" class="glyphicon glyphicon-chevron-right"></i>CJ6dWq2fFZKftneLf, 2020-12-01T22:55:47 (This must be a formula expression. Instead, it has the following possible type(s): {this/User})</a>
+  <div class="list-group collapse show" id="item-CJ6dWq2fFZKftneLf"><a href="#item-z9wqJPo3KWAb5gmjp" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-z9wqJPo3KWAb5gmjp" class="glyphicon glyphicon-minus"></i>z9wqJPo3KWAb5gmjp, 2020-12-01T22:56:04 (Inv1OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-z9wqJPo3KWAb5gmjp"></div>
 </div>
 </div>
-</div><script>
-  var chart = new Chart(time_stats, {
-   type: 'bar',
-   data: {
-      labels: ['2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01',],      datasets: [
-{label: 'sat', backgroundColor: '#f0e878', data: [11,23,0,24,0,0,0,0,0,]},{label: 'unsat', backgroundColor: '#93e388', data: [10,1,0,4,0,0,0,0,0,]},{label: 'errors', backgroundColor: '#f06779', data: [4,6,0,15,0,0,0,0,0,]},{label: 'shares', backgroundColor: '#6c79ad', data: [1,0,0,0,0,0,0,0,0,]},]},
-   options: {
-      responsive: false,
-      legend: {
-         position: 'right' // place legend on the right side of chart
-      },
-      scales: {
-         xAxes: [{
-            stacked: true // this should be set to make the bars stacked
-         }],
-         yAxes: [{
-            stacked: true // this also..
-         }]
-      }
-   }
-});
-</script><script>
-  var chart = new Chart(cmd_stats, {
-   type: 'bar',
-   data: {
-      labels: ['Inv1OK','Inv2OK','Inv3OK','Inv4OK',],      datasets: [
-{label: 'sat', backgroundColor: '#f0e878', data: [1,2,15,40,]},{label: 'unsat', backgroundColor: '#93e388', data: [3,2,0,10,]},]},
-   options: {
-      responsive: false,
-      legend: {
-         position: 'right' // place legend on the right side of chart
-      },
-      scales: {
-         xAxes: [{
-            stacked: true // this should be set to make the bars stacked
-         }],
-         yAxes: [{
-            stacked: true // this also..
-         }]
-      }
-   }
-});
-</script><script>
-  var chart = new Chart(session_stats, {
-   type: 'bar',
-   data: {
-      labels: ['0','1','2',],      datasets: [
-{backgroundColor: '#6c79ad', data: [1,2,2,]},]},
-   options: {
-      responsive: false,
-      legend: {
-         display: false
-      },
-      scales: {
-         xAxes: [{
-            stacked: true // this should be set to make the bars stacked
-         }],
-         yAxes: [{
-            stacked: true // this also..
-         }]
-      }
-   }
-});
-</script><script> var chart = new Chart(rule_charts, {
-   type: 'bar',
-   data: {
-        labels: ['max nested temporal level','# inverted navigation','# lone/one quantifiers','max nested quantifier level','# warnings','10s of nodes','# quantifiers',],
-        datasets: [{ label: 'sat 0',
-backgroundColor: '#f0e878',
-stack: 'Stack 0',
-data: [
-'58','58','58','0','52','0','0',]
-},{ label: 'unsat 0',
-backgroundColor: '#93e388',
-stack: 'Stack 0',
-data: [
-'15','15','15','0','15','0','0',]
-},{ label: 'error 0',
-backgroundColor: '#f06779',
-stack: 'Stack 0',
-data: [
-'0','0','0','0','25','0','0',]
-},{ label: 'sat 1',
-backgroundColor: '#f0e878',
-stack: 'Stack 1',
-data: [
-'0','0','0','26','2','0','0',]
-},{ label: 'unsat 1',
-backgroundColor: '#93e388',
-stack: 'Stack 1',
-data: [
-'0','0','0','14','0','0','0',]
-},{ label: 'error 1',
-backgroundColor: '#f06779',
-stack: 'Stack 1',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'sat 2',
-backgroundColor: '#f0e878',
-stack: 'Stack 2',
-data: [
-'0','0','0','32','2','0','0',]
-},{ label: 'unsat 2',
-backgroundColor: '#93e388',
-stack: 'Stack 2',
-data: [
-'0','0','0','1','0','0','0',]
-},{ label: 'error 2',
-backgroundColor: '#f06779',
-stack: 'Stack 2',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'sat >2',
-backgroundColor: '#f0e878',
-stack: 'Stack >2',
-data: [
-'0','0','0','0','2','58','58',]
-},{ label: 'unsat >2',
-backgroundColor: '#93e388',
-stack: 'Stack >2',
-data: [
-'0','0','0','0','0','15','15',]
-},{ label: 'error >2',
-backgroundColor: '#f06779',
-stack: 'Stack >2',
-data: [
-'0','0','0','0','0','0','0',]
-},]
-
-    },
-   options: {
-      responsive: false,
-      legend: {
-         display: false
-      },
-      scales: {
-         xAxes: [{
-            stacked: true // this should be set to make the bars stacked
-         }],
-         yAxes: [{
-            stacked: true // this also..
-         }]
-      }
-   }
-});</script><script> var chart = new Chart(rule_charts_Inv3OK, {
-   type: 'bar',
-   data: {
-        labels: ['max nested temporal level','# inverted navigation','# lone/one quantifiers','max nested quantifier level','# warnings','10s of nodes','# quantifiers',],
-        datasets: [{ label: 'sat 0',
-backgroundColor: '#f0e878',
-stack: 'Stack 0',
-data: [
-'15','15','15','0','13','0','0',]
-},{ label: 'unsat 0',
-backgroundColor: '#93e388',
-stack: 'Stack 0',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'error 0',
-backgroundColor: '#f06779',
-stack: 'Stack 0',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'sat 1',
-backgroundColor: '#f0e878',
-stack: 'Stack 1',
-data: [
-'0','0','0','8','0','0','0',]
-},{ label: 'unsat 1',
-backgroundColor: '#93e388',
-stack: 'Stack 1',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'error 1',
-backgroundColor: '#f06779',
-stack: 'Stack 1',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'sat 2',
-backgroundColor: '#f0e878',
-stack: 'Stack 2',
-data: [
-'0','0','0','7','1','0','0',]
-},{ label: 'unsat 2',
-backgroundColor: '#93e388',
-stack: 'Stack 2',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'error 2',
-backgroundColor: '#f06779',
-stack: 'Stack 2',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'sat >2',
-backgroundColor: '#f0e878',
-stack: 'Stack >2',
-data: [
-'0','0','0','0','1','15','15',]
-},{ label: 'unsat >2',
-backgroundColor: '#93e388',
-stack: 'Stack >2',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'error >2',
-backgroundColor: '#f06779',
-stack: 'Stack >2',
-data: [
-'0','0','0','0','0','0','0',]
-},]
-
-    },
-   options: {
-      responsive: false,
-      legend: {
-         display: false
-      },
-      scales: {
-         xAxes: [{
-            stacked: true // this should be set to make the bars stacked
-         }],
-         yAxes: [{
-            stacked: true // this also..
-         }]
-      }
-   }
-});</script><script> var chart = new Chart(rule_charts_Inv4OK, {
-   type: 'bar',
-   data: {
-        labels: ['max nested temporal level','# inverted navigation','# lone/one quantifiers','max nested quantifier level','# warnings','10s of nodes','# quantifiers',],
-        datasets: [{ label: 'sat 0',
-backgroundColor: '#f0e878',
-stack: 'Stack 0',
-data: [
-'40','40','40','0','37','0','0',]
-},{ label: 'unsat 0',
-backgroundColor: '#93e388',
-stack: 'Stack 0',
-data: [
-'10','10','10','0','10','0','0',]
-},{ label: 'error 0',
-backgroundColor: '#f06779',
-stack: 'Stack 0',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'sat 1',
-backgroundColor: '#f0e878',
-stack: 'Stack 1',
-data: [
-'0','0','0','16','2','0','0',]
-},{ label: 'unsat 1',
-backgroundColor: '#93e388',
-stack: 'Stack 1',
-data: [
-'0','0','0','9','0','0','0',]
-},{ label: 'error 1',
-backgroundColor: '#f06779',
-stack: 'Stack 1',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'sat 2',
-backgroundColor: '#f0e878',
-stack: 'Stack 2',
-data: [
-'0','0','0','24','1','0','0',]
-},{ label: 'unsat 2',
-backgroundColor: '#93e388',
-stack: 'Stack 2',
-data: [
-'0','0','0','1','0','0','0',]
-},{ label: 'error 2',
-backgroundColor: '#f06779',
-stack: 'Stack 2',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'sat >2',
-backgroundColor: '#f0e878',
-stack: 'Stack >2',
-data: [
-'0','0','0','0','0','40','40',]
-},{ label: 'unsat >2',
-backgroundColor: '#93e388',
-stack: 'Stack >2',
-data: [
-'0','0','0','0','0','10','10',]
-},{ label: 'error >2',
-backgroundColor: '#f06779',
-stack: 'Stack >2',
-data: [
-'0','0','0','0','0','0','0',]
-},]
-
-    },
-   options: {
-      responsive: false,
-      legend: {
-         display: false
-      },
-      scales: {
-         xAxes: [{
-            stacked: true // this should be set to make the bars stacked
-         }],
-         yAxes: [{
-            stacked: true // this also..
-         }]
-      }
-   }
-});</script><script> var chart = new Chart(rule_charts_Inv1OK, {
-   type: 'bar',
-   data: {
-        labels: ['max nested temporal level','# inverted navigation','# lone/one quantifiers','max nested quantifier level','# warnings','10s of nodes','# quantifiers',],
-        datasets: [{ label: 'sat 0',
-backgroundColor: '#f0e878',
-stack: 'Stack 0',
-data: [
-'1','1','1','0','0','0','0',]
-},{ label: 'unsat 0',
-backgroundColor: '#93e388',
-stack: 'Stack 0',
-data: [
-'3','3','3','0','3','0','0',]
-},{ label: 'error 0',
-backgroundColor: '#f06779',
-stack: 'Stack 0',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'sat 1',
-backgroundColor: '#f0e878',
-stack: 'Stack 1',
-data: [
-'0','0','0','1','0','0','0',]
-},{ label: 'unsat 1',
-backgroundColor: '#93e388',
-stack: 'Stack 1',
-data: [
-'0','0','0','3','0','0','0',]
-},{ label: 'error 1',
-backgroundColor: '#f06779',
-stack: 'Stack 1',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'sat 2',
-backgroundColor: '#f0e878',
-stack: 'Stack 2',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'unsat 2',
-backgroundColor: '#93e388',
-stack: 'Stack 2',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'error 2',
-backgroundColor: '#f06779',
-stack: 'Stack 2',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'sat >2',
-backgroundColor: '#f0e878',
-stack: 'Stack >2',
-data: [
-'0','0','0','0','1','1','1',]
-},{ label: 'unsat >2',
-backgroundColor: '#93e388',
-stack: 'Stack >2',
-data: [
-'0','0','0','0','0','3','3',]
-},{ label: 'error >2',
-backgroundColor: '#f06779',
-stack: 'Stack >2',
-data: [
-'0','0','0','0','0','0','0',]
-},]
-
-    },
-   options: {
-      responsive: false,
-      legend: {
-         display: false
-      },
-      scales: {
-         xAxes: [{
-            stacked: true // this should be set to make the bars stacked
-         }],
-         yAxes: [{
-            stacked: true // this also..
-         }]
-      }
-   }
-});</script><script> var chart = new Chart(rule_charts_Inv2OK, {
-   type: 'bar',
-   data: {
-        labels: ['max nested temporal level','# inverted navigation','# lone/one quantifiers','max nested quantifier level','# warnings','10s of nodes','# quantifiers',],
-        datasets: [{ label: 'sat 0',
-backgroundColor: '#f0e878',
-stack: 'Stack 0',
-data: [
-'2','2','2','0','2','0','0',]
-},{ label: 'unsat 0',
-backgroundColor: '#93e388',
-stack: 'Stack 0',
-data: [
-'2','2','2','0','2','0','0',]
-},{ label: 'error 0',
-backgroundColor: '#f06779',
-stack: 'Stack 0',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'sat 1',
-backgroundColor: '#f0e878',
-stack: 'Stack 1',
-data: [
-'0','0','0','1','0','0','0',]
-},{ label: 'unsat 1',
-backgroundColor: '#93e388',
-stack: 'Stack 1',
-data: [
-'0','0','0','2','0','0','0',]
-},{ label: 'error 1',
-backgroundColor: '#f06779',
-stack: 'Stack 1',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'sat 2',
-backgroundColor: '#f0e878',
-stack: 'Stack 2',
-data: [
-'0','0','0','1','0','0','0',]
-},{ label: 'unsat 2',
-backgroundColor: '#93e388',
-stack: 'Stack 2',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'error 2',
-backgroundColor: '#f06779',
-stack: 'Stack 2',
-data: [
-'0','0','0','0','0','0','0',]
-},{ label: 'sat >2',
-backgroundColor: '#f0e878',
-stack: 'Stack >2',
-data: [
-'0','0','0','0','0','2','2',]
-},{ label: 'unsat >2',
-backgroundColor: '#93e388',
-stack: 'Stack >2',
-data: [
-'0','0','0','0','0','2','2',]
-},{ label: 'error >2',
-backgroundColor: '#f06779',
-stack: 'Stack >2',
-data: [
-'0','0','0','0','0','0','0',]
-},]
-
-    },
-   options: {
-      responsive: false,
-      legend: {
-         display: false
-      },
-      scales: {
-         xAxes: [{
-            stacked: true // this should be set to make the bars stacked
-         }],
-         yAxes: [{
-            stacked: true // this also..
-         }]
-      }
-   }
-});</script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</div>
+</div>
+</div><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script>
