@@ -9,23 +9,28 @@
 </head>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-<h1>ruT9hTPaEz5rgGPQH (2020-12-04)</h1>
+<h1>ruT9hTPaEz5rgGPQH (2020-12-09)</h1>
 <h2>Meta-data</h2>
 <dl><dt>Challenge name</dt><dd>unknown</dd>
 <dt>Creation time</dt><dd>2020-10-28</dd>
 <dt># sub-challenges</dt><dd>1</dd>
 <dt>Metric catalog</dt><dd>Example metric catalog</dd>
 </dl><h2>Overall metric statistics</h2>
-Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total entries</dt><dd>1066</dd>
-<dt>Total executions</dt><dd>813</dd>
+Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total model entries</dt><dd>1066</dd>
+<dt>Total executions</dt><dd>1021</dd>
+<dt>Total shares</dt><dd>42</dd>
 <dt>Total error messages</dt><dd>211</dd>
 <dt>Total warning messages</dt><dd>127</dd>
-<dt>Total solutions</dt><dd>813</d>
+<dt>Total solutions</dt><dd>810</d>
 <dt>Total sessions</dt><dd>54</d>
+<dt>Rejected due to server errors</dt><dd>3</d>
+<dt>Total instance entries</dt><dd>0</dd>
+<dt>Total link entries</dt><dd>43</dd>
 </dl><h2>Scalar metrics</h2>
 <dl><dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions with warnings</dt><dd>94</dd>
 <dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared. A session is a full branch of the derivation tree.">Number of shared sessions</dt><dd>13</dd>
 <dt data-toggle="tooltip" title="The size of the longest session. A session is a full branch of the derivation tree.">Longest session</dt><dd>71</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Shared models</dt><dd>42</dd>
 <dt data-toggle="tooltip" title="Counts the number of incorrect executions. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions</dt><dd>730</dd>
 <dt data-toggle="tooltip" title="Counts the number of correct executions. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions</dt><dd>80</dd>
 </dl><h2>Overall metrics</h2>
@@ -83,7 +88,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Warningsbytype, {
    type: 'bar',
    data: {
-      labels: ['^(_) is redundant since its domain and range are disjoint: {_}','- is irrelevant since the right expression is redundant. Parent's relevant type = {_} Left type = {_} Right type = {_}','This variable is unused.','Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}','& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}','The join operation here always yields an empty set. Left type = {_} Right type = {_}','== is redundant, because the left and right expressions are always disjoint. Left type = {_} Right type = {_}',],      datasets: [
+      labels: ['^(_) is redundant since its domain and range are disjoint: {_}','- is irrelevant since the right expression is redundant. Parent\'s relevant type = {_} Left type = {_} Right type = {_}','This variable is unused.','Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}','& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}','The join operation here always yields an empty set. Left type = {_} Right type = {_}','== is redundant, because the left and right expressions are always disjoint. Left type = {_} Right type = {_}',],      datasets: [
 {backgroundColor: '#6c79ad', data: [1,3,47,14,2,57,3,]},]},
    options: {
       responsive: false,
@@ -107,8 +112,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Entriesovertime, {
    type: 'bar',
    data: {
-      labels: ['2020-10-28','2020-10-29','2020-10-30','2020-10-31','2020-11-01','2020-11-02','2020-11-03','2020-11-04','2020-11-05','2020-11-06','2020-11-07','2020-11-08','2020-11-09','2020-11-10','2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03',],      datasets: [
-{backgroundColor: '#6c79ad', data: [5,7,0,0,0,0,0,51,887,18,80,5,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,8,0,0,0,0,0,0,0,0,0,]},]},
+      labels: ['2020-10-28','2020-10-29','2020-10-30','2020-10-31','2020-11-01','2020-11-02','2020-11-03','2020-11-04','2020-11-05','2020-11-06','2020-11-07','2020-11-08','2020-11-09','2020-11-10','2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08',],      datasets: [
+{backgroundColor: '#6c79ad', data: [4,7,0,0,0,0,0,51,853,15,78,3,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]},]},
    options: {
       responsive: false,
       legend: {
@@ -150,15 +155,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h2>Overall metrics, classified</h2>
-<h3>Executions over time</h3>
-<p>The number of entries by date, classified by result. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
-<canvas id="Executionsovertime" ></canvas><script>
-  var chart = new Chart(Executionsovertime, {
+<h3>Execution results by sub-challenge</h3>
+<p>The number of successful executions by sub-challenge, classified by result. Errored executions are not considered.</p>
+<canvas id="Executionresultsbysubchallenge" ></canvas><script>
+  var chart = new Chart(Executionresultsbysubchallenge, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['2020-10-28','2020-10-29','2020-10-30','2020-10-31','2020-11-01','2020-11-02','2020-11-03','2020-11-04','2020-11-05','2020-11-06','2020-11-07','2020-11-08','2020-11-09','2020-11-10','2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [0,1,0,0,0,0,0,2,63,4,6,1,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [4,2,0,0,0,0,0,49,610,5,53,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,]},{label: 'share', backgroundColor: '#6c79ad', data: [1,0,0,0,0,0,0,0,34,3,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]},{label: 'error', backgroundColor: '#f06779', data: [0,4,0,0,0,0,0,0,180,6,19,2,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]},]},
+      labels: ['check$1',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},{label: 'SAT', backgroundColor: '#f0e878', data: [730,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -189,15 +194,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Execution results by sub-challenge</h3>
-<p>The number of successful executions by sub-challenge, classified by result. Errored executions are not considered.</p>
-<canvas id="Executionresultsbysubchallenge" ></canvas><script>
-  var chart = new Chart(Executionresultsbysubchallenge, {
+</script><h3>Executions over time classified</h3>
+<p>The number of entries by date, classified by result. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
+<canvas id="Executionsovertimeclassified" ></canvas><script>
+  var chart = new Chart(Executionsovertimeclassified, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['check$1',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [80,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [730,]},]},
+      labels: ['2020-10-28','2020-10-29','2020-10-30','2020-10-31','2020-11-01','2020-11-02','2020-11-03','2020-11-04','2020-11-05','2020-11-06','2020-11-07','2020-11-08','2020-11-09','2020-11-10','2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [0,1,0,0,0,0,0,2,63,4,6,1,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [4,2,0,0,0,0,0,49,610,5,53,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]},{label: 'ERROR', backgroundColor: '#f06779', data: [0,4,0,0,0,0,0,0,180,6,19,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -268,56 +273,16 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h2>Metrics by sub-challenge, classified</h2>
-<h3>Size in 10s of nodes</h3>
-<p>The number of executions, for a particular challenge, by the size of a command AST in tens of nodes, grouped by result.</p>
-<h4>check$1</h4>
-<canvas id="Sizeinsofnodescheck" ></canvas><script>
-  var chart = new Chart(Sizeinsofnodescheck, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [49,162,177,157,50,56,22,32,6,2,10,1,2,2,1,0,1,]},{label: 'correct', backgroundColor: '#93e388', data: [0,0,0,15,37,8,9,4,0,2,1,2,2,0,0,0,0,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h3>Number of disj quantifications</h3>
+<h3>Number of disj quantifications</h3>
 <p>The number of executions, for a particular challenge, by the number of occurring disjoint first-order quantifications, grouped by result.</p>
 <h4>check$1</h4>
-<canvas id="Numberofdisjquantificationscheck" ></canvas><script>
-  var chart = new Chart(Numberofdisjquantificationscheck, {
+<canvas id="Numberofdisjquantificationscheck1" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationscheck1, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [701,29,]},{label: 'correct', backgroundColor: '#93e388', data: [74,6,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [74,6,]},{label: 'SAT', backgroundColor: '#f0e878', data: [701,29,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -351,13 +316,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Number multiplicity arrows</h3>
 <p>The number of executions, for a particular challenge, by the number of occurring multiplicity arrow tests, grouped by result.</p>
 <h4>check$1</h4>
-<canvas id="Numbermultiplicityarrowscheck" ></canvas><script>
-  var chart = new Chart(Numbermultiplicityarrowscheck, {
+<canvas id="Numbermultiplicityarrowscheck1" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowscheck1, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [673,9,48,]},{label: 'correct', backgroundColor: '#93e388', data: [73,3,4,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [73,3,4,]},{label: 'SAT', backgroundColor: '#f0e878', data: [673,9,48,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -391,13 +356,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Number of binary temporal operators</h3>
 <p>The number of executions, for a particular challenge, by the number of occurring binary temporal operators, grouped by result..</p>
 <h4>check$1</h4>
-<canvas id="Numberofbinarytemporaloperatorscheck" ></canvas><script>
-  var chart = new Chart(Numberofbinarytemporaloperatorscheck, {
+<canvas id="Numberofbinarytemporaloperatorscheck1" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorscheck1, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [730,]},{label: 'correct', backgroundColor: '#93e388', data: [80,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},{label: 'SAT', backgroundColor: '#f0e878', data: [730,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -431,53 +396,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Number of quantifiers</h3>
 <p>The number of executions, for a particular challenge, by the number of occurring first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
 <h4>check$1</h4>
-<canvas id="Numberofquantifierscheck" ></canvas><script>
-  var chart = new Chart(Numberofquantifierscheck, {
+<canvas id="Numberofquantifierscheck1" ></canvas><script>
+  var chart = new Chart(Numberofquantifierscheck1, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['4','5','6','7','8','9','10','11','12','13','14','15','16',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [134,132,143,142,93,34,27,20,1,2,0,1,1,]},{label: 'correct', backgroundColor: '#93e388', data: [0,4,2,14,47,4,2,2,2,3,0,0,0,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h3>Number of inverted navigation expressions</h3>
-<p>The number of executions, for a particular challenge, by the number of occurring expressions of the shape x.~r, grouped by result.</p>
-<h4>check$1</h4>
-<canvas id="Numberofinvertednavigationexpressionscheck" ></canvas><script>
-  var chart = new Chart(Numberofinvertednavigationexpressionscheck, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1','2',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [685,21,24,]},{label: 'correct', backgroundColor: '#93e388', data: [73,3,4,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [0,4,2,14,47,4,2,2,2,3,0,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [134,132,143,142,93,34,27,20,1,2,0,1,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -511,13 +436,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Max nested temporal operator level</h3>
 <p>The number of executions, for a particular challenge, by the maximum nested level temporal operators, grouped by result.</p>
 <h4>check$1</h4>
-<canvas id="Maxnestedtemporaloperatorlevelcheck" ></canvas><script>
-  var chart = new Chart(Maxnestedtemporaloperatorlevelcheck, {
+<canvas id="Maxnestedtemporaloperatorlevelcheck1" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelcheck1, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [730,]},{label: 'correct', backgroundColor: '#93e388', data: [80,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},{label: 'SAT', backgroundColor: '#f0e878', data: [730,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -551,13 +476,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Number of lone/one quantifiers</h3>
 <p>The number of executions, for a particular challenge, by the number of occurring lone/one quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
 <h4>check$1</h4>
-<canvas id="Numberofloneonequantifierscheck" ></canvas><script>
-  var chart = new Chart(Numberofloneonequantifierscheck, {
+<canvas id="Numberofloneonequantifierscheck1" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifierscheck1, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [711,16,3,]},{label: 'correct', backgroundColor: '#93e388', data: [80,0,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [80,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [711,16,3,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -591,13 +516,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Max nested quantifier level</h3>
 <p>The number of executions, for a particular challenge, by the maximum nested level of first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
 <h4>check$1</h4>
-<canvas id="Maxnestedquantifierlevelcheck" ></canvas><script>
-  var chart = new Chart(Maxnestedquantifierlevelcheck, {
+<canvas id="Maxnestedquantifierlevelcheck1" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelcheck1, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [639,88,3,]},{label: 'correct', backgroundColor: '#93e388', data: [67,12,1,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [67,12,1,]},{label: 'SAT', backgroundColor: '#f0e878', data: [639,88,3,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -632,7 +557,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 <div class="just-padding">
 <div class="list-group list-group-root well">
 <a href="#item-ruT9hTPaEz5rgGPQH" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:0px">
-    <i id="icon-ruT9hTPaEz5rgGPQH" class="glyphicon glyphicon-chevron-right"></i>ruT9hTPaEz5rgGPQH, 2020-10-28T10:01:08 (share)</a>
+    <i id="icon-ruT9hTPaEz5rgGPQH" class="glyphicon glyphicon-chevron-right"></i>ruT9hTPaEz5rgGPQH, 2020-10-28T10:01:08 (model share)</a>
   <div class="list-group collapse show" id="item-ruT9hTPaEz5rgGPQH"><a href="#item-JST7KoBYXw5YeJmax" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:10px">
     <i id="icon-JST7KoBYXw5YeJmax" class="glyphicon glyphicon-chevron-right"></i>JST7KoBYXw5YeJmax, 2020-10-28T10:01:13 (check$1,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-JST7KoBYXw5YeJmax"><a href="#item-hySZoikCGMYZRyNXn" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:20px">
@@ -1030,12 +955,12 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-HZZ5muMvbQvDiHvDk"><a href="#item-Toc4KQPtwmivBFeku" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:390px">
     <i id="icon-Toc4KQPtwmivBFeku" class="glyphicon glyphicon-chevron-right"></i>Toc4KQPtwmivBFeku, 2020-11-05T12:12:40 (check$1,correct,check,)</a>
   <div class="list-group collapse show" id="item-Toc4KQPtwmivBFeku"><a href="#item-k6uLzfcYcqjjstviL" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:400px">
-    <i id="icon-k6uLzfcYcqjjstviL" class="glyphicon glyphicon-minus"></i>k6uLzfcYcqjjstviL, 2020-11-05T12:12:56 (share)</a>
+    <i id="icon-k6uLzfcYcqjjstviL" class="glyphicon glyphicon-minus"></i>k6uLzfcYcqjjstviL, 2020-11-05T12:12:56 (model share)</a>
   <div class="list-group collapse show" id="item-k6uLzfcYcqjjstviL"></div>
 <a href="#item-HqBGQC84tphkuAqEz" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:400px">
     <i id="icon-HqBGQC84tphkuAqEz" class="glyphicon glyphicon-chevron-right"></i>HqBGQC84tphkuAqEz, 2020-11-05T12:13:36 (check$1,correct,check,)</a>
   <div class="list-group collapse show" id="item-HqBGQC84tphkuAqEz"><a href="#item-RGBbEgBWJsGytqT8A" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:410px">
-    <i id="icon-RGBbEgBWJsGytqT8A" class="glyphicon glyphicon-chevron-right"></i>RGBbEgBWJsGytqT8A, 2020-11-05T12:13:37 (share)</a>
+    <i id="icon-RGBbEgBWJsGytqT8A" class="glyphicon glyphicon-chevron-right"></i>RGBbEgBWJsGytqT8A, 2020-11-05T12:13:37 (model share)</a>
   <div class="list-group collapse show" id="item-RGBbEgBWJsGytqT8A"><a href="#item-EDr2zDJGDENnG97Sx" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:420px">
     <i id="icon-EDr2zDJGDENnG97Sx" class="glyphicon glyphicon-chevron-right"></i>EDr2zDJGDENnG97Sx, 2020-11-05T13:21:13 (check$1,correct,check,)</a>
   <div class="list-group collapse show" id="item-EDr2zDJGDENnG97Sx"><a href="#item-EfuynesNumPzX9YS7" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:430px">
@@ -1211,13 +1136,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-NdTbe75g26uQSXTeE"><a href="#item-KSYdcWiueiSg2BkcQ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:620px">
     <i id="icon-KSYdcWiueiSg2BkcQ" class="glyphicon glyphicon-chevron-right"></i>KSYdcWiueiSg2BkcQ, 2020-11-05T12:14:23 (check$1,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-KSYdcWiueiSg2BkcQ"><a href="#item-YywwF5b977r9xKXdA" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:630px">
-    <i id="icon-YywwF5b977r9xKXdA" class="glyphicon glyphicon-minus"></i>YywwF5b977r9xKXdA, 2020-11-05T13:45:20 (share)</a>
+    <i id="icon-YywwF5b977r9xKXdA" class="glyphicon glyphicon-minus"></i>YywwF5b977r9xKXdA, 2020-11-05T13:45:20 (model share)</a>
   <div class="list-group collapse show" id="item-YywwF5b977r9xKXdA"></div>
 <a href="#item-coNLYSChspzdJTBHg" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:630px">
     <i id="icon-coNLYSChspzdJTBHg" class="glyphicon glyphicon-minus"></i>coNLYSChspzdJTBHg, 2020-11-05T13:45:20 (check$1,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-coNLYSChspzdJTBHg"></div>
 <a href="#item-srReCPmjziCz6xSvA" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:630px">
-    <i id="icon-srReCPmjziCz6xSvA" class="glyphicon glyphicon-minus"></i>srReCPmjziCz6xSvA, 2020-11-05T13:45:20 (share)</a>
+    <i id="icon-srReCPmjziCz6xSvA" class="glyphicon glyphicon-minus"></i>srReCPmjziCz6xSvA, 2020-11-05T13:45:20 (model share)</a>
   <div class="list-group collapse show" id="item-srReCPmjziCz6xSvA"></div>
 </div>
 </div>
@@ -1557,7 +1482,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-MzZd5jqdRErpgH9yQ"><a href="#item-J3BS8aDR8kH3dCyjq" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:310px">
     <i id="icon-J3BS8aDR8kH3dCyjq" class="glyphicon glyphicon-chevron-right"></i>J3BS8aDR8kH3dCyjq, 2020-11-05T12:00:03 (check$1,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-J3BS8aDR8kH3dCyjq"><a href="#item-v94MQg3T7oKXcNuuf" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:320px">
-    <i id="icon-v94MQg3T7oKXcNuuf" class="glyphicon glyphicon-minus"></i>v94MQg3T7oKXcNuuf, 2020-11-05T12:00:33 (share)</a>
+    <i id="icon-v94MQg3T7oKXcNuuf" class="glyphicon glyphicon-minus"></i>v94MQg3T7oKXcNuuf, 2020-11-05T12:00:33 (model share)</a>
   <div class="list-group collapse show" id="item-v94MQg3T7oKXcNuuf"></div>
 <a href="#item-p2Aeumhu54z2BfE7W" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:320px">
     <i id="icon-p2Aeumhu54z2BfE7W" class="glyphicon glyphicon-chevron-right"></i>p2Aeumhu54z2BfE7W, 2020-11-05T12:03:54 (This must be a formula expression. Instead, it has the following possible type(s): {this/Sala})</a>
@@ -1566,7 +1491,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-MMfP8C4fopbFhwgxp"><a href="#item-H9vvxPmDar3pfMFcT" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:340px">
     <i id="icon-H9vvxPmDar3pfMFcT" class="glyphicon glyphicon-chevron-right"></i>H9vvxPmDar3pfMFcT, 2020-11-05T12:04:55 (check$1,correct,check,)</a>
   <div class="list-group collapse show" id="item-H9vvxPmDar3pfMFcT"><a href="#item-fzGuJYjuLXKWuCXw7" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:350px">
-    <i id="icon-fzGuJYjuLXKWuCXw7" class="glyphicon glyphicon-minus"></i>fzGuJYjuLXKWuCXw7, 2020-11-05T12:06:10 (share)</a>
+    <i id="icon-fzGuJYjuLXKWuCXw7" class="glyphicon glyphicon-minus"></i>fzGuJYjuLXKWuCXw7, 2020-11-05T12:06:10 (model share)</a>
   <div class="list-group collapse show" id="item-fzGuJYjuLXKWuCXw7"></div>
 </div>
 </div>
@@ -1935,7 +1860,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-j9jb3kXaTZJfYdTJx"><a href="#item-fpTzY9uqup4jaDBLe" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:250px">
     <i id="icon-fpTzY9uqup4jaDBLe" class="glyphicon glyphicon-chevron-right"></i>fpTzY9uqup4jaDBLe, 2020-11-05T11:58:02 (check$1,correct,check,)</a>
   <div class="list-group collapse show" id="item-fpTzY9uqup4jaDBLe"><a href="#item-xXzQ6dwG9yqvRfoMn" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:260px">
-    <i id="icon-xXzQ6dwG9yqvRfoMn" class="glyphicon glyphicon-minus"></i>xXzQ6dwG9yqvRfoMn, 2020-11-05T11:59:13 (share)</a>
+    <i id="icon-xXzQ6dwG9yqvRfoMn" class="glyphicon glyphicon-minus"></i>xXzQ6dwG9yqvRfoMn, 2020-11-05T11:59:13 (model share)</a>
   <div class="list-group collapse show" id="item-xXzQ6dwG9yqvRfoMn"></div>
 </div>
 </div>
@@ -2430,9 +2355,9 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-iHidDMEFN57jmq2pT"><a href="#item-kJcMnT5kwoWgiajBY" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:670px">
     <i id="icon-kJcMnT5kwoWgiajBY" class="glyphicon glyphicon-chevron-right"></i>kJcMnT5kwoWgiajBY, 2020-11-07T16:16:39 (check$1,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-kJcMnT5kwoWgiajBY"><a href="#item-qoQEeNYMMfixprp9t" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:680px">
-    <i id="icon-qoQEeNYMMfixprp9t" class="glyphicon glyphicon-chevron-right"></i>qoQEeNYMMfixprp9t, 2020-11-07T16:16:40 (share)</a>
+    <i id="icon-qoQEeNYMMfixprp9t" class="glyphicon glyphicon-chevron-right"></i>qoQEeNYMMfixprp9t, 2020-11-07T16:16:40 (model share)</a>
   <div class="list-group collapse show" id="item-qoQEeNYMMfixprp9t"><a href="#item-vim7xi9dNdLgGqw3b" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:690px">
-    <i id="icon-vim7xi9dNdLgGqw3b" class="glyphicon glyphicon-minus"></i>vim7xi9dNdLgGqw3b, 2020-11-07T16:16:55 (share)</a>
+    <i id="icon-vim7xi9dNdLgGqw3b" class="glyphicon glyphicon-minus"></i>vim7xi9dNdLgGqw3b, 2020-11-07T16:16:55 (model share)</a>
   <div class="list-group collapse show" id="item-vim7xi9dNdLgGqw3b"></div>
 <a href="#item-tDCzknBHLvbSvNSLu" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:690px">
     <i id="icon-tDCzknBHLvbSvNSLu" class="glyphicon glyphicon-chevron-right"></i>tDCzknBHLvbSvNSLu, 2020-11-07T16:24:31 (check$1,incorrect,check,)</a>
@@ -2686,7 +2611,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-afKmWorg2cc95pTh2"><a href="#item-3s6oFF6NFEkQjYFJA" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:210px">
     <i id="icon-3s6oFF6NFEkQjYFJA" class="glyphicon glyphicon-chevron-right"></i>3s6oFF6NFEkQjYFJA, 2020-11-05T12:03:53 (check$1,incorrect,check,This variable is unused.)</a>
   <div class="list-group collapse show" id="item-3s6oFF6NFEkQjYFJA"><a href="#item-rJQ4NYhgyqxBGMuTX" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:220px">
-    <i id="icon-rJQ4NYhgyqxBGMuTX" class="glyphicon glyphicon-chevron-right"></i>rJQ4NYhgyqxBGMuTX, 2020-11-05T12:05:50 (share)</a>
+    <i id="icon-rJQ4NYhgyqxBGMuTX" class="glyphicon glyphicon-chevron-right"></i>rJQ4NYhgyqxBGMuTX, 2020-11-05T12:05:50 (model share)</a>
   <div class="list-group collapse show" id="item-rJQ4NYhgyqxBGMuTX"><a href="#item-oNJq5ZrmfN5oq4BqW" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:230px">
     <i id="icon-oNJq5ZrmfN5oq4BqW" class="glyphicon glyphicon-chevron-right"></i>oNJq5ZrmfN5oq4BqW, 2020-11-05T22:02:57 (check$1,incorrect,check,This variable is unused.)</a>
   <div class="list-group collapse show" id="item-oNJq5ZrmfN5oq4BqW"><a href="#item-e7KoznJwq3gC4K7pF" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:240px">
@@ -2929,7 +2854,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </div>
 </div>
 <a href="#item-nMv8aPMNHSCaAvd5i" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:10px">
-    <i id="icon-nMv8aPMNHSCaAvd5i" class="glyphicon glyphicon-minus"></i>nMv8aPMNHSCaAvd5i, 2020-11-05T11:48:28 (share)</a>
+    <i id="icon-nMv8aPMNHSCaAvd5i" class="glyphicon glyphicon-minus"></i>nMv8aPMNHSCaAvd5i, 2020-11-05T11:48:28 (model share)</a>
   <div class="list-group collapse show" id="item-nMv8aPMNHSCaAvd5i"></div>
 <a href="#item-9oWzyiedxr6viKM9j" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:10px">
     <i id="icon-9oWzyiedxr6viKM9j" class="glyphicon glyphicon-chevron-right"></i>9oWzyiedxr6viKM9j, 2020-11-05T11:49:31 (check$1,incorrect,check,)</a>
@@ -2938,7 +2863,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-ZTCaakLedso6hcAHo"><a href="#item-wawb4tRYwrhi5JHiF" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:30px">
     <i id="icon-wawb4tRYwrhi5JHiF" class="glyphicon glyphicon-chevron-right"></i>wawb4tRYwrhi5JHiF, 2020-11-05T11:50:05 (check$1,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-wawb4tRYwrhi5JHiF"><a href="#item-RR5d8FaMaPz6XXGwp" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:40px">
-    <i id="icon-RR5d8FaMaPz6XXGwp" class="glyphicon glyphicon-minus"></i>RR5d8FaMaPz6XXGwp, 2020-11-05T11:54:17 (share)</a>
+    <i id="icon-RR5d8FaMaPz6XXGwp" class="glyphicon glyphicon-minus"></i>RR5d8FaMaPz6XXGwp, 2020-11-05T11:54:17 (model share)</a>
   <div class="list-group collapse show" id="item-RR5d8FaMaPz6XXGwp"></div>
 <a href="#item-NJagme7NwzbCFqZFh" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:40px">
     <i id="icon-NJagme7NwzbCFqZFh" class="glyphicon glyphicon-chevron-right"></i>NJagme7NwzbCFqZFh, 2020-11-05T11:54:26 (check$1,incorrect,check,)</a>
@@ -2961,52 +2886,52 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-HRMY7yXSfGfpFrYAB"><a href="#item-ayYoFfpZBQWhrAJ5h" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:130px">
     <i id="icon-ayYoFfpZBQWhrAJ5h" class="glyphicon glyphicon-chevron-right"></i>ayYoFfpZBQWhrAJ5h, 2020-11-05T12:10:12 (check$1,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-ayYoFfpZBQWhrAJ5h"><a href="#item-Ppbf4p2o3vFBDPtYw" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-Ppbf4p2o3vFBDPtYw" class="glyphicon glyphicon-minus"></i>Ppbf4p2o3vFBDPtYw, 2020-11-05T12:53:13 (share)</a>
+    <i id="icon-Ppbf4p2o3vFBDPtYw" class="glyphicon glyphicon-minus"></i>Ppbf4p2o3vFBDPtYw, 2020-11-05T12:53:13 (model share)</a>
   <div class="list-group collapse show" id="item-Ppbf4p2o3vFBDPtYw"></div>
 <a href="#item-8hJm7mX8nSWQtMWZD" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-8hJm7mX8nSWQtMWZD" class="glyphicon glyphicon-minus"></i>8hJm7mX8nSWQtMWZD, 2020-11-05T12:53:13 (share)</a>
+    <i id="icon-8hJm7mX8nSWQtMWZD" class="glyphicon glyphicon-minus"></i>8hJm7mX8nSWQtMWZD, 2020-11-05T12:53:13 (model share)</a>
   <div class="list-group collapse show" id="item-8hJm7mX8nSWQtMWZD"></div>
 <a href="#item-ToxkxgnxCRYwvBRYb" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-ToxkxgnxCRYwvBRYb" class="glyphicon glyphicon-minus"></i>ToxkxgnxCRYwvBRYb, 2020-11-05T12:53:13 (share)</a>
+    <i id="icon-ToxkxgnxCRYwvBRYb" class="glyphicon glyphicon-minus"></i>ToxkxgnxCRYwvBRYb, 2020-11-05T12:53:13 (model share)</a>
   <div class="list-group collapse show" id="item-ToxkxgnxCRYwvBRYb"></div>
 <a href="#item-EpnAwq6ENLwSzjPjW" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-EpnAwq6ENLwSzjPjW" class="glyphicon glyphicon-minus"></i>EpnAwq6ENLwSzjPjW, 2020-11-05T12:53:13 (share)</a>
+    <i id="icon-EpnAwq6ENLwSzjPjW" class="glyphicon glyphicon-minus"></i>EpnAwq6ENLwSzjPjW, 2020-11-05T12:53:13 (model share)</a>
   <div class="list-group collapse show" id="item-EpnAwq6ENLwSzjPjW"></div>
 <a href="#item-ECpbsQG7yonK8Pb5D" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-ECpbsQG7yonK8Pb5D" class="glyphicon glyphicon-minus"></i>ECpbsQG7yonK8Pb5D, 2020-11-05T12:53:13 (share)</a>
+    <i id="icon-ECpbsQG7yonK8Pb5D" class="glyphicon glyphicon-minus"></i>ECpbsQG7yonK8Pb5D, 2020-11-05T12:53:13 (model share)</a>
   <div class="list-group collapse show" id="item-ECpbsQG7yonK8Pb5D"></div>
 <a href="#item-6vB69DH6KKqbJGBjF" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-6vB69DH6KKqbJGBjF" class="glyphicon glyphicon-minus"></i>6vB69DH6KKqbJGBjF, 2020-11-05T12:53:13 (share)</a>
+    <i id="icon-6vB69DH6KKqbJGBjF" class="glyphicon glyphicon-minus"></i>6vB69DH6KKqbJGBjF, 2020-11-05T12:53:13 (model share)</a>
   <div class="list-group collapse show" id="item-6vB69DH6KKqbJGBjF"></div>
 <a href="#item-Xi58G9KiJgp5wvy3P" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-Xi58G9KiJgp5wvy3P" class="glyphicon glyphicon-minus"></i>Xi58G9KiJgp5wvy3P, 2020-11-05T12:53:13 (share)</a>
+    <i id="icon-Xi58G9KiJgp5wvy3P" class="glyphicon glyphicon-minus"></i>Xi58G9KiJgp5wvy3P, 2020-11-05T12:53:13 (model share)</a>
   <div class="list-group collapse show" id="item-Xi58G9KiJgp5wvy3P"></div>
 <a href="#item-vsBnvzdi4JnmbrJ7p" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-vsBnvzdi4JnmbrJ7p" class="glyphicon glyphicon-minus"></i>vsBnvzdi4JnmbrJ7p, 2020-11-05T12:53:13 (share)</a>
+    <i id="icon-vsBnvzdi4JnmbrJ7p" class="glyphicon glyphicon-minus"></i>vsBnvzdi4JnmbrJ7p, 2020-11-05T12:53:13 (model share)</a>
   <div class="list-group collapse show" id="item-vsBnvzdi4JnmbrJ7p"></div>
 <a href="#item-b9ZyQiWvyT354SYfu" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-b9ZyQiWvyT354SYfu" class="glyphicon glyphicon-minus"></i>b9ZyQiWvyT354SYfu, 2020-11-05T12:53:13 (share)</a>
+    <i id="icon-b9ZyQiWvyT354SYfu" class="glyphicon glyphicon-minus"></i>b9ZyQiWvyT354SYfu, 2020-11-05T12:53:13 (model share)</a>
   <div class="list-group collapse show" id="item-b9ZyQiWvyT354SYfu"></div>
 <a href="#item-ijLBGESgYy6DGuFSc" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-ijLBGESgYy6DGuFSc" class="glyphicon glyphicon-minus"></i>ijLBGESgYy6DGuFSc, 2020-11-05T12:53:13 (share)</a>
+    <i id="icon-ijLBGESgYy6DGuFSc" class="glyphicon glyphicon-minus"></i>ijLBGESgYy6DGuFSc, 2020-11-05T12:53:13 (model share)</a>
   <div class="list-group collapse show" id="item-ijLBGESgYy6DGuFSc"></div>
 <a href="#item-o36dv7ZDFNiLFJuMv" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-o36dv7ZDFNiLFJuMv" class="glyphicon glyphicon-minus"></i>o36dv7ZDFNiLFJuMv, 2020-11-05T12:53:13 (share)</a>
+    <i id="icon-o36dv7ZDFNiLFJuMv" class="glyphicon glyphicon-minus"></i>o36dv7ZDFNiLFJuMv, 2020-11-05T12:53:13 (model share)</a>
   <div class="list-group collapse show" id="item-o36dv7ZDFNiLFJuMv"></div>
 <a href="#item-eiCZSBMJtzHcmManP" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-eiCZSBMJtzHcmManP" class="glyphicon glyphicon-minus"></i>eiCZSBMJtzHcmManP, 2020-11-05T12:53:13 (share)</a>
+    <i id="icon-eiCZSBMJtzHcmManP" class="glyphicon glyphicon-minus"></i>eiCZSBMJtzHcmManP, 2020-11-05T12:53:13 (model share)</a>
   <div class="list-group collapse show" id="item-eiCZSBMJtzHcmManP"></div>
 <a href="#item-ZGrsCxMLoeWnJkg2Q" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-ZGrsCxMLoeWnJkg2Q" class="glyphicon glyphicon-minus"></i>ZGrsCxMLoeWnJkg2Q, 2020-11-05T12:53:13 (share)</a>
+    <i id="icon-ZGrsCxMLoeWnJkg2Q" class="glyphicon glyphicon-minus"></i>ZGrsCxMLoeWnJkg2Q, 2020-11-05T12:53:13 (model share)</a>
   <div class="list-group collapse show" id="item-ZGrsCxMLoeWnJkg2Q"></div>
 <a href="#item-AKSZRozvJ6BqdYMK2" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-AKSZRozvJ6BqdYMK2" class="glyphicon glyphicon-minus"></i>AKSZRozvJ6BqdYMK2, 2020-11-05T12:53:13 (share)</a>
+    <i id="icon-AKSZRozvJ6BqdYMK2" class="glyphicon glyphicon-minus"></i>AKSZRozvJ6BqdYMK2, 2020-11-05T12:53:13 (model share)</a>
   <div class="list-group collapse show" id="item-AKSZRozvJ6BqdYMK2"></div>
 <a href="#item-TPvvMrsWk4GHZbPQE" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-TPvvMrsWk4GHZbPQE" class="glyphicon glyphicon-minus"></i>TPvvMrsWk4GHZbPQE, 2020-11-05T12:53:13 (share)</a>
+    <i id="icon-TPvvMrsWk4GHZbPQE" class="glyphicon glyphicon-minus"></i>TPvvMrsWk4GHZbPQE, 2020-11-05T12:53:13 (model share)</a>
   <div class="list-group collapse show" id="item-TPvvMrsWk4GHZbPQE"></div>
 <a href="#item-xo6uAKMwuGdHfB9fN" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-xo6uAKMwuGdHfB9fN" class="glyphicon glyphicon-minus"></i>xo6uAKMwuGdHfB9fN, 2020-11-05T12:53:13 (share)</a>
+    <i id="icon-xo6uAKMwuGdHfB9fN" class="glyphicon glyphicon-minus"></i>xo6uAKMwuGdHfB9fN, 2020-11-05T12:53:13 (model share)</a>
   <div class="list-group collapse show" id="item-xo6uAKMwuGdHfB9fN"></div>
 <a href="#item-hSNXJGdk5AvpAuzb4" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:140px">
     <i id="icon-hSNXJGdk5AvpAuzb4" class="glyphicon glyphicon-chevron-right"></i>hSNXJGdk5AvpAuzb4, 2020-11-05T18:35:19 (check$1,incorrect,check,)</a>
@@ -3069,12 +2994,12 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-yk4BTPzxBbxykbSY5"><a href="#item-9KdnHMPHm8waacpyi" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:430px">
     <i id="icon-9KdnHMPHm8waacpyi" class="glyphicon glyphicon-chevron-right"></i>9KdnHMPHm8waacpyi, 2020-11-06T14:07:05 (check$1,correct,check,)</a>
   <div class="list-group collapse show" id="item-9KdnHMPHm8waacpyi"><a href="#item-MZJyLQJbxckdjsSxp" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:440px">
-    <i id="icon-MZJyLQJbxckdjsSxp" class="glyphicon glyphicon-minus"></i>MZJyLQJbxckdjsSxp, 2020-11-06T14:07:18 (share)</a>
+    <i id="icon-MZJyLQJbxckdjsSxp" class="glyphicon glyphicon-minus"></i>MZJyLQJbxckdjsSxp, 2020-11-06T14:07:18 (model share)</a>
   <div class="list-group collapse show" id="item-MZJyLQJbxckdjsSxp"></div>
 <a href="#item-PSNFkWegcEZbiqRov" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:440px">
     <i id="icon-PSNFkWegcEZbiqRov" class="glyphicon glyphicon-chevron-right"></i>PSNFkWegcEZbiqRov, 2020-11-06T14:08:10 (check$1,correct,check,)</a>
   <div class="list-group collapse show" id="item-PSNFkWegcEZbiqRov"><a href="#item-B8tZ7StwitLZ3hJH9" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:450px">
-    <i id="icon-B8tZ7StwitLZ3hJH9" class="glyphicon glyphicon-minus"></i>B8tZ7StwitLZ3hJH9, 2020-11-06T14:08:14 (share)</a>
+    <i id="icon-B8tZ7StwitLZ3hJH9" class="glyphicon glyphicon-minus"></i>B8tZ7StwitLZ3hJH9, 2020-11-06T14:08:14 (model share)</a>
   <div class="list-group collapse show" id="item-B8tZ7StwitLZ3hJH9"></div>
 </div>
 </div>
@@ -3267,7 +3192,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-kWRdrx4B5d9iPzxpg"><a href="#item-8n5mudhahHheP9ZSo" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:40px">
     <i id="icon-8n5mudhahHheP9ZSo" class="glyphicon glyphicon-chevron-right"></i>8n5mudhahHheP9ZSo, 2020-11-05T13:35:59 (check$1,correct,check,)</a>
   <div class="list-group collapse show" id="item-8n5mudhahHheP9ZSo"><a href="#item-RnAMPjXsbLrSaSD2L" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:50px">
-    <i id="icon-RnAMPjXsbLrSaSD2L" class="glyphicon glyphicon-chevron-right"></i>RnAMPjXsbLrSaSD2L, 2020-11-05T13:36 (share)</a>
+    <i id="icon-RnAMPjXsbLrSaSD2L" class="glyphicon glyphicon-chevron-right"></i>RnAMPjXsbLrSaSD2L, 2020-11-05T13:36 (model share)</a>
   <div class="list-group collapse show" id="item-RnAMPjXsbLrSaSD2L"><a href="#item-rYAQPDFtZDA7Nqw8D" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:60px">
     <i id="icon-rYAQPDFtZDA7Nqw8D" class="glyphicon glyphicon-minus"></i>rYAQPDFtZDA7Nqw8D, 2020-11-05T16:58:26 (check$1,correct,check,)</a>
   <div class="list-group collapse show" id="item-rYAQPDFtZDA7Nqw8D"></div>
@@ -3293,7 +3218,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-j2z5YYS8i4RPWqquy"><a href="#item-nLBf4WKWDrEMgLm8z" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:20px">
     <i id="icon-nLBf4WKWDrEMgLm8z" class="glyphicon glyphicon-chevron-right"></i>nLBf4WKWDrEMgLm8z, 2020-11-05T13:58:26 (check$1,correct,check,)</a>
   <div class="list-group collapse show" id="item-nLBf4WKWDrEMgLm8z"><a href="#item-M3MrnJa54Z42HKond" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:30px">
-    <i id="icon-M3MrnJa54Z42HKond" class="glyphicon glyphicon-minus"></i>M3MrnJa54Z42HKond, 2020-11-05T13:58:30 (share)</a>
+    <i id="icon-M3MrnJa54Z42HKond" class="glyphicon glyphicon-minus"></i>M3MrnJa54Z42HKond, 2020-11-05T13:58:30 (model share)</a>
   <div class="list-group collapse show" id="item-M3MrnJa54Z42HKond"></div>
 </div>
 </div>
@@ -3391,9 +3316,9 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-grxJBro8vwasiHJrL"><a href="#item-wAau93xAzwqFLzwrc" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:120px">
     <i id="icon-wAau93xAzwqFLzwrc" class="glyphicon glyphicon-chevron-right"></i>wAau93xAzwqFLzwrc, 2020-11-05T16:55:59 (check$1,correct,check,)</a>
   <div class="list-group collapse show" id="item-wAau93xAzwqFLzwrc"><a href="#item-XG4kmeRAYvNTp6ysK" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:130px">
-    <i id="icon-XG4kmeRAYvNTp6ysK" class="glyphicon glyphicon-chevron-right"></i>XG4kmeRAYvNTp6ysK, 2020-11-05T16:57:23 (share)</a>
+    <i id="icon-XG4kmeRAYvNTp6ysK" class="glyphicon glyphicon-chevron-right"></i>XG4kmeRAYvNTp6ysK, 2020-11-05T16:57:23 (model share)</a>
   <div class="list-group collapse show" id="item-XG4kmeRAYvNTp6ysK"><a href="#item-JsSG85Y9wzvyLhKSj" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-JsSG85Y9wzvyLhKSj" class="glyphicon glyphicon-chevron-right"></i>JsSG85Y9wzvyLhKSj, 2020-11-05T16:57:33 (share)</a>
+    <i id="icon-JsSG85Y9wzvyLhKSj" class="glyphicon glyphicon-chevron-right"></i>JsSG85Y9wzvyLhKSj, 2020-11-05T16:57:33 (model share)</a>
   <div class="list-group collapse show" id="item-JsSG85Y9wzvyLhKSj"><a href="#item-SgWFM8DRTAM5ptMKj" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:150px">
     <i id="icon-SgWFM8DRTAM5ptMKj" class="glyphicon glyphicon-minus"></i>SgWFM8DRTAM5ptMKj, 2020-11-05T16:59:09 (check$1,correct,check,)</a>
   <div class="list-group collapse show" id="item-SgWFM8DRTAM5ptMKj"></div>
@@ -3453,7 +3378,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-83hWkSQHy2fGSwALz"><a href="#item-dWJyHGszF6D4Y4Pt5" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:160px">
     <i id="icon-dWJyHGszF6D4Y4Pt5" class="glyphicon glyphicon-chevron-right"></i>dWJyHGszF6D4Y4Pt5, 2020-11-05T17:27:32 (check$1,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-dWJyHGszF6D4Y4Pt5"><a href="#item-hwrdToFDhPJE8qnLZ" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:170px">
-    <i id="icon-hwrdToFDhPJE8qnLZ" class="glyphicon glyphicon-minus"></i>hwrdToFDhPJE8qnLZ, 2020-11-05T17:29:53 (share)</a>
+    <i id="icon-hwrdToFDhPJE8qnLZ" class="glyphicon glyphicon-minus"></i>hwrdToFDhPJE8qnLZ, 2020-11-05T17:29:53 (model share)</a>
   <div class="list-group collapse show" id="item-hwrdToFDhPJE8qnLZ"></div>
 <a href="#item-CRSfFyCbrZGs4jcry" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:170px">
     <i id="icon-CRSfFyCbrZGs4jcry" class="glyphicon glyphicon-chevron-right"></i>CRSfFyCbrZGs4jcry, 2020-11-05T17:30:57 (This cannot be a legal relational join where left hand side is this/Curso (type = {this/Curso}) right hand side is c (type = {this/Curso}))</a>
@@ -3468,7 +3393,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-GEFQcdMHDKE5YwSfQ"><a href="#item-rwWEbXH4QMk3vLPEk" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:220px">
     <i id="icon-rwWEbXH4QMk3vLPEk" class="glyphicon glyphicon-chevron-right"></i>rwWEbXH4QMk3vLPEk, 2020-11-05T17:36:02 (check$1,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-rwWEbXH4QMk3vLPEk"><a href="#item-vDeLC8ShwPMMjpnvH" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:230px">
-    <i id="icon-vDeLC8ShwPMMjpnvH" class="glyphicon glyphicon-minus"></i>vDeLC8ShwPMMjpnvH, 2020-11-05T17:37:25 (share)</a>
+    <i id="icon-vDeLC8ShwPMMjpnvH" class="glyphicon glyphicon-minus"></i>vDeLC8ShwPMMjpnvH, 2020-11-05T17:37:25 (model share)</a>
   <div class="list-group collapse show" id="item-vDeLC8ShwPMMjpnvH"></div>
 <a href="#item-otXtsweCoNLQ4FRrK" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:230px">
     <i id="icon-otXtsweCoNLQ4FRrK" class="glyphicon glyphicon-chevron-right"></i>otXtsweCoNLQ4FRrK, 2020-11-05T17:47:32 (check$1,incorrect,check,)</a>
@@ -3493,12 +3418,12 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-d9PDa4bhTgtxAysfB"><a href="#item-qJqsCJSs57m6XrbaL" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:330px">
     <i id="icon-qJqsCJSs57m6XrbaL" class="glyphicon glyphicon-chevron-right"></i>qJqsCJSs57m6XrbaL, 2020-11-05T18:45:56 (check$1,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-qJqsCJSs57m6XrbaL"><a href="#item-ZTSi2fLr6rzfy3LyA" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:340px">
-    <i id="icon-ZTSi2fLr6rzfy3LyA" class="glyphicon glyphicon-minus"></i>ZTSi2fLr6rzfy3LyA, 2020-11-05T18:47:10 (share)</a>
+    <i id="icon-ZTSi2fLr6rzfy3LyA" class="glyphicon glyphicon-minus"></i>ZTSi2fLr6rzfy3LyA, 2020-11-05T18:47:10 (model share)</a>
   <div class="list-group collapse show" id="item-ZTSi2fLr6rzfy3LyA"></div>
 <a href="#item-6g5CNq6GaPNwN5T9C" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:340px">
     <i id="icon-6g5CNq6GaPNwN5T9C" class="glyphicon glyphicon-chevron-right"></i>6g5CNq6GaPNwN5T9C, 2020-11-05T22:26 (check$1,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-6g5CNq6GaPNwN5T9C"><a href="#item-b3ffK9x7vjAFB9qJg" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:350px">
-    <i id="icon-b3ffK9x7vjAFB9qJg" class="glyphicon glyphicon-chevron-right"></i>b3ffK9x7vjAFB9qJg, 2020-11-05T22:26:23 (share)</a>
+    <i id="icon-b3ffK9x7vjAFB9qJg" class="glyphicon glyphicon-chevron-right"></i>b3ffK9x7vjAFB9qJg, 2020-11-05T22:26:23 (model share)</a>
   <div class="list-group collapse show" id="item-b3ffK9x7vjAFB9qJg"><a href="#item-u28NS5Dv3iEQcvDnh" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:360px">
     <i id="icon-u28NS5Dv3iEQcvDnh" class="glyphicon glyphicon-chevron-right"></i>u28NS5Dv3iEQcvDnh, 2020-11-06T07:48:35 (check$1,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-u28NS5Dv3iEQcvDnh"><a href="#item-PYuq4XE8TFuTX9DYC" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:370px">
@@ -3506,7 +3431,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-PYuq4XE8TFuTX9DYC"><a href="#item-dgE5nBqfLbiwHLoB4" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:380px">
     <i id="icon-dgE5nBqfLbiwHLoB4" class="glyphicon glyphicon-chevron-right"></i>dgE5nBqfLbiwHLoB4, 2020-11-06T07:49:33 (check$1,correct,check,)</a>
   <div class="list-group collapse show" id="item-dgE5nBqfLbiwHLoB4"><a href="#item-erRQwtT98aAqjNakA" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:390px">
-    <i id="icon-erRQwtT98aAqjNakA" class="glyphicon glyphicon-minus"></i>erRQwtT98aAqjNakA, 2020-11-06T07:49:34 (share)</a>
+    <i id="icon-erRQwtT98aAqjNakA" class="glyphicon glyphicon-minus"></i>erRQwtT98aAqjNakA, 2020-11-06T07:49:34 (model share)</a>
   <div class="list-group collapse show" id="item-erRQwtT98aAqjNakA"></div>
 </div>
 </div>
@@ -3784,9 +3709,9 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-drHLNAGyrwacXxa9D"><a href="#item-nQcBW3HiEhd9qsTYX" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:30px">
     <i id="icon-nQcBW3HiEhd9qsTYX" class="glyphicon glyphicon-chevron-right"></i>nQcBW3HiEhd9qsTYX, 2020-11-08T16:06:29 (check$1,correct,check,)</a>
   <div class="list-group collapse show" id="item-nQcBW3HiEhd9qsTYX"><a href="#item-uJ92BLuqXPLjaiytm" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:40px">
-    <i id="icon-uJ92BLuqXPLjaiytm" class="glyphicon glyphicon-chevron-right"></i>uJ92BLuqXPLjaiytm, 2020-11-08T16:18:10 (share)</a>
+    <i id="icon-uJ92BLuqXPLjaiytm" class="glyphicon glyphicon-chevron-right"></i>uJ92BLuqXPLjaiytm, 2020-11-08T16:18:10 (model share)</a>
   <div class="list-group collapse show" id="item-uJ92BLuqXPLjaiytm"><a href="#item-DiG5XZ2Lcf33CQYf2" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:50px">
-    <i id="icon-DiG5XZ2Lcf33CQYf2" class="glyphicon glyphicon-minus"></i>DiG5XZ2Lcf33CQYf2, 2020-11-08T16:18:16 (share)</a>
+    <i id="icon-DiG5XZ2Lcf33CQYf2" class="glyphicon glyphicon-minus"></i>DiG5XZ2Lcf33CQYf2, 2020-11-08T16:18:16 (model share)</a>
   <div class="list-group collapse show" id="item-DiG5XZ2Lcf33CQYf2"></div>
 </div>
 </div>

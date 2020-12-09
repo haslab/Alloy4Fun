@@ -9,25 +9,32 @@
 </head>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-<h1>SGfC5MjAijZfMQZPs (2020-12-04)</h1>
+<h1>SGfC5MjAijZfMQZPs (2020-12-09)</h1>
 <h2>Meta-data</h2>
 <dl><dt>Challenge name</dt><dd>unknown</dd>
 <dt>Creation time</dt><dd>2020-11-14</dd>
 <dt># sub-challenges</dt><dd>3</dd>
 <dt>Metric catalog</dt><dd>Example metric catalog</dd>
 </dl><h2>Overall metric statistics</h2>
-Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total entries</dt><dd>1100</dd>
-<dt>Total executions</dt><dd>746</dd>
+Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total model entries</dt><dd>1100</dd>
+<dt>Total executions</dt><dd>1081</dd>
+<dt>Total shares</dt><dd>19</dd>
 <dt>Total error messages</dt><dd>350</dd>
 <dt>Total warning messages</dt><dd>268</dd>
 <dt>Total solutions</dt><dd>732</d>
 <dt>Total sessions</dt><dd>42</d>
+<dt>Rejected due to server errors</dt><dd>0</d>
+<dt>Total instance entries</dt><dd>0</dd>
+<dt>Total link entries</dt><dd>18</dd>
 </dl><h2>Scalar metrics</h2>
 <dl><dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions with warnings</dt><dd>156</dd>
 <dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared. A session is a full branch of the derivation tree.">Number of shared sessions</dt><dd>12</dd>
 <dt data-toggle="tooltip" title="The size of the longest session. A session is a full branch of the derivation tree.">Longest session</dt><dd>82</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Shared models</dt><dd>19</dd>
+<dt data-toggle="tooltip" title="Counts the number Alloy runtime errors (in contrast to syntax errors). Counts all sat executions, may refer to commands other than those of the sub-challenges.">Alloy runtime errors</dt><dd>14</dd>
 <dt data-toggle="tooltip" title="Counts the number of incorrect executions. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions</dt><dd>515</dd>
 <dt data-toggle="tooltip" title="Counts the number of correct executions. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions</dt><dd>217</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models that had errors. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Shared errored models</dt><dd>1</dd>
 <dt data-toggle="tooltip" title="Counts the number of correct executions that produced warning messages. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions with warnings</dt><dd>15</dd>
 </dl><h2>Overall metrics</h2>
 <h3>Sessions by length</h3>
@@ -84,7 +91,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Warningsbytype, {
    type: 'bar',
    data: {
-      labels: ['== is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}','Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}','- is irrelevant since the right expression is redundant. Parent's relevant type = {_} Left type = {_} Right type = {_}','<: is irrelevant because the result is always empty. Left type = {_} Right type = {_}','This variable is unused.','Subset operator is redundant, because both subexpressions are always empty. Left type = {_} Right type = {_}','Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}','Subset operator is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}','& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}','Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}','The join operation here always yields an empty set. Left type = {_} Right type = {_}','The right expression of -> is irrelevant because the left expression is always empty. Left type = {_} Right type = {_}',],      datasets: [
+      labels: ['== is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}','Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}','- is irrelevant since the right expression is redundant. Parent\'s relevant type = {_} Left type = {_} Right type = {_}','<: is irrelevant because the result is always empty. Left type = {_} Right type = {_}','This variable is unused.','Subset operator is redundant, because both subexpressions are always empty. Left type = {_} Right type = {_}','Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}','Subset operator is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}','& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}','Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}','The join operation here always yields an empty set. Left type = {_} Right type = {_}','The right expression of -> is irrelevant because the left expression is always empty. Left type = {_} Right type = {_}',],      datasets: [
 {backgroundColor: '#6c79ad', data: [4,6,5,4,45,1,23,1,19,19,140,1,]},]},
    options: {
       responsive: false,
@@ -108,8 +115,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Entriesovertime, {
    type: 'bar',
    data: {
-      labels: ['2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03',],      datasets: [
-{backgroundColor: '#6c79ad', data: [2,0,0,0,0,963,15,10,0,27,43,2,17,0,0,0,0,11,6,4,]},]},
+      labels: ['2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08',],      datasets: [
+{backgroundColor: '#6c79ad', data: [1,0,0,0,0,950,14,9,0,26,43,2,17,0,0,0,0,10,6,3,0,0,0,0,0,]},]},
    options: {
       responsive: false,
       legend: {
@@ -132,8 +139,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Errorsbytype, {
    type: 'bar',
    data: {
-      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','Syntax error at the § character. HEX: \\ua7)','There are 1 possible tokens that can appear here: [ ','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".','Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.','There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','There are 1 possible tokens that can appear here: ' ','This must be a formula expression. Instead, it has the following possible type(s): {_}','There are 8 possible tokens that can appear here: NAME disj exh part private seq this var ','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 1 possible tokens that can appear here: ) ','!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','There are 3 possible tokens that can appear here: ,  : = ','^ can be used only with a binary relation. Instead, its possible type(s) are: {_}','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','The name _ cannot be found.','This expression failed to be typechecked line _ column _ filename=_.als','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This must be a set or relation. Instead, it has the following possible type(s): {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','There are 1 possible tokens that can appear here: } ','There are 1 possible tokens that can appear here: = ','There are 1 possible tokens that can appear here: NAME ','There are 3 possible tokens that can appear here: ,  { | ',],      datasets: [
-{backgroundColor: '#6c79ad', data: [8,1,3,10,2,2,14,1,2,76,7,14,8,12,3,1,23,43,7,43,6,24,27,2,1,1,9,]},]},
+      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','Syntax error at the § character. HEX: \\ua7)','There are 1 possible tokens that can appear here: [ ','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".','Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.','There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','There are 1 possible tokens that can appear here: \' ','This must be a formula expression. Instead, it has the following possible type(s): {_}','There are 8 possible tokens that can appear here: NAME disj exh part private seq this var ','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 1 possible tokens that can appear here: ) ','!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','There are 3 possible tokens that can appear here: ,  : = ','^ can be used only with a binary relation. Instead, its possible type(s) are: {_}','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This expression failed to be typechecked line _ column _ filename=_.als','The name _ cannot be found.','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This must be a set or relation. Instead, it has the following possible type(s): {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','There are 1 possible tokens that can appear here: } ','There are 1 possible tokens that can appear here: = ','There are 1 possible tokens that can appear here: NAME ','There are 3 possible tokens that can appear here: ,  { | ',],      datasets: [
+{backgroundColor: '#6c79ad', data: [8,1,3,10,2,2,14,1,2,76,7,14,8,12,3,1,23,7,43,43,6,24,27,2,1,1,9,]},]},
    options: {
       responsive: false,
       legend: {
@@ -151,15 +158,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h2>Overall metrics, classified</h2>
-<h3>Executions over time</h3>
-<p>The number of entries by date, classified by result. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
-<canvas id="Executionsovertime" ></canvas><script>
-  var chart = new Chart(Executionsovertime, {
+<h3>Execution results by sub-challenge</h3>
+<p>The number of successful executions by sub-challenge, classified by result. Errored executions are not considered.</p>
+<canvas id="Executionresultsbysubchallenge" ></canvas><script>
+  var chart = new Chart(Executionresultsbysubchallenge, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [1,0,0,0,0,459,9,0,0,15,18,0,8,0,0,0,0,4,1,0,]},{label: 'correct', backgroundColor: '#93e388', data: [0,0,0,0,0,165,1,8,0,5,19,1,5,0,0,0,0,6,4,3,]},{label: 'share', backgroundColor: '#6c79ad', data: [1,0,0,0,0,13,1,1,0,1,0,0,0,0,0,0,0,1,0,1,]},{label: 'error', backgroundColor: '#f06779', data: [0,0,0,0,0,326,4,1,0,6,6,1,4,0,0,0,0,0,1,0,]},]},
+      labels: ['inv2ok','inv1ok','inv3ok',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [68,79,70,]},{label: 'SAT', backgroundColor: '#f0e878', data: [116,209,190,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -190,15 +197,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Execution results by sub-challenge</h3>
-<p>The number of successful executions by sub-challenge, classified by result. Errored executions are not considered.</p>
-<canvas id="Executionresultsbysubchallenge" ></canvas><script>
-  var chart = new Chart(Executionresultsbysubchallenge, {
+</script><h3>Executions over time classified</h3>
+<p>The number of entries by date, classified by result. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
+<canvas id="Executionsovertimeclassified" ></canvas><script>
+  var chart = new Chart(Executionsovertimeclassified, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['inv2ok','inv1ok','inv3ok',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [116,209,190,]},{label: 'correct', backgroundColor: '#93e388', data: [68,79,70,]},]},
+      labels: ['2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,0,0,0,165,1,8,0,5,19,1,5,0,0,0,0,6,4,3,0,0,0,0,0,]},{label: 'ERROR', backgroundColor: '#f06779', data: [0,0,0,0,0,326,4,1,0,6,6,1,4,0,0,0,0,0,1,0,0,0,0,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [1,0,0,0,0,459,9,0,0,15,18,0,8,0,0,0,0,4,1,0,0,0,0,0,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -269,132 +276,16 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h2>Metrics by sub-challenge, classified</h2>
-<h3>Size in 10s of nodes</h3>
-<p>The number of executions, for a particular challenge, by the size of a command AST in tens of nodes, grouped by result.</p>
-<h4>inv2ok</h4>
-<canvas id="Sizeinsofnodesinvok" ></canvas><script>
-  var chart = new Chart(Sizeinsofnodesinvok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1','2','3','4',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [3,31,77,5,0,]},{label: 'correct', backgroundColor: '#93e388', data: [0,9,58,0,1,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv1ok</h4>
-<canvas id="Sizeinsofnodesinvok" ></canvas><script>
-  var chart = new Chart(Sizeinsofnodesinvok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['1','2','3','4',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [57,10,12,0,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [119,74,14,2,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv3ok</h4>
-<canvas id="Sizeinsofnodesinvok" ></canvas><script>
-  var chart = new Chart(Sizeinsofnodesinvok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['1','2','3','4','5',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [2,105,51,26,6,]},{label: 'correct', backgroundColor: '#93e388', data: [0,55,7,8,0,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h3>Number of disj quantifications</h3>
+<h3>Number of disj quantifications</h3>
 <p>The number of executions, for a particular challenge, by the number of occurring disjoint first-order quantifications, grouped by result.</p>
 <h4>inv2ok</h4>
-<canvas id="Numberofdisjquantificationsinvok" ></canvas><script>
-  var chart = new Chart(Numberofdisjquantificationsinvok, {
+<canvas id="Numberofdisjquantificationsinv2ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv2ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [68,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [116,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [68,]},{label: 'SAT', backgroundColor: '#f0e878', data: [116,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -426,13 +317,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv1ok</h4>
-<canvas id="Numberofdisjquantificationsinvok" ></canvas><script>
-  var chart = new Chart(Numberofdisjquantificationsinvok, {
+<canvas id="Numberofdisjquantificationsinv1ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv1ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [70,9,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [205,4,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [70,9,]},{label: 'SAT', backgroundColor: '#f0e878', data: [205,4,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -464,13 +355,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3ok</h4>
-<canvas id="Numberofdisjquantificationsinvok" ></canvas><script>
-  var chart = new Chart(Numberofdisjquantificationsinvok, {
+<canvas id="Numberofdisjquantificationsinv3ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv3ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [60,10,0,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [172,17,1,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [60,10,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [172,17,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -504,13 +395,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Number multiplicity arrows</h3>
 <p>The number of executions, for a particular challenge, by the number of occurring multiplicity arrow tests, grouped by result.</p>
 <h4>inv2ok</h4>
-<canvas id="Numbermultiplicityarrowsinvok" ></canvas><script>
-  var chart = new Chart(Numbermultiplicityarrowsinvok, {
+<canvas id="Numbermultiplicityarrowsinv2ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv2ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [68,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [116,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [68,]},{label: 'SAT', backgroundColor: '#f0e878', data: [116,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -542,13 +433,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv1ok</h4>
-<canvas id="Numbermultiplicityarrowsinvok" ></canvas><script>
-  var chart = new Chart(Numbermultiplicityarrowsinvok, {
+<canvas id="Numbermultiplicityarrowsinv1ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv1ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [79,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [209,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [79,]},{label: 'SAT', backgroundColor: '#f0e878', data: [209,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -580,13 +471,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3ok</h4>
-<canvas id="Numbermultiplicityarrowsinvok" ></canvas><script>
-  var chart = new Chart(Numbermultiplicityarrowsinvok, {
+<canvas id="Numbermultiplicityarrowsinv3ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv3ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [70,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [190,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [70,]},{label: 'SAT', backgroundColor: '#f0e878', data: [190,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -620,13 +511,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Number of binary temporal operators</h3>
 <p>The number of executions, for a particular challenge, by the number of occurring binary temporal operators, grouped by result..</p>
 <h4>inv2ok</h4>
-<canvas id="Numberofbinarytemporaloperatorsinvok" ></canvas><script>
-  var chart = new Chart(Numberofbinarytemporaloperatorsinvok, {
+<canvas id="Numberofbinarytemporaloperatorsinv2ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv2ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [68,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [116,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [68,]},{label: 'SAT', backgroundColor: '#f0e878', data: [116,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -658,13 +549,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv1ok</h4>
-<canvas id="Numberofbinarytemporaloperatorsinvok" ></canvas><script>
-  var chart = new Chart(Numberofbinarytemporaloperatorsinvok, {
+<canvas id="Numberofbinarytemporaloperatorsinv1ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv1ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [79,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [209,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [79,]},{label: 'SAT', backgroundColor: '#f0e878', data: [209,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -696,13 +587,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3ok</h4>
-<canvas id="Numberofbinarytemporaloperatorsinvok" ></canvas><script>
-  var chart = new Chart(Numberofbinarytemporaloperatorsinvok, {
+<canvas id="Numberofbinarytemporaloperatorsinv3ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv3ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [70,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [190,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [70,]},{label: 'SAT', backgroundColor: '#f0e878', data: [190,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -736,13 +627,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Number of quantifiers</h3>
 <p>The number of executions, for a particular challenge, by the number of occurring first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
 <h4>inv2ok</h4>
-<canvas id="Numberofquantifiersinvok" ></canvas><script>
-  var chart = new Chart(Numberofquantifiersinvok, {
+<canvas id="Numberofquantifiersinv2ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv2ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [5,60,3,0,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [19,87,5,5,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [5,60,3,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [19,87,5,5,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -774,13 +665,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv1ok</h4>
-<canvas id="Numberofquantifiersinvok" ></canvas><script>
-  var chart = new Chart(Numberofquantifiersinvok, {
+<canvas id="Numberofquantifiersinv1ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv1ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3','4',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [8,69,2,0,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [47,137,24,1,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [8,69,2,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [47,137,24,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -812,129 +703,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3ok</h4>
-<canvas id="Numberofquantifiersinvok" ></canvas><script>
-  var chart = new Chart(Numberofquantifiersinvok, {
+<canvas id="Numberofquantifiersinv3ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv3ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3','4',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [6,120,53,11,]},{label: 'correct', backgroundColor: '#93e388', data: [0,65,4,1,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h3>Number of inverted navigation expressions</h3>
-<p>The number of executions, for a particular challenge, by the number of occurring expressions of the shape x.~r, grouped by result.</p>
-<h4>inv2ok</h4>
-<canvas id="Numberofinvertednavigationexpressionsinvok" ></canvas><script>
-  var chart = new Chart(Numberofinvertednavigationexpressionsinvok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1','2',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [68,0,0,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [111,4,1,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv1ok</h4>
-<canvas id="Numberofinvertednavigationexpressionsinvok" ></canvas><script>
-  var chart = new Chart(Numberofinvertednavigationexpressionsinvok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [68,11,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [208,1,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv3ok</h4>
-<canvas id="Numberofinvertednavigationexpressionsinvok" ></canvas><script>
-  var chart = new Chart(Numberofinvertednavigationexpressionsinvok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [62,8,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [190,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [0,65,4,1,]},{label: 'SAT', backgroundColor: '#f0e878', data: [6,120,53,11,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -968,13 +743,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Max nested temporal operator level</h3>
 <p>The number of executions, for a particular challenge, by the maximum nested level temporal operators, grouped by result.</p>
 <h4>inv2ok</h4>
-<canvas id="Maxnestedtemporaloperatorlevelinvok" ></canvas><script>
-  var chart = new Chart(Maxnestedtemporaloperatorlevelinvok, {
+<canvas id="Maxnestedtemporaloperatorlevelinv2ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv2ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [68,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [116,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [68,]},{label: 'SAT', backgroundColor: '#f0e878', data: [116,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1006,13 +781,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv1ok</h4>
-<canvas id="Maxnestedtemporaloperatorlevelinvok" ></canvas><script>
-  var chart = new Chart(Maxnestedtemporaloperatorlevelinvok, {
+<canvas id="Maxnestedtemporaloperatorlevelinv1ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv1ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [79,0,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [200,9,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [79,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [200,9,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1044,13 +819,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3ok</h4>
-<canvas id="Maxnestedtemporaloperatorlevelinvok" ></canvas><script>
-  var chart = new Chart(Maxnestedtemporaloperatorlevelinvok, {
+<canvas id="Maxnestedtemporaloperatorlevelinv3ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv3ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [70,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [190,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [70,]},{label: 'SAT', backgroundColor: '#f0e878', data: [190,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1084,13 +859,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Number of lone/one quantifiers</h3>
 <p>The number of executions, for a particular challenge, by the number of occurring lone/one quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
 <h4>inv2ok</h4>
-<canvas id="Numberofloneonequantifiersinvok" ></canvas><script>
-  var chart = new Chart(Numberofloneonequantifiersinvok, {
+<canvas id="Numberofloneonequantifiersinv2ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv2ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [68,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [116,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [68,]},{label: 'SAT', backgroundColor: '#f0e878', data: [116,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1122,13 +897,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv1ok</h4>
-<canvas id="Numberofloneonequantifiersinvok" ></canvas><script>
-  var chart = new Chart(Numberofloneonequantifiersinvok, {
+<canvas id="Numberofloneonequantifiersinv1ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv1ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [79,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [209,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [79,]},{label: 'SAT', backgroundColor: '#f0e878', data: [209,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1160,13 +935,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3ok</h4>
-<canvas id="Numberofloneonequantifiersinvok" ></canvas><script>
-  var chart = new Chart(Numberofloneonequantifiersinvok, {
+<canvas id="Numberofloneonequantifiersinv3ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv3ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [70,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [190,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [70,]},{label: 'SAT', backgroundColor: '#f0e878', data: [190,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1200,13 +975,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Max nested quantifier level</h3>
 <p>The number of executions, for a particular challenge, by the maximum nested level of first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
 <h4>inv2ok</h4>
-<canvas id="Maxnestedquantifierlevelinvok" ></canvas><script>
-  var chart = new Chart(Maxnestedquantifierlevelinvok, {
+<canvas id="Maxnestedquantifierlevelinv2ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv2ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [5,61,2,0,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [19,87,5,5,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [5,61,2,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [19,87,5,5,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1238,13 +1013,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv1ok</h4>
-<canvas id="Maxnestedquantifierlevelinvok" ></canvas><script>
-  var chart = new Chart(Maxnestedquantifierlevelinvok, {
+<canvas id="Maxnestedquantifierlevelinv1ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv1ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['1','2',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [78,1,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [185,24,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [78,1,]},{label: 'SAT', backgroundColor: '#f0e878', data: [185,24,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1276,13 +1051,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3ok</h4>
-<canvas id="Maxnestedquantifierlevelinvok" ></canvas><script>
-  var chart = new Chart(Maxnestedquantifierlevelinvok, {
+<canvas id="Maxnestedquantifierlevelinv3ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv3ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [65,4,1,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [130,49,11,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [65,4,1,]},{label: 'SAT', backgroundColor: '#f0e878', data: [130,49,11,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1317,7 +1092,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 <div class="just-padding">
 <div class="list-group list-group-root well">
 <a href="#item-SGfC5MjAijZfMQZPs" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:0px">
-    <i id="icon-SGfC5MjAijZfMQZPs" class="glyphicon glyphicon-chevron-right"></i>SGfC5MjAijZfMQZPs, 2020-11-14T13:50:56 (share)</a>
+    <i id="icon-SGfC5MjAijZfMQZPs" class="glyphicon glyphicon-chevron-right"></i>SGfC5MjAijZfMQZPs, 2020-11-14T13:50:56 (model share)</a>
   <div class="list-group collapse show" id="item-SGfC5MjAijZfMQZPs"><a href="#item-mJ22Xb9kPCsEsDZ27" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:10px">
     <i id="icon-mJ22Xb9kPCsEsDZ27" class="glyphicon glyphicon-minus"></i>mJ22Xb9kPCsEsDZ27, 2020-11-14T13:52:05 (inv1ok,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-mJ22Xb9kPCsEsDZ27"></div>
@@ -1368,7 +1143,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-Z6wZ9TkMqagajv3bH"><a href="#item-HRkF3uB6gkzh9XtoY" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:230px">
     <i id="icon-HRkF3uB6gkzh9XtoY" class="glyphicon glyphicon-chevron-right"></i>HRkF3uB6gkzh9XtoY, 2020-11-19T10:18:56 (inv2ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-HRkF3uB6gkzh9XtoY"><a href="#item-e3jq2Qfv2F9LxHaBS" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:240px">
-    <i id="icon-e3jq2Qfv2F9LxHaBS" class="glyphicon glyphicon-minus"></i>e3jq2Qfv2F9LxHaBS, 2020-11-19T10:19:53 (share)</a>
+    <i id="icon-e3jq2Qfv2F9LxHaBS" class="glyphicon glyphicon-minus"></i>e3jq2Qfv2F9LxHaBS, 2020-11-19T10:19:53 (model share)</a>
   <div class="list-group collapse show" id="item-e3jq2Qfv2F9LxHaBS"></div>
 </div>
 </div>
@@ -2089,7 +1864,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-g7Zq76GdAmwEWHcMb"><a href="#item-vrztv4W5SZPdPvw9y" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:250px">
     <i id="icon-vrztv4W5SZPdPvw9y" class="glyphicon glyphicon-chevron-right"></i>vrztv4W5SZPdPvw9y, 2020-11-19T10:56:30 (inv3ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-vrztv4W5SZPdPvw9y"><a href="#item-f3bLTbNqpJptpDCZH" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:260px">
-    <i id="icon-f3bLTbNqpJptpDCZH" class="glyphicon glyphicon-chevron-right"></i>f3bLTbNqpJptpDCZH, 2020-11-19T10:56:34 (share)</a>
+    <i id="icon-f3bLTbNqpJptpDCZH" class="glyphicon glyphicon-chevron-right"></i>f3bLTbNqpJptpDCZH, 2020-11-19T10:56:34 (model share)</a>
   <div class="list-group collapse show" id="item-f3bLTbNqpJptpDCZH"><a href="#item-tTqiYZRWBx53PmoJE" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:270px">
     <i id="icon-tTqiYZRWBx53PmoJE" class="glyphicon glyphicon-chevron-right"></i>tTqiYZRWBx53PmoJE, 2020-11-19T11:00:58 (This must be a formula expression. Instead, it has the following possible type(s): {this/Artigo->this/Pessoa->this/Valor})</a>
   <div class="list-group collapse show" id="item-tTqiYZRWBx53PmoJE"><a href="#item-ArepRrrZzJe9Lur5M" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:280px">
@@ -2097,7 +1872,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-ArepRrrZzJe9Lur5M"><a href="#item-xRFbrSNT9hao7PeQT" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:290px">
     <i id="icon-xRFbrSNT9hao7PeQT" class="glyphicon glyphicon-chevron-right"></i>xRFbrSNT9hao7PeQT, 2020-11-19T11:01:34 (inv3ok,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-xRFbrSNT9hao7PeQT"><a href="#item-8R7AiD3FyfWSWt5WB" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:300px">
-    <i id="icon-8R7AiD3FyfWSWt5WB" class="glyphicon glyphicon-chevron-right"></i>8R7AiD3FyfWSWt5WB, 2020-11-19T11:03:07 (share)</a>
+    <i id="icon-8R7AiD3FyfWSWt5WB" class="glyphicon glyphicon-chevron-right"></i>8R7AiD3FyfWSWt5WB, 2020-11-19T11:03:07 (model share)</a>
   <div class="list-group collapse show" id="item-8R7AiD3FyfWSWt5WB"><a href="#item-erZhkxxujZorm3gCx" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:310px">
     <i id="icon-erZhkxxujZorm3gCx" class="glyphicon glyphicon-minus"></i>erZhkxxujZorm3gCx, 2020-11-19T11:05:43 (inv3ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-erZhkxxujZorm3gCx"></div>
@@ -2297,7 +2072,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-FW63o8rJgDrQcz75b"><a href="#item-LAdtRb4byHKDJMHhQ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:300px">
     <i id="icon-LAdtRb4byHKDJMHhQ" class="glyphicon glyphicon-chevron-right"></i>LAdtRb4byHKDJMHhQ, 2020-11-19T10:39:48 (inv1ok,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-LAdtRb4byHKDJMHhQ"><a href="#item-Hu46BfamQ3L6BraQP" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:310px">
-    <i id="icon-Hu46BfamQ3L6BraQP" class="glyphicon glyphicon-minus"></i>Hu46BfamQ3L6BraQP, 2020-11-19T10:43:18 (share)</a>
+    <i id="icon-Hu46BfamQ3L6BraQP" class="glyphicon glyphicon-minus"></i>Hu46BfamQ3L6BraQP, 2020-11-19T10:43:18 (model share)</a>
   <div class="list-group collapse show" id="item-Hu46BfamQ3L6BraQP"></div>
 <a href="#item-HRHXF6uvpojwD7dcE" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:310px">
     <i id="icon-HRHXF6uvpojwD7dcE" class="glyphicon glyphicon-minus"></i>HRHXF6uvpojwD7dcE, 2020-11-19T11:23:02 (inv1ok,incorrect,check,)</a>
@@ -2492,7 +2267,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-z5RPiiPLuSvFXT4HX"><a href="#item-rY7txdPr8coMfnjvg" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:780px">
     <i id="icon-rY7txdPr8coMfnjvg" class="glyphicon glyphicon-chevron-right"></i>rY7txdPr8coMfnjvg, 2020-11-20T14:49:26 (inv3ok,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-rY7txdPr8coMfnjvg"><a href="#item-BkSZfFxgaMys4ksFD" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:790px">
-    <i id="icon-BkSZfFxgaMys4ksFD" class="glyphicon glyphicon-minus"></i>BkSZfFxgaMys4ksFD, 2020-11-20T14:50:37 (share)</a>
+    <i id="icon-BkSZfFxgaMys4ksFD" class="glyphicon glyphicon-minus"></i>BkSZfFxgaMys4ksFD, 2020-11-20T14:50:37 (model share)</a>
   <div class="list-group collapse show" id="item-BkSZfFxgaMys4ksFD"></div>
 <a href="#item-cAn5L2LuoGyyM42iB" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:790px">
     <i id="icon-cAn5L2LuoGyyM42iB" class="glyphicon glyphicon-chevron-right"></i>cAn5L2LuoGyyM42iB, 2020-11-20T14:50:39 (inv3ok,incorrect,check,)</a>
@@ -2872,7 +2647,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-Sn5X4WmHAtZgwe4rG"><a href="#item-6iYZEq3KkaSec7pvr" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:460px">
     <i id="icon-6iYZEq3KkaSec7pvr" class="glyphicon glyphicon-chevron-right"></i>6iYZEq3KkaSec7pvr, 2020-11-19T10:42:36 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Artigo} Right type = {this/Pessoa->this/Artigo})</a>
   <div class="list-group collapse show" id="item-6iYZEq3KkaSec7pvr"><a href="#item-2efTmYWHidLePpiQR" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:470px">
-    <i id="icon-2efTmYWHidLePpiQR" class="glyphicon glyphicon-minus"></i>2efTmYWHidLePpiQR, 2020-11-19T11:17:15 (share)</a>
+    <i id="icon-2efTmYWHidLePpiQR" class="glyphicon glyphicon-minus"></i>2efTmYWHidLePpiQR, 2020-11-19T11:17:15 (model share)</a>
   <div class="list-group collapse show" id="item-2efTmYWHidLePpiQR"></div>
 </div>
 </div>
@@ -2955,7 +2730,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-ThXn8zBQcQhSeZJo4"><a href="#item-iJK9Bb8E74w3My8Au" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:170px">
     <i id="icon-iJK9Bb8E74w3My8Au" class="glyphicon glyphicon-chevron-right"></i>iJK9Bb8E74w3My8Au, 2020-11-19T10:28:52 (inv2ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-iJK9Bb8E74w3My8Au"><a href="#item-tW9z9jWeZLiJgjWnL" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:180px">
-    <i id="icon-tW9z9jWeZLiJgjWnL" class="glyphicon glyphicon-minus"></i>tW9z9jWeZLiJgjWnL, 2020-11-19T10:29 (share)</a>
+    <i id="icon-tW9z9jWeZLiJgjWnL" class="glyphicon glyphicon-minus"></i>tW9z9jWeZLiJgjWnL, 2020-11-19T10:29 (model share)</a>
   <div class="list-group collapse show" id="item-tW9z9jWeZLiJgjWnL"></div>
 </div>
 </div>
@@ -3509,7 +3284,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-Qbun8KsL5RJhREysx"><a href="#item-GFLY3Xp6KWQHXs2E4" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:270px">
     <i id="icon-GFLY3Xp6KWQHXs2E4" class="glyphicon glyphicon-chevron-right"></i>GFLY3Xp6KWQHXs2E4, 2020-11-19T10:56:47 (inv3ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-GFLY3Xp6KWQHXs2E4"><a href="#item-xGZCst4TptxHvRguM" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:280px">
-    <i id="icon-xGZCst4TptxHvRguM" class="glyphicon glyphicon-minus"></i>xGZCst4TptxHvRguM, 2020-11-19T10:56:59 (share)</a>
+    <i id="icon-xGZCst4TptxHvRguM" class="glyphicon glyphicon-minus"></i>xGZCst4TptxHvRguM, 2020-11-19T10:56:59 (model share)</a>
   <div class="list-group collapse show" id="item-xGZCst4TptxHvRguM"></div>
 </div>
 </div>
@@ -3599,7 +3374,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-wBmYAdFWzT9oCyqyh"><a href="#item-6uY9asCR9WXd5LQeM" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:300px">
     <i id="icon-6uY9asCR9WXd5LQeM" class="glyphicon glyphicon-chevron-right"></i>6uY9asCR9WXd5LQeM, 2020-11-19T10:37:36 (inv3ok,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-6uY9asCR9WXd5LQeM"><a href="#item-qepmyu5qKeweSd5NZ" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:310px">
-    <i id="icon-qepmyu5qKeweSd5NZ" class="glyphicon glyphicon-chevron-right"></i>qepmyu5qKeweSd5NZ, 2020-11-19T10:37:55 (share)</a>
+    <i id="icon-qepmyu5qKeweSd5NZ" class="glyphicon glyphicon-chevron-right"></i>qepmyu5qKeweSd5NZ, 2020-11-19T10:37:55 (model share)</a>
   <div class="list-group collapse show" id="item-qepmyu5qKeweSd5NZ"><a href="#item-4sFJw3sMyydMZ8wXc" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:320px">
     <i id="icon-4sFJw3sMyydMZ8wXc" class="glyphicon glyphicon-chevron-right"></i>4sFJw3sMyydMZ8wXc, 2020-11-19T13:00:48 (inv1ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-4sFJw3sMyydMZ8wXc"><a href="#item-itW6MmXCz5e6auaFu" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:330px">
@@ -3623,7 +3398,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-N7JvfaBsvF7fYWu8E"><a href="#item-fmTYXjBQNK49LDvjX" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:330px">
     <i id="icon-fmTYXjBQNK49LDvjX" class="glyphicon glyphicon-chevron-right"></i>fmTYXjBQNK49LDvjX, 2020-11-19T10:40:28 (inv3ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-fmTYXjBQNK49LDvjX"><a href="#item-KY43mhidfsJj2Yaju" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:340px">
-    <i id="icon-KY43mhidfsJj2Yaju" class="glyphicon glyphicon-minus"></i>KY43mhidfsJj2Yaju, 2020-11-19T10:40:37 (share)</a>
+    <i id="icon-KY43mhidfsJj2Yaju" class="glyphicon glyphicon-minus"></i>KY43mhidfsJj2Yaju, 2020-11-19T10:40:37 (model share)</a>
   <div class="list-group collapse show" id="item-KY43mhidfsJj2Yaju"></div>
 <a href="#item-ZtFv4TKCeWScTBKrH" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:340px">
     <i id="icon-ZtFv4TKCeWScTBKrH" class="glyphicon glyphicon-chevron-right"></i>ZtFv4TKCeWScTBKrH, 2020-11-19T10:41:20 (inv3ok,correct,check,)</a>
@@ -3632,7 +3407,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-PdXEWtRNoen2ydC3s"><a href="#item-TTS2iLgKzyC6JnjK8" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:360px">
     <i id="icon-TTS2iLgKzyC6JnjK8" class="glyphicon glyphicon-chevron-right"></i>TTS2iLgKzyC6JnjK8, 2020-11-19T10:43:59 (inv3ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-TTS2iLgKzyC6JnjK8"><a href="#item-tfDGazQur87s62mnv" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:370px">
-    <i id="icon-tfDGazQur87s62mnv" class="glyphicon glyphicon-minus"></i>tfDGazQur87s62mnv, 2020-11-19T10:45:11 (share)</a>
+    <i id="icon-tfDGazQur87s62mnv" class="glyphicon glyphicon-minus"></i>tfDGazQur87s62mnv, 2020-11-19T10:45:11 (model share)</a>
   <div class="list-group collapse show" id="item-tfDGazQur87s62mnv"></div>
 <a href="#item-gvtEfFmHhZS9ibAJN" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:370px">
     <i id="icon-gvtEfFmHhZS9ibAJN" class="glyphicon glyphicon-chevron-right"></i>gvtEfFmHhZS9ibAJN, 2020-11-19T13:03:48 (This must be a formula expression. Instead, it has the following possible type(s): {this/Pessoa})</a>
@@ -3651,7 +3426,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-HFyfY3BRoqJEPiQDi"><a href="#item-Fzpg2G2m2eTteKity" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:440px">
     <i id="icon-Fzpg2G2m2eTteKity" class="glyphicon glyphicon-chevron-right"></i>Fzpg2G2m2eTteKity, 2020-11-19T13:17:39 (inv3ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-Fzpg2G2m2eTteKity"><a href="#item-55GkMhQ8YrSHF4Xrj" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:450px">
-    <i id="icon-55GkMhQ8YrSHF4Xrj" class="glyphicon glyphicon-chevron-right"></i>55GkMhQ8YrSHF4Xrj, 2020-11-19T13:17:40 (share)</a>
+    <i id="icon-55GkMhQ8YrSHF4Xrj" class="glyphicon glyphicon-chevron-right"></i>55GkMhQ8YrSHF4Xrj, 2020-11-19T13:17:40 (model share)</a>
   <div class="list-group collapse show" id="item-55GkMhQ8YrSHF4Xrj"><a href="#item-wzgf2D6JPvjs9uZsk" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:460px">
     <i id="icon-wzgf2D6JPvjs9uZsk" class="glyphicon glyphicon-chevron-right"></i>wzgf2D6JPvjs9uZsk, 2020-11-19T13:18:51 (inv1ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-wzgf2D6JPvjs9uZsk"><a href="#item-wrYromLgjKxLf3adY" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:470px">
@@ -3745,7 +3520,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-ERKxXt2yqJyQockqB"><a href="#item-PJMgyefqKKdBv2ZnN" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:130px">
     <i id="icon-PJMgyefqKKdBv2ZnN" class="glyphicon glyphicon-chevron-right"></i>PJMgyefqKKdBv2ZnN, 2020-11-19T10:40:56 (inv2ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-PJMgyefqKKdBv2ZnN"><a href="#item-kqpvqtfJ4cHbsRTwd" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:140px">
-    <i id="icon-kqpvqtfJ4cHbsRTwd" class="glyphicon glyphicon-chevron-right"></i>kqpvqtfJ4cHbsRTwd, 2020-11-19T10:54:09 (share)</a>
+    <i id="icon-kqpvqtfJ4cHbsRTwd" class="glyphicon glyphicon-chevron-right"></i>kqpvqtfJ4cHbsRTwd, 2020-11-19T10:54:09 (model share)</a>
   <div class="list-group collapse show" id="item-kqpvqtfJ4cHbsRTwd"><a href="#item-bHpP4deSfFNvK2Lg7" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:150px">
     <i id="icon-bHpP4deSfFNvK2Lg7" class="glyphicon glyphicon-chevron-right"></i>bHpP4deSfFNvK2Lg7, 2020-11-24T02:18:04 (inv1ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-bHpP4deSfFNvK2Lg7"><a href="#item-c5oTFC9JmJ95Jem9P" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:160px">
@@ -4085,7 +3860,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-SHaAc8jedrMnLh4Se"><a href="#item-dDfXJ9fmhcucP4vYW" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:630px">
     <i id="icon-dDfXJ9fmhcucP4vYW" class="glyphicon glyphicon-chevron-right"></i>dDfXJ9fmhcucP4vYW, 2020-11-19T11:49:44 (inv3ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-dDfXJ9fmhcucP4vYW"><a href="#item-KAHtNBWkzwnCfgocr" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:640px">
-    <i id="icon-KAHtNBWkzwnCfgocr" class="glyphicon glyphicon-chevron-right"></i>KAHtNBWkzwnCfgocr, 2020-11-19T11:49:49 (share)</a>
+    <i id="icon-KAHtNBWkzwnCfgocr" class="glyphicon glyphicon-chevron-right"></i>KAHtNBWkzwnCfgocr, 2020-11-19T11:49:49 (model share)</a>
   <div class="list-group collapse show" id="item-KAHtNBWkzwnCfgocr"><a href="#item-sAf6oawYsYgXHMJEv" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:650px">
     <i id="icon-sAf6oawYsYgXHMJEv" class="glyphicon glyphicon-chevron-right"></i>sAf6oawYsYgXHMJEv, 2020-11-19T12:59:41 (inv1ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-sAf6oawYsYgXHMJEv"><a href="#item-aANujQyFLKNuBbZ3s" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:660px">
@@ -4286,7 +4061,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-9SpmBNxXzDRWvZgmx"><a href="#item-cNBu7zHMJYoF3sLS7" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:90px">
     <i id="icon-cNBu7zHMJYoF3sLS7" class="glyphicon glyphicon-chevron-right"></i>cNBu7zHMJYoF3sLS7, 2020-11-21T12:37:44 (inv1ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-cNBu7zHMJYoF3sLS7"><a href="#item-mrpuJzLSCNYHgKFDk" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:100px">
-    <i id="icon-mrpuJzLSCNYHgKFDk" class="glyphicon glyphicon-chevron-right"></i>mrpuJzLSCNYHgKFDk, 2020-11-21T12:37:49 (share)</a>
+    <i id="icon-mrpuJzLSCNYHgKFDk" class="glyphicon glyphicon-chevron-right"></i>mrpuJzLSCNYHgKFDk, 2020-11-21T12:37:49 (model share)</a>
   <div class="list-group collapse show" id="item-mrpuJzLSCNYHgKFDk"><a href="#item-sMv6vfT8uBAzGKYSn" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:110px">
     <i id="icon-sMv6vfT8uBAzGKYSn" class="glyphicon glyphicon-chevron-right"></i>sMv6vfT8uBAzGKYSn, 2020-11-23T13:26:11 (inv1ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-sMv6vfT8uBAzGKYSn"><a href="#item-sQRHuYcMder6QBSrg" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:120px">
@@ -4351,7 +4126,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-JmRGyY3w9wL3KhnGo"><a href="#item-sMMXdkcNizsZCwWwk" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:190px">
     <i id="icon-sMMXdkcNizsZCwWwk" class="glyphicon glyphicon-chevron-right"></i>sMMXdkcNizsZCwWwk, 2020-11-23T19:57:22 (inv3ok,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-sMMXdkcNizsZCwWwk"><a href="#item-g6ZGxZ7X26oFLMLt3" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:200px">
-    <i id="icon-g6ZGxZ7X26oFLMLt3" class="glyphicon glyphicon-chevron-right"></i>g6ZGxZ7X26oFLMLt3, 2020-11-23T19:57:38 (share)</a>
+    <i id="icon-g6ZGxZ7X26oFLMLt3" class="glyphicon glyphicon-chevron-right"></i>g6ZGxZ7X26oFLMLt3, 2020-11-23T19:57:38 (model share)</a>
   <div class="list-group collapse show" id="item-g6ZGxZ7X26oFLMLt3"><a href="#item-HG4uByfxwwTE8mtjC" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:210px">
     <i id="icon-HG4uByfxwwTE8mtjC" class="glyphicon glyphicon-chevron-right"></i>HG4uByfxwwTE8mtjC, 2020-12-01T19:28:07 (inv3ok,correct,check,The join operation here always yields an empty set. Left type = {this/Pessoa->this/Artigo} Right type = {this/Pessoa})</a>
   <div class="list-group collapse show" id="item-HG4uByfxwwTE8mtjC"><a href="#item-ZTcr9LGt5Mh8goZMp" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:220px">
@@ -4367,7 +4142,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-BDnqHZDwx5tvzaw5k"><a href="#item-rqZTMRzbXFieEkJ65" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:270px">
     <i id="icon-rqZTMRzbXFieEkJ65" class="glyphicon glyphicon-chevron-right"></i>rqZTMRzbXFieEkJ65, 2020-12-01T19:34:19 (inv2ok,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-rqZTMRzbXFieEkJ65"><a href="#item-t2tkHKvzjkrAjci8e" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:280px">
-    <i id="icon-t2tkHKvzjkrAjci8e" class="glyphicon glyphicon-chevron-right"></i>t2tkHKvzjkrAjci8e, 2020-12-01T19:34:29 (share)</a>
+    <i id="icon-t2tkHKvzjkrAjci8e" class="glyphicon glyphicon-chevron-right"></i>t2tkHKvzjkrAjci8e, 2020-12-01T19:34:29 (model share)</a>
   <div class="list-group collapse show" id="item-t2tkHKvzjkrAjci8e"><a href="#item-9Lgooj4GsbtB6qmKo" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:290px">
     <i id="icon-9Lgooj4GsbtB6qmKo" class="glyphicon glyphicon-chevron-right"></i>9Lgooj4GsbtB6qmKo, 2020-12-02T17:43:42 (inv1ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-9Lgooj4GsbtB6qmKo"><a href="#item-KkZ2JcZDxeC6TSY5h" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:300px">
@@ -4387,7 +4162,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-TyYYMMpKArFi7g9gi"><a href="#item-SKBMdvX6jgeEX4xKb" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:370px">
     <i id="icon-SKBMdvX6jgeEX4xKb" class="glyphicon glyphicon-chevron-right"></i>SKBMdvX6jgeEX4xKb, 2020-12-03T11:23:52 (inv3ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-SKBMdvX6jgeEX4xKb"><a href="#item-5rgQ72JDnXDF5Yzvu" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:380px">
-    <i id="icon-5rgQ72JDnXDF5Yzvu" class="glyphicon glyphicon-minus"></i>5rgQ72JDnXDF5Yzvu, 2020-12-03T11:23:56 (share)</a>
+    <i id="icon-5rgQ72JDnXDF5Yzvu" class="glyphicon glyphicon-minus"></i>5rgQ72JDnXDF5Yzvu, 2020-12-03T11:23:56 (model share)</a>
   <div class="list-group collapse show" id="item-5rgQ72JDnXDF5Yzvu"></div>
 </div>
 </div>

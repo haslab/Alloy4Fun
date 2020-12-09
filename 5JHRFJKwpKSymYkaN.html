@@ -9,25 +9,32 @@
 </head>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-<h1>5JHRFJKwpKSymYkaN (2020-12-04)</h1>
+<h1>5JHRFJKwpKSymYkaN (2020-12-09)</h1>
 <h2>Meta-data</h2>
 <dl><dt>Challenge name</dt><dd>unknown</dd>
 <dt>Creation time</dt><dd>2020-11-30</dd>
 <dt># sub-challenges</dt><dd>10</dd>
 <dt>Metric catalog</dt><dd>Example metric catalog</dd>
 </dl><h2>Overall metric statistics</h2>
-Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total entries</dt><dd>1254</dd>
-<dt>Total executions</dt><dd>855</dd>
+Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total model entries</dt><dd>1254</dd>
+<dt>Total executions</dt><dd>1233</dd>
+<dt>Total shares</dt><dd>21</dd>
 <dt>Total error messages</dt><dd>391</dd>
 <dt>Total warning messages</dt><dd>13</dd>
 <dt>Total solutions</dt><dd>843</d>
 <dt>Total sessions</dt><dd>47</d>
+<dt>Rejected due to server errors</dt><dd>0</d>
+<dt>Total instance entries</dt><dd>0</dd>
+<dt>Total link entries</dt><dd>3</dd>
 </dl><h2>Scalar metrics</h2>
 <dl><dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions with warnings</dt><dd>4</dd>
 <dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared. A session is a full branch of the derivation tree.">Number of shared sessions</dt><dd>18</dd>
 <dt data-toggle="tooltip" title="The size of the longest session. A session is a full branch of the derivation tree.">Longest session</dt><dd>66</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Shared models</dt><dd>21</dd>
+<dt data-toggle="tooltip" title="Counts the number Alloy runtime errors (in contrast to syntax errors). Counts all sat executions, may refer to commands other than those of the sub-challenges.">Alloy runtime errors</dt><dd>12</dd>
 <dt data-toggle="tooltip" title="Counts the number of incorrect executions. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions</dt><dd>286</dd>
 <dt data-toggle="tooltip" title="Counts the number of correct executions. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions</dt><dd>557</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models that had errors. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Shared errored models</dt><dd>1</dd>
 <dt data-toggle="tooltip" title="Counts the number of correct executions that produced warning messages. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions with warnings</dt><dd>4</dd>
 </dl><h2>Overall metrics</h2>
 <h3>Sessions by length</h3>
@@ -108,8 +115,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Entriesovertime, {
    type: 'bar',
    data: {
-      labels: ['2020-11-30','2020-12-01','2020-12-02','2020-12-03',],      datasets: [
-{backgroundColor: '#6c79ad', data: [26,0,827,0,]},]},
+      labels: ['2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08',],      datasets: [
+{backgroundColor: '#6c79ad', data: [24,0,812,0,397,0,0,0,0,]},]},
    options: {
       responsive: false,
       legend: {
@@ -132,7 +139,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Errorsbytype, {
    type: 'bar',
    data: {
-      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','There are 5 possible tokens that can appear here: enum fun let open pred ','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".','Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.','There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','This must be a formula expression. Instead, it has the following possible type(s): {_}','There are 1 possible tokens that can appear here: ' ','There are 8 possible tokens that can appear here: NAME disj exh part private seq this var ','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 1 possible tokens that can appear here: ) ','!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This must be a unary set, but instead it has the following possible type(s): {_}','There are 22 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~ ','There are 3 possible tokens that can appear here: ,  : = ','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','The name _ cannot be found.','This expression failed to be typechecked line _ column _ filename=_.als','The predicate/function "invl" cannot be found.','& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This must be an integer expression. Instead, it has the following possible type(s): {_}','This must be a set or relation. Instead, it has the following possible type(s): {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~ ','There are 31 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq set some sum this univ { ~ ','There are 3 possible tokens that can appear here: ,  { | ',],      datasets: [
+      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','There are 5 possible tokens that can appear here: enum fun let open pred ','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".','Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.','There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','This must be a formula expression. Instead, it has the following possible type(s): {_}','There are 1 possible tokens that can appear here: \' ','There are 8 possible tokens that can appear here: NAME disj exh part private seq this var ','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 1 possible tokens that can appear here: ) ','!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This must be a unary set, but instead it has the following possible type(s): {_}','There are 22 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~ ','There are 3 possible tokens that can appear here: ,  : = ','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','The name _ cannot be found.','This expression failed to be typechecked line _ column _ filename=_.als','The predicate/function "invl" cannot be found.','& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This must be an integer expression. Instead, it has the following possible type(s): {_}','This must be a set or relation. Instead, it has the following possible type(s): {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~ ','There are 31 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq set some sum this univ { ~ ','There are 3 possible tokens that can appear here: ,  { | ',],      datasets: [
 {backgroundColor: '#6c79ad', data: [18,2,10,11,23,12,5,51,1,2,1,1,18,1,1,3,26,6,68,15,1,12,1,32,55,1,1,13,]},]},
    options: {
       responsive: false,
@@ -151,15 +158,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h2>Overall metrics, classified</h2>
-<h3>Executions over time</h3>
-<p>The number of entries by date, classified by result. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
-<canvas id="Executionsovertime" ></canvas><script>
-  var chart = new Chart(Executionsovertime, {
+<h3>Execution results by sub-challenge</h3>
+<p>The number of successful executions by sub-challenge, classified by result. Errored executions are not considered.</p>
+<canvas id="Executionresultsbysubchallenge" ></canvas><script>
+  var chart = new Chart(Executionresultsbysubchallenge, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['2020-11-30','2020-12-01','2020-12-02','2020-12-03',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [7,0,166,0,]},{label: 'correct', backgroundColor: '#93e388', data: [14,0,368,0,]},{label: 'share', backgroundColor: '#6c79ad', data: [2,0,15,0,]},{label: 'error', backgroundColor: '#f06779', data: [3,0,278,0,]},]},
+      labels: ['inv6Ok','inv5Ok','inv8Ok','inv7Ok','inv10Ok','inv9Ok','inv2Ok','inv1Ok','inv4Ok','inv3Ok',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [56,46,7,39,35,47,11,24,9,6,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [62,52,57,57,56,60,43,97,37,36,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -190,15 +197,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Execution results by sub-challenge</h3>
-<p>The number of successful executions by sub-challenge, classified by result. Errored executions are not considered.</p>
-<canvas id="Executionresultsbysubchallenge" ></canvas><script>
-  var chart = new Chart(Executionresultsbysubchallenge, {
+</script><h3>Executions over time classified</h3>
+<p>The number of entries by date, classified by result. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
+<canvas id="Executionsovertimeclassified" ></canvas><script>
+  var chart = new Chart(Executionsovertimeclassified, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['inv6Ok','inv5Ok','inv8Ok','inv7Ok','inv10Ok','inv9Ok','inv2Ok','inv1Ok','inv4Ok','inv3Ok',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [56,46,7,39,35,47,11,24,9,6,]},{label: 'correct', backgroundColor: '#93e388', data: [62,52,57,57,56,60,43,97,37,36,]},]},
+      labels: ['2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08',],      datasets: [
+{label: 'ERROR', backgroundColor: '#f06779', data: [3,0,278,0,109,0,0,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [7,0,166,0,113,0,0,0,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [14,0,368,0,175,0,0,0,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -269,398 +276,16 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h2>Metrics by sub-challenge, classified</h2>
-<h3>Size in 10s of nodes</h3>
-<p>The number of executions, for a particular challenge, by the size of a command AST in tens of nodes, grouped by result.</p>
-<h4>inv6Ok</h4>
-<canvas id="SizeinsofnodesinvOk" ></canvas><script>
-  var chart = new Chart(SizeinsofnodesinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1','2','3',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [4,21,27,4,]},{label: 'correct', backgroundColor: '#93e388', data: [0,44,17,1,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv5Ok</h4>
-<canvas id="SizeinsofnodesinvOk" ></canvas><script>
-  var chart = new Chart(SizeinsofnodesinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1','2','3',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [1,36,8,1,]},{label: 'correct', backgroundColor: '#93e388', data: [0,52,0,0,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv8Ok</h4>
-<canvas id="SizeinsofnodesinvOk" ></canvas><script>
-  var chart = new Chart(SizeinsofnodesinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1','2',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [3,4,0,]},{label: 'correct', backgroundColor: '#93e388', data: [25,29,3,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv7Ok</h4>
-<canvas id="SizeinsofnodesinvOk" ></canvas><script>
-  var chart = new Chart(SizeinsofnodesinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1','2',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [1,28,10,]},{label: 'correct', backgroundColor: '#93e388', data: [0,32,25,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv10Ok</h4>
-<canvas id="SizeinsofnodesinvOk" ></canvas><script>
-  var chart = new Chart(SizeinsofnodesinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['1','2','3',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [2,21,12,]},{label: 'correct', backgroundColor: '#93e388', data: [0,24,32,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv9Ok</h4>
-<canvas id="SizeinsofnodesinvOk" ></canvas><script>
-  var chart = new Chart(SizeinsofnodesinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1','2','3','4',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [3,27,16,1,0,]},{label: 'correct', backgroundColor: '#93e388', data: [3,23,32,0,2,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv2Ok</h4>
-<canvas id="SizeinsofnodesinvOk" ></canvas><script>
-  var chart = new Chart(SizeinsofnodesinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [9,2,]},{label: 'correct', backgroundColor: '#93e388', data: [13,30,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv1Ok</h4>
-<canvas id="SizeinsofnodesinvOk" ></canvas><script>
-  var chart = new Chart(SizeinsofnodesinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [20,4,]},{label: 'correct', backgroundColor: '#93e388', data: [53,44,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv4Ok</h4>
-<canvas id="SizeinsofnodesinvOk" ></canvas><script>
-  var chart = new Chart(SizeinsofnodesinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [4,5,]},{label: 'correct', backgroundColor: '#93e388', data: [12,25,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv3Ok</h4>
-<canvas id="SizeinsofnodesinvOk" ></canvas><script>
-  var chart = new Chart(SizeinsofnodesinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [3,3,]},{label: 'correct', backgroundColor: '#93e388', data: [11,25,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h3>Number of disj quantifications</h3>
+<h3>Number of disj quantifications</h3>
 <p>The number of executions, for a particular challenge, by the number of occurring disjoint first-order quantifications, grouped by result.</p>
 <h4>inv6Ok</h4>
-<canvas id="NumberofdisjquantificationsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofdisjquantificationsinvOk, {
+<canvas id="Numberofdisjquantificationsinv6Ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv6Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [62,0,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [53,3,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [53,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [62,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -692,13 +317,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv5Ok</h4>
-<canvas id="NumberofdisjquantificationsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofdisjquantificationsinvOk, {
+<canvas id="Numberofdisjquantificationsinv5Ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv5Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [52,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [46,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [46,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [52,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -730,13 +355,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv8Ok</h4>
-<canvas id="NumberofdisjquantificationsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofdisjquantificationsinvOk, {
+<canvas id="Numberofdisjquantificationsinv8Ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv8Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [7,]},{label: 'correct', backgroundColor: '#93e388', data: [57,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [57,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -768,13 +393,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv7Ok</h4>
-<canvas id="NumberofdisjquantificationsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofdisjquantificationsinvOk, {
+<canvas id="Numberofdisjquantificationsinv7Ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv7Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [39,]},{label: 'correct', backgroundColor: '#93e388', data: [57,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [39,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [57,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -806,13 +431,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv10Ok</h4>
-<canvas id="NumberofdisjquantificationsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofdisjquantificationsinvOk, {
+<canvas id="Numberofdisjquantificationsinv10Ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv10Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [35,]},{label: 'correct', backgroundColor: '#93e388', data: [56,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [35,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [56,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -844,13 +469,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv9Ok</h4>
-<canvas id="NumberofdisjquantificationsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofdisjquantificationsinvOk, {
+<canvas id="Numberofdisjquantificationsinv9Ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv9Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [60,0,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [45,2,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [45,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [60,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -882,13 +507,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv2Ok</h4>
-<canvas id="NumberofdisjquantificationsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofdisjquantificationsinvOk, {
+<canvas id="Numberofdisjquantificationsinv2Ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv2Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [11,]},{label: 'correct', backgroundColor: '#93e388', data: [43,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [11,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -920,13 +545,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv1Ok</h4>
-<canvas id="NumberofdisjquantificationsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofdisjquantificationsinvOk, {
+<canvas id="Numberofdisjquantificationsinv1Ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv1Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [24,]},{label: 'correct', backgroundColor: '#93e388', data: [97,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [24,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [97,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -958,13 +583,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv4Ok</h4>
-<canvas id="NumberofdisjquantificationsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofdisjquantificationsinvOk, {
+<canvas id="Numberofdisjquantificationsinv4Ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv4Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [9,]},{label: 'correct', backgroundColor: '#93e388', data: [37,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [9,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [37,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -996,13 +621,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3Ok</h4>
-<canvas id="NumberofdisjquantificationsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofdisjquantificationsinvOk, {
+<canvas id="Numberofdisjquantificationsinv3Ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv3Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [6,]},{label: 'correct', backgroundColor: '#93e388', data: [36,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [6,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [36,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1036,13 +661,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Number multiplicity arrows</h3>
 <p>The number of executions, for a particular challenge, by the number of occurring multiplicity arrow tests, grouped by result.</p>
 <h4>inv6Ok</h4>
-<canvas id="NumbermultiplicityarrowsinvOk" ></canvas><script>
-  var chart = new Chart(NumbermultiplicityarrowsinvOk, {
+<canvas id="Numbermultiplicityarrowsinv6Ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv6Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['1','2',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [60,2,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [56,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [56,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [60,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1074,13 +699,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv5Ok</h4>
-<canvas id="NumbermultiplicityarrowsinvOk" ></canvas><script>
-  var chart = new Chart(NumbermultiplicityarrowsinvOk, {
+<canvas id="Numbermultiplicityarrowsinv5Ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv5Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [52,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [46,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [46,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [52,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1112,13 +737,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv8Ok</h4>
-<canvas id="NumbermultiplicityarrowsinvOk" ></canvas><script>
-  var chart = new Chart(NumbermultiplicityarrowsinvOk, {
+<canvas id="Numbermultiplicityarrowsinv8Ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv8Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [7,]},{label: 'correct', backgroundColor: '#93e388', data: [57,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [57,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1150,13 +775,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv7Ok</h4>
-<canvas id="NumbermultiplicityarrowsinvOk" ></canvas><script>
-  var chart = new Chart(NumbermultiplicityarrowsinvOk, {
+<canvas id="Numbermultiplicityarrowsinv7Ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv7Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [39,]},{label: 'correct', backgroundColor: '#93e388', data: [57,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [39,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [57,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1188,13 +813,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv10Ok</h4>
-<canvas id="NumbermultiplicityarrowsinvOk" ></canvas><script>
-  var chart = new Chart(NumbermultiplicityarrowsinvOk, {
+<canvas id="Numbermultiplicityarrowsinv10Ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv10Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [35,]},{label: 'correct', backgroundColor: '#93e388', data: [56,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [35,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [56,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1226,13 +851,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv9Ok</h4>
-<canvas id="NumbermultiplicityarrowsinvOk" ></canvas><script>
-  var chart = new Chart(NumbermultiplicityarrowsinvOk, {
+<canvas id="Numbermultiplicityarrowsinv9Ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv9Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [60,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [47,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [60,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1264,13 +889,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv2Ok</h4>
-<canvas id="NumbermultiplicityarrowsinvOk" ></canvas><script>
-  var chart = new Chart(NumbermultiplicityarrowsinvOk, {
+<canvas id="Numbermultiplicityarrowsinv2Ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv2Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [11,]},{label: 'correct', backgroundColor: '#93e388', data: [43,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [11,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1302,13 +927,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv1Ok</h4>
-<canvas id="NumbermultiplicityarrowsinvOk" ></canvas><script>
-  var chart = new Chart(NumbermultiplicityarrowsinvOk, {
+<canvas id="Numbermultiplicityarrowsinv1Ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv1Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [24,]},{label: 'correct', backgroundColor: '#93e388', data: [97,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [24,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [97,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1340,13 +965,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv4Ok</h4>
-<canvas id="NumbermultiplicityarrowsinvOk" ></canvas><script>
-  var chart = new Chart(NumbermultiplicityarrowsinvOk, {
+<canvas id="Numbermultiplicityarrowsinv4Ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv4Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [9,]},{label: 'correct', backgroundColor: '#93e388', data: [37,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [9,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [37,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1378,13 +1003,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3Ok</h4>
-<canvas id="NumbermultiplicityarrowsinvOk" ></canvas><script>
-  var chart = new Chart(NumbermultiplicityarrowsinvOk, {
+<canvas id="Numbermultiplicityarrowsinv3Ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv3Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [6,]},{label: 'correct', backgroundColor: '#93e388', data: [36,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [6,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [36,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1418,13 +1043,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Number of binary temporal operators</h3>
 <p>The number of executions, for a particular challenge, by the number of occurring binary temporal operators, grouped by result..</p>
 <h4>inv6Ok</h4>
-<canvas id="NumberofbinarytemporaloperatorsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofbinarytemporaloperatorsinvOk, {
+<canvas id="Numberofbinarytemporaloperatorsinv6Ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv6Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [62,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [56,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [56,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [62,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1456,13 +1081,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv5Ok</h4>
-<canvas id="NumberofbinarytemporaloperatorsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofbinarytemporaloperatorsinvOk, {
+<canvas id="Numberofbinarytemporaloperatorsinv5Ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv5Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [52,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [46,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [46,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [52,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1494,13 +1119,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv8Ok</h4>
-<canvas id="NumberofbinarytemporaloperatorsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofbinarytemporaloperatorsinvOk, {
+<canvas id="Numberofbinarytemporaloperatorsinv8Ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv8Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [7,]},{label: 'correct', backgroundColor: '#93e388', data: [57,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [57,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1532,13 +1157,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv7Ok</h4>
-<canvas id="NumberofbinarytemporaloperatorsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofbinarytemporaloperatorsinvOk, {
+<canvas id="Numberofbinarytemporaloperatorsinv7Ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv7Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [39,]},{label: 'correct', backgroundColor: '#93e388', data: [57,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [39,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [57,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1570,13 +1195,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv10Ok</h4>
-<canvas id="NumberofbinarytemporaloperatorsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofbinarytemporaloperatorsinvOk, {
+<canvas id="Numberofbinarytemporaloperatorsinv10Ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv10Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [35,]},{label: 'correct', backgroundColor: '#93e388', data: [56,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [35,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [56,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1608,13 +1233,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv9Ok</h4>
-<canvas id="NumberofbinarytemporaloperatorsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofbinarytemporaloperatorsinvOk, {
+<canvas id="Numberofbinarytemporaloperatorsinv9Ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv9Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [60,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [47,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [60,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1646,13 +1271,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv2Ok</h4>
-<canvas id="NumberofbinarytemporaloperatorsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofbinarytemporaloperatorsinvOk, {
+<canvas id="Numberofbinarytemporaloperatorsinv2Ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv2Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [11,]},{label: 'correct', backgroundColor: '#93e388', data: [43,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [11,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1684,13 +1309,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv1Ok</h4>
-<canvas id="NumberofbinarytemporaloperatorsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofbinarytemporaloperatorsinvOk, {
+<canvas id="Numberofbinarytemporaloperatorsinv1Ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv1Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [24,]},{label: 'correct', backgroundColor: '#93e388', data: [97,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [24,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [97,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1722,13 +1347,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv4Ok</h4>
-<canvas id="NumberofbinarytemporaloperatorsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofbinarytemporaloperatorsinvOk, {
+<canvas id="Numberofbinarytemporaloperatorsinv4Ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv4Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [9,]},{label: 'correct', backgroundColor: '#93e388', data: [37,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [9,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [37,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1760,13 +1385,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3Ok</h4>
-<canvas id="NumberofbinarytemporaloperatorsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofbinarytemporaloperatorsinvOk, {
+<canvas id="Numberofbinarytemporaloperatorsinv3Ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv3Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [6,]},{label: 'correct', backgroundColor: '#93e388', data: [36,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [6,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [36,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1800,13 +1425,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Number of quantifiers</h3>
 <p>The number of executions, for a particular challenge, by the number of occurring first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
 <h4>inv6Ok</h4>
-<canvas id="NumberofquantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersinvOk, {
+<canvas id="Numberofquantifiersinv6Ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv6Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [3,59,0,0,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [22,33,0,1,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [22,33,0,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [3,59,0,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1838,13 +1463,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv5Ok</h4>
-<canvas id="NumberofquantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersinvOk, {
+<canvas id="Numberofquantifiersinv5Ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv5Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [15,37,0,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [23,21,2,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [23,21,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [15,37,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1876,13 +1501,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv8Ok</h4>
-<canvas id="NumberofquantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersinvOk, {
+<canvas id="Numberofquantifiersinv8Ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv8Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [3,4,0,]},{label: 'correct', backgroundColor: '#93e388', data: [25,30,2,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [3,4,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [25,30,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1914,13 +1539,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv7Ok</h4>
-<canvas id="NumberofquantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersinvOk, {
+<canvas id="Numberofquantifiersinv7Ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv7Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [3,36,]},{label: 'correct', backgroundColor: '#93e388', data: [4,53,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [3,36,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [4,53,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1952,13 +1577,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv10Ok</h4>
-<canvas id="NumberofquantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersinvOk, {
+<canvas id="Numberofquantifiersinv10Ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv10Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [5,48,3,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [11,21,3,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [11,21,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [5,48,3,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1990,13 +1615,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv9Ok</h4>
-<canvas id="NumberofquantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersinvOk, {
+<canvas id="Numberofquantifiersinv9Ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv9Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [4,40,3,]},{label: 'correct', backgroundColor: '#93e388', data: [3,55,2,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,40,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [3,55,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2028,13 +1653,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv2Ok</h4>
-<canvas id="NumberofquantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersinvOk, {
+<canvas id="Numberofquantifiersinv2Ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv2Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [11,0,]},{label: 'correct', backgroundColor: '#93e388', data: [13,30,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [11,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [13,30,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2066,13 +1691,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv1Ok</h4>
-<canvas id="NumberofquantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersinvOk, {
+<canvas id="Numberofquantifiersinv1Ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv1Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [21,3,]},{label: 'correct', backgroundColor: '#93e388', data: [53,44,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [21,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [53,44,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2104,13 +1729,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv4Ok</h4>
-<canvas id="NumberofquantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersinvOk, {
+<canvas id="Numberofquantifiersinv4Ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv4Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [6,3,]},{label: 'correct', backgroundColor: '#93e388', data: [12,25,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [6,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [12,25,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2142,395 +1767,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3Ok</h4>
-<canvas id="NumberofquantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersinvOk, {
+<canvas id="Numberofquantifiersinv3Ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv3Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [2,4,]},{label: 'correct', backgroundColor: '#93e388', data: [11,25,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h3>Number of inverted navigation expressions</h3>
-<p>The number of executions, for a particular challenge, by the number of occurring expressions of the shape x.~r, grouped by result.</p>
-<h4>inv6Ok</h4>
-<canvas id="NumberofinvertednavigationexpressionsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [62,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [56,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv5Ok</h4>
-<canvas id="NumberofinvertednavigationexpressionsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [52,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [46,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv8Ok</h4>
-<canvas id="NumberofinvertednavigationexpressionsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [7,]},{label: 'correct', backgroundColor: '#93e388', data: [57,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv7Ok</h4>
-<canvas id="NumberofinvertednavigationexpressionsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [39,]},{label: 'correct', backgroundColor: '#93e388', data: [57,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv10Ok</h4>
-<canvas id="NumberofinvertednavigationexpressionsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [35,]},{label: 'correct', backgroundColor: '#93e388', data: [56,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv9Ok</h4>
-<canvas id="NumberofinvertednavigationexpressionsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [60,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [47,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv2Ok</h4>
-<canvas id="NumberofinvertednavigationexpressionsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [11,]},{label: 'correct', backgroundColor: '#93e388', data: [43,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv1Ok</h4>
-<canvas id="NumberofinvertednavigationexpressionsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [24,]},{label: 'correct', backgroundColor: '#93e388', data: [97,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv4Ok</h4>
-<canvas id="NumberofinvertednavigationexpressionsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [9,]},{label: 'correct', backgroundColor: '#93e388', data: [37,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv3Ok</h4>
-<canvas id="NumberofinvertednavigationexpressionsinvOk" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsinvOk, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [6,]},{label: 'correct', backgroundColor: '#93e388', data: [36,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [11,25,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2564,13 +1807,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Max nested temporal operator level</h3>
 <p>The number of executions, for a particular challenge, by the maximum nested level temporal operators, grouped by result.</p>
 <h4>inv6Ok</h4>
-<canvas id="MaxnestedtemporaloperatorlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedtemporaloperatorlevelinvOk, {
+<canvas id="Maxnestedtemporaloperatorlevelinv6Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv6Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [62,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [56,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [56,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [62,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2602,13 +1845,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv5Ok</h4>
-<canvas id="MaxnestedtemporaloperatorlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedtemporaloperatorlevelinvOk, {
+<canvas id="Maxnestedtemporaloperatorlevelinv5Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv5Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [52,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [46,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [46,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [52,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2640,13 +1883,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv8Ok</h4>
-<canvas id="MaxnestedtemporaloperatorlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedtemporaloperatorlevelinvOk, {
+<canvas id="Maxnestedtemporaloperatorlevelinv8Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv8Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [7,]},{label: 'correct', backgroundColor: '#93e388', data: [57,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [57,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2678,13 +1921,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv7Ok</h4>
-<canvas id="MaxnestedtemporaloperatorlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedtemporaloperatorlevelinvOk, {
+<canvas id="Maxnestedtemporaloperatorlevelinv7Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv7Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [39,]},{label: 'correct', backgroundColor: '#93e388', data: [57,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [39,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [57,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2716,13 +1959,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv10Ok</h4>
-<canvas id="MaxnestedtemporaloperatorlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedtemporaloperatorlevelinvOk, {
+<canvas id="Maxnestedtemporaloperatorlevelinv10Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv10Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [35,]},{label: 'correct', backgroundColor: '#93e388', data: [56,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [35,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [56,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2754,13 +1997,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv9Ok</h4>
-<canvas id="MaxnestedtemporaloperatorlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedtemporaloperatorlevelinvOk, {
+<canvas id="Maxnestedtemporaloperatorlevelinv9Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv9Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [60,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [47,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [60,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2792,13 +2035,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv2Ok</h4>
-<canvas id="MaxnestedtemporaloperatorlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedtemporaloperatorlevelinvOk, {
+<canvas id="Maxnestedtemporaloperatorlevelinv2Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv2Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [11,]},{label: 'correct', backgroundColor: '#93e388', data: [43,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [11,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2830,13 +2073,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv1Ok</h4>
-<canvas id="MaxnestedtemporaloperatorlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedtemporaloperatorlevelinvOk, {
+<canvas id="Maxnestedtemporaloperatorlevelinv1Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv1Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [24,]},{label: 'correct', backgroundColor: '#93e388', data: [97,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [24,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [97,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2868,13 +2111,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv4Ok</h4>
-<canvas id="MaxnestedtemporaloperatorlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedtemporaloperatorlevelinvOk, {
+<canvas id="Maxnestedtemporaloperatorlevelinv4Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv4Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [9,]},{label: 'correct', backgroundColor: '#93e388', data: [37,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [9,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [37,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2906,13 +2149,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3Ok</h4>
-<canvas id="MaxnestedtemporaloperatorlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedtemporaloperatorlevelinvOk, {
+<canvas id="Maxnestedtemporaloperatorlevelinv3Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv3Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [6,]},{label: 'correct', backgroundColor: '#93e388', data: [36,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [6,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [36,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2946,13 +2189,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Number of lone/one quantifiers</h3>
 <p>The number of executions, for a particular challenge, by the number of occurring lone/one quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
 <h4>inv6Ok</h4>
-<canvas id="NumberofloneonequantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofloneonequantifiersinvOk, {
+<canvas id="Numberofloneonequantifiersinv6Ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv6Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [62,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [56,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [56,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [62,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2984,13 +2227,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv5Ok</h4>
-<canvas id="NumberofloneonequantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofloneonequantifiersinvOk, {
+<canvas id="Numberofloneonequantifiersinv5Ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv5Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [52,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [46,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [46,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [52,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3022,13 +2265,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv8Ok</h4>
-<canvas id="NumberofloneonequantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofloneonequantifiersinvOk, {
+<canvas id="Numberofloneonequantifiersinv8Ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv8Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [7,]},{label: 'correct', backgroundColor: '#93e388', data: [57,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [57,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3060,13 +2303,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv7Ok</h4>
-<canvas id="NumberofloneonequantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofloneonequantifiersinvOk, {
+<canvas id="Numberofloneonequantifiersinv7Ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv7Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [39,]},{label: 'correct', backgroundColor: '#93e388', data: [57,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [39,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [57,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3098,13 +2341,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv10Ok</h4>
-<canvas id="NumberofloneonequantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofloneonequantifiersinvOk, {
+<canvas id="Numberofloneonequantifiersinv10Ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv10Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [35,]},{label: 'correct', backgroundColor: '#93e388', data: [56,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [35,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [56,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3136,13 +2379,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv9Ok</h4>
-<canvas id="NumberofloneonequantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofloneonequantifiersinvOk, {
+<canvas id="Numberofloneonequantifiersinv9Ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv9Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [60,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [47,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [60,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3174,13 +2417,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv2Ok</h4>
-<canvas id="NumberofloneonequantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofloneonequantifiersinvOk, {
+<canvas id="Numberofloneonequantifiersinv2Ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv2Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [11,]},{label: 'correct', backgroundColor: '#93e388', data: [43,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [11,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3212,13 +2455,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv1Ok</h4>
-<canvas id="NumberofloneonequantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofloneonequantifiersinvOk, {
+<canvas id="Numberofloneonequantifiersinv1Ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv1Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [24,]},{label: 'correct', backgroundColor: '#93e388', data: [97,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [24,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [97,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3250,13 +2493,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv4Ok</h4>
-<canvas id="NumberofloneonequantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofloneonequantifiersinvOk, {
+<canvas id="Numberofloneonequantifiersinv4Ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv4Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [9,]},{label: 'correct', backgroundColor: '#93e388', data: [37,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [9,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [37,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3288,13 +2531,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3Ok</h4>
-<canvas id="NumberofloneonequantifiersinvOk" ></canvas><script>
-  var chart = new Chart(NumberofloneonequantifiersinvOk, {
+<canvas id="Numberofloneonequantifiersinv3Ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv3Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [3,3,]},{label: 'correct', backgroundColor: '#93e388', data: [36,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [3,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [36,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3328,13 +2571,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h3>Max nested quantifier level</h3>
 <p>The number of executions, for a particular challenge, by the maximum nested level of first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
 <h4>inv6Ok</h4>
-<canvas id="MaxnestedquantifierlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedquantifierlevelinvOk, {
+<canvas id="Maxnestedquantifierlevelinv6Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv6Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [3,59,0,0,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [22,33,0,1,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [22,33,0,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [3,59,0,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3366,13 +2609,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv5Ok</h4>
-<canvas id="MaxnestedquantifierlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedquantifierlevelinvOk, {
+<canvas id="Maxnestedquantifierlevelinv5Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv5Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [15,37,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [23,23,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [23,23,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [15,37,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3404,13 +2647,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv8Ok</h4>
-<canvas id="MaxnestedquantifierlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedquantifierlevelinvOk, {
+<canvas id="Maxnestedquantifierlevelinv8Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv8Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [3,4,]},{label: 'correct', backgroundColor: '#93e388', data: [25,32,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [3,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [25,32,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3442,13 +2685,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv7Ok</h4>
-<canvas id="MaxnestedquantifierlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedquantifierlevelinvOk, {
+<canvas id="Maxnestedquantifierlevelinv7Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv7Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [3,36,]},{label: 'correct', backgroundColor: '#93e388', data: [4,53,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [3,36,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [4,53,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3480,13 +2723,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv10Ok</h4>
-<canvas id="MaxnestedquantifierlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedquantifierlevelinvOk, {
+<canvas id="Maxnestedquantifierlevelinv10Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv10Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['1','2',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [32,3,]},{label: 'correct', backgroundColor: '#93e388', data: [53,3,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [32,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [53,3,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3518,13 +2761,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv9Ok</h4>
-<canvas id="MaxnestedquantifierlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedquantifierlevelinvOk, {
+<canvas id="Maxnestedquantifierlevelinv9Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv9Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [4,40,3,]},{label: 'correct', backgroundColor: '#93e388', data: [3,57,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,40,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [3,57,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3556,13 +2799,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv2Ok</h4>
-<canvas id="MaxnestedquantifierlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedquantifierlevelinvOk, {
+<canvas id="Maxnestedquantifierlevelinv2Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv2Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [11,0,]},{label: 'correct', backgroundColor: '#93e388', data: [13,30,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [11,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [13,30,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3594,13 +2837,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv1Ok</h4>
-<canvas id="MaxnestedquantifierlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedquantifierlevelinvOk, {
+<canvas id="Maxnestedquantifierlevelinv1Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv1Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [21,3,]},{label: 'correct', backgroundColor: '#93e388', data: [53,44,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [21,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [53,44,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3632,13 +2875,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv4Ok</h4>
-<canvas id="MaxnestedquantifierlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedquantifierlevelinvOk, {
+<canvas id="Maxnestedquantifierlevelinv4Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv4Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [6,3,]},{label: 'correct', backgroundColor: '#93e388', data: [12,25,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [6,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [12,25,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3670,13 +2913,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3Ok</h4>
-<canvas id="MaxnestedquantifierlevelinvOk" ></canvas><script>
-  var chart = new Chart(MaxnestedquantifierlevelinvOk, {
+<canvas id="Maxnestedquantifierlevelinv3Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv3Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [2,4,]},{label: 'correct', backgroundColor: '#93e388', data: [11,25,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [11,25,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3711,7 +2954,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 <div class="just-padding">
 <div class="list-group list-group-root well">
 <a href="#item-5JHRFJKwpKSymYkaN" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:0px">
-    <i id="icon-5JHRFJKwpKSymYkaN" class="glyphicon glyphicon-chevron-right"></i>5JHRFJKwpKSymYkaN, 2020-11-30T17:14:45 (share)</a>
+    <i id="icon-5JHRFJKwpKSymYkaN" class="glyphicon glyphicon-chevron-right"></i>5JHRFJKwpKSymYkaN, 2020-11-30T17:14:45 (model share)</a>
   <div class="list-group collapse show" id="item-5JHRFJKwpKSymYkaN"><a href="#item-gbffGKqhWdtB8u9eP" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:10px">
     <i id="icon-gbffGKqhWdtB8u9eP" class="glyphicon glyphicon-chevron-right"></i>gbffGKqhWdtB8u9eP, 2020-11-30T19:30:49 (inv1Ok,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-gbffGKqhWdtB8u9eP"><a href="#item-uaJMoAKHTTqL8wAnD" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:20px">
@@ -3761,9 +3004,9 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-Lkpe4LRXcZuQz57ZF"><a href="#item-Pty7uQhWMw98iNCzN" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:240px">
     <i id="icon-Pty7uQhWMw98iNCzN" class="glyphicon glyphicon-chevron-right"></i>Pty7uQhWMw98iNCzN, 2020-11-30T19:45:05 (inv10Ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-Pty7uQhWMw98iNCzN"><a href="#item-Mo2ExtGTwQGKtmGyg" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:250px">
-    <i id="icon-Mo2ExtGTwQGKtmGyg" class="glyphicon glyphicon-chevron-right"></i>Mo2ExtGTwQGKtmGyg, 2020-11-30T19:47:52 (share)</a>
+    <i id="icon-Mo2ExtGTwQGKtmGyg" class="glyphicon glyphicon-chevron-right"></i>Mo2ExtGTwQGKtmGyg, 2020-11-30T19:47:52 (model share)</a>
   <div class="list-group collapse show" id="item-Mo2ExtGTwQGKtmGyg"><a href="#item-pe4WLtEzF6HWc2xt2" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:260px">
-    <i id="icon-pe4WLtEzF6HWc2xt2" class="glyphicon glyphicon-minus"></i>pe4WLtEzF6HWc2xt2, 2020-12-04T15:34:09 (share)</a>
+    <i id="icon-pe4WLtEzF6HWc2xt2" class="glyphicon glyphicon-minus"></i>pe4WLtEzF6HWc2xt2, 2020-12-04T15:34:09 (model share)</a>
   <div class="list-group collapse show" id="item-pe4WLtEzF6HWc2xt2"></div>
 <a href="#item-EHp9fYz9k8kmSZFTL" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:260px">
     <i id="icon-EHp9fYz9k8kmSZFTL" class="glyphicon glyphicon-minus"></i>EHp9fYz9k8kmSZFTL, 2020-12-04T15:34:13 (inv1Ok,correct,check,)</a>
@@ -3836,7 +3079,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-Ddp85Z2LPWXdzX5rm"><a href="#item-hpjDz9C9dqbcZwLqY" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:210px">
     <i id="icon-hpjDz9C9dqbcZwLqY" class="glyphicon glyphicon-chevron-right"></i>hpjDz9C9dqbcZwLqY, 2020-12-02T10:16:41 (inv10Ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-hpjDz9C9dqbcZwLqY"><a href="#item-bB98gmEGBNYwm2bRb" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:220px">
-    <i id="icon-bB98gmEGBNYwm2bRb" class="glyphicon glyphicon-chevron-right"></i>bB98gmEGBNYwm2bRb, 2020-12-02T10:17:21 (share)</a>
+    <i id="icon-bB98gmEGBNYwm2bRb" class="glyphicon glyphicon-chevron-right"></i>bB98gmEGBNYwm2bRb, 2020-12-02T10:17:21 (model share)</a>
   <div class="list-group collapse show" id="item-bB98gmEGBNYwm2bRb"><a href="#item-RmGcTYRMykuqyBQet" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:230px">
     <i id="icon-RmGcTYRMykuqyBQet" class="glyphicon glyphicon-chevron-right"></i>RmGcTYRMykuqyBQet, 2020-12-02T10:19:40 (inv1Ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-RmGcTYRMykuqyBQet"><a href="#item-3nmGZDiCP8TodPyZi" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:240px">
@@ -4293,7 +3536,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-9sab2rfpBRZfNzKBF"><a href="#item-vENuyHCdfQFscWSWE" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:260px">
     <i id="icon-vENuyHCdfQFscWSWE" class="glyphicon glyphicon-chevron-right"></i>vENuyHCdfQFscWSWE, 2020-12-02T10:14:20 (inv10Ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-vENuyHCdfQFscWSWE"><a href="#item-5rqcGCqsELF4qWgAp" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:270px">
-    <i id="icon-5rqcGCqsELF4qWgAp" class="glyphicon glyphicon-minus"></i>5rqcGCqsELF4qWgAp, 2020-12-02T16:16:02 (share)</a>
+    <i id="icon-5rqcGCqsELF4qWgAp" class="glyphicon glyphicon-minus"></i>5rqcGCqsELF4qWgAp, 2020-12-02T16:16:02 (model share)</a>
   <div class="list-group collapse show" id="item-5rqcGCqsELF4qWgAp"></div>
 </div>
 </div>
@@ -4533,7 +3776,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-sLxmqNyZQnD4NphJe"><a href="#item-gmZ4AdrW6CapPJnCj" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:650px">
     <i id="icon-gmZ4AdrW6CapPJnCj" class="glyphicon glyphicon-chevron-right"></i>gmZ4AdrW6CapPJnCj, 2020-12-02T10:12:27 (inv10Ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-gmZ4AdrW6CapPJnCj"><a href="#item-wY6MAYXd3JjCh2phZ" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:660px">
-    <i id="icon-wY6MAYXd3JjCh2phZ" class="glyphicon glyphicon-minus"></i>wY6MAYXd3JjCh2phZ, 2020-12-02T10:17:32 (share)</a>
+    <i id="icon-wY6MAYXd3JjCh2phZ" class="glyphicon glyphicon-minus"></i>wY6MAYXd3JjCh2phZ, 2020-12-02T10:17:32 (model share)</a>
   <div class="list-group collapse show" id="item-wY6MAYXd3JjCh2phZ"></div>
 </div>
 </div>
@@ -4736,7 +3979,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </div>
 </div>
 <a href="#item-B8AQuSyunLMuYh69q" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:10px">
-    <i id="icon-B8AQuSyunLMuYh69q" class="glyphicon glyphicon-chevron-right"></i>B8AQuSyunLMuYh69q, 2020-12-02T11:10:53 (share)</a>
+    <i id="icon-B8AQuSyunLMuYh69q" class="glyphicon glyphicon-chevron-right"></i>B8AQuSyunLMuYh69q, 2020-12-02T11:10:53 (model share)</a>
   <div class="list-group collapse show" id="item-B8AQuSyunLMuYh69q"><a href="#item-ZLAomfjiNtebakE6B" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:20px">
     <i id="icon-ZLAomfjiNtebakE6B" class="glyphicon glyphicon-minus"></i>ZLAomfjiNtebakE6B, 2020-12-02T11:11:02 (inv1Ok,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-ZLAomfjiNtebakE6B"></div>
@@ -4746,7 +3989,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-bLfvb9k8BhKcXZRK7"><a href="#item-3BiGLyTbsQL2Lh6Jk" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:20px">
     <i id="icon-3BiGLyTbsQL2Lh6Jk" class="glyphicon glyphicon-chevron-right"></i>3BiGLyTbsQL2Lh6Jk, 2020-12-02T11:52:22 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)</a>
   <div class="list-group collapse show" id="item-3BiGLyTbsQL2Lh6Jk"><a href="#item-MSJWheFdEn3D2ENSm" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:30px">
-    <i id="icon-MSJWheFdEn3D2ENSm" class="glyphicon glyphicon-minus"></i>MSJWheFdEn3D2ENSm, 2020-12-02T12:01:32 (share)</a>
+    <i id="icon-MSJWheFdEn3D2ENSm" class="glyphicon glyphicon-minus"></i>MSJWheFdEn3D2ENSm, 2020-12-02T12:01:32 (model share)</a>
   <div class="list-group collapse show" id="item-MSJWheFdEn3D2ENSm"></div>
 </div>
 </div>
@@ -4849,7 +4092,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-oxFm2ZJXtgXZ78jGo"><a href="#item-KbxAsqa22h9D5ZhsD" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:490px">
     <i id="icon-KbxAsqa22h9D5ZhsD" class="glyphicon glyphicon-chevron-right"></i>KbxAsqa22h9D5ZhsD, 2020-12-02T12:17:20 (inv10Ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-KbxAsqa22h9D5ZhsD"><a href="#item-CydpAD8j9WcJccPtZ" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:500px">
-    <i id="icon-CydpAD8j9WcJccPtZ" class="glyphicon glyphicon-minus"></i>CydpAD8j9WcJccPtZ, 2020-12-02T12:17:21 (share)</a>
+    <i id="icon-CydpAD8j9WcJccPtZ" class="glyphicon glyphicon-minus"></i>CydpAD8j9WcJccPtZ, 2020-12-02T12:17:21 (model share)</a>
   <div class="list-group collapse show" id="item-CydpAD8j9WcJccPtZ"></div>
 </div>
 </div>
@@ -4909,7 +4152,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-nndygQm8aAnttHKhC"><a href="#item-RAQTk2yTbnLiAusWy" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:40px">
     <i id="icon-RAQTk2yTbnLiAusWy" class="glyphicon glyphicon-chevron-right"></i>RAQTk2yTbnLiAusWy, 2020-12-02T11:30:10 (inv1Ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-RAQTk2yTbnLiAusWy"><a href="#item-BamaRJBtapiqoeEew" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:50px">
-    <i id="icon-BamaRJBtapiqoeEew" class="glyphicon glyphicon-minus"></i>BamaRJBtapiqoeEew, 2020-12-02T11:31 (share)</a>
+    <i id="icon-BamaRJBtapiqoeEew" class="glyphicon glyphicon-minus"></i>BamaRJBtapiqoeEew, 2020-12-02T11:31 (model share)</a>
   <div class="list-group collapse show" id="item-BamaRJBtapiqoeEew"></div>
 <a href="#item-8A2ebnZJ8xKiiHx77" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:50px">
     <i id="icon-8A2ebnZJ8xKiiHx77" class="glyphicon glyphicon-chevron-right"></i>8A2ebnZJ8xKiiHx77, 2020-12-02T11:33:19 (The name "file" cannot be found.)</a>
@@ -5155,7 +4398,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 <a href="#item-aWLboHsJQaquePrWT" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:10px">
     <i id="icon-aWLboHsJQaquePrWT" class="glyphicon glyphicon-chevron-right"></i>aWLboHsJQaquePrWT, 2020-12-02T11:24 (inv1Ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-aWLboHsJQaquePrWT"><a href="#item-aK9ZgKBuK2JnkRYoQ" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:20px">
-    <i id="icon-aK9ZgKBuK2JnkRYoQ" class="glyphicon glyphicon-minus"></i>aK9ZgKBuK2JnkRYoQ, 2020-12-02T11:24:09 (share)</a>
+    <i id="icon-aK9ZgKBuK2JnkRYoQ" class="glyphicon glyphicon-minus"></i>aK9ZgKBuK2JnkRYoQ, 2020-12-02T11:24:09 (model share)</a>
   <div class="list-group collapse show" id="item-aK9ZgKBuK2JnkRYoQ"></div>
 <a href="#item-PALjHf7Q3pEBMvZqg" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:20px">
     <i id="icon-PALjHf7Q3pEBMvZqg" class="glyphicon glyphicon-chevron-right"></i>PALjHf7Q3pEBMvZqg, 2020-12-02T11:30:53 (inv1Ok,correct,check,)</a>
@@ -5346,7 +4589,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-FBk5NrbuwtYBKB4nm"><a href="#item-WHYRvr4g3GXc7vRvG" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:200px">
     <i id="icon-WHYRvr4g3GXc7vRvG" class="glyphicon glyphicon-chevron-right"></i>WHYRvr4g3GXc7vRvG, 2020-12-02T12:16:20 (inv10Ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-WHYRvr4g3GXc7vRvG"><a href="#item-bb3twaK3tf4Crw8iz" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:210px">
-    <i id="icon-bb3twaK3tf4Crw8iz" class="glyphicon glyphicon-minus"></i>bb3twaK3tf4Crw8iz, 2020-12-02T12:18:18 (share)</a>
+    <i id="icon-bb3twaK3tf4Crw8iz" class="glyphicon glyphicon-minus"></i>bb3twaK3tf4Crw8iz, 2020-12-02T12:18:18 (model share)</a>
   <div class="list-group collapse show" id="item-bb3twaK3tf4Crw8iz"></div>
 </div>
 </div>
@@ -5664,11 +4907,11 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-pGgttrp3JaabWnwFu"><a href="#item-MnYTxmJbMAAk5AnXm" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:530px">
     <i id="icon-MnYTxmJbMAAk5AnXm" class="glyphicon glyphicon-chevron-right"></i>MnYTxmJbMAAk5AnXm, 2020-12-02T12:17:47 (inv1Ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-MnYTxmJbMAAk5AnXm"><a href="#item-xCK4gZWHsRsrzQBEa" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:540px">
-    <i id="icon-xCK4gZWHsRsrzQBEa" class="glyphicon glyphicon-chevron-right"></i>xCK4gZWHsRsrzQBEa, 2020-12-02T12:17:51 (share)</a>
+    <i id="icon-xCK4gZWHsRsrzQBEa" class="glyphicon glyphicon-chevron-right"></i>xCK4gZWHsRsrzQBEa, 2020-12-02T12:17:51 (model share)</a>
   <div class="list-group collapse show" id="item-xCK4gZWHsRsrzQBEa"><a href="#item-JYdCresHas64kQNQu" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:550px">
     <i id="icon-JYdCresHas64kQNQu" class="glyphicon glyphicon-chevron-right"></i>JYdCresHas64kQNQu, 2020-12-02T12:19:23 (inv6Ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-JYdCresHas64kQNQu"><a href="#item-JqvX3B95paBWHWs6o" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:560px">
-    <i id="icon-JqvX3B95paBWHWs6o" class="glyphicon glyphicon-minus"></i>JqvX3B95paBWHWs6o, 2020-12-02T12:20:29 (share)</a>
+    <i id="icon-JqvX3B95paBWHWs6o" class="glyphicon glyphicon-minus"></i>JqvX3B95paBWHWs6o, 2020-12-02T12:20:29 (model share)</a>
   <div class="list-group collapse show" id="item-JqvX3B95paBWHWs6o"></div>
 </div>
 </div>
@@ -5893,7 +5136,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-HxqsjyojKaoiRiw9b"><a href="#item-rY42PcEfbbjPZtDG9" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:100px">
     <i id="icon-rY42PcEfbbjPZtDG9" class="glyphicon glyphicon-chevron-right"></i>rY42PcEfbbjPZtDG9, 2020-12-02T11:46:31 (inv5Ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-rY42PcEfbbjPZtDG9"><a href="#item-DSaoE4i2uz4SNGFJH" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:110px">
-    <i id="icon-DSaoE4i2uz4SNGFJH" class="glyphicon glyphicon-minus"></i>DSaoE4i2uz4SNGFJH, 2020-12-02T11:46:52 (share)</a>
+    <i id="icon-DSaoE4i2uz4SNGFJH" class="glyphicon glyphicon-minus"></i>DSaoE4i2uz4SNGFJH, 2020-12-02T11:46:52 (model share)</a>
   <div class="list-group collapse show" id="item-DSaoE4i2uz4SNGFJH"></div>
 <a href="#item-LmAD7ahRTjp3wTzyH" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:110px">
     <i id="icon-LmAD7ahRTjp3wTzyH" class="glyphicon glyphicon-chevron-right"></i>LmAD7ahRTjp3wTzyH, 2020-12-02T11:46:58 (inv6Ok,correct,check,)</a>
@@ -6167,7 +5410,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-H4QP7LkbX8GFvjW7Z"><a href="#item-HpKJPMELM6kc8XuQq" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:120px">
     <i id="icon-HpKJPMELM6kc8XuQq" class="glyphicon glyphicon-chevron-right"></i>HpKJPMELM6kc8XuQq, 2020-12-02T12:12:59 (inv6Ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-HpKJPMELM6kc8XuQq"><a href="#item-rZsHxK732CrsehyRX" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:130px">
-    <i id="icon-rZsHxK732CrsehyRX" class="glyphicon glyphicon-minus"></i>rZsHxK732CrsehyRX, 2020-12-02T12:16:54 (share)</a>
+    <i id="icon-rZsHxK732CrsehyRX" class="glyphicon glyphicon-minus"></i>rZsHxK732CrsehyRX, 2020-12-02T12:16:54 (model share)</a>
   <div class="list-group collapse show" id="item-rZsHxK732CrsehyRX"></div>
 </div>
 </div>
@@ -6191,7 +5434,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </div>
 </div>
 <a href="#item-2Da7dfgB4F6G2T68a" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:10px">
-    <i id="icon-2Da7dfgB4F6G2T68a" class="glyphicon glyphicon-minus"></i>2Da7dfgB4F6G2T68a, 2020-12-02T12:00:42 (share)</a>
+    <i id="icon-2Da7dfgB4F6G2T68a" class="glyphicon glyphicon-minus"></i>2Da7dfgB4F6G2T68a, 2020-12-02T12:00:42 (model share)</a>
   <div class="list-group collapse show" id="item-2Da7dfgB4F6G2T68a"></div>
 <a href="#item-YuTx9M78dTkNQMkM9" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:10px">
     <i id="icon-YuTx9M78dTkNQMkM9" class="glyphicon glyphicon-chevron-right"></i>YuTx9M78dTkNQMkM9, 2020-12-02T12:09:09 (This must be a formula expression. Instead, it has the following possible type(s): {this/File})</a>
@@ -6210,7 +5453,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-x9bX5jrq5pKJyHuob"><a href="#item-kcNmr8TX3P9aHLfoh" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:80px">
     <i id="icon-kcNmr8TX3P9aHLfoh" class="glyphicon glyphicon-chevron-right"></i>kcNmr8TX3P9aHLfoh, 2020-12-02T12:13:14 (inv6Ok,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-kcNmr8TX3P9aHLfoh"><a href="#item-rpZYDNfNSsRWDAeGw" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:90px">
-    <i id="icon-rpZYDNfNSsRWDAeGw" class="glyphicon glyphicon-minus"></i>rpZYDNfNSsRWDAeGw, 2020-12-02T12:14:54 (share)</a>
+    <i id="icon-rpZYDNfNSsRWDAeGw" class="glyphicon glyphicon-minus"></i>rpZYDNfNSsRWDAeGw, 2020-12-02T12:14:54 (model share)</a>
   <div class="list-group collapse show" id="item-rpZYDNfNSsRWDAeGw"></div>
 <a href="#item-3mmL7KiioxDf6MCi3" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:90px">
     <i id="icon-3mmL7KiioxDf6MCi3" class="glyphicon glyphicon-chevron-right"></i>3mmL7KiioxDf6MCi3, 2020-12-02T12:15:04 (inv6Ok,incorrect,check,)</a>
@@ -6388,7 +5631,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-qgiDrMTogRt8f7cup"><a href="#item-ZFaaLjjCMaijYvRyv" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:100px">
     <i id="icon-ZFaaLjjCMaijYvRyv" class="glyphicon glyphicon-chevron-right"></i>ZFaaLjjCMaijYvRyv, 2020-12-04T14:28:02 (inv7Ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-ZFaaLjjCMaijYvRyv"><a href="#item-Gg3qDGa8aNvchGXrr" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:110px">
-    <i id="icon-Gg3qDGa8aNvchGXrr" class="glyphicon glyphicon-minus"></i>Gg3qDGa8aNvchGXrr, 2020-12-04T14:28:03 (share)</a>
+    <i id="icon-Gg3qDGa8aNvchGXrr" class="glyphicon glyphicon-minus"></i>Gg3qDGa8aNvchGXrr, 2020-12-04T14:28:03 (model share)</a>
   <div class="list-group collapse show" id="item-Gg3qDGa8aNvchGXrr"></div>
 <a href="#item-YGio5gajo432PE28x" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:110px">
     <i id="icon-YGio5gajo432PE28x" class="glyphicon glyphicon-chevron-right"></i>YGio5gajo432PE28x, 2020-12-04T14:28:11 (inv7Ok,incorrect,check,)</a>
@@ -6471,7 +5714,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-KNpCQPtF7NrXreWxF"><a href="#item-Ty9K38jExxDKQZTYs" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:110px">
     <i id="icon-Ty9K38jExxDKQZTYs" class="glyphicon glyphicon-chevron-right"></i>Ty9K38jExxDKQZTYs, 2020-12-04T14:43:34 (inv9Ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-Ty9K38jExxDKQZTYs"><a href="#item-yykZTpZPLZ8djtJhA" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:120px">
-    <i id="icon-yykZTpZPLZ8djtJhA" class="glyphicon glyphicon-minus"></i>yykZTpZPLZ8djtJhA, 2020-12-04T14:56:02 (share)</a>
+    <i id="icon-yykZTpZPLZ8djtJhA" class="glyphicon glyphicon-minus"></i>yykZTpZPLZ8djtJhA, 2020-12-04T14:56:02 (model share)</a>
   <div class="list-group collapse show" id="item-yykZTpZPLZ8djtJhA"></div>
 </div>
 </div>
@@ -7035,7 +6278,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-xoRQwtYDxu8HM8uiw"><a href="#item-kYjSf9R7ZSxhq64Jh" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:170px">
     <i id="icon-kYjSf9R7ZSxhq64Jh" class="glyphicon glyphicon-chevron-right"></i>kYjSf9R7ZSxhq64Jh, 2020-12-04T14:35:04 (inv8Ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-kYjSf9R7ZSxhq64Jh"><a href="#item-7HQ2qEyaL36A2suh3" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:180px">
-    <i id="icon-7HQ2qEyaL36A2suh3" class="glyphicon glyphicon-minus"></i>7HQ2qEyaL36A2suh3, 2020-12-04T14:35:39 (share)</a>
+    <i id="icon-7HQ2qEyaL36A2suh3" class="glyphicon glyphicon-minus"></i>7HQ2qEyaL36A2suh3, 2020-12-04T14:35:39 (model share)</a>
   <div class="list-group collapse show" id="item-7HQ2qEyaL36A2suh3"></div>
 <a href="#item-KGYCgCghL8P5g6jgz" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:180px">
     <i id="icon-KGYCgCghL8P5g6jgz" class="glyphicon glyphicon-chevron-right"></i>KGYCgCghL8P5g6jgz, 2020-12-04T14:35:41 (inv9Ok,correct,check,)</a>

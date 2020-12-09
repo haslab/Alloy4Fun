@@ -9,69 +9,34 @@
 </head>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-<h1>Tr8kcPaLwB6f85Cmj (2020-12-04)</h1>
+<h1>Tr8kcPaLwB6f85Cmj (2020-12-09)</h1>
 <h2>Meta-data</h2>
 <dl><dt>Challenge name</dt><dd>unknown</dd>
 <dt>Creation time</dt><dd>2020-11-27</dd>
 <dt># sub-challenges</dt><dd>7</dd>
 <dt>Metric catalog</dt><dd>Example metric catalog</dd>
 </dl><h2>Overall metric statistics</h2>
-Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total entries</dt><dd>1</dd>
+Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total model entries</dt><dd>1</dd>
 <dt>Total executions</dt><dd>0</dd>
+<dt>Total shares</dt><dd>1</dd>
 <dt>Total error messages</dt><dd>0</dd>
 <dt>Total warning messages</dt><dd>0</dd>
 <dt>Total solutions</dt><dd>0</d>
 <dt>Total sessions</dt><dd>0</d>
+<dt>Rejected due to server errors</dt><dd>0</d>
+<dt>Total instance entries</dt><dd>0</dd>
+<dt>Total link entries</dt><dd>2</dd>
 </dl><h2>Scalar metrics</h2>
 <dl><dt data-toggle="tooltip" title="The size of the longest session. A session is a full branch of the derivation tree.">Longest session</dt><dd>0</dd>
-<dt data-toggle="tooltip" title="The number of entries by date. Entries may contain executions to commands other than the sub-challenges, if defined by the users.">Entries over time</dt><dd>1</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Shared models</dt><dd>1</dd>
 </dl><h2>Overall metrics</h2>
 <h2>Overall metrics, classified</h2>
-<h3>Executions over time</h3>
-<p>The number of entries by date, classified by result. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
-<canvas id="Executionsovertime" ></canvas><script>
-  var chart = new Chart(Executionsovertime, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03',],      datasets: [
-{label: 'share', backgroundColor: '#6c79ad', data: [1,0,0,0,0,0,0,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h2>Metrics by sub-challenge, classified</h2>
+<h2>Metrics by sub-challenge, classified</h2>
 <h2>Derivation tree</h2>
 <div class="just-padding">
 <div class="list-group list-group-root well">
 <a href="#item-Tr8kcPaLwB6f85Cmj" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:0px">
-    <i id="icon-Tr8kcPaLwB6f85Cmj" class="glyphicon glyphicon-minus"></i>Tr8kcPaLwB6f85Cmj, 2020-11-27T15:27:52 (share)</a>
+    <i id="icon-Tr8kcPaLwB6f85Cmj" class="glyphicon glyphicon-minus"></i>Tr8kcPaLwB6f85Cmj, 2020-11-27T15:27:52 (model share)</a>
   <div class="list-group collapse show" id="item-Tr8kcPaLwB6f85Cmj"></div>
 </div>
 </div><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
