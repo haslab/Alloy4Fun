@@ -9,25 +9,31 @@
 </head>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-<h1>cZBBJzaK8YLyKDZtW (2020-12-04)</h1>
+<h1>cZBBJzaK8YLyKDZtW (2020-12-14)</h1>
 <h2>Meta-data</h2>
 <dl><dt>Challenge name</dt><dd>unknown</dd>
 <dt>Creation time</dt><dd>2020-11-11</dd>
 <dt># sub-challenges</dt><dd>3</dd>
 <dt>Metric catalog</dt><dd>Example metric catalog</dd>
 </dl><h2>Overall metric statistics</h2>
-Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total entries</dt><dd>1048</dd>
-<dt>Total executions</dt><dd>0</dd>
-<dt>Total error messages</dt><dd>1047</dd>
-<dt>Total warning messages</dt><dd>0</dd>
-<dt>Total solutions</dt><dd>0</d>
-<dt>Total sessions</dt><dd>45</d>
+Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total model entries</dt><dd>1128</dd>
+<dt>Total executions</dt><dd>1124</dd>
+<dt>Total shares</dt><dd>4</dd>
+<dt>Total error messages</dt><dd>352</dd>
+<dt>Total warning messages</dt><dd>107</dd>
+<dt>Total solutions</dt><dd>772</d>
+<dt>Total sessions</dt><dd>46</d>
+<dt>Rejected due to server errors</dt><dd>0</d>
+<dt>Total instance entries</dt><dd>0</dd>
+<dt>Total link entries</dt><dd>5</dd>
 </dl><h2>Scalar metrics</h2>
-<dl><dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions with warnings</dt><dd>76</dd>
-<dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared. A session is a full branch of the derivation tree.">Number of shared sessions</dt><dd>3</dd>
-<dt data-toggle="tooltip" title="The size of the longest session. A session is a full branch of the derivation tree.">Longest session</dt><dd>97</dd>
-<dt data-toggle="tooltip" title="Counts the number of incorrect executions. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions</dt><dd>546</dd>
-<dt data-toggle="tooltip" title="Counts the number of correct executions. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions</dt><dd>189</dd>
+<dl><dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared. A session is a full branch of the derivation tree.">Number of shared sessions</dt><dd>3</dd>
+<dt data-toggle="tooltip" title="Counts the number Alloy runtime errors (in contrast to syntax errors). Counts all sat executions, may refer to commands other than those of the sub-challenges.">Alloy runtime errors</dt><dd>2</dd>
+<dt data-toggle="tooltip" title="Counts the number of incorrect executions. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions</dt><dd>581</dd>
+<dt data-toggle="tooltip" title="Counts the number of correct executions. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions</dt><dd>191</dd>
+<dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions with warnings</dt><dd>77</dd>
+<dt data-toggle="tooltip" title="The size of the longest session. A session is a full branch of the derivation tree.">Longest session</dt><dd>98</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Shared models</dt><dd>4</dd>
 <dt data-toggle="tooltip" title="Counts the number of correct executions that produced warning messages. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions with warnings</dt><dd>12</dd>
 </dl><h2>Overall metrics</h2>
 <h3>Sessions by length</h3>
@@ -37,7 +43,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    data: {
       labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97',],      datasets: [
-{backgroundColor: '#6c79ad', data: [1,1,4,3,3,2,1,1,1,0,0,1,0,0,3,1,2,0,1,1,0,1,1,0,1,1,1,1,0,0,0,0,0,0,0,1,0,3,0,0,0,0,3,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,]},]},
+{backgroundColor: '#6c79ad', data: [1,1,4,3,3,2,1,1,1,0,0,1,0,0,3,1,2,0,1,1,0,1,1,0,1,1,1,1,0,0,0,0,0,0,0,1,0,3,0,0,0,0,3,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,]},]},
    options: {
       responsive: false,
       legend: {
@@ -61,7 +67,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{backgroundColor: '#6c79ad', data: [3,12,6,24,]},]},
+{backgroundColor: '#6c79ad', data: [3,12,7,24,]},]},
    options: {
       responsive: false,
       legend: {
@@ -78,14 +84,38 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
+</script><h3>Warnings by type</h3>
+<p>The number of warnings by normalized message. Each entry may throw multiple warning messages.</p>
+<canvas id="Warningsbytype" width="1400"></canvas><script>
+  var chart = new Chart(Warningsbytype, {
+   type: 'bar',
+   data: {
+      labels: ['- is irrelevant since the right expression is redundant. Parent\'s relevant type = {_} Left type = {_} Right type = {_}','Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}','This variable is unused.',':> is irrelevant because the result is always empty. Left type = {_} Right type = {_}','Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}','& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}','Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}','The join operation here always yields an empty set. Left type = {_} Right type = {_}','== is redundant, because the left and right expressions are always disjoint. Left type = {_} Right type = {_}',],      datasets: [
+{backgroundColor: '#6c79ad', data: [2,12,17,1,29,7,2,34,3,]},]},
+   options: {
+      responsive: false,
+      legend: {
+         display: false
+      },
+      scales: {
+         xAxes: [{
+                ticks: {
+                    autoSkip: false,
+                    minRotation:90,
+                    maxRotation:90,
+                }
+            }],
+      }
+   }
+});
 </script><h3>Entries over time</h3>
 <p>The number of entries by date. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
 <canvas id="Entriesovertime" width="1400"></canvas><script>
   var chart = new Chart(Entriesovertime, {
    type: 'bar',
    data: {
-      labels: ['2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03',],      datasets: [
-{backgroundColor: '#6c79ad', data: [5,866,23,9,0,4,7,6,15,0,0,0,0,11,3,87,0,0,0,12,0,0,0,]},]},
+      labels: ['2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13',],      datasets: [
+{backgroundColor: '#6c79ad', data: [4,863,23,9,0,4,7,6,15,0,0,0,0,11,3,87,0,0,0,12,0,0,0,80,0,0,0,0,0,0,0,0,0,]},]},
    options: {
       responsive: false,
       legend: {
@@ -108,8 +138,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Errorsbytype, {
    type: 'bar',
    data: {
-      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','There are 1 possible tokens that can appear here: ' ','There are 8 possible tokens that can appear here: NAME disj exh part private seq this var ','There are 1 possible tokens that can appear here: ) ','There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ ','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','There are 5 possible tokens that can appear here: enum fun let open pred ','There are 3 possible tokens that can appear here: ,  { | ',],      datasets: [
-{backgroundColor: '#6c79ad', data: [6,2,18,1,10,3,1,1004,1,1,]},]},
+      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','This expression failed to be typechecked line _ column _ filename=_.als','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','The name _ cannot be found.','& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This must be a set or relation. Instead, it has the following possible type(s): {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ ','There are 5 possible tokens that can appear here: enum fun let open pred ','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','* can be used only with a binary relation. Instead, its possible type(s) are: {_}','The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".','Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.','There are 1 possible tokens that can appear here: \' ','This must be a formula expression. Instead, it has the following possible type(s): {_}','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 8 possible tokens that can appear here: NAME disj exh part private seq this var ','There are 1 possible tokens that can appear here: ) ','This must be a unary set, but instead it has the following possible type(s): {_}','!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','There are 3 possible tokens that can appear here: ,  { | ',],      datasets: [
+{backgroundColor: '#6c79ad', data: [6,18,3,17,74,50,3,47,21,1,1,4,3,1,3,2,1,70,5,11,4,4,2,1,]},]},
    options: {
       responsive: false,
       legend: {
@@ -127,15 +157,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h2>Overall metrics, classified</h2>
-<h3>Executions over time</h3>
-<p>The number of entries by date, classified by result. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
-<canvas id="Executionsovertime" ></canvas><script>
-  var chart = new Chart(Executionsovertime, {
+<h3>Execution results by sub-challenge</h3>
+<p>The number of successful executions by sub-challenge, classified by result. Errored executions are not considered.</p>
+<canvas id="Executionresultsbysubchallenge" ></canvas><script>
+  var chart = new Chart(Executionresultsbysubchallenge, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03',],      datasets: [
-{label: 'incorrect', backgroundColor: '#f0e878', data: [4,437,6,7,0,3,3,4,10,0,0,0,0,4,1,60,0,0,0,7,0,0,0,]},{label: 'correct', backgroundColor: '#93e388', data: [0,157,8,1,0,0,2,2,1,0,0,0,0,4,2,7,0,0,0,5,0,0,0,]},{label: 'share', backgroundColor: '#6c79ad', data: [1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]},{label: 'error', backgroundColor: '#f06779', data: [0,269,9,1,0,1,2,0,4,0,0,0,0,3,0,20,0,0,0,0,0,0,0,]},]},
+      labels: ['inv2ok','inv1ok','inv3ok',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [265,160,156,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [55,70,66,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -166,15 +196,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Execution results by sub-challenge</h3>
-<p>The number of successful executions by sub-challenge, classified by result. Errored executions are not considered.</p>
-<canvas id="Executionresultsbysubchallenge" ></canvas><script>
-  var chart = new Chart(Executionresultsbysubchallenge, {
+</script><h3>Executions over time classified</h3>
+<p>The number of entries by date, classified by result. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
+<canvas id="Executionsovertimeclassified" ></canvas><script>
+  var chart = new Chart(Executionsovertimeclassified, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['inv2ok','inv1ok','inv3ok',],      datasets: [
-{label: 'correct', backgroundColor: '#93e388', data: [55,69,65,]},{label: 'incorrect', backgroundColor: '#f0e878', data: [240,153,153,]},]},
+      labels: ['2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,437,6,7,0,3,3,4,10,0,0,0,0,4,1,60,0,0,0,7,0,0,0,35,0,0,0,0,0,0,0,0,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,157,8,1,0,0,2,2,1,0,0,0,0,4,2,7,0,0,0,5,0,0,0,2,0,0,0,0,0,0,0,0,0,]},{label: 'ERROR', backgroundColor: '#f06779', data: [0,269,9,1,0,1,2,0,4,0,0,0,0,3,0,20,0,0,0,0,0,0,0,43,0,0,0,0,0,0,0,0,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -213,7 +243,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['inv2ok','inv1ok','inv3ok',],      datasets: [
-{label: 'solved', backgroundColor: '#93e388', data: [29,39,28,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [16,6,17,]},]},
+{label: 'solved', backgroundColor: '#93e388', data: [29,40,29,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [17,6,17,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -245,11 +275,1055 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h2>Metrics by sub-challenge, classified</h2>
-<h2>Derivation tree</h2>
+<h3>Size in 10s of nodes</h3>
+<p>The number of executions, for a particular challenge, by the size of a command AST in tens of nodes, grouped by result.</p>
+<h4>inv2ok</h4>
+<canvas id="Sizein10sofnodesinv2ok" ></canvas><script>
+  var chart = new Chart(Sizein10sofnodesinv2ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['2','3','4','5',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [52,183,29,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [2,53,0,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv1ok</h4>
+<canvas id="Sizein10sofnodesinv1ok" ></canvas><script>
+  var chart = new Chart(Sizein10sofnodesinv1ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['2','3','4',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [93,53,14,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [57,13,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv3ok</h4>
+<canvas id="Sizein10sofnodesinv3ok" ></canvas><script>
+  var chart = new Chart(Sizein10sofnodesinv3ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['2','3','4','5',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [17,117,16,6,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,42,23,1,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Number of binary temporal operators</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring binary temporal operators, grouped by result..</p>
+<h4>inv2ok</h4>
+<canvas id="Numberofbinarytemporaloperatorsinv2ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv2ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [265,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [55,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv1ok</h4>
+<canvas id="Numberofbinarytemporaloperatorsinv1ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv1ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [160,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [70,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv3ok</h4>
+<canvas id="Numberofbinarytemporaloperatorsinv3ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv3ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [156,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [66,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Max nested temporal operator level</h3>
+<p>The number of executions, for a particular challenge, by the maximum nested level temporal operators, grouped by result.</p>
+<h4>inv2ok</h4>
+<canvas id="Maxnestedtemporaloperatorlevelinv2ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv2ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [265,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [55,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv1ok</h4>
+<canvas id="Maxnestedtemporaloperatorlevelinv1ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv1ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [160,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [70,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv3ok</h4>
+<canvas id="Maxnestedtemporaloperatorlevelinv3ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv3ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [156,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [66,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Number of lone/one quantifiers</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring lone/one quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
+<h4>inv2ok</h4>
+<canvas id="Numberofloneonequantifiersinv2ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv2ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [263,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [55,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv1ok</h4>
+<canvas id="Numberofloneonequantifiersinv1ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv1ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [158,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [67,3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv3ok</h4>
+<canvas id="Numberofloneonequantifiersinv3ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv3ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [152,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [66,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Max nested quantifier level</h3>
+<p>The number of executions, for a particular challenge, by the maximum nested level of first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
+<h4>inv2ok</h4>
+<canvas id="Maxnestedquantifierlevelinv2ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv2ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['1','2',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [258,7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [55,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv1ok</h4>
+<canvas id="Maxnestedquantifierlevelinv1ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv1ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['1','2',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [156,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [67,3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv3ok</h4>
+<canvas id="Maxnestedquantifierlevelinv3ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv3ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['1','2',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [149,7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [60,6,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Number of disj quantifications</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring disjoint first-order quantifications, grouped by result.</p>
+<h4>inv2ok</h4>
+<canvas id="Numberofdisjquantificationsinv2ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv2ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [265,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [52,3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv1ok</h4>
+<canvas id="Numberofdisjquantificationsinv1ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv1ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [158,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [70,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv3ok</h4>
+<canvas id="Numberofdisjquantificationsinv3ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv3ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [151,5,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [66,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Number multiplicity arrows</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring multiplicity arrow tests, grouped by result.</p>
+<h4>inv2ok</h4>
+<canvas id="Numbermultiplicityarrowsinv2ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv2ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [262,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [55,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv1ok</h4>
+<canvas id="Numbermultiplicityarrowsinv1ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv1ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [151,9,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [67,3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv3ok</h4>
+<canvas id="Numbermultiplicityarrowsinv3ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv3ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [155,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [66,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Number of quantifiers</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
+<h4>inv2ok</h4>
+<canvas id="Numberofquantifiersinv2ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv2ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['2','3','4',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [15,239,11,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [7,48,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv1ok</h4>
+<canvas id="Numberofquantifiersinv1ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv1ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['2','3','4',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [92,64,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [13,54,3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv3ok</h4>
+<canvas id="Numberofquantifiersinv3ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv3ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['2','3','4',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [22,127,7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [8,52,6,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Number of inverted navigation expressions</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring expressions of the shape x.~r, grouped by result.</p>
+<h4>inv2ok</h4>
+<canvas id="Numberofinvertednavigationexpressionsinv2ok" ></canvas><script>
+  var chart = new Chart(Numberofinvertednavigationexpressionsinv2ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1','2','3',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [221,34,9,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,12,0,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv1ok</h4>
+<canvas id="Numberofinvertednavigationexpressionsinv1ok" ></canvas><script>
+  var chart = new Chart(Numberofinvertednavigationexpressionsinv1ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1','2',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [135,22,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [62,8,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv3ok</h4>
+<canvas id="Numberofinvertednavigationexpressionsinv3ok" ></canvas><script>
+  var chart = new Chart(Numberofinvertednavigationexpressionsinv3ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [150,6,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [66,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h2>Derivation tree</h2>
 <div class="just-padding">
 <div class="list-group list-group-root well">
 <a href="#item-cZBBJzaK8YLyKDZtW" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:0px">
-    <i id="icon-cZBBJzaK8YLyKDZtW" class="glyphicon glyphicon-chevron-right"></i>cZBBJzaK8YLyKDZtW, 2020-11-11T18:29:14 (share)</a>
+    <i id="icon-cZBBJzaK8YLyKDZtW" class="glyphicon glyphicon-chevron-right"></i>cZBBJzaK8YLyKDZtW, 2020-11-11T18:29:14 (model share)</a>
   <div class="list-group collapse show" id="item-cZBBJzaK8YLyKDZtW"><a href="#item-g9maoRb4dENK7YKnX" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:10px">
     <i id="icon-g9maoRb4dENK7YKnX" class="glyphicon glyphicon-chevron-right"></i>g9maoRb4dENK7YKnX, 2020-11-11T18:29:24 (inv1ok,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-g9maoRb4dENK7YKnX"><a href="#item-K68ENjoSzydhZAyCS" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:20px">
@@ -1083,7 +2157,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-bM4dRGkAqvwLmRjsk"><a href="#item-8b2TZQ7okReDmeiRM" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:350px">
     <i id="icon-8b2TZQ7okReDmeiRM" class="glyphicon glyphicon-chevron-right"></i>8b2TZQ7okReDmeiRM, 2020-11-12T11:47:43 (inv3ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-8b2TZQ7okReDmeiRM"><a href="#item-gzP85wGwTeevnd3c7" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:360px">
-    <i id="icon-gzP85wGwTeevnd3c7" class="glyphicon glyphicon-minus"></i>gzP85wGwTeevnd3c7, 2020-11-12T11:48:13 (share)</a>
+    <i id="icon-gzP85wGwTeevnd3c7" class="glyphicon glyphicon-minus"></i>gzP85wGwTeevnd3c7, 2020-11-12T11:48:13 (model share)</a>
   <div class="list-group collapse show" id="item-gzP85wGwTeevnd3c7"></div>
 </div>
 </div>
@@ -1157,7 +2231,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-FAsqyp9RR4EZGynXE"><a href="#item-okCunrHt9pNuunsas" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:180px">
     <i id="icon-okCunrHt9pNuunsas" class="glyphicon glyphicon-chevron-right"></i>okCunrHt9pNuunsas, 2020-11-12T11:46:35 (inv3ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-okCunrHt9pNuunsas"><a href="#item-EmP4M7SshGiqu2XTp" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:190px">
-    <i id="icon-EmP4M7SshGiqu2XTp" class="glyphicon glyphicon-chevron-right"></i>EmP4M7SshGiqu2XTp, 2020-11-12T11:47:57 (share)</a>
+    <i id="icon-EmP4M7SshGiqu2XTp" class="glyphicon glyphicon-chevron-right"></i>EmP4M7SshGiqu2XTp, 2020-11-12T11:47:57 (model share)</a>
   <div class="list-group collapse show" id="item-EmP4M7SshGiqu2XTp"><a href="#item-gcNwLtTmKgTQNWRHu" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:200px">
     <i id="icon-gcNwLtTmKgTQNWRHu" class="glyphicon glyphicon-minus"></i>gcNwLtTmKgTQNWRHu, 2020-11-12T22:38:20 (inv1ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-gcNwLtTmKgTQNWRHu"></div>
@@ -2584,7 +3658,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-pcgpe2FXL4L7YntWs"><a href="#item-joNRsFBtq7pEJx3Fv" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:490px">
     <i id="icon-joNRsFBtq7pEJx3Fv" class="glyphicon glyphicon-chevron-right"></i>joNRsFBtq7pEJx3Fv, 2020-11-12T12:09:12 (inv2ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-joNRsFBtq7pEJx3Fv"><a href="#item-AGeZHizxK4cC5s49i" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:500px">
-    <i id="icon-AGeZHizxK4cC5s49i" class="glyphicon glyphicon-minus"></i>AGeZHizxK4cC5s49i, 2020-11-12T12:09:47 (share)</a>
+    <i id="icon-AGeZHizxK4cC5s49i" class="glyphicon glyphicon-minus"></i>AGeZHizxK4cC5s49i, 2020-11-12T12:09:47 (model share)</a>
   <div class="list-group collapse show" id="item-AGeZHizxK4cC5s49i"></div>
 <a href="#item-zfiLTk7KfZdANKiw2" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:500px">
     <i id="icon-zfiLTk7KfZdANKiw2" class="glyphicon glyphicon-chevron-right"></i>zfiLTk7KfZdANKiw2, 2020-11-12T12:10:35 (inv1ok,correct,check,)</a>
@@ -3380,6 +4454,246 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-Bqcj4kfjJMcyXdJsQ"><a href="#item-w7eLfuGL3yza3zafA" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:120px">
     <i id="icon-w7eLfuGL3yza3zafA" class="glyphicon glyphicon-minus"></i>w7eLfuGL3yza3zafA, 2020-11-30T20:16:58 (inv3ok,correct,check,)</a>
   <div class="list-group collapse show" id="item-w7eLfuGL3yza3zafA"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="#item-qndvgWuSMY9JPts7X" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-qndvgWuSMY9JPts7X" class="glyphicon glyphicon-chevron-right"></i>qndvgWuSMY9JPts7X, 2020-12-04T20:29:36 (This cannot be a legal relational join where left hand side is this/Track (type = {this/Track}) right hand side is s (type = {this/Signal}))</a>
+  <div class="list-group collapse show" id="item-qndvgWuSMY9JPts7X"><a href="#item-oc6bvNfFKyvav5z7L" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-oc6bvNfFKyvav5z7L" class="glyphicon glyphicon-chevron-right"></i>oc6bvNfFKyvav5z7L, 2020-12-04T20:30:01 (inv1ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-oc6bvNfFKyvav5z7L"><a href="#item-QqtQeFkPfZfucu3yF" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-QqtQeFkPfZfucu3yF" class="glyphicon glyphicon-chevron-right"></i>QqtQeFkPfZfucu3yF, 2020-12-04T20:30:47 (inv1ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-QqtQeFkPfZfucu3yF"><a href="#item-o8NCJufeRW5AhpR6y" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-o8NCJufeRW5AhpR6y" class="glyphicon glyphicon-chevron-right"></i>o8NCJufeRW5AhpR6y, 2020-12-04T20:34:21 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+  <div class="list-group collapse show" id="item-o8NCJufeRW5AhpR6y"><a href="#item-s83SZCjJDTE9pXcT7" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:50px">
+    <i id="icon-s83SZCjJDTE9pXcT7" class="glyphicon glyphicon-chevron-right"></i>s83SZCjJDTE9pXcT7, 2020-12-04T20:34:28 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+  <div class="list-group collapse show" id="item-s83SZCjJDTE9pXcT7"><a href="#item-FrSopQwYu8LNdRggu" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:60px">
+    <i id="icon-FrSopQwYu8LNdRggu" class="glyphicon glyphicon-chevron-right"></i>FrSopQwYu8LNdRggu, 2020-12-04T20:34:39 (inv1ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-FrSopQwYu8LNdRggu"><a href="#item-iZqda3iPPgvBgvu6y" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:70px">
+    <i id="icon-iZqda3iPPgvBgvu6y" class="glyphicon glyphicon-chevron-right"></i>iZqda3iPPgvBgvu6y, 2020-12-04T20:35:32 (This expression failed to be typechecked line 17, column 39, filename=/tmp/alloy_heredoc18187294043819249404.als)</a>
+  <div class="list-group collapse show" id="item-iZqda3iPPgvBgvu6y"><a href="#item-SEJLeYcKvhot5rYmW" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:80px">
+    <i id="icon-SEJLeYcKvhot5rYmW" class="glyphicon glyphicon-chevron-right"></i>SEJLeYcKvhot5rYmW, 2020-12-04T20:35:44 (There are 1 possible tokens that can appear here: ))</a>
+  <div class="list-group collapse show" id="item-SEJLeYcKvhot5rYmW"><a href="#item-uJarxDNrpu9PSfGBc" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:90px">
+    <i id="icon-uJarxDNrpu9PSfGBc" class="glyphicon glyphicon-chevron-right"></i>uJarxDNrpu9PSfGBc, 2020-12-04T20:35:49 (This expression failed to be typechecked line 17, column 39, filename=/tmp/alloy_heredoc15495476555476461775.als)</a>
+  <div class="list-group collapse show" id="item-uJarxDNrpu9PSfGBc"><a href="#item-J5Xk9c8Z8MLH5hzrs" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:100px">
+    <i id="icon-J5Xk9c8Z8MLH5hzrs" class="glyphicon glyphicon-chevron-right"></i>J5Xk9c8Z8MLH5hzrs, 2020-12-04T20:36 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+  <div class="list-group collapse show" id="item-J5Xk9c8Z8MLH5hzrs"><a href="#item-tYQfjvcwzqKhMpYdX" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:110px">
+    <i id="icon-tYQfjvcwzqKhMpYdX" class="glyphicon glyphicon-chevron-right"></i>tYQfjvcwzqKhMpYdX, 2020-12-04T20:36:19 (This expression failed to be typechecked line 17, column 34, filename=/tmp/alloy_heredoc17237613465135290891.als)</a>
+  <div class="list-group collapse show" id="item-tYQfjvcwzqKhMpYdX"><a href="#item-fHBYTCXvoS2B95j6q" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:120px">
+    <i id="icon-fHBYTCXvoS2B95j6q" class="glyphicon glyphicon-chevron-right"></i>fHBYTCXvoS2B95j6q, 2020-12-04T20:37:45 (inv1ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-fHBYTCXvoS2B95j6q"><a href="#item-hpmAhELW4Lubur9Rm" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:130px">
+    <i id="icon-hpmAhELW4Lubur9Rm" class="glyphicon glyphicon-chevron-right"></i>hpmAhELW4Lubur9Rm, 2020-12-04T20:37:56 (This expression failed to be typechecked line 17, column 21, filename=/tmp/alloy_heredoc16844940418110637164.als)</a>
+  <div class="list-group collapse show" id="item-hpmAhELW4Lubur9Rm"><a href="#item-uhzih7B9RTeBGy2m8" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:140px">
+    <i id="icon-uhzih7B9RTeBGy2m8" class="glyphicon glyphicon-chevron-right"></i>uhzih7B9RTeBGy2m8, 2020-12-04T20:38:05 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-uhzih7B9RTeBGy2m8"><a href="#item-EXxZxWmnX4Hdk3uNm" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:150px">
+    <i id="icon-EXxZxWmnX4Hdk3uNm" class="glyphicon glyphicon-chevron-right"></i>EXxZxWmnX4Hdk3uNm, 2020-12-04T20:39:17 (inv1ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-EXxZxWmnX4Hdk3uNm"><a href="#item-LdEEbABuGtMojpEbW" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:160px">
+    <i id="icon-LdEEbABuGtMojpEbW" class="glyphicon glyphicon-chevron-right"></i>LdEEbABuGtMojpEbW, 2020-12-04T20:40:50 (inv1ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-LdEEbABuGtMojpEbW"><a href="#item-tArsj6wXa8Jd6Pojk" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:170px">
+    <i id="icon-tArsj6wXa8Jd6Pojk" class="glyphicon glyphicon-chevron-right"></i>tArsj6wXa8Jd6Pojk, 2020-12-04T20:42:32 (inv1ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-tArsj6wXa8Jd6Pojk"><a href="#item-o5MoMX39347YYujNi" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:180px">
+    <i id="icon-o5MoMX39347YYujNi" class="glyphicon glyphicon-chevron-right"></i>o5MoMX39347YYujNi, 2020-12-04T20:43:30 (inv1ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-o5MoMX39347YYujNi"><a href="#item-q5TobCtt72faQbQbk" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:190px">
+    <i id="icon-q5TobCtt72faQbQbk" class="glyphicon glyphicon-chevron-right"></i>q5TobCtt72faQbQbk, 2020-12-04T20:51:13 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-q5TobCtt72faQbQbk"><a href="#item-GJw7FyjCCrYcPkDAT" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:200px">
+    <i id="icon-GJw7FyjCCrYcPkDAT" class="glyphicon glyphicon-chevron-right"></i>GJw7FyjCCrYcPkDAT, 2020-12-04T20:51:26 (in can be used only between 2 expressions of the same arity. Left type = {this/Track->this/Junction} Right type = {this/Track})</a>
+  <div class="list-group collapse show" id="item-GJw7FyjCCrYcPkDAT"><a href="#item-gmzYHLEShycm2uufp" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:210px">
+    <i id="icon-gmzYHLEShycm2uufp" class="glyphicon glyphicon-chevron-right"></i>gmzYHLEShycm2uufp, 2020-12-04T20:51:40 (This expression failed to be typechecked line 24, column 38, filename=/tmp/alloy_heredoc15374625502351910640.als)</a>
+  <div class="list-group collapse show" id="item-gmzYHLEShycm2uufp"><a href="#item-3AXYQczb885MTg5C9" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:220px">
+    <i id="icon-3AXYQczb885MTg5C9" class="glyphicon glyphicon-chevron-right"></i>3AXYQczb885MTg5C9, 2020-12-04T20:51:47 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-3AXYQczb885MTg5C9"><a href="#item-kp67jZLu3aGwccTNA" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:230px">
+    <i id="icon-kp67jZLu3aGwccTNA" class="glyphicon glyphicon-chevron-right"></i>kp67jZLu3aGwccTNA, 2020-12-04T20:52:02 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-kp67jZLu3aGwccTNA"><a href="#item-w23a26CKpzTpruZgy" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:240px">
+    <i id="icon-w23a26CKpzTpruZgy" class="glyphicon glyphicon-chevron-right"></i>w23a26CKpzTpruZgy, 2020-12-04T20:52:08 (inv2ok,incorrect,check,This variable is unused.)</a>
+  <div class="list-group collapse show" id="item-w23a26CKpzTpruZgy"><a href="#item-RAx7fSojYWxFASFWD" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:250px">
+    <i id="icon-RAx7fSojYWxFASFWD" class="glyphicon glyphicon-chevron-right"></i>RAx7fSojYWxFASFWD, 2020-12-04T20:53:51 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-RAx7fSojYWxFASFWD"><a href="#item-4Ljz7EoS9TYNAGuPr" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:260px">
+    <i id="icon-4Ljz7EoS9TYNAGuPr" class="glyphicon glyphicon-chevron-right"></i>4Ljz7EoS9TYNAGuPr, 2020-12-04T20:53:58 (in can be used only between 2 expressions of the same arity. Left type = {this/Track->this/Junction} Right type = {this/Track})</a>
+  <div class="list-group collapse show" id="item-4Ljz7EoS9TYNAGuPr"><a href="#item-oMEqeqg7i9uf7Q5dS" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:270px">
+    <i id="icon-oMEqeqg7i9uf7Q5dS" class="glyphicon glyphicon-chevron-right"></i>oMEqeqg7i9uf7Q5dS, 2020-12-04T20:54:08 (This expression failed to be typechecked line 24, column 36, filename=/tmp/alloy_heredoc11034376979797191475.als)</a>
+  <div class="list-group collapse show" id="item-oMEqeqg7i9uf7Q5dS"><a href="#item-v5bwoygZnaRAFcQF8" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:280px">
+    <i id="icon-v5bwoygZnaRAFcQF8" class="glyphicon glyphicon-chevron-right"></i>v5bwoygZnaRAFcQF8, 2020-12-04T20:54:20 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-v5bwoygZnaRAFcQF8"><a href="#item-pCxu23fC6ihdppsCL" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:290px">
+    <i id="icon-pCxu23fC6ihdppsCL" class="glyphicon glyphicon-chevron-right"></i>pCxu23fC6ihdppsCL, 2020-12-04T20:54:31 (This expression failed to be typechecked line 24, column 36, filename=/tmp/alloy_heredoc16783572208507547196.als)</a>
+  <div class="list-group collapse show" id="item-pCxu23fC6ihdppsCL"><a href="#item-yqEvG97KF4SQMqWcS" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:300px">
+    <i id="icon-yqEvG97KF4SQMqWcS" class="glyphicon glyphicon-chevron-right"></i>yqEvG97KF4SQMqWcS, 2020-12-04T20:54:38 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-yqEvG97KF4SQMqWcS"><a href="#item-YczFuCBakWWppxRMt" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:310px">
+    <i id="icon-YczFuCBakWWppxRMt" class="glyphicon glyphicon-chevron-right"></i>YczFuCBakWWppxRMt, 2020-12-04T20:59:03 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)</a>
+  <div class="list-group collapse show" id="item-YczFuCBakWWppxRMt"><a href="#item-NC2832seSy8Nfw9Ln" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:320px">
+    <i id="icon-NC2832seSy8Nfw9Ln" class="glyphicon glyphicon-chevron-right"></i>NC2832seSy8Nfw9Ln, 2020-12-04T20:59:09 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-NC2832seSy8Nfw9Ln"><a href="#item-XNHo6zSap9LT3fQx4" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:330px">
+    <i id="icon-XNHo6zSap9LT3fQx4" class="glyphicon glyphicon-chevron-right"></i>XNHo6zSap9LT3fQx4, 2020-12-04T21:00:58 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})</a>
+  <div class="list-group collapse show" id="item-XNHo6zSap9LT3fQx4"><a href="#item-imrws8RQAnXg8ck7W" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:340px">
+    <i id="icon-imrws8RQAnXg8ck7W" class="glyphicon glyphicon-chevron-right"></i>imrws8RQAnXg8ck7W, 2020-12-04T21:02:15 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-imrws8RQAnXg8ck7W"><a href="#item-ZeKrTZwv747PTm7NE" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:350px">
+    <i id="icon-ZeKrTZwv747PTm7NE" class="glyphicon glyphicon-chevron-right"></i>ZeKrTZwv747PTm7NE, 2020-12-04T21:04:57 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-ZeKrTZwv747PTm7NE"><a href="#item-KrPLdR66KN36tCZ22" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:360px">
+    <i id="icon-KrPLdR66KN36tCZ22" class="glyphicon glyphicon-chevron-right"></i>KrPLdR66KN36tCZ22, 2020-12-04T21:05:45 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-KrPLdR66KN36tCZ22"><a href="#item-tMYsTRSM7vg6e8Hbm" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:370px">
+    <i id="icon-tMYsTRSM7vg6e8Hbm" class="glyphicon glyphicon-chevron-right"></i>tMYsTRSM7vg6e8Hbm, 2020-12-04T21:07:35 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-tMYsTRSM7vg6e8Hbm"><a href="#item-fFLfKCQycb57igiWW" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:380px">
+    <i id="icon-fFLfKCQycb57igiWW" class="glyphicon glyphicon-chevron-right"></i>fFLfKCQycb57igiWW, 2020-12-04T21:08:55 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-fFLfKCQycb57igiWW"><a href="#item-2iNmykNEWyMK2bDGP" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:390px">
+    <i id="icon-2iNmykNEWyMK2bDGP" class="glyphicon glyphicon-chevron-right"></i>2iNmykNEWyMK2bDGP, 2020-12-04T21:11:23 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-2iNmykNEWyMK2bDGP"><a href="#item-hAAXRgtPbDmyxzRsh" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:400px">
+    <i id="icon-hAAXRgtPbDmyxzRsh" class="glyphicon glyphicon-chevron-right"></i>hAAXRgtPbDmyxzRsh, 2020-12-04T21:11:46 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-hAAXRgtPbDmyxzRsh"><a href="#item-sNejCEzbfS6k5ToHe" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:410px">
+    <i id="icon-sNejCEzbfS6k5ToHe" class="glyphicon glyphicon-chevron-right"></i>sNejCEzbfS6k5ToHe, 2020-12-04T21:11:50 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-sNejCEzbfS6k5ToHe"><a href="#item-xCHeYS55deXd9f7oZ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:420px">
+    <i id="icon-xCHeYS55deXd9f7oZ" class="glyphicon glyphicon-chevron-right"></i>xCHeYS55deXd9f7oZ, 2020-12-04T21:12:16 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-xCHeYS55deXd9f7oZ"><a href="#item-PvNSdfj22u9BpYtvB" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:430px">
+    <i id="icon-PvNSdfj22u9BpYtvB" class="glyphicon glyphicon-chevron-right"></i>PvNSdfj22u9BpYtvB, 2020-12-04T21:13:04 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-PvNSdfj22u9BpYtvB"><a href="#item-QSdEQMX6jCfmH5F9E" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:440px">
+    <i id="icon-QSdEQMX6jCfmH5F9E" class="glyphicon glyphicon-chevron-right"></i>QSdEQMX6jCfmH5F9E, 2020-12-04T21:13:30 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-QSdEQMX6jCfmH5F9E"><a href="#item-yX6ogWKLMoYHERdp3" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:450px">
+    <i id="icon-yX6ogWKLMoYHERdp3" class="glyphicon glyphicon-chevron-right"></i>yX6ogWKLMoYHERdp3, 2020-12-04T21:14:13 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-yX6ogWKLMoYHERdp3"><a href="#item-ASehEWKoDBKdYmjGh" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:460px">
+    <i id="icon-ASehEWKoDBKdYmjGh" class="glyphicon glyphicon-chevron-right"></i>ASehEWKoDBKdYmjGh, 2020-12-04T21:14:38 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-ASehEWKoDBKdYmjGh"><a href="#item-j4xDDPkfe7PTWKGcK" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:470px">
+    <i id="icon-j4xDDPkfe7PTWKGcK" class="glyphicon glyphicon-chevron-right"></i>j4xDDPkfe7PTWKGcK, 2020-12-04T21:14:50 (This expression failed to be typechecked line 24, column 25, filename=/tmp/alloy_heredoc17015320361832873836.als)</a>
+  <div class="list-group collapse show" id="item-j4xDDPkfe7PTWKGcK"><a href="#item-geZJTTJLpBZhiHDqJ" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:480px">
+    <i id="icon-geZJTTJLpBZhiHDqJ" class="glyphicon glyphicon-chevron-right"></i>geZJTTJLpBZhiHDqJ, 2020-12-04T21:15:31 (This expression failed to be typechecked line 24, column 25, filename=/tmp/alloy_heredoc16981675019251300658.als)</a>
+  <div class="list-group collapse show" id="item-geZJTTJLpBZhiHDqJ"><a href="#item-a9WfBjnesChgwS8r9" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:490px">
+    <i id="icon-a9WfBjnesChgwS8r9" class="glyphicon glyphicon-chevron-right"></i>a9WfBjnesChgwS8r9, 2020-12-04T21:15:43 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-a9WfBjnesChgwS8r9"><a href="#item-33SiDqNjb32kEKA29" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:500px">
+    <i id="icon-33SiDqNjb32kEKA29" class="glyphicon glyphicon-chevron-right"></i>33SiDqNjb32kEKA29, 2020-12-04T21:15:54 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-33SiDqNjb32kEKA29"><a href="#item-kNcf88h8C5W8jtNHp" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:510px">
+    <i id="icon-kNcf88h8C5W8jtNHp" class="glyphicon glyphicon-chevron-right"></i>kNcf88h8C5W8jtNHp, 2020-12-04T21:16:32 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-kNcf88h8C5W8jtNHp"><a href="#item-uPF7oD7SbrdigfbJn" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:520px">
+    <i id="icon-uPF7oD7SbrdigfbJn" class="glyphicon glyphicon-chevron-right"></i>uPF7oD7SbrdigfbJn, 2020-12-04T21:17:10 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-uPF7oD7SbrdigfbJn"><a href="#item-5NmBpjXtQ5w2qQFQ4" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:530px">
+    <i id="icon-5NmBpjXtQ5w2qQFQ4" class="glyphicon glyphicon-chevron-right"></i>5NmBpjXtQ5w2qQFQ4, 2020-12-04T21:19:19 (This cannot be a legal relational join where left hand side is t1 . (this/Track <: prox) (type = {this/Track}) right hand side is t2 (type = {this/Track}))</a>
+  <div class="list-group collapse show" id="item-5NmBpjXtQ5w2qQFQ4"><a href="#item-izQaJ7SXnvYqJ5eBZ" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:540px">
+    <i id="icon-izQaJ7SXnvYqJ5eBZ" class="glyphicon glyphicon-chevron-right"></i>izQaJ7SXnvYqJ5eBZ, 2020-12-04T21:19:35 (This cannot be a legal relational join where left hand side is t1 . (this/Track <: prox) (type = {this/Track}) right hand side is t2 (type = {this/Track}))</a>
+  <div class="list-group collapse show" id="item-izQaJ7SXnvYqJ5eBZ"><a href="#item-o7Po6NFXx5NzSxqzX" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:550px">
+    <i id="icon-o7Po6NFXx5NzSxqzX" class="glyphicon glyphicon-chevron-right"></i>o7Po6NFXx5NzSxqzX, 2020-12-04T21:20:09 (This cannot be a legal relational join where left hand side is t1 . (this/Track <: prox) (type = {this/Track}) right hand side is t2 (type = {this/Track}))</a>
+  <div class="list-group collapse show" id="item-o7Po6NFXx5NzSxqzX"><a href="#item-RrB4XCTsEYTe4ZxLw" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:560px">
+    <i id="icon-RrB4XCTsEYTe4ZxLw" class="glyphicon glyphicon-chevron-right"></i>RrB4XCTsEYTe4ZxLw, 2020-12-04T21:20:15 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-RrB4XCTsEYTe4ZxLw"><a href="#item-JDYfbC5piEusPFgmu" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:570px">
+    <i id="icon-JDYfbC5piEusPFgmu" class="glyphicon glyphicon-chevron-right"></i>JDYfbC5piEusPFgmu, 2020-12-04T21:21:27 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-JDYfbC5piEusPFgmu"><a href="#item-ei6yYMesWuLKsCAkh" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:580px">
+    <i id="icon-ei6yYMesWuLKsCAkh" class="glyphicon glyphicon-chevron-right"></i>ei6yYMesWuLKsCAkh, 2020-12-04T21:22:46 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-ei6yYMesWuLKsCAkh"><a href="#item-MEwyyBbk5eDtnXDak" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:590px">
+    <i id="icon-MEwyyBbk5eDtnXDak" class="glyphicon glyphicon-chevron-right"></i>MEwyyBbk5eDtnXDak, 2020-12-04T21:22:52 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-MEwyyBbk5eDtnXDak"><a href="#item-5XnBf5rgo2azKD9SM" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:600px">
+    <i id="icon-5XnBf5rgo2azKD9SM" class="glyphicon glyphicon-chevron-right"></i>5XnBf5rgo2azKD9SM, 2020-12-04T21:25 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)</a>
+  <div class="list-group collapse show" id="item-5XnBf5rgo2azKD9SM"><a href="#item-HKYQwQYsyupzAGkPd" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:610px">
+    <i id="icon-HKYQwQYsyupzAGkPd" class="glyphicon glyphicon-chevron-right"></i>HKYQwQYsyupzAGkPd, 2020-12-04T21:25:15 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-HKYQwQYsyupzAGkPd"><a href="#item-hCWWG533EqrEfToDR" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:620px">
+    <i id="icon-hCWWG533EqrEfToDR" class="glyphicon glyphicon-chevron-right"></i>hCWWG533EqrEfToDR, 2020-12-04T21:25:31 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-hCWWG533EqrEfToDR"><a href="#item-LTTozt9Jv8bxTgqgC" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:630px">
+    <i id="icon-LTTozt9Jv8bxTgqgC" class="glyphicon glyphicon-chevron-right"></i>LTTozt9Jv8bxTgqgC, 2020-12-04T21:27:20 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-LTTozt9Jv8bxTgqgC"><a href="#item-CrBbhjMGohuwQA9ny" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:640px">
+    <i id="icon-CrBbhjMGohuwQA9ny" class="glyphicon glyphicon-chevron-right"></i>CrBbhjMGohuwQA9ny, 2020-12-04T21:27:43 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})</a>
+  <div class="list-group collapse show" id="item-CrBbhjMGohuwQA9ny"><a href="#item-Y5cZbJH47spraGBsg" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:650px">
+    <i id="icon-Y5cZbJH47spraGBsg" class="glyphicon glyphicon-chevron-right"></i>Y5cZbJH47spraGBsg, 2020-12-04T21:29:31 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})</a>
+  <div class="list-group collapse show" id="item-Y5cZbJH47spraGBsg"><a href="#item-Mw58h4NSMYpaF8d4K" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:660px">
+    <i id="icon-Mw58h4NSMYpaF8d4K" class="glyphicon glyphicon-chevron-right"></i>Mw58h4NSMYpaF8d4K, 2020-12-04T21:30:36 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})</a>
+  <div class="list-group collapse show" id="item-Mw58h4NSMYpaF8d4K"><a href="#item-cFouujoyE78CGrm3T" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:670px">
+    <i id="icon-cFouujoyE78CGrm3T" class="glyphicon glyphicon-chevron-right"></i>cFouujoyE78CGrm3T, 2020-12-04T21:31:02 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})</a>
+  <div class="list-group collapse show" id="item-cFouujoyE78CGrm3T"><a href="#item-MC3AJ3XjLAMqQvjck" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:680px">
+    <i id="icon-MC3AJ3XjLAMqQvjck" class="glyphicon glyphicon-chevron-right"></i>MC3AJ3XjLAMqQvjck, 2020-12-04T21:31:09 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})</a>
+  <div class="list-group collapse show" id="item-MC3AJ3XjLAMqQvjck"><a href="#item-ChtWDXxChJQfXWsZk" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:690px">
+    <i id="icon-ChtWDXxChJQfXWsZk" class="glyphicon glyphicon-chevron-right"></i>ChtWDXxChJQfXWsZk, 2020-12-04T21:31:14 (inv3ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-ChtWDXxChJQfXWsZk"><a href="#item-cEqgf5PBwGxitzshR" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:700px">
+    <i id="icon-cEqgf5PBwGxitzshR" class="glyphicon glyphicon-chevron-right"></i>cEqgf5PBwGxitzshR, 2020-12-04T21:31:27 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})</a>
+  <div class="list-group collapse show" id="item-cEqgf5PBwGxitzshR"><a href="#item-Yhq5M5gCa4GRZdk7M" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:710px">
+    <i id="icon-Yhq5M5gCa4GRZdk7M" class="glyphicon glyphicon-chevron-right"></i>Yhq5M5gCa4GRZdk7M, 2020-12-04T21:31:45 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Signal (type = {this/Signal}))</a>
+  <div class="list-group collapse show" id="item-Yhq5M5gCa4GRZdk7M"><a href="#item-AXxrgbtcp9tkADhyx" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:720px">
+    <i id="icon-AXxrgbtcp9tkADhyx" class="glyphicon glyphicon-chevron-right"></i>AXxrgbtcp9tkADhyx, 2020-12-04T21:31:58 (inv3ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-AXxrgbtcp9tkADhyx"><a href="#item-YC6MAWD9SunWxwGhY" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:730px">
+    <i id="icon-YC6MAWD9SunWxwGhY" class="glyphicon glyphicon-chevron-right"></i>YC6MAWD9SunWxwGhY, 2020-12-04T21:33:25 (in can be used only between 2 expressions of the same arity. Left type = {this/Track->this/Junction} Right type = {this/Junction})</a>
+  <div class="list-group collapse show" id="item-YC6MAWD9SunWxwGhY"><a href="#item-Y9G2pWYMucHJoA8Ar" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:740px">
+    <i id="icon-Y9G2pWYMucHJoA8Ar" class="glyphicon glyphicon-chevron-right"></i>Y9G2pWYMucHJoA8Ar, 2020-12-04T21:33:32 (in can be used only between 2 expressions of the same arity. Left type = {this/Track->this/Junction} Right type = {this/Junction})</a>
+  <div class="list-group collapse show" id="item-Y9G2pWYMucHJoA8Ar"><a href="#item-h3Kkx4zWJBvq5f4Q5" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:750px">
+    <i id="icon-h3Kkx4zWJBvq5f4Q5" class="glyphicon glyphicon-chevron-right"></i>h3Kkx4zWJBvq5f4Q5, 2020-12-04T21:33:41 (in can be used only between 2 expressions of the same arity. Left type = {this/Track->this/Junction} Right type = {this/Junction})</a>
+  <div class="list-group collapse show" id="item-h3Kkx4zWJBvq5f4Q5"><a href="#item-53rqSh6dsRf5MchiX" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:760px">
+    <i id="icon-53rqSh6dsRf5MchiX" class="glyphicon glyphicon-chevron-right"></i>53rqSh6dsRf5MchiX, 2020-12-04T21:35:04 (inv3ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-53rqSh6dsRf5MchiX"><a href="#item-7igRLJKDYxbBv5AxM" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:770px">
+    <i id="icon-7igRLJKDYxbBv5AxM" class="glyphicon glyphicon-chevron-right"></i>7igRLJKDYxbBv5AxM, 2020-12-04T21:36:47 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})</a>
+  <div class="list-group collapse show" id="item-7igRLJKDYxbBv5AxM"><a href="#item-YL5qmszax38W4uEb3" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:780px">
+    <i id="icon-YL5qmszax38W4uEb3" class="glyphicon glyphicon-chevron-right"></i>YL5qmszax38W4uEb3, 2020-12-04T21:37:34 (inv3ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-YL5qmszax38W4uEb3"><a href="#item-9dCZwdoFuDKKBdCkS" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:790px">
+    <i id="icon-9dCZwdoFuDKKBdCkS" class="glyphicon glyphicon-chevron-right"></i>9dCZwdoFuDKKBdCkS, 2020-12-04T21:38:50 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-9dCZwdoFuDKKBdCkS"><a href="#item-HZ9GiMJC9bmpNR4Ce" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:800px">
+    <i id="icon-HZ9GiMJC9bmpNR4Ce" class="glyphicon glyphicon-minus"></i>HZ9GiMJC9bmpNR4Ce, 2020-12-04T21:40:10 (inv2ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-HZ9GiMJC9bmpNR4Ce"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
