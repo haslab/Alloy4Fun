@@ -72,87 +72,87 @@ Entries over time
 
 Execution results by sub-challenge
 Inv1OK
-	SAT: 1
 	UNSAT: 6
+	SAT: 1
 Inv2OK
-	SAT: 5
 	UNSAT: 4
+	SAT: 5
 Inv3OK
-	SAT: 0
 	UNSAT: 1
+	SAT: 0
 Inv4OK
-	SAT: 9
 	UNSAT: 0
+	SAT: 9
 
 Executions over time classified
 2020-11-27
-	SAT: 0
 	ERROR: 0
 	UNSAT: 0
+	SAT: 0
 2020-11-28
-	SAT: 0
 	ERROR: 0
 	UNSAT: 0
+	SAT: 0
 2020-11-29
-	SAT: 0
 	ERROR: 0
 	UNSAT: 0
+	SAT: 0
 2020-11-30
-	SAT: 0
 	ERROR: 0
 	UNSAT: 0
+	SAT: 0
 2020-12-01
-	SAT: 0
 	ERROR: 0
 	UNSAT: 0
+	SAT: 0
 2020-12-02
-	SAT: 0
 	ERROR: 0
 	UNSAT: 0
+	SAT: 0
 2020-12-03
-	SAT: 0
 	ERROR: 0
 	UNSAT: 0
+	SAT: 0
 2020-12-04
-	SAT: 0
 	ERROR: 0
 	UNSAT: 0
+	SAT: 0
 2020-12-05
-	SAT: 0
 	ERROR: 0
 	UNSAT: 0
+	SAT: 0
 2020-12-06
-	SAT: 0
 	ERROR: 0
 	UNSAT: 0
+	SAT: 0
 2020-12-07
-	SAT: 0
 	ERROR: 0
 	UNSAT: 0
+	SAT: 0
 2020-12-08
-	SAT: 10
 	ERROR: 1
 	UNSAT: 7
+	SAT: 10
 2020-12-09
-	SAT: 0
 	ERROR: 0
 	UNSAT: 0
+	SAT: 0
 2020-12-10
-	SAT: 0
 	ERROR: 0
 	UNSAT: 0
+	SAT: 0
 2020-12-11
-	SAT: 0
 	ERROR: 0
 	UNSAT: 0
+	SAT: 0
 2020-12-12
-	SAT: 5
 	ERROR: 0
 	UNSAT: 4
+	SAT: 5
 2020-12-13
-	SAT: 0
 	ERROR: 0
 	UNSAT: 0
+	SAT: 0
 
 Session results by sub-challenge
 Inv1OK
@@ -174,19 +174,19 @@ Size in 10s of nodes
 
 Inv1OK
 10
-	SAT: 1
 	UNSAT: 4
+	SAT: 1
 11
-	SAT: 0
 	UNSAT: 2
+	SAT: 0
 
 Inv2OK
 12
-	SAT: 2
 	UNSAT: 4
+	SAT: 2
 13
-	SAT: 3
 	UNSAT: 0
+	SAT: 3
 
 Inv3OK
 15
@@ -205,34 +205,34 @@ Inv4OK
 Number of disj quantifications
 
 Inv1OK
-2
-	SAT: 1
+0
 	UNSAT: 6
+	SAT: 1
 
 Inv2OK
-2
-	SAT: 5
+0
 	UNSAT: 4
+	SAT: 5
 
 Inv3OK
-5
+2
 	UNSAT: 1
 
 Inv4OK
-5
+2
 	SAT: 9
 
 Number multiplicity arrows
 
 Inv1OK
 0
-	SAT: 1
 	UNSAT: 6
+	SAT: 1
 
 Inv2OK
 0
-	SAT: 5
 	UNSAT: 4
+	SAT: 5
 
 Inv3OK
 0
@@ -246,13 +246,13 @@ Number of binary temporal operators
 
 Inv1OK
 0
-	SAT: 1
 	UNSAT: 6
+	SAT: 1
 
 Inv2OK
 0
-	SAT: 5
 	UNSAT: 4
+	SAT: 5
 
 Inv3OK
 0
@@ -265,50 +265,50 @@ Inv4OK
 Number of quantifiers
 
 Inv1OK
-5
-	SAT: 1
+0
 	UNSAT: 4
-6
-	SAT: 0
+	SAT: 1
+1
 	UNSAT: 0
-7
 	SAT: 0
+2
 	UNSAT: 2
+	SAT: 0
 
 Inv2OK
-7
-	SAT: 1
+2
 	UNSAT: 4
-8
+	SAT: 1
+3
+	UNSAT: 0
 	SAT: 0
+4
 	UNSAT: 0
-9
 	SAT: 4
-	UNSAT: 0
 
 Inv3OK
-7
+6
 	UNSAT: 1
 
 Inv4OK
-7
+6
 	SAT: 5
-8
+7
 	SAT: 0
-9
+8
 	SAT: 4
 
 Number of inverted navigation expressions
 
 Inv1OK
 0
-	SAT: 1
 	UNSAT: 6
+	SAT: 1
 
 Inv2OK
 0
-	SAT: 5
 	UNSAT: 4
+	SAT: 5
 
 Inv3OK
 0
@@ -322,13 +322,13 @@ Max nested temporal operator level
 
 Inv1OK
 0
-	SAT: 1
 	UNSAT: 6
+	SAT: 1
 
 Inv2OK
 0
-	SAT: 5
 	UNSAT: 4
+	SAT: 5
 
 Inv3OK
 0
@@ -342,13 +342,13 @@ Number of lone/one quantifiers
 
 Inv1OK
 0
-	SAT: 1
 	UNSAT: 6
+	SAT: 1
 
 Inv2OK
 0
-	SAT: 5
 	UNSAT: 4
+	SAT: 5
 
 Inv3OK
 0
@@ -361,56 +361,59 @@ Inv4OK
 Max nested quantifier level
 
 Inv1OK
-1
+0
+	UNSAT: 4
 	SAT: 1
-	UNSAT: 6
+1
+	UNSAT: 2
+	SAT: 0
 
 Inv2OK
 1
-	SAT: 1
 	UNSAT: 4
+	SAT: 1
 2
-	SAT: 4
 	UNSAT: 0
+	SAT: 4
 
 Inv3OK
-1
+2
 	UNSAT: 1
 
 Inv4OK
-1
-	SAT: 5
 2
+	SAT: 5
+3
 	SAT: 4
 
 * Derivation tree
 3qN2T4SAA2exYuvpE, 2020-11-27T15:28:44 (model share)
-	5zZfSj3xCrk9jqQb4, 2020-12-08T18:54:06 (Inv1OK,correct,check,)
-		RnG7MKq9zKFeTijFj, 2020-12-08T19:00:09 (The name "id" cannot be found.)
-			mNMLjjWHYy5piA9TP, 2020-12-08T19:00:17 (Inv1OK,correct,check,)
-				BWH5mnzSnpNmffYua, 2020-12-08T19:00:22 (Inv4OK,incorrect,check,)
-					RXXEdaZMyN2WF7eLc, 2020-12-08T19:02:22 (Inv4OK,incorrect,check,)
-						pzhzJqBwN73mzpgHc, 2020-12-08T19:03:53 (Inv4OK,incorrect,check,)
-							KRdeofjoHvGwEH7p9, 2020-12-08T19:05:54 (Inv4OK,incorrect,check,)
-								Sgei6Muidxqks2nmu, 2020-12-08T19:06:10 (Inv4OK,incorrect,check,)
-									bABhpqF6yRPJ7FYJi, 2020-12-08T19:11:56 (Inv2OK,incorrect,check,)
-										CjQ34oDXxewZWcDDf, 2020-12-08T19:12:13 (Inv2OK,correct,check,)
-											9oBLeeiAPGKWjGKrd, 2020-12-08T19:14:17 (Inv2OK,correct,check,)
-												JELDMrHCCXN9zQ4ww, 2020-12-08T19:14:20 (Inv4OK,incorrect,check,)
-													DvoN5CZ7BRH3A3KJQ, 2020-12-08T19:16:24 (Inv4OK,incorrect,check,)
-														f8T6yhzv4PZXHkJe5, 2020-12-08T19:17 (Inv4OK,incorrect,check,)
-															kypm3TPfNap6NBx6M, 2020-12-08T19:17:27 (Inv4OK,incorrect,check,)
-																6rELMBQdeTLapFc6s, 2020-12-08T19:37:15 (model share)
-	j8Bc5smccCzF74LBn, 2020-12-08T21:55:40 (Inv1OK,correct,check,)
-		8ci68ZS4Cv8eygbnt, 2020-12-08T21:55:43 (Inv2OK,correct,check,)
-			6KQX9K6egom9gMwBK, 2020-12-08T21:55:46 (Inv3OK,correct,check,)
-				cmHHp5SCRk33pQmh5, 2020-12-08T21:55:58 (model share)
-	FzYFMj6tKodQJEDvW, 2020-12-12T21:51:43 (Inv1OK,correct,check,)
-		KHFhaD5yfu9uMRZgF, 2020-12-12T21:51:54 (Inv1OK,correct,check,)
-			v2QSmfiMScTRraYKj, 2020-12-12T21:52:01 (Inv1OK,incorrect,check,Subset operator is redundant, because the left and right expressions always have the same value. Left type = {this/User->this/Work} Right type = {this/User->this/Work})
-				5jWMjrLGE8J9Tfr9S, 2020-12-12T21:52:04 (Inv1OK,correct,check,)
-					XiQKhS64seciv7nhQ, 2020-12-12T21:54:01 (Inv2OK,incorrect,check,)
-						KyyEFoaykAJDDgRvs, 2020-12-12T21:54:20 (Inv2OK,incorrect,check,)
-							mRij2ZkFDQQh8MiwZ, 2020-12-12T21:55:19 (Inv2OK,incorrect,check,)
-								FXPTXgZZZFmk4hugJ, 2020-12-12T21:55:29 (Inv2OK,incorrect,check,)
-									cAtS7fGBs8C8SL7gT, 2020-12-12T21:56:28 (Inv2OK,correct,check,)
+  5zZfSj3xCrk9jqQb4, 2020-12-08T18:54:06 (Inv1OK,correct,check,)
+    RnG7MKq9zKFeTijFj, 2020-12-08T19:00:09 (The name "id" cannot be found.)
+      mNMLjjWHYy5piA9TP, 2020-12-08T19:00:17 (Inv1OK,correct,check,)
+        BWH5mnzSnpNmffYua, 2020-12-08T19:00:22 (Inv4OK,incorrect,check,)
+          RXXEdaZMyN2WF7eLc, 2020-12-08T19:02:22 (Inv4OK,incorrect,check,)
+            pzhzJqBwN73mzpgHc, 2020-12-08T19:03:53 (Inv4OK,incorrect,check,)
+              KRdeofjoHvGwEH7p9, 2020-12-08T19:05:54 (Inv4OK,incorrect,check,)
+                Sgei6Muidxqks2nmu, 2020-12-08T19:06:10 (Inv4OK,incorrect,check,)
+                  bABhpqF6yRPJ7FYJi, 2020-12-08T19:11:56 (Inv2OK,incorrect,check,)
+                    CjQ34oDXxewZWcDDf, 2020-12-08T19:12:13 (Inv2OK,correct,check,)
+                      9oBLeeiAPGKWjGKrd, 2020-12-08T19:14:17 (Inv2OK,correct,check,)
+                        JELDMrHCCXN9zQ4ww, 2020-12-08T19:14:20 (Inv4OK,incorrect,check,)
+                          DvoN5CZ7BRH3A3KJQ, 2020-12-08T19:16:24 (Inv4OK,incorrect,check,)
+                            f8T6yhzv4PZXHkJe5, 2020-12-08T19:17 (Inv4OK,incorrect,check,)
+                              kypm3TPfNap6NBx6M, 2020-12-08T19:17:27 (Inv4OK,incorrect,check,)
+                                6rELMBQdeTLapFc6s, 2020-12-08T19:37:15 (model share)
+  j8Bc5smccCzF74LBn, 2020-12-08T21:55:40 (Inv1OK,correct,check,)
+    8ci68ZS4Cv8eygbnt, 2020-12-08T21:55:43 (Inv2OK,correct,check,)
+      6KQX9K6egom9gMwBK, 2020-12-08T21:55:46 (Inv3OK,correct,check,)
+        cmHHp5SCRk33pQmh5, 2020-12-08T21:55:58 (model share)
+  FzYFMj6tKodQJEDvW, 2020-12-12T21:51:43 (Inv1OK,correct,check,)
+    KHFhaD5yfu9uMRZgF, 2020-12-12T21:51:54 (Inv1OK,correct,check,)
+      v2QSmfiMScTRraYKj, 2020-12-12T21:52:01 (Inv1OK,incorrect,check,Subset operator is redundant, because the left and right expressions always have the same value. Left type = {this/User->this/Work} Right type = {this/User->this/Work})
+        5jWMjrLGE8J9Tfr9S, 2020-12-12T21:52:04 (Inv1OK,correct,check,)
+          XiQKhS64seciv7nhQ, 2020-12-12T21:54:01 (Inv2OK,incorrect,check,)
+            KyyEFoaykAJDDgRvs, 2020-12-12T21:54:20 (Inv2OK,incorrect,check,)
+              mRij2ZkFDQQh8MiwZ, 2020-12-12T21:55:19 (Inv2OK,incorrect,check,)
+                FXPTXgZZZFmk4hugJ, 2020-12-12T21:55:29 (Inv2OK,incorrect,check,)
+                  cAtS7fGBs8C8SL7gT, 2020-12-12T21:56:28 (Inv2OK,correct,check,)
