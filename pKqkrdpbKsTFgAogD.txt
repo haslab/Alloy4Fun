@@ -1,0 +1,1679 @@
+pKqkrdpbKsTFgAogD (2020-12-14)
+
+* Meta-data
+Challenge name: unknown
+Creation time: 2020-11-30
+# sub-challenges: 15
+Metric catalog: Example metric catalog
+
+* Overall metric statistics
+Total model entries: 533
+Total executions: 523
+Total shares: 10
+Total error messages: 144
+Total warning messages: 20
+Total solutions: 381
+Total sessions: 33
+Rejected due to server errors: 0
+Total instance entries: 0
+Total link entries: 11
+
+* Scalar metrics
+Number of shared sessions: 3
+Alloy runtime errors: 3
+Incorrect executions: 119
+Correct executions: 262
+Shared errored models: 2
+Incorrect executions with warnings: 12
+Longest session: 52
+Shared models: 10
+Correct executions with warnings: 2
+
+* Overall metrics
+
+Sessions by length
+1: 1
+2: 3
+3: 0
+4: 2
+5: 0
+6: 3
+7: 0
+8: 1
+9: 0
+10: 1
+11: 0
+12: 1
+13: 2
+14: 1
+15: 1
+16: 0
+17: 1
+18: 4
+19: 2
+20: 0
+21: 1
+22: 1
+23: 3
+24: 1
+25: 0
+26: 1
+27: 1
+28: 0
+29: 0
+30: 0
+31: 0
+32: 0
+33: 0
+34: 1
+35: 0
+36: 0
+37: 0
+38: 0
+39: 0
+40: 0
+41: 0
+42: 0
+43: 0
+44: 0
+45: 0
+46: 0
+47: 0
+48: 0
+49: 0
+50: 0
+51: 1
+
+Sessions by # of solved sub-challenges
+0: 1
+1: 6
+2: 3
+3: 0
+4: 2
+5: 3
+6: 2
+7: 6
+8: 2
+9: 3
+10: 2
+11: 2
+12: 1
+
+Warnings by type
+Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}: 3
+This variable is unused.: 5
+Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}: 7
+The join operation here always yields an empty set. Left type = {_} Right type = {_}: 5
+
+Entries over time
+2020-11-30: 21
+2020-12-01: 0
+2020-12-02: 78
+2020-12-03: 3
+2020-12-04: 335
+2020-12-05: 0
+2020-12-06: 0
+2020-12-07: 0
+2020-12-08: 32
+2020-12-09: 0
+2020-12-10: 20
+2020-12-11: 0
+2020-12-12: 34
+2020-12-13: 0
+
+Errors by type
+There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ : 3
+in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}: 9
+This expression failed to be typechecked line _ column _ filename=_.als: 2
+This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) : 17
+The name _ cannot be found.: 39
+This must be a set or relation. Instead, it has the following possible type(s): {_}: 22
+There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ : 12
+There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ : 1
+There are 1 possible tokens that can appear here: } : 1
+Multiplicity expression not allowed here.: 1
+= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}: 2
+There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~ : 1
+Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.: 3
+The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".: 7
+There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ : 2
+This must be a formula expression. Instead, it has the following possible type(s): {_}: 15
+There are 8 possible tokens that can appear here: NAME disj exh part private seq this var : 6
+This must be a unary set, but instead it has the following possible type(s): {_}: 1
+
+* Overall metrics, classified
+
+Execution results by sub-challenge
+inv1OK
+	SAT: 9
+	UNSAT: 54
+inv2OK
+	SAT: 3
+	UNSAT: 31
+inv3OK
+	SAT: 5
+	UNSAT: 35
+inv4OK
+	SAT: 34
+	UNSAT: 32
+inv5OK
+	SAT: 22
+	UNSAT: 31
+inv6OK
+	SAT: 5
+	UNSAT: 22
+inv7OK
+	SAT: 10
+	UNSAT: 20
+inv8OK
+	SAT: 6
+	UNSAT: 12
+inv9OK
+	SAT: 5
+	UNSAT: 10
+inv10OK
+	SAT: 6
+	UNSAT: 5
+inv11OK
+	SAT: 7
+	UNSAT: 5
+inv12OK
+	SAT: 5
+	UNSAT: 1
+inv13OK
+	SAT: 2
+	UNSAT: 1
+inv14OK
+	SAT: 0
+	UNSAT: 2
+inv15OK
+	SAT: 0
+	UNSAT: 1
+
+Executions over time classified
+2020-11-30
+	ERROR: 2
+	SAT: 6
+	UNSAT: 13
+2020-12-01
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-02
+	ERROR: 15
+	SAT: 27
+	UNSAT: 36
+2020-12-03
+	ERROR: 0
+	SAT: 0
+	UNSAT: 3
+2020-12-04
+	ERROR: 105
+	SAT: 62
+	UNSAT: 168
+2020-12-05
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-06
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-07
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-08
+	ERROR: 13
+	SAT: 10
+	UNSAT: 9
+2020-12-09
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-10
+	ERROR: 1
+	SAT: 1
+	UNSAT: 18
+2020-12-11
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-12
+	ERROR: 6
+	SAT: 13
+	UNSAT: 15
+2020-12-13
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+
+Session results by sub-challenge
+inv1OK
+	solved: 29
+	unsolved: 4
+inv2OK
+	solved: 25
+	unsolved: 8
+inv3OK
+	solved: 23
+	unsolved: 10
+inv4OK
+	solved: 23
+	unsolved: 10
+inv5OK
+	solved: 21
+	unsolved: 12
+inv6OK
+	solved: 18
+	unsolved: 15
+inv7OK
+	solved: 17
+	unsolved: 16
+inv8OK
+	solved: 11
+	unsolved: 22
+inv9OK
+	solved: 8
+	unsolved: 25
+inv10OK
+	solved: 4
+	unsolved: 29
+inv11OK
+	solved: 3
+	unsolved: 30
+inv12OK
+	solved: 1
+	unsolved: 32
+inv13OK
+	solved: 1
+	unsolved: 32
+inv14OK
+	solved: 1
+	unsolved: 32
+inv15OK
+	solved: 1
+	unsolved: 32
+
+* Metrics by sub-challenge, classified
+
+Size in 10s of nodes
+
+inv1OK
+0
+	SAT: 7
+	UNSAT: 44
+1
+	SAT: 2
+	UNSAT: 10
+
+inv2OK
+0
+	SAT: 2
+	UNSAT: 24
+1
+	SAT: 1
+	UNSAT: 7
+
+inv3OK
+0
+	SAT: 1
+	UNSAT: 19
+1
+	SAT: 4
+	UNSAT: 16
+
+inv4OK
+0
+	SAT: 5
+	UNSAT: 0
+1
+	SAT: 8
+	UNSAT: 20
+2
+	SAT: 21
+	UNSAT: 12
+
+inv5OK
+0
+	SAT: 8
+	UNSAT: 21
+1
+	SAT: 11
+	UNSAT: 9
+2
+	SAT: 3
+	UNSAT: 1
+
+inv6OK
+1
+	SAT: 4
+	UNSAT: 19
+2
+	SAT: 1
+	UNSAT: 3
+
+inv7OK
+1
+	SAT: 4
+	UNSAT: 2
+2
+	SAT: 6
+	UNSAT: 17
+3
+	SAT: 0
+	UNSAT: 1
+
+inv8OK
+1
+	SAT: 6
+	UNSAT: 9
+2
+	SAT: 0
+	UNSAT: 0
+3
+	SAT: 0
+	UNSAT: 3
+
+inv9OK
+1
+	SAT: 5
+	UNSAT: 0
+2
+	SAT: 0
+	UNSAT: 6
+3
+	SAT: 0
+	UNSAT: 3
+4
+	SAT: 0
+	UNSAT: 1
+
+inv10OK
+1
+	SAT: 3
+	UNSAT: 0
+2
+	SAT: 1
+	UNSAT: 0
+3
+	SAT: 2
+	UNSAT: 5
+
+inv11OK
+2
+	SAT: 1
+	UNSAT: 0
+3
+	SAT: 4
+	UNSAT: 4
+4
+	SAT: 2
+	UNSAT: 1
+
+inv12OK
+1
+	SAT: 1
+	UNSAT: 0
+2
+	SAT: 4
+	UNSAT: 0
+3
+	SAT: 0
+	UNSAT: 0
+4
+	SAT: 0
+	UNSAT: 1
+
+inv13OK
+2
+	SAT: 2
+	UNSAT: 1
+
+inv14OK
+4
+	UNSAT: 2
+
+inv15OK
+2
+	UNSAT: 1
+
+Number of binary temporal operators
+
+inv1OK
+0
+	SAT: 9
+	UNSAT: 54
+
+inv2OK
+0
+	SAT: 3
+	UNSAT: 31
+
+inv3OK
+0
+	SAT: 5
+	UNSAT: 35
+
+inv4OK
+0
+	SAT: 34
+	UNSAT: 32
+
+inv5OK
+0
+	SAT: 22
+	UNSAT: 31
+
+inv6OK
+0
+	SAT: 5
+	UNSAT: 22
+
+inv7OK
+0
+	SAT: 10
+	UNSAT: 20
+
+inv8OK
+0
+	SAT: 6
+	UNSAT: 12
+
+inv9OK
+0
+	SAT: 5
+	UNSAT: 10
+
+inv10OK
+0
+	SAT: 6
+	UNSAT: 5
+
+inv11OK
+0
+	SAT: 7
+	UNSAT: 5
+
+inv12OK
+0
+	SAT: 5
+	UNSAT: 1
+
+inv13OK
+0
+	SAT: 2
+	UNSAT: 1
+
+inv14OK
+0
+	UNSAT: 2
+
+inv15OK
+0
+	UNSAT: 1
+
+Max nested temporal operator level
+
+inv1OK
+0
+	SAT: 9
+	UNSAT: 54
+
+inv2OK
+0
+	SAT: 3
+	UNSAT: 31
+
+inv3OK
+0
+	SAT: 5
+	UNSAT: 35
+
+inv4OK
+0
+	SAT: 34
+	UNSAT: 32
+
+inv5OK
+0
+	SAT: 22
+	UNSAT: 31
+
+inv6OK
+0
+	SAT: 5
+	UNSAT: 22
+
+inv7OK
+0
+	SAT: 10
+	UNSAT: 20
+
+inv8OK
+0
+	SAT: 6
+	UNSAT: 12
+
+inv9OK
+0
+	SAT: 5
+	UNSAT: 10
+
+inv10OK
+0
+	SAT: 6
+	UNSAT: 5
+
+inv11OK
+0
+	SAT: 7
+	UNSAT: 5
+
+inv12OK
+0
+	SAT: 5
+	UNSAT: 1
+
+inv13OK
+0
+	SAT: 2
+	UNSAT: 1
+
+inv14OK
+0
+	UNSAT: 2
+
+inv15OK
+0
+	UNSAT: 1
+
+Number of lone/one quantifiers
+
+inv1OK
+0
+	SAT: 9
+	UNSAT: 54
+
+inv2OK
+0
+	SAT: 3
+	UNSAT: 31
+
+inv3OK
+0
+	SAT: 5
+	UNSAT: 35
+
+inv4OK
+0
+	SAT: 34
+	UNSAT: 32
+
+inv5OK
+0
+	SAT: 22
+	UNSAT: 31
+
+inv6OK
+0
+	SAT: 5
+	UNSAT: 22
+
+inv7OK
+0
+	SAT: 10
+	UNSAT: 20
+
+inv8OK
+0
+	SAT: 6
+	UNSAT: 12
+
+inv9OK
+0
+	SAT: 5
+	UNSAT: 7
+1
+	SAT: 0
+	UNSAT: 3
+
+inv10OK
+0
+	SAT: 6
+	UNSAT: 5
+
+inv11OK
+0
+	SAT: 6
+	UNSAT: 5
+1
+	SAT: 1
+	UNSAT: 0
+
+inv12OK
+0
+	SAT: 5
+	UNSAT: 1
+
+inv13OK
+0
+	SAT: 2
+	UNSAT: 1
+
+inv14OK
+0
+	UNSAT: 2
+
+inv15OK
+0
+	UNSAT: 1
+
+Max nested quantifier level
+
+inv1OK
+0
+	SAT: 8
+	UNSAT: 45
+1
+	SAT: 1
+	UNSAT: 9
+
+inv2OK
+0
+	SAT: 2
+	UNSAT: 24
+1
+	SAT: 1
+	UNSAT: 7
+
+inv3OK
+0
+	SAT: 1
+	UNSAT: 19
+1
+	SAT: 4
+	UNSAT: 16
+
+inv4OK
+0
+	SAT: 10
+	UNSAT: 20
+1
+	SAT: 24
+	UNSAT: 12
+
+inv5OK
+0
+	SAT: 10
+	UNSAT: 21
+1
+	SAT: 10
+	UNSAT: 8
+2
+	SAT: 2
+	UNSAT: 2
+
+inv6OK
+1
+	SAT: 5
+	UNSAT: 19
+2
+	SAT: 0
+	UNSAT: 3
+
+inv7OK
+1
+	SAT: 9
+	UNSAT: 13
+2
+	SAT: 1
+	UNSAT: 7
+
+inv8OK
+1
+	SAT: 6
+	UNSAT: 11
+2
+	SAT: 0
+	UNSAT: 1
+
+inv9OK
+1
+	SAT: 5
+	UNSAT: 6
+2
+	SAT: 0
+	UNSAT: 4
+
+inv10OK
+1
+	SAT: 3
+	UNSAT: 0
+2
+	SAT: 3
+	UNSAT: 5
+
+inv11OK
+2
+	SAT: 7
+	UNSAT: 5
+
+inv12OK
+1
+	SAT: 2
+	UNSAT: 0
+2
+	SAT: 3
+	UNSAT: 0
+3
+	SAT: 0
+	UNSAT: 1
+
+inv13OK
+1
+	SAT: 2
+	UNSAT: 1
+
+inv14OK
+1
+	UNSAT: 2
+
+inv15OK
+1
+	UNSAT: 1
+
+Number of disj quantifications
+
+inv1OK
+0
+	SAT: 9
+	UNSAT: 54
+
+inv2OK
+0
+	SAT: 3
+	UNSAT: 31
+
+inv3OK
+0
+	SAT: 5
+	UNSAT: 35
+
+inv4OK
+0
+	SAT: 34
+	UNSAT: 32
+
+inv5OK
+0
+	SAT: 22
+	UNSAT: 31
+
+inv6OK
+0
+	SAT: 5
+	UNSAT: 22
+
+inv7OK
+0
+	SAT: 10
+	UNSAT: 20
+
+inv8OK
+0
+	SAT: 6
+	UNSAT: 12
+
+inv9OK
+0
+	SAT: 5
+	UNSAT: 10
+
+inv10OK
+0
+	SAT: 6
+	UNSAT: 5
+
+inv11OK
+0
+	SAT: 7
+	UNSAT: 5
+
+inv12OK
+0
+	SAT: 5
+	UNSAT: 1
+
+inv13OK
+0
+	SAT: 2
+	UNSAT: 1
+
+inv14OK
+0
+	UNSAT: 2
+
+inv15OK
+0
+	UNSAT: 1
+
+Number multiplicity arrows
+
+inv1OK
+0
+	SAT: 9
+	UNSAT: 54
+
+inv2OK
+0
+	SAT: 3
+	UNSAT: 31
+
+inv3OK
+0
+	SAT: 5
+	UNSAT: 35
+
+inv4OK
+0
+	SAT: 34
+	UNSAT: 32
+
+inv5OK
+0
+	SAT: 22
+	UNSAT: 31
+
+inv6OK
+0
+	SAT: 5
+	UNSAT: 22
+
+inv7OK
+0
+	SAT: 10
+	UNSAT: 20
+
+inv8OK
+0
+	SAT: 6
+	UNSAT: 12
+
+inv9OK
+0
+	SAT: 5
+	UNSAT: 10
+
+inv10OK
+0
+	SAT: 6
+	UNSAT: 5
+
+inv11OK
+0
+	SAT: 7
+	UNSAT: 5
+
+inv12OK
+0
+	SAT: 5
+	UNSAT: 1
+
+inv13OK
+0
+	SAT: 2
+	UNSAT: 1
+
+inv14OK
+0
+	UNSAT: 2
+
+inv15OK
+0
+	UNSAT: 1
+
+Number of quantifiers
+
+inv1OK
+0
+	SAT: 8
+	UNSAT: 45
+1
+	SAT: 1
+	UNSAT: 9
+
+inv2OK
+0
+	SAT: 2
+	UNSAT: 24
+1
+	SAT: 1
+	UNSAT: 7
+
+inv3OK
+0
+	SAT: 1
+	UNSAT: 19
+1
+	SAT: 4
+	UNSAT: 16
+
+inv4OK
+0
+	SAT: 10
+	UNSAT: 20
+1
+	SAT: 24
+	UNSAT: 12
+
+inv5OK
+0
+	SAT: 10
+	UNSAT: 21
+1
+	SAT: 10
+	UNSAT: 8
+2
+	SAT: 2
+	UNSAT: 2
+
+inv6OK
+1
+	SAT: 1
+	UNSAT: 0
+2
+	SAT: 4
+	UNSAT: 19
+3
+	SAT: 0
+	UNSAT: 3
+
+inv7OK
+1
+	SAT: 2
+	UNSAT: 2
+2
+	SAT: 7
+	UNSAT: 11
+3
+	SAT: 1
+	UNSAT: 7
+
+inv8OK
+1
+	SAT: 3
+	UNSAT: 0
+2
+	SAT: 3
+	UNSAT: 11
+3
+	SAT: 0
+	UNSAT: 1
+
+inv9OK
+1
+	SAT: 1
+	UNSAT: 0
+2
+	SAT: 4
+	UNSAT: 6
+3
+	SAT: 0
+	UNSAT: 4
+
+inv10OK
+1
+	SAT: 3
+	UNSAT: 0
+2
+	SAT: 0
+	UNSAT: 0
+3
+	SAT: 3
+	UNSAT: 5
+
+inv11OK
+3
+	SAT: 7
+	UNSAT: 4
+4
+	SAT: 0
+	UNSAT: 1
+
+inv12OK
+1
+	SAT: 1
+	UNSAT: 0
+2
+	SAT: 1
+	UNSAT: 0
+3
+	SAT: 3
+	UNSAT: 0
+4
+	SAT: 0
+	UNSAT: 1
+
+inv13OK
+1
+	SAT: 2
+	UNSAT: 1
+
+inv14OK
+2
+	UNSAT: 2
+
+inv15OK
+2
+	UNSAT: 1
+
+Number of inverted navigation expressions
+
+inv1OK
+0
+	SAT: 9
+	UNSAT: 54
+
+inv2OK
+0
+	SAT: 3
+	UNSAT: 31
+
+inv3OK
+0
+	SAT: 5
+	UNSAT: 35
+
+inv4OK
+0
+	SAT: 34
+	UNSAT: 32
+
+inv5OK
+0
+	SAT: 22
+	UNSAT: 31
+
+inv6OK
+0
+	SAT: 5
+	UNSAT: 22
+
+inv7OK
+0
+	SAT: 10
+	UNSAT: 20
+
+inv8OK
+0
+	SAT: 6
+	UNSAT: 12
+
+inv9OK
+0
+	SAT: 5
+	UNSAT: 10
+
+inv10OK
+0
+	SAT: 6
+	UNSAT: 5
+
+inv11OK
+0
+	SAT: 7
+	UNSAT: 5
+
+inv12OK
+0
+	SAT: 5
+	UNSAT: 1
+
+inv13OK
+0
+	SAT: 2
+	UNSAT: 1
+
+inv14OK
+0
+	UNSAT: 2
+
+inv15OK
+0
+	UNSAT: 1
+
+* Derivation tree
+pKqkrdpbKsTFgAogD, 2020-11-30T17:14:13 (model share)
+	rjQncXTJM9RsbqDGE, 2020-11-30T22:27:03 (inv1OK,correct,check,)
+		DmFRe5SfpgtgKhjPC, 2020-11-30T22:27:19 (inv2OK,correct,check,)
+			fdLnkaDH43Ci9f678, 2020-11-30T22:28 (inv3OK,correct,check,)
+				6xFeE3caFha9Sq22B, 2020-11-30T22:28:41 (inv5OK,incorrect,check,)
+					6yHcfbYZk8sLaGkq4, 2020-11-30T22:29:12 (inv5OK,incorrect,check,)
+						5vJgZmcH7c8bPrSNN, 2020-11-30T22:29:18 (inv4OK,incorrect,check,)
+							CryGMaJyxeotcNRES, 2020-11-30T22:29:25 (inv4OK,correct,check,)
+								9wN9WQC6tde9myZFr, 2020-11-30T22:30:30 (inv4OK,correct,check,)
+									aN7a8CP5B6jeNCDr6, 2020-11-30T22:30:34 (inv5OK,correct,check,)
+										SQe4j63G2gS3vW2mM, 2020-11-30T22:31:03 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+											vh9aA3C5hGTxmbz2q, 2020-11-30T22:31:14 (inv6OK,correct,check,)
+												cqRvCigX6toB53BBE, 2020-11-30T22:31:42 (inv7OK,correct,check,)
+													utAdgEZq9YqBQPwj9, 2020-11-30T22:36:35 (inv8OK,correct,check,)
+														qSZQBirZzrTnvxgai, 2020-11-30T22:37:22 (inv9OK,correct,check,)
+															m93HsrgFWwtxJwRdB, 2020-11-30T22:38:12 (The name "class" cannot be found.)
+																nb9sBP2NgtLM2RvWy, 2020-11-30T22:38:19 (inv9OK,correct,check,)
+																	5zS3D3AGTWaCnhMrp, 2020-11-30T22:40:58 (inv10OK,correct,check,)
+																		6nwn9ty5sYrKu2A9e, 2020-11-30T22:41:01 (inv11OK,incorrect,check,)
+																			CF7XkWQjaootfv3in, 2020-11-30T22:43:45 (inv13OK,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Person->this/Person} Right type = {this/Person->this/Class})
+																				MfNazL2F7Dzgh9hxg, 2020-11-30T22:44:06 (inv13OK,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Person->this/Person} Right type = {this/Person->this/Class})
+																					eXpieCoRedjFW7d8Z, 2020-11-30T22:44:24 (inv13OK,correct,check,)
+																						ycoNeEAAhzG9BWKjT, 2020-11-30T22:45 (model share)
+																							GoZcqumvJ8fzQAXec, 2020-11-30T22:45:06 (model share)
+	ShFyP96o9g6gW3Xkc, 2020-12-02T09:31:57 (inv1OK,correct,check,)
+		BazXikTD5ZGxCr6Mr, 2020-12-02T09:32:25 (inv1OK,correct,check,)
+	wMQY6A8Yd2jqHDF24, 2020-12-02T12:42:36 (inv1OK,incorrect,check,)
+		MmjkRqKDZe8tTzoKh, 2020-12-02T12:42:55 (inv1OK,correct,check,)
+			p2pzeAEbnad3CaXCD, 2020-12-02T12:43:08 (The name "Teachers" cannot be found.)
+				7deMq3pfoX2dNnwSZ, 2020-12-02T12:43:16 (inv2OK,correct,check,)
+					qBJNx5rguGBv9Ls2g, 2020-12-02T12:43:45 (inv3OK,correct,check,)
+						yoWtntpMvwgPvzpGK, 2020-12-02T12:44:05 (inv1OK,correct,check,)
+							tiZ9PkpEocXevFYpP, 2020-12-02T12:44:09 (inv3OK,correct,check,)
+								DX5gcRDJaG5AuJkvC, 2020-12-02T12:45:27 (inv3OK,correct,check,)
+									YghYpTkuXTcpzRJfR, 2020-12-02T12:45:32 (inv4OK,incorrect,check,)
+										pyrvfmr8CWQq4NA9z, 2020-12-02T12:46:16 (inv4OK,correct,check,)
+											m5nEFskNE8Yd5g7xA, 2020-12-02T12:47:58 (inv4OK,correct,check,)
+												CHoqMKKXCZdMp3Xsq, 2020-12-02T12:48:02 (inv5OK,correct,check,)
+													S664drGAaz4BopteG, 2020-12-02T12:49:24 (inv5OK,correct,check,)
+														CRs8SgS6XtWDXCFzw, 2020-12-02T12:49:29 (inv6OK,correct,check,)
+															Yhi2YvJRzQKY7AiiZ, 2020-12-02T12:51:16 (inv7OK,correct,check,)
+																3nBC6sg8gLkKJKoMr, 2020-12-02T12:51:52 (The name "TEaches" cannot be found.)
+																	dNgngFdpBKwN6QDMi, 2020-12-02T12:52 (inv8OK,incorrect,check,)
+																		YRqrKXyKsh8xDFR4z, 2020-12-02T12:55:54 (inv8OK,incorrect,check,)
+	BbwHwqNc4Dq7aijBe, 2020-12-02T12:42:53 (inv1OK,correct,check,)
+		xnNY6i2GLArzFfm6R, 2020-12-02T12:43:17 (inv2OK,incorrect,check,)
+			RNiNLk5Ts6zFY8TNC, 2020-12-02T12:44:13 (inv3OK,correct,check,)
+				pQGe9C9J4c3WsBxJS, 2020-12-02T12:44:23 (inv2OK,correct,check,)
+					QLPejR8YPKkp6Hb7x, 2020-12-02T12:46:58 (inv4OK,correct,check,)
+						Mt3CLv3NAtPXrSSGu, 2020-12-02T12:49:02 (inv5OK,correct,check,)
+							gMqJBKHYnmymKv3gF, 2020-12-02T12:50:23 (inv6OK,incorrect,check,)
+								S6sxW446uTEcZRz6Z, 2020-12-02T12:51:05 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+									EiioTMYvEnRsHprwW, 2020-12-02T12:51:50 (inv6OK,correct,check,)
+										3HeCqbqpFSj4yQHpu, 2020-12-02T12:53:32 (The name "Teachers" cannot be found.)
+											ggAtDz2vA8ZSj2dzi, 2020-12-02T12:53:38 (inv7OK,incorrect,check,)
+												8PavGFCYfkpZCcANe, 2020-12-02T12:54:24 (The name "Teach" cannot be found.)
+													N6TCoxnxYLAcimxQW, 2020-12-02T12:54:32 (This cannot be a legal relational join where left hand side is this/Teacher (type = {this/Person}) right hand side is c (type = {this/Class}))
+														ZuRugKExouWRspRX2, 2020-12-02T12:54:43 (inv7OK,incorrect,check,)
+															dufeMbammw3cAqDyT, 2020-12-02T12:54:52 (inv7OK,correct,check,)
+																fxuCdKjxjWppAZz9c, 2020-12-02T12:56:39 (inv8OK,correct,check,)
+																	hudiEbnE5ZNhWWfog, 2020-12-02T12:57:12 (This expression failed to be typechecked line 87, column 16, filename=/tmp/alloy_heredoc16622536898010118328.als)
+	LdhMJCMYjQLBTA6x7, 2020-12-02T12:56:59 (model share)
+	etvcFEoA3euDPmtg5, 2020-12-02T13:38 (inv1OK,incorrect,check,)
+		Tha94QqhKaNuwj8AN, 2020-12-02T13:39:47 (There are 1 possible tokens that can appear here: })
+			WP3k8B2Az3scvi9uj, 2020-12-02T13:40:35 (inv1OK,correct,check,)
+				aiFLRcCnBJSXhB7wr, 2020-12-02T13:41:05 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+					Rhv6w65n4A4ED9hqs, 2020-12-02T13:41:09 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+						fxqxSYZ4ZjrJgdo4N, 2020-12-02T13:41:21 (inv2OK,correct,check,)
+							YXLHcx3McMhLdd9NH, 2020-12-02T13:41:53 (inv2OK,correct,check,)
+								gxF9hpkBn4oWkRJpx, 2020-12-02T13:42:16 (inv3OK,incorrect,check,)
+									FtYetc6saS4RSu2Ch, 2020-12-02T13:42:35 (inv3OK,incorrect,check,)
+										kj9GcjJwiBTLAp767, 2020-12-02T13:42:56 (inv3OK,correct,check,)
+											LSFqDFvLyPx4c4Wse, 2020-12-02T13:43:28 (inv4OK,incorrect,check,)
+												3igzTjqqSDoPBAGhh, 2020-12-02T13:46:33 (inv4OK,incorrect,check,)
+													HaL9SSe82niSDmG25, 2020-12-02T13:46:39 (inv4OK,incorrect,check,)
+														Z32uPt3cZjLeqWfL6, 2020-12-02T13:48:33 (inv4OK,correct,check,)
+															xGfAsTgi5sKZtQtJd, 2020-12-02T13:51:12 (inv5OK,incorrect,check,)
+																YvzdvkavvN6A9esRp, 2020-12-02T14:11:02 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+																	Q3MroScbiRKgTv7JF, 2020-12-02T14:11:17 (inv5OK,incorrect,check,)
+																		LvcuCPvdrRJb8m2qT, 2020-12-02T14:11:47 (inv5OK,incorrect,check,)
+																			xNnHgLgtx7WuXGxjn, 2020-12-02T14:12:06 (inv5OK,incorrect,check,)
+																				9PFB9chAnjoGPXJmo, 2020-12-02T14:17:20 (The name "class" cannot be found.)
+																					P8yyyytWrib5xDWhb, 2020-12-02T14:17:26 (The name "teaches" cannot be found.)
+																						DGHaDADdRvgypp2LN, 2020-12-02T14:17:31 (inv5OK,correct,check,)
+																							aSGmnCDbtWbrzBr7Y, 2020-12-02T14:17:54 (inv6OK,incorrect,check,)
+	uPg95DTxAK2BmNJYg, 2020-12-02T14:36:14 (inv1OK,correct,check,)
+		FFK5L6zFCzBDn9da2, 2020-12-02T14:36:27 (inv2OK,incorrect,check,)
+			8HeH6E2trkoQyNaXn, 2020-12-02T14:36:37 (inv2OK,correct,check,)
+				fabEuxonjBeLSpBQk, 2020-12-02T14:38:17 (inv3OK,incorrect,check,)
+					5qD4qRpukpKM8RQdq, 2020-12-02T14:39:56 (inv3OK,correct,check,)
+						f8iCxninGP5azG9z5, 2020-12-02T14:40:45 (inv4OK,incorrect,check,)
+							wrsQjNqRQBW3oJvfK, 2020-12-02T14:40:54 (inv4OK,incorrect,check,)
+								GpAuDF23bswiYNjiG, 2020-12-02T14:41:01 (inv4OK,incorrect,check,)
+									Rr8Md78cW4oXWpws6, 2020-12-02T14:41:25 (inv4OK,correct,check,)
+										FTE3Y83EEtw3b8vdP, 2020-12-02T14:43:16 (inv5OK,correct,check,)
+											YLgzWko4GDntd7QuH, 2020-12-02T14:43:49 (This cannot be a legal relational join where left hand side is t (type = {this/Person}) right hand side is this/Teacher (type = {this/Person}))
+												ZKkbNT5kY3gnqsgNr, 2020-12-02T14:54:20 (This cannot be a legal relational join where left hand side is t (type = {this/Person}) right hand side is this/Teacher (type = {this/Person}))
+													Xov9TxKhZxoyGDKmZ, 2020-12-02T14:54:37 (inv6OK,incorrect,check,)
+	xXv29rF5BssW5gB9R, 2020-12-02T14:42:42 (model share)
+		MNEgGBFLW4fdj5AmH, 2020-12-02T14:45:10 (inv1OK,correct,check,)
+			4rbRjtPWi3xZgXcqC, 2020-12-02T14:45:56 (model share)
+				qJKM4G5KP8W9JWAjK, 2020-12-03T00:05:01 (inv1OK,correct,check,)
+					Y5NvQLhn4BMroeMRv, 2020-12-03T00:05:04 (inv2OK,correct,check,)
+						MrcBiWncnGQyjp6cn, 2020-12-03T00:05:07 (inv6OK,correct,check,)
+				6p9Dp59jYYZktvj2a, 2020-12-04T15:45:42 (model share)
+				QuLBE7kHm7YtCvdei, 2020-12-04T15:54:30 (model share)
+				9fKRdSF4nL4PGkWFb, 2020-12-10T23:24:16 (inv3OK,correct,check,)
+					JotLFZjkp3Ajeai3S, 2020-12-10T23:24:37 (inv3OK,correct,check,)
+						zx5WBoha75CRjrXWL, 2020-12-10T23:26:21 (inv3OK,correct,check,)
+							izBwWX6FAhL2PJipD, 2020-12-10T23:26:23 (inv4OK,correct,check,)
+								Bfmw6iZ6MnA56bGtm, 2020-12-10T23:26:28 (inv4OK,correct,check,)
+									mGAsfzzxrk3sQ9KaP, 2020-12-10T23:28:44 (in can be used only between 2 expressions of the same arity. Left type = {this/Person} Right type = {this/Person->this/Class})
+										5mf96Erhdb7sWPkNA, 2020-12-10T23:29:13 (inv6OK,incorrect,check,)
+				hwEg7W4cRgmDJtG2M, 2020-12-10T23:26:08 (inv1OK,correct,check,)
+					Q6uFZHpk7xoGyXxLr, 2020-12-10T23:26:09 (inv2OK,correct,check,)
+						iB69PGvDm6DrmDfSA, 2020-12-10T23:26:16 (inv2OK,correct,check,)
+							L3CrSGQ7CAqjQGg5i, 2020-12-10T23:26:40 (inv3OK,correct,check,)
+								zvH47gtLmQKqdTsta, 2020-12-10T23:26:41 (inv4OK,correct,check,)
+									GkaRMq83dGSt9Q5G6, 2020-12-10T23:26:52 (inv5OK,correct,check,)
+										noEcRPdJpcsYpLnii, 2020-12-10T23:27:03 (inv6OK,correct,check,)
+											NCSpGhsEFmkPkRy7C, 2020-12-10T23:27:12 (inv7OK,correct,check,)
+												LQ7WgoEehYed2ShyG, 2020-12-10T23:27:23 (inv8OK,correct,check,)
+													WKvSeEhj4PTX5yiev, 2020-12-10T23:27:33 (inv9OK,correct,check,)
+														NKjHEhxjmiwNp7eoF, 2020-12-10T23:27:44 (inv10OK,correct,check,)
+															6jbJTqZAS4XnnBZFk, 2020-12-10T23:27:54 (inv11OK,correct,check,)
+																ZhEKvkFCupayXn28t, 2020-12-10T23:28:04 (inv12OK,correct,check,)
+																	KgFyXuPwzCLtQBWAa, 2020-12-10T23:28:52 (model share)
+																		bC7kLwNBpzjgPHap6, 2020-12-10T23:31:01 (model share)
+	mXZgNfMKwrK4ApPmv, 2020-12-02T17:33:13 (inv1OK,incorrect,check,)
+		BB8qGXGqFJE2zHhcK, 2020-12-02T17:34:48 (inv1OK,incorrect,check,)
+			e8iW2T73xy3dg8qjW, 2020-12-02T17:36:39 (inv14OK,correct,check,)
+				5YPwKvmwXR586qDXr, 2020-12-02T17:36:47 (inv14OK,correct,check,)
+	ZamtjKGTJA8gEZ9Pj, 2020-12-04T14:33:51 (inv1OK,correct,check,)
+		mjE2FqmR6PFpsrMPv, 2020-12-04T14:34:01 (inv2OK,correct,check,)
+			muxZiYedSWM6bvcAA, 2020-12-04T14:34:17 (inv3OK,correct,check,)
+				qGArLJewagvEzoRy3, 2020-12-04T14:34:33 (There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+					WwoEipRMTfjxg5jEz, 2020-12-04T14:35:15 (This must be a formula expression. Instead, it has the following possible type(s): {this/Person})
+						Zsb33PApF2TvuF9YE, 2020-12-04T14:35:25 (inv4OK,correct,check,)
+	Ee4aiNgAgEvbBAjKL, 2020-12-04T15:32:43 (inv1OK,correct,check,)
+		tCjvo8AJHTw4AWrWh, 2020-12-04T15:32:55 (inv2OK,correct,check,)
+	XRuBpHkhuMr53iJ5L, 2020-12-04T15:33:22 (inv2OK,correct,check,)
+		p5kmpQDeALkyGzrzt, 2020-12-04T15:33:40 (inv3OK,correct,check,)
+			H4PwCq8ymNjuGxQQP, 2020-12-04T15:34:41 (inv4OK,correct,check,)
+				uArGQTvtxuhiTx6S8, 2020-12-04T15:35:53 (inv5OK,correct,check,)
+					epCbgDs5YCA5jHqvS, 2020-12-04T15:36:17 (inv6OK,correct,check,)
+						R7FX4KgWDquGSBf7s, 2020-12-04T15:36:35 (This cannot be a legal relational join where left hand side is this/Teacher (type = {this/Person}) right hand side is c (type = {this/Class}))
+							wXyowpZAceS8BPDoe, 2020-12-04T15:37:12 (This cannot be a legal relational join where left hand side is this/Teacher . (this/Person <: Teaches) (type = {this/Class}) right hand side is c (type = {this/Class}))
+								CbTkLB8EhpTaGxRB6, 2020-12-04T15:37:37 (This cannot be a legal relational join where left hand side is this/Teacher . (this/Person <: Teaches) (type = {this/Class}) right hand side is c (type = {this/Class}))
+									zjgsN79Bi33DYmYm7, 2020-12-04T15:38:16 (This cannot be a legal relational join where left hand side is this/Teacher . (this/Person <: Teaches) (type = {this/Class}) right hand side is c (type = {this/Class}))
+										EttQT4EcqvpaPaxDW, 2020-12-04T15:38:47 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Person->this/Class} Right type = {this/Class})
+											5Ksz6e7pJg7JGfDKJ, 2020-12-04T15:39:03 (inv7OK,incorrect,check,)
+												ceegPdwpZBAuEN5kk, 2020-12-04T15:40:40 (inv7OK,correct,check,)
+													FTgsr5t3DjNmkpGma, 2020-12-04T15:40:50 (inv7OK,incorrect,check,)
+														NgzTt8hkiTdMYKScq, 2020-12-04T15:42:51 (inv8OK,incorrect,check,)
+															jpuWHrkSKGjNzc24o, 2020-12-04T15:44:13 (inv8OK,correct,check,)
+																6WaWy2doyy3onrKhW, 2020-12-04T15:44:58 (The name "Classes" cannot be found.)
+																	M4CHbfpdttNdAB6HG, 2020-12-04T15:45:10 (The name "Classes" cannot be found.)
+																		jNDTQjGf2mR6D3BQT, 2020-12-04T15:45:19 (inv9OK,incorrect,check,)
+																			PhAJ5hBPaG3nbkrhK, 2020-12-04T15:45:41 (inv9OK,incorrect,check,)
+																				WdvgPJz9pDJLKpT53, 2020-12-04T15:45:57 (inv9OK,incorrect,check,)
+																					rntFeZqyJA4gAhHKP, 2020-12-04T15:46:58 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+	xyFWEt5kJC6mbTgjc, 2020-12-04T15:35:34 (inv1OK,correct,check,)
+		Dmum2LRqjARbrobSz, 2020-12-04T15:35:42 (inv2OK,correct,check,)
+			49SMCk7d4HoFvqXxJ, 2020-12-04T15:36:05 (inv2OK,correct,check,)
+				Nh5TM8xyP5c7s8Lwv, 2020-12-04T15:36:36 (inv3OK,correct,check,)
+					2yA4iYqAzYtzpqY4h, 2020-12-04T15:36:40 (inv4OK,correct,check,)
+						bXFsXABJi8G8HLvS6, 2020-12-04T15:36:47 (inv5OK,incorrect,check,)
+							6zkT6ejrCRQit5vQH, 2020-12-04T15:38:50 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+								GrGEyFo9qbAuBDG3g, 2020-12-04T15:38:59 (in can be used only between 2 expressions of the same arity. Left type = {this/Person} Right type = {this/Person->this/Group})
+									M2yktkcXLdL2GSZ2x, 2020-12-04T15:40:08 (in can be used only between 2 expressions of the same arity. Left type = {this/Person} Right type = {this/Person->this/Group})
+										gtAd5pFxzQTuYQCAP, 2020-12-04T15:40:34 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Person} Right type = {this/Person->this/Group})
+											BGspg3wkC8zXn9Ln8, 2020-12-04T15:40:50 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+												DY9iTBNZAEYBDtQiH, 2020-12-04T15:41:02 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+													ALmM8ss5p7rpNGDyN, 2020-12-04T15:41:23 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+														QcWGtHQrZ2Tbkrnfk, 2020-12-04T15:42:07 (inv5OK,incorrect,check,)
+															PoJHvSesGZqDLLtAr, 2020-12-04T15:43:12 (inv5OK,correct,check,)
+																6YLmFBMCMgHEJpCiG, 2020-12-04T15:43:25 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+																	ym3dKb9Jm6WB386vo, 2020-12-04T15:43:39 (inv5OK,correct,check,)
+																		mqzLY7EunzMXShM2t, 2020-12-04T15:44:10 (inv6OK,correct,check,)
+																			XnSbWcCpdo6XxZcxL, 2020-12-04T15:44:12 (inv7OK,correct,check,)
+																				FuQBvgxMsRkYf7Mkf, 2020-12-04T15:44:19 (inv8OK,incorrect,check,)
+																					RFF8waE3sJ8efALRu, 2020-12-04T15:44:36 (inv8OK,correct,check,)
+																						92JX6pyvuoDjvb84A, 2020-12-04T15:53:25 (inv9OK,incorrect,check,)
+																							3jWZmQPvt9cdHvMvh, 2020-12-04T15:53:36 (inv9OK,correct,check,)
+	i62AkNiEJ3onwFSea, 2020-12-04T15:35:37 (inv1OK,correct,check,)
+		htMpxBix2d2TawLXX, 2020-12-04T15:35:50 (inv2OK,correct,check,)
+			iXcDKkomC6Aknd8Ac, 2020-12-04T15:36:08 (inv3OK,correct,check,)
+				cnjreretoZLpxHqHA, 2020-12-04T15:36:47 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+					jXJMB7kHFeSNPqg2B, 2020-12-04T15:37:41 (inv4OK,correct,check,)
+						7fAyiaz9ytTJ4PTGo, 2020-12-04T15:38:13 (The name "teaches" cannot be found.)
+							pa7kdejh7w2yDL9px, 2020-12-04T15:38:55 (The name "teaches" cannot be found.)
+								WNYksvE4TgXHB6pi8, 2020-12-04T15:39:04 (This must be a formula expression. Instead, it has the following possible type(s): {this/Class})
+									fk3CWCpyqXqxfSNnR, 2020-12-04T15:39:19 (inv5OK,correct,check,)
+										xLYzjD9Hyxku5c2TW, 2020-12-04T15:39:50 (inv6OK,correct,check,)
+											daZvcBFehmHd3qXDF, 2020-12-04T15:41:02 (inv7OK,correct,check,)
+												KbCdzDrpYdcKopEMD, 2020-12-04T15:41:32 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+													LpSsaL4axnguCHJ2n, 2020-12-04T15:41:48 (inv8OK,correct,check,)
+														4BhjEQ5DLGE6uc9Py, 2020-12-04T15:42:25 (inv9OK,correct,check,)
+															k2bFFwrL68BBweHp2, 2020-12-04T15:45:33 (inv11OK,correct,check,)
+	beJxsmgyAQidcqu27, 2020-12-04T15:36:16 (inv1OK,correct,check,)
+		3d6Ebbwf3FhC8FrTd, 2020-12-04T15:36:26 (inv2OK,correct,check,)
+			rMZc8gFCakB7G3f5Q, 2020-12-04T15:36:42 (inv3OK,correct,check,)
+				KzAT5zX2Fj4BTMGWn, 2020-12-04T15:37:13 (inv3OK,correct,check,)
+					j7AFFZF7yzGLx7W6x, 2020-12-04T15:37:17 (inv4OK,correct,check,)
+						3sWe5jRnEExNii9KG, 2020-12-04T15:37:23 (inv3OK,correct,check,)
+							7e2SRfD4neePPhbJz, 2020-12-04T15:37:25 (inv4OK,correct,check,)
+								XByCQY7H9ynKhEAdF, 2020-12-04T15:38:13 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+									JeY98rYs2xWDWvmFL, 2020-12-04T15:39:27 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+										FjnDZYP6PcLLWxrjS, 2020-12-04T15:40:09 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+											p2nt4uHsYQjdDuiFs, 2020-12-04T15:40:20 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+												RbYugbpg2JTqpWaEk, 2020-12-04T15:40:27 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+													fQjv3CpAAmFPPs94H, 2020-12-04T15:40:46 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+														sTp9saL25pxRyzpPm, 2020-12-04T15:42:15 (The name "groups" cannot be found.)
+															bHcNHboLSyZpp5sXy, 2020-12-04T15:42:25 (in can be used only between 2 expressions of the same arity. Left type = {this/Person} Right type = {this/Person->this/Group})
+																nHwEBSjkTuTEAr5mF, 2020-12-04T15:46:27 (The name "teaches" cannot be found.)
+																	yMTegPnQd7eYWLud9, 2020-12-04T15:46:34 (This must be a formula expression. Instead, it has the following possible type(s): {this/Class})
+																		xTDCD9AbEyeiofhcr, 2020-12-04T15:46:48 (inv5OK,correct,check,)
+	ZmcYvHKZ4EmNzm2Ss, 2020-12-04T15:37:31 (inv1OK,correct,check,)
+		Jrzjcz4MpueLSgiZ3, 2020-12-04T15:37:40 (inv2OK,correct,check,)
+			42v9k7tgGoWyjxtam, 2020-12-04T15:37:52 (inv3OK,correct,check,)
+				rgqtGbjBx8Kbvvy7x, 2020-12-04T15:38:19 (inv4OK,incorrect,check,)
+					c9vmXPfXMH3GFTp5w, 2020-12-04T15:38:46 (inv4OK,incorrect,check,)
+						Z9bRMSxgmWxzdsCHu, 2020-12-04T15:39 (inv4OK,incorrect,check,)
+							xmGhJdFHKou865fpZ, 2020-12-04T15:39:10 (inv4OK,incorrect,check,)
+								mW8fn25dNNh9NH4M3, 2020-12-04T15:40:32 (inv5OK,correct,check,)
+									7Md478QP2GR5xPivh, 2020-12-04T15:41:36 (inv6OK,correct,check,)
+										2MyoTX82zRvgrvNmN, 2020-12-04T15:42:25 (in can be used only between 2 expressions of the same arity. Left type = {this/Class} Right type = {this/Person->this/Class})
+											F77PPhaF5Czfyiz5J, 2020-12-04T15:42:37 (inv7OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Class} Right type = {this/Person->this/Class})
+												LQoCKXhMw3hyDDDuD, 2020-12-04T15:42:45 (inv7OK,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Class} Right type = {this/Person})
+													x45xo2mwAo9i4pwnH, 2020-12-04T15:42:58 (inv7OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Class} Right type = {this/Person->this/Class})
+														smkfQgqPJ4rr76yxt, 2020-12-04T15:43:11 (in can be used only between 2 expressions of the same arity. Left type = {this/Class} Right type = {this/Person->this/Class})
+															tS224QiD3RwteJ7ac, 2020-12-04T15:43:19 (inv7OK,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Class} Right type = {this/Person})
+																WcrKAdqp3kNit97BJ, 2020-12-04T15:43:26 (in can be used only between 2 expressions of the same arity. Left type = {this/Class} Right type = {this/Person->this/Class})
+																	ZGM9BxsBd2DNKEF9q, 2020-12-04T15:43:35 (The name "Teache" cannot be found.)
+																		kkiy9Thmh5K6HB3nr, 2020-12-04T15:43:41 (inv7OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Person->this/Class} Right type = {this/Person})
+																			XcWsyEwkZLDZZDzuy, 2020-12-04T15:44:25 (This must be a unary set, but instead it has the following possible type(s): {this/Person->this/Class})
+																				LD6hw6cRHPjBGqA3P, 2020-12-04T15:45:19 (The name "t" cannot be found.)
+																					LJEcwXZoWrSBYnuiS, 2020-12-04T15:45:24 (There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~)
+																						PfsMXGiS3Ed6HbrfY, 2020-12-04T15:47:20 (inv4OK,correct,check,)
+																							za9gsheH3cJjXeRrK, 2020-12-04T15:48:19 (inv4OK,correct,check,)
+																								hrxmWPr3k2krZgy7P, 2020-12-04T15:48:30 (inv7OK,correct,check,)
+																									PvdfvzhtGM5tfLu85, 2020-12-04T15:49:09 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																										ShvrfQ9T2Hko2RpRY, 2020-12-04T15:49:23 (inv8OK,correct,check,)
+																											FfbMa69EaP3HoWFiE, 2020-12-04T15:49:44 (inv9OK,correct,check,)
+	hAhBfaySYj5v2nejm, 2020-12-04T15:38:57 (inv1OK,correct,check,)
+		EzTzvGzHpPDzDiE3n, 2020-12-04T15:39:09 (The name "Teachers" cannot be found.)
+			AyTkcnN7E9uNA7R8t, 2020-12-04T15:39:16 (inv2OK,correct,check,)
+				bwbZqumcYAGhmTfWt, 2020-12-04T15:39:32 (inv3OK,correct,check,)
+					4DubRdrMfapC89nXB, 2020-12-04T15:40:02 (inv4OK,correct,check,)
+						4NvWCZqGzfPunWELb, 2020-12-04T15:40:45 (inv5OK,incorrect,check,)
+							hRXZNdsBZEZkSNAzR, 2020-12-04T15:41:50 (There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+								ZiupwZRjkMoJT6JEd, 2020-12-04T15:41:58 (inv5OK,incorrect,check,)
+								FGoorCMFuKNNYtJfa, 2020-12-04T15:42:09 (inv5OK,incorrect,check,)
+									sAwfYngJ4jAZ4wMd7, 2020-12-04T15:43:04 (inv5OK,incorrect,check,)
+										TrDRrHucPuzwF8jbg, 2020-12-04T15:43:10 (Multiplicity expression not allowed here.)
+											axPERBSFMbYYg7WAF, 2020-12-04T15:46:24 (inv5OK,correct,check,)
+												qpxz38t9JsZNqsdYP, 2020-12-04T15:46:46 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+													YkKydjAjQPkKt5Zst, 2020-12-04T15:47:22 (The name "teaches" cannot be found.)
+														6GybmzAg6dsibNDoS, 2020-12-04T15:47:31 (inv6OK,correct,check,)
+															wG25sxE5XfGd5A362, 2020-12-04T15:48:45 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+																ensgrqEMpAbz3NZ93, 2020-12-04T15:50:07 (inv7OK,correct,check,)
+																	kQBapdW5RYfcK435N, 2020-12-04T15:52:20 (inv8OK,correct,check,)
+																		N6d6cHJimNCs8zp5P, 2020-12-04T15:53:21 (inv9OK,correct,check,)
+	pDntoCjNT2DQhzgfi, 2020-12-04T15:39:15 (inv1OK,correct,check,)
+		g8yNukDWWHuLPkwHY, 2020-12-04T15:39:32 (inv2OK,correct,check,)
+			NW8ZSakg5rGB6sANg, 2020-12-04T15:41:44 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+				F5Jr78aJtjryxEceM, 2020-12-04T15:41:48 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+					mkcfgFHDTyfZp7WX5, 2020-12-04T15:42:02 (inv2OK,correct,check,)
+						wK7ZoGomkoC7Hagxm, 2020-12-04T15:42:14 (inv2OK,correct,check,)
+	s2Xnrnj3JxvF3ymg7, 2020-12-04T15:43:25 (inv1OK,correct,check,)
+		s57XXQTXGDRtKiRZZ, 2020-12-04T15:43:27 (inv2OK,incorrect,check,)
+	LXkeMnE35j37YXncx, 2020-12-04T17:29:30 (inv1OK,correct,check,)
+		bgmZyCwAcPRpXikFR, 2020-12-04T17:29:40 (inv2OK,correct,check,)
+			oConC4PEMTWvA7Mt6, 2020-12-04T17:30:06 (The name "P" cannot be found.)
+				Bzp8Z2By7C5d4XRr7, 2020-12-04T17:30:13 (inv3OK,correct,check,)
+					fmK2BvY3Khdf4wQf8, 2020-12-04T17:31:13 (inv4OK,incorrect,check,)
+						LABqddK5CMBqZyrjG, 2020-12-04T17:33:03 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+							Ageshjrb5hkSHLcdk, 2020-12-04T17:33:08 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+								k5sy4BRPqKgu23Ggn, 2020-12-04T17:33:15 (inv4OK,incorrect,check,)
+									egqeGbPton7AuhJ3K, 2020-12-04T17:34:10 (inv6OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Person} Right type = {this/Class->this/Person->this/Group})
+										GaGda853HevcLyWF5, 2020-12-04T17:35:04 (inv4OK,incorrect,check,)
+											YhwGhYuXtHrTEDejL, 2020-12-04T17:37:34 (inv3OK,correct,check,)
+												4EuozzeAwzpS8XkeG, 2020-12-04T17:37:41 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+													YkZjDrDQbPLMx5JtX, 2020-12-04T17:37:48 (inv4OK,incorrect,check,)
+														3NPQkpsdHeKCYMJHS, 2020-12-04T17:38:26 (inv4OK,correct,check,)
+															a9bZZcDkCbc37ic8A, 2020-12-04T17:39 (inv4OK,correct,check,)
+																nfByXFKcZpHRyiZZG, 2020-12-04T17:39:22 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																	5nqpNpcQZuvPjYzzq, 2020-12-04T17:40:12 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																		gkpavnrN69y8CwLdo, 2020-12-04T17:40:21 (The name "teachers" cannot be found.)
+																			MP28qZWDLkANGr42m, 2020-12-04T17:40:32 (The name "teaches" cannot be found.)
+																				X4u2jnDEJH2TG8nmk, 2020-12-04T17:40:36 (inv5OK,correct,check,)
+																					EdMXGs6XNKY5M6qRp, 2020-12-04T17:40:53 (This must be a formula expression. Instead, it has the following possible type(s): {this/Class})
+																						Ffea56ZPTt2mpMnGS, 2020-12-04T17:41:20 (inv5OK,correct,check,)
+																							5mvfCaSkXMxYhHhpj, 2020-12-04T17:41:43 (This cannot be a legal relational join where left hand side is c (type = {this/Class}) right hand side is this/Person (type = {this/Person}))
+																								zEQv5voroiBmrBsia, 2020-12-04T17:41:49 (inv6OK,correct,check,)
+																									XJtAppaPn6Z9qrw5m, 2020-12-04T17:42:54 (This cannot be a legal relational join where left hand side is c (type = {this/Class}) right hand side is this/Person (type = {this/Person}))
+																										hcqRn9j3Gs7mt23J4, 2020-12-04T17:43:13 (This cannot be a legal relational join where left hand side is c (type = {this/Class}) right hand side is this/Person (type = {this/Person}))
+	9YzTb89zfo2otrA6f, 2020-12-04T17:30:15 (inv1OK,correct,check,)
+		BsikKGm98qJ6dNADo, 2020-12-04T17:30:41 (inv2OK,correct,check,)
+			sYgBmBCiLPw3PDyLP, 2020-12-04T17:30:48 (inv3OK,incorrect,check,)
+				4M5nyM6ngs6Q5fscw, 2020-12-04T17:31:13 (inv3OK,correct,check,)
+					xLyiggGvDub2sBoTM, 2020-12-04T17:31:53 (inv4OK,correct,check,)
+						m5dZTmaogsCdjSfSL, 2020-12-04T17:33:34 (inv5OK,incorrect,check,)
+							sAHJhHv9JFbvop6yF, 2020-12-04T17:34:21 (inv5OK,incorrect,check,)
+								Jgj8smDkeGuSmTcLJ, 2020-12-04T17:34:56 (inv6OK,correct,check,)
+									HkWZxNhESqg6RCnDx, 2020-12-04T17:37:31 (inv3OK,correct,check,)
+										frsBR9Kaxcyr7dQha, 2020-12-04T17:39:01 (inv3OK,correct,check,)
+											dY6RBDYuESTjYF7Mx, 2020-12-04T17:39:03 (inv4OK,correct,check,)
+												chNSgjxeRmyJSxZKb, 2020-12-04T17:39:28 (inv5OK,incorrect,check,)
+													X67QYmdenLnZ2qEWY, 2020-12-04T17:40:08 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+														xcg3WgfJD2EmriByz, 2020-12-04T17:40:19 (inv5OK,correct,check,)
+															SgdrJw5WKfS2jKe9x, 2020-12-04T17:43:15 (inv5OK,correct,check,)
+																XXsTALocAZtEioaMK, 2020-12-04T17:43:18 (inv6OK,correct,check,)
+																	heMLwPYTLZ8pyC9m4, 2020-12-04T17:43:20 (inv7OK,correct,check,)
+																		wPFApure5F3KJGX4n, 2020-12-04T17:44:06 (inv8OK,incorrect,check,)
+																			fFQiR52zDvqdDtXeY, 2020-12-04T17:44:13 (inv8OK,incorrect,check,)
+	Jec2qZbjjWF3ohWvy, 2020-12-04T17:30:37 (inv1OK,incorrect,check,)
+		itir2BMQJRizfeu66, 2020-12-04T17:30:50 (inv1OK,correct,check,)
+			2GgvnxfmzPWMtS3Ng, 2020-12-04T17:31:09 (This must be a formula expression. Instead, it has the following possible type(s): {none})
+				rH5fwjwxoZYcjG284, 2020-12-04T17:31:14 (inv2OK,correct,check,)
+					eZt9tHGuEGphq226q, 2020-12-04T17:33:05 (The name "p" cannot be found.)
+						oJnsNy9QWFbbRYQdw, 2020-12-04T17:33:16 (inv3OK,correct,check,)
+							EhgXctmGZZCW52BDZ, 2020-12-04T17:37:58 (This must be a formula expression. Instead, it has the following possible type(s): {this/Person})
+								o8xP4NLak9iKtRaMH, 2020-12-04T17:38:14 (inv3OK,correct,check,)
+									hHsgqASchukSHeg4N, 2020-12-04T17:39:28 (The name "P" cannot be found.)
+										DkGKp8GmyiEMJ8yc7, 2020-12-04T17:39:35 (inv4OK,correct,check,)
+											S5wWA8AM5uLQHzPaT, 2020-12-04T17:39:46 (inv5OK,incorrect,check,)
+												SCPuhpFddwbYiHYCW, 2020-12-04T17:40:27 (inv5OK,incorrect,check,)
+													JS7N4naEhhAMHtywZ, 2020-12-04T17:41:35 (inv5OK,incorrect,check,)
+														bzZhJSr9XNGJFxDAF, 2020-12-04T17:41:43 (inv5OK,incorrect,check,)
+															vb4CRSBjjNvJN2JGe, 2020-12-04T17:42:50 (inv5OK,incorrect,check,)
+																Qz4G6LJ65mHRe57gk, 2020-12-04T17:43:21 (inv5OK,incorrect,check,)
+																	98FGwdXsr6gJGdpN3, 2020-12-04T17:44:08 (inv5OK,correct,check,)
+																		FeRqbKdQgTvFR3ajT, 2020-12-04T17:44:22 (inv5OK,correct,check,)
+																			Xozi6x3FmFKoz4wYf, 2020-12-04T17:44:34 (inv5OK,correct,check,)
+																				ZDWaieawki2nBGNeL, 2020-12-04T17:44:37 (inv6OK,correct,check,)
+																					t7rM3CTBePHKphoMw, 2020-12-04T17:45:34 (The name "class" cannot be found.)
+																						tjxzRbqadbf4Xf8cz, 2020-12-04T17:45:39 (inv6OK,correct,check,)
+																							G8tm4GFqyN9zsXpkX, 2020-12-04T17:45:40 (inv7OK,correct,check,)
+																								v2sS3tr8Ds8NybBnA, 2020-12-04T17:46:39 (inv7OK,correct,check,)
+																									HY97PmYTgR9nSHrm8, 2020-12-04T17:46:42 (inv8OK,correct,check,)
+																										qsjKx2xrPSjLX5oxu, 2020-12-04T17:47:10 (inv8OK,correct,check,)
+																											MhLTMfKjQCfcqRoGK, 2020-12-04T17:47:13 (inv9OK,correct,check,)
+																												MREBogABnLtEkae9u, 2020-12-04T17:47:42 (inv9OK,correct,check,)
+																													CZcKtA3WfyahjfjzG, 2020-12-04T17:47:44 (inv10OK,incorrect,check,)
+																														apktwrYcKccXf9aeg, 2020-12-04T17:54:53 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+																															qs9e55Xa5LwAg2Ers, 2020-12-04T17:55:12 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+																																i3AATL9bzD6dFvLNW, 2020-12-04T17:55:17 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+																																	qrJG4f8D8xNwEwq5r, 2020-12-04T17:56:19 (inv10OK,incorrect,check,This variable is unused.)
+																																		bcCkDuP6ReY8WrxrH, 2020-12-04T17:57:13 (inv10OK,correct,check,)
+																																			s3GJJMPGXaBoxND9m, 2020-12-04T17:57:23 (inv10OK,incorrect,check,)
+																																				itQJApY8cs9ndsNnj, 2020-12-04T17:57:32 (inv10OK,correct,check,)
+																																					MmAX3ftxvXQuTCyZi, 2020-12-04T17:59:18 (inv11OK,incorrect,check,)
+																																						tDQRKDQucJuFnCcn6, 2020-12-04T18:01:27 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																							qBW7tx2HSsZpSHdN5, 2020-12-04T18:01:34 (inv11OK,incorrect,check,)
+																																								eb7ufxJPNBcoKaqKH, 2020-12-04T18:01:59 (inv11OK,incorrect,check,)
+																																									3DKaSFj2HqJsFasnd, 2020-12-04T18:03:33 (inv11OK,incorrect,check,)
+																																										Lsg5gyxgL2HeeEunM, 2020-12-04T18:03:45 (inv11OK,correct,check,)
+																																											oGKSwY6zwXFd8P2fu, 2020-12-04T18:04:46 (inv11OK,correct,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Group} Right type = {this/Person})
+																																												eCQgqwZbtRZQpAbxB, 2020-12-04T18:05:15 (The name "Tutor" cannot be found.)
+																																													3bPyPoipFopLR6ypg, 2020-12-04T18:05:18 (inv11OK,correct,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Group} Right type = {this/Person})
+																																														7T7gmG8abAeffNNCn, 2020-12-04T18:08:11 (inv12OK,incorrect,check,)
+																																															ydtZ5i5NA6Qb82rhy, 2020-12-04T18:08:39 (inv12OK,incorrect,check,)
+																																																iABNgXKn3FSNzWmuF, 2020-12-04T18:09:57 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																																	BaKukGjqQ4GbAeDp2, 2020-12-04T18:10:06 (inv12OK,incorrect,check,)
+																																																		CyB2HYaCpPzBHKFc5, 2020-12-04T18:10:56 (inv12OK,incorrect,check,)
+																																																			SoAt6Eph6yc9FdPgE, 2020-12-04T18:11:06 (inv12OK,incorrect,check,)
+	5Qy9fRHjT8p4hua7f, 2020-12-04T17:30:38 (inv1OK,incorrect,check,)
+		Sv582qx9pHcadLPmC, 2020-12-04T17:31:05 (inv1OK,correct,check,)
+			4WGBiBWcsYcQiwLuC, 2020-12-04T17:31:14 (inv1OK,correct,check,)
+				D5ikNkkmFB8g3axGH, 2020-12-04T17:31:51 (The name "Teachers" cannot be found.)
+					BrCu3zHR2yFzecoy6, 2020-12-04T17:31:59 (inv2OK,correct,check,)
+						WWqtLAB6ygKhcY7xa, 2020-12-04T17:32:16 (inv3OK,correct,check,)
+							AafS4dfRQntSwSuL4, 2020-12-04T17:33:50 (inv4OK,incorrect,check,)
+								veLQcnERQ9ZxahgGb, 2020-12-04T17:34:04 (inv4OK,incorrect,check,)
+									agqoskX6MpqxWYAuc, 2020-12-04T17:34:11 (inv4OK,incorrect,check,)
+										T5MeqL3XDdPFhTnW2, 2020-12-04T17:37:03 (inv4OK,correct,check,)
+											s3MdxwRStrD4rFakn, 2020-12-04T17:37:58 (inv5OK,correct,check,)
+												xPDyo8WvdujCxbQz3, 2020-12-04T17:39:30 (inv5OK,correct,check,)
+													6GLB5CjP9B5t7toXg, 2020-12-04T17:39:32 (inv6OK,correct,check,)
+	tJh65bDT4zyiC3QtT, 2020-12-04T17:30:41 (inv1OK,correct,check,)
+		MGJqLdNbD7Fw8NS8G, 2020-12-04T17:30:52 (inv1OK,correct,check,)
+			Qyp5jJTnQfHsfBpEj, 2020-12-04T17:30:55 (inv2OK,correct,check,)
+				WWFc3Fkj8rTJ4bF3w, 2020-12-04T17:31:23 (This must be a formula expression. Instead, it has the following possible type(s): {this/Person})
+					eMod3j5rqbYaT2NkY, 2020-12-04T17:31:46 (This must be a formula expression. Instead, it has the following possible type(s): {this/Person})
+						L7DeZFEFGh4M9SRQy, 2020-12-04T17:32:55 (inv3OK,correct,check,)
+							z68353bwe4z4NRGyr, 2020-12-04T17:34 (This expression failed to be typechecked line 62, column 18, filename=/tmp/alloy_heredoc10738610156752247138.als)
+								FyD5S8RCCtiAnb27R, 2020-12-04T17:35:32 (inv4OK,incorrect,check,)
+									u4GZRPEGSHAvh8bDu, 2020-12-04T17:36:05 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+										RmCT8LYAARPxwkZjk, 2020-12-04T17:36:24 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+											amRzjjck7Xp8XTGWz, 2020-12-04T17:38:15 (inv4OK,correct,check,)
+												LqGx2Ruuz5hJ8GnBw, 2020-12-04T17:40:21 (The name "Teachers" cannot be found.)
+													qKgPHRBYNdk3PDkQR, 2020-12-04T17:40:27 (inv5OK,correct,check,)
+														Qsa7PwbiGHX8G58M2, 2020-12-04T17:41:10 (This must be a formula expression. Instead, it has the following possible type(s): {this/Class})
+															L3WPQyCpBZjjH7L5v, 2020-12-04T17:41:17 (inv6OK,correct,check,)
+																vLeDpNRDMajSH4sHw, 2020-12-04T17:42:36 (The name "class" cannot be found.)
+																	bPdHuiNGsuemw8Aba, 2020-12-04T17:42:42 (This cannot be a legal relational join where left hand side is this/Teacher (type = {this/Person}) right hand side is this/Class (type = {this/Class}))
+																		LmrCjtagbRXZtg8Mk, 2020-12-04T17:42:50 (This cannot be a legal relational join where left hand side is this/Teacher (type = {this/Person}) right hand side is c (type = {this/Class}))
+																			bJZvxN4QgFMbvRkXq, 2020-12-04T17:43:10 (This cannot be a legal relational join where left hand side is c (type = {this/Class}) right hand side is this/Person (type = {this/Person}))
+																				PcYP7mW8A6pxLD8o4, 2020-12-04T17:44:08 (This cannot be a legal relational join where left hand side is this/Teacher (type = {this/Person}) right hand side is c (type = {this/Class}))
+																					Qz9sBxmMyGsjpvptK, 2020-12-04T17:44:27 (inv7OK,correct,check,)
+																						acqeWys86KSZxqpvz, 2020-12-04T17:46:28 (inv15OK,correct,check,)
+	2uNaDyxGzKyGSxgmr, 2020-12-04T17:31:23 (inv1OK,correct,check,)
+		DCykYEpKrLnAnKwso, 2020-12-04T17:31:35 (inv2OK,correct,check,)
+			APMnqhqBYeuPiS8aL, 2020-12-04T17:32:16 (inv3OK,correct,check,)
+				GHhs56fTgtSkwTL8e, 2020-12-04T17:32:56 (inv4OK,correct,check,)
+	LTt4ip3pzhmd7rcRY, 2020-12-04T17:33:37 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+		4n943vE3qyQym8nzk, 2020-12-04T17:33:52 (inv1OK,incorrect,check,)
+			ZWuRpq3bSmXLzmJFi, 2020-12-04T17:35:23 (inv1OK,incorrect,check,)
+				XyzK95Dz9wYgwbM5j, 2020-12-04T17:35:44 (inv1OK,correct,check,)
+					hi4DjJvua2piMr9YW, 2020-12-04T17:36:04 (inv1OK,correct,check,)
+						b6tmc8ytd2QdBWSH6, 2020-12-04T17:36:37 (inv1OK,correct,check,)
+							xi4ujNff5C2jAJJXb, 2020-12-04T17:37:20 (inv1OK,correct,check,)
+								Q4T2mJ3YJyQMMPHcg, 2020-12-04T17:38 (inv1OK,correct,check,)
+									Jwd4g8ZC89ZHa2ntB, 2020-12-04T17:39:08 (inv1OK,correct,check,)
+										fmBT2PmpPuY4iaBJf, 2020-12-04T17:39:46 (The name "teaches" cannot be found.)
+											b7Xu82BYheQYGHLES, 2020-12-04T17:39:52 (inv1OK,correct,check,)
+												5J28KjPjLMD6as8Gj, 2020-12-04T17:40:06 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+													Y676RDc8t3W7Mid89, 2020-12-04T17:40:20 (inv1OK,correct,check,)
+														BPKPJGQNtkQd6sEi5, 2020-12-04T17:41:09 (inv1OK,correct,check,)
+															FS4qREtcnPdYJHhGq, 2020-12-04T17:41:39 (inv1OK,correct,check,)
+																7ZkpZCmFERjGpkuBb, 2020-12-04T17:44:27 (The name "C" cannot be found.)
+																	N4T4pq2qBDFoKxZv6, 2020-12-04T17:44:34 (inv1OK,correct,check,)
+																		jMxytPWFQv4ka3NJ8, 2020-12-04T17:44:56 (inv1OK,correct,check,)
+																			vGJwdtexdcw5xpmsq, 2020-12-04T17:45:12 (inv1OK,correct,check,)
+	CeJB42L2g7cEx3Shc, 2020-12-04T17:33:58 (inv1OK,incorrect,check,)
+		wnqKYqTyGrCXbvhbe, 2020-12-04T17:34:16 (inv1OK,correct,check,)
+			7RKXfnMwL5Gghe6yK, 2020-12-04T17:34:25 (inv2OK,correct,check,)
+				NeQ7aCD8pqReZmxLN, 2020-12-04T17:34:42 (inv3OK,correct,check,)
+					pxtcXmCgNwBGC6iZy, 2020-12-04T17:36 (This must be a formula expression. Instead, it has the following possible type(s): {this/Person})
+						S258skPouFCKvqLnm, 2020-12-04T17:36:25 (inv4OK,correct,check,)
+							429LcchGAuodGd2mz, 2020-12-04T17:39:43 (The name "teaches" cannot be found.)
+								srkYp9ipBcu5SNiQS, 2020-12-04T17:40:05 (The name "teaches" cannot be found.)
+									4q9BSbscQaWRYSMtF, 2020-12-04T17:40:19 (The name "teaches" cannot be found.)
+										uhccPJjmXMgJ9BzYR, 2020-12-04T17:40:33 (inv5OK,correct,check,)
+											FWGRGdqtS8wGLYa8i, 2020-12-04T17:41:17 (inv6OK,correct,check,)
+												jhu24YLWNMxgZqTZ7, 2020-12-04T17:41:51 (inv7OK,correct,check,)
+	uAZQh9jEvd3STxrtg, 2020-12-04T17:34:28 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+		LEcAcJW8AxJyjuEck, 2020-12-04T17:40:36 (inv1OK,correct,check,)
+			WjvPAF6Z2Nhm8NZpz, 2020-12-04T17:42:27 (The name "teaches" cannot be found.)
+				bFATRumHjx6tNhAGz, 2020-12-04T17:42:49 (The name "teaches" cannot be found.)
+					mxhmZSuJEiqR58mCS, 2020-12-04T17:43:03 (The name "teaches" cannot be found.)
+						ccCQ9gsniK9iaL4Dp, 2020-12-04T17:43:13 (in can be used only between 2 expressions of the same arity. Left type = {this/Person} Right type = {this/Class->this/Person->this/Group})
+							u9zXvzP2A7pGS4ajR, 2020-12-04T17:43:20 (inv1OK,correct,check,)
+								nf5JkzpZyur3SKFjT, 2020-12-04T17:44:46 (inv1OK,correct,check,)
+									Ju6cyMYp4RGiaLAQn, 2020-12-04T17:44:54 (inv1OK,correct,check,)
+										NS7xrM8tQjkJT6koL, 2020-12-04T17:45 (inv1OK,correct,check,)
+	FoZjo6b5jvYkRm9fr, 2020-12-04T17:37:42 (inv1OK,correct,check,)
+		GXgtf7GsfNLDpRxtf, 2020-12-04T17:37:45 (inv2OK,correct,check,)
+			ek8djYAPjErPphwRT, 2020-12-04T17:38:02 (inv3OK,correct,check,)
+				psuH3tfF3Z4YuxAmE, 2020-12-04T17:38:24 (inv4OK,correct,check,)
+					nt5WMSTwSYiLki4d9, 2020-12-04T17:40:21 (inv5OK,correct,check,)
+						XQrnbKruz2PHv3RJz, 2020-12-04T17:41:30 (inv5OK,correct,check,)
+							MJSWP4NhXbWajzJ4W, 2020-12-04T17:41:35 (inv6OK,correct,check,)
+								ZB8LoyTtm6f66Qxqa, 2020-12-04T17:42:50 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+									BFT48kgfJdy8Amb4M, 2020-12-04T17:42:57 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+										QCry2sPjuCeJDkyXf, 2020-12-04T17:43:18 (inv7OK,correct,check,)
+											wK5xCTcP3NZu65Wzn, 2020-12-04T17:43:21 (inv6OK,correct,check,)
+												Rkx3FGHxYJpDSiosd, 2020-12-04T17:43:24 (inv7OK,correct,check,)
+													gGgTLPwb8WJ7yrsck, 2020-12-04T17:44:59 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+														b2cPffwKnWk869kZC, 2020-12-04T17:45:10 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+	GgkvhHd5sB5oJrkf6, 2020-12-04T17:39:40 (inv1OK,correct,check,)
+		tMJnbSdQ2Hm7HCL4a, 2020-12-04T17:39:56 (inv1OK,correct,check,)
+			LFnrEiJxfyhkqyYra, 2020-12-04T17:40:41 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+				QFQhRHvxXpE93mxbe, 2020-12-04T17:41:10 (inv1OK,correct,check,)
+					pecpZnuMPWkgx7MCw, 2020-12-04T17:42:06 (This must be a formula expression. Instead, it has the following possible type(s): {this/Person->this/Class})
+						SMTQmcY5sMsxDTRtP, 2020-12-04T17:42:33 (inv1OK,correct,check,)
+	Ribv7vrD64wPobegj, 2020-12-08T11:40:59 (inv1OK,correct,check,)
+		QGphKiqCXGbJCYhHk, 2020-12-08T11:41:15 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+			DdXRgZc9wCxQWQQwz, 2020-12-08T11:41:44 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+				JfX6fBdDdRCkD4Nyz, 2020-12-08T11:41:54 (inv2OK,correct,check,)
+					wsP9bvkaSuQ2crN2N, 2020-12-08T11:42:17 (inv3OK,incorrect,check,)
+						QF6f2Xrrf3dQMkXxj, 2020-12-08T11:42:22 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+							p6mE5BWETqzkrgsAr, 2020-12-08T11:42:29 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+								hBMrE5s4qAnsoS8a8, 2020-12-08T11:42:47 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+									6hmKBfQstbGXPBXt8, 2020-12-08T11:53:41 (inv3OK,correct,check,)
+										ScGc8bxL6LsgDCs5Y, 2020-12-08T13:04:31 (inv4OK,incorrect,check,)
+											WECLtL9He8FTtWSYP, 2020-12-08T13:05:01 (inv4OK,incorrect,check,)
+												edsmDbgfkrcLZ3Bqu, 2020-12-08T13:05:12 (inv4OK,incorrect,check,)
+													PLjJnZRCJvQMKj8GD, 2020-12-08T13:05:18 (inv4OK,incorrect,check,)
+														kBaXiWmDYtdBf5QwX, 2020-12-08T13:05:30 (inv4OK,incorrect,check,)
+															iuArMivS5rrYvHmbc, 2020-12-08T13:06:14 (inv4OK,correct,check,)
+																zH6G8GZYnuE5pxhgL, 2020-12-08T13:11:03 (inv5OK,correct,check,)
+																	3wW5KGxA3kGDsHnf3, 2020-12-08T13:14:46 (inv6OK,correct,check,)
+																		N25ddnb7mw56nFA9R, 2020-12-08T13:32:22 (inv7OK,incorrect,check,This variable is unused.)
+																			xBXKxbdK4tP98XsHD, 2020-12-08T14:02:44 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+																				j6Bf9kuqDKBueWke5, 2020-12-08T14:03:51 (This must be a formula expression. Instead, it has the following possible type(s): {this/Person})
+																					keKYzgjjZ8B5Gacnw, 2020-12-08T14:03:56 (inv7OK,correct,check,)
+																						egvFafEso5k6mPJYG, 2020-12-08T14:17:04 (This must be a formula expression. Instead, it has the following possible type(s): {this/Person})
+																							q9BA3TTDtToeh92Gz, 2020-12-08T14:57:38 (The name "book" cannot be found.)
+																								WTMPzHQ3ygpNjeiFN, 2020-12-08T14:57:58 (The name "book" cannot be found.)
+	bkKHeeKd4yLWmsSnM, 2020-12-08T14:58:13 (The name "book" cannot be found.)
+		sGGwQX5hCGaXMK8XY, 2020-12-08T14:58:24 (inv7OK,correct,check,)
+			mknuWTTHvkc6iuxWJ, 2020-12-08T14:58:52 (inv8OK,correct,check,)
+				QbcxyMG9YMRKJaH3o, 2020-12-08T14:59:25 (inv9OK,incorrect,check,)
+					mEKcrDSR6vfh7MQEe, 2020-12-08T15:01:05 (This cannot be a legal relational join where left hand side is this/Teacher . (this/Person <: Teaches) (type = {this/Class}) right hand side is c (type = {this/Class}))
+						eKjy848pKqRWrzNon, 2020-12-08T15:06:05 (inv10OK,incorrect,check,)
+							MGHavoNTM2qKjsaTe, 2020-12-08T15:06:21 (inv10OK,incorrect,check,)
+								yGyMXueZXBHYCFzb4, 2020-12-08T15:06:43 (This cannot be a legal relational join where left hand side is this/Teacher . (this/Person <: Teaches) (type = {this/Class}) right hand side is c (type = {this/Class}))
+	m4SbwgRTqqZAwTaGe, 2020-12-12T17:26:19 (inv1OK,correct,check,)
+		3fJctZybZyoLdfHcH, 2020-12-12T17:26:35 (inv2OK,correct,check,)
+			XPGWTayrLZDCmBrKt, 2020-12-12T17:26:53 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+				3pSmNNjbDGr7qBDkj, 2020-12-12T17:26:58 (inv4OK,incorrect,check,)
+					xvMZ4eftL3sak8A2P, 2020-12-12T17:28:01 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+						sJKRgj9aJJuRZ7ExF, 2020-12-12T17:28:11 (inv4OK,incorrect,check,)
+							Xq4qinKoaxMCZAjiH, 2020-12-12T17:28:28 (inv4OK,incorrect,check,)
+								8icFTCy8zbNBdK5DR, 2020-12-12T17:28:56 (inv4OK,incorrect,check,)
+									FksRcY74yKG7d3as9, 2020-12-12T17:29:25 (inv4OK,incorrect,check,)
+										ZaHhdT7qqYfaNPdoL, 2020-12-12T17:29:50 (inv3OK,correct,check,)
+											ADBABQGHSz7nwpDsJ, 2020-12-12T17:30:05 (inv3OK,correct,check,)
+												N4YyxQxJRbka5djxT, 2020-12-12T17:30:42 (inv4OK,incorrect,check,)
+													rRAZqTcZGHdtroBdj, 2020-12-12T17:30:57 (inv4OK,incorrect,check,)
+														uFA3Rqi2R2XQPCrG6, 2020-12-12T17:31 (inv4OK,incorrect,check,)
+															7Z5eMF7mAAvzAwapm, 2020-12-12T17:31:17 (inv4OK,incorrect,check,)
+																fudaQ9u8XxMaegqrB, 2020-12-12T17:31:30 (inv4OK,correct,check,)
+																	AN6yATcP8W8EudWoY, 2020-12-12T17:31:35 (inv4OK,correct,check,)
+																		5KfhW6wheeQxYnbLk, 2020-12-12T17:32:20 (inv5OK,correct,check,)
+																			wYWpTwkTLfGCJ2jkh, 2020-12-12T17:33:12 (This cannot be a legal relational join where left hand side is t . (this/Person <: Teaches) (type = {this/Class}) right hand side is c (type = {this/Class}))
+																				mNfPoR8FLiaMM5r58, 2020-12-12T17:33:16 (This must be a formula expression. Instead, it has the following possible type(s): {this/Class})
+																					S54kdNDCPkrBG865F, 2020-12-12T17:33:35 (inv5OK,incorrect,check,)
+																						bj2SRYZ85fGgkPKCS, 2020-12-12T17:34:02 (inv5OK,correct,check,)
+																							GSWLyNZG5u3TxGXvG, 2020-12-12T17:34:34 (inv5OK,correct,check,)
+																								tq9RbDscWj5zgXMWC, 2020-12-12T17:35:57 (inv6OK,correct,check,)
+																									8q7pKcsNdpWdA9sbr, 2020-12-12T17:38:58 (inv7OK,correct,check,)
+																										KXuCQfr6Rng8bDhz2, 2020-12-12T17:39:37 (inv7OK,correct,check,)
+																											nbG8qJE5P2ERxDaYD, 2020-12-12T17:42:22 (inv8OK,correct,check,)
+																												c3pFs729wiXn7Yjyj, 2020-12-12T17:43:53 (inv9OK,correct,check,)
+																													Z2k7pz6HGyzrmZebz, 2020-12-12T18:03:50 (inv10OK,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Class->this/Group->this/Person} Right type = {this/Class->this/Person->this/Group})
+																														DcQud8kTFmJzii3QP, 2020-12-12T18:04:12 (inv10OK,correct,check,)
+																															dfFaHMe9W34R3jqs5, 2020-12-12T18:06:11 (inv11OK,incorrect,check,This variable is unused.)
+																																n27w6agy7EhiCgzrr, 2020-12-12T19:14:32 (This must be a formula expression. Instead, it has the following possible type(s): {this/Class->this/Person->this/Group})
+																																	wHTFb72kKuNnR5Ms8, 2020-12-12T19:14:44 (in can be used only between 2 expressions of the same arity. Left type = {this/Class->this/Person->this/Group} Right type = {this/Group})
+																																		p8uvu6iRskk2gCt4S, 2020-12-12T19:15:02 (inv11OK,incorrect,check,)

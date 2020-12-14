@@ -1,0 +1,2162 @@
+YS6gyZjjYNHijFsNz (2020-12-14)
+
+* Meta-data
+Challenge name: unknown
+Creation time: 2020-11-27
+# sub-challenges: 8
+Metric catalog: Example metric catalog
+
+* Overall metric statistics
+Total model entries: 1296
+Total executions: 1278
+Total shares: 18
+Total error messages: 299
+Total warning messages: 2
+Total solutions: 979
+Total sessions: 59
+Rejected due to server errors: 0
+Total instance entries: 0
+Total link entries: 19
+
+* Scalar metrics
+Incorrect executions with warnings: 2
+Number of shared sessions: 13
+Longest session: 97
+Shared models: 18
+Alloy runtime errors: 4
+Warnings by type: 2
+Incorrect executions: 416
+Correct executions: 563
+
+* Overall metrics
+
+Sessions by length
+1: 5
+2: 2
+3: 1
+4: 1
+5: 2
+6: 1
+7: 0
+8: 1
+9: 2
+10: 1
+11: 2
+12: 2
+13: 1
+14: 1
+15: 2
+16: 3
+17: 1
+18: 5
+19: 3
+20: 0
+21: 0
+22: 1
+23: 1
+24: 3
+25: 0
+26: 0
+27: 1
+28: 3
+29: 0
+30: 1
+31: 0
+32: 1
+33: 0
+34: 1
+35: 2
+36: 1
+37: 0
+38: 0
+39: 0
+40: 0
+41: 0
+42: 1
+43: 0
+44: 0
+45: 0
+46: 0
+47: 0
+48: 2
+49: 1
+50: 0
+51: 0
+52: 0
+53: 0
+54: 0
+55: 0
+56: 0
+57: 0
+58: 0
+59: 0
+60: 0
+61: 2
+62: 0
+63: 0
+64: 0
+65: 0
+66: 0
+67: 0
+68: 0
+69: 0
+70: 0
+71: 0
+72: 0
+73: 1
+74: 0
+75: 0
+76: 0
+77: 0
+78: 0
+79: 0
+80: 0
+81: 0
+82: 0
+83: 0
+84: 0
+85: 0
+86: 0
+87: 0
+88: 0
+89: 0
+90: 0
+91: 0
+92: 0
+93: 0
+94: 0
+95: 0
+96: 1
+
+Sessions by # of solved sub-challenges
+0: 6
+1: 7
+2: 1
+3: 4
+4: 3
+5: 9
+6: 2
+7: 9
+8: 18
+
+Entries over time
+2020-11-27: 0
+2020-11-28: 0
+2020-11-29: 0
+2020-11-30: 0
+2020-12-01: 0
+2020-12-02: 0
+2020-12-03: 0
+2020-12-04: 0
+2020-12-05: 0
+2020-12-06: 0
+2020-12-07: 0
+2020-12-08: 25
+2020-12-09: 791
+2020-12-10: 0
+2020-12-11: 439
+2020-12-12: 23
+2020-12-13: 0
+
+Errors by type
+There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ : 15
+- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}: 5
+There are 1 possible tokens that can appear here: [ : 14
+There are 5 possible tokens that can appear here: enum fun let open pred : 7
+There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ : 9
+= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}: 12
+The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".: 10
+Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.: 2
+Name cannot be resolved; possible incorrect function/predicate call; perhaps you used(_) when you should have used [ ]  This cannot be a correct call to pred _. The parameters are _: {_} so the arguments cannot be empty. : 4
+There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ : 3
+This must be a formula expression. Instead, it has the following possible type(s): {_}: 42
+~ can be used only with a binary relation. Instead, its possible type(s) are: {_}: 7
+There are 1 possible tokens that can appear here: ) : 13
+!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}: 6
+There are 3 possible tokens that can appear here: ,  : = : 1
+^ can be used only with a binary relation. Instead, its possible type(s) are: {_}: 9
+in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}: 16
+This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) : 3
+This expression failed to be typechecked line _ column _ filename=_.als: 6
+The name _ cannot be found.: 54
+& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}: 2
+This must be an integer expression. Instead, it has the following possible type(s): {_}: 1
+This must be a set or relation. Instead, it has the following possible type(s): {_}: 10
+There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ : 30
+There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ : 6
+fun this/recheableNodes cannot call itself recursively!: 2
+There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~ : 3
+There are 3 possible tokens that can appear here: ,  { | : 7
+
+* Overall metrics, classified
+
+Execution results by sub-challenge
+undirected
+	UNSAT: 109
+	SAT: 61
+oriented
+	UNSAT: 75
+	SAT: 55
+acyclic
+	UNSAT: 57
+	SAT: 37
+complete
+	UNSAT: 80
+	SAT: 71
+noLoops
+	UNSAT: 67
+	SAT: 18
+weaklyConnected
+	UNSAT: 61
+	SAT: 76
+stonglyConnected
+	UNSAT: 58
+	SAT: 38
+transitive
+	UNSAT: 56
+	SAT: 47
+
+Executions over time classified
+2020-11-27
+	UNSAT: 0
+	SAT: 0
+	ERROR: 0
+2020-11-28
+	UNSAT: 0
+	SAT: 0
+	ERROR: 0
+2020-11-29
+	UNSAT: 0
+	SAT: 0
+	ERROR: 0
+2020-11-30
+	UNSAT: 0
+	SAT: 0
+	ERROR: 0
+2020-12-01
+	UNSAT: 0
+	SAT: 0
+	ERROR: 0
+2020-12-02
+	UNSAT: 0
+	SAT: 0
+	ERROR: 0
+2020-12-03
+	UNSAT: 0
+	SAT: 0
+	ERROR: 0
+2020-12-04
+	UNSAT: 0
+	SAT: 0
+	ERROR: 0
+2020-12-05
+	UNSAT: 0
+	SAT: 0
+	ERROR: 0
+2020-12-06
+	UNSAT: 0
+	SAT: 0
+	ERROR: 0
+2020-12-07
+	UNSAT: 0
+	SAT: 0
+	ERROR: 0
+2020-12-08
+	UNSAT: 11
+	SAT: 14
+	ERROR: 0
+2020-12-09
+	UNSAT: 332
+	SAT: 254
+	ERROR: 205
+2020-12-10
+	UNSAT: 0
+	SAT: 0
+	ERROR: 0
+2020-12-11
+	UNSAT: 214
+	SAT: 137
+	ERROR: 88
+2020-12-12
+	UNSAT: 6
+	SAT: 11
+	ERROR: 6
+2020-12-13
+	UNSAT: 0
+	SAT: 0
+	ERROR: 0
+
+Session results by sub-challenge
+undirected
+	solved: 45
+	unsolved: 14
+oriented
+	solved: 38
+	unsolved: 21
+acyclic
+	solved: 35
+	unsolved: 24
+complete
+	solved: 40
+	unsolved: 19
+noLoops
+	solved: 41
+	unsolved: 18
+weaklyConnected
+	solved: 34
+	unsolved: 25
+stonglyConnected
+	solved: 31
+	unsolved: 28
+transitive
+	solved: 33
+	unsolved: 26
+
+* Metrics by sub-challenge, classified
+
+Size in 10s of nodes
+
+undirected
+0
+	SAT: 26
+	UNSAT: 45
+1
+	SAT: 10
+	UNSAT: 4
+2
+	SAT: 15
+	UNSAT: 60
+3
+	SAT: 7
+	UNSAT: 0
+4
+	SAT: 3
+	UNSAT: 0
+
+oriented
+0
+	SAT: 16
+	UNSAT: 23
+1
+	SAT: 4
+	UNSAT: 6
+2
+	SAT: 28
+	UNSAT: 46
+3
+	SAT: 7
+	UNSAT: 0
+
+acyclic
+1
+	UNSAT: 14
+	SAT: 18
+2
+	UNSAT: 43
+	SAT: 15
+3
+	UNSAT: 0
+	SAT: 3
+4
+	UNSAT: 0
+	SAT: 1
+
+complete
+1
+	SAT: 48
+	UNSAT: 70
+2
+	SAT: 22
+	UNSAT: 6
+3
+	SAT: 1
+	UNSAT: 4
+
+noLoops
+0
+	SAT: 1
+	UNSAT: 9
+1
+	SAT: 15
+	UNSAT: 54
+2
+	SAT: 2
+	UNSAT: 2
+3
+	SAT: 0
+	UNSAT: 2
+
+weaklyConnected
+1
+	SAT: 1
+	UNSAT: 0
+2
+	SAT: 56
+	UNSAT: 58
+3
+	SAT: 19
+	UNSAT: 3
+
+stonglyConnected
+1
+	SAT: 18
+	UNSAT: 19
+2
+	SAT: 15
+	UNSAT: 38
+3
+	SAT: 4
+	UNSAT: 1
+4
+	SAT: 0
+	UNSAT: 0
+5
+	SAT: 0
+	UNSAT: 0
+6
+	SAT: 1
+	UNSAT: 0
+
+transitive
+0
+	UNSAT: 6
+	SAT: 0
+1
+	UNSAT: 6
+	SAT: 13
+2
+	UNSAT: 40
+	SAT: 32
+3
+	UNSAT: 3
+	SAT: 2
+4
+	UNSAT: 1
+	SAT: 0
+
+Number of disj quantifications
+
+undirected
+0
+	UNSAT: 91
+	SAT: 55
+1
+	UNSAT: 18
+	SAT: 6
+
+oriented
+0
+	SAT: 25
+	UNSAT: 75
+1
+	SAT: 30
+	UNSAT: 0
+
+acyclic
+0
+	SAT: 34
+	UNSAT: 57
+1
+	SAT: 3
+	UNSAT: 0
+
+complete
+0
+	SAT: 65
+	UNSAT: 80
+1
+	SAT: 6
+	UNSAT: 0
+
+noLoops
+0
+	SAT: 18
+	UNSAT: 67
+
+weaklyConnected
+0
+	UNSAT: 38
+	SAT: 58
+1
+	UNSAT: 23
+	SAT: 18
+
+stonglyConnected
+0
+	SAT: 38
+	UNSAT: 38
+1
+	SAT: 0
+	UNSAT: 20
+
+transitive
+0
+	UNSAT: 56
+	SAT: 24
+1
+	UNSAT: 0
+	SAT: 23
+
+Number multiplicity arrows
+
+undirected
+0
+	UNSAT: 109
+	SAT: 61
+
+oriented
+0
+	SAT: 55
+	UNSAT: 75
+
+acyclic
+0
+	SAT: 37
+	UNSAT: 57
+
+complete
+0
+	SAT: 71
+	UNSAT: 80
+
+noLoops
+0
+	SAT: 18
+	UNSAT: 67
+
+weaklyConnected
+0
+	UNSAT: 61
+	SAT: 76
+
+stonglyConnected
+0
+	SAT: 38
+	UNSAT: 58
+
+transitive
+0
+	UNSAT: 56
+	SAT: 47
+
+Number of binary temporal operators
+
+undirected
+0
+	UNSAT: 109
+	SAT: 61
+
+oriented
+0
+	SAT: 55
+	UNSAT: 75
+
+acyclic
+0
+	SAT: 37
+	UNSAT: 57
+
+complete
+0
+	SAT: 71
+	UNSAT: 80
+
+noLoops
+0
+	SAT: 18
+	UNSAT: 67
+
+weaklyConnected
+0
+	UNSAT: 61
+	SAT: 76
+
+stonglyConnected
+0
+	SAT: 38
+	UNSAT: 58
+
+transitive
+0
+	UNSAT: 56
+	SAT: 47
+
+Number of quantifiers
+
+undirected
+0
+	SAT: 27
+	UNSAT: 45
+1
+	SAT: 30
+	UNSAT: 62
+2
+	SAT: 4
+	UNSAT: 2
+
+oriented
+0
+	SAT: 17
+	UNSAT: 24
+1
+	SAT: 38
+	UNSAT: 50
+2
+	SAT: 0
+	UNSAT: 1
+
+acyclic
+1
+	UNSAT: 14
+	SAT: 17
+2
+	UNSAT: 43
+	SAT: 20
+
+complete
+0
+	SAT: 8
+	UNSAT: 23
+1
+	SAT: 61
+	UNSAT: 53
+2
+	SAT: 2
+	UNSAT: 4
+
+noLoops
+0
+	SAT: 3
+	UNSAT: 9
+1
+	SAT: 15
+	UNSAT: 55
+2
+	SAT: 0
+	UNSAT: 3
+
+weaklyConnected
+1
+	SAT: 6
+	UNSAT: 14
+2
+	SAT: 69
+	UNSAT: 47
+3
+	SAT: 1
+	UNSAT: 0
+
+stonglyConnected
+1
+	SAT: 18
+	UNSAT: 19
+2
+	SAT: 18
+	UNSAT: 39
+3
+	SAT: 2
+	UNSAT: 0
+
+transitive
+0
+	SAT: 7
+	UNSAT: 12
+1
+	SAT: 40
+	UNSAT: 44
+
+Number of inverted navigation expressions
+
+undirected
+0
+	UNSAT: 109
+	SAT: 61
+
+oriented
+0
+	SAT: 55
+	UNSAT: 75
+
+acyclic
+0
+	SAT: 37
+	UNSAT: 57
+
+complete
+0
+	SAT: 71
+	UNSAT: 80
+
+noLoops
+0
+	SAT: 18
+	UNSAT: 67
+
+weaklyConnected
+0
+	UNSAT: 61
+	SAT: 75
+1
+	UNSAT: 0
+	SAT: 1
+
+stonglyConnected
+0
+	SAT: 38
+	UNSAT: 58
+
+transitive
+0
+	UNSAT: 56
+	SAT: 47
+
+Max nested temporal operator level
+
+undirected
+0
+	UNSAT: 109
+	SAT: 61
+
+oriented
+0
+	SAT: 55
+	UNSAT: 75
+
+acyclic
+0
+	SAT: 37
+	UNSAT: 57
+
+complete
+0
+	SAT: 71
+	UNSAT: 80
+
+noLoops
+0
+	SAT: 18
+	UNSAT: 67
+
+weaklyConnected
+0
+	UNSAT: 61
+	SAT: 76
+
+stonglyConnected
+0
+	SAT: 38
+	UNSAT: 58
+
+transitive
+0
+	UNSAT: 56
+	SAT: 47
+
+Number of lone/one quantifiers
+
+undirected
+0
+	UNSAT: 109
+	SAT: 61
+
+oriented
+0
+	SAT: 55
+	UNSAT: 75
+
+acyclic
+0
+	SAT: 37
+	UNSAT: 57
+
+complete
+0
+	SAT: 71
+	UNSAT: 80
+
+noLoops
+0
+	SAT: 18
+	UNSAT: 67
+
+weaklyConnected
+0
+	UNSAT: 61
+	SAT: 76
+
+stonglyConnected
+0
+	SAT: 38
+	UNSAT: 58
+
+transitive
+0
+	UNSAT: 56
+	SAT: 47
+
+Max nested quantifier level
+
+undirected
+0
+	SAT: 27
+	UNSAT: 45
+1
+	SAT: 34
+	UNSAT: 62
+2
+	SAT: 0
+	UNSAT: 2
+
+oriented
+0
+	SAT: 17
+	UNSAT: 24
+1
+	SAT: 38
+	UNSAT: 50
+2
+	SAT: 0
+	UNSAT: 1
+
+acyclic
+1
+	SAT: 37
+	UNSAT: 57
+
+complete
+0
+	SAT: 8
+	UNSAT: 23
+1
+	SAT: 62
+	UNSAT: 57
+2
+	SAT: 1
+	UNSAT: 0
+
+noLoops
+0
+	SAT: 3
+	UNSAT: 9
+1
+	SAT: 15
+	UNSAT: 58
+
+weaklyConnected
+1
+	UNSAT: 61
+	SAT: 75
+2
+	UNSAT: 0
+	SAT: 1
+
+stonglyConnected
+1
+	SAT: 38
+	UNSAT: 58
+
+transitive
+0
+	SAT: 7
+	UNSAT: 12
+1
+	SAT: 40
+	UNSAT: 44
+
+* Derivation tree
+YS6gyZjjYNHijFsNz, 2020-11-27T15:27:17 (model share)
+	tmjFXMRhp9ADt5hs3, 2020-12-08T16:58:58 (undirected,incorrect,check,)
+		hACskgjARq3gMMuKj, 2020-12-08T16:59:34 (undirected,correct,check,)
+			itHFDN4dQGgnr5w7X, 2020-12-08T17:01:03 (oriented,correct,check,)
+				HtsncbWSe4hZvSEaP, 2020-12-08T17:01:43 (acyclic,incorrect,check,)
+					yq6g9sSBio4ZSxGKn, 2020-12-08T17:01:57 (acyclic,incorrect,check,)
+						qxywsm2aqBHxZnBsC, 2020-12-08T17:50:39 (acyclic,incorrect,check,)
+							eL37omWrYKcJnn3RF, 2020-12-08T17:51:09 (acyclic,correct,check,)
+								CM6KtecquCtHjbat7, 2020-12-08T17:51:35 (complete,incorrect,check,)
+									QnDR5G6BkWRikP5eQ, 2020-12-08T17:51:58 (complete,incorrect,check,)
+										MGjZ2SHudd9PPaRHy, 2020-12-08T17:52:39 (complete,incorrect,check,)
+											b5ggd5QQspXXneiBa, 2020-12-08T17:52:51 (model share)
+											hwm4o8snbfXYoHZES, 2020-12-08T17:52:52 (complete,incorrect,check,)
+												bTmC7SmK33GjGA4YZ, 2020-12-08T17:53:46 (complete,incorrect,check,)
+													3gQdrWAoguW4BSJRy, 2020-12-08T17:54:23 (noLoops,correct,check,)
+														s6m27JNLFEnXsjPCo, 2020-12-08T17:55:22 (stonglyConnected,incorrect,check,)
+															Cav6zWR5SAnv7f8P5, 2020-12-08T17:55:31 (stonglyConnected,incorrect,check,)
+																YgFM687SFKPMMBnQc, 2020-12-08T17:56:30 (transitive,correct,check,)
+																	fCJnK5HdWEgDu9DnN, 2020-12-08T17:57 (stonglyConnected,incorrect,check,)
+																		qzqCHh5B8dRC4zyGz, 2020-12-08T17:57:14 (stonglyConnected,correct,check,)
+																			8EiPAijmpcR2aEnJP, 2020-12-08T17:57:33 (weaklyConnected,correct,check,)
+																				LdYqH676cHoMssLJE, 2020-12-08T17:58:04 (complete,correct,check,)
+																					mkWTkgqqj82uejKed, 2020-12-08T17:58:57 (weaklyConnected,incorrect,check,)
+																						dwfitvsKGJSvZhQfQ, 2020-12-08T17:59:18 (stonglyConnected,correct,check,)
+																							ZRQx3qGZBKzcixAGM, 2020-12-08T17:59:22 (weaklyConnected,correct,check,)
+																								tD8CDzNwKNM39NtLe, 2020-12-08T17:59:54 (stonglyConnected,incorrect,check,)
+																									i7jHSWiPHkqCq3Brf, 2020-12-08T18:00:01 (stonglyConnected,correct,check,)
+																										qQPCFMN8Q3igp7zP3, 2020-12-08T18:00:06 (model share)
+																											yGAmkNMQnsW6KGvDW, 2020-12-09T09:22:47 (weaklyConnected,incorrect,check,)
+																												BKJBjJK92XS33EMYH, 2020-12-09T09:23:34 (weaklyConnected,incorrect,check,)
+																													xvogKZE9Lm9g6xZoT, 2020-12-09T09:23:40 (weaklyConnected,correct,check,)
+																														DvXrmj9HK2B68GHQc, 2020-12-09T09:24 (weaklyConnected,correct,check,)
+																															Pp62YDh5TL3oHQTq7, 2020-12-09T09:24:04 (weaklyConnected,correct,check,)
+																																MPzNXuifT5ZxngYWv, 2020-12-09T09:24:30 (weaklyConnected,correct,check,)
+																																	b6qwebKkhXfaeiebs, 2020-12-09T09:24:33 (weaklyConnected,correct,check,)
+																																		DLQMEDDx9NniebvsC, 2020-12-09T09:24:44 (weaklyConnected,incorrect,check,)
+																																			EgzGjrXK4RMgzDFZh, 2020-12-09T09:24:53 (weaklyConnected,correct,check,)
+																																				ifRhdsLdEcvxXbTX3, 2020-12-09T09:25:01 (weaklyConnected,correct,check,)
+																																					nKhCLgT5o4FfsJLxb, 2020-12-09T09:25:03 (stonglyConnected,correct,check,)
+																																						qcpHMmCu5FRusQ3cv, 2020-12-09T09:25:11 (stonglyConnected,correct,check,)
+																																							Twh3h2GCYpgpg5CrW, 2020-12-09T09:26:13 (transitive,correct,check,)
+																																								iXtQLLJpnPpuzmxFZ, 2020-12-09T09:26:23 (This cannot be a legal relational join where left hand side is this/Node (type = {this/Node}) right hand side is this/Node (type = {this/Node}))
+																																									L429h423YRcZaYqKb, 2020-12-09T09:26:39 (transitive,correct,check,)
+																																										KKWL5f9PmDneiiJPw, 2020-12-09T09:28:40 (transitive,correct,check,)
+																																											SSgXCqTeuam7rRLS9, 2020-12-09T09:28:46 (stonglyConnected,correct,check,)
+																																												h83sreXLRR84mFv4g, 2020-12-09T09:28:52 (stonglyConnected,incorrect,check,)
+																																													aeGBDEsSvYrb9byd5, 2020-12-09T09:28:57 (stonglyConnected,correct,check,)
+																																														u3zgwsK9GwEr3TFK4, 2020-12-09T09:29 (stonglyConnected,incorrect,check,)
+																																															dYp6Chds2QcrGoSto, 2020-12-09T09:29:07 (stonglyConnected,correct,check,)
+																																																SyDHKJYsfAqtMTEv2, 2020-12-09T09:29:20 (weaklyConnected,correct,check,)
+																											MwMRWEjBEw98BeRq4, 2020-12-09T11:33:32 (test,incorrect,run,)
+	CSw9GN9HzteKhErth, 2020-12-09T09:16:04 (model share)
+	jFaFMec6taCyzuc68, 2020-12-09T09:17:16 (undirected,incorrect,check,)
+		FnN77Aq3cKqivYvEf, 2020-12-09T09:22:12 (The name "symmetric" cannot be found.)
+			aNmWHvSBMZPJ6JAgB, 2020-12-09T09:23:52 (The name "node" cannot be found.)
+				4YMRjsdTsEYLHG2A7, 2020-12-09T09:24:12 (The name "symmetric" cannot be found.)
+					9SEY5QnzMTELrat7M, 2020-12-09T09:27:31 (The name "symmetric" cannot be found.)
+						AjHamD76KoDaHZF47, 2020-12-09T09:29:51 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a correct call to pred this/undirected. The parameters are   n: {this/Node} so the arguments cannot be empty.)
+							FXBzJJiB2oBG5kQFz, 2020-12-09T09:30:18 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a correct call to pred this/undirected. The parameters are   n: {this/Node->this/Node} so the arguments cannot be empty.)
+								kmqgdQHWDzeCcD2CH, 2020-12-09T09:30:39 (The name "node" cannot be found.)
+									nhL82ZQLfhPeaedBL, 2020-12-09T09:30:46 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a correct call to pred this/undirected. The parameters are   r: {this/Node->this/Node} so the arguments cannot be empty.)
+										gA9nYzjrKk4rFg2zf, 2020-12-09T09:41:09 (The name "node" cannot be found.)
+											QcEzGQSTPGN4kBB5t, 2020-12-09T09:41:27 (The name "r" cannot be found.)
+												SohRqCLTzbJ6CsLCe, 2020-12-09T09:42:20 (The name "r" cannot be found.)
+													mABFx23QWv4WEstYh, 2020-12-09T09:42:40 (The name "r" cannot be found.)
+														tXaNpegCJkDFF97n2, 2020-12-09T09:43:01 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a correct call to pred this/weaklyConnected. The parameters are   r: {this/Node->this/Node} so the arguments cannot be empty.)
+															rgrme3EL3ocbpPTdF, 2020-12-09T09:45:58 (undirected,incorrect,check,)
+																Jo8oCgtDi3jrqr3b6, 2020-12-09T09:46:08 (undirected,incorrect,check,)
+																	fR3ik7yxXWMyKyFXL, 2020-12-09T09:46:17 (undirected,incorrect,check,)
+																		tKPikBPcJxCrw46BF, 2020-12-09T09:46:26 (undirected,correct,check,)
+																			WgP4MasPiZa3LJDeF, 2020-12-09T09:46:36 (undirected,correct,check,)
+																				FoWehvFA5arHT9Chd, 2020-12-09T09:46:44 (undirected,correct,check,)
+																					7cwkC23HD97rd3qy5, 2020-12-09T09:46:51 (undirected,incorrect,check,)
+																						txinCXQHffJKdXfs4, 2020-12-09T09:47 (undirected,incorrect,check,)
+																							6CR7FCX7DNFMkE6Zv, 2020-12-09T09:47:27 (undirected,correct,check,)
+																								YCseLginqxz6qBbhS, 2020-12-09T09:47:35 (undirected,correct,check,)
+																									LseXHPuWxptawnxP9, 2020-12-09T09:47:48 (oriented,incorrect,check,)
+																										AZeruAWu4YcjHeekR, 2020-12-09T09:48:06 (oriented,incorrect,check,)
+																											xHvtsLr44qPmskrAG, 2020-12-09T09:48:21 (oriented,incorrect,check,)
+																												RGqEbfSgxo7RaZGs2, 2020-12-09T09:49:31 (oriented,correct,check,)
+																													mjsDyZjyBoHSDtHRQ, 2020-12-09T09:49:36 (oriented,incorrect,check,)
+																														wfg3zQ7qrNDn5y9MP, 2020-12-09T09:49:41 (oriented,correct,check,)
+																															3WgTirkPzLDZ5stzK, 2020-12-09T09:50:02 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {this/Node->this/Node})
+																																DTBJfQtpqADEBssJa, 2020-12-09T09:50:15 (oriented,correct,check,)
+																																	B6T8xQPthGWr3Z2cW, 2020-12-09T09:51:49 (acyclic,incorrect,check,)
+																																		TQx8biirybQQPggDC, 2020-12-09T09:51:55 (acyclic,correct,check,)
+																																			xuaQvrvu7FZ2DM6CH, 2020-12-09T09:53:51 (complete,correct,check,)
+																																				rycKiCxs3Z4fhXpPC, 2020-12-09T09:54:12 (complete,correct,check,)
+																																					wc6o6oxWTv7ArFYFt, 2020-12-09T09:54:46 (complete,correct,check,)
+																																						guyx3zBswo2ABy2HY, 2020-12-09T09:55:07 (complete,correct,check,)
+																																							3HDYKboQqTsCgoDxE, 2020-12-09T09:55:23 (There are 3 possible tokens that can appear here: ,  { |)
+																																								5jHqcZwJD7G2MRcJD, 2020-12-09T09:56:13 (complete,correct,check,)
+																																									T5dS4aBhQK4zTATFq, 2020-12-09T09:57:02 (noLoops,correct,check,)
+																																										kqWNmwfZLqygLAvnB, 2020-12-09T09:57:40 (noLoops,correct,check,)
+																																											X5wubfoZFry8XhHfG, 2020-12-09T09:58:26 (weaklyConnected,incorrect,check,)
+																																												jKes8rATQuwugx9ws, 2020-12-09T09:58:57 (stonglyConnected,correct,check,)
+																																													fDYYTCqoXPsEMvxoR, 2020-12-09T09:59:29 (stonglyConnected,correct,check,)
+																																														ZMC9TLGdW8iCivkSz, 2020-12-09T09:59:34 (stonglyConnected,correct,check,)
+																																															oGHRQyji24C57MTof, 2020-12-09T09:59:53 (stonglyConnected,incorrect,check,)
+																																																53vJ5dhEJiiJHXEN7, 2020-12-09T10:00:09 (stonglyConnected,correct,check,)
+																																																	5che3mKGjABWcSZKw, 2020-12-09T10:00:32 (weaklyConnected,incorrect,check,)
+																																																		e5we4QqFZYqbga6HY, 2020-12-09T10:02:15 (weaklyConnected,correct,check,)
+																																																			vLqZqgckwMsb4dFe4, 2020-12-09T10:03:24 (weaklyConnected,incorrect,check,)
+																																																				DHZ2aeLRujo3aaHPh, 2020-12-09T10:03:37 (weaklyConnected,correct,check,)
+																																																					49T5QWQsikdB8ehWa, 2020-12-09T10:05:28 (stonglyConnected,correct,check,)
+																																																						aeiDHLdcvDhvpYw5Z, 2020-12-09T10:06:19 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																																							9ZJynZApgvPiautBM, 2020-12-09T10:06:26 (weaklyConnected,correct,check,)
+																																																								gLJyJBBW8YMwmpAbH, 2020-12-09T10:08:41 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																																									TRNT2v2QyP6czENjW, 2020-12-09T10:09:08 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																																										hAvNrjGd6HZAbB3H4, 2020-12-09T10:09:21 (stonglyConnected,correct,check,)
+																																																											EjnwRm4S3DTDgvqSd, 2020-12-09T10:10:12 (transitive,correct,check,)
+																																																												AG47t6vtEnhRRHWw3, 2020-12-09T10:10:31 (transitive,correct,check,)
+																																																													vYchcePgTaPzWpZTY, 2020-12-09T10:11:21 (transitive,correct,check,)
+	8nr3NcrFad2j9LaLK, 2020-12-09T09:17:16 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+		tQfamDpuRX7YT3JGf, 2020-12-09T09:17:51 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+			yCEEgBux2DyfhCJcv, 2020-12-09T09:18:14 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+				8aHA4pxxW6gXLBqAL, 2020-12-09T09:18:56 (undirected,correct,check,)
+					ZrezPzTf74ahnSQqP, 2020-12-09T09:19:21 (undirected,correct,check,)
+						rrHpkcPYqizLtv2tB, 2020-12-09T09:20:37 (oriented,correct,check,)
+							y7RzQkhmXMGCyenC7, 2020-12-09T09:21:20 (complete,correct,check,)
+								psZqkLSzbJiWDxAj7, 2020-12-09T09:24:10 (transitive,correct,check,)
+									MtgHsyeZLYzeuEET7, 2020-12-09T09:33:16 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+										vPqzQkhMhe9yvro6t, 2020-12-09T09:34:10 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+											byfo6cpNmZrMvxxxL, 2020-12-09T09:34:40 (fun this/recheableNodes cannot call itself recursively!)
+												r7iGp4bk7DZ4vDfLm, 2020-12-09T09:35:32 (fun this/recheableNodes cannot call itself recursively!)
+													fgeGWniKgbMQLsnuH, 2020-12-09T09:38:05 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/Node})
+														A3eCSSZ2WX9fEbymA, 2020-12-09T09:38:32 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/Node})
+															CWmfjHW4mWJF5z6wn, 2020-12-09T09:40:01 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/Node})
+																iPboBuZ7sAq4NSFcd, 2020-12-09T09:40:57 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/Node})
+																	2wranmSE9yD7MBYbW, 2020-12-09T09:41:50 (acyclic,correct,check,)
+																		8xcEYFveb5jzusd5p, 2020-12-09T09:42 (noLoops,incorrect,check,)
+																			kobbRkMnDB27skkji, 2020-12-09T09:44:41 (weaklyConnected,incorrect,check,)
+																				qdR3ueAj3ByCQvhYK, 2020-12-09T09:45:11 (stonglyConnected,correct,check,)
+																					PvzJcqke6acF9bNzK, 2020-12-09T09:46:16 (undirected,correct,check,)
+																						upYQpMsrJQYGYi99u, 2020-12-09T09:46:19 (oriented,incorrect,check,)
+																							Z7s7dkjGnYw35opAi, 2020-12-09T09:46:36 (oriented,correct,check,)
+																								YjcdNSGSRyA6biNMT, 2020-12-09T09:48:05 (acyclic,correct,check,)
+																									Ea3NBGefaXN7rEBCE, 2020-12-09T09:48:08 (complete,correct,check,)
+																										xpsy6yqriQ2F24P5f, 2020-12-09T09:48:15 (noLoops,incorrect,check,)
+																											PDgssE8NK5P2CS2Ev, 2020-12-09T09:50:05 (noLoops,incorrect,check,)
+																												yd9ZyCsTkTPACjHNw, 2020-12-09T09:51:33 (noLoops,incorrect,check,)
+																													rHEa7ow3ueLKWLwAv, 2020-12-09T09:55:52 (complete,correct,check,)
+																														7ovWyEWQFRJcNNNuW, 2020-12-09T09:57:03 (noLoops,correct,check,)
+																															gkZQGHytgKmDLYKYT, 2020-12-09T09:59:05 (stonglyConnected,correct,check,)
+																																pqNddR49BN4SGDmsE, 2020-12-09T10:00:26 (weaklyConnected,incorrect,check,)
+																																	Racdy3NpnJv9jhnu8, 2020-12-09T10:01:37 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Node})
+																																		8vcG9MwdasJQBFycy, 2020-12-09T10:02:08 (weaklyConnected,incorrect,check,)
+																																			8Twp9ftrp4x38HQuY, 2020-12-09T10:02:22 (weaklyConnected,correct,check,)
+	bRNvWxqWHKG4hXWj3, 2020-12-09T09:17:42 (undirected,incorrect,check,)
+		wt2rYy3DPzigHTSf7, 2020-12-09T09:22:52 (in can be used only between 2 expressions of the same arity. Left type = {this/Node->this/Node} Right type = {this/Node})
+			H4Y7qDWpYMb8NfKC8, 2020-12-09T09:23:04 (The name "adg2" cannot be found.)
+				Y5MnDPbq6JEmpJ9DM, 2020-12-09T09:23:14 (The name "adg2" cannot be found.)
+					CgvjgbBaWSJibAFTd, 2020-12-09T09:24 (The name "adg2" cannot be found.)
+						J55eEBN2avQuvk3Qb, 2020-12-09T09:24:09 (undirected,incorrect,check,)
+							t5v5SzMhaWttesCiz, 2020-12-09T09:24:51 (undirected,correct,check,)
+								Z3f7LXiqTEmmbPozA, 2020-12-09T09:25:08 (undirected,correct,check,)
+									aB2g2FPrNfJYygXPJ, 2020-12-09T09:27:23 (oriented,correct,check,)
+										ZyAD9bhLhSrq9suhD, 2020-12-09T09:27:26 (complete,incorrect,check,)
+											QLttqesx9ydFqcsZB, 2020-12-09T09:27:51 (complete,incorrect,check,)
+												pnz3bZrqbtjZmNgPh, 2020-12-09T09:28:13 (complete,incorrect,check,)
+													LMebye5rrWFcLXamd, 2020-12-09T09:31:44 (in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {this/Node->this/Node})
+														qRPKofBYsRhT7YLcX, 2020-12-09T09:33:26 (& can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {this/Node->this/Node})
+															rvPaKxhWc2rMD7Nu4, 2020-12-09T09:37:59 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+																bjgnzWJSP8L4E5Aq5, 2020-12-09T09:38:06 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+																	PgQufipQjuay9im36, 2020-12-09T09:38:14 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+																		eYxfyzkCKN7JbALPS, 2020-12-09T09:38:35 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+																			coYWHFuGKNLhLSkbc, 2020-12-09T09:38:43 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+																				M4kzKsp6k3KuAFimg, 2020-12-09T09:39 (noLoops,correct,check,)
+																					8854tbaFTjgLL7tKc, 2020-12-09T09:45:34 (acyclic,incorrect,check,)
+																						iLCBGs8FnrFvtcsWE, 2020-12-09T09:45:37 (undirected,correct,check,)
+																							xqa8sacyTTg9FeCzZ, 2020-12-09T09:47:04 (oriented,correct,check,)
+																								thrckDJmX8EN6YnTJ, 2020-12-09T09:50:15 (oriented,correct,check,)
+																									rDsm9H7fKGBwTtT7q, 2020-12-09T09:52:19 (acyclic,correct,check,)
+																										v6vnZCtSRyo8jBgWF, 2020-12-09T09:53:11 (acyclic,correct,check,)
+																											oECooTmqxZouagTq2, 2020-12-09T09:53:38 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+																												pQ9ppRAMm8xp2JCib, 2020-12-09T09:54:10 (complete,correct,check,)
+																													73LEpge5KwoxSEf8k, 2020-12-09T09:56:41 (complete,correct,check,)
+																														KS78pXR77DtLKrvra, 2020-12-09T09:58:39 (noLoops,correct,check,)
+																															pLTJCmLwMQHKgtfiE, 2020-12-09T10:00:55 (stonglyConnected,correct,check,)
+																																o7ofJemkFhyhYDi86, 2020-12-09T10:01:51 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Node})
+																																	Tzb4DokdQtRg9fB5B, 2020-12-09T10:02:02 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Node})
+																																		ANPShoZ74nks7qpGh, 2020-12-09T10:04:49 (There are 1 possible tokens that can appear here: ))
+																																			Hrak79GLT3tGwwWiR, 2020-12-09T10:04:54 (weaklyConnected,incorrect,check,)
+																																				8nFQY7eJYgNXfYLTH, 2020-12-09T10:05:10 (weaklyConnected,correct,check,)
+	yQDuoA5SyyjPMS5Cy, 2020-12-09T09:19:21 (undirected,incorrect,check,)
+		pELNmKWi5hWCsTF7R, 2020-12-09T09:21:15 (undirected,incorrect,check,)
+			zCuRXn4LeDHSJrvJD, 2020-12-09T09:22:19 (undirected,incorrect,check,)
+				FKo46THvA6E99kJXp, 2020-12-09T09:23:13 (This expression failed to be typechecked line 21, column 22, filename=/tmp/alloy_heredoc9954085641900538731.als)
+					ogZhwzFbLKCEhtfTG, 2020-12-09T09:23:59 (oriented,incorrect,check,)
+						z2pNN4wRMMn634tpb, 2020-12-09T09:25:11 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+							M3StiE7Zq5MfGP2LA, 2020-12-09T09:25:50 (undirected,correct,check,)
+								vjnqbK5FQ8i9iPTgX, 2020-12-09T09:26:38 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+									WSfy978wyXxXBoBRm, 2020-12-09T09:26:56 (oriented,correct,check,)
+										4HsbErauyHb7HGYn2, 2020-12-09T09:28:47 (oriented,correct,check,)
+											3vKREK5Zd77dLwuXX, 2020-12-09T09:28:51 (transitive,correct,check,)
+												2E5WQYmBJr34qv2Ey, 2020-12-09T09:30:01 (noLoops,correct,check,)
+													r6RMJStsKByPRwebr, 2020-12-09T09:30:08 (stonglyConnected,incorrect,check,)
+														Tv3EGzjenMJ6rbC2B, 2020-12-09T09:46:47 (oriented,correct,check,)
+															bKFujX4jEzS2yFtnr, 2020-12-09T09:53:41 (complete,incorrect,check,)
+																wMDp9BRa7QrDLL324, 2020-12-09T09:56:23 (complete,correct,check,)
+	iuR2yadbYrrS5zbGS, 2020-12-09T09:20:15 (undirected,correct,check,)
+		fgdCcsHS7eDfbYNWb, 2020-12-09T09:20:45 (oriented,incorrect,check,)
+			yCuNTqggYSt29cZPF, 2020-12-09T09:21:10 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+				HXBHQiYaFxgDi32Zv, 2020-12-09T09:21:18 (oriented,incorrect,check,)
+					cNHMzCCojEqnqQHe6, 2020-12-09T09:22:02 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node})
+						8KEcrTXGgmM245PXh, 2020-12-09T09:22:08 (oriented,incorrect,check,)
+							ECfghfnG36EnvjpHn, 2020-12-09T09:22:28 (oriented,incorrect,check,)
+								Jq4k6uTu8wv4ggpnE, 2020-12-09T09:22:37 (oriented,incorrect,check,)
+									bZbRxHMvTw2typBJb, 2020-12-09T09:22:50 (oriented,incorrect,check,)
+										bKFpeLMEaYpFu92EZ, 2020-12-09T09:22:57 (oriented,incorrect,check,)
+											W9SZGkysJKEA5g5pg, 2020-12-09T09:23:41 (oriented,incorrect,check,)
+												kc4T9RsWzRDhHff22, 2020-12-09T09:23:58 (oriented,incorrect,check,)
+													yTPQsw39scuNEjvfw, 2020-12-09T09:24:21 (oriented,incorrect,check,)
+														E9FebH5YPrHRHNDMe, 2020-12-09T09:25 (The name "n2" cannot be found.)
+															SfFE3scmoFMC6hNtL, 2020-12-09T09:25:07 (The name "adJ" cannot be found.)
+																THuBzwNjgAdSdBgJp, 2020-12-09T09:25:17 (oriented,incorrect,check,)
+																	vcdhPDN7zLqav4rSy, 2020-12-09T09:25:45 (oriented,incorrect,check,)
+																		RsTP8r7HnRYuLassJ, 2020-12-09T09:27:39 (oriented,incorrect,check,)
+																			fztfzdEzQmRK2Y94n, 2020-12-09T09:28:09 (The name "adjimplies" cannot be found.)
+																				YatTwuGnRT4jCgcqD, 2020-12-09T09:28:15 (oriented,incorrect,check,)
+																					JPjiGYowtXKMftGL6, 2020-12-09T09:28:23 (The name "n1" cannot be found.)
+																						K2xzHCqDYEMbd96AQ, 2020-12-09T09:28:29 (oriented,incorrect,check,)
+																							Q4wkepvSXenJdjXN9, 2020-12-09T09:29:04 (acyclic,incorrect,check,)
+																								cLMu8aKPjJqNBG9DR, 2020-12-09T09:29:30 (oriented,incorrect,check,)
+																									9KSbPb6JSe3XGrmps, 2020-12-09T09:30:51 (acyclic,incorrect,check,)
+																										yDehZGkkAwoJvqLXn, 2020-12-09T09:31:26 (complete,incorrect,check,)
+																											bWDJ6QnvY6AuLH9nn, 2020-12-09T09:31:46 (complete,incorrect,check,)
+																												ze3dXYN46YDj3hX8w, 2020-12-09T09:31:55 (complete,incorrect,check,)
+																													c5BPeCR8arYtCxDnc, 2020-12-09T09:32:02 (complete,incorrect,check,)
+																														GFv5m47tpFLpwaaQc, 2020-12-09T09:32:12 (complete,incorrect,check,)
+																															vk3DfpFJzE6z5WAF2, 2020-12-09T09:32:29 (complete,incorrect,check,)
+																																M8KupALYbKDSPb3pW, 2020-12-09T09:32:46 (complete,incorrect,check,)
+																																	MvcqjDTgoyxdyNxAK, 2020-12-09T09:33:06 (noLoops,correct,check,)
+																																		Memw4zjxvov96zCtH, 2020-12-09T09:33:09 (complete,incorrect,check,)
+																																			KEhAyoRAZ2oYhLChm, 2020-12-09T09:34:56 (weaklyConnected,incorrect,check,)
+																																				zp9gZDg9Sk8ZcqQPv, 2020-12-09T09:36:45 (stonglyConnected,incorrect,check,)
+																																					Yaf2h4iBjbPDGoiPC, 2020-12-09T09:36:56 (stonglyConnected,incorrect,check,)
+																																						R6ZrFbyETd8fBqTyS, 2020-12-09T09:37:17 (stonglyConnected,incorrect,check,)
+																																							a5kwf8dbPHEB46rw4, 2020-12-09T09:37:45 (The name "n3" cannot be found.)
+																																								EwHF9PGzN2BwF3ayz, 2020-12-09T09:38:25 (weaklyConnected,incorrect,check,)
+																																									4QK4cvJPawatxbZLj, 2020-12-09T09:40 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/Node})
+																																										6SgBQRifzRcKYZAN4, 2020-12-09T09:40:04 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/Node})
+																																											5pjpTngytGsmiLHYF, 2020-12-09T09:41:01 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/Node})
+																																												3BPeraPLjoz9jm52F, 2020-12-09T09:41:18 (undirected,correct,check,)
+																																													Wn3YwyXipBjXuR3Tq, 2020-12-09T09:45:23 (undirected,correct,check,)
+																																														RLy5RYDQCTBCv4wKL, 2020-12-09T09:45:33 (oriented,incorrect,check,)
+																																															3qNv4WNS4uz7QS2Za, 2020-12-09T09:46:17 (oriented,incorrect,check,)
+																																																7C4atzaFECQYdTbwR, 2020-12-09T09:47:10 (oriented,correct,check,)
+																																																	Ja9beM8vqgLRhcc9J, 2020-12-09T09:48:09 (acyclic,incorrect,check,)
+																																																		5XgbcceJQYhMcMMtq, 2020-12-09T09:49:29 (oriented,incorrect,check,)
+																																																			qA55L5MDt5W5gibyk, 2020-12-09T09:49:37 (oriented,correct,check,)
+																																																				acQeH8HMxBfk6zTaZ, 2020-12-09T09:49:53 (acyclic,incorrect,check,)
+																																																					4BJwxDzoHBz9e9Wow, 2020-12-09T09:50:31 (acyclic,incorrect,check,)
+																																																						abZ8eobTYMKdsjP9P, 2020-12-09T09:50:37 (acyclic,incorrect,check,)
+																																																							uqybiprucEEQSnXBW, 2020-12-09T09:50:58 (acyclic,correct,check,)
+																																																								yjtrAcjteFEoJthSq, 2020-12-09T09:51:38 (complete,incorrect,check,)
+																																																									vosB5HFpEpPPZpPLN, 2020-12-09T09:51:43 (complete,incorrect,check,)
+																																																										FjBKMkPZxGon7dtGr, 2020-12-09T09:52:24 (The name "âdj" cannot be found.)
+																																																											njQmYrS3Xwo4PzMcR, 2020-12-09T09:52:29 (complete,incorrect,check,)
+																																																												y79TKveb7LqmZymxT, 2020-12-09T09:52:37 (complete,incorrect,check,)
+																																																													mr3ycnyk5ny6oLvrH, 2020-12-09T09:52:46 (complete,incorrect,check,)
+																																																														iCsmhS95kdXaapHaP, 2020-12-09T09:53 (acyclic,correct,check,)
+																																																															dm8TC3AqKM4gtyk8H, 2020-12-09T09:53:18 (complete,incorrect,check,)
+																																																																mMTqu2JNhnZrfkEbZ, 2020-12-09T09:53:22 (complete,incorrect,check,)
+																																																																	TjCvbaasM6CoEqwuo, 2020-12-09T09:53:36 (complete,correct,check,)
+																																																																		Y6BrDzvkY4kCauuc6, 2020-12-09T09:53:58 (complete,correct,check,)
+																																																																			gXXGEBDsRnNThneNd, 2020-12-09T09:54:38 (complete,correct,check,)
+																																																																				zuQWwCMWNNTbrDRbh, 2020-12-09T09:54:52 (complete,correct,check,)
+																																																																					pLSiFEZFGFumraArf, 2020-12-09T09:55:20 (The name "adn" cannot be found.)
+																																																																						2N62jgFLstrpDb2fD, 2020-12-09T09:55:27 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Node->this/Node} Right type = {this/Node})
+																																																																							ndDF8DcdQvKWKfQzN, 2020-12-09T09:55:35 (complete,incorrect,check,)
+																																																																								wsMZW8qDLiMeBYPyK, 2020-12-09T09:56:05 (complete,correct,check,)
+																																																																									MFzfxboKkt4uh3GTY, 2020-12-09T09:56:21 (noLoops,correct,check,)
+																																																																										2KPaoEAhSaSWyfpoS, 2020-12-09T09:56:43 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																																											HZ34zcuXeAEyxHbPk, 2020-12-09T09:57:41 (noLoops,correct,check,)
+																																																																												ESgXm7xAHnKeh83mp, 2020-12-09T09:58:13 (noLoops,correct,check,)
+																																																																													RouTq72Y343o39eLg, 2020-12-09T09:58:31 (& can be used only between 2 expressions of the same arity. Left type = {univ->univ} Right type = {this/Node})
+																																																																														SreGkcE4aB5iPqNys, 2020-12-09T09:58:37 (noLoops,correct,check,)
+																																																																															7YPKavgbp4S9fD7LY, 2020-12-09T09:59:04 (stonglyConnected,incorrect,check,)
+																																																																																J4mEvKh2CzZyGQzbo, 2020-12-09T09:59:17 (stonglyConnected,incorrect,check,)
+																																																																																	XdrzNQJksmboLZSmc, 2020-12-09T09:59:39 (stonglyConnected,correct,check,)
+																																																																																		H2Dnr7gfo8H9mNssR, 2020-12-09T10:00:02 (weaklyConnected,incorrect,check,)
+																																																																																			ptLWa9CkGvaA3NyTw, 2020-12-09T10:00:27 (weaklyConnected,incorrect,check,)
+																																																																																				NgCrKKG3KH2SkteoJ, 2020-12-09T10:00:32 (weaklyConnected,incorrect,check,)
+																																																																																					sShANBSYpyPK258oM, 2020-12-09T10:00:37 (weaklyConnected,incorrect,check,)
+																																																																																						P2uSEPcviqi6tmGoH, 2020-12-09T10:00:53 (weaklyConnected,incorrect,check,)
+																																																																																							oH7t4rBpdR9BE6PEA, 2020-12-09T10:01:54 (weaklyConnected,incorrect,check,)
+																																																																																								Q8WEpxnhciZ7c2adC, 2020-12-09T10:02:10 (weaklyConnected,incorrect,check,)
+																																																																																									TFgiozaZfcxxtJDwM, 2020-12-09T10:02:58 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Node})
+																																																																																										zHwKuJrdBbYJbKgB7, 2020-12-09T10:03:15 (weaklyConnected,correct,check,)
+																																																																																											ckdc7ucEoGYLjBMdp, 2020-12-09T10:06:03 (weaklyConnected,correct,check,)
+																																																																																												tNSRrSZ4yHtJ8FXrG, 2020-12-09T10:07:46 (stonglyConnected,correct,check,)
+																																																																																													YW8pWnDxoCHfvMgbE, 2020-12-09T10:08:51 (transitive,correct,check,)
+																																																																																														9eo84aZNsisN7CFp5, 2020-12-09T10:09:04 (transitive,correct,check,)
+																																																																																															NYaN8ASetKJdxHCRm, 2020-12-09T10:10:35 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+																																																																																																FFpMHh9FLASPjsBc6, 2020-12-09T10:10:51 (transitive,correct,check,)
+	JRX3ayKzNaYJn24h6, 2020-12-09T09:23:06 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+		RansevH268q5y5Efn, 2020-12-09T09:23:51 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+	NfZXAN7h2Figcq7sk, 2020-12-09T09:25:08 (There are 3 possible tokens that can appear here: ,  : =)
+		EoeZevgWBqPsxYCAN, 2020-12-09T09:25:24 (undirected,correct,check,)
+			FBGiJ8EZ2cj5oCWF2, 2020-12-09T09:26:31 (undirected,correct,check,)
+				dp4fYPTdjJWF9mE2k, 2020-12-09T09:27:01 (oriented,correct,check,)
+					dbnSnHyh9aacGnHzz, 2020-12-09T09:27:06 (noLoops,correct,check,)
+						QQRipcumwvEaAwYXE, 2020-12-09T09:46:25 (The name "Nod" cannot be found.)
+							wX4YEsqJ2sXhiHtTf, 2020-12-09T09:46:39 (The name "Nod" cannot be found.)
+								KGWuzkLMTLgDhZbRQ, 2020-12-09T09:46:45 (oriented,incorrect,check,)
+									2D5m3HojQYFpTwRxx, 2020-12-09T09:46:52 (oriented,incorrect,check,)
+										S7vAjnTWJAfisdjMj, 2020-12-09T09:47:18 (oriented,correct,check,)
+											iEQxasFCxhANh9x2c, 2020-12-09T09:57:09 (noLoops,correct,check,)
+	ba7K5qMDoySzCcgkH, 2020-12-09T09:31:34 (undirected,correct,check,)
+		bnHkT8ukTEqMtoKDp, 2020-12-09T09:47:02 (oriented,incorrect,check,)
+			3m8KNiPsNDJrCTvc3, 2020-12-09T09:47:07 (oriented,correct,check,)
+				JN4rW2fLLJqT5nXQP, 2020-12-09T09:47:47 (oriented,correct,check,)
+					ikSBaGHTQkbGrYRhA, 2020-12-09T09:47:52 (noLoops,correct,check,)
+						m6FscEDxjtdKu7TgR, 2020-12-09T09:48:24 (transitive,incorrect,check,)
+							R9dAPL9Y8BAfoFcm8, 2020-12-09T09:53:09 (complete,correct,check,)
+								htxfbXobNmCgcniBu, 2020-12-09T09:55:06 (transitive,incorrect,check,)
+									R2AsGmREnZGrYo8xo, 2020-12-09T09:59:34 (transitive,incorrect,check,)
+										9Y3upcyoPy3E2SaSE, 2020-12-09T09:59:50 (transitive,incorrect,check,)
+											2Qw86C9CKhGoJqETL, 2020-12-09T09:59:56 (stonglyConnected,correct,check,)
+												tGECLFr46hWBMGGr8, 2020-12-09T10:00 (stonglyConnected,incorrect,check,)
+													kJLJ8Cs52YELwByzY, 2020-12-09T10:01:39 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Node})
+														3Eei6Sescv9hDwBGQ, 2020-12-09T10:01:54 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Node})
+															qWQo8wm6MbcvCcKx8, 2020-12-09T10:03:01 (weaklyConnected,correct,check,)
+																PWfKj5K8eyZHo7Dx4, 2020-12-09T10:08:31 (transitive,correct,check,)
+																	5rJu44FsKeMSQZXFB, 2020-12-09T10:10:07 (transitive,correct,check,)
+	bg8gWJv7HNvCuR2FZ, 2020-12-09T09:38:55 (model share)
+	kgqpJafuv9xLMohWv, 2020-12-09T09:41:20 (undirected,correct,check,)
+		dMc7XgD2LsJLWhysG, 2020-12-09T09:41:23 (oriented,correct,check,)
+			z7xDbLycas5wAQxho, 2020-12-09T09:47:13 (oriented,correct,check,)
+				7JbAqWJ8Gw9eSoFjf, 2020-12-09T09:54:20 (complete,incorrect,check,)
+					2jewGdhkpevjDJHvj, 2020-12-09T09:54:56 (complete,correct,check,)
+	G8WgwAYPsii7pPiGh, 2020-12-09T09:42:07 (undirected,correct,check,)
+		AtSmwSssmvTsPZpXP, 2020-12-09T09:45:27 (undirected,correct,check,)
+			Cepypct2u7YwKY79i, 2020-12-09T09:46:22 (oriented,incorrect,check,)
+				pcpGwQTeBnb4SwHJr, 2020-12-09T09:47:11 (oriented,correct,check,)
+					pJfJusQJcBWq73oQt, 2020-12-09T09:49:23 (oriented,correct,check,)
+						cBiEXvWnomGrHWmrR, 2020-12-09T09:51:03 (acyclic,correct,check,)
+							iPKc9Fseoy33RZHbm, 2020-12-09T09:53:03 (acyclic,correct,check,)
+								6sPkPbd3TqTXqNXhD, 2020-12-09T09:56:12 (complete,correct,check,)
+									gFWewW5oWpzaPQLSq, 2020-12-09T09:57:04 (noLoops,correct,check,)
+										B8thC4uzc8sCcNpDm, 2020-12-09T09:58:28 (noLoops,correct,check,)
+											8ysxr7Bh9HGSQgvXg, 2020-12-09T09:59:39 (stonglyConnected,correct,check,)
+												ZEahr7FFdn4QSvoBj, 2020-12-09T10:03:30 (weaklyConnected,correct,check,)
+													Mg3Da7Ay3KFsTFvsT, 2020-12-09T10:07:40 (stonglyConnected,incorrect,check,)
+														bkAnacDq7Xbg9u4fC, 2020-12-09T10:07:52 (stonglyConnected,correct,check,)
+															paZ732FebbXWjZwqM, 2020-12-09T10:08:15 (stonglyConnected,correct,check,)
+																Nff5jc99RypYwyRuG, 2020-12-09T10:09:02 (transitive,correct,check,)
+																	5xXPgyN5i5qJbWThp, 2020-12-09T10:55:04 (model share)
+																		Z9D59KSF4hyeWCsCm, 2020-12-09T11:39:14 (model share)
+	ksr5w4MqMfgyzyibK, 2020-12-09T09:47:03 (oriented,incorrect,check,)
+		6MSjJuismS8aGwdRS, 2020-12-09T09:47:34 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node})
+			tScYnQ9dNvmXtEFWJ, 2020-12-09T09:48:25 (oriented,incorrect,check,)
+				gMpLwoJ8SZLshxuwa, 2020-12-09T09:49:45 (oriented,correct,check,)
+					oyFYMaaHt6G4BAdaK, 2020-12-09T09:51:44 (There are 3 possible tokens that can appear here: ,  { |)
+						xF5WCGQh4rM4dJ4PG, 2020-12-09T09:51:57 (complete,incorrect,check,)
+							oDsnTtjH859LWbyFm, 2020-12-09T09:52 (acyclic,correct,check,)
+								P2Eky7mTTkWsEjLcR, 2020-12-09T09:52:28 (complete,incorrect,check,)
+									Hbh4wbAgZLTLFPeYy, 2020-12-09T09:53:11 (complete,incorrect,check,)
+										SyZAD5xHjDrTdxXKF, 2020-12-09T09:54:09 (complete,correct,check,)
+											FStBjnCTLeoJYBs4a, 2020-12-09T09:56:22 (The name "adk" cannot be found.)
+												RJvnsyo3ypMMrEwdH, 2020-12-09T09:56:29 (noLoops,correct,check,)
+													qkME9FJHnnzbigo9H, 2020-12-09T09:58:30 (There are 1 possible tokens that can appear here: ))
+														tXen8ewZsDTJWJxCq, 2020-12-09T09:58:37 (There are 1 possible tokens that can appear here: ))
+															ATxM9dsBbiQXoGtys, 2020-12-09T09:59:09 (There are 1 possible tokens that can appear here: ))
+																yGDgBR47ig9jNDcCF, 2020-12-09T09:59:16 (There are 1 possible tokens that can appear here: ))
+																	HNs87GwgbvEkJ8hRC, 2020-12-09T10:00:12 (There are 1 possible tokens that can appear here: ))
+																		uKPzFBf3NuiX36ehb, 2020-12-09T10:00:21 (There are 1 possible tokens that can appear here: ))
+																			fgB2n745gu9Ycu9b9, 2020-12-09T10:00:28 (stonglyConnected,correct,check,)
+																				tDLmDjYkbzwK8PKXE, 2020-12-09T10:02:14 (weaklyConnected,incorrect,check,)
+																					9d8v6sRoyuhiaowgX, 2020-12-09T10:02:44 (weaklyConnected,incorrect,check,)
+																						nhuZGesJhJxxyZazT, 2020-12-09T10:03:31 (weaklyConnected,correct,check,)
+																							jRyepxb8CmHnsQ5Zg, 2020-12-09T10:06:34 (transitive,incorrect,check,)
+																								w3p7cbqqJBMn2wJmD, 2020-12-09T10:06:56 (transitive,correct,check,)
+	H7vzRTReTsLiqCJaQ, 2020-12-09T10:07:01 (undirected,incorrect,check,)
+	koK5bCDiAPjF28b7h, 2020-12-09T11:12:05 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+		vh5yupREASm5kqLaj, 2020-12-09T11:22:33 (The name "node" cannot be found.)
+			BynWgggT2vJy59NoZ, 2020-12-09T11:22:50 (The name "node" cannot be found.)
+				pkcPmisBtFPQf8x5D, 2020-12-09T11:23:03 (The name "node" cannot be found.)
+					zLcZnyDctGvxf2Mej, 2020-12-09T11:23:12 (undirected,correct,check,)
+						55WMzofGJyNDmdQCW, 2020-12-09T11:24:40 (undirected,correct,check,)
+							jZ25ZnWDBa6FtQQCt, 2020-12-09T11:24:45 (oriented,incorrect,check,)
+								eGQFfzoCuEWK96H4p, 2020-12-09T11:25:11 (oriented,correct,check,)
+									vPKq2AjCK4T3b4v6Q, 2020-12-09T11:26:01 (acyclic,correct,check,)
+										vTtCeaXmwXcSNKZbN, 2020-12-09T11:27:27 (complete,correct,check,)
+											kcZc7M6BJu6neXQNr, 2020-12-09T11:28:01 (noLoops,incorrect,check,)
+												AKZorhh9xQWxu4FQM, 2020-12-09T11:28:07 (acyclic,incorrect,check,)
+													CvatMraEJMbzEjnfH, 2020-12-09T11:28:22 (acyclic,correct,check,)
+														D8zf9zskwba6tfmZD, 2020-12-09T11:28:25 (noLoops,incorrect,check,)
+															JyprXkPLnrEqbc4rg, 2020-12-09T11:28:58 (noLoops,correct,check,)
+																tjKHvudounAryLDzZ, 2020-12-09T11:29:22 (weaklyConnected,correct,check,)
+																	4QwAaiTMdTQZXpWL3, 2020-12-09T11:29:30 (stonglyConnected,correct,check,)
+																		bkPS7eRHof3C6KF3B, 2020-12-09T11:30:22 (transitive,incorrect,check,)
+																			Zcqc49SJZcNxMXBkA, 2020-12-09T11:30:36 (transitive,incorrect,check,)
+																				aphJBgkxLH3ytqAgr, 2020-12-09T11:31:10 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																					DmAYDE5ebmm4X4HWn, 2020-12-09T11:31:18 (transitive,incorrect,check,)
+																						qG4xaXMGdygftRZME, 2020-12-09T11:31:47 (transitive,incorrect,check,)
+																							sgHYxibBhxAwTE99a, 2020-12-09T11:34:34 (transitive,incorrect,check,)
+																								tELPdYc8RHhconanW, 2020-12-09T11:36:21 (transitive,incorrect,check,)
+																									NMydxWGjSaJ2B2jYb, 2020-12-09T11:37:09 (transitive,correct,check,)
+																										2625v2FwKWoRQjqaF, 2020-12-09T11:37:16 (transitive,incorrect,check,)
+																											YdGnJ2dbjkhhMbDHG, 2020-12-09T11:37:36 (transitive,correct,check,)
+	hQAvT7fd8kJFcJfEZ, 2020-12-09T11:19 (undirected,incorrect,check,)
+		y7pm4BeCdScxsBwnt, 2020-12-09T11:29:53 (undirected,correct,check,)
+			MrMLWYQLDcj2L6JD2, 2020-12-09T11:30:36 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+				TcuCeffugJhJaG4LJ, 2020-12-09T11:31:29 (oriented,incorrect,check,)
+					xhKAsLQ95iYfL5vKY, 2020-12-09T11:42:49 (acyclic,correct,check,)
+						nxwpt6i8BmGgSbZCM, 2020-12-09T11:49:25 (There are 1 possible tokens that can appear here: ))
+							nDWyk9oLHJRpDiiPX, 2020-12-09T11:53:46 (complete,incorrect,check,)
+								NX64auzJGgMQDr89G, 2020-12-09T11:56:37 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+									MSMiMqenjmTTAdhjq, 2020-12-09T11:57:08 (undirected,incorrect,check,)
+										erEnMMcecsiWohcrX, 2020-12-09T11:58:03 (undirected,correct,check,)
+											tRuHYKoFcRE5H8mfh, 2020-12-09T12:01:12 (complete,correct,check,)
+												98SQaPDCghoo6eZHQ, 2020-12-09T12:01:20 (complete,correct,check,)
+													r4CZAGiYRpKywG2M8, 2020-12-09T12:01:25 (complete,incorrect,check,)
+														aKJYgWoYCdFWL3fiq, 2020-12-09T12:01:41 (complete,correct,check,)
+															68N2ADQAQyeHGuzM7, 2020-12-09T12:02:24 (complete,correct,check,)
+																CEn4LL23rSi9qfxXg, 2020-12-09T12:02:29 (noLoops,correct,check,)
+																	9pEqaszYgnLsZtsYj, 2020-12-09T12:03:39 (stonglyConnected,incorrect,check,)
+																		mkPExCQmjNzRJwg43, 2020-12-09T12:05:21 (This expression failed to be typechecked line 24, column 40, filename=/tmp/alloy_heredoc7272510223343165976.als)
+																			9CAgaRSen25ygZZos, 2020-12-09T12:05:28 (This expression failed to be typechecked line 24, column 40, filename=/tmp/alloy_heredoc2570064063641886870.als)
+																				ann58S7r5HWFkju4G, 2020-12-09T12:05:51 (oriented,incorrect,check,)
+																					R7wdpfGz5HDwRbBWx, 2020-12-09T12:08:58 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node})
+																						k7WKvPPX2RSj4HixY, 2020-12-09T12:15:49 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																							FwJP3ERX3iu8ETLAW, 2020-12-09T12:19:54 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node})
+																								4sggnFv3fPjXXN93g, 2020-12-09T12:20:07 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node})
+																									3HTNpqiE84mKRTYxF, 2020-12-09T12:20:29 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node})
+																										rB8vcwxLr6T7mGqT3, 2020-12-09T12:20:55 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node})
+																											hHGDF8CxCj7AZvNAh, 2020-12-09T12:21:53 (weaklyConnected,correct,check,)
+																												TZNqa4a2PTRkpnZ8r, 2020-12-09T12:21:58 (stonglyConnected,incorrect,check,)
+																													MwSCBWX86h8HqzfBX, 2020-12-09T12:22:12 (stonglyConnected,incorrect,check,)
+																														uJmu5thfrWetc5mGX, 2020-12-09T12:22:24 (stonglyConnected,incorrect,check,)
+																															4AJsqrdxt7K8oTuj3, 2020-12-09T12:22:49 (stonglyConnected,correct,check,)
+																																8kPLoTXdqzobbakfk, 2020-12-09T12:23:01 (transitive,correct,check,)
+	ZX9RuESAhJdm8inD2, 2020-12-09T11:20:09 (undirected,incorrect,check,)
+		uPg2RbQWaxmKHanGQ, 2020-12-09T11:21:26 (undirected,incorrect,check,)
+			uxKrRy9mwb3p75aZ6, 2020-12-09T11:21:46 (in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {this/Node->this/Node})
+				BoxhQj6bfNfkeT6ed, 2020-12-09T11:21:53 (undirected,correct,check,)
+					4WGHyjQFeLkWbZgmN, 2020-12-09T11:22:03 (undirected,correct,check,)
+						xs9Pwxwu9iqhfLtYk, 2020-12-09T11:22:10 (undirected,incorrect,check,)
+							q24mPTx9263SBJvGR, 2020-12-09T11:22:19 (undirected,correct,check,)
+								xugQqiGmFib6CQweQ, 2020-12-09T11:23:25 (undirected,incorrect,check,)
+									h63aDtzNPCPtBGZ25, 2020-12-09T11:23:51 (undirected,incorrect,check,)
+										vJqhWDcgpHcRiX3LR, 2020-12-09T11:25:12 (undirected,incorrect,check,)
+											wBm95v8JEHupgErjR, 2020-12-09T11:25:23 (undirected,incorrect,check,)
+												F5REy4CFC8JTMKCZd, 2020-12-09T11:25:43 (undirected,incorrect,check,)
+													Rppy7hr6yWbRqkwJA, 2020-12-09T11:25:57 (undirected,incorrect,check,)
+														u59CxwDM2jTDJqfma, 2020-12-09T11:26:36 (undirected,correct,check,)
+															B9f2KrQrS2Bexczvd, 2020-12-09T11:28:03 (undirected,correct,check,)
+																xnCjw9bha5f5BzCvP, 2020-12-09T11:29 (There are 5 possible tokens that can appear here: enum fun let open pred)
+																	WEseoj8C9JSExZN7y, 2020-12-09T11:29:11 (There are 5 possible tokens that can appear here: enum fun let open pred)
+																		kSZkpoZyzxzPBRLXW, 2020-12-09T11:29:22 (There are 5 possible tokens that can appear here: enum fun let open pred)
+																			3ftNofu7ur3sdmh5g, 2020-12-09T11:29:48 (There are 5 possible tokens that can appear here: enum fun let open pred)
+																				NRNh28CSHEfryQKgc, 2020-12-09T11:31:07 (There are 5 possible tokens that can appear here: enum fun let open pred)
+																					df9b8T3ZmnPys7CqJ, 2020-12-09T11:31:22 (There are 5 possible tokens that can appear here: enum fun let open pred)
+																						4eQfvB4iE5W8NKaS2, 2020-12-09T11:31:46 (There are 5 possible tokens that can appear here: enum fun let open pred)
+																							hmXfRQHWphja62Fq2, 2020-12-09T11:32:19 (There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~)
+																								EBPbSzJHqK8jomrrp, 2020-12-09T11:32:26 (There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~)
+																									ZiG5RvpshvRCShTys, 2020-12-09T11:32:36 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+																										NsR8WZGDSMKYjALw7, 2020-12-09T11:34:02 (undirected,correct,check,)
+																											b2jnKXxX7JuffutPM, 2020-12-09T11:35:25 (There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~)
+																												9KBXX5fJXrbRPCAk2, 2020-12-09T11:35:37 (undirected,correct,check,)
+																													yeC6rB4XJWWf37pMi, 2020-12-09T11:39:34 (undirected,correct,check,)
+																														CFMDN45TNyTpbr5J6, 2020-12-09T11:39:44 (undirected,correct,check,)
+																															i58yvhJWesD4Kdmxo, 2020-12-09T11:41:25 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+																																xf7dk36fse8E2jP8N, 2020-12-09T11:42:11 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+																																	oCHP2Nk6tbMDDksc7, 2020-12-09T11:44:46 (undirected,correct,check,)
+																																		7jeZQ5k8eoYCzerNp, 2020-12-09T11:47:20 (undirected,correct,check,)
+																																			85NC3kku8aXCZy98L, 2020-12-09T11:59:18 (undirected,correct,check,)
+																																				FHZa5WFSDBSo2uY6D, 2020-12-09T11:59:26 (undirected,correct,check,)
+																																					mndeSqivs9rknLJMW, 2020-12-09T12:01:01 (undirected,correct,check,)
+																																						dhZ9rTTgiobhPt9c6, 2020-12-09T12:07:39 (undirected,correct,check,)
+																																							i2LzGn5dvaCK6RSxR, 2020-12-09T12:10:05 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node})
+																																								9hQMNxN2tyswC6iM9, 2020-12-09T12:10:14 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node})
+																																									qJSkM3TheJ452LSKS, 2020-12-09T12:10:58 (undirected,correct,check,)
+																																										Cz4CceGsounJfchPY, 2020-12-09T12:12:12 (model share)
+																																										XsFWHm5z3n2Q9AEiB, 2020-12-09T12:14:48 (undirected,correct,check,)
+	5qqGpzCygczPXSprq, 2020-12-09T11:22:34 (undirected,incorrect,check,)
+		LaBruJfhT3WMFZd3o, 2020-12-09T11:25:55 (undirected,correct,check,)
+			psTofLEHpgaN3hnbz, 2020-12-09T11:26:14 (undirected,correct,check,)
+				JQ4YZGab4a2hcKima, 2020-12-09T11:26:17 (oriented,correct,check,)
+					gHydzTkSo9RPfzkZQ, 2020-12-09T11:27:33 (noLoops,correct,check,)
+						NSNJRqMjYA2zQxsBM, 2020-12-09T11:28:47 (The name "node" cannot be found.)
+							Ts7KL3TQ8ywZLNjT4, 2020-12-09T11:28:52 (The name "null" cannot be found.)
+								Ktm5f3x4GARWQxukd, 2020-12-09T11:29:02 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+									cPE7vW5eacrgHXbxq, 2020-12-09T11:29:30 (The name "empty" cannot be found.)
+										26hcST27RdBZertyS, 2020-12-09T11:34:06 (complete,correct,check,)
+											2ghvNu65Q2qgEfQfs, 2020-12-09T11:36:33 (transitive,correct,check,)
+												Q66ovAspEAP4ZrrZk, 2020-12-09T11:36:45 (stonglyConnected,incorrect,check,)
+													sCK7YMZgKRugkMPxD, 2020-12-09T11:39:48 (complete,incorrect,check,)
+														54eL22K3uXX83ihLu, 2020-12-09T11:39:54 (complete,correct,check,)
+															RPv5eNTgB7ymH4S7y, 2020-12-09T11:43:49 (complete,correct,check,)
+																fbMYxjzedu4e8eCKe, 2020-12-09T11:43:52 (undirected,correct,check,)
+																	fgP4CWfsi72AGzJGz, 2020-12-09T11:47:46 (acyclic,correct,check,)
+																		i4KKjhFb72uoYB29E, 2020-12-09T12:10:56 (weaklyConnected,correct,check,)
+																			kJBiK94B4EdtLRhP7, 2020-12-09T12:10:58 (stonglyConnected,correct,check,)
+	tD5gxRdEDNzeyW7GK, 2020-12-09T11:22:49 (undirected,correct,check,)
+		ZnHKj6fSAEWgonJLo, 2020-12-09T11:28:54 (undirected,incorrect,run,)
+			ytkEG38aQJN2rvh6G, 2020-12-09T11:30:52 (oriented,correct,check,)
+				KrmkeFBQH5iHDMtgG, 2020-12-09T12:15:27 (model share)
+					okyFiMcGXLumHLoCy, 2020-12-09T12:22:41 (undirected,incorrect,run,)
+						r3YhmAavdG3utW9fc, 2020-12-09T12:22:46 (weaklyConnected,correct,check,)
+							BkrGQmxKdWGeN7Xwn, 2020-12-09T12:39:27 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+								pFYF2Hbhx3n8X8BMB, 2020-12-09T12:39:31 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+	cEYmu8WXpQ6jTsbrK, 2020-12-09T11:24:16 (undirected,correct,check,)
+		mC4Lb5sh965JuL4ZP, 2020-12-09T11:24:30 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+			Td9btF2AqZg2A55cL, 2020-12-09T11:24:39 (undirected,correct,check,)
+	t5i2iKuQogyvphYnZ, 2020-12-09T11:24:36 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+		n72EofpCWtg8MTdJz, 2020-12-09T11:25:08 (There are 3 possible tokens that can appear here: ,  { |)
+			PobB9qoc2FAku57Pp, 2020-12-09T11:25:18 (undirected,incorrect,check,)
+				imjCHWvYeoTM6M2rz, 2020-12-09T11:26:04 (undirected,incorrect,check,)
+					Tkbn7d5ihi79LmAJj, 2020-12-09T11:27:16 (oriented,correct,check,)
+						32isJ8rsAtBJceYTF, 2020-12-09T11:27:54 (undirected,incorrect,check,This variable is unused.)
+							WkEa5wKCYMcC4uukx, 2020-12-09T11:28:08 (undirected,correct,check,)
+								W9kSjraik2uEMGzhH, 2020-12-09T11:28:17 (oriented,correct,check,)
+									sYtGETtFoybwboKzB, 2020-12-09T11:28:58 (acyclic,incorrect,check,)
+										3YKA6nNwjf5HRRksc, 2020-12-09T11:29:10 (acyclic,correct,check,)
+											HRrhusucg6pPXXjjx, 2020-12-09T11:30:32 (acyclic,correct,check,)
+												gnHiSYhxA2ELshABk, 2020-12-09T11:30:36 (complete,incorrect,check,)
+													cQ5cXChJW4yDSABh6, 2020-12-09T11:31:55 (complete,incorrect,check,)
+														5ME7J3j9WqYEGa4uq, 2020-12-09T11:32:21 (complete,incorrect,check,)
+															ifBpKq8YbhTcieYSp, 2020-12-09T11:33:34 (complete,incorrect,check,)
+																MvG5Ncyje3ug8MuFt, 2020-12-09T11:34:16 (complete,incorrect,check,)
+																	v9CjtS68egDzAJZq9, 2020-12-09T11:35:47 (undirected,correct,check,)
+																		d35tK86AxE6ekKe7N, 2020-12-09T11:35:49 (oriented,correct,check,)
+																			xbNFPdjaBDyfoAfL9, 2020-12-09T11:35:51 (acyclic,correct,check,)
+																				yszGN7TfXTrqoksun, 2020-12-09T11:35:53 (complete,incorrect,check,)
+																					ra9mg2Lg4G6Bd7mQf, 2020-12-09T11:36:49 (complete,incorrect,check,)
+																						LaKeEte3qQAZmZyXN, 2020-12-09T11:37:04 (complete,incorrect,check,)
+																							SJxJcp89CAWqtk3b5, 2020-12-09T11:37:53 (noLoops,incorrect,check,)
+																								YnDXG95mgaPik2Eh7, 2020-12-09T11:37:59 (noLoops,correct,check,)
+																									5jQgNrt2jBapJkRTY, 2020-12-09T11:38:12 (complete,correct,check,)
+																										SJMgZjAQdApLAg746, 2020-12-09T11:38:20 (undirected,correct,check,)
+																											qKkCgZW4wwJLKJ9zL, 2020-12-09T11:38:21 (oriented,correct,check,)
+																												YwijFdeyyjRHi3to3, 2020-12-09T11:38:23 (acyclic,correct,check,)
+																													nNBiBA732ifEZPQT9, 2020-12-09T11:38:25 (complete,correct,check,)
+																														ErJSsDuQnRrdrEbfL, 2020-12-09T11:38:27 (noLoops,correct,check,)
+																															rYKXHGz2z9vmBzD3q, 2020-12-09T11:39:54 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node})
+																																g2firDhuEx2SSYgkL, 2020-12-09T11:44:49 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node})
+																																	TJsTbcsx8hE8s3JJM, 2020-12-09T11:45:29 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node})
+																																		nkdFPkMHrLCdcCNHW, 2020-12-09T11:45:40 (undirected,correct,check,)
+																																			6FDfXoZQT3B6LBXNr, 2020-12-09T11:45:49 (undirected,correct,check,)
+																																				7eDy8epDw7oZ3GNdF, 2020-12-09T11:46:47 (undirected,correct,check,)
+																																					kygxsPucRZddXzBLi, 2020-12-09T11:46:53 (undirected,correct,check,)
+																																						5KnKWG76DvkkCL6r2, 2020-12-09T11:47:04 (oriented,correct,check,)
+																																							LfG2LbzAmpSku7bgs, 2020-12-09T11:48:44 (acyclic,correct,check,)
+																																								j8syMEfoELp6AFESA, 2020-12-09T11:49:10 (complete,correct,check,)
+																																									RdYhXrHhRBREKr9CR, 2020-12-09T11:49:53 (undirected,correct,check,)
+																																										LPJ7PaX6PLfw75Cxk, 2020-12-09T11:49:55 (oriented,correct,check,)
+																																											FnN7BAjNtq5NBzsgr, 2020-12-09T11:49:57 (acyclic,correct,check,)
+																																												ts5oAX2zw5YYuho25, 2020-12-09T11:50 (complete,correct,check,)
+																																													XkWjnFkAHydDJdP5p, 2020-12-09T11:51:36 (complete,correct,check,)
+																																														vCsH3Wo2A5BpvRkDz, 2020-12-09T11:51:51 (noLoops,correct,check,)
+																																															3wa6KQ9wrM6DTurvu, 2020-12-09T11:54:57 (complete,correct,check,)
+																																																QyNcfebvZvpjYdQa3, 2020-12-09T11:55:11 (noLoops,correct,check,)
+																																																	eohM2avvQJapPx3ZP, 2020-12-09T11:55:16 (noLoops,incorrect,check,)
+																																																		QaenmbBCLpoWAvfpQ, 2020-12-09T11:57:59 (The name "dxz" cannot be found.)
+																																																			xBJwkiQZCe4wYXsmE, 2020-12-09T11:58:06 (noLoops,correct,check,)
+																																																				tcsEeRhMCTQdHtQh5, 2020-12-09T11:58:24 (noLoops,correct,check,)
+																																																					Y38fEnKutPgq9reso, 2020-12-09T11:58:59 (noLoops,correct,check,)
+																																																						2qSDxoAkYWBt3AYuQ, 2020-12-09T12:01:07 (stonglyConnected,incorrect,check,)
+																																																							pqSJ2opt63CMoRbwT, 2020-12-09T12:02:35 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																																								vzu5uCemZF6HZkr8E, 2020-12-09T12:02:45 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																																									hmCHM4MpzEKYSTWW3, 2020-12-09T12:03:45 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																																										Wh7X6HbRfrWjPxJm9, 2020-12-09T12:04:05 (transitive,correct,check,)
+																																																											zihC64xdxi63j3XGr, 2020-12-09T12:04:13 (undirected,correct,check,)
+																																																												us3rsqKAGaw3gLvvK, 2020-12-09T12:04:14 (oriented,correct,check,)
+																																																													LWBXvLLzh5afFvgBE, 2020-12-09T12:04:16 (acyclic,correct,check,)
+																																																														BDoao5uYxWCeugiLA, 2020-12-09T12:04:17 (complete,correct,check,)
+																																																															3dxaRHLrroXq4jvKW, 2020-12-09T12:04:19 (noLoops,correct,check,)
+																																																																nYyGzYYeEimRoJ3QY, 2020-12-09T12:04:21 (weaklyConnected,incorrect,check,)
+																																																																	xSN2rS3YZbCdcm5Sg, 2020-12-09T12:04:23 (stonglyConnected,incorrect,check,)
+																																																																		ng7f9M8P2e3pgqk4Y, 2020-12-09T12:06:44 (transitive,correct,check,)
+																																																																			Amc6THXZrv9wcNzMM, 2020-12-09T12:07:02 (stonglyConnected,incorrect,check,)
+																																																																				DcMmqxNYoKC6xYZ45, 2020-12-09T12:08:10 (stonglyConnected,correct,check,)
+																																																																					juabA98TBTQ3PpHod, 2020-12-09T12:09:38 (There are 1 possible tokens that can appear here: ))
+																																																																						qHX9wuqemXAdhKezp, 2020-12-09T12:09:46 (There are 1 possible tokens that can appear here: ))
+																																																																							5aBBxYJjLzJDZDsrR, 2020-12-09T12:10:01 (There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~)
+																																																																								cg6JH4TjRbEJqY7Gx, 2020-12-09T12:10:08 (weaklyConnected,incorrect,check,)
+																																																																									WXYqcEoqgejyBpJgT, 2020-12-09T12:11:07 (weaklyConnected,correct,check,)
+	TexDTtXijtXrcMZ2F, 2020-12-09T11:25:12 (undirected,correct,check,)
+		TqpvdjCnZg4dQDjL2, 2020-12-09T11:25:29 (oriented,correct,check,)
+			fdtNFBnLkBJhne5k9, 2020-12-09T11:25:32 (acyclic,incorrect,check,)
+				NqmF3juWzWTdGvJ8H, 2020-12-09T11:28:01 (acyclic,incorrect,check,)
+					ajChRsKCoh6WCrJiq, 2020-12-09T11:29:15 (- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Node->this/Node} Right type = {this/Node})
+						PZsraEDR9RmBdE6Rd, 2020-12-09T11:31:16 (in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {this/Node->this/Node})
+							EmxZF4zJApcGrkwxT, 2020-12-09T11:31:20 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+								pWMtFaD6TpykcnHfn, 2020-12-09T11:31:26 (complete,incorrect,check,)
+									32cPjACF8gordcawA, 2020-12-09T11:31:47 (acyclic,incorrect,check,)
+										k4faonHwNfJsBPodF, 2020-12-09T11:32:03 (complete,incorrect,check,)
+											arW7TaNeqGKTxGaif, 2020-12-09T11:32:35 (complete,incorrect,check,)
+												wmbLQSkYPTmNhJqKE, 2020-12-09T11:32:48 (complete,incorrect,check,)
+													saAq63NmGnTjmzGCm, 2020-12-09T11:33:04 (complete,incorrect,check,)
+														yyNnAsaxcwp7jmh7o, 2020-12-09T11:33:13 (acyclic,incorrect,check,)
+															aC9DutQDE5LHKyE77, 2020-12-09T11:33:23 (complete,incorrect,check,)
+																2BeXv9sQ2bMJYSRtB, 2020-12-09T11:35:35 (noLoops,correct,check,)
+																	jZydzaPgJHvNvjfi9, 2020-12-09T11:36:07 (weaklyConnected,incorrect,check,)
+																		74mPutzKEFqqf4DJk, 2020-12-09T11:36:17 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+																			jRtX2KPJvYTRWgHsm, 2020-12-09T11:36:21 (weaklyConnected,incorrect,check,)
+																				bcYDmbCf6Le9p6o4f, 2020-12-09T11:37:42 (weaklyConnected,incorrect,check,)
+																					ixpgHhyprfZCHuHW9, 2020-12-09T11:38:07 (noLoops,correct,check,)
+																						hwT7goenB329zpw33, 2020-12-09T11:38:10 (weaklyConnected,incorrect,check,)
+																							kxFiW4KTydxufP8Ps, 2020-12-09T11:38:55 (weaklyConnected,incorrect,check,)
+																								vmGs9tzpbzyqmqBn6, 2020-12-09T11:39 (weaklyConnected,incorrect,check,)
+																									hfnj7bxBqukm8XvoZ, 2020-12-09T11:40:02 (undirected,correct,check,)
+																										ENJK8LBMsyJXRbgex, 2020-12-09T11:44 (undirected,correct,check,)
+																											7zRhdJ5AuLjy4Yz6Q, 2020-12-09T11:44:18 (oriented,incorrect,check,)
+																												oKsv3ahXxDGciYb2G, 2020-12-09T11:45:13 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {this/Node->this/Node})
+																													GRLHRocq9ANuaFrNX, 2020-12-09T11:45:18 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {this/Node->this/Node})
+																														wC5mbNH6d5BCvkbdZ, 2020-12-09T11:45:30 (acyclic,incorrect,check,)
+																															PEv9gPdfhNxPPdFaw, 2020-12-09T11:48:50 (The name "n" cannot be found.)
+																																8TwcpHAuHMrMxWneY, 2020-12-09T11:48:55 (acyclic,correct,check,)
+																																	metpPENbPzH9GEZcM, 2020-12-09T11:49 (complete,incorrect,check,)
+																																		rR8vACDLhoBzkgjZn, 2020-12-09T11:52:46 (This cannot be a legal relational join where left hand side is this/Node (type = {this/Node}) right hand side is this/Node (type = {this/Node}))
+																																			rBLNxYRxepvRxTxiT, 2020-12-09T11:53:07 (This cannot be a legal relational join where left hand side is this/Node (type = {this/Node}) right hand side is this/Node (type = {this/Node}))
+																																				cjCPewZuPnhErhStn, 2020-12-09T11:53:25 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Node->this/Node} Right type = {this/Node})
+																																					5oysjaCXHvhKP2hdJ, 2020-12-09T11:54:25 (complete,correct,check,)
+																																						ZCEa763T2ysFeTsLw, 2020-12-09T11:54:52 (noLoops,correct,check,)
+																																							GRGZ5fDDSSit7mJpz, 2020-12-09T11:56:05 (This must be a formula expression. Instead, it has the following possible type(s): {none})
+																																								wTskWATHE4D3ySyaD, 2020-12-09T11:56:21 (noLoops,correct,check,)
+																																									NtF8Keq625LKo4ptQ, 2020-12-09T11:57:47 (weaklyConnected,incorrect,check,)
+																																										5g3rCqvzmrruiTnap, 2020-12-09T11:58:07 (weaklyConnected,incorrect,check,)
+																																											vQdvgeuNCHb6YreSb, 2020-12-09T11:58:12 (weaklyConnected,incorrect,check,)
+																																												PoLGis8fjorbqtNQW, 2020-12-09T11:58:51 (weaklyConnected,incorrect,check,)
+																																													6pDKfw2Bqaf3KZags, 2020-12-09T12:00:56 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {this/Node->this/Node})
+																																														KWss8fkCjXeNtxHvA, 2020-12-09T12:01:04 (weaklyConnected,incorrect,check,)
+																																															NP5J64PutN3e7YYF7, 2020-12-09T12:02:37 (weaklyConnected,incorrect,check,)
+																																																wj3tZaAFGwPGroW4S, 2020-12-09T12:02:39 (transitive,incorrect,check,)
+																																																	gHsYRcwayuMCaHYg9, 2020-12-09T12:03:23 (This must be an integer expression. Instead, it has the following possible type(s): {this/Node})
+																																																		8ukMXgM5dC9daYHbM, 2020-12-09T12:03:30 (transitive,correct,check,)
+																																																			Gqhwy5jfo6mPgf8aW, 2020-12-09T12:03:43 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+																																																				DgtNPuPvTw2AuxHJ5, 2020-12-09T12:05:54 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+																																																					rR73KciQGEDGiJ4Cu, 2020-12-09T12:06:42 (transitive,correct,check,)
+																																																						teCD3omb7Tqm52vjZ, 2020-12-09T12:07:41 (in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {this/Node->this/Node})
+																																																							sz6K5moYBqqt6Gv7e, 2020-12-09T12:07:48 (stonglyConnected,incorrect,check,)
+																																																								tSgWy87HZKaBC2c33, 2020-12-09T12:08:52 (stonglyConnected,incorrect,check,)
+																																																									bofHHAgujQwRYSeuT, 2020-12-09T12:08:59 (stonglyConnected,incorrect,check,)
+																																																										ZmwwZqwovuwxnApKF, 2020-12-09T12:09:46 (stonglyConnected,correct,check,)
+																																																											juCQTdEar44pdeA28, 2020-12-09T12:10:29 (weaklyConnected,incorrect,check,)
+																																																												nBzMHvqMXKD8sxyPj, 2020-12-09T12:11:12 (weaklyConnected,correct,check,)
+																																																													55pRnDgPJSaanotMD, 2020-12-09T12:11:28 (model share)
+	8a5Qivge6r7aAHqci, 2020-12-09T11:25:18 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+		k5uD3DtTHPqXYcwmA, 2020-12-09T11:25:36 (undirected,correct,check,)
+			2AxXr87meeri6vEZ2, 2020-12-09T11:25:57 (oriented,correct,check,)
+				dYJe48taZgwnvKaPp, 2020-12-09T11:26:54 (The name "n2" cannot be found.)
+					dmAkPznBPdmfJBztc, 2020-12-09T11:27:02 (acyclic,incorrect,check,)
+						GfY6NXKjEe5niBpB4, 2020-12-09T11:27:34 (acyclic,incorrect,check,)
+							TJfAom2Euyz7w9rCy, 2020-12-09T11:29:14 (complete,incorrect,check,)
+								De4gbsJwRgEBi27xE, 2020-12-09T11:30:30 (complete,correct,check,)
+									iKQ4ibnv6Egmvo85R, 2020-12-09T11:31:25 (complete,correct,check,)
+										jzDa9mxRj8EEhTyEx, 2020-12-09T11:33:14 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+											J4aZpE6yKhpFWb9PD, 2020-12-09T11:33:21 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+												NGjQrcWQi9hFBHn5L, 2020-12-09T11:33:33 (transitive,correct,check,)
+													mhPMyZ44rsDcx5nxK, 2020-12-09T11:47:07 (acyclic,correct,check,)
+														xzHXPKZjnBhYKqvjD, 2020-12-09T12:05:24 (transitive,incorrect,check,)
+															ZGLwHYEx9h4cLiWRB, 2020-12-09T12:06:16 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Node->this/Node->this/Node->this/Node} Right type = {this/Node->this/Node})
+																BTmRn4ydyM5xHhmjL, 2020-12-09T12:06:27 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Node->this/Node->this/Node} Right type = {this/Node->this/Node})
+	BHDtxphrwpPQM4jar, 2020-12-09T11:27:32 (undirected,incorrect,check,)
+		LisNpbwoqTKtX87Gq, 2020-12-09T11:28:12 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+			YmA24Eseu2c7GXEHp, 2020-12-09T11:31 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+				7bSs5dWDuJSh6dKHA, 2020-12-09T11:31:11 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+					xN6p3YNJXdX6hgKTL, 2020-12-09T11:31:27 (undirected,correct,check,)
+						ZERa3mdiWbEvYdJJv, 2020-12-09T11:31:39 (undirected,correct,check,)
+							FjydhwDD42dBxKqEy, 2020-12-09T11:31:42 (oriented,incorrect,check,)
+								FPNtYR5DHBEL4YEpK, 2020-12-09T11:33:18 (There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~)
+									mDHvynssEe6kLk9bm, 2020-12-09T11:36:32 (There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~)
+										hwBqqohbHpc8r7QjC, 2020-12-09T11:36:38 (oriented,incorrect,check,)
+											QiHwbimiKzQ2dwEwi, 2020-12-09T11:36:55 (oriented,incorrect,check,)
+												i7Cvopvcd9LAjGX8h, 2020-12-09T11:37:43 (This expression failed to be typechecked line 21, column 2, filename=/tmp/alloy_heredoc15169803509378401436.als)
+													xkL6fLMK8zxSu649Y, 2020-12-09T11:38:22 (This expression failed to be typechecked line 21, column 2, filename=/tmp/alloy_heredoc13133230698924730191.als)
+	idE3C4DqJp7f2RRvh, 2020-12-09T11:28:57 (undirected,incorrect,check,)
+		rFjLhE9xvK4psWxgm, 2020-12-09T11:44:56 (undirected,correct,check,)
+			8mHw3aD8yiunyhras, 2020-12-09T11:46 (undirected,incorrect,check,)
+				f3iytRH5iM3bXWDQJ, 2020-12-09T11:46:15 (undirected,correct,check,)
+					ZGBZjiyvr2oYEACLj, 2020-12-09T11:46:38 (oriented,correct,check,)
+						tbpEezHnBZcFfbYR8, 2020-12-09T11:46:55 (oriented,correct,check,)
+							YMjD7NLNuLf3pBAxj, 2020-12-09T11:47:21 (acyclic,correct,check,)
+								NEvHrCD6oSwBiAyMB, 2020-12-09T11:52:09 (complete,correct,check,)
+									tP2J8ddbcbipX7vNc, 2020-12-09T11:54:55 (complete,correct,check,)
+										ya9o96nrAzXzpMsuT, 2020-12-09T11:55:35 (The name "Adj" cannot be found.)
+											NoDRGrintoYDn3qah, 2020-12-09T11:55:45 (!in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {this/Node->this/Node})
+												Wqkvs2vx5MNBFqxGe, 2020-12-09T11:55:51 (The name "node" cannot be found.)
+													87MMGenJJk3F8NMZn, 2020-12-09T11:56:03 (The name "this" cannot be found.)
+														PWnK47hgfqv3YfM6P, 2020-12-09T11:59:59 (!in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {this/Node->this/Node})
+															fyPxikWCcRQzuPtM5, 2020-12-09T12:00:35 (noLoops,correct,check,)
+																Q3sTLKNDeoLdNRJ4W, 2020-12-09T12:03:49 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																	eqxwtt35duW6MuiZt, 2020-12-09T12:04:14 (stonglyConnected,incorrect,check,)
+																		9sNZPLvHDpfNjyEmp, 2020-12-09T12:05:13 (stonglyConnected,incorrect,check,)
+																			nxvc9WPoyEuwsCwx9, 2020-12-09T12:05:17 (stonglyConnected,incorrect,check,)
+																				ytLDZuNwQZcYmqcdv, 2020-12-09T12:05:45 (transitive,correct,check,)
+																					Tg2QJWNkSnqNvkPZ9, 2020-12-09T12:06:01 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+																						AtfJWuPTG4XdyqeMe, 2020-12-09T12:06:14 (transitive,correct,check,)
+																							zHdaNfHm8T4CgEd3z, 2020-12-09T12:06:43 (transitive,correct,check,)
+																								i3ihKnZCThWMaEpZH, 2020-12-09T12:10:02 (noLoops,correct,check,)
+																									R8H9s2f4HRixLaqSx, 2020-12-09T12:10:05 (stonglyConnected,correct,check,)
+																										ZMNfzj32jJEtjmp7Q, 2020-12-09T12:10:27 (noLoops,correct,check,)
+																											9iAirsFuphi9aw85x, 2020-12-09T12:11:06 (weaklyConnected,correct,check,)
+																												QJrsmKBz7KLnWhPeM, 2020-12-09T12:11:16 (model share)
+	jrZumYEv9SDsjXeyx, 2020-12-09T11:29:55 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+		FhMXSkp2FzwMmbtLu, 2020-12-09T11:30:18 (There are 1 possible tokens that can appear here: [)
+			LQiJKbopgBKcAqZqa, 2020-12-09T11:30:30 (There are 1 possible tokens that can appear here: [)
+				j8XxPmCwocWgyuqAM, 2020-12-09T11:30:40 (There are 1 possible tokens that can appear here: [)
+					opP44jrZJz877E8Kv, 2020-12-09T11:30:46 (There are 1 possible tokens that can appear here: [)
+						QD9twECZs9akobdhT, 2020-12-09T11:31:59 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+							Twtg52Gm2ub4JpfNS, 2020-12-09T11:32:05 (There are 1 possible tokens that can appear here: [)
+								DSAX8HYNHWvD9dzwZ, 2020-12-09T11:41:40 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+									7MH55YZX9epv3ZrDZ, 2020-12-09T11:41:51 (There are 1 possible tokens that can appear here: [)
+										woweWuzumbpvx4zKD, 2020-12-09T11:42:23 (There are 1 possible tokens that can appear here: [)
+											BjbXogLMyRCwsyp7f, 2020-12-09T11:42:58 (There are 1 possible tokens that can appear here: [)
+												pFHbkoPdAvNC3Y5PM, 2020-12-09T11:43:12 (There are 1 possible tokens that can appear here: [)
+													jjJhEW6ykw8w7tW2o, 2020-12-09T11:43:32 (There are 1 possible tokens that can appear here: [)
+														ozPmuX6yvqg2k7PkK, 2020-12-09T11:43:42 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+															AZiWaZroG3SqfZGaS, 2020-12-09T11:44:13 (undirected,correct,check,)
+																XSa9KW3bkhQ3fXEaz, 2020-12-09T11:44:23 (undirected,correct,check,)
+																	9XC4TEP3ZLkmhsqtt, 2020-12-09T11:44:39 (oriented,incorrect,check,)
+																		KG6udwmT7nRBMDaJT, 2020-12-09T11:44:53 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																			hdzB4oP2wMS3iv6FP, 2020-12-09T11:45:01 (oriented,incorrect,check,)
+																				iP2vHgdAwZr7Ce9yA, 2020-12-09T11:45:40 (oriented,correct,check,)
+																					vjfQQLbuABNHxJxNT, 2020-12-09T11:45:50 (oriented,incorrect,check,)
+																						TdMzedoJYWBuuMebq, 2020-12-09T11:45:57 (oriented,correct,check,)
+																							Rn5DKoEnYDDkuZksW, 2020-12-09T11:46 (oriented,incorrect,check,)
+																								psBzWHZjguFn9fBow, 2020-12-09T11:47:12 (acyclic,correct,check,)
+																									bvTu2gAfmPvyC2C5N, 2020-12-09T11:48:42 (acyclic,correct,check,)
+																										Gfysd9eKWdvDSqNKx, 2020-12-09T11:49:14 (complete,incorrect,check,)
+																											LgPbCRYymYewpt6wv, 2020-12-09T11:49:25 (complete,correct,check,)
+																												mSRnzf9Prnj83WtDG, 2020-12-09T11:50:21 (in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {this/Node->this/Node})
+																													6Rsc8BKJFN5w8ZSDB, 2020-12-09T11:50:54 (complete,incorrect,check,)
+																														Q85ZMBJBq9auDa9hN, 2020-12-09T11:51 (in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {this/Node->this/Node})
+																															jPbbzJn5MThrwJAix, 2020-12-09T11:51:15 (complete,correct,check,)
+																																Sdz4d3xdvkRkyA45a, 2020-12-09T11:55:05 (complete,correct,check,)
+																																	os9ZDBGryMY27tRwj, 2020-12-09T11:55:15 (noLoops,correct,check,)
+																																		Aqma9TQ35SipmCqwx, 2020-12-09T11:56:06 (This expression failed to be typechecked line 50, column 4, filename=/tmp/alloy_heredoc1715988474404549385.als)
+																																			dq7JuaGhaM5jTavCC, 2020-12-09T11:59:31 (noLoops,correct,check,)
+																																				FSX2dmwew57WK4fFQ, 2020-12-09T12:00:40 (noLoops,correct,check,)
+																																					AWx8877FipP4JrT69, 2020-12-09T12:03:56 (transitive,incorrect,check,)
+																																						nWbpZNouETJkvnyMn, 2020-12-09T12:04:04 (transitive,incorrect,check,)
+																																							jXEfmBSQqSKqxXwqz, 2020-12-09T12:04:20 (transitive,correct,check,)
+																																								wQTMgq7k2Dexs6K3f, 2020-12-09T12:06:42 (in can be used only between 2 expressions of the same arity. Left type = {this/Node->this/Node} Right type = {this/Node})
+																																									FTonJEgvR6hopBwJw, 2020-12-09T12:06:51 (transitive,correct,check,)
+																																										rAmJ5g4joayXABm8c, 2020-12-09T12:07:20 (The name "directed" cannot be found.)
+																																											vZEYsPezBhYkaJo4X, 2020-12-09T12:07:30 (The name "directed" cannot be found.)
+																																												eCtm5LjTRFyYDbqKn, 2020-12-09T12:07:35 (The name "directed" cannot be found.)
+																																													Xpma2FvfPLedPZnmY, 2020-12-09T12:07:49 (stonglyConnected,incorrect,check,)
+																																														zX8bEgAtqshZN4Zv6, 2020-12-09T12:09:57 (weaklyConnected,incorrect,check,)
+																																															HSxSyowTCo56zJbKx, 2020-12-09T12:10:36 (weaklyConnected,incorrect,check,)
+																																																9H5CSAkksbrkv9cPX, 2020-12-09T12:10:52 (weaklyConnected,correct,check,)
+																																																	7BqGdydCu77xWn96L, 2020-12-09T12:11:48 (model share)
+	JqYZHFGXbGKRL365W, 2020-12-09T11:34:38 (undirected,incorrect,run,)
+		rv3ji7tBg4LqsKLi8, 2020-12-09T11:34:44 (undirected,incorrect,check,)
+			opXsToTJWYbP7yooB, 2020-12-09T12:16:27 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+				No2xfXcCtMgfgEnfq, 2020-12-09T12:16:56 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+					wHj8pby9FPythxdbN, 2020-12-09T12:17:05 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+						dYtvxJ6coEWiy84J6, 2020-12-09T12:17:17 (weaklyConnected,incorrect,check,)
+	drPfv4vAvjQ3vBZYR, 2020-12-09T11:42:07 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+		Jme9QoRdTT5udjJT8, 2020-12-09T11:42:42 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+			iKS3ww95oLuW7uM8i, 2020-12-09T11:43:34 (undirected,correct,check,)
+				Weej3aSnrCtjhwEr5, 2020-12-09T11:44:09 (oriented,correct,check,)
+					YKzQmeA3bRSs5DcQZ, 2020-12-09T11:44:13 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {this/Node->this/Node})
+						gECDZibgPrFWnPkEQ, 2020-12-09T11:44:18 (oriented,correct,check,)
+							pSvKzbKBbP8sYrKhe, 2020-12-09T11:47:24 (acyclic,correct,check,)
+								B6ZhrLQMcXBrbHWPN, 2020-12-09T11:50:01 (acyclic,correct,check,)
+									4GNhW2nB3S4WrkmnK, 2020-12-09T11:51:54 (complete,correct,check,)
+										7ZNPLGHJLhaNxgGHv, 2020-12-09T11:53:11 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Node->this/Node} Right type = {this/Node})
+											Cux48Nt2fGyvjBTY4, 2020-12-09T11:54:48 (complete,correct,check,)
+												qe73vFcujMhmbCnD8, 2020-12-09T11:56:09 (noLoops,correct,check,)
+													fQzqPiMjaQn5cYzqv, 2020-12-09T12:07:02 (transitive,correct,check,)
+														vFR2CvgtkJBaebnrZ, 2020-12-09T12:07:07 (transitive,correct,check,)
+															i3y8oWQbk492wAxM7, 2020-12-09T12:11:49 (model share)
+	hMGGPzythuseZ8rn4, 2020-12-09T11:42:39 (undirected,incorrect,check,)
+		HzsexvMPAg2w5MBmK, 2020-12-09T11:43:56 (undirected,correct,check,)
+			McKK5EFCpCuy8s24h, 2020-12-09T11:51:17 (complete,correct,check,)
+				i3FEmW5orjRuDrJ46, 2020-12-09T11:54:52 (complete,correct,check,)
+					8zgp4GR9TYbphcKjQ, 2020-12-09T11:59:27 (noLoops,correct,check,)
+						P9DbQobSpjuWxef3k, 2020-12-09T12:00:30 (noLoops,correct,check,)
+							eKEvCWbNRntCtKxGw, 2020-12-09T12:09:19 (stonglyConnected,correct,check,)
+								XQsHNvJrurgfp2mdD, 2020-12-09T12:11:02 (weaklyConnected,correct,check,)
+									xLTtpAR7MRdHqKr45, 2020-12-09T12:56:54 (model share)
+									Cxy2tShfGW7EuuBaG, 2020-12-09T12:56:54 (model share)
+	ABMukPiWhYivR6cDN, 2020-12-09T11:43:12 (acyclic,correct,check,)
+	CEemALJnNZ4A2qEhd, 2020-12-09T11:54:18 (complete,incorrect,check,)
+		6TLZWHdinwqjDHac5, 2020-12-09T11:57:13 (There are 1 possible tokens that can appear here: [)
+			Z2GSjASDym7wmFAp5, 2020-12-09T11:57:23 (complete,incorrect,check,)
+				jegbrhtzJNXzHFBw9, 2020-12-09T11:57:39 (complete,incorrect,check,)
+					B3HEDDAs93357kKmi, 2020-12-09T11:57:46 (complete,incorrect,check,)
+						p2Wdmzpx3edWvAi82, 2020-12-09T11:59:12 (complete,correct,check,)
+							SqjZEySbu8z63FfPK, 2020-12-09T12:00:10 (complete,correct,check,)
+								dWagrbwrSCiqTK7bE, 2020-12-09T12:00:52 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+									6ipqN3NWy4uRAtkfn, 2020-12-09T12:01:12 (complete,correct,check,)
+										yLiAoaXNh9HF7GA9m, 2020-12-09T12:01:55 (complete,correct,check,)
+											jaNnyo6Y5J3wErqJp, 2020-12-09T12:04:45 (complete,correct,check,)
+												5fMXaX8DW4SxFk36P, 2020-12-09T12:04:47 (noLoops,incorrect,check,)
+													tDjvh7B2TJzDQXhYZ, 2020-12-09T12:05:20 (noLoops,incorrect,check,)
+														qDDGhpTELGvEwNoL6, 2020-12-09T12:05:37 (noLoops,incorrect,check,)
+															oep3TyPXL8QnWiYkT, 2020-12-09T12:08:37 (weaklyConnected,correct,check,)
+																w2YkxwCFvpoGbTHJT, 2020-12-09T12:08:57 (stonglyConnected,incorrect,check,)
+																	RkFkASkhvg4J8NCs9, 2020-12-09T12:09:15 (stonglyConnected,correct,check,)
+																		zbeqCuCRjt3jXKGMn, 2020-12-09T12:13:42 (noLoops,correct,check,)
+																			Y48ehuQHiPF85RHfB, 2020-12-09T12:15:31 (transitive,incorrect,check,)
+																				q5SKanhSYaeQCGyrK, 2020-12-09T12:15:45 (transitive,incorrect,check,)
+																					SNEPoPdnTPkwc4kBH, 2020-12-09T12:16:26 (transitive,incorrect,check,)
+																						t8jQEmpEh7se2zMBE, 2020-12-09T12:18:18 (transitive,incorrect,check,)
+																							JRdjanQAiTJqQY92L, 2020-12-09T12:19:36 (transitive,incorrect,check,)
+																								HmP2nf5T8jz8HXfxA, 2020-12-09T12:20:45 (transitive,correct,check,)
+	NcSZXGNiyrvYXPCKS, 2020-12-09T11:56:22 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+		g6rXN4NQ4WX6wQdwa, 2020-12-09T11:56:28 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+			H7o6Gw7NbYySwxqNe, 2020-12-09T11:56:40 (complete,incorrect,check,)
+				pPF9iWTTHZLHWmdqL, 2020-12-09T11:58:21 (acyclic,correct,check,)
+					P8ghYfBtAf8ifLKE3, 2020-12-09T11:58:37 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+						jDy3nzuanbvxXYXRK, 2020-12-09T11:58:50 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+							8NBin2Cd9CtyRmowN, 2020-12-09T12:01:26 (acyclic,incorrect,check,)
+								KgmNtEQKWgBW4Yu9w, 2020-12-09T12:01:31 (complete,correct,check,)
+									Da3ZAhnxrdRKJzucn, 2020-12-09T12:02:02 (complete,correct,check,)
+										os9TnWRcFST8aeDtv, 2020-12-09T12:02:13 (complete,correct,check,)
+											SNDtexd595MD7STeL, 2020-12-09T12:02:25 (noLoops,correct,check,)
+												CYvsvdAvqxoWhzg6N, 2020-12-09T12:02:43 (weaklyConnected,incorrect,check,)
+													5LcqX9ejEWD6hxEHD, 2020-12-09T12:03:03 (transitive,incorrect,check,)
+														xfGfw9FzgWCDH2wzh, 2020-12-09T12:03:49 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+															Apy8eEcNR5Ttbvi4R, 2020-12-09T12:04:02 (transitive,incorrect,check,)
+																Pv2fDmBScXLwyqBS3, 2020-12-09T12:05:11 (transitive,incorrect,check,)
+																	w3nRYrvneFBAyJRid, 2020-12-09T12:05:24 (transitive,incorrect,check,)
+																		udMJJE3SWBWamswg3, 2020-12-09T12:10:53 (noLoops,correct,check,)
+	6Am6J7WjRTZfDfiWD, 2020-12-09T11:57:29 (noLoops,correct,check,)
+		thgx5MRwTxTshZ7NR, 2020-12-09T12:11:48 (model share)
+	qFWKmCwnx5hoqNzM3, 2020-12-09T12:02:37 (noLoops,incorrect,check,)
+		v3fmoFbzAJCrupcGt, 2020-12-09T12:02:51 (noLoops,correct,check,)
+			8aYbRa8WGv4ApNMHW, 2020-12-09T12:04:23 (weaklyConnected,incorrect,check,)
+				rPr8vxKi9juf6pHEh, 2020-12-09T12:05:13 (weaklyConnected,correct,check,)
+					3nwr3dhD6k7sGtBbQ, 2020-12-09T12:06:21 (weaklyConnected,correct,check,)
+	GtCNX4k6vm4F4i9wG, 2020-12-09T12:16:34 (undirected,correct,check,)
+		5zrWXbSQzbfvmommB, 2020-12-09T12:16:41 (transitive,incorrect,run,)
+			vp2YjAK3dmbPCXQqs, 2020-12-09T12:19:32 (transitive,incorrect,run,)
+				wRqaG5BFT2XB5gNJ7, 2020-12-09T12:19:45 (transitive,incorrect,run,)
+	dMEgFN62GHriHFRZN, 2020-12-11T14:11:37 (undirected,incorrect,check,)
+		frbXGrbZyKKcLQLzx, 2020-12-11T14:13:14 (run$1,incorrect,run,)
+			8CXAYhdDcMFKY8HhP, 2020-12-11T14:13:35 (run$1,incorrect,run,)
+				MPAb7qnktHx8RENzF, 2020-12-11T14:20:13 (run$1,incorrect,run,)
+					6PHeX3wiS6j3xGrZG, 2020-12-11T14:20:17 (undirected,correct,check,)
+						HfYbD49EioGCi7KS9, 2020-12-11T14:28:36 (oriented,correct,check,)
+							cc2777vvYjEji774f, 2020-12-11T14:29:18 (acyclic,incorrect,check,)
+								zdxy2Wi9SqBwD8Xgv, 2020-12-11T14:29:38 (acyclic,incorrect,check,)
+									kRRkoJGB964BLFnrA, 2020-12-11T14:32:06 (acyclic,correct,check,)
+										rgWKzXKJzwtaxkvfi, 2020-12-11T14:38:59 (complete,correct,check,)
+											uXTJELNrnCrZGX8Eb, 2020-12-11T14:39:58 (noLoops,correct,check,)
+												aYDzQTJgrqQCmm6He, 2020-12-11T14:49:38 (weaklyConnected,correct,check,)
+													oMndBBumjzxEWmPia, 2020-12-11T14:50:56 (stonglyConnected,correct,check,)
+														2hzpo3rwruYYXXpt6, 2020-12-11T14:53:13 (transitive,incorrect,check,)
+															yKsnkPMm5EoNqc7kK, 2020-12-11T14:53:35 (transitive,incorrect,check,)
+	5z2tM3HFYYAweQ29E, 2020-12-11T14:12:17 (undirected,incorrect,check,)
+		rrrsNNX9EqBtoaoKT, 2020-12-11T14:12:24 (run$1,incorrect,run,)
+			2Px98An2zmJ7CwHyz, 2020-12-11T14:21:07 (undirected,correct,check,)
+				SN2FKFP8y3ELgEhZ7, 2020-12-11T14:27:33 (oriented,correct,check,)
+					Npbr926N3FwrEYvR9, 2020-12-11T14:27:47 (oriented,correct,check,)
+						2K58Ftpkx3N8pLc8b, 2020-12-11T14:47:09 (noLoops,correct,check,)
+							smKL6o9es83fH3onw, 2020-12-11T14:57:12 (model share)
+								X8EPLM6yco7R2t4iD, 2020-12-11T16:45:41 (complete,correct,check,)
+									bDj3gMxmJErqwBTzv, 2020-12-11T17:07:05 (model share)
+	BTR2yBTbPXAPPcbyP, 2020-12-11T14:13:41 (undirected,incorrect,check,)
+		b5WghKCRDxzNiQmh7, 2020-12-11T14:14:32 (undirected,incorrect,check,)
+			dxMzZCdMLa6mRrqzf, 2020-12-11T14:16:38 (undirected,incorrect,check,)
+				MjZoQL4WnLShbuArY, 2020-12-11T14:27:40 (undirected,correct,check,)
+					Xb8u6n3jjGx34QQwR, 2020-12-11T14:27:52 (run$1,incorrect,run,)
+						dNYMt4f7kJwFbfHgT, 2020-12-11T14:28:15 (undirected,correct,check,)
+							s2N7SRRZ6H2h2BbW8, 2020-12-11T14:58:08 (undirected,correct,check,)
+								WnuehGpeD4L4FkG5R, 2020-12-11T14:58:32 (undirected,incorrect,run,)
+									4uYWdH8Y5nHFzaFK5, 2020-12-11T14:59:06 (undirected,incorrect,run,)
+										6vu5Ti4vubF7tDQJ4, 2020-12-11T14:59:18 (undirected,incorrect,run,)
+											FJujq9oth5E2qcFX7, 2020-12-11T15:16:51 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+												pFZmTFq6ZZ59PQFGb, 2020-12-11T15:50:56 (The name "adj" cannot be found.)
+	APD37TtPkixK7RkvP, 2020-12-11T14:16:36 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+		2beLyGgysiDff6f5q, 2020-12-11T14:17 (undirected,correct,check,)
+			EkNdM4uWLbMyrgkjR, 2020-12-11T14:17:41 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+				36GrW7pswkG3hmGda, 2020-12-11T14:18:06 (oriented,correct,check,)
+					7mJjm9uEGQ3hsaFN9, 2020-12-11T14:22:30 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+						rDofuGbKda6sKGnGy, 2020-12-11T14:23:08 (oriented,correct,check,)
+							3zvuR7afCR4CNdmWb, 2020-12-11T14:27:13 (oriented,correct,check,)
+								QryLPYor34zujbwEh, 2020-12-11T14:29:57 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/Node})
+									uZNgd6397toKSqe2D, 2020-12-11T14:30:23 (acyclic,correct,check,)
+										F33oFrSoy76FfbQQH, 2020-12-11T14:33:06 (complete,incorrect,check,)
+											2vdi8hLD6RZMvSaY2, 2020-12-11T14:38:04 (complete,correct,check,)
+												d7S8c53sgDcAYW8Gt, 2020-12-11T14:39:22 (noLoops,correct,check,)
+													L4nrpBXDhWiMGdm8G, 2020-12-11T14:41:56 (weaklyConnected,incorrect,check,)
+														cbKWT3ucbwXfrXkma, 2020-12-11T14:42:56 (weaklyConnected,incorrect,check,)
+															qpuqPJPeGmdZvjjzz, 2020-12-11T14:43:15 (weaklyConnected,incorrect,check,)
+																bpAT4GncMyXDJzbFg, 2020-12-11T14:45:25 (weaklyConnected,incorrect,check,)
+																	vBNxWpSYtuekg2FC3, 2020-12-11T14:45:36 (weaklyConnected,incorrect,check,)
+																		2a89ejKSXKqWbBWBJ, 2020-12-11T14:46:07 (weaklyConnected,incorrect,check,)
+																			XL4x8fWG72WNDN4JD, 2020-12-11T14:47:45 (weaklyConnected,correct,check,)
+																				Eom9TTiwC3wTJYkf9, 2020-12-11T14:47:51 (weaklyConnected,correct,check,)
+																					cz6cdasEgHX3Bhz6e, 2020-12-11T14:50:25 (The name "n" cannot be found.)
+																						F52L68bcGt8ff3yE9, 2020-12-11T14:50:30 (stonglyConnected,incorrect,check,)
+																							6ootHgNvW8ppfbwrD, 2020-12-11T14:50:45 (stonglyConnected,correct,check,)
+																								32Yo8NWB8AFZLLLst, 2020-12-11T14:52:35 (transitive,correct,check,)
+	gwHktgXvDXpF52uGs, 2020-12-11T14:19:26 (undirected,correct,check,)
+		2SyYRT9aWLGZ45kfm, 2020-12-11T14:19:42 (undirected,correct,check,)
+			HvyTmcewxXE4wEujD, 2020-12-11T14:19:47 (run$1,incorrect,run,)
+				48mGYo3bziAWntDgq, 2020-12-11T14:20:57 (undirected,correct,check,)
+					xMxkpHe3GE3Pc4XMo, 2020-12-11T14:21:05 (run$1,incorrect,run,)
+						FH85GwryBoyrvZLPd, 2020-12-11T14:22:04 (undirected,correct,check,)
+							MacNWKZtAMtt3fWtb, 2020-12-11T14:24:48 (oriented,correct,check,)
+								7JqqJvHdpTo9f9Lpu, 2020-12-11T14:25:06 (oriented,incorrect,check,)
+									QHDnQhqEKPtwoYEBY, 2020-12-11T14:25:18 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+										DLEmahDBnZrptPRAX, 2020-12-11T14:25:27 (oriented,correct,check,)
+											bCjnLi9E6pDM3RJe7, 2020-12-11T14:25:42 (oriented,correct,check,)
+												agqXQyF54gPxyJqmm, 2020-12-11T14:33:43 (The name "R" cannot be found.)
+													7Y3o8QAf7iXqMhg47, 2020-12-11T14:33:48 (acyclic,correct,check,)
+														LPhNYKuAQHeBCNLbL, 2020-12-11T14:33:57 (acyclic,correct,check,)
+															JcxB4ez6i4EBmwRXD, 2020-12-11T14:38:31 (complete,correct,check,)
+																J4vBuBvytD2jcoNtH, 2020-12-11T14:39:56 (noLoops,correct,check,)
+																	GzdttXwBT7Ke6yqHT, 2020-12-11T14:43:12 (complete,correct,check,)
+																		M4ThYtvhcSYBkcMEE, 2020-12-11T14:48:04 (weaklyConnected,incorrect,check,)
+																			4aMmmLPQ4yd27sLwP, 2020-12-11T14:48:17 (noLoops,correct,check,)
+																				3Txex7ptsYobAa8qm, 2020-12-11T14:48:19 (weaklyConnected,incorrect,check,)
+																					aX89xaYPe9Kgh8Z6q, 2020-12-11T14:48:34 (weaklyConnected,incorrect,check,)
+																						ug8ErAqYW2LJtDAKz, 2020-12-11T14:48:43 (The name "Node/n" cannot be found.)
+																							r3GTEBgsyAbuFE5Rx, 2020-12-11T14:48:49 (weaklyConnected,incorrect,check,)
+																								wyBsCPXn3h2hsRyoz, 2020-12-11T14:50:27 (weaklyConnected,correct,check,)
+																									pY3sT7Je3zoP7qKwm, 2020-12-11T14:51:07 (weaklyConnected,correct,check,)
+																										tN6KWKk6ZyAKJhkGg, 2020-12-11T14:51:09 (stonglyConnected,correct,check,)
+																											v2FjFeeHA5zwsLaXG, 2020-12-11T14:51:20 (stonglyConnected,correct,check,)
+																												E8y49wttFTge3bKDy, 2020-12-11T14:51:27 (stonglyConnected,correct,check,)
+																													c26qMr4i5AtiJ57PY, 2020-12-11T14:53:49 (transitive,incorrect,check,)
+																														aHE7GNrvHbkgEX3uN, 2020-12-11T14:54:08 (transitive,correct,check,)
+																															NppsrKnQjqrkFdCM5, 2020-12-11T14:55:51 (transitive,correct,check,)
+																																HPh64ZBTD2QSjcus7, 2020-12-11T14:55:53 (stonglyConnected,correct,check,)
+																																	39wXc5FkKgBDdh2FT, 2020-12-11T14:56 (stonglyConnected,correct,check,)
+																																		eboyZpNycTXiHKq6w, 2020-12-11T14:56:34 (stonglyConnected,correct,check,)
+																																			Sfe6NebDzA3hbPpTa, 2020-12-11T14:57:04 (stonglyConnected,correct,check,)
+	u2fDsumKcGLkz3Dmc, 2020-12-11T14:20:46 (There are 3 possible tokens that can appear here: ,  { |)
+		rYnpRajHie3fE2kqr, 2020-12-11T14:20:52 (undirected,correct,check,)
+			CjfQupbueM4B25ne5, 2020-12-11T14:22:41 (oriented,incorrect,check,)
+				zteKTW4QtenLyJJqe, 2020-12-11T14:24:40 (The name "n1" cannot be found.)
+					9NWbsxSGkTiLAqMWY, 2020-12-11T14:24:57 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+						8Hd5BYTjcAAy2Zra2, 2020-12-11T14:25:16 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+							dM2iKTBzRQ9tHHsob, 2020-12-11T14:26:42 (There are 3 possible tokens that can appear here: ,  { |)
+								ixtsH97CJG6DDLmBW, 2020-12-11T14:26:48 (oriented,incorrect,check,)
+									T423ggSMArchzMRBs, 2020-12-11T14:28:31 (oriented,incorrect,check,)
+										Kb3LPcanynpibz6K5, 2020-12-11T14:28:36 (oriented,correct,check,)
+											dqXc7uzhqQB6jDCXB, 2020-12-11T14:29:57 (The name "circle" cannot be found.)
+												M2LdYDL2ugfBAmpSA, 2020-12-11T14:30:03 (acyclic,correct,check,)
+													o34hnWGTWnJBxqtu3, 2020-12-11T14:44:28 (noLoops,incorrect,check,)
+														T2FCM3kkNhKeGkGsr, 2020-12-11T14:44:48 (noLoops,correct,check,)
+															aKv4W2aYu5ib9Z8Ki, 2020-12-11T14:51:06 (weaklyConnected,correct,check,)
+																qeuTq7oo8Htndv9Xi, 2020-12-11T14:52:52 (stonglyConnected,correct,check,)
+																	HCMKQBkxnjpiwJTdz, 2020-12-11T14:54:03 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+																		RsMHHjFqBfFKi7bRz, 2020-12-11T14:55:56 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+																			Cyugsfi2v4P79Yrow, 2020-12-11T14:56:06 (transitive,correct,check,)
+	qYDnp7Wwmzzuzo4mc, 2020-12-11T14:20:49 (undirected,correct,check,)
+		XJ35RSP6ioDRiaxbN, 2020-12-11T14:21:37 (undirected,correct,check,)
+			aJ2kdArfTLuteyrnE, 2020-12-11T14:24:18 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+				w8CTJdDzdSGLxmW6z, 2020-12-11T14:24:28 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+					vXd9qvq7htHZP3JcB, 2020-12-11T14:25 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+						Ev9mHcQSiYP9K3SXR, 2020-12-11T14:29:24 (undirected,correct,check,)
+							iNaSWzek6tm8dMijG, 2020-12-11T14:29:27 (oriented,correct,check,)
+								DQEYN6GySaYM9ma4W, 2020-12-11T14:30:31 (in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {univ->univ})
+									sMFAsaAKWtyDWq3sL, 2020-12-11T14:32:09 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+										LinvZGMiNC8hNsaza, 2020-12-11T14:32:17 (acyclic,incorrect,check,)
+											DjtX4GTHr5GymmCba, 2020-12-11T14:32:53 (The name "n1" cannot be found.)
+												wk3ewC3T6Y5Ru9Xix, 2020-12-11T14:32:58 (acyclic,correct,check,)
+													rBBcGkTFWrqkYNiNL, 2020-12-11T14:36:39 (There are 1 possible tokens that can appear here: ))
+														h2snGNGAB4s7X3op8, 2020-12-11T14:36:44 (There are 1 possible tokens that can appear here: ))
+															zdckySm4h5drweXQd, 2020-12-11T14:38:45 (There are 1 possible tokens that can appear here: ))
+																snfhspEGBZQ8s5LxM, 2020-12-11T14:39:19 (There are 1 possible tokens that can appear here: [)
+																	jdiD9Ruac4BHdBuoR, 2020-12-11T14:39:57 (There are 1 possible tokens that can appear here: [)
+																		fP6rbPxkdgww9GrcN, 2020-12-11T14:40:21 (There are 1 possible tokens that can appear here: [)
+																			Pqvi4zeo8pFyGTbT7, 2020-12-11T14:41 (acyclic,correct,check,)
+																				iiwmnLP6wN3hezEQG, 2020-12-11T14:41:06 (complete,incorrect,check,)
+																					nptBqjYNFmMs92i4q, 2020-12-11T14:44:21 (The name "n" cannot be found.)
+																						uDrsY4GdwZAuctcZ4, 2020-12-11T14:44:29 (noLoops,correct,check,)
+																							ouqGHGNvnXDbP9RTd, 2020-12-11T14:46:04 (weaklyConnected,incorrect,check,)
+																								k6ZBrsGeBediCNAqv, 2020-12-11T14:46:31 (weaklyConnected,incorrect,check,)
+																									Bts5MP7pFfuBjP8PP, 2020-12-11T14:47:03 (weaklyConnected,incorrect,check,)
+																										FD9gHNWfNtfrqT4eF, 2020-12-11T14:47:27 (weaklyConnected,incorrect,check,)
+																											jjg7oc9tuw5KzNf7Z, 2020-12-11T14:47:29 (stonglyConnected,incorrect,check,)
+																												wmHfEMF63NApvj8F4, 2020-12-11T14:49 (stonglyConnected,incorrect,check,)
+																													2io7tDbMq92yiCHaG, 2020-12-11T14:49:06 (stonglyConnected,correct,check,)
+																														SKJj25yuBRoacT9G4, 2020-12-11T14:49:17 (weaklyConnected,correct,check,)
+																															WchfpMEXZYmbBEX5o, 2020-12-11T14:50:24 (stonglyConnected,correct,check,)
+																																qXaQwHHbobohLpGmD, 2020-12-11T14:51:30 (transitive,correct,check,)
+																																	No6vrM5GdZLa7Hz8G, 2020-12-11T14:54:57 (transitive,incorrect,check,)
+																																		zyv7TY5p7xvbrdK9E, 2020-12-11T14:56:21 (transitive,incorrect,check,)
+	ryTA4ZpmGLx55KCSf, 2020-12-11T14:21:21 (undirected,correct,check,)
+		pq6tAsKwcn886hkZE, 2020-12-11T14:22:43 (oriented,correct,check,)
+			956Rk7sbdxbncJvFP, 2020-12-11T14:27:12 (oriented,correct,check,)
+				93sXMHuBh7q8DDgNp, 2020-12-11T14:27:22 (acyclic,incorrect,check,)
+					zjSLuPC8zPeNjz7wL, 2020-12-11T14:36:19 (There are 3 possible tokens that can appear here: ,  { |)
+						MHsJvFAmz2F8tF9cZ, 2020-12-11T14:36:33 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+							8auGGHsCJc6xwJSy4, 2020-12-11T14:36:43 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+								FaD3tN3kqQ9L2b4ep, 2020-12-11T14:37:29 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+									dDgrBwPsMpWJW7XYD, 2020-12-11T14:37:54 (acyclic,correct,check,)
+										dyTptycpxpRoZa5YL, 2020-12-11T14:37:57 (complete,correct,check,)
+											wLg7jbeJntrNEFBX2, 2020-12-11T14:39:23 (noLoops,correct,check,)
+												hBbFg5gru8BhAeL74, 2020-12-11T14:52:30 (weaklyConnected,correct,check,)
+													7RQEtfNY3wgievtPz, 2020-12-11T14:52:49 (stonglyConnected,correct,check,)
+														jN6uxFHHijTqRnYvu, 2020-12-11T14:54:01 (transitive,correct,check,)
+	f3cGgWFyeXsjMDgoH, 2020-12-11T14:21:37 (undirected,correct,check,)
+		ifAwaZ9ABE9eQBTxK, 2020-12-11T14:22:25 (oriented,correct,check,)
+			W8NGntks3Qjuhi6Gk, 2020-12-11T14:25:15 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+				AKF3pNsc83gQ6vRhQ, 2020-12-11T14:25:27 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+					Ld8hqQ6qK42q8TdCa, 2020-12-11T14:26:52 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+						yfTdYgPokcT28q3RG, 2020-12-11T14:26:58 (oriented,correct,check,)
+							Rtkk898pBpQMscZ8Q, 2020-12-11T14:27:45 (acyclic,correct,check,)
+								ASTkgDbMuAbf65ogz, 2020-12-11T14:28:27 (complete,incorrect,check,)
+									eMeoMRMfbrSp4tGxs, 2020-12-11T14:29:02 (complete,incorrect,check,)
+										s8EeTY4oy3nxRc3Cn, 2020-12-11T14:29:37 (complete,incorrect,check,)
+											RNzzKi3k4AwaFzgku, 2020-12-11T14:29:48 (complete,correct,check,)
+												XuB3N3j284sJ5SiZh, 2020-12-11T14:40:13 (noLoops,correct,check,)
+													YFJ534gMDDCF72hej, 2020-12-11T14:40:34 (complete,correct,check,)
+														HeYgHcESsh39gYvMg, 2020-12-11T14:45:23 (weaklyConnected,incorrect,check,)
+															oGXqwTCBf7gW73eDu, 2020-12-11T14:45:46 (weaklyConnected,incorrect,check,)
+																LYgPBwd6eckkAgBWZ, 2020-12-11T14:46:56 (weaklyConnected,incorrect,check,)
+																	L2cqjDscHPKeoe9Gx, 2020-12-11T14:47:21 (weaklyConnected,incorrect,check,)
+																		PMmqensk2xcn8GEn8, 2020-12-11T14:47:51 (weaklyConnected,correct,check,)
+																			9TawXwCbs9PMNpKFe, 2020-12-11T14:48:28 (weaklyConnected,correct,check,)
+																				csKXCExCxzamyJqiS, 2020-12-11T14:48:49 (The name "n" cannot be found.)
+																					7SgfmeqSwvQEJvEY7, 2020-12-11T14:49:44 (weaklyConnected,correct,check,)
+																						2Wz2LoPz8X3XkbA4N, 2020-12-11T14:50:18 (weaklyConnected,correct,check,)
+																							Qqywns9bvCoDDhs6M, 2020-12-11T14:50:49 (stonglyConnected,correct,check,)
+																								m9wTkChQPjXqDjj3w, 2020-12-11T14:54:32 (transitive,incorrect,check,)
+																									YoMM5Gd9hxypx2ooA, 2020-12-11T14:56:29 (transitive,incorrect,check,)
+																										KuiEGq5RaiThdtT28, 2020-12-11T14:56:45 (transitive,incorrect,check,)
+																											KYhXAep9HZAuYLsxm, 2020-12-11T14:56:58 (transitive,correct,check,)
+																												NSKto5cJvwq6GPFa5, 2020-12-11T14:57:03 (transitive,incorrect,check,)
+	2cNEE2cXHjscANHTf, 2020-12-11T14:26:48 (oriented,correct,check,)
+		z8av24HzvGvk8JdD9, 2020-12-11T14:26:52 (oriented,correct,check,)
+			E6HYRZqkMjeAXq8xW, 2020-12-11T14:28:57 (acyclic,incorrect,check,)
+				iZzX4gW6PiTXK2GQ3, 2020-12-11T14:29:50 (acyclic,correct,check,)
+					uBbGYsbFwo9izdW7P, 2020-12-11T14:33:24 (complete,incorrect,check,)
+						wzxSRtZvp3TN2vs9D, 2020-12-11T14:33:37 (complete,incorrect,check,)
+							QsttPwm5SKeNsTRCL, 2020-12-11T14:35:21 (complete,incorrect,check,)
+								kk25YDMqD2TGiRXrw, 2020-12-11T14:36:11 (complete,incorrect,check,)
+									4nmQziG8p87fePLgj, 2020-12-11T14:36:45 (complete,correct,check,)
+										kcF7nEMFyPfQNBt35, 2020-12-11T14:39:52 (noLoops,correct,check,)
+											yeHFBZS9K3SaucyJj, 2020-12-11T14:39:55 (weaklyConnected,incorrect,check,)
+												a4TAAhFyJxdqFXRtA, 2020-12-11T14:43:23 (weaklyConnected,incorrect,check,)
+													u4d7sFijRm9fibC6E, 2020-12-11T14:44:54 (weaklyConnected,incorrect,check,)
+														GfBAr398RpDwv3QDJ, 2020-12-11T14:45:14 (weaklyConnected,incorrect,check,)
+															ZAbdxxM9iLKEFEeT9, 2020-12-11T14:46:59 (stonglyConnected,incorrect,check,)
+																Lm6S4WPJjJ5xkLn9F, 2020-12-11T14:47:10 (stonglyConnected,correct,check,)
+																	GJg8mRjFxwPL2ieqr, 2020-12-11T14:48:30 (weaklyConnected,correct,check,)
+																		7W2goLLHm9nJBD4bL, 2020-12-11T14:50:09 (transitive,correct,check,)
+	p458P6NGr8H5in5MP, 2020-12-11T14:41:17 (complete,correct,check,)
+		cKTdqBrnobPwBRMJJ, 2020-12-11T14:41:22 (complete,incorrect,check,)
+			ABphRGfPTsLCa2PDy, 2020-12-11T14:43:27 (noLoops,correct,check,)
+				ZFqGomk4uvu3hFwPi, 2020-12-11T14:47:57 (weaklyConnected,incorrect,check,)
+					7cJrauDEAfGFqBAGE, 2020-12-11T14:48:10 (weaklyConnected,incorrect,check,)
+						io92orJZSG7bRP2qD, 2020-12-11T14:50:33 (weaklyConnected,correct,check,)
+							GjtW9zL9XgnrhbrhT, 2020-12-11T14:50:47 (stonglyConnected,correct,check,)
+								JtvH6D2hnoYRHnkdL, 2020-12-11T14:50:52 (stonglyConnected,correct,check,)
+									9RpWBg6FEQ4kDPHFN, 2020-12-11T14:51:22 (stonglyConnected,incorrect,check,)
+										J6LzHEkWWqweRnThg, 2020-12-11T14:51:35 (stonglyConnected,correct,check,)
+											vdkuPxGXCHeAC3znZ, 2020-12-11T14:54:44 (transitive,correct,check,)
+	wHXexKR6qXQ88tEns, 2020-12-11T14:42:53 (undirected,incorrect,check,)
+	hAZc882SxqyYkCSAM, 2020-12-11T16:14:28 (run$1,incorrect,run,)
+		Lz2wSeZqxWHMwevvB, 2020-12-11T16:21:21 (undirected,correct,check,)
+			DnXL97Y5riTqEScjh, 2020-12-11T16:23:12 (undirected,correct,check,)
+				hxDRTAtxg55q7TEBG, 2020-12-11T16:25:29 (undirected,correct,check,)
+					Hs5466KXm48kBqhk2, 2020-12-11T16:27:45 (undirected,incorrect,run,)
+						FZa6gohz2Z9XkYDK3, 2020-12-11T16:33:07 (undirected,incorrect,run,)
+							4h8mGwCdCABHiNWMp, 2020-12-11T16:34:15 (oriented,correct,check,)
+								qSEbK85xEoFAZFrBg, 2020-12-11T16:42:05 (acyclic,correct,check,)
+									GyuTef4EjKPQjzYGT, 2020-12-11T16:44:12 (acyclic,correct,check,)
+										LEABhGbinxFnC8hSh, 2020-12-11T16:44:17 (complete,correct,check,)
+	MKKZtoKin6a3xC3d8, 2020-12-11T16:14:53 (run$1,incorrect,run,)
+		ErG9kypz5vAMZuQhE, 2020-12-11T16:18:32 (undirected,correct,check,)
+			9Rof5pHqc9PqEsAGi, 2020-12-11T16:18:58 (oriented,correct,check,)
+				GGevsxsqz3o5dw4Tj, 2020-12-11T16:19:05 (oriented,correct,check,)
+					KR8XFynQ75TWWbFkX, 2020-12-11T16:19:24 (undirected,correct,check,)
+						TruR6JKWS5hJcpJKD, 2020-12-11T16:25:41 (run$1,incorrect,run,)
+							AyeJZfkL9wK4k7ZPk, 2020-12-11T16:26:02 (undirected,incorrect,run,)
+								6KQaLFWDY4Wf7ey4e, 2020-12-11T16:26:22 (undirected,incorrect,run,)
+									AeeXk234CjcLY7r7H, 2020-12-11T16:33:42 (undirected,incorrect,run,)
+										9uYAa7u5tSvBsuy7N, 2020-12-11T16:35:52 (run$2,incorrect,run,)
+											NLEMdmbqk2RBPEkwd, 2020-12-11T16:39:48 (undirected,incorrect,run,)
+												mopZfpvLPL5JEuDAg, 2020-12-11T16:40:07 (undirected,incorrect,run,)
+													oncTqaSHSPuBCghsj, 2020-12-11T16:42:05 (acyclic,correct,check,)
+														3Hkp3J93RPde8p9kz, 2020-12-11T16:44:49 (complete,correct,check,)
+															SQsPAF2mHMjMccCgd, 2020-12-11T16:56:52 (stonglyConnected,correct,check,)
+																uxvMkvDQzKwqzzxMQ, 2020-12-11T16:57:02 (stonglyConnected,correct,check,)
+	AJ76yPJquAZ3Nnj4j, 2020-12-11T16:16:40 (undirected,incorrect,check,)
+		ZBi8RW7osehpNWpNY, 2020-12-11T16:16:50 (oriented,incorrect,check,)
+			Bi9uqyzSgg6H6ibzp, 2020-12-11T16:20:59 (oriented,incorrect,check,)
+				8AedY7xbMPJThSQqS, 2020-12-11T16:21:16 (oriented,incorrect,check,)
+					u3t8zozdPKiE5q2vx, 2020-12-11T16:21:21 (undirected,correct,check,)
+						JcErtkhq7HhJ8Qb39, 2020-12-11T16:21:26 (undirected,correct,check,)
+							MRiGEa5qb7KJDRwKX, 2020-12-11T16:24:50 (oriented,correct,check,)
+								M7bY77WgGffRJ2qwL, 2020-12-11T16:34:04 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+									d8Aca2a8SWEnrz28s, 2020-12-11T16:34:47 (There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+										p8BGcgb6W5rdWrxWb, 2020-12-11T16:35:03 (There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+											4FZhuiJnFAyuYPHet, 2020-12-11T16:35:13 (acyclic,incorrect,check,)
+												pbx8b9AgEJs54gGmy, 2020-12-11T16:35:18 (There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+													uGqituefaG8XK4pWb, 2020-12-11T16:35:32 (!in can be used only between 2 expressions of the same arity. Left type = {this/Node->this/Node} Right type = {this/Node})
+														GKr2F8epERkCGMpZK, 2020-12-11T16:35:48 (acyclic,correct,check,)
+															q8rjHL8hcmk2qu6Ji, 2020-12-11T16:36:29 (acyclic,correct,check,)
+																R6RbnLoQk9fRozdmu, 2020-12-11T16:39:13 (complete,correct,check,)
+																	RbrgAM255twF6otJq, 2020-12-11T16:40:22 (noLoops,incorrect,check,)
+																		MBDoyH6acGzsLqJg3, 2020-12-11T16:43:12 (noLoops,incorrect,check,)
+																			mcjJ5rSxGidbGxTPh, 2020-12-11T16:43:28 (noLoops,correct,check,)
+																				8uMWo6K6P7gciCXhL, 2020-12-11T16:49:43 (in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {this/Node->this/Node})
+																					BuwdNjvFehNRgYJi3, 2020-12-11T16:49:49 (in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {univ->univ})
+																						YDXEJMKZuTRajhJMw, 2020-12-11T16:50:36 (in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {this/Node->this/Node})
+																							zk9yWz2jH8gGXsocP, 2020-12-11T16:50:49 (weaklyConnected,incorrect,check,)
+																								ikatd8DMLFRQz6tER, 2020-12-11T16:51:02 (stonglyConnected,incorrect,check,)
+																									9zosZATTp2oMxQtay, 2020-12-11T16:53:53 (undirected,correct,check,)
+																										NmtmPRYqpm9gW6DLF, 2020-12-11T16:53:55 (weaklyConnected,correct,check,)
+																											6HdcQpMKwPaaemyB7, 2020-12-11T16:54:57 (weaklyConnected,correct,check,)
+																												pcxtfjvaHug3d9Mvk, 2020-12-11T16:56:43 (weaklyConnected,correct,check,)
+																													sqGSX6JAZxdYorxyc, 2020-12-11T16:56:58 (stonglyConnected,correct,check,)
+																														j7puLwdLyDMiNTsCB, 2020-12-11T17:00:39 (transitive,correct,check,)
+	gKr2pqkEzrfpZbYXJ, 2020-12-11T16:17 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+		wa92iHCmSXHaZr6zK, 2020-12-11T16:17:53 (undirected,incorrect,check,)
+			ZDPgXHi75zy4uuTnN, 2020-12-11T16:18:11 (undirected,incorrect,check,)
+				T4A7KGqxv8wgDvRBN, 2020-12-11T16:19:05 (undirected,incorrect,check,)
+					cJ75qXwY8vcuP4CNu, 2020-12-11T16:19:40 (in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {this/Node->this/Node})
+						3Y9JCJTi6nTHeoJP6, 2020-12-11T16:19:48 (undirected,incorrect,check,)
+							zKWcac7HQ6uaTuTr2, 2020-12-11T16:20:15 (undirected,incorrect,check,)
+								T2h6Wqn5GYmwqXdti, 2020-12-11T16:20:43 (undirected,correct,check,)
+									Y5HgfvQDodQ8gH4oB, 2020-12-11T16:43:56 (complete,correct,check,)
+										vuWHTiutuknTaL3cp, 2020-12-11T16:46:08 (noLoops,correct,check,)
+											TACR3bbRk5mAcm9Ye, 2020-12-11T16:48:34 (weaklyConnected,incorrect,check,This variable is unused.)
+												RjJF7Y6rtZDtxfaER, 2020-12-11T16:49:11 (weaklyConnected,incorrect,check,)
+													JNKDEicWzhgLKRE2b, 2020-12-11T16:49:43 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+														C4DDiGyXv9NTMviK2, 2020-12-11T16:51:34 (weaklyConnected,incorrect,check,)
+															NQFALFpL2f53g9YHJ, 2020-12-11T16:53:11 (weaklyConnected,incorrect,check,)
+																pmGzW2v37QyC2Xs95, 2020-12-11T16:53:24 (weaklyConnected,correct,check,)
+																	exkmRjkEoKKMCqZ4X, 2020-12-11T16:53:46 (stonglyConnected,correct,check,)
+																		BfrErf3XZeSiA3A4f, 2020-12-11T16:55:15 (in can be used only between 2 expressions of the same arity. Left type = {this/Node->this/Node} Right type = {this/Node})
+																			paZLKsmANiRSbvY9r, 2020-12-11T16:56:46 (transitive,correct,check,)
+	C7Mr4b5nEiduZt39u, 2020-12-11T16:17:29 (run$1,incorrect,run,)
+		xoxZsArE2Tr7php5N, 2020-12-11T16:27:39 (undirected,correct,check,)
+			o2f8LcFkHausbyHAE, 2020-12-11T16:38:06 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+				w6cYnKdXYHQmWx87g, 2020-12-11T16:39:59 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+					JtgNusQMjFhavsdqp, 2020-12-11T16:40:14 (undirected,correct,check,)
+						cZiPe73u2z3cmc3zo, 2020-12-11T16:42:13 (acyclic,incorrect,check,)
+							3JmuLTkjT6YYCPWQS, 2020-12-11T16:42:47 (acyclic,correct,check,)
+								PmpJnnsa6xK6qw3NA, 2020-12-11T16:43:11 (acyclic,incorrect,check,)
+									vSWhkqnXdtcqBLg2R, 2020-12-11T16:44:05 (acyclic,correct,check,)
+										RqdtESjurmXxi5eKb, 2020-12-11T16:44:10 (complete,correct,check,)
+											Bs6uDj4AvWwkLFSni, 2020-12-11T16:48:03 (noLoops,correct,check,)
+												njvyxv4HYL2fbgKZi, 2020-12-11T17:00:06 (transitive,correct,check,)
+	gTEnGr7fkQwg2KoBB, 2020-12-11T16:19 (undirected,incorrect,check,)
+		zcDset37ssLcPJNKW, 2020-12-11T16:19:55 (undirected,correct,check,)
+			uo6QYCR9jYPaspR4i, 2020-12-11T16:20:07 (The name "cenas" cannot be found.)
+				963jShhWHrRaW6yx3, 2020-12-11T16:20:26 (undirected,correct,check,)
+					iaPWkP5cixW3EXYvk, 2020-12-11T16:21:11 (undirected,correct,check,)
+						onaEjAoSkyLtjjrm3, 2020-12-11T16:21:19 (oriented,incorrect,check,)
+							XCQ9dQJqZrQ8m7XLE, 2020-12-11T16:25:09 (oriented,correct,check,)
+								fh9GAuL6a94eSaroQ, 2020-12-11T16:26:21 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {this/Node->this/Node})
+									3yTN8KRdrqkg98STd, 2020-12-11T16:26:49 (oriented,correct,check,)
+										ro3zosfngfhBYykTz, 2020-12-11T16:31:18 (!in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {this/Node->this/Node})
+											MpT9cGEX96unAWwbu, 2020-12-11T16:31:28 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+												6vd7kpw9t8ZfgAKjX, 2020-12-11T16:31:39 (acyclic,correct,check,)
+													dkwBEbjtkwbsMaFhX, 2020-12-11T16:33:51 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+														NbfAdFbmMd5ShzyYe, 2020-12-11T16:35:22 (The name "_" cannot be found.)
+															x6Y5CJhkmKFgxWcTP, 2020-12-11T16:35:53 (The name "n" cannot be found.)
+																XSHQtmi2kXNf7rC6k, 2020-12-11T16:36:01 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+																	mda4rLJcdD2AhdZ42, 2020-12-11T16:36:37 (!in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {this/Node->this/Node})
+																		zL34Zo7a8BgxkpyR6, 2020-12-11T16:36:51 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+																			xQkqNoAcGmdTdaZbm, 2020-12-11T16:37:07 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+																				Cprrjvvc2CzFsMD5i, 2020-12-11T16:37:20 (acyclic,correct,check,)
+																					eoucEG5HwZpfaed69, 2020-12-11T16:38:12 (acyclic,correct,check,)
+																						X69cENB5ugFiTLCS6, 2020-12-11T16:39:02 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node->this/Node})
+																							2CYgwJMYbp2dFRrsx, 2020-12-11T16:39:11 (acyclic,correct,check,)
+																								vXus9SysdzCsJ8pQy, 2020-12-11T16:39:19 (There are 3 possible tokens that can appear here: ,  { |)
+																									rRX6zt6yJMWZ37Hna, 2020-12-11T16:41:14 (complete,correct,check,)
+																										Cyh7Ny2YwLXK6hQkt, 2020-12-11T16:43:36 (noLoops,correct,check,)
+																											mrpcZHnET7LfhDzYP, 2020-12-11T16:43:39 (weaklyConnected,correct,check,)
+																												NpZRny7M8imRatHJP, 2020-12-11T16:45 (stonglyConnected,correct,check,)
+																													JdQRphGYnPp45smDW, 2020-12-11T16:46:32 (transitive,correct,check,)
+																														bXeNsQP3krxpKCgLd, 2020-12-11T16:47:19 (transitive,correct,check,)
+																															xP2AoFxiQmtWinTH3, 2020-12-11T16:47:42 (transitive,correct,check,)
+																																3ZMdJd2hrSknt83o2, 2020-12-11T16:48:17 (transitive,correct,check,)
+																																	Cg6663Y2SFHNxr7D3, 2020-12-11T16:48:54 (transitive,correct,check,)
+																																		ukkYHnLWyhKFvWaCh, 2020-12-11T16:51:57 (transitive,incorrect,check,)
+																																			opMAXeEdFG73AmB8Q, 2020-12-11T16:52:13 (transitive,incorrect,check,)
+																																				okpqxLgshbc386Yxp, 2020-12-11T16:52:34 (transitive,incorrect,check,)
+																																					xujohhZrcoyhFieR4, 2020-12-11T16:53:32 (There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~)
+																																						TW9LfeELR2DbY7xAi, 2020-12-11T16:53:47 (There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~)
+																																							torxX3CBo2CYawitQ, 2020-12-11T16:54:06 (There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~)
+																																								o2YL2WhK7NB3Yvjnx, 2020-12-11T16:55:22 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+																																									qZxbyrsw5kiWLXNY8, 2020-12-11T16:55:38 (transitive,incorrect,check,)
+																																										PZuiR2Htg33xNgxMt, 2020-12-11T16:55:59 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+																																											2krh8nDjrehJTfNeZ, 2020-12-11T16:56:05 (transitive,incorrect,check,)
+																																												FFvTPz69j3o6P4HAe, 2020-12-11T16:56:21 (in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {this/Node->this/Node})
+																																													NjrtuXoaKLvivCncx, 2020-12-11T16:56:56 (transitive,incorrect,check,)
+																																														RSFsdMk3pmZShp6DF, 2020-12-11T16:58:36 (weaklyConnected,correct,check,)
+																																															W9P4Ft8jQGdByk9qk, 2020-12-11T16:59:02 (weaklyConnected,correct,check,)
+																																																Xwspc6TR48Ka9njDE, 2020-12-11T17:00:15 (transitive,correct,check,)
+	nHxenWbRjfkextct5, 2020-12-11T16:21:23 (undirected,correct,check,)
+		oxb7i434yrGuqoWmb, 2020-12-11T16:35:09 (oriented,correct,check,)
+			fmubxDBQqtNZZqmrm, 2020-12-11T16:40:42 (oriented,correct,check,)
+				FRMAWfq7aPaow7B4g, 2020-12-11T16:41:49 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+					dD47dTZNa7gp8D254, 2020-12-11T16:41:54 (acyclic,correct,check,)
+						kFoD8342yDtq8o5Zv, 2020-12-11T16:42:13 (complete,incorrect,check,)
+							j2c5C7Z9a9tXkw53w, 2020-12-11T16:49:12 (complete,correct,check,)
+								5pHWyZnydtPvmhsrg, 2020-12-11T16:49:33 (complete,correct,check,)
+									KNewwDMSoDaehuFG6, 2020-12-11T16:49:53 (noLoops,correct,check,)
+										iF7ABssCndN2HXCi4, 2020-12-11T16:52:36 (noLoops,incorrect,check,)
+											pJT945nKB3SN5tq2m, 2020-12-11T16:52:46 (noLoops,correct,check,)
+												mR9vTGkPYiZPTkpBc, 2020-12-11T16:52:49 (weaklyConnected,correct,check,)
+													XpfEc8PcD63mmhn8D, 2020-12-11T16:57:55 (stonglyConnected,correct,check,)
+														wanLCa3BwtJFkKRLq, 2020-12-11T16:57:58 (transitive,correct,check,)
+															6dsPPNLnhZxxXFykJ, 2020-12-11T17:05:13 (undirected,incorrect,check,)
+																X8Gcczc5bssFpiJR8, 2020-12-11T17:05:52 (complete,incorrect,check,)
+																	ybyyb4GjTRMvpXpYv, 2020-12-11T17:06:09 (stonglyConnected,incorrect,check,)
+																		xEXWpgBHmqEyL2hAb, 2020-12-11T17:06:25 (transitive,correct,check,)
+	yZ59cn8Bi5JyHppcw, 2020-12-11T16:21:31 (undirected,correct,check,)
+		6dLrGmnfqmsg85Due, 2020-12-11T16:23:20 (undirected,correct,check,)
+			geTp28hPEPfyYZ6hf, 2020-12-11T16:25:03 (undirected,correct,check,)
+				Je7zmqie5abngg7NH, 2020-12-11T16:26:48 (oriented,incorrect,check,)
+					YxGHAzf63PoDwsH7d, 2020-12-11T16:28:21 (undirected,incorrect,run,)
+						qbyDtZJqZvZQerBF2, 2020-12-11T16:29:46 (oriented,correct,check,)
+							pwXkesDym437X3bcF, 2020-12-11T16:30:54 (oriented,correct,check,)
+								2H7dGf86uQY4eNu4e, 2020-12-11T16:36:12 (oriented,correct,check,)
+									kD5jX5iwaoEEatQwJ, 2020-12-11T16:42:53 (acyclic,correct,check,)
+										iqiLeiZKotsgqFQte, 2020-12-11T16:45:44 (complete,correct,check,)
+											SRN66JKFisZcQL9QY, 2020-12-11T16:46:43 (noLoops,correct,check,)
+												qjDyPghAuwYTYgZKX, 2020-12-11T16:51:25 (in can be used only between 2 expressions of the same arity. Left type = {this/Node} Right type = {this/Node->this/Node})
+													BLvDry6THpPsCGJ2S, 2020-12-11T16:52:34 (weaklyConnected,correct,check,)
+														cNzJoJPMuR5KywAjW, 2020-12-11T16:54:13 (weaklyConnected,correct,check,)
+															pLTaaKNHQoxixay8f, 2020-12-11T16:56:13 (stonglyConnected,correct,check,)
+																eKx4exkrDeaH2b8v4, 2020-12-11T16:59:04 (transitive,incorrect,check,)
+																	YGobicdSYLr63PTHt, 2020-12-11T16:59:37 (stonglyConnected,correct,check,)
+																		qvey3jNSRHNgcAJp5, 2020-12-11T16:59:39 (transitive,incorrect,check,)
+																			3sLhAbZFieyFXEBaj, 2020-12-11T17:00:01 (transitive,incorrect,check,)
+																				96mNLa8c5LdWY63in, 2020-12-11T17:01:07 (transitive,incorrect,check,)
+																					LGfD2QuSoQJXeFyJ7, 2020-12-11T17:01:17 (transitive,correct,check,)
+																						mAAx5xoYmCat6BtKM, 2020-12-11T17:01:53 (transitive,correct,check,)
+	pZoBgJS7Rs3LL8kxp, 2020-12-11T16:21:38 (undirected,correct,check,)
+		jPbwb3dFyP8m66whe, 2020-12-11T16:23:08 (undirected,correct,check,)
+			ScpzjW4ArSfT7EBB7, 2020-12-11T16:26:10 (oriented,correct,check,)
+				2a6s3rSzmM9ZB4AHP, 2020-12-11T16:27:05 (oriented,correct,check,)
+					FxxMJ2Bv4tT57EHrd, 2020-12-11T16:33:38 (acyclic,incorrect,check,)
+						NzjJ6PbAQfL7Ld3WH, 2020-12-11T16:33:54 (acyclic,correct,check,)
+							kxdKoSRE7fTLphXLy, 2020-12-11T16:36:22 (acyclic,correct,check,)
+								bZ6PzZyyd6ravhvkC, 2020-12-11T16:41:37 (complete,correct,check,)
+									2Qz6zo2NGMP66TmsW, 2020-12-11T16:41:49 (complete,correct,check,)
+										apJuNRhrpCRXKnKtu, 2020-12-11T16:42:33 (complete,correct,check,)
+											49XRvmMkWExXL6Xev, 2020-12-11T16:51:30 (weaklyConnected,incorrect,check,)
+												hjwEQ4HhRNDnKb3Md, 2020-12-11T16:52:05 (weaklyConnected,correct,check,)
+													6GqD7HwCHzEsCdgnj, 2020-12-11T16:52:09 (weaklyConnected,incorrect,check,)
+														78nLmKjCh9qbeK66M, 2020-12-11T16:53:16 (weaklyConnected,incorrect,check,)
+															55EdTeCQQyCqJKNS5, 2020-12-11T16:53:28 (weaklyConnected,correct,check,)
+																GERhM4Zxjg45gop7B, 2020-12-11T16:53:56 (weaklyConnected,correct,check,)
+																	JA6CtdfraJDuP967n, 2020-12-11T16:54:35 (weaklyConnected,correct,check,)
+																		eaMXCkrfjM6cuu7w8, 2020-12-11T16:56:09 (weaklyConnected,correct,check,)
+	Dk8Qasp4QR8vFMP3L, 2020-12-11T16:29:05 (undirected,correct,check,)
+		7NWXCJqCi7F6KHPAC, 2020-12-11T16:29:10 (oriented,correct,check,)
+			mhuiCYZSt88rgYgLC, 2020-12-11T16:30:56 (oriented,incorrect,check,)
+				CLhALdhjQmtpKTBKM, 2020-12-11T16:31:03 (oriented,correct,check,)
+					2wSx2SCd9qS4xcAp2, 2020-12-11T16:32:01 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+						Xnxb7KM4mqucakNyu, 2020-12-11T16:32:09 (oriented,incorrect,check,)
+							ittGE8kc48JPz3vYz, 2020-12-11T16:33:23 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+								FSedvyCnNEuSR5y68, 2020-12-11T16:33:30 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+									A39MdyrigSvxMHBS3, 2020-12-11T16:33:37 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+										ssGfaHjDHQcREZdX9, 2020-12-11T16:33:52 (oriented,incorrect,check,)
+											tQ78JXrqymJeW2nZQ, 2020-12-11T16:34:22 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+												tojCzwbPyLAgsPhQ3, 2020-12-11T16:34:35 (oriented,incorrect,check,)
+													22MhKpoiKBH49QMzR, 2020-12-11T16:35:53 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {this/Node->this/Node})
+														oc77ZkYiJzqCeForM, 2020-12-11T16:36:25 (oriented,correct,check,)
+															HrRE4vauk9pMffXQF, 2020-12-11T16:43:20 (complete,incorrect,check,)
+																xEqy4ZDmmeWAMirNQ, 2020-12-11T16:44:47 (complete,incorrect,check,)
+																	rYiprKGcCeYGFGxvB, 2020-12-11T16:47:27 (noLoops,correct,check,)
+																		nzogsHSNwt8AutFt6, 2020-12-11T16:49:10 (weaklyConnected,incorrect,check,)
+																			zg4o58QhN3ZBgbuBN, 2020-12-11T16:50:20 (weaklyConnected,incorrect,check,)
+																				6x7yfYzyJLdetsfX6, 2020-12-11T16:51:10 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node})
+																					Gc5q4zFJPpCcA2zX4, 2020-12-11T16:51:38 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node})
+																						gG7bwd4xKLihCQeCK, 2020-12-11T16:51:55 (This must be a formula expression. Instead, it has the following possible type(s): {this/Node})
+																							RWt5xJnF7XpEXmccc, 2020-12-11T17:03:23 (transitive,correct,check,)
+																								thTqqrZiGznBEda4B, 2020-12-11T17:05:01 (The name "undirected" cannot be found.)
+																									ti6rhsGmXrubGa2mL, 2020-12-11T17:05:17 (The name "undirected" cannot be found.)
+																										FFm7R7wRCjs3KLRdJ, 2020-12-11T17:05:40 (The name "undirected" cannot be found.)
+																											9e449k5ZttEduYREJ, 2020-12-11T17:06:14 (The name "oriented" cannot be found.)
+																												Ls986YWNsj5yQRhKk, 2020-12-11T17:06:38 (The name "oriented" cannot be found.)
+	FBvmqFrn6SxgWyybF, 2020-12-12T21:37:57 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Node})
+		9eECXjWuAqKg2T5A7, 2020-12-12T21:38:18 (undirected,correct,check,)
+			7QWWaYhW339GQC6ee, 2020-12-12T21:38:40 (oriented,correct,check,)
+				5nCcsgzof9MpCg7AT, 2020-12-12T21:38:57 (acyclic,incorrect,check,)
+					QTi6oWcZW2hNfns8u, 2020-12-12T21:39:06 (acyclic,incorrect,check,)
+						3gHnnZPzQmchzBvjJ, 2020-12-12T21:39:12 (acyclic,incorrect,check,)
+							zZpAW9HAKRjukA2es, 2020-12-12T21:42:29 (acyclic,incorrect,check,)
+								tYiKa6qJaDgrwuWvX, 2020-12-12T21:42:36 (acyclic,incorrect,check,)
+									2ApEYAEpY945dRoPc, 2020-12-12T21:42:39 (acyclic,incorrect,check,)
+										BL55vHhsYz3ZjbmDA, 2020-12-12T21:42:44 (acyclic,incorrect,check,)
+											SdZvzCwnRwYXmPAFa, 2020-12-12T21:44:08 (acyclic,correct,check,)
+												Wh6cGtmHyLEDB5KvR, 2020-12-12T21:45:20 (complete,incorrect,check,)
+													6k43DQgneFGr5ZeTA, 2020-12-12T21:45:25 (- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Node} Right type = {univ->univ})
+														Zt7bNTkzqcx3yx3Eh, 2020-12-12T21:45:55 (complete,incorrect,check,)
+															S4je7sAbH9mSbBTvj, 2020-12-12T21:46:01 (- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Node} Right type = {univ->univ})
+																qsR6KLAhCrP9aQsES, 2020-12-12T21:46:23 (complete,correct,check,)
+																	982mhJbkeGavBevP7, 2020-12-12T21:46:44 (complete,correct,check,)
+																		GaXYhWa9cvikfikdk, 2020-12-12T21:47:16 (noLoops,incorrect,check,)
+																			CjsHwMCTJB5NnaMsP, 2020-12-12T21:47:30 (- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Node} Right type = {univ->univ})
+																				96XjbpC9y3FXrZnjW, 2020-12-12T21:48:18 (- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Node} Right type = {univ->univ})
+																					Ls6YPE6gp3zuejLLf, 2020-12-12T21:49:25 (noLoops,incorrect,check,)
+																						NCZTYKAGSGZsib7pf, 2020-12-12T21:50:22 (!in can be used only between 2 expressions of the same arity. Left type = {this/Node->this/Node} Right type = {this/Node})
+																							WMXbBASJzz6HJ3w3B, 2020-12-12T21:50:33 (noLoops,correct,check,)

@@ -1,0 +1,1747 @@
+cZBBJzaK8YLyKDZtW (2020-12-14)
+
+* Meta-data
+Challenge name: unknown
+Creation time: 2020-11-11
+# sub-challenges: 3
+Metric catalog: Example metric catalog
+
+* Overall metric statistics
+Total model entries: 1128
+Total executions: 1124
+Total shares: 4
+Total error messages: 352
+Total warning messages: 107
+Total solutions: 772
+Total sessions: 46
+Rejected due to server errors: 0
+Total instance entries: 0
+Total link entries: 5
+
+* Scalar metrics
+Number of shared sessions: 3
+Alloy runtime errors: 2
+Incorrect executions: 581
+Correct executions: 191
+Incorrect executions with warnings: 77
+Longest session: 98
+Shared models: 4
+Correct executions with warnings: 12
+
+* Overall metrics
+
+Sessions by length
+1: 1
+2: 1
+3: 4
+4: 3
+5: 3
+6: 2
+7: 1
+8: 1
+9: 1
+10: 0
+11: 0
+12: 1
+13: 0
+14: 0
+15: 3
+16: 1
+17: 2
+18: 0
+19: 1
+20: 1
+21: 0
+22: 1
+23: 1
+24: 0
+25: 1
+26: 1
+27: 1
+28: 1
+29: 0
+30: 0
+31: 0
+32: 0
+33: 0
+34: 0
+35: 0
+36: 1
+37: 0
+38: 3
+39: 0
+40: 0
+41: 0
+42: 0
+43: 3
+44: 1
+45: 0
+46: 0
+47: 0
+48: 0
+49: 0
+50: 0
+51: 0
+52: 1
+53: 0
+54: 1
+55: 0
+56: 0
+57: 0
+58: 0
+59: 0
+60: 0
+61: 0
+62: 0
+63: 0
+64: 0
+65: 0
+66: 0
+67: 0
+68: 0
+69: 0
+70: 1
+71: 0
+72: 0
+73: 1
+74: 0
+75: 0
+76: 0
+77: 0
+78: 0
+79: 0
+80: 1
+81: 0
+82: 0
+83: 0
+84: 0
+85: 0
+86: 0
+87: 0
+88: 0
+89: 0
+90: 0
+91: 0
+92: 0
+93: 0
+94: 0
+95: 0
+96: 0
+97: 1
+
+Sessions by # of solved sub-challenges
+0: 3
+1: 12
+2: 7
+3: 24
+
+Warnings by type
+- is irrelevant since the right expression is redundant. Parent's relevant type = {_} Left type = {_} Right type = {_}: 2
+Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}: 12
+This variable is unused.: 17
+:> is irrelevant because the result is always empty. Left type = {_} Right type = {_}: 1
+Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}: 29
+& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}: 7
+Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}: 2
+The join operation here always yields an empty set. Left type = {_} Right type = {_}: 34
+== is redundant, because the left and right expressions are always disjoint. Left type = {_} Right type = {_}: 3
+
+Entries over time
+2020-11-11: 4
+2020-11-12: 863
+2020-11-13: 23
+2020-11-14: 9
+2020-11-15: 0
+2020-11-16: 4
+2020-11-17: 7
+2020-11-18: 6
+2020-11-19: 15
+2020-11-20: 0
+2020-11-21: 0
+2020-11-22: 0
+2020-11-23: 0
+2020-11-24: 11
+2020-11-25: 3
+2020-11-26: 87
+2020-11-27: 0
+2020-11-28: 0
+2020-11-29: 0
+2020-11-30: 12
+2020-12-01: 0
+2020-12-02: 0
+2020-12-03: 0
+2020-12-04: 80
+2020-12-05: 0
+2020-12-06: 0
+2020-12-07: 0
+2020-12-08: 0
+2020-12-09: 0
+2020-12-10: 0
+2020-12-11: 0
+2020-12-12: 0
+2020-12-13: 0
+
+Errors by type
+There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ : 6
+in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}: 18
+- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}: 3
+This expression failed to be typechecked line _ column _ filename=_.als: 17
+This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) : 74
+The name _ cannot be found.: 50
+& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}: 3
+This must be a set or relation. Instead, it has the following possible type(s): {_}: 47
+There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ : 21
+There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ : 1
+There are 5 possible tokens that can appear here: enum fun let open pred : 1
+There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ : 4
+= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}: 3
+* can be used only with a binary relation. Instead, its possible type(s) are: {_}: 1
+The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".: 3
+Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.: 2
+There are 1 possible tokens that can appear here: ' : 1
+This must be a formula expression. Instead, it has the following possible type(s): {_}: 70
+~ can be used only with a binary relation. Instead, its possible type(s) are: {_}: 5
+There are 8 possible tokens that can appear here: NAME disj exh part private seq this var : 11
+There are 1 possible tokens that can appear here: ) : 4
+This must be a unary set, but instead it has the following possible type(s): {_}: 4
+!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}: 2
+There are 3 possible tokens that can appear here: ,  { | : 1
+
+* Overall metrics, classified
+
+Execution results by sub-challenge
+inv1ok
+	SAT: 160
+	UNSAT: 70
+inv2ok
+	SAT: 265
+	UNSAT: 55
+inv3ok
+	SAT: 156
+	UNSAT: 66
+
+Executions over time classified
+2020-11-11
+	ERROR: 0
+	SAT: 4
+	UNSAT: 0
+2020-11-12
+	ERROR: 269
+	SAT: 437
+	UNSAT: 157
+2020-11-13
+	ERROR: 9
+	SAT: 6
+	UNSAT: 8
+2020-11-14
+	ERROR: 1
+	SAT: 7
+	UNSAT: 1
+2020-11-15
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-11-16
+	ERROR: 1
+	SAT: 3
+	UNSAT: 0
+2020-11-17
+	ERROR: 2
+	SAT: 3
+	UNSAT: 2
+2020-11-18
+	ERROR: 0
+	SAT: 4
+	UNSAT: 2
+2020-11-19
+	ERROR: 4
+	SAT: 10
+	UNSAT: 1
+2020-11-20
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-11-21
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-11-22
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-11-23
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-11-24
+	ERROR: 3
+	SAT: 4
+	UNSAT: 4
+2020-11-25
+	ERROR: 0
+	SAT: 1
+	UNSAT: 2
+2020-11-26
+	ERROR: 20
+	SAT: 60
+	UNSAT: 7
+2020-11-27
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-11-28
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-11-29
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-11-30
+	ERROR: 0
+	SAT: 7
+	UNSAT: 5
+2020-12-01
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-02
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-03
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-04
+	ERROR: 43
+	SAT: 35
+	UNSAT: 2
+2020-12-05
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-06
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-07
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-08
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-09
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-10
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-11
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-12
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+2020-12-13
+	ERROR: 0
+	SAT: 0
+	UNSAT: 0
+
+Session results by sub-challenge
+inv1ok
+	solved: 40
+	unsolved: 6
+inv2ok
+	solved: 29
+	unsolved: 17
+inv3ok
+	solved: 29
+	unsolved: 17
+
+* Metrics by sub-challenge, classified
+
+Size in 10s of nodes
+
+inv1ok
+2
+	SAT: 93
+	UNSAT: 57
+3
+	SAT: 53
+	UNSAT: 13
+4
+	SAT: 14
+	UNSAT: 0
+
+inv2ok
+2
+	SAT: 52
+	UNSAT: 2
+3
+	SAT: 183
+	UNSAT: 53
+4
+	SAT: 29
+	UNSAT: 0
+5
+	SAT: 1
+	UNSAT: 0
+
+inv3ok
+2
+	SAT: 17
+	UNSAT: 0
+3
+	SAT: 117
+	UNSAT: 42
+4
+	SAT: 16
+	UNSAT: 23
+5
+	SAT: 6
+	UNSAT: 1
+
+Number of binary temporal operators
+
+inv1ok
+0
+	SAT: 160
+	UNSAT: 70
+
+inv2ok
+0
+	SAT: 265
+	UNSAT: 55
+
+inv3ok
+0
+	SAT: 156
+	UNSAT: 66
+
+Max nested temporal operator level
+
+inv1ok
+0
+	SAT: 160
+	UNSAT: 70
+
+inv2ok
+0
+	SAT: 265
+	UNSAT: 55
+
+inv3ok
+0
+	SAT: 156
+	UNSAT: 66
+
+Number of lone/one quantifiers
+
+inv1ok
+0
+	SAT: 158
+	UNSAT: 67
+1
+	SAT: 2
+	UNSAT: 3
+
+inv2ok
+0
+	SAT: 263
+	UNSAT: 55
+1
+	SAT: 2
+	UNSAT: 0
+
+inv3ok
+0
+	SAT: 152
+	UNSAT: 66
+1
+	SAT: 4
+	UNSAT: 0
+
+Max nested quantifier level
+
+inv1ok
+1
+	SAT: 156
+	UNSAT: 67
+2
+	SAT: 4
+	UNSAT: 3
+
+inv2ok
+1
+	SAT: 258
+	UNSAT: 55
+2
+	SAT: 7
+	UNSAT: 0
+
+inv3ok
+1
+	SAT: 149
+	UNSAT: 60
+2
+	SAT: 7
+	UNSAT: 6
+
+Number of disj quantifications
+
+inv1ok
+0
+	SAT: 158
+	UNSAT: 70
+1
+	SAT: 2
+	UNSAT: 0
+
+inv2ok
+0
+	SAT: 265
+	UNSAT: 52
+1
+	SAT: 0
+	UNSAT: 3
+
+inv3ok
+0
+	SAT: 151
+	UNSAT: 66
+1
+	SAT: 5
+	UNSAT: 0
+
+Number multiplicity arrows
+
+inv1ok
+0
+	SAT: 151
+	UNSAT: 67
+1
+	SAT: 9
+	UNSAT: 3
+
+inv2ok
+0
+	SAT: 262
+	UNSAT: 55
+1
+	SAT: 3
+	UNSAT: 0
+
+inv3ok
+0
+	SAT: 155
+	UNSAT: 66
+1
+	SAT: 1
+	UNSAT: 0
+
+Number of quantifiers
+
+inv1ok
+2
+	SAT: 92
+	UNSAT: 13
+3
+	SAT: 64
+	UNSAT: 54
+4
+	SAT: 4
+	UNSAT: 3
+
+inv2ok
+2
+	SAT: 15
+	UNSAT: 7
+3
+	SAT: 239
+	UNSAT: 48
+4
+	SAT: 11
+	UNSAT: 0
+
+inv3ok
+2
+	SAT: 22
+	UNSAT: 8
+3
+	SAT: 127
+	UNSAT: 52
+4
+	SAT: 7
+	UNSAT: 6
+
+Number of inverted navigation expressions
+
+inv1ok
+0
+	SAT: 135
+	UNSAT: 62
+1
+	SAT: 22
+	UNSAT: 8
+2
+	SAT: 3
+	UNSAT: 0
+
+inv2ok
+0
+	SAT: 221
+	UNSAT: 43
+1
+	SAT: 34
+	UNSAT: 12
+2
+	SAT: 9
+	UNSAT: 0
+3
+	SAT: 1
+	UNSAT: 0
+
+inv3ok
+0
+	SAT: 150
+	UNSAT: 66
+1
+	SAT: 6
+	UNSAT: 0
+
+* Derivation tree
+cZBBJzaK8YLyKDZtW, 2020-11-11T18:29:14 (model share)
+	g9maoRb4dENK7YKnX, 2020-11-11T18:29:24 (inv1ok,incorrect,check,)
+		K68ENjoSzydhZAyCS, 2020-11-11T18:29:38 (inv1ok,incorrect,check,)
+			FGYXFzXt9yrG8upbx, 2020-11-11T18:30:14 (inv2ok,incorrect,check,)
+				xYgBJivdAxFpKQvmE, 2020-11-11T18:30:23 (inv3ok,incorrect,check,)
+	iQNb3xNfPgc5TTYun, 2020-11-12T11:21:06 (inv1ok,incorrect,check,)
+		JwpDTbBB5DKhdLTuB, 2020-11-12T11:21:13 (inv1ok,incorrect,check,)
+			ggoj85H8gzDs7F7vD, 2020-11-12T11:21:55 (inv1ok,incorrect,check,)
+				jeCAnauaXvdqkc4Xd, 2020-11-12T11:23:03 (inv1ok,incorrect,check,)
+					hBanCzFP6RF5Kad95, 2020-11-12T11:23:17 (inv1ok,incorrect,check,)
+						geC6YBZq9YFqQk76T, 2020-11-12T11:23:44 (inv1ok,incorrect,check,)
+							onfMvuXWNdbrcLmZ9, 2020-11-12T11:24:49 (inv1ok,incorrect,check,)
+								PBGMvpkoGun9thxRw, 2020-11-12T11:25:20 (inv1ok,correct,check,)
+									CtNnwrnJ2zSABHvjh, 2020-11-12T11:25:53 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+										wFLztBJQqZfkXnnMN, 2020-11-12T11:26:58 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+											DhEKsQrta2E3CDvx8, 2020-11-12T11:27:21 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+												cYZ3Lv54Dpp5LtXWB, 2020-11-12T11:27:24 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+													7iep5fT8HYsGkSeGo, 2020-11-12T11:27:54 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+														tNt4z3qpc4fERZEQe, 2020-11-12T11:28:06 (inv2ok,incorrect,check,)
+															cKMmCzeaNiWjo3GBe, 2020-11-12T11:28:23 (inv2ok,incorrect,check,)
+																WejNKtbNBDG5FbN4x, 2020-11-12T11:28:35 (inv2ok,correct,check,)
+																	pmpeu8quB6sPnSBz8, 2020-11-12T11:30:29 (inv3ok,incorrect,check,)
+																		yGc9qeoxwz3botCBS, 2020-11-12T11:31:23 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+																			ctJdDS6ujhX3JPvsM, 2020-11-12T11:31:36 (inv3ok,incorrect,check,)
+																				YzA2uzFuzuWiHQy94, 2020-11-12T11:32:30 (inv3ok,correct,check,)
+																					mwsRbjTzSwDYYk9SW, 2020-11-12T11:34:05 (inv3ok,correct,check,)
+																						g325G9tXvAyqn2GWj, 2020-11-12T11:35:56 (The name "$Track" cannot be found.)
+																							8whd7Caox4Dvnq9QT, 2020-11-12T11:36:10 (inv2ok,incorrect,check,)
+																								ozYWXpjaE8uRY4ioG, 2020-11-12T11:36:50 (inv2ok,correct,check,)
+																									nRg3CLfYBRmR3xLyQ, 2020-11-12T11:36:53 (inv1ok,correct,check,)
+																										3FfKJJP9ZE6NaEP9X, 2020-11-12T11:36:55 (inv3ok,correct,check,)
+																											jFDiRzfhyB33nMWh9, 2020-11-12T11:40:20 (inv1ok,incorrect,check,)
+																												hZpRrDBxZTH2YtZhk, 2020-11-12T11:41:14 (inv1ok,incorrect,check,)
+																													Rk52ua2npa8kGtCbE, 2020-11-12T11:42:41 (inv1ok,incorrect,check,)
+																														zRSZSgvCSabehgJa4, 2020-11-12T11:43:41 (inv1ok,incorrect,check,)
+																															RvtQTMJRhndnwwfCs, 2020-11-12T11:43:56 (inv1ok,incorrect,check,)
+																																umYiRwBC2Nm5pWGQT, 2020-11-12T11:44:57 (The name "Tracks" cannot be found.)
+																																	F7uyF4S8ox5Zn8HHN, 2020-11-12T11:45:04 (& can be used only between 2 expressions of the same arity. Left type = {univ->univ} Right type = {this/Track})
+																																		ouSa9D7NDFA8SSoGF, 2020-11-12T11:45:17 (There are 1 possible tokens that can appear here: ))
+																																			msXYcMoXNAdkch2JA, 2020-11-12T11:45:26 (& can be used only between 2 expressions of the same arity. Left type = {univ->univ} Right type = {this/Track})
+																																				TQpKJonvHBx4Sj5Yf, 2020-11-12T11:46:21 (There are 1 possible tokens that can appear here: ))
+																																					W3Yov93tGYDb8kGeg, 2020-11-12T11:47 (inv1ok,incorrect,check,)
+																																						m5gJiyENPbKf2wvjx, 2020-11-12T11:47:19 (inv1ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Track->this/Track} Right type = {this/Signal->this/Signal})
+																																							ASWPFTeFdR6xyCMSs, 2020-11-12T11:50:15 (inv2ok,correct,check,)
+																																								h5yMeatfgBCvy2jdb, 2020-11-12T11:53:17 (inv1ok,incorrect,check,)
+																																									GLhstouDXKyXdBsEq, 2020-11-12T11:53:45 (inv1ok,incorrect,check,)
+																																										TtAddZqXdqYPRSLx8, 2020-11-12T11:55:24 (inv1ok,incorrect,check,)
+																																											ZcmGLSqMebLd9xxAb, 2020-11-12T11:58:44 (inv1ok,correct,check,)
+	gfHPrcEnjyaBSEEQ8, 2020-11-12T11:21:06 (inv1ok,correct,check,)
+		Jv2g6KAgxhxtR46vs, 2020-11-12T11:22:17 (inv3ok,incorrect,check,)
+			GgMm4BCa3AAYL5smR, 2020-11-12T11:24:55 (inv2ok,incorrect,check,)
+				GukALWjXGHXdHkzay, 2020-11-12T11:25:23 (inv2ok,incorrect,check,)
+					mAPmwny2XfFDdhiNr, 2020-11-12T11:26:07 (inv2ok,correct,check,)
+						DKBBW8NbczaS5sNj6, 2020-11-12T11:27:30 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+							ZEPm8HX72s2d7JvBw, 2020-11-12T11:27:40 (inv3ok,incorrect,check,)
+								Ch2qK65Gee597Qw6h, 2020-11-12T11:27:58 (inv3ok,correct,check,)
+									HYGm9MJJbQhuc9gsD, 2020-11-12T11:28:18 (inv2ok,correct,check,)
+										FrhnnpXEGTCnWSRyq, 2020-11-12T11:28:21 (inv1ok,correct,check,)
+											DkhaxAuePspLG3vJu, 2020-11-12T11:29:40 (inv2ok,correct,check,)
+												yYNFTRxnMBtoij2ZD, 2020-11-12T11:32:01 (inv1ok,incorrect,check,)
+													vg8h3wJpxBTYWZjeK, 2020-11-12T11:33:21 (inv1ok,incorrect,check,)
+														XudMs3DKPuD7Ce9st, 2020-11-12T11:34:39 (inv1ok,incorrect,check,)
+															c82jL7dCXjDPg5fNY, 2020-11-12T11:34:50 (inv1ok,incorrect,check,)
+																WWDhCSv7yd5edKNko, 2020-11-12T11:37:03 (inv1ok,incorrect,check,)
+																	nQbY7xKTph4MTZwmu, 2020-11-12T11:37:26 (inv1ok,incorrect,check,)
+																		KufTJr9Q2Eipppt8F, 2020-11-12T11:43:05 (inv1ok,incorrect,check,)
+																			Fj4Dq6dbuPoWxZTAm, 2020-11-12T11:43:28 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Track->this/Track} Right type = {univ})
+																				oHuytDh2uxgpmxaXg, 2020-11-12T11:43:42 (inv1ok,incorrect,check,)
+																					JsN42YA43to9YKBuZ, 2020-11-12T11:44:01 (inv1ok,incorrect,check,)
+																						88QtQr3maSTmuwCEF, 2020-11-12T11:44:51 (inv1ok,incorrect,check,)
+																							NGrKuGNKKNB6w4PAm, 2020-11-12T11:45:21 (inv1ok,incorrect,check,)
+	y6xw2E9tG9vJW7MpH, 2020-11-12T11:21:08 (inv1ok,incorrect,check,)
+		vPNkrNf4WhfuhTHRA, 2020-11-12T11:21:53 (inv1ok,correct,check,)
+			AZvxoZGQoNhMnr2EP, 2020-11-12T11:22:33 (inv1ok,incorrect,check,)
+				LmDASbmLgjpYqypxF, 2020-11-12T11:22:43 (inv1ok,incorrect,check,)
+					JG9TktFzYk4FdZpfy, 2020-11-12T11:22:57 (inv1ok,correct,check,)
+						dsSr2EPXcgjQDBab3, 2020-11-12T11:24:01 (inv2ok,incorrect,check,)
+							x6yP6cYdQc8mWYxy7, 2020-11-12T11:24:22 (inv1ok,correct,check,)
+								ucGBq5HmYhjEdTpyh, 2020-11-12T11:24:24 (inv2ok,incorrect,check,)
+									fRjjaZDpRZA9jmTA7, 2020-11-12T11:24:43 (inv2ok,correct,check,)
+										dZyMxPkAmj3XseSma, 2020-11-12T11:27:12 (The name "Juntion" cannot be found.)
+											kLAGN8txb9jgrbdFN, 2020-11-12T11:27:19 (inv3ok,incorrect,check,== is redundant, because the left and right expressions are always disjoint. Left type = {this/Signal} Right type = {this/Track})
+												y4PCzrn8wA6sKnZXZ, 2020-11-12T11:27:51 (inv3ok,incorrect,check,== is redundant, because the left and right expressions are always disjoint. Left type = {this/Signal} Right type = {this/Track})
+													QMzCZGBCQrF68Ftyu, 2020-11-12T11:28:28 (inv3ok,incorrect,check,)
+														hPKmiHfofkRwdkgEK, 2020-11-12T11:28:49 (inv3ok,incorrect,check,)
+															WTsnfEtvP3zGR7vCx, 2020-11-12T11:30:21 (inv3ok,incorrect,check,)
+																26EiexyCuC7odiZAz, 2020-11-12T11:30:48 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																	ZfxpRekMhi7GYhpPx, 2020-11-12T11:30:56 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																		vC35kZLCMJTdwwr2u, 2020-11-12T11:31:05 (inv3ok,incorrect,check,)
+																			HxZoriBkRCTiXvefk, 2020-11-12T11:31:28 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																				Hyw2aHeos9iHnbr6t, 2020-11-12T11:32:24 (The name "singal" cannot be found.)
+																					Av9w6nBcQWRnawPFy, 2020-11-12T11:32:31 (The name "Signals" cannot be found.)
+																						MzE7hCdZLGD4cBtvJ, 2020-11-12T11:32:37 (inv3ok,correct,check,)
+																							K5EAfvocQuTqPosuv, 2020-11-12T11:33:33 (inv3ok,correct,check,)
+																								7jQPFvbW4GFGGPHxX, 2020-11-12T11:33:41 (inv3ok,correct,check,)
+																									mWtXF9bMSrC9NNg2a, 2020-11-12T11:33:45 (inv2ok,correct,check,)
+																										cSgMfT5tY4jr46iwr, 2020-11-12T11:33:50 (inv1ok,correct,check,)
+																											ueKScGXnHwzPyuNYT, 2020-11-12T11:34:43 (inv3ok,correct,check,)
+																												ijNKtGJtDwy63zcfd, 2020-11-12T11:34:49 (inv3ok,correct,check,)
+																													7EoiYSHwi2Ce9vBSC, 2020-11-12T11:35:31 (inv3ok,correct,check,)
+																														HBdSmswhfsMozfqRT, 2020-11-12T11:40:31 (- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Track} Right type = {this/Junction->this/Track})
+																															QCLzvzbTBzMu53Lh5, 2020-11-12T11:40:49 (- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Track} Right type = {this/Junction->this/Track})
+																																zWE7CrtWaqG662Fhj, 2020-11-12T11:41:15 (inv2ok,incorrect,check,)
+																																	3fGczdZ8WfzRSbFhb, 2020-11-12T11:41:37 (inv2ok,incorrect,check,)
+																																		MgMus7Puspwa3cPut, 2020-11-12T11:43:56 (inv2ok,incorrect,check,)
+																																			JbDhcWGZSq7ZJMqzw, 2020-11-12T11:44:24 (inv2ok,incorrect,check,)
+																																				Ch5xiYgWSaN7axWKm, 2020-11-12T11:49:47 (inv2ok,correct,check,)
+																																					zPHDKgHDmjW4vCahh, 2020-11-12T11:57:39 (inv1ok,incorrect,check,== is redundant, because the left and right expressions are always disjoint. Left type = {this/Track} Right type = {this/Signal})
+																																						seChmhGRddXkijMgE, 2020-11-12T11:58 (inv1ok,correct,check,)
+	4HGhWz3bQWtreWD4v, 2020-11-12T11:21:18 (inv1ok,correct,check,)
+		LkB2CzfmKpSsLT3wN, 2020-11-12T11:22:28 (The name "Tracks" cannot be found.)
+			a3dvKLeK7hFwN4FKT, 2020-11-12T11:22:35 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+				JzyY5QMdSSHrsKRsd, 2020-11-12T11:23:03 (inv2ok,incorrect,check,)
+					bxBgGmeLsgvYFdsea, 2020-11-12T11:23:55 (inv2ok,incorrect,check,)
+						E3vfL5YssRqrvmdeh, 2020-11-12T11:26:12 (inv2ok,incorrect,check,)
+							qJJuvivr2J2nbWtru, 2020-11-12T11:26:37 (inv2ok,incorrect,check,)
+								3wXGHnK4E64XqkQvb, 2020-11-12T11:27:17 (inv2ok,incorrect,check,)
+									dNybXmmb6vXbxjro4, 2020-11-12T11:27:44 (inv2ok,correct,check,)
+										TwLfZFyLxAdJb3QYp, 2020-11-12T11:29:34 (inv3ok,incorrect,check,)
+											kpzASTQT7o69rjzjQ, 2020-11-12T11:32:10 (inv3ok,incorrect,check,)
+												jn2XspR3d3dEG5nbW, 2020-11-12T11:33:31 (inv3ok,incorrect,check,)
+													GJfaMJjpeGZEjWvBD, 2020-11-12T11:36:11 (inv3ok,correct,check,)
+														eJEqaZ89pwKEbdt2Z, 2020-11-12T11:36:22 (inv3ok,correct,check,)
+															yzHfJPHHjqRDehAQ4, 2020-11-12T11:36:35 (inv2ok,correct,check,)
+																C34g94Yd2aHcf5Msa, 2020-11-12T11:36:39 (inv1ok,correct,check,)
+	GeZmFjFo692JgDCAK, 2020-11-12T11:21:27 (inv1ok,correct,check,)
+		eQxybZRKpf7aZRh5b, 2020-11-12T11:22:43 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+			8CPYo7hRwe5JcSZMw, 2020-11-12T11:22:52 (inv3ok,incorrect,check,)
+				qzpBuNFET8YHkeijp, 2020-11-12T11:23:54 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+					Ta6PLC3bcbxHeiWrg, 2020-11-12T11:24 (inv3ok,incorrect,check,)
+						k6b5djfx5nZQejy7g, 2020-11-12T11:24:55 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {this/Track})
+							EprgKjSQyoHbnF2Mx, 2020-11-12T11:25:19 (inv3ok,incorrect,check,)
+								oDZyRk97v6hiuPdnN, 2020-11-12T11:25:40 (inv3ok,incorrect,check,)
+									fr7DRCENoiQRNKchr, 2020-11-12T11:26:02 (inv3ok,incorrect,check,)
+										4LZsgFBWmC8ZYmmnn, 2020-11-12T11:26:49 (inv3ok,incorrect,check,)
+											KJxRi6sFqZDGb6Apv, 2020-11-12T11:27:21 (inv2ok,incorrect,check,)
+												4NxBbbGBhXc4WR45J, 2020-11-12T11:28:53 (inv2ok,incorrect,check,)
+													s7j37Y45SwWgBkvaR, 2020-11-12T11:29:33 (inv2ok,incorrect,check,)
+														tfMfMzLoBrpCoigc3, 2020-11-12T11:31:15 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+															MNgMWhWA38zuZWzvA, 2020-11-12T11:31:24 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																DNJ3hpttS7z5GLmmh, 2020-11-12T11:31:38 (inv2ok,incorrect,check,)
+																	wnfGZWuyHs2C7m93f, 2020-11-12T11:35:40 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+																		4JNKyZkRdLPpBq3QS, 2020-11-12T11:35:59 (inv2ok,incorrect,check,)
+																			ykfJ67QPjWnR3JWAE, 2020-11-12T11:37:04 (inv3ok,incorrect,check,)
+																				Co8s9evtwYfA6EQHu, 2020-11-12T11:38:19 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																					wJeDGzuLseJEJC5Ks, 2020-11-12T11:38:42 (inv3ok,incorrect,check,)
+																						4FgTg9qAYthBQ2jbq, 2020-11-12T11:41:03 (inv2ok,incorrect,check,)
+																							SNbEYLapEvQwW9Epb, 2020-11-12T11:46:28 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+																								BjKgHhYJwW8Wi9iv7, 2020-11-12T11:46:35 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																									jwCtS977TnjneWmuL, 2020-11-12T11:47:29 (inv1ok,correct,check,)
+																										vXmeQJ9mWNAFa7iPn, 2020-11-12T11:52:09 (inv2ok,incorrect,check,)
+																											uWph9L86N6d9pPBZw, 2020-11-12T11:53:13 (inv2ok,incorrect,check,)
+																												5BgPujJd9BZ5qgGfZ, 2020-11-12T11:53:55 (inv3ok,incorrect,check,)
+																													HBiZJKCZmsCMvvJCy, 2020-11-12T11:54:57 (inv3ok,incorrect,check,)
+																														Lg8HG7u8b7yXXnYvG, 2020-11-12T11:55:08 (inv3ok,incorrect,check,)
+																															rsK6u6qLFpFZd2MgH, 2020-11-12T11:57:09 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+																																GG6xsbKxCcWEuPajs, 2020-11-12T11:57:50 (The name "singal" cannot be found.)
+																																	Y7MccqhAHiL8F4nLD, 2020-11-12T11:57:56 (inv3ok,correct,check,)
+																																		ef9NbZfYhumw3aZd6, 2020-11-12T11:59:12 (inv2ok,incorrect,check,)
+																																			u8Lazyy789nhiLcE2, 2020-11-12T12:00:16 (inv2ok,incorrect,check,)
+																																				EnJbieTMbkdKCmnF4, 2020-11-12T12:00:36 (This cannot be a legal relational join where left hand side is t . (this/Track <: prox) (type = {this/Track}) right hand side is t (type = {this/Track}))
+																																					iEahoeWozxJ3fuhDF, 2020-11-12T12:01:05 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is t . (this/Track <: prox) (type = {this/Track}))
+																																						oikBuDXkmQH2QCw7B, 2020-11-12T12:01:44 (inv3ok,correct,check,)
+	DegnFSyoYn68aEARA, 2020-11-12T11:21:31 (inv1ok,incorrect,check,)
+		gdJ44AneccmtZ9XrS, 2020-11-12T11:21:44 (inv1ok,incorrect,check,)
+			3ke7Jx76yHtJ9PAJR, 2020-11-12T11:22:18 (inv1ok,correct,check,)
+				E6Ep3PRCqrkWyeJWB, 2020-11-12T11:24:59 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+					X4wN4rJZ7Hp9h2kzt, 2020-11-12T11:26:56 (inv3ok,correct,check,)
+						X28jkikj8dPT6ZTsC, 2020-11-12T11:27:04 (inv2ok,incorrect,check,)
+							yGeRa3YpmA9bS6Hkr, 2020-11-12T11:27:54 (inv2ok,incorrect,check,)
+								bBk3rLb6H6ECkdJJB, 2020-11-12T11:29:25 (inv2ok,incorrect,check,)
+									dW3vLvTjkuHmnndjP, 2020-11-12T11:32:57 (inv2ok,incorrect,check,)
+										49jSzYNLrZNf86Bg4, 2020-11-12T11:33:39 (inv2ok,correct,check,)
+											7K4wdi4cqwG992t4X, 2020-11-12T11:33:54 (inv3ok,correct,check,)
+												2KCce5t9CcTTeRZvu, 2020-11-12T11:33:59 (inv1ok,correct,check,)
+													5gyjEemnELcCJ3XgL, 2020-11-12T11:34:03 (inv2ok,correct,check,)
+														jJZv4Y9vXW6mZh7PC, 2020-11-12T11:34:07 (inv3ok,correct,check,)
+															9zH7dAZqnLbAzAFfr, 2020-11-12T11:35:17 (inv2ok,correct,check,)
+																bJXM38ipZsfT5QBGM, 2020-11-12T11:35:19 (inv1ok,correct,check,)
+																	yt9eeDp8izBcxbZzJ, 2020-11-12T11:39:18 (inv3ok,correct,check,)
+																		cBAckNnmYefRvWMa5, 2020-11-12T11:39:22 (inv2ok,correct,check,)
+																			Dobt5cAhYSCuKeqDD, 2020-11-12T11:39:23 (inv1ok,correct,check,)
+																				YY37mdYTTMz9owzzN, 2020-11-12T11:43:25 (inv2ok,incorrect,check,)
+																					vYSbXv8SDQF873rxj, 2020-11-12T11:43:32 (inv2ok,correct,check,)
+																						zCdSAECPmWDx3wf4D, 2020-11-12T11:43:34 (inv3ok,correct,check,)
+	wRT5QptStNYuDzzaW, 2020-11-12T11:21:36 (The name "track" cannot be found.)
+		KAjGiqwgYJGAX4hGm, 2020-11-12T11:21:54 (The name "s2" cannot be found.)
+			kCYKqL4B7r2KWafn6, 2020-11-12T11:22 (inv1ok,incorrect,check,)
+				SCmWLNF2879acXqFS, 2020-11-12T11:22:50 (inv1ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Signal->this/Track} Right type = {this/Track->this/Signal})
+					xoT7KKPC5esiCbk7T, 2020-11-12T11:22:58 (inv1ok,correct,check,)
+						XbfGzEa63nDrFjvET, 2020-11-12T11:23:13 (inv1ok,correct,check,)
+							HEajSBzv2GoHSy5WB, 2020-11-12T11:24:29 (inv3ok,incorrect,check,)
+								zkJo3Hon2KQZfNW6J, 2020-11-12T11:25:20 (inv3ok,correct,check,)
+									BXny4MyRLPafo3jxT, 2020-11-12T11:26:48 (inv3ok,correct,check,)
+										vAo7WhG7P7rAjRN8e, 2020-11-12T11:27:24 (inv2ok,incorrect,check,)
+											hHMpTsKSEdjtq9wdn, 2020-11-12T11:27:58 (inv2ok,incorrect,check,)
+												gkHgRhd4752C3GERs, 2020-11-12T11:28:07 (inv2ok,incorrect,check,)
+													YZJmzrpjWsY8bgx2u, 2020-11-12T11:29:36 (inv2ok,incorrect,check,)
+														6XFGQdGchzikZMCHt, 2020-11-12T11:30:16 (inv2ok,incorrect,check,)
+															tBprAb7oLHYtRmrpM, 2020-11-12T11:30:34 (inv2ok,incorrect,check,)
+																wSfyRxBac8LTDDvTz, 2020-11-12T11:31:22 (inv2ok,incorrect,check,)
+																	GLvzYPzgzguW4Fkx3, 2020-11-12T11:32:02 (inv2ok,incorrect,check,)
+																		yQu4cwgNAZvpErJjr, 2020-11-12T11:33:56 (inv2ok,incorrect,check,)
+																			DzTFexKr9LwiZEaW5, 2020-11-12T11:34:32 (inv2ok,incorrect,check,)
+																				tSCGW6eZotxXgwnAn, 2020-11-12T11:35:41 (inv2ok,incorrect,check,This variable is unused.)
+																					okirGqSPm9P2AC4zN, 2020-11-12T11:35:50 (inv2ok,incorrect,check,)
+																						ecm8dR7amjLyjX7Jk, 2020-11-12T11:40:23 (inv2ok,incorrect,check,)
+																							aCeq5m3ZFmikzfSPk, 2020-11-12T11:40:54 (The name "t2" cannot be found.)
+																								CBSZePFuBcX535xjD, 2020-11-12T11:41:02 (inv2ok,incorrect,check,)
+																									tfYGgxGLgiDBcK6PR, 2020-11-12T11:41:14 (inv2ok,incorrect,check,This variable is unused.)
+																										RB93un4RbyDbNjPRo, 2020-11-12T11:41:22 (inv2ok,incorrect,check,)
+																											P67i7nKnmJuvNujgv, 2020-11-12T11:41:54 (inv2ok,incorrect,check,)
+																												XaSqRQjWDrLx8vAuB, 2020-11-12T11:42:45 (inv2ok,incorrect,check,)
+																													vnHt76r8aQALJ2MKs, 2020-11-12T11:43:22 (inv2ok,incorrect,check,)
+																														mC5tMQ8NWNnnF89MR, 2020-11-12T11:43:43 (inv2ok,incorrect,check,)
+																															2tQii47swCndiLjsN, 2020-11-12T11:44:13 (inv2ok,incorrect,check,)
+																																Kck945eXbzfKCaYpK, 2020-11-12T11:46:05 (inv2ok,incorrect,check,)
+																																	tasKnMNngoezMkmnc, 2020-11-12T11:46:34 (inv2ok,incorrect,check,)
+																																		LGBJaZ7FDT4XSt44r, 2020-11-12T11:46:48 (inv2ok,incorrect,check,)
+																																			QrdkZecaZD3h4z9W9, 2020-11-12T11:48:26 (inv2ok,incorrect,check,)
+																																				GizAY5vX42S3F2gNk, 2020-11-12T11:52:23 (inv2ok,incorrect,check,This variable is unused.)
+																																					85FAXrET38k4gogjW, 2020-11-12T11:53:01 (inv2ok,incorrect,check,)
+																																						hq234bf9tEJgqYwbB, 2020-11-12T11:53:35 (inv2ok,incorrect,check,)
+																																							Senre5GyNAL86XQJ5, 2020-11-12T11:53:55 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																								SToaxykqB3p8afeaG, 2020-11-12T11:54:11 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																									uFemmeK59x7aqajgx, 2020-11-12T11:54:24 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																										ytGEpRKjJwpSczR6G, 2020-11-12T11:55:36 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+																																											WNeQRMPuwTEtrQoYp, 2020-11-12T11:57:46 (The name "t" cannot be found.)
+																																												PkCzRvpsWLdvE5tai, 2020-11-12T11:58 (inv2ok,incorrect,check,)
+	GPLNSSWZmQscSATy5, 2020-11-12T11:21:37 (inv1ok,incorrect,check,)
+		uPw4x5z6QTvqBuxik, 2020-11-12T11:22:13 (There are 3 possible tokens that can appear here: ,  { |)
+			qDDgZXJg6dGFy6hHh, 2020-11-12T11:22:36 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Track})
+				8SxfD2niHo54iKN9a, 2020-11-12T11:26:24 (The name "t" cannot be found.)
+					vNtwACKaQEhRJB5DK, 2020-11-12T11:27:59 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+						WGFqoYFj35cM5HiJM, 2020-11-12T11:28:13 (in can be used only between 2 expressions of the same arity. Left type = {this/Track} Right type = {this/Track->this/Signal})
+							KxZRyz9gzJtAjtf9f, 2020-11-12T11:28:56 (inv1ok,incorrect,check,)
+								Q3cBvm4sPnbzrWHdB, 2020-11-12T11:33:44 (inv1ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Track->this/Signal} Right type = {this/Track->this/Track})
+									gRK7aLrLE5tfGW42Z, 2020-11-12T11:33:51 (inv1ok,incorrect,check,)
+										JKMgpTGTZaf9goGDj, 2020-11-12T11:37:10 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+											PNb579Py4oaJE9fDC, 2020-11-12T11:41:28 (The name "t" cannot be found.)
+												T2gzmXp4uKsNz5CF6, 2020-11-12T11:42:26 (The name "Junctions" cannot be found.)
+													XbYTHPHNcJcatkoyo, 2020-11-12T11:42:32 (This cannot be a legal relational join where left hand side is this/Junction (type = {this/Junction}) right hand side is this/Track (type = {this/Track}))
+														8THsGZwxAn9zH65yG, 2020-11-12T11:42:40 (inv1ok,incorrect,check,)
+															mmyGcnjPmyE8irTzN, 2020-11-12T11:46:53 (The name "t" cannot be found.)
+																7BZmu6nLgvNQW8TeZ, 2020-11-12T11:47:04 (inv1ok,incorrect,check,)
+																	KCTh3KFcTrfrZpADJ, 2020-11-12T11:51:10 (The name "track" cannot be found.)
+																		bJvutphL8f7zABgtB, 2020-11-12T11:51:17 (This cannot be a legal relational join where left hand side is (this/Track <: signal) . this/Track (type = {none}) right hand side is this/Junction (type = {this/Junction}))
+																			N7PnHG93gENeMyuPp, 2020-11-12T11:55:10 (This cannot be a legal relational join where left hand side is this/Track (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																				woGd2qCX8dg5Z52bP, 2020-11-12T11:55:24 (This must be a formula expression. Instead, it has the following possible type(s): {none})
+																					nwqmWz8oWAiMeHCmL, 2020-11-12T11:55:31 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Junction})
+																						DvshytAFHzSXbbkYN, 2020-11-12T11:55:37 (This cannot be a legal relational join where left hand side is this/Signal (type = {this/Signal}) right hand side is this/Junction (type = {this/Junction}))
+																							pdsyNHDgwZf6uciyz, 2020-11-12T11:55:56 (inv1ok,incorrect,check,)
+																								Kit5fyWF5EuNaT3TJ, 2020-11-12T11:58:13 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Junction})
+																									Z8yPZMRLy8vBPkPY3, 2020-11-12T11:58:26 (inv1ok,incorrect,check,)
+																										ohzz97tR3MNtcch5Z, 2020-11-12T12:03:19 (inv1ok,correct,check,)
+	xdvwwtPXNFZ8CZchP, 2020-11-12T11:21:42 (inv1ok,incorrect,check,)
+		zKHCeetqDEJNWRi5J, 2020-11-12T11:21:56 (This cannot be a legal relational join where left hand side is this/Track . (this/Track <: signal) (type = {this/Signal}) right hand side is s (type = {this/Signal}))
+			gQ6Z7naXMMXxvE6RZ, 2020-11-12T11:22:13 (inv1ok,incorrect,check,)
+				naTvoGntBBfJFzJZE, 2020-11-12T11:22:19 (inv1ok,incorrect,check,)
+					hTxRF4c2MZ3jQ3LcJ, 2020-11-12T11:22:58 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+						N7mJZ6rSvZyAFDS7M, 2020-11-12T11:23:30 (inv1ok,incorrect,check,)
+							s7baKM9ysSnswMx9G, 2020-11-12T11:24:01 (inv1ok,incorrect,check,)
+								9AGMDKb8WkZXsYmfk, 2020-11-12T11:24:42 (inv1ok,incorrect,check,)
+									GcywSBFggZKvr4qQz, 2020-11-12T11:25:05 (inv1ok,incorrect,check,)
+										itiDwnLZN2KuW4wNf, 2020-11-12T11:25:12 (inv1ok,incorrect,check,)
+											9Ly255wy39uCAxiLk, 2020-11-12T11:25:29 (inv1ok,incorrect,check,)
+												vN5ceyiapBZ2QBink, 2020-11-12T11:25:55 (inv1ok,incorrect,check,)
+													39Y3EBDaecgj3BYht, 2020-11-12T11:26:17 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+														hr8epAh6iD9RLxd57, 2020-11-12T11:26:26 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+															WXQpzQjT7FGhZ5o3q, 2020-11-12T11:26:32 (inv1ok,incorrect,check,)
+																vXL4j8wmC9TEhDQbK, 2020-11-12T11:27:37 (inv1ok,incorrect,check,)
+																	df73PsJbPmLSvdc5y, 2020-11-12T11:27:43 (inv1ok,incorrect,check,)
+																		Sx6wjgHG2zuYDaHmH, 2020-11-12T11:28:19 (inv1ok,incorrect,check,)
+																			mPjadkCZYbWofqEtd, 2020-11-12T11:29:51 (inv1ok,correct,check,)
+																				HatisfHXjMtKjzw2A, 2020-11-12T11:31:54 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																					jejuQRqF9fCgZXDRo, 2020-11-12T11:32:25 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																						KdjCdWYAYhTbP9WzB, 2020-11-12T11:33:26 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																							gqLPmSziP4y26LAPr, 2020-11-12T11:34:38 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																								jefnoYc9xM9GA8XHr, 2020-11-12T11:38:10 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																									mEsby3GjzJv3TPYbE, 2020-11-12T11:40:48 (inv2ok,incorrect,check,)
+																										tWPeNXoq2jqiuiNgf, 2020-11-12T11:42:11 (inv2ok,incorrect,check,)
+																											TgEy7zyc4N7MmQD2Y, 2020-11-12T11:43:22 (inv2ok,correct,check,)
+																												6pu8gC7XSJ26aE4fn, 2020-11-12T11:44:09 (This must be a formula expression. Instead, it has the following possible type(s): {this/Junction})
+																													6JmYk2ykdpw973ob6, 2020-11-12T11:44:48 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																														kSddHHELqfMaynpMr, 2020-11-12T11:45:11 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Signal (type = {this/Signal}))
+																															bTodbA6vqcXbzwqed, 2020-11-12T11:45:56 (This cannot be a legal relational join where left hand side is t . (this/Track <: prox) (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																																TmEX2ETnGy7hGHXwz, 2020-11-12T11:46:04 (This cannot be a legal relational join where left hand side is t . (this/Track <: prox) (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																																	gbjvWCKsqri9MEii5, 2020-11-12T11:46:41 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																		bM4dRGkAqvwLmRjsk, 2020-11-12T11:46:47 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																			8b2TZQ7okReDmeiRM, 2020-11-12T11:47:43 (inv3ok,correct,check,)
+																																				gzP85wGwTeevnd3c7, 2020-11-12T11:48:13 (model share)
+	vRD3xunLQztCaiAEL, 2020-11-12T11:21:48 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Track})
+		S7roAjNgShS8wfyQ8, 2020-11-12T11:22:14 (inv1ok,incorrect,check,)
+			6ys9nXPMYE3Ffxpv2, 2020-11-12T11:23:06 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Track})
+				v8hmxECxNuc34NgtS, 2020-11-12T11:25:45 (inv1ok,incorrect,check,)
+					J2S8enXCdSvwWbGjT, 2020-11-12T11:27:15 (inv1ok,correct,check,)
+						p7nPoJxZfj7ai2aem, 2020-11-12T11:29:29 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+							a2k9ZXBnJjRD3eNQh, 2020-11-12T11:29:54 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+								BwuGi2GnoWc7SiWjJ, 2020-11-12T11:32:19 (inv2ok,incorrect,check,)
+									GMMB6Zove8EAmBRZn, 2020-11-12T11:33:43 (inv2ok,incorrect,check,)
+										wemzWgcpdzFoCpeTm, 2020-11-12T11:41:56 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+											4nR7uzqa4Dt5KyNjJ, 2020-11-12T11:43:11 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+												ZnQJS2n9mpCDJP3tq, 2020-11-12T11:43:21 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+													uLsZzdynSM2NJTZcW, 2020-11-12T11:43:31 (The name "s2" cannot be found.)
+														C7MMgpXWq923sSY8L, 2020-11-12T11:43:43 (inv2ok,correct,check,)
+															Y6hqH9K36WwfkoT8m, 2020-11-12T11:43:46 (inv3ok,correct,check,)
+																LrAh3YYCvaCFW6je2, 2020-11-12T11:44:33 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																	FAsqyp9RR4EZGynXE, 2020-11-12T11:45:11 (inv3ok,correct,check,)
+																		okCunrHt9pNuunsas, 2020-11-12T11:46:35 (inv3ok,correct,check,)
+																			EmP4M7SshGiqu2XTp, 2020-11-12T11:47:57 (model share)
+																				gcNwLtTmKgTQNWRHu, 2020-11-12T22:38:20 (inv1ok,correct,check,)
+	DCWn7bHAr6EhjuCfw, 2020-11-12T11:21:56 (inv1ok,incorrect,check,)
+		4KW2dC57NLjAcXDt9, 2020-11-12T11:22:25 (inv1ok,incorrect,check,)
+			jqZM3PYn5KwdEes4B, 2020-11-12T11:22:52 (inv1ok,incorrect,check,This variable is unused.)
+				omoYTPXCWLWhJSAkE, 2020-11-12T11:23:03 (This cannot be a legal relational join where left hand side is this/Track (type = {this/Track}) right hand side is s (type = {this/Signal}))
+					iHxCKsAibMjM5TYp5, 2020-11-12T11:23:16 (This cannot be a legal relational join where left hand side is this/Track . (this/Track <: signal) (type = {this/Signal}) right hand side is s (type = {this/Signal}))
+						kpRkZXdAdT2KGTAh5, 2020-11-12T11:23:25 (inv1ok,correct,check,)
+							6WGXSc3QuAYHQs65y, 2020-11-12T11:25:56 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Track})
+								C5ZZ42o9SZfAyabe2, 2020-11-12T11:26:03 (There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~)
+									FDs6dJFADprJ6fXDs, 2020-11-12T11:28:03 (inv2ok,incorrect,check,)
+										picX9BFuEv3JprkBj, 2020-11-12T11:28:27 (inv2ok,incorrect,check,)
+											qbFDrECpZL3HeDuvc, 2020-11-12T11:28:54 (inv2ok,incorrect,check,)
+												9eCacjQCxXSC2jKAH, 2020-11-12T11:29:13 (inv2ok,incorrect,check,)
+													sKNoZbAex7dzwogWH, 2020-11-12T11:29:48 (inv2ok,incorrect,check,)
+														z7wi4EWjQTze5u9Fz, 2020-11-12T11:30:20 (inv2ok,incorrect,check,)
+															8wbXw22S3ehBvhobF, 2020-11-12T11:30:40 (inv2ok,incorrect,check,)
+																Bs5qz8weWrercswPx, 2020-11-12T11:32:25 (inv2ok,incorrect,check,)
+																	qYED9qFL53mAd3Qjg, 2020-11-12T11:32:46 (inv2ok,correct,check,)
+																		pnfoWwqvBX4SPEKhs, 2020-11-12T11:34:17 (inv3ok,incorrect,check,)
+																			ebidtYRus2noqX4d4, 2020-11-12T11:34:38 (inv3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Signal} Right type = {this/Track->this/Track})
+																				mTTyFiJ77F8Ke7CEm, 2020-11-12T11:34:51 (inv3ok,incorrect,check,)
+																					ToRGaF55mtqhgacMM, 2020-11-12T11:35:07 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+																						rtobwth2BWZBrkfrm, 2020-11-12T11:35:15 (inv3ok,incorrect,check,)
+																							8Dy6nuWPg59D5K9ws, 2020-11-12T11:35:30 (This cannot be a legal relational join where left hand side is this/Track . (this/Track <: prox) (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																								ji9XjTD4pEvb3srP4, 2020-11-12T11:35:50 (This cannot be a legal relational join where left hand side is this/Track . (this/Track <: prox) (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																									3hm3nDNrTfPCtYaRS, 2020-11-12T11:37:06 (inv3ok,incorrect,check,)
+																										69XDZ4KAGGYRAB7hz, 2020-11-12T11:37:56 (inv3ok,incorrect,check,This variable is unused.)
+																											hLKHrBj2bxWmQ2jm2, 2020-11-12T11:38:25 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+																												sbEDFh5f8jW5KSndc, 2020-11-12T11:38:54 (inv3ok,incorrect,check,This variable is unused.)
+																													PGwFxRCR95S7meiXS, 2020-11-12T11:39:04 (inv3ok,incorrect,check,)
+																														a4LB84SwSdcgrKSDd, 2020-11-12T11:39:22 (inv3ok,incorrect,check,)
+																															fmkRkgKXZCWx779GA, 2020-11-12T11:39:39 (inv3ok,incorrect,check,)
+																																HHwZai8t9jKrgiraq, 2020-11-12T11:40:01 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+																																	PEDwEc3FRaBcchbqq, 2020-11-12T11:40:09 (inv3ok,incorrect,check,)
+																																		ccqCvTi8M4EFLD6Qd, 2020-11-12T11:40:37 (inv3ok,incorrect,check,)
+																																			2ktA6F9vGgfaXJcsD, 2020-11-12T11:42:05 (inv3ok,incorrect,check,)
+																																				9d6WCeyXa6DAc7Yvz, 2020-11-12T11:42:23 (inv3ok,incorrect,check,)
+																																					J9chvohCYrd34FCdN, 2020-11-12T11:42:40 (inv3ok,incorrect,check,)
+																																						t4a447jCHPEnyPaTL, 2020-11-12T11:42:49 (This cannot be a legal relational join where left hand side is t . (this/Track <: prox) (type = {this/Track}) right hand side is t (type = {this/Track}))
+																																							WoKjoYpBb6McydtGn, 2020-11-12T11:42:55 (inv3ok,incorrect,check,)
+																																								6MAQyK4RvHggwmAX3, 2020-11-12T11:42:59 (inv3ok,incorrect,check,)
+																																									f74nd2AZ8XHRJZbiy, 2020-11-12T11:43:19 (inv3ok,incorrect,check,)
+																																										qWhzcyvf6XE5e3nd5, 2020-11-12T11:43:45 (inv3ok,incorrect,check,)
+																																											Q7Z9dmzGpoWfXC2Sw, 2020-11-12T11:44:12 (inv3ok,incorrect,check,)
+																																												J5o25RAZr9khZpzGB, 2020-11-12T11:44:55 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																													ihjkzoijFXyNJRxpD, 2020-11-12T11:45:05 (inv3ok,incorrect,check,)
+																																														zmkEyycf6ZgaFvGuC, 2020-11-12T11:46:28 (inv3ok,correct,check,Subset operator is redundant, because the right subexpression is always empty. Left type = {this/Track} Right type = {none})
+																																															ka5D45T8zPDTque8P, 2020-11-12T11:46:52 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																yHmDyKmDdT5v3EePb, 2020-11-12T13:07:02 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																	S2qo5CFMfW6k8vaR4, 2020-11-12T13:07:19 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																		sRmQMsytqEXQECn7r, 2020-11-12T13:07:31 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																			u7tDhqq2FMq5F3FY9, 2020-11-12T13:07:40 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																				FLT57mznBM9n74yGj, 2020-11-12T13:07:58 (inv3ok,correct,check,Subset operator is redundant, because the right subexpression is always empty. Left type = {this/Track} Right type = {none})
+																																																					dnmRadcivjAQiYP9L, 2020-11-12T13:08:11 (inv2ok,correct,check,Subset operator is redundant, because the right subexpression is always empty. Left type = {this/Track} Right type = {none})
+																																																						noKxmCwussz3Hrgpz, 2020-11-12T13:08:20 (inv1ok,correct,check,Subset operator is redundant, because the right subexpression is always empty. Left type = {this/Track} Right type = {none})
+																																																							opmBBHeB5ZKqxjEyu, 2020-11-12T14:37:28 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																								XXfRYQusFXv6ZB45y, 2020-11-12T14:38 (inv3ok,correct,check,Subset operator is redundant, because the right subexpression is always empty. Left type = {this/Track} Right type = {none})
+																																																									qr7oCwFZQrJGs9Wja, 2020-11-12T14:38:30 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																										4vz2DvBnc8rJo4WrF, 2020-11-12T14:40:21 (inv3ok,incorrect,check,)
+																																																											TuB8PsmjnEHD4KYnB, 2020-11-12T14:40:32 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																												k4K5mqidwN86R8PPi, 2020-11-12T14:41:18 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																													3ryWaLw3x82HpmWg2, 2020-11-12T14:41:24 (inv3ok,correct,check,Subset operator is redundant, because the right subexpression is always empty. Left type = {this/Track} Right type = {none})
+																																																														e8SykfC84yXTwy2Pj, 2020-11-12T14:41:36 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+																																																															kuwKuKQCoX9PtGjY3, 2020-11-12T14:41:50 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+																																																																YC3AqrbcYJsQkwQA2, 2020-11-12T14:41:56 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																																	cxCk7giceZEgcpws7, 2020-11-12T14:42:03 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																																		TKwoxTqD6givPjreJ, 2020-11-12T14:42:18 (inv3ok,correct,check,Subset operator is redundant, because the right subexpression is always empty. Left type = {this/Track} Right type = {none})
+																																																																			CiPpYPhAcd73LbYWT, 2020-11-12T18:00:27 (This expression failed to be typechecked line 31, column 17, filename=/tmp/alloy_heredoc13760736732564291353.als)
+																																																																				DPg3ZuHLQefRZvy5h, 2020-11-12T18:00:36 (This expression failed to be typechecked line 31, column 17, filename=/tmp/alloy_heredoc2886455861600474130.als)
+																																																																					ZhunLKs2ES59SibXg, 2020-11-12T18:00:48 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																																						ERq6hsiyftLgrTiZS, 2020-11-12T18:00:59 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																																							bxbZ9mXveaoPgAd2M, 2020-11-12T18:01:17 (inv3ok,correct,check,Subset operator is redundant, because the right subexpression is always empty. Left type = {this/Track} Right type = {none})
+																																																																								TQub9k9PLhQywsesA, 2020-11-12T18:06:52 (inv3ok,correct,check,Subset operator is redundant, because the right subexpression is always empty. Left type = {this/Track} Right type = {none})
+																																																																								Es9ZrMMN7AYbFp2ET, 2020-11-12T18:06:52 (inv3ok,correct,check,Subset operator is redundant, because the right subexpression is always empty. Left type = {this/Track} Right type = {none})
+																																																																									NQTCwidBMqcGKJ3nq, 2020-11-12T22:01:14 (inv3ok,correct,check,Subset operator is redundant, because the right subexpression is always empty. Left type = {this/Track} Right type = {none})
+	ZvaXGLaPizg8QTmcm, 2020-11-12T11:22:04 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+		DjvvGYFh7Nj5dAcsR, 2020-11-12T11:22:24 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+			ws4Bd4dskrGwMLh9d, 2020-11-12T11:22:31 (inv1ok,correct,check,)
+				gvqL2Bw8yZGtJ59WN, 2020-11-12T11:27:18 (The name "$t" cannot be found.)
+					czKXW7cvpCZcEAQij, 2020-11-12T11:27:41 (inv2ok,incorrect,check,)
+						SE9fGj4tgrLiKAByn, 2020-11-12T11:29:37 (inv3ok,incorrect,check,)
+							oCSbtdJEaf6Mn9TJr, 2020-11-12T11:29:45 (inv3ok,incorrect,check,)
+								nuL7hubQK7fr8pJco, 2020-11-12T11:30:25 (inv3ok,incorrect,check,)
+									3pBxKiqWxsMkqPptf, 2020-11-12T11:32:29 (inv3ok,incorrect,check,)
+										FmxW4NdRmzhXgiobA, 2020-11-12T11:32:39 (inv3ok,incorrect,check,)
+											ZrvgyvbJGhQTGDrwF, 2020-11-12T11:33:48 (inv3ok,incorrect,check,)
+												LxKtYssLmpdGg6wzn, 2020-11-12T11:33:58 (inv3ok,incorrect,check,)
+													eumG3EXcrhkrd3oRN, 2020-11-12T11:34:02 (inv3ok,incorrect,check,)
+														FsmzJ3kLb7cEt77Kz, 2020-11-12T11:34:14 (inv3ok,incorrect,check,)
+															4fcHX4Xg6fo5SKxj5, 2020-11-12T11:34:58 (inv2ok,incorrect,check,)
+																D4XkyKcBja5SqGbBq, 2020-11-12T11:35:17 (inv2ok,incorrect,check,)
+																	s8QtB6tToQMYPRXud, 2020-11-12T11:36:04 (inv2ok,incorrect,check,)
+																		cYGvhZXjqoFbovnu9, 2020-11-12T11:37:23 (inv2ok,incorrect,check,)
+																			svQGwi5p68EPmr2em, 2020-11-12T11:38:42 (This must be a formula expression. Instead, it has the following possible type(s): {this/Junction})
+																				nbxsRvqErNHk4nou8, 2020-11-12T11:38:46 (inv3ok,incorrect,check,)
+																					7YpgT5heGfiWDBCqT, 2020-11-12T11:38:48 (inv2ok,incorrect,check,)
+																						gJdhtD2syJiXuXbqZ, 2020-11-12T11:39:35 (inv3ok,incorrect,check,)
+																							WkjvDSC2vz4Cni6XM, 2020-11-12T11:40:56 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																								t8MyfctS8ze87vPaB, 2020-11-12T11:41:37 (inv2ok,incorrect,check,)
+																									gwA5GWPgCGN4uEQMF, 2020-11-12T11:41:50 (inv2ok,incorrect,check,)
+																										yyGue7qc5stnu7vGY, 2020-11-12T11:42:27 (inv2ok,incorrect,check,)
+																											GoyqWumWqaCzpMLLc, 2020-11-12T11:43:07 (inv3ok,incorrect,check,)
+																												jYc2ZHZZECFvCHWqR, 2020-11-12T11:43:33 (inv3ok,incorrect,check,)
+																													k4KNwhLH5WzvXesft, 2020-11-12T11:43:35 (inv2ok,incorrect,check,)
+																														QH8uiGTQMiuqe5ESS, 2020-11-12T11:44:03 (inv2ok,incorrect,check,)
+																															jeTHsSseWRvBNuZyM, 2020-11-12T11:46:08 (inv2ok,incorrect,check,)
+																																iTMC3QKtfGkds9ngW, 2020-11-12T11:46:29 (& can be used only between 2 expressions of the same arity. Left type = {this/Track->this/Track} Right type = {this/Junction})
+																																	dWXEThexsES4A8Zc5, 2020-11-12T11:47:10 (inv2ok,incorrect,check,)
+																																		KXpfvZS4kqbn6w75a, 2020-11-12T11:47:28 (inv2ok,incorrect,check,)
+																																			H8XYJmaa5EFzffrxz, 2020-11-12T11:48:55 (in can be used only between 2 expressions of the same arity. Left type = {this/Track->this/Track} Right type = {this/Track})
+																																				b4xyX8cuuAp2HnwMb, 2020-11-12T11:49:08 (in can be used only between 2 expressions of the same arity. Left type = {this/Track->this/Track} Right type = {this/Track})
+																																					x73AveC2Nnfd83dyX, 2020-11-12T11:49:26 (in can be used only between 2 expressions of the same arity. Left type = {this/Track->this/Track} Right type = {this/Track})
+																																						MMqTE7EJF3LCDYxtr, 2020-11-12T11:50:19 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																							cZgYrqw9GKz4jXy46, 2020-11-12T11:50:38 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																								io25EWswcK3QSH7Wm, 2020-11-12T11:50:49 (inv2ok,incorrect,check,)
+																																									r5rDhADFGNux2Sfkc, 2020-11-12T11:51:24 (inv2ok,incorrect,check,)
+																																										Z6kvXePjbxmF6CYo6, 2020-11-12T11:52:19 (inv3ok,incorrect,check,)
+																																											HBgYm2NBEReMvGrtJ, 2020-11-12T11:52:23 (inv2ok,incorrect,check,)
+																																												Rq7JxQYGpgrGpaHCq, 2020-11-12T11:52:53 (inv3ok,incorrect,check,)
+																																													jepZ8WrFBXNRf7MJf, 2020-11-12T11:53:19 (inv3ok,correct,check,)
+																																														JtsyK5yoWbZTZHEyr, 2020-11-12T11:53:51 (inv2ok,incorrect,check,)
+																																															eWmoB9rWSxdjLNWXE, 2020-11-12T11:54:30 (inv2ok,incorrect,check,)
+																																																xotpzS2sKaz7pmc7D, 2020-11-12T11:54:42 (inv2ok,incorrect,check,)
+																																																	WxMorzxw4WYxEjLLa, 2020-11-12T11:55:31 (inv2ok,incorrect,check,)
+																																																		ZTqur7R5mQAozCaqK, 2020-11-12T11:56:50 (!in can be used only between 2 expressions of the same arity. Left type = {this/Track->this/Track} Right type = {this/Junction})
+																																																			Mv65THaHLkFLyNPLw, 2020-11-12T11:57:40 (The name "t3" cannot be found.)
+																																																				CKseyfxybsDRz7ttp, 2020-11-12T11:57:45 (!in can be used only between 2 expressions of the same arity. Left type = {this/Track} Right type = {this/Track->this/Track})
+																																																					aZXoWCJ7tPQsy4MQd, 2020-11-12T11:58:24 (inv2ok,incorrect,check,)
+																																																						TwubhC9n5bLFjdwfE, 2020-11-12T11:58:35 (inv2ok,incorrect,check,)
+																																																							xLDKK6kj8MLS4qJxP, 2020-11-12T11:59:30 (This expression failed to be typechecked line 28, column 17, filename=/tmp/alloy_heredoc323155275692928850.als)
+																																																								y4Lp2a9p28QDxQbmu, 2020-11-12T11:59:37 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																									BvJAsAgpoNhk8YYZG, 2020-11-12T11:59:41 (inv2ok,incorrect,check,)
+																																																										KCqt9tQhsBKGDLuGL, 2020-11-12T12:00 (inv2ok,incorrect,check,)
+																																																											atC2jHHeajRnW4sGp, 2020-11-12T12:00:23 (This expression failed to be typechecked line 28, column 17, filename=/tmp/alloy_heredoc9827676296577932498.als)
+																																																												zoAJQD7WgF9MJAQnd, 2020-11-12T12:01:09 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																																													84JJMhb7Si4J4bDyH, 2020-11-12T12:01:25 (inv2ok,incorrect,check,)
+																																																														ZdKspojJJiQ8kxSaN, 2020-11-12T12:02:03 (inv2ok,incorrect,check,)
+																																																															eDH6DpHPdKFqqJPvJ, 2020-11-12T12:02:07 (inv2ok,incorrect,check,)
+																																																																PX288SBjT9Adk3wGK, 2020-11-12T12:02:20 (inv2ok,incorrect,check,)
+																																																																	ZdDfkkoRNpMZx3gm7, 2020-11-12T12:03:24 (inv2ok,incorrect,check,)
+																																																																		FapbgHf3du7g7hrFp, 2020-11-12T12:04:13 (inv2ok,incorrect,check,)
+																																																																			gARHNKNg3MzhZn8bg, 2020-11-12T12:04:52 (inv2ok,incorrect,check,)
+																																																																				xDaqQsa6u9ke8qe3g, 2020-11-12T12:08:19 (inv2ok,incorrect,check,)
+																																																																					C97kmTaL7ryTR6WPk, 2020-11-12T12:08:38 (inv2ok,incorrect,check,)
+																																																																						qxvWaQgfWDQxJGCBE, 2020-11-12T12:10:09 (inv2ok,correct,check,)
+	EqzHGoDmHzjXNQxmr, 2020-11-12T11:22:10 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Track})
+		rjtsizXgpz5RhN8Xi, 2020-11-12T11:22:17 (inv1ok,incorrect,check,)
+			s8rcSRbNKLjjtWxaA, 2020-11-12T11:23:56 (This cannot be a legal relational join where left hand side is s (type = {this/Signal}) right hand side is t . (this/Track <: signal) (type = {this/Signal}))
+				di2A92JaYBc7AxQGd, 2020-11-12T11:24:20 (This cannot be a legal relational join where left hand side is t . (this/Track <: signal) (type = {this/Signal}) right hand side is s (type = {this/Signal}))
+					hdhHAMCMxNG4aZqrY, 2020-11-12T11:30:57 (inv1ok,correct,check,)
+						KWZiSFSe6wNwhoZFK, 2020-11-12T11:31:54 (inv3ok,correct,check,)
+							GZ9KbooZWK6hkRauM, 2020-11-12T11:32:23 (inv2ok,correct,check,)
+								YLpYEzA7nsagQERq7, 2020-11-12T11:35:26 (The name "$Track" cannot be found.)
+									6iHtfsExaw5NddPJF, 2020-11-12T11:35:40 (The name "$Track" cannot be found.)
+										iWk52xprLxECQkME2, 2020-11-12T11:36:57 (The name "$Junctions" cannot be found.)
+											oYrzhky7BnqoG2DYd, 2020-11-12T11:37:06 (The name "Tracks" cannot be found.)
+												obfvoYptKRZcHuQa8, 2020-11-12T11:37:13 (The name "Junctions" cannot be found.)
+													kpnQWuMiZd9bENvvF, 2020-11-12T11:37:20 (The name "Tracks" cannot be found.)
+														2uuB5av2S3LymCGbX, 2020-11-12T11:37:25 (inv2ok,incorrect,check,)
+															EHsWv32hkirLs3Xrx, 2020-11-12T11:37:32 (inv2ok,correct,check,)
+																mbCnxZpPoa7PC59iS, 2020-11-12T11:37:40 (The name "$Track" cannot be found.)
+																	6a57TRo8ZKY92thPL, 2020-11-12T11:38:04 (inv2ok,correct,check,)
+	4govESgb6anzY6Jrw, 2020-11-12T11:22:19 (inv1ok,correct,check,)
+		GPmYJQ2Cx3y7H8TPH, 2020-11-12T11:22:58 (inv2ok,incorrect,check,This variable is unused.)
+			EyCeaqyjzNCsjrBs7, 2020-11-12T11:23:15 (inv2ok,correct,check,)
+				hSQoanri7K5mTsRoj, 2020-11-12T11:24:36 (inv3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Track})
+					2P3iLzWtgnYgxYudT, 2020-11-12T11:25:16 (inv3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Track})
+						wQ6QpksJz7M7esrLD, 2020-11-12T11:25:45 (inv3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Track})
+							hrtfYHwkY276M7dBb, 2020-11-12T11:27:18 (inv3ok,incorrect,check,)
+								ZNuvWaEcjYHdTbHNh, 2020-11-12T11:28:02 (inv3ok,incorrect,check,)
+									cA59kg7H8BiPYpyqQ, 2020-11-12T11:29:12 (inv3ok,incorrect,check,)
+										ZkKjcyRZejGgJCjXx, 2020-11-12T11:30 (inv3ok,correct,check,)
+											mNuGyRvBaXio7Rysw, 2020-11-12T11:30:09 (inv3ok,correct,check,)
+												XAGa3yBw39DyABwpM, 2020-11-12T11:30:13 (inv2ok,correct,check,)
+													a9ZfA6cpyuuMPcB2G, 2020-11-12T11:30:14 (inv1ok,correct,check,)
+														mW5PqCcqkvQApqyRh, 2020-11-12T11:30:39 (inv2ok,correct,check,)
+															qtvtj5Ja8D4wouwWN, 2020-11-12T11:30:41 (inv3ok,correct,check,)
+	WLkD49E8Hb8JHd6Bf, 2020-11-12T11:22:36 (inv1ok,incorrect,check,)
+		8xZRAWNsfi5TRxWYm, 2020-11-12T11:25:14 (inv1ok,incorrect,check,)
+			KWz3qaNBi4mw7Ytny, 2020-11-12T11:27:25 (inv1ok,incorrect,check,)
+				YCTzoCzQSq5TkCwep, 2020-11-12T11:27:41 (inv1ok,incorrect,check,)
+					mK3ngGkWry5xab6JN, 2020-11-12T11:27:51 (inv1ok,incorrect,check,)
+						XRheQEssbrzk4pBME, 2020-11-12T11:28:02 (inv1ok,incorrect,check,)
+							uegfAiXod8iEdPNdh, 2020-11-12T11:29:44 (inv1ok,correct,check,)
+								tmWFwdh4tLX4gf2cd, 2020-11-12T11:31:41 (This cannot be a legal relational join where left hand side is this/Track (type = {this/Track}) right hand side is t (type = {this/Track}))
+									ZN2psCHiR3SNzQ4sf, 2020-11-12T11:31:53 (inv2ok,incorrect,check,)
+										rrJqP96u4ScuDHqve, 2020-11-12T11:32:54 (inv2ok,correct,check,)
+											Hp9XpLgePvMR4Jk8K, 2020-11-12T11:34:03 (inv3ok,incorrect,check,)
+												tMZ8odmLFxfMfMwSW, 2020-11-12T11:34:14 (inv3ok,incorrect,check,)
+													faSrNGpfjZ5cppcDG, 2020-11-12T11:36:50 (inv3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Track->this/Track})
+														AsFcJ5GcTHJg4sk8F, 2020-11-12T11:37:07 (inv3ok,incorrect,check,)
+															zWEEG2NiYoNLhXCqR, 2020-11-12T11:37:22 (inv3ok,incorrect,check,)
+																NAhXjqK8phXfv62bK, 2020-11-12T11:39:01 (inv3ok,incorrect,check,)
+																	jGALNuX5of8A8yx7v, 2020-11-12T11:39:44 (inv3ok,incorrect,check,)
+																		kufkKRhE9B4cMKMds, 2020-11-12T11:40:36 (inv3ok,incorrect,check,)
+																			52sXFjFSeKjBZTycb, 2020-11-12T11:41:46 (inv3ok,incorrect,check,)
+																				FpiBdxvEudBTir7Er, 2020-11-12T11:42:22 (inv3ok,incorrect,check,)
+																					yAsKXbctXxXFCkxBT, 2020-11-12T11:42:31 (inv3ok,incorrect,check,)
+																						ye7ojskyyJum9zoBh, 2020-11-12T11:43:26 (inv3ok,incorrect,check,)
+																							TGeNC5So7Tx333sdD, 2020-11-12T11:44:22 (inv3ok,incorrect,check,)
+																								P5eysyqJ4CcEfzP9Y, 2020-11-12T11:44:25 (inv3ok,incorrect,check,)
+																									d5TB4ydyjraPtqGRq, 2020-11-12T11:44:45 (This must be a formula expression. Instead, it has the following possible type(s): {this/Junction})
+																										SY9kz2oD77hHFGkWy, 2020-11-12T11:44:59 (inv3ok,correct,check,)
+																											mHe8zrWD4xhtbdWyW, 2020-11-12T12:03:34 (inv3ok,incorrect,check,This variable is unused.)
+																												df94QgoJLoQtmJcBQ, 2020-11-12T12:03:48 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is (this/Track <: prox) . this/Junction (type = {this/Track}))
+																													S4q8ipkg2onNbtPdp, 2020-11-12T12:05:27 (inv3ok,incorrect,check,)
+																														4Rdix2NmTA22jfr5j, 2020-11-12T12:06:26 (inv3ok,incorrect,check,)
+																															gnQvCHdChoWraEMbY, 2020-11-12T12:07:55 (inv3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Signal} Right type = {this/Track->this/Signal})
+																																LHS8mSGY5E3TmffDj, 2020-11-12T12:07:59 (inv3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Signal} Right type = {this/Track->this/Signal})
+																																	QdYYNgjv3FW5tpsPB, 2020-11-12T12:08:25 (inv3ok,correct,check,)
+																																		Nq6vKCuQ268YwaMoP, 2020-11-12T12:09:21 (inv1ok,incorrect,check,)
+																																			R98vMZHtko2ph3dKL, 2020-11-12T12:09:35 (inv1ok,incorrect,check,)
+																																				LpyK6B8ugzAQ3qDqE, 2020-11-12T12:11:36 (inv1ok,incorrect,check,)
+																																					fi7JmMXDK2SSgG45Z, 2020-11-12T12:12:04 (inv1ok,incorrect,check,)
+																																						RKivrEWKtpstbMpci, 2020-11-12T12:15:22 (inv1ok,incorrect,check,)
+	rL6ctEdL3p6X9jSfe, 2020-11-12T11:22:45 (This cannot be a legal relational join where left hand side is s (type = {this/Signal}) right hand side is this/Track (type = {this/Track}))
+		xpYb63hNBkqpwFQNe, 2020-11-12T11:22:50 (This cannot be a legal relational join where left hand side is this/Track (type = {this/Track}) right hand side is s (type = {this/Signal}))
+			ACJ69nyYobARiYpGx, 2020-11-12T11:22:56 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Signal} Right type = {this/Track->this/Signal})
+				vjHB2TkLaGDKcsGoY, 2020-11-12T11:23:04 (inv1ok,correct,check,)
+					FwMvEnxAtziYZ9o7n, 2020-11-12T11:23:48 (The name "Junctions" cannot be found.)
+						Xgyp6Ti3c7e5oDDPP, 2020-11-12T11:23:52 (inv2ok,incorrect,check,)
+							swyEHhXb4ZQznsaCM, 2020-11-12T11:24:01 (inv2ok,incorrect,check,)
+								B9TZX6HpCx9hfpjkG, 2020-11-12T11:25:06 (The name "Juction" cannot be found.)
+									eBfm9siGWEb33wCnF, 2020-11-12T11:25:17 (The name "Juction" cannot be found.)
+										TGHKBuqxCFMkccjAf, 2020-11-12T11:25:21 (The name "Juction" cannot be found.)
+											BH9Xz7rQuxk6tdre6, 2020-11-12T11:25:32 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+												DhnYr2kJqgFRpnKia, 2020-11-12T11:25:36 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is j (type = {this/Junction}))
+													ZdyeKNqocmMhMdAuY, 2020-11-12T11:25:43 (This cannot be a legal relational join where left hand side is j (type = {this/Junction}) right hand side is t (type = {this/Track}))
+														qx3BsAtmDKKs6MtQs, 2020-11-12T11:25:52 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is j (type = {this/Junction}))
+															gRuwfQQG88tBEXHtY, 2020-11-12T11:26:56 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is j (type = {this/Junction}))
+																KdbHqoj5nGxyhe68g, 2020-11-12T11:27 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is j (type = {this/Junction}))
+																	5QmZeHkhitX2HFJtX, 2020-11-12T11:29:55 (There are 5 possible tokens that can appear here: enum fun let open pred)
+																		4qnmHw9iZYWaGkdcw, 2020-11-12T11:30:01 (This must be a formula expression. Instead, it has the following possible type(s): {this/Junction})
+																			xAF2Fywg3mQJjuMKo, 2020-11-12T11:32:10 (The name "Tracks" cannot be found.)
+																				MnM784TkNKkEGRgfb, 2020-11-12T11:32:14 (The name "j" cannot be found.)
+																					hrf97GXPa6Ev2Xeqx, 2020-11-12T11:32:21 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																						2ou9evcyr8q5eZBeP, 2020-11-12T11:32:47 (inv3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Junction} Right type = {this/Signal})
+																							wR6ZaJSczeoCGH2aC, 2020-11-12T11:32:59 (inv3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Track})
+																								nFHZpSQAuHrbwupGW, 2020-11-12T11:33:06 (inv3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Track})
+																									AkdKttWz4p4DDvmD9, 2020-11-12T11:33:16 (inv3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Signal} Right type = {this/Junction})
+																										38qWJ7gBcoG2sra6A, 2020-11-12T11:33:38 (inv3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Junction} Right type = {this/Signal})
+																											ntdQWb83784dstaAd, 2020-11-12T11:33:44 (This cannot be a legal relational join where left hand side is this/Junction (type = {this/Junction}) right hand side is t (type = {this/Track}))
+																												LsCp7dDpXyHMsfFir, 2020-11-12T11:33:52 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																													BknJpuuiS6SyBoqvR, 2020-11-12T11:34:10 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																														uHnqsBmWAN5KaJepM, 2020-11-12T11:34:25 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																															fdJKSS9JDbqQmXk7C, 2020-11-12T11:34:44 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																																wit4Ge8qKuoBoD7BM, 2020-11-12T11:35:02 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																																	ka5i2qon2o97RgbLk, 2020-11-12T11:35:16 (The name "t" cannot be found.)
+																																		eHNzG4cPf68cCEYgr, 2020-11-12T11:35:20 (* can be used only with a binary relation. Instead, its possible type(s) are: {this/Junction})
+																																			GH6aJXo2ZkxgmjrfJ, 2020-11-12T11:35:29 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																																				dGZeaz9Kz4tgASDRq, 2020-11-12T11:35:33 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																																					Ss5cQLsftX6Drtrjo, 2020-11-12T11:35:53 (The name "t" cannot be found.)
+																																						2aTXY7cLxadNGKNcH, 2020-11-12T11:35:59 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																																							pu9AgpKjRfHqxMEhx, 2020-11-12T11:36:09 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																																								KCQdymiJhGeH8DEzn, 2020-11-12T11:36:17 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																																									6oM79MdAhtrGSfQqs, 2020-11-12T11:36:22 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+																																										LMCqKs4Z3kz8yMCiR, 2020-11-12T11:36:35 (inv3ok,incorrect,check,)
+																																											i2zYfXLRLSQ5gg3qN, 2020-11-12T11:36:48 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																																												mq2Hg5huF2nJEJvnc, 2020-11-12T11:37:13 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																													e4n2harmZQa5Fdvbo, 2020-11-12T11:37:18 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																														p6r4zW9JZdxRijR68, 2020-11-12T11:37:40 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+																																															x7RmLJTNA7YurBkQH, 2020-11-12T11:37:52 (This must be a formula expression. Instead, it has the following possible type(s): {this/Junction})
+																																																e64FCRAfWBTm3sSJr, 2020-11-12T11:39:37 (The name "Trash" cannot be found.)
+																																																	ptbkScD72tagKDtFm, 2020-11-12T11:39:44 (This expression failed to be typechecked line 27, column 21, filename=/tmp/alloy_heredoc1517232547931994582.als)
+																																																		HCgYCyWJNnR8WrxpP, 2020-11-12T11:40:59 (inv2ok,incorrect,check,)
+																																																			x88GPDLNnkeT3Xx9q, 2020-11-12T11:41:31 (inv2ok,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Track} Right type = {this/Signal})
+																																																				mQSDwTuumBNbTqtDL, 2020-11-12T11:41:39 (inv2ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Junction})
+																																																					dpSzpGEKsY24ntpmo, 2020-11-12T11:41:47 (inv2ok,incorrect,check,)
+																																																						zr78u89pK8J6WZp4k, 2020-11-12T11:42:21 (inv2ok,incorrect,check,)
+																																																							oNsCf6a8bZACmkKcS, 2020-11-12T11:43 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																																																								BD7pnkqsBZnz7DqWy, 2020-11-12T11:43:06 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+																																																									2txMawyqANegFgqiq, 2020-11-12T11:43:11 (inv3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Junction} Right type = {this/Signal})
+																																																										QXBZwDooNf5h2jWRr, 2020-11-12T11:44:25 (inv1ok,correct,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Junction} Right type = {this/Signal})
+																																																											NhKFaCsgHf3t6iJ4m, 2020-11-12T11:44:35 (inv3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Track} Right type = {this/Signal})
+																																																												FGhfYm7ayG86855gQ, 2020-11-12T11:44:45 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+																																																													BYsJ6tGfHAFgrE9Gt, 2020-11-12T11:44:50 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+																																																														nNwkWv39cX7cJa9Jg, 2020-11-12T11:44:57 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+																																																															AjFLnoNhG4mi5NE2N, 2020-11-12T11:45:23 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																																																9hEZBicpR3JMBRg2F, 2020-11-12T11:46:20 (The name "Trash" cannot be found.)
+																																																																	SC2JEdhoAe2CKLJxf, 2020-11-12T11:46:25 (This expression failed to be typechecked line 26, column 4, filename=/tmp/alloy_heredoc10463157750948408445.als)
+																																																																		oeJMam5vfGkvtyw4j, 2020-11-12T11:46:31 (inv3ok,incorrect,check,)
+																																																																			65DBnTXcZfjBAFTPu, 2020-11-12T11:46:43 (inv3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Signal} Right type = {this/Junction})
+																																																																				8jQY6zRsWMTyYy7yB, 2020-11-12T11:46:46 (inv3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Signal} Right type = {this/Junction})
+																																																																					LDsN6djH2nngQiXud, 2020-11-12T11:47:05 (inv2ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Signal} Right type = {this/Junction})
+																																																																						uqNS3RNM6SrBvoF7i, 2020-11-12T11:47:19 (inv2ok,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Track} Right type = {this/Signal})
+																																																																							uezzFQRTCqWDCgQLc, 2020-11-12T11:47:30 (inv2ok,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Track} Right type = {this/Signal})
+																																																																								sCrSYYgzLb7hYcjsk, 2020-11-12T11:47:47 (inv2ok,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Track} Right type = {this/Signal})
+																																																																									qnmXXrTtwed873GP4, 2020-11-12T11:47:56 (inv2ok,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Track} Right type = {this/Signal})
+																																																																										3G6sa5uSesEq6tCLy, 2020-11-12T11:49:02 (inv2ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Signal} Right type = {this/Junction})
+																																																																											YC2yGwcCdwikEQCuZ, 2020-11-12T11:49:26 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																																												SGPhPjzdjfhktv2Th, 2020-11-12T11:49:32 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																																													scCo6hgN7KonCjuSG, 2020-11-12T11:49:36 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																																														3CWQLCBt7sD63vz9t, 2020-11-12T11:51:46 (in can be used only between 2 expressions of the same arity. Left type = {this/Track} Right type = {this/Track->this/Track->this/Junction})
+																																																																															vepdBhMNBnxxzg2kv, 2020-11-12T11:52 (in can be used only between 2 expressions of the same arity. Left type = {this/Track} Right type = {this/Junction->this/Track->this/Track})
+																																																																																z7X9BdPMN2WRTeLbk, 2020-11-12T11:52:10 (inv2ok,incorrect,check,)
+																																																																																	hCcKkxQPfyd8cFbm6, 2020-11-12T11:52:16 (inv2ok,incorrect,check,)
+																																																																																		iwbGWSL2A5xMbw2h9, 2020-11-12T11:52:27 (inv2ok,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Track->this/Track} Right type = {this/Track->this/Signal})
+																																																																																			FCcYi2n9Mu7vKixYW, 2020-11-12T11:52:48 (inv3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Track->this/Signal} Right type = {this/Junction->this/Track})
+																																																																																				giZZ8hvfLeyhQWZ4T, 2020-11-12T11:53:10 (in can be used only between 2 expressions of the same arity. Left type = {this/Track} Right type = {this/Junction->this/Track})
+																																																																																					4vA2uRiWEwhyx9ABm, 2020-11-12T11:53:46 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+																																																																																						wy9T3HMsjTxcXywJD, 2020-11-12T11:53:52 (This must be a formula expression. Instead, it has the following possible type(s): {none})
+																																																																																							c9j8EE3L3csZc46S3, 2020-11-12T11:53:58 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track->this/Signal})
+																																																																																								GkED698Gtdqahygvh, 2020-11-12T11:54:01 (The name "j" cannot be found.)
+																																																																																									xwNhMpWDNbDL9TLWQ, 2020-11-12T11:54:05 (This must be a formula expression. Instead, it has the following possible type(s): {none})
+																																																																																										EeezuvcBK4NAoH82q, 2020-11-12T11:54:10 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+																																																																																											Hm6GqAZ6RbfXpgKse, 2020-11-12T11:54:43 (inv3ok,incorrect,check,)
+																																																																																												fFCEJkQrGS5M76uQS, 2020-11-12T11:54:47 (inv2ok,incorrect,check,)
+																																																																																													XWDDKp6hM8ac62zyw, 2020-11-12T11:55:14 (inv3ok,incorrect,check,)
+																																																																																														cijdmHMtcBM2DqPTC, 2020-11-12T11:55:24 (inv3ok,incorrect,check,)
+																																																																																															Ax5kDZLa5ZqsGzBFB, 2020-11-12T11:55:40 (inv2ok,incorrect,check,)
+																																																																																																zNEA9aMqWmkmsjp4Z, 2020-11-12T11:56:18 (inv3ok,incorrect,check,)
+																																																																																																	tdA58z4KSX9GSX6Xk, 2020-11-12T11:56:47 (inv3ok,correct,check,)
+	opXRLyMkbdK9wS4P9, 2020-11-12T11:23:08 (inv1ok,correct,check,)
+		YKLLjaRCv9mfvvB5X, 2020-11-12T11:25:19 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+			e2ebbFoQuB2uhfQaH, 2020-11-12T11:25:29 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+				54ucFhJWyznDuunT8, 2020-11-12T11:25:41 (This cannot be a legal relational join where left hand side is t . (this/Track <: prox) (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+					Z3c2fpv5FdyAJMAWF, 2020-11-12T11:26:36 (This cannot be a legal relational join where left hand side is t . (this/Track <: prox) (type = {this/Track}) right hand side is j (type = {this/Track}))
+						X2ZsxjM3nP4crwP2s, 2020-11-12T11:27:18 (inv1ok,correct,check,)
+							fkWb9ti9R5pMFxKpC, 2020-11-12T11:29:51 (This expression failed to be typechecked line 24, column 19, filename=/tmp/alloy_heredoc12448284727216753648.als)
+								tZddSstKWYEXbKp5B, 2020-11-12T11:30:06 (inv2ok,incorrect,check,)
+									XDMji9QSC47x3iQd7, 2020-11-12T11:32:53 (This cannot be a legal relational join where left hand side is t . (this/Track <: prox) (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+										Z8vm9ntXYmxeGepJ2, 2020-11-12T11:33:27 (inv3ok,incorrect,check,)
+											k6TzqZgiytqiKPHjG, 2020-11-12T11:33:45 (inv3ok,incorrect,check,)
+												58TuzGd75AqTtLHQ9, 2020-11-12T11:35:58 (This cannot be a legal relational join where left hand side is t . (this/Track <: prox) (type = {this/Track}) right hand side is this/Junction (type = {this/Junction}))
+													EgntsqQBqvYaiLkZE, 2020-11-12T11:36:04 (inv3ok,correct,check,)
+														A6dzK4tYPNQ8GASgi, 2020-11-12T11:38:34 (inv2ok,correct,check,)
+															qjzT47hcK63HYmdSy, 2020-11-12T11:39:30 (inv1ok,correct,check,)
+																4eggMWYM4uwHHXcNy, 2020-11-12T11:39:33 (inv2ok,correct,check,)
+																	wAGCYeBZqJXdKsXQe, 2020-11-12T11:39:36 (inv3ok,correct,check,)
+	5PuCPd3fvXMz4p2nT, 2020-11-12T11:23:12 (inv1ok,incorrect,check,)
+		rWG2jNpiuPN9qxtrN, 2020-11-12T11:23:38 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Signal} Right type = {this/Track->this/Signal})
+			wk2CCdYL5Q286TSXa, 2020-11-12T11:24:05 (inv1ok,correct,check,)
+				eQqW4T9mwS248esqE, 2020-11-12T11:24:17 (inv1ok,correct,check,)
+					RbBo3i7MDBCiMdfaF, 2020-11-12T11:25 (inv2ok,incorrect,check,)
+						PLNZp4PRsJWm8yiNg, 2020-11-12T11:25:32 (inv2ok,incorrect,check,)
+							o86vdK5jja8nELcJL, 2020-11-12T11:26:16 (inv2ok,incorrect,check,)
+								JkMrEjyNTCQjmQZHk, 2020-11-12T11:26:47 (The name "t" cannot be found.)
+									K3fqEmEAyqgNzfnPP, 2020-11-12T11:26:52 (inv2ok,incorrect,check,)
+										bGswk4up6j4DTdvZa, 2020-11-12T11:27:07 (inv2ok,incorrect,check,)
+											98u9hyJXktMFvanNM, 2020-11-12T11:27:15 (inv2ok,incorrect,check,)
+												82DZBBk5fq8mjZZ93, 2020-11-12T11:27:37 (inv2ok,incorrect,check,)
+													Xhm7NRckeQ2yS6RP8, 2020-11-12T11:27:50 (inv2ok,incorrect,check,)
+														3iurdaMTYeQDJYbfs, 2020-11-12T11:27:54 (inv2ok,incorrect,check,)
+															B2FfXHZ2p64snYK88, 2020-11-12T11:29:21 (inv3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Track})
+																rEyHmhiMP463TsoP2, 2020-11-12T11:30:05 (inv3ok,incorrect,check,)
+																	mS94x3JnQQDqce46Z, 2020-11-12T11:30:47 (inv3ok,incorrect,check,)
+																		AdMeyBYqvjbs27NLS, 2020-11-12T11:32:24 (inv2ok,incorrect,check,)
+																			bT3Jjr2YS3TMNPsaJ, 2020-11-12T11:32:59 (The name "t" cannot be found.)
+																				uPGCCdkPL5p73vth3, 2020-11-12T11:33:07 (inv2ok,incorrect,check,)
+																					MSJtvYnnvXovmFv3h, 2020-11-12T11:33:43 (inv2ok,incorrect,check,This variable is unused.)
+																						Xb4JCTK9RLyHjPyrf, 2020-11-12T11:33:56 (inv2ok,incorrect,check,)
+																							S7kL9CSqjRZN3Eomh, 2020-11-12T11:35:11 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {this/Track})
+																								9FapPADzfucppiijM, 2020-11-12T11:35:25 (inv2ok,incorrect,check,)
+																									PLBbsiRrnDGgtRfB6, 2020-11-12T11:37:02 (inv3ok,incorrect,check,)
+																										hN3wtQC22aX5u2xAn, 2020-11-12T11:38:01 (inv3ok,incorrect,check,)
+																											efcsyNo274xT2fA28, 2020-11-12T11:38:05 (inv3ok,incorrect,check,)
+																												RaKh58bKZemvk5FDD, 2020-11-12T11:38:14 (inv3ok,incorrect,check,)
+																													fPsqaqWQtYw69hAXt, 2020-11-12T11:38:47 (inv3ok,correct,check,)
+																														sj57zTAN9tMizNumD, 2020-11-12T11:39:08 (inv3ok,correct,check,)
+																															b4e2RdbFwD4qDx7H8, 2020-11-12T11:41:12 (inv2ok,incorrect,check,)
+																																ReAKWinDN9LJzDqbv, 2020-11-12T11:41:31 (inv2ok,incorrect,check,)
+																																	LP2itDfFXaay6TGaS, 2020-11-12T11:42:23 (inv2ok,incorrect,check,)
+																																		MkbZLMzXZacSGbxWR, 2020-11-12T11:43:25 (inv2ok,incorrect,check,)
+																																			m7PHJRupDCeHzBDJT, 2020-11-12T11:43:32 (inv2ok,incorrect,check,)
+																																				EsrFNiABK5GxisQp6, 2020-11-12T11:44:06 (inv2ok,incorrect,check,)
+																																					KNdp3NTAxEmRGSCkc, 2020-11-12T11:44:30 (inv2ok,incorrect,check,)
+																																						Ex95n3HiLzRS5KCsN, 2020-11-12T11:45:02 (inv2ok,incorrect,check,)
+																																							8XsGjYK5kQfAmMkzy, 2020-11-12T11:45:36 (inv2ok,incorrect,check,)
+																																								kCp6dXdY376yHLZgi, 2020-11-12T11:46:04 (inv2ok,incorrect,check,)
+																																									5XyoAcDNGwF9oSzy9, 2020-11-12T11:46:50 (inv2ok,incorrect,check,)
+																																										R2e8BYyQ9ip6ruCZr, 2020-11-12T11:47:18 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																											S6iRtuvCBTXYdbeYz, 2020-11-12T11:48:57 (inv2ok,incorrect,check,)
+																																												XLiwiyJcyrXreEBaB, 2020-11-12T11:49:26 (inv2ok,incorrect,check,)
+																																													T2N8eB8Ybh4kT7mXX, 2020-11-12T11:49:32 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																														FtKWLHAkmSN6khWzf, 2020-11-12T11:51:10 (inv2ok,incorrect,check,)
+																																															tvH3mXujigG5dDo9G, 2020-11-12T11:51:24 (inv2ok,incorrect,check,)
+																																																FkkAwKJ8ry4465CvY, 2020-11-12T11:52:21 (inv2ok,incorrect,check,)
+																																																	Ge4ucSchYXKujaa9A, 2020-11-12T11:52:28 (inv2ok,incorrect,check,)
+																																																		27yBG8AWcLSotfuvQ, 2020-11-12T11:53:20 (inv2ok,incorrect,check,)
+																																																			kF5cKdER32jhEHHcb, 2020-11-12T11:53:38 (inv2ok,incorrect,check,)
+																																																				XaMrKfdR8cqRmMLLp, 2020-11-12T11:54:29 (inv2ok,incorrect,check,)
+																																																					7Lg9sTWh2k9GfCNmq, 2020-11-12T11:54:48 (inv2ok,correct,check,)
+																																																						3kcReZKHQZoHGvwDK, 2020-11-12T11:55:31 (inv2ok,correct,check,)
+	9nHoyRQkPKuG684Ff, 2020-11-12T11:23:27 (inv1ok,correct,check,)
+		MGhpjuhnKDRRmiRko, 2020-11-12T11:29:10 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+			dKG7xyj2E8nrbdgyb, 2020-11-12T11:29:36 (inv3ok,incorrect,check,)
+				Y766mWnNyWBvGrNdq, 2020-11-12T11:29:58 (inv3ok,incorrect,check,)
+					uZbSJFyruMGvut5AF, 2020-11-12T11:31:15 (inv3ok,correct,check,)
+						HFvRi8qektneHs442, 2020-11-12T11:33:07 (inv3ok,correct,check,)
+							JsS7kWPFsRJcZYtbc, 2020-11-12T11:33:10 (inv2ok,correct,check,)
+								XDKiZDr7ECkLsqRyZ, 2020-11-12T11:42:09 (inv2ok,correct,check,)
+									HsuprEDkFj9Sh9kxz, 2020-11-12T11:44:47 (inv3ok,correct,check,)
+	bXRLW72Kdt4RDMey5, 2020-11-12T11:23:46 (inv1ok,incorrect,check,)
+		2AN9NjAzwvcynsgsq, 2020-11-12T11:24:23 (inv1ok,correct,check,)
+			BxjQbzP9fSkswFXK9, 2020-11-12T11:27:21 (inv2ok,incorrect,check,)
+				Zbvvu8yshKQgCxTqf, 2020-11-12T11:27:39 (inv2ok,incorrect,check,)
+					jFp6aNKzqGDz97NfK, 2020-11-12T11:29:43 (inv2ok,incorrect,check,)
+						BAMRWeK8CeyFM9q8o, 2020-11-12T11:30:35 (The name "junction" cannot be found.)
+							f2GCkHPGqMfPy7rLH, 2020-11-12T11:30:44 (inv2ok,incorrect,check,)
+								N2n9fjkRTXKCYghY2, 2020-11-12T11:32:02 (inv2ok,incorrect,check,)
+									6dRLfRLdg9doPKKgz, 2020-11-12T11:34:37 (inv2ok,incorrect,check,)
+										zDoe8TbkhmqzGRHgc, 2020-11-12T11:35:46 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Track})
+											NPGunmuqM2ZxfCn6w, 2020-11-12T11:37:41 (inv2ok,incorrect,check,)
+												mZ9dTKmtmktfNzQpr, 2020-11-12T11:38:33 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+													b4bpSnZTonSTPdvrv, 2020-11-12T11:38:42 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+														KCzzCGWmToQtKeRcf, 2020-11-12T11:41:44 (inv2ok,incorrect,check,)
+															SkfRYjgBAFPhWe8JP, 2020-11-12T11:41:55 (inv2ok,incorrect,check,)
+																2qP79iWpaKMuqxbCT, 2020-11-12T11:42:02 (inv2ok,incorrect,check,)
+																	pg4EQTwd5PAFWEQ4R, 2020-11-12T11:42:18 (inv2ok,correct,check,)
+																		mhZhT73TgRzZQQKWn, 2020-11-12T11:44:28 (This cannot be a legal relational join where left hand side is j (type = {this/Junction}) right hand side is ~ (this/Track <: prox) . t (type = {this/Track}))
+																			ZqeZJFk2GKR6B3hnE, 2020-11-12T11:45:21 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is j (type = {this/Junction}))
+																				BWJoBmL8gRNjaNY2Q, 2020-11-12T11:45:34 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is j (type = {this/Junction}))
+																					x8gy4XKo8P5zzjHfJ, 2020-11-12T11:45:48 (This cannot be a legal relational join where left hand side is j (type = {this/Junction}) right hand side is t (type = {this/Track}))
+																						B2ZHYpffE5rqN3XyX, 2020-11-12T11:49:25 (inv3ok,correct,check,)
+																							MZELiRGNNhTLTMRTu, 2020-11-12T11:50:03 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																								TzKaeuicv8F73LFcD, 2020-11-12T11:50:07 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																									WTYeWsYFmN6bfR3Fe, 2020-11-12T11:50:14 (inv3ok,correct,check,)
+	ry2Ywadmx37JLTA9j, 2020-11-12T11:23:51 (inv1ok,incorrect,check,This variable is unused.)
+		uGqWuco28anpaGLyc, 2020-11-12T11:26:44 (This cannot be a legal relational join where left hand side is this/Track (type = {this/Track}) right hand side is s (type = {this/Signal}))
+			jraJRic6T4AwdrF3N, 2020-11-12T11:28:56 (This cannot be a legal relational join where left hand side is s (type = {this/Signal}) right hand side is this/Track (type = {this/Track}))
+				hawhk22ikERyjzqMZ, 2020-11-12T11:30:02 (This cannot be a legal relational join where left hand side is this/Track (type = {this/Track}) right hand side is s (type = {this/Signal}))
+					ekaqYcnkRrH7Gyi7Q, 2020-11-12T11:31:31 (This cannot be a legal relational join where left hand side is s (type = {this/Signal}) right hand side is this/Track (type = {this/Track}))
+						RkpuSoDRD4eJsw4w3, 2020-11-12T11:31:38 (This cannot be a legal relational join where left hand side is s (type = {this/Signal}) right hand side is this/Track (type = {this/Track}))
+							aJG2Wm9PhWyFt8ys7, 2020-11-12T11:32:37 (inv1ok,incorrect,check,)
+								MMmWBiuGafZytTHSA, 2020-11-12T11:33:58 (inv1ok,incorrect,check,)
+									AZpma54nREncnG69p, 2020-11-12T11:35:16 (inv1ok,correct,check,)
+										vqmL9AoPLFtW2HSc8, 2020-11-12T11:36:50 (inv3ok,correct,check,)
+											bsyZG6Er3eqPzByrX, 2020-11-12T11:39:52 (inv2ok,incorrect,check,)
+												Mu4bDBRqCNar39nwD, 2020-11-12T11:40:13 (inv2ok,correct,check,)
+													y2Bf7Y7mdRpphWYQT, 2020-11-12T11:40:17 (inv1ok,correct,check,)
+														hRbwmGQbff3ETBK2q, 2020-11-12T11:42:58 (inv1ok,incorrect,check,)
+															R9iLG42KmbZSomR63, 2020-11-12T11:43:13 (inv1ok,incorrect,check,)
+																BfNWTBgGvuXByP7xs, 2020-11-12T11:43:20 (inv1ok,correct,check,)
+																	PdcFfo4h9zmCZD65D, 2020-11-12T11:46:46 (inv1ok,correct,check,)
+																		3R8NbbjNQDHkThBmt, 2020-11-12T11:46:48 (inv2ok,correct,check,)
+																			dbKqJEAbDLyNLJyWL, 2020-11-12T11:46:52 (inv3ok,correct,check,)
+	35JfzaEdL6zaQWYgo, 2020-11-12T11:24:30 (This cannot be a legal relational join where left hand side is s (type = {this/Signal}) right hand side is this/Track (type = {this/Track}))
+		oG3xFpQF39NsmWXC3, 2020-11-12T11:25:30 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Signal} Right type = {this/Track->this/Signal})
+			5iMjFBEE8r36pGrTm, 2020-11-12T11:27:31 (inv1ok,incorrect,check,This variable is unused.)
+				pTbjMv8SDZQQrnJgr, 2020-11-12T11:27:42 (This cannot be a legal relational join where left hand side is s (type = {this/Signal}) right hand side is this/Track (type = {this/Track}))
+					KaNjB2kL4k7R8u3kR, 2020-11-12T11:27:51 (This cannot be a legal relational join where left hand side is this/Track (type = {this/Track}) right hand side is s (type = {this/Signal}))
+						Miox8txktgSHLP9mp, 2020-11-12T11:33:28 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+							kv6EhRaKqbGc8Be4P, 2020-11-12T11:33:42 (This cannot be a legal relational join where left hand side is s (type = {this/Signal}) right hand side is this/Track (type = {this/Track}))
+								aby6Wba6XmMrNit6W, 2020-11-12T11:36 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+									DKpbzDjnEqhaTqNht, 2020-11-12T11:37:57 (The name "track" cannot be found.)
+										wPBhcKq8snixbvuYG, 2020-11-12T11:38:03 (This cannot be a legal relational join where left hand side is s (type = {this/Signal}) right hand side is this/Track (type = {this/Track}))
+											SDvPd2oiGuZCSYFrW, 2020-11-12T11:38:17 (This cannot be a legal relational join where left hand side is this/Track (type = {this/Track}) right hand side is s (type = {this/Signal}))
+												EznXzmCBHTwgtkkaB, 2020-11-12T11:39:37 (inv1ok,incorrect,check,This variable is unused.)
+													HQj5koCYtMb6fiNS2, 2020-11-12T11:49:04 (inv3ok,incorrect,check,)
+														kHoLAg2W8Azirc2NF, 2020-11-12T11:49:26 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+															g7M8wszWYszbBWrAi, 2020-11-12T11:49:38 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																NZEt9kLvCuMnNTH8a, 2020-11-12T11:50:03 (inv3ok,incorrect,check,)
+																	hDHgzk4EqbdEppteD, 2020-11-12T11:50:34 (inv3ok,incorrect,check,)
+																		aECJteJo4faQGn7rZ, 2020-11-12T11:50:55 (inv2ok,incorrect,check,)
+																			4dGNaasGyE7bjQLSX, 2020-11-12T11:51:19 (inv2ok,incorrect,check,)
+																				8eHJCd4qnhdQpwdYg, 2020-11-12T11:52:41 (inv2ok,incorrect,check,)
+																					JYtMSwRJhHRAApi7m, 2020-11-12T11:52:52 (inv2ok,incorrect,check,)
+																						H68Jb8gfmj9dvThyt, 2020-11-12T11:52:55 (inv3ok,incorrect,check,)
+																							KJRfmkoZRQzqnYKvM, 2020-11-12T11:53:50 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+																								LMpZs2p55nGSR2RxG, 2020-11-12T11:54:27 (inv3ok,incorrect,check,)
+																									6me5i4WrD5w4LPgiy, 2020-11-12T11:55:42 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																										pGjneTMnJjWXpYZjK, 2020-11-12T11:55:55 (inv2ok,incorrect,check,)
+																											cPJbKWKDPjfWgPNtm, 2020-11-12T11:56:58 (This cannot be a legal relational join where left hand side is s (type = {this/Signal}) right hand side is this/Track (type = {this/Track}))
+																												J3T7rPMKP96WQGm4A, 2020-11-12T11:57:54 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+																													8ngyeaT9aSG8XGP5v, 2020-11-12T11:58:04 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+																														2KxS5XLburd7naXw8, 2020-11-12T11:58:19 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																															kuBvNff2NetHujpc2, 2020-11-12T11:58:24 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																z8AcLuwgjiJ2hre8c, 2020-11-12T12:00:07 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																	JSgXFmsmym6WKvDdB, 2020-11-12T12:00:13 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																		4g4ASsG6uz8TzLgos, 2020-11-12T12:00:47 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																			a69Qfa2yPbWP8WNGh, 2020-11-12T12:01:08 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																				kjQ4pwDjnt5KhR9RJ, 2020-11-12T12:01:43 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																					xpr5EMBp6u38E5kce, 2020-11-12T12:01:56 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																						hWjPXsptSMbhcv5Ld, 2020-11-12T12:03:05 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																							y5xjh9wbZf66Cjsec, 2020-11-12T12:03:56 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																								DJA4CyW3nQYAH78oa, 2020-11-12T12:05:15 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																									65WdPaZKqJs5Prj3a, 2020-11-12T12:05:28 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+																																										ZasiadLpcr3sX6B7c, 2020-11-12T12:05:41 (inv1ok,correct,check,)
+																																											nuArmD9Xj2LtecX6G, 2020-11-12T12:05:49 (inv2ok,incorrect,check,)
+																																												FvH6FC6GL3fzDiZbe, 2020-11-12T12:05:57 (inv3ok,incorrect,check,)
+																																													Ck2en4CYbtDjKKwX6, 2020-11-12T12:06:51 (inv3ok,incorrect,check,)
+																																														4naktMz8pqB9ZogPF, 2020-11-12T12:07:38 (inv2ok,incorrect,check,)
+																																															8tKXreh9i2Twh6Zuu, 2020-11-12T12:08:02 (inv3ok,correct,check,)
+																																																pcgpe2FXL4L7YntWs, 2020-11-12T12:08:50 (inv2ok,incorrect,check,)
+																																																	joNRsFBtq7pEJx3Fv, 2020-11-12T12:09:12 (inv2ok,correct,check,)
+																																																		AGeZHizxK4cC5s49i, 2020-11-12T12:09:47 (model share)
+																																																		zfiLTk7KfZdANKiw2, 2020-11-12T12:10:35 (inv1ok,correct,check,)
+																																																			ZhhAmQipZWk32yH45, 2020-11-12T12:10:38 (inv2ok,correct,check,)
+																																																				MkMLAbJopYxQAgwWq, 2020-11-12T12:10:42 (inv3ok,correct,check,)
+	kmJ7mnHvd4nrMtbht, 2020-11-12T11:46:47 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track->this/Signal})
+		TGbyr6Q4orT2i7AQu, 2020-11-12T11:47:02 (inv1ok,incorrect,check,)
+			8cjSgvygK4ypLh7ZQ, 2020-11-12T11:47:16 (inv1ok,incorrect,check,)
+				98syxPkkEEHzgLc5c, 2020-11-12T12:07:53 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Track})
+					qoFG6oAAQuMfmL6jc, 2020-11-12T12:18:36 (inv1ok,incorrect,check,)
+	7vQhcpFpPpLucssjN, 2020-11-12T13:09:36 (inv2ok,correct,check,)
+	yEhKoTKM98uPBduXn, 2020-11-12T13:14:15 (inv1ok,correct,check,)
+		L5n2ZzrbGWBWeGWWR, 2020-11-12T13:14:17 (inv2ok,correct,check,)
+			S5GWAKYWeb7xQNeNC, 2020-11-12T13:14:19 (inv3ok,correct,check,)
+	xbj2FeWBKhN4RcFuj, 2020-11-12T14:37:35 (inv1ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Signal->this/Signal} Right type = {this/Track->this/Track})
+		nF6xtnCXTuPscvRRM, 2020-11-12T14:37:46 (inv1ok,incorrect,check,)
+			PTP7EJbK6wFkXax8W, 2020-11-12T14:38:47 (inv1ok,incorrect,check,)
+				f73yyc6tddtvki248, 2020-11-12T14:39:46 (inv1ok,correct,check,)
+					zxwd7etfyCn4Hq6Dt, 2020-11-12T14:40:04 (inv1ok,incorrect,check,)
+						xuKZNm7aEDceyFBqq, 2020-11-12T14:40:07 (inv1ok,correct,check,)
+	BfsXMmbgW7xP2pdob, 2020-11-12T14:38:08 (inv1ok,correct,check,)
+		8wr77WenepDDPt2Ey, 2020-11-12T14:38:33 (inv1ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Track->this/Track} Right type = {this/Signal->this/Signal})
+			s4rW3svjPFmx5ebPa, 2020-11-12T14:38:51 (inv1ok,incorrect,check,)
+				mevsccw6La3qafzaP, 2020-11-12T14:39:44 (This must be a unary set, but instead it has the following possible type(s): {univ->univ})
+					9DdweWLNqmBZoAmmY, 2020-11-12T14:40:55 (in can be used only between 2 expressions of the same arity. Left type = {univ} Right type = {this/Signal->this/Signal})
+						jCzqHTpAdkWu93KP8, 2020-11-12T14:41:24 (inv1ok,incorrect,check,)
+							d2gWJxaMBjjLpXWey, 2020-11-12T14:42:06 (inv1ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Track->univ} Right type = {this/Signal->this/Signal})
+								nHudAS8vTGKDPdMYu, 2020-11-12T14:43:55 (inv1ok,correct,check,)
+	DSMwrAuu9GSwit86q, 2020-11-12T16:54:32 (inv1ok,correct,check,)
+		M7QPLZdKrygGHFdZa, 2020-11-12T16:56:19 (inv1ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Track->this/Track} Right type = {this/Signal->this/Signal})
+			8tZzfaEMCaX47WJJe, 2020-11-12T16:56:31 (inv1ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Signal->this/Signal} Right type = {this/Track->this/Track})
+				Q5DmF9267XhwHgf7z, 2020-11-12T16:57:02 (inv1ok,incorrect,check,)
+					XJPZTTtLcGnF2tGbK, 2020-11-12T16:57:55 (inv1ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Signal->this/Signal} Right type = {this/Track->this/Track})
+						pq6jFQHj33LoWD5Tn, 2020-11-12T16:58:08 (inv1ok,incorrect,check,)
+							5zyZgDE9w6QLgecAg, 2020-11-12T16:58:23 (inv1ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Track->this/Track} Right type = {this/Signal->this/Signal})
+								yL24AzFDA9LQB86sD, 2020-11-12T16:58:34 (inv1ok,incorrect,check,)
+									exaANt2FcnerFusme, 2020-11-12T16:58:52 (inv1ok,incorrect,check,)
+										8T4jYwDnynXyJLXNz, 2020-11-12T16:59:30 (inv1ok,incorrect,check,)
+											guH6eobB8Ebgx9po4, 2020-11-12T16:59:48 (inv1ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Track->this/Track} Right type = {this/Signal->this/Signal})
+												GA4mSrGEEGTpLmbEk, 2020-11-12T17:13:23 (inv1ok,correct,check,)
+													qKfHfPzvYXFnMeH7P, 2020-11-12T17:17:35 (inv3ok,correct,check,)
+														SoKGohJo4Kg6HdT3d, 2020-11-12T17:20:21 (inv2ok,incorrect,check,)
+															e7yodCRe8B4sb6fLN, 2020-11-12T17:20:31 (inv2ok,correct,check,)
+	abPEnekgg2B5dQbBi, 2020-11-12T16:58:21 (inv1ok,incorrect,check,)
+		K5zFF2XxkfQF7wqGf, 2020-11-12T16:59:34 (inv1ok,incorrect,check,:> is irrelevant because the result is always empty. Left type = {this/Track->this/Signal} Right type = {this/Track})
+			xn9MSLAFK2Lm8WuQz, 2020-11-12T17:00:06 (inv1ok,incorrect,check,)
+				87AFu8z57APGSjKpW, 2020-11-12T17:00:13 (inv1ok,incorrect,check,)
+					QkJcHW7gg5syRtcp5, 2020-11-12T17:01:33 (inv1ok,incorrect,check,)
+						W4oucMGoHtqSyPk7K, 2020-11-12T17:02:09 (inv1ok,incorrect,check,)
+							eDJjKhgoFTHgjE7n8, 2020-11-12T17:02:38 (The name "x" cannot be found.)
+								bTdLmkk77gmvL5x2G, 2020-11-12T17:02:45 (inv1ok,incorrect,check,)
+									X8NDdpFiSsteruToM, 2020-11-12T17:03:15 (- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {univ->univ} Right type = {none})
+										mxEBR9sKFpM4rPA5E, 2020-11-12T17:03:31 (inv1ok,incorrect,check,- is irrelevant since the right expression is redundant. Parent's relevant type = {this/Track->this/Track} Left type = {univ->univ} Right type = {none->none})
+											PyS2m5A4bQARK2JDu, 2020-11-12T17:06:47 (inv1ok,incorrect,check,)
+												XN3FN6feSptsnX2a9, 2020-11-12T17:07:06 (inv1ok,incorrect,check,)
+													nsFmjxhuvdvaCEXNM, 2020-11-12T17:09:08 (inv1ok,incorrect,check,)
+														kqJSaTBEctqyYrtQ2, 2020-11-12T17:10:23 (inv1ok,incorrect,check,)
+															Gngc5SQTmzw7FmgtC, 2020-11-12T17:11:19 (inv1ok,incorrect,check,)
+																oGXfCBQnK7rda5iNq, 2020-11-12T17:11:42 (inv1ok,incorrect,check,)
+																	nnt9YZuwJ7Qb2Dn6j, 2020-11-12T17:13:03 (inv1ok,incorrect,check,)
+																		JoiDWuwmtocaKftH4, 2020-11-12T17:15:17 (inv1ok,incorrect,check,)
+																			JiCv25GqMtnFBssic, 2020-11-12T17:15:43 (inv1ok,correct,check,)
+																				WufrnWFZNemrZKXaw, 2020-11-12T17:16:43 (inv1ok,incorrect,check,)
+																					37nwhibSMTwor4ghC, 2020-11-12T17:17:06 (in can be used only between 2 expressions of the same arity. Left type = {univ} Right type = {this/Signal->this/Signal})
+																						zbQWf6ZWkZqkQ8cqR, 2020-11-12T17:17:20 (inv1ok,incorrect,check,)
+																							Go9cME6xi6gxrnxLY, 2020-11-12T17:17:46 (in can be used only between 2 expressions of the same arity. Left type = {univ} Right type = {this/Signal->this/Signal})
+																								n2izrNgaovcZc6nJw, 2020-11-12T17:18:11 (in can be used only between 2 expressions of the same arity. Left type = {univ} Right type = {this/Signal->this/Signal})
+																									sc8QMZQqY8d827WNn, 2020-11-12T17:18:37 (inv1ok,incorrect,check,)
+																										i63n9iezk2xSBiFy3, 2020-11-12T17:19:18 (The name "State" cannot be found.)
+																											5gxSPmCX6cnjRurWg, 2020-11-12T17:19:36 (in can be used only between 2 expressions of the same arity. Left type = {univ} Right type = {this/Signal->this/Signal})
+																												kQB7u3a9Mkx9CquJ3, 2020-11-12T17:19:48 (in can be used only between 2 expressions of the same arity. Left type = {univ} Right type = {this/Signal->this/Signal})
+	6GdQ6Soei4Ek3TCWq, 2020-11-12T17:09:01 (inv1ok,correct,check,)
+		HLCBEZ3drN5f9SNPo, 2020-11-12T17:09:03 (inv2ok,correct,check,)
+			zseQcryZN2dbMoxHT, 2020-11-12T17:09:06 (inv3ok,correct,check,)
+	f3qyCMBahzx4EPFSC, 2020-11-12T17:46:01 (inv2ok,correct,check,)
+		mkiJcHtwTn3Wryuoe, 2020-11-12T17:46:09 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Track})
+			n8BCJgnPhipHWNaD4, 2020-11-12T17:46:21 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Track})
+	cGto2YFCqvn7LWqrG, 2020-11-13T12:16:47 (inv1ok,correct,check,)
+		hWpbmff7DeqMSwR79, 2020-11-13T12:18:01 (The name "t" cannot be found.)
+			ToKwBRdtfvNA7BpbJ, 2020-11-13T12:18:06 (The name "track" cannot be found.)
+				4sprq3FpKEj6s8ban, 2020-11-13T12:18:13 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+					ZSvEGiXcAiMwMJi4K, 2020-11-13T12:18:40 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+	KdYnmaMLYdMKsZcui, 2020-11-13T23:35:14 (inv1ok,correct,check,)
+		dpittKpeR8N8MP4GH, 2020-11-13T23:37:03 (inv1ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Signal->this/Signal} Right type = {this/Track->this/Track})
+			NwtDgsPHTvDCmRGPv, 2020-11-13T23:37:45 (inv1ok,correct,check,)
+				WxdF3xXnythuFZxGE, 2020-11-13T23:39:33 (inv2ok,correct,check,)
+					scZCz3hBByDQXdKmn, 2020-11-13T23:45:28 (inv3ok,incorrect,check,)
+						pFzPHL6bbWLfH5jSr, 2020-11-13T23:46:03 (inv3ok,correct,check,)
+							sWmA8mNovM2KbzqFE, 2020-11-13T23:46:16 (The name "t" cannot be found.)
+								fmvNahyEx3f83dPAD, 2020-11-13T23:46:20 (inv3ok,correct,check,)
+									aEQ85oHuAC66mmiNz, 2020-11-13T23:49:16 (This must be a unary set, but instead it has the following possible type(s): {this/Track->this/Track})
+										oAX2QXEhuWabGsimp, 2020-11-13T23:49:46 (This must be a unary set, but instead it has the following possible type(s): {this/Track->this/Track})
+											L8ujEMaM9qPdkWafb, 2020-11-13T23:50:12 (This must be a unary set, but instead it has the following possible type(s): {this/Track->this/Track})
+												EJFHBmyu3K3iWK6F9, 2020-11-13T23:50:33 (inv2ok,incorrect,check,)
+													TMfFbuMWTkJDZxrmD, 2020-11-13T23:50:47 (inv2ok,incorrect,check,)
+														HTXt5gz6kcCZnq5b8, 2020-11-13T23:52:10 (inv2ok,correct,check,)
+															pvPeRRyiYyXJxDWPw, 2020-11-13T23:55:49 (inv3ok,correct,check,)
+																MA2cNTm3PmgXSdfgk, 2020-11-13T23:57:01 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track->this/Signal})
+																	wiZK4Y8La6bLjbbD7, 2020-11-13T23:57:42 (inv3ok,incorrect,check,)
+																		BnG7TpDHzTL2RnubB, 2020-11-13T23:58:30 (inv3ok,incorrect,check,)
+																			cTn6kSAb82nJstJWz, 2020-11-14T00:00:34 (inv3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Track->this/Track} Right type = {this/Signal->this/Signal})
+																				k8LMXF8g4JqfsjnEW, 2020-11-14T00:00:44 (inv3ok,incorrect,check,)
+																					cTFJvQswgH4CmWBP6, 2020-11-14T00:01:04 (inv3ok,incorrect,check,)
+																						dbtMzQPXpntELW4P3, 2020-11-14T00:01:26 (This expression failed to be typechecked line 26, column 8, filename=/tmp/alloy_heredoc3950469305616615774.als)
+																							X4sneggjGjzmL95eE, 2020-11-14T00:01:39 (inv2ok,correct,check,)
+																								uj44GqvXPB9SgWEEQ, 2020-11-14T00:02:05 (inv3ok,incorrect,check,)
+																									K5rWkz8rnJJyHHyFj, 2020-11-14T00:02:13 (inv3ok,incorrect,check,)
+																										KH38dPMBxLgWYe29Q, 2020-11-14T00:02:23 (inv3ok,incorrect,check,)
+																											ekd7QmYv6PoAzxZvr, 2020-11-14T00:02:32 (inv3ok,incorrect,check,)
+	4Y2LQdDy6xBZdchee, 2020-11-16T23:53:31 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Track})
+		LnA6XAoYGGwcuopc8, 2020-11-16T23:53:40 (inv1ok,incorrect,check,)
+			oQfWMoNzzF4WLxTg7, 2020-11-16T23:54:02 (The name "t" cannot be found.)
+				S8xP3aEA7PTZcHQZ5, 2020-11-16T23:54:08 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Signal} Right type = {this/Track->this/Signal})
+	FqNaK83gFwKdgGRsv, 2020-11-17T17:43:58 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Signal} Right type = {this/Track->this/Track})
+		eus7aPMangnp2Wpnz, 2020-11-17T17:44:12 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+			x4hf6sXPJgaTJNhi8, 2020-11-17T17:45:15 (This cannot be a legal relational join where left hand side is this/Signal (type = {this/Signal}) right hand side is s (type = {this/Signal}))
+				yCgaqshbkWgT3pDf8, 2020-11-17T17:45:25 (inv1ok,correct,check,)
+					t97PfvX2Gjw42LK88, 2020-11-17T17:46:25 (inv1ok,incorrect,check,)
+						fJkMAHtF5C6rFhEcn, 2020-11-17T17:46:40 (inv1ok,incorrect,check,)
+							NTudT4TQfvAXZBABY, 2020-11-17T17:46:56 (inv1ok,correct,check,)
+	vey2rXipHiXMGKY28, 2020-11-18T20:25:38 (inv1ok,correct,check,)
+		TaqFfNCM93M53mMw9, 2020-11-18T20:32:23 (inv2ok,incorrect,check,)
+			pxngxfWFdCNgwnyRv, 2020-11-18T20:38:39 (inv2ok,incorrect,check,)
+				MpLmQCjHGFhB5CBqk, 2020-11-18T20:39:33 (inv2ok,incorrect,check,)
+					WxDtau3uwkDGZtacA, 2020-11-18T20:41:40 (inv2ok,incorrect,check,)
+						R38THPeoaq3tDuRwN, 2020-11-18T21:00:29 (inv2ok,correct,check,)
+	L2aWEKXuKMvtQYgBH, 2020-11-19T11:19:45 (inv1ok,incorrect,check,This variable is unused.)
+		gnDkft7TAgRBHWjEz, 2020-11-19T11:19:51 (inv1ok,incorrect,check,)
+			QGGgejZH5La6zs5F5, 2020-11-19T11:20:30 (inv1ok,correct,check,)
+				49BCwjzea32WbgGHk, 2020-11-19T11:23:07 (inv2ok,incorrect,check,)
+					RWqwbYLb5YvPwKM5x, 2020-11-19T11:25:45 (inv2ok,incorrect,check,)
+						z6JBy2vZ8tRe9HkF7, 2020-11-19T11:26:21 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+							HT9k42vppTQnkqkKw, 2020-11-19T11:26:25 (inv2ok,incorrect,check,)
+								Q3dHgFfyEjG9FNdmf, 2020-11-19T11:28:01 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Track})
+									qPcNNFy5EaJ8vu2Cx, 2020-11-19T11:28:13 (inv2ok,incorrect,check,)
+										9W6EoxQSvzvez5yG3, 2020-11-19T11:29:56 (The name "i" cannot be found.)
+											EmuinJeWdLP5W5XZX, 2020-11-19T11:30:02 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+												WjdjyAfRruyNngxiY, 2020-11-19T11:30:08 (inv3ok,incorrect,check,)
+													D2AghQQ75HuN9bX7G, 2020-11-19T11:31:34 (inv3ok,incorrect,check,)
+														XkEMkYAEkuzuHvYp8, 2020-11-19T11:37:49 (inv3ok,incorrect,check,)
+															54br7hypZGzRgavwo, 2020-11-19T11:38:26 (inv3ok,incorrect,check,)
+	86dy4nJY8qpzG8aPo, 2020-11-24T02:57:01 (inv1ok,correct,check,)
+		frDbxFvCQM5DPRcSh, 2020-11-24T03:03:42 (The name "Junctions" cannot be found.)
+			Y23DQQCesiTxxdMbC, 2020-11-24T03:03:51 (inv2ok,incorrect,check,This variable is unused.)
+				5NS2B4gxiziCHgexJ, 2020-11-24T03:04:05 (This cannot be a legal relational join where left hand side is j (type = {this/Junction}) right hand side is this/Track (type = {this/Track}))
+					r3w2esh4GJEQZRiNC, 2020-11-24T03:06:15 (inv2ok,incorrect,check,)
+	6dRLKZkcXcxwarGe8, 2020-11-24T13:04:32 (inv1ok,incorrect,check,)
+		m2LRGWwnJzJXdv6xJ, 2020-11-24T13:04:37 (inv1ok,correct,check,)
+	WTTifBx6BvmRQNyCW, 2020-11-24T16:18:28 (inv1ok,correct,check,)
+		zBqR7vpFqCh2hWATF, 2020-11-24T16:22:09 (inv2ok,correct,check,)
+			xcHCtBQnFfNbt3tmC, 2020-11-24T16:22:36 (The name "t" cannot be found.)
+				xzBNhcoA9orWADMs8, 2020-11-24T16:22:49 (inv2ok,incorrect,check,)
+	3pHykN8duQXWyD8w9, 2020-11-25T02:55:37 (inv2ok,correct,check,)
+		q7cp3yAy63dKza5ns, 2020-11-25T03:00:25 (inv3ok,incorrect,check,)
+			jpawtM7icMnpH8M5e, 2020-11-25T03:08:28 (inv3ok,correct,check,)
+	jj9EnJaF28wkNET2v, 2020-11-26T05:20:17 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+		pa4aHhEMQmFWZWr9D, 2020-11-26T05:21:32 (inv1ok,incorrect,check,)
+			Botn3W2JoeBw39eMW, 2020-11-26T05:22:08 (inv1ok,correct,check,)
+				YSbEs7TprGvPyg9Fo, 2020-11-26T05:29:30 (inv2ok,incorrect,check,)
+					MaWD4hHYXLMW8P6Co, 2020-11-26T05:31:53 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+						u6dWtMbg9uLTNtrN8, 2020-11-26T05:39:22 (inv2ok,incorrect,check,)
+							JeExBex2HYbvmWhhn, 2020-11-26T05:40:02 (inv2ok,incorrect,check,)
+								5jrQQBNodXL5Xixqk, 2020-11-26T05:41:12 (inv2ok,incorrect,check,)
+									2jWY5M2CqSRSk4bgj, 2020-11-26T05:41:21 (inv2ok,incorrect,check,)
+										aYnrYRL6hDyEbqybb, 2020-11-26T05:44:49 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+											F4CYFkWDErkK2u3sK, 2020-11-26T05:46:54 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+												yEpQFmgBmP3Zqu7BF, 2020-11-26T05:49:40 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+													om5dfhPX3bmBask9e, 2020-11-26T05:49:52 (inv3ok,incorrect,check,)
+														FNrAwPaQvCT49Mxb5, 2020-11-26T05:50:37 (inv3ok,incorrect,check,)
+															85ZwTZNdPsfjDG9Bh, 2020-11-26T05:50:49 (inv3ok,incorrect,check,)
+																tR9ukdJJAM2jmWMZM, 2020-11-26T05:53:07 (inv3ok,incorrect,check,)
+																	koEeHK53T3Hy7EPZt, 2020-11-26T05:53:26 (inv3ok,incorrect,check,)
+																		eXPKEjkeFwtDA3XmD, 2020-11-26T05:57:31 (inv2ok,incorrect,check,)
+																			HJkZR2vSeuFXsBCmk, 2020-11-26T05:58:33 (inv2ok,incorrect,check,)
+																				r7qToZnWWzHaaX8Yp, 2020-11-26T05:59:04 (inv2ok,incorrect,check,)
+																					Wfkdnpeb4fq2eu7en, 2020-11-26T06:05:27 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+																						Xch3jSmjYzd3e9Kh6, 2020-11-26T06:05:32 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+																							zaWQWuEkz7cag7qQ6, 2020-11-26T06:06:02 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+																								dAMSaEGGPZ2fAfQ3C, 2020-11-26T06:06:17 (inv3ok,incorrect,check,)
+																									q5LBQiC2cGdKhRFtD, 2020-11-26T06:08:52 (inv3ok,incorrect,check,)
+																										R8DYMSxgQjwdkWjDF, 2020-11-26T06:09:05 (inv3ok,incorrect,check,)
+																											5c4KsYpR7SJM8XDRY, 2020-11-26T06:09:35 (inv3ok,incorrect,check,)
+																												KQzvJRGjWaZNFZK2h, 2020-11-26T06:10:15 (inv3ok,incorrect,check,)
+																													5upRDQywnkzBqg3va, 2020-11-26T08:54:42 (inv3ok,incorrect,check,)
+																														JMFnhZe4opg7Z4nL6, 2020-11-26T08:55:15 (inv2ok,incorrect,check,)
+																															yYwxjrTgwLGFGxkhh, 2020-11-26T10:47:08 (inv2ok,incorrect,check,)
+																																JpYmhpZFmpfJx6iLo, 2020-11-26T10:49:38 (inv3ok,incorrect,check,)
+																																	2B9kTxChgJka2uMAN, 2020-11-26T11:43:06 (There are 1 possible tokens that can appear here: ))
+																																		zRTG8Fv6ipEDQnqxL, 2020-11-26T11:43:17 (inv2ok,incorrect,check,)
+																																			6cbDBcQDEFZpSuMEP, 2020-11-26T11:44:25 (inv2ok,incorrect,check,)
+																																				fKE3AQp86pJ2qQjX3, 2020-11-26T11:44:40 (inv2ok,incorrect,check,)
+																																					Tf4R7QMW3aLSAJRLy, 2020-11-26T11:45:46 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																						WxYadvDvR5mKZbosX, 2020-11-26T11:46:04 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																							eGGhpdH3M8J2ubgKo, 2020-11-26T11:46:10 (There are 1 possible tokens that can appear here: ')
+																																								sFMEDijQxwPwvWpRc, 2020-11-26T11:46:23 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																									GJK2dfYGAuxvTa6HL, 2020-11-26T11:46:31 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																										qdjnfxCasdEoRLJoP, 2020-11-26T11:46:42 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																											uYYrTFHp9okiwTGpa, 2020-11-26T11:47:21 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+	p2QJAWxR59QknFEM2, 2020-11-26T18:47:13 (inv1ok,incorrect,check,)
+		PJcNFnPLWuensXbKu, 2020-11-26T18:47:22 (inv1ok,incorrect,check,)
+			B6AiJ6DY5bGwXRNvn, 2020-11-26T18:47:32 (This cannot be a legal relational join where left hand side is this/Track (type = {this/Track}) right hand side is s (type = {this/Signal}))
+				p7Sy42ekdJHMXmKdH, 2020-11-26T18:47:55 (This cannot be a legal relational join where left hand side is s (type = {this/Signal}) right hand side is this/Track (type = {this/Track}))
+					dzgJ7BTfTm26nH8m5, 2020-11-26T18:48:17 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Signal} Right type = {this/Track->this/Signal})
+						mwJJ7LGRkhtCeytWM, 2020-11-26T18:48:32 (This cannot be a legal relational join where left hand side is this/Signal (type = {this/Signal}) right hand side is t (type = {this/Track}))
+							opDnnDPov4k5QRGZp, 2020-11-26T18:49:03 (inv1ok,incorrect,check,)
+								wuZazJFixMAoAc8BT, 2020-11-26T18:49:30 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+									RnNAiwrac39m3KCEH, 2020-11-26T18:49:39 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Signal} Right type = {this/Track->this/Signal})
+										KKkpvAD7HbShpFZm2, 2020-11-26T18:49:47 (inv1ok,correct,check,)
+											9seHPCW3sT7WXLpPK, 2020-11-26T18:51:12 (inv2ok,incorrect,check,)
+												k6rjm8cxSk22ikLhL, 2020-11-26T18:51:19 (inv2ok,incorrect,check,)
+													hAqLKFrqBmMZt7L9A, 2020-11-26T18:51:45 (inv2ok,incorrect,check,)
+														HmcmD8nuF9jogambt, 2020-11-26T18:52:34 (inv2ok,incorrect,check,)
+															iyJAsGEtB4kBJ6aof, 2020-11-26T18:52:40 (inv2ok,incorrect,check,)
+																M8v6vPayr3ZAXY7ZB, 2020-11-26T18:53:26 (inv2ok,incorrect,check,)
+																	JCn4XavepmCpc8x2F, 2020-11-26T18:53:43 (inv2ok,incorrect,check,)
+																		4upE9HmqusFHYKbAn, 2020-11-26T18:54:10 (inv2ok,incorrect,check,)
+																			zBnaeTP2YAsNJNg9Z, 2020-11-26T18:54:20 (inv2ok,incorrect,check,)
+																				iomALLXfSYuFyN6dt, 2020-11-26T18:54:47 (inv2ok,incorrect,check,)
+																					iFBPvc8JbSWtZjEce, 2020-11-26T18:55:17 (inv2ok,incorrect,check,)
+																						hPBbXkeso3X2g3kYo, 2020-11-26T18:56:04 (inv2ok,incorrect,check,)
+																							LjwEZRAfTgF8jB3gr, 2020-11-26T18:57:23 (inv3ok,incorrect,check,This variable is unused.)
+																								iFLdbKXWEwFSxixxw, 2020-11-26T18:57:31 (inv3ok,incorrect,check,)
+																									nxXf9MS6mZnEGZK6d, 2020-11-26T19:01:23 (inv3ok,incorrect,check,)
+																										Yyj5f2bJNP7ivv5Q3, 2020-11-26T19:01:52 (inv2ok,incorrect,check,)
+																											iXFrJyn3tNqpEREBA, 2020-11-26T19:03:42 (inv3ok,correct,check,)
+																												o95uoBGdTsCciJ758, 2020-11-26T19:03:53 (inv3ok,correct,check,)
+																													2LhWzJZQGnQdbowQt, 2020-11-26T19:03:58 (inv2ok,incorrect,check,)
+																														kpRW6rMhBMK3oTstB, 2020-11-26T19:04:22 (inv2ok,incorrect,check,)
+																															gQseAYuwXgf54iWQK, 2020-11-26T19:04:29 (inv2ok,incorrect,check,)
+																																jd88WoBaCkWAsHf3T, 2020-11-26T19:04:36 (inv2ok,incorrect,check,)
+																																	WnhoQ4FcSKkhnYxdR, 2020-11-26T19:04:58 (inv2ok,incorrect,check,)
+																																		qAMZsw57hssbPcXbb, 2020-11-26T19:06:19 (inv2ok,incorrect,check,)
+																																			Tye2hJ5wEBQjJzuBs, 2020-11-26T19:06:46 (inv2ok,correct,check,)
+																																				rtTs9ua952wccHXLB, 2020-11-26T19:07:03 (inv2ok,incorrect,check,)
+																																					ushAdJkySa2iMR6o3, 2020-11-26T19:07:19 (inv2ok,incorrect,check,)
+																																						eC378NbJNq7gG97vo, 2020-11-26T19:07:37 (inv2ok,incorrect,check,)
+																																							u4sqrn2GXh3Fnz73z, 2020-11-26T19:07:45 (inv2ok,incorrect,check,)
+																																								2HJDFrpXdiqGTjnKm, 2020-11-26T19:08:04 (inv2ok,incorrect,check,)
+																																									dZ4ytaQ4noHRkg59R, 2020-11-26T19:08:12 (inv2ok,incorrect,check,)
+																																										HLGhAaia6yTfst5hJ, 2020-11-26T19:10:54 (inv2ok,correct,check,)
+																																											xf8RZAFajexeuf2fs, 2020-11-26T19:11:05 (inv2ok,correct,check,)
+																																							3zrpobuPXw7Ea9fcs, 2020-11-26T19:07:45 (inv2ok,incorrect,check,)
+	4BoReaXCaLM79sDmx, 2020-11-30T20:07:15 (inv1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Signal} Right type = {this/Track->this/Signal})
+		v8eDJmxw2nPMZBWRy, 2020-11-30T20:07:40 (inv1ok,correct,check,)
+			mBAQbGyyenurM4ry8, 2020-11-30T20:10:14 (inv1ok,correct,check,)
+				jLt9aQANaH5jFKWY9, 2020-11-30T20:10:18 (inv2ok,incorrect,check,)
+					2aezPHLR7bctvpeqf, 2020-11-30T20:10:28 (inv2ok,incorrect,check,)
+						aoDmfNJadcgKhFbB2, 2020-11-30T20:11:55 (inv2ok,incorrect,check,)
+							Zvg2fuDF3Pw7Ae3SE, 2020-11-30T20:12:08 (inv2ok,incorrect,check,)
+								6t7NM4NLjKhodQzDq, 2020-11-30T20:12:25 (inv2ok,incorrect,check,)
+									RQas2HJDFEFXjrv6t, 2020-11-30T20:12:56 (inv2ok,correct,check,)
+										W9GjXTgpMtENbBTJH, 2020-11-30T20:14:39 (inv2ok,correct,check,)
+											Bqcj4kfjJMcyXdJsQ, 2020-11-30T20:14:42 (inv3ok,incorrect,check,)
+												w7eLfuGL3yza3zafA, 2020-11-30T20:16:58 (inv3ok,correct,check,)
+	qndvgWuSMY9JPts7X, 2020-12-04T20:29:36 (This cannot be a legal relational join where left hand side is this/Track (type = {this/Track}) right hand side is s (type = {this/Signal}))
+		oc6bvNfFKyvav5z7L, 2020-12-04T20:30:01 (inv1ok,incorrect,check,)
+			QqtQeFkPfZfucu3yF, 2020-12-04T20:30:47 (inv1ok,incorrect,check,)
+				o8NCJufeRW5AhpR6y, 2020-12-04T20:34:21 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+					s83SZCjJDTE9pXcT7, 2020-12-04T20:34:28 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+						FrSopQwYu8LNdRggu, 2020-12-04T20:34:39 (inv1ok,incorrect,check,)
+							iZqda3iPPgvBgvu6y, 2020-12-04T20:35:32 (This expression failed to be typechecked line 17, column 39, filename=/tmp/alloy_heredoc18187294043819249404.als)
+								SEJLeYcKvhot5rYmW, 2020-12-04T20:35:44 (There are 1 possible tokens that can appear here: ))
+									uJarxDNrpu9PSfGBc, 2020-12-04T20:35:49 (This expression failed to be typechecked line 17, column 39, filename=/tmp/alloy_heredoc15495476555476461775.als)
+										J5Xk9c8Z8MLH5hzrs, 2020-12-04T20:36 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+											tYQfjvcwzqKhMpYdX, 2020-12-04T20:36:19 (This expression failed to be typechecked line 17, column 34, filename=/tmp/alloy_heredoc17237613465135290891.als)
+												fHBYTCXvoS2B95j6q, 2020-12-04T20:37:45 (inv1ok,incorrect,check,)
+													hpmAhELW4Lubur9Rm, 2020-12-04T20:37:56 (This expression failed to be typechecked line 17, column 21, filename=/tmp/alloy_heredoc16844940418110637164.als)
+														uhzih7B9RTeBGy2m8, 2020-12-04T20:38:05 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+															EXxZxWmnX4Hdk3uNm, 2020-12-04T20:39:17 (inv1ok,incorrect,check,)
+																LdEEbABuGtMojpEbW, 2020-12-04T20:40:50 (inv1ok,incorrect,check,)
+																	tArsj6wXa8Jd6Pojk, 2020-12-04T20:42:32 (inv1ok,incorrect,check,)
+																		o5MoMX39347YYujNi, 2020-12-04T20:43:30 (inv1ok,correct,check,)
+																			q5TobCtt72faQbQbk, 2020-12-04T20:51:13 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																				GJw7FyjCCrYcPkDAT, 2020-12-04T20:51:26 (in can be used only between 2 expressions of the same arity. Left type = {this/Track->this/Junction} Right type = {this/Track})
+																					gmzYHLEShycm2uufp, 2020-12-04T20:51:40 (This expression failed to be typechecked line 24, column 38, filename=/tmp/alloy_heredoc15374625502351910640.als)
+																						3AXYQczb885MTg5C9, 2020-12-04T20:51:47 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																							kp67jZLu3aGwccTNA, 2020-12-04T20:52:02 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																								w23a26CKpzTpruZgy, 2020-12-04T20:52:08 (inv2ok,incorrect,check,This variable is unused.)
+																									RAx7fSojYWxFASFWD, 2020-12-04T20:53:51 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																										4Ljz7EoS9TYNAGuPr, 2020-12-04T20:53:58 (in can be used only between 2 expressions of the same arity. Left type = {this/Track->this/Junction} Right type = {this/Track})
+																											oMEqeqg7i9uf7Q5dS, 2020-12-04T20:54:08 (This expression failed to be typechecked line 24, column 36, filename=/tmp/alloy_heredoc11034376979797191475.als)
+																												v5bwoygZnaRAFcQF8, 2020-12-04T20:54:20 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																													pCxu23fC6ihdppsCL, 2020-12-04T20:54:31 (This expression failed to be typechecked line 24, column 36, filename=/tmp/alloy_heredoc16783572208507547196.als)
+																														yqEvG97KF4SQMqWcS, 2020-12-04T20:54:38 (inv2ok,incorrect,check,)
+																															YczFuCBakWWppxRMt, 2020-12-04T20:59:03 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+																																NC2832seSy8Nfw9Ln, 2020-12-04T20:59:09 (inv2ok,incorrect,check,)
+																																	XNHo6zSap9LT3fQx4, 2020-12-04T21:00:58 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																		imrws8RQAnXg8ck7W, 2020-12-04T21:02:15 (inv2ok,incorrect,check,)
+																																			ZeKrTZwv747PTm7NE, 2020-12-04T21:04:57 (inv2ok,incorrect,check,)
+																																				KrPLdR66KN36tCZ22, 2020-12-04T21:05:45 (inv2ok,incorrect,check,)
+																																					tMYsTRSM7vg6e8Hbm, 2020-12-04T21:07:35 (inv2ok,incorrect,check,)
+																																						fFLfKCQycb57igiWW, 2020-12-04T21:08:55 (inv2ok,incorrect,check,)
+																																							2iNmykNEWyMK2bDGP, 2020-12-04T21:11:23 (inv2ok,incorrect,check,)
+																																								hAAXRgtPbDmyxzRsh, 2020-12-04T21:11:46 (inv2ok,incorrect,check,)
+																																									sNejCEzbfS6k5ToHe, 2020-12-04T21:11:50 (inv2ok,incorrect,check,)
+																																										xCHeYS55deXd9f7oZ, 2020-12-04T21:12:16 (inv2ok,incorrect,check,)
+																																											PvNSdfj22u9BpYtvB, 2020-12-04T21:13:04 (inv2ok,incorrect,check,)
+																																												QSdEQMX6jCfmH5F9E, 2020-12-04T21:13:30 (inv2ok,incorrect,check,)
+																																													yX6ogWKLMoYHERdp3, 2020-12-04T21:14:13 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																														ASehEWKoDBKdYmjGh, 2020-12-04T21:14:38 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																															j4xDDPkfe7PTWKGcK, 2020-12-04T21:14:50 (This expression failed to be typechecked line 24, column 25, filename=/tmp/alloy_heredoc17015320361832873836.als)
+																																																geZJTTJLpBZhiHDqJ, 2020-12-04T21:15:31 (This expression failed to be typechecked line 24, column 25, filename=/tmp/alloy_heredoc16981675019251300658.als)
+																																																	a9WfBjnesChgwS8r9, 2020-12-04T21:15:43 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																		33SiDqNjb32kEKA29, 2020-12-04T21:15:54 (inv2ok,incorrect,check,)
+																																																			kNcf88h8C5W8jtNHp, 2020-12-04T21:16:32 (inv2ok,incorrect,check,)
+																																																				uPF7oD7SbrdigfbJn, 2020-12-04T21:17:10 (inv2ok,incorrect,check,)
+																																																					5NmBpjXtQ5w2qQFQ4, 2020-12-04T21:19:19 (This cannot be a legal relational join where left hand side is t1 . (this/Track <: prox) (type = {this/Track}) right hand side is t2 (type = {this/Track}))
+																																																						izQaJ7SXnvYqJ5eBZ, 2020-12-04T21:19:35 (This cannot be a legal relational join where left hand side is t1 . (this/Track <: prox) (type = {this/Track}) right hand side is t2 (type = {this/Track}))
+																																																							o7Po6NFXx5NzSxqzX, 2020-12-04T21:20:09 (This cannot be a legal relational join where left hand side is t1 . (this/Track <: prox) (type = {this/Track}) right hand side is t2 (type = {this/Track}))
+																																																								RrB4XCTsEYTe4ZxLw, 2020-12-04T21:20:15 (inv2ok,incorrect,check,)
+																																																									JDYfbC5piEusPFgmu, 2020-12-04T21:21:27 (inv2ok,incorrect,check,)
+																																																										ei6yYMesWuLKsCAkh, 2020-12-04T21:22:46 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+																																																											MEwyyBbk5eDtnXDak, 2020-12-04T21:22:52 (inv2ok,incorrect,check,)
+																																																												5XnBf5rgo2azKD9SM, 2020-12-04T21:25 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+																																																													HKYQwQYsyupzAGkPd, 2020-12-04T21:25:15 (inv2ok,incorrect,check,)
+																																																														hCWWG533EqrEfToDR, 2020-12-04T21:25:31 (inv2ok,incorrect,check,)
+																																																															LTTozt9Jv8bxTgqgC, 2020-12-04T21:27:20 (inv2ok,incorrect,check,)
+																																																																CrBbhjMGohuwQA9ny, 2020-12-04T21:27:43 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																																																	Y5cZbJH47spraGBsg, 2020-12-04T21:29:31 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																																																		Mw58h4NSMYpaF8d4K, 2020-12-04T21:30:36 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																																																			cFouujoyE78CGrm3T, 2020-12-04T21:31:02 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																																																				MC3AJ3XjLAMqQvjck, 2020-12-04T21:31:09 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																																																					ChtWDXxChJQfXWsZk, 2020-12-04T21:31:14 (inv3ok,incorrect,check,)
+																																																																						cEqgf5PBwGxitzshR, 2020-12-04T21:31:27 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+																																																																							Yhq5M5gCa4GRZdk7M, 2020-12-04T21:31:45 (This cannot be a legal relational join where left hand side is t (type = {this/Track}) right hand side is this/Signal (type = {this/Signal}))
+																																																																								AXxrgbtcp9tkADhyx, 2020-12-04T21:31:58 (inv3ok,incorrect,check,)
+																																																																									YC6MAWD9SunWxwGhY, 2020-12-04T21:33:25 (in can be used only between 2 expressions of the same arity. Left type = {this/Track->this/Junction} Right type = {this/Junction})
+																																																																										Y9G2pWYMucHJoA8Ar, 2020-12-04T21:33:32 (in can be used only between 2 expressions of the same arity. Left type = {this/Track->this/Junction} Right type = {this/Junction})
+																																																																											h3Kkx4zWJBvq5f4Q5, 2020-12-04T21:33:41 (in can be used only between 2 expressions of the same arity. Left type = {this/Track->this/Junction} Right type = {this/Junction})
+																																																																												53rqSh6dsRf5MchiX, 2020-12-04T21:35:04 (inv3ok,incorrect,check,)
+																																																																													7igRLJKDYxbBv5AxM, 2020-12-04T21:36:47 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+																																																																														YL5qmszax38W4uEb3, 2020-12-04T21:37:34 (inv3ok,correct,check,)
+																																																																															9dCZwdoFuDKKBdCkS, 2020-12-04T21:38:50 (inv2ok,incorrect,check,)
+																																																																																HZ9GiMJC9bmpNR4Ce, 2020-12-04T21:40:10 (inv2ok,incorrect,check,)

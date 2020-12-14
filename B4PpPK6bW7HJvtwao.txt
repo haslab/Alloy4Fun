@@ -1,0 +1,637 @@
+B4PpPK6bW7HJvtwao (2020-12-14)
+
+* Meta-data
+Challenge name: unknown
+Creation time: 2020-11-27
+# sub-challenges: 4
+Metric catalog: Example metric catalog
+
+* Overall metric statistics
+Total model entries: 174
+Total executions: 169
+Total shares: 5
+Total error messages: 59
+Total warning messages: 0
+Total solutions: 0
+Total sessions: 17
+Rejected due to server errors: 0
+Total instance entries: 0
+Total link entries: 6
+
+* Scalar metrics
+Number of shared sessions: 4
+Longest session: 31
+Shared models: 5
+Alloy runtime errors: 1
+Incorrect executions: 40
+Correct executions: 71
+
+* Overall metrics
+
+Sessions by length
+4: 3
+5: 1
+6: 1
+7: 0
+8: 3
+9: 3
+10: 0
+11: 0
+12: 2
+13: 0
+14: 2
+15: 0
+16: 0
+17: 1
+18: 0
+19: 0
+20: 0
+21: 0
+22: 0
+23: 0
+24: 0
+25: 0
+26: 0
+27: 0
+28: 0
+29: 0
+30: 1
+
+Sessions by # of solved sub-challenges
+2: 5
+3: 2
+4: 10
+
+Entries over time
+2020-11-27: 0
+2020-11-28: 0
+2020-11-29: 0
+2020-11-30: 0
+2020-12-01: 0
+2020-12-02: 0
+2020-12-03: 0
+2020-12-04: 0
+2020-12-05: 0
+2020-12-06: 0
+2020-12-07: 0
+2020-12-08: 11
+2020-12-09: 158
+2020-12-10: 0
+2020-12-11: 0
+2020-12-12: 0
+2020-12-13: 0
+
+Errors by type
+There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ : 6
+in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}: 1
+This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) : 3
+The name _ cannot be found.: 8
+This must be an integer expression. Instead, it has the following possible type(s): {_}: 9
+This must be a set or relation. Instead, it has the following possible type(s): {_}: 2
+There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ : 4
+Sig "ordering/Ord" is not bound to a legal value during translation. : 1
+There are 1 possible tokens that can appear here: ] : 1
+There are 5 possible tokens that can appear here: enum fun let open pred : 1
+There are 3 possible tokens that can appear here: NAME seq this : 1
+= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}: 1
+The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".: 4
+This must be a formula expression. Instead, it has the following possible type(s): {_}: 9
+There are 8 possible tokens that can appear here: NAME disj exh part private seq this var : 1
+There are 1 possible tokens that can appear here: ) : 3
+There are 3 possible tokens that can appear here: ,  { | : 4
+
+* Overall metrics, classified
+
+Execution results by sub-challenge
+Inv1OK
+	UNSAT: 18
+	SAT: 2
+Inv2OK
+	UNSAT: 19
+	SAT: 22
+Inv3OK
+	UNSAT: 17
+	SAT: 7
+Inv4OK
+	UNSAT: 17
+	SAT: 9
+
+Executions over time classified
+2020-11-27
+	ERROR: 0
+	UNSAT: 0
+	SAT: 0
+2020-11-28
+	ERROR: 0
+	UNSAT: 0
+	SAT: 0
+2020-11-29
+	ERROR: 0
+	UNSAT: 0
+	SAT: 0
+2020-11-30
+	ERROR: 0
+	UNSAT: 0
+	SAT: 0
+2020-12-01
+	ERROR: 0
+	UNSAT: 0
+	SAT: 0
+2020-12-02
+	ERROR: 0
+	UNSAT: 0
+	SAT: 0
+2020-12-03
+	ERROR: 0
+	UNSAT: 0
+	SAT: 0
+2020-12-04
+	ERROR: 0
+	UNSAT: 0
+	SAT: 0
+2020-12-05
+	ERROR: 0
+	UNSAT: 0
+	SAT: 0
+2020-12-06
+	ERROR: 0
+	UNSAT: 0
+	SAT: 0
+2020-12-07
+	ERROR: 0
+	UNSAT: 0
+	SAT: 0
+2020-12-08
+	ERROR: 0
+	UNSAT: 5
+	SAT: 6
+2020-12-09
+	ERROR: 58
+	UNSAT: 66
+	SAT: 34
+2020-12-10
+	ERROR: 0
+	UNSAT: 0
+	SAT: 0
+2020-12-11
+	ERROR: 0
+	UNSAT: 0
+	SAT: 0
+2020-12-12
+	ERROR: 0
+	UNSAT: 0
+	SAT: 0
+2020-12-13
+	ERROR: 0
+	UNSAT: 0
+	SAT: 0
+
+Session results by sub-challenge
+Inv1OK
+	solved: 15
+	unsolved: 2
+Inv2OK
+	solved: 15
+	unsolved: 2
+Inv3OK
+	solved: 14
+	unsolved: 3
+Inv4OK
+	solved: 12
+	unsolved: 5
+
+* Metrics by sub-challenge, classified
+
+Size in 10s of nodes
+
+Inv1OK
+7
+	UNSAT: 0
+	SAT: 2
+8
+	UNSAT: 18
+	SAT: 0
+
+Inv2OK
+7
+	UNSAT: 1
+	SAT: 0
+8
+	UNSAT: 0
+	SAT: 0
+9
+	UNSAT: 17
+	SAT: 21
+10
+	UNSAT: 1
+	SAT: 0
+11
+	UNSAT: 0
+	SAT: 1
+
+Inv3OK
+8
+	UNSAT: 3
+	SAT: 2
+9
+	UNSAT: 3
+	SAT: 2
+10
+	UNSAT: 11
+	SAT: 3
+
+Inv4OK
+11
+	UNSAT: 0
+	SAT: 6
+12
+	UNSAT: 15
+	SAT: 1
+13
+	UNSAT: 2
+	SAT: 2
+
+Number of disj quantifications
+
+Inv1OK
+0
+	UNSAT: 18
+	SAT: 2
+
+Inv2OK
+0
+	UNSAT: 19
+	SAT: 22
+
+Inv3OK
+0
+	UNSAT: 17
+	SAT: 7
+
+Inv4OK
+0
+	UNSAT: 17
+	SAT: 9
+
+Number multiplicity arrows
+
+Inv1OK
+0
+	UNSAT: 18
+	SAT: 2
+
+Inv2OK
+0
+	UNSAT: 19
+	SAT: 22
+
+Inv3OK
+0
+	UNSAT: 17
+	SAT: 7
+
+Inv4OK
+0
+	UNSAT: 17
+	SAT: 9
+
+Number of binary temporal operators
+
+Inv1OK
+0
+	UNSAT: 18
+	SAT: 2
+
+Inv2OK
+0
+	UNSAT: 19
+	SAT: 22
+
+Inv3OK
+0
+	UNSAT: 17
+	SAT: 7
+
+Inv4OK
+0
+	UNSAT: 17
+	SAT: 9
+
+Number of quantifiers
+
+Inv1OK
+5
+	UNSAT: 0
+	SAT: 2
+6
+	UNSAT: 0
+	SAT: 0
+7
+	UNSAT: 18
+	SAT: 0
+
+Inv2OK
+5
+	UNSAT: 1
+	SAT: 0
+6
+	UNSAT: 0
+	SAT: 0
+7
+	UNSAT: 18
+	SAT: 22
+
+Inv3OK
+5
+	UNSAT: 3
+	SAT: 1
+6
+	UNSAT: 0
+	SAT: 0
+7
+	UNSAT: 3
+	SAT: 4
+8
+	UNSAT: 0
+	SAT: 0
+9
+	UNSAT: 11
+	SAT: 2
+
+Inv4OK
+7
+	UNSAT: 17
+	SAT: 9
+
+Number of inverted navigation expressions
+
+Inv1OK
+0
+	UNSAT: 18
+	SAT: 2
+
+Inv2OK
+0
+	UNSAT: 19
+	SAT: 22
+
+Inv3OK
+0
+	UNSAT: 17
+	SAT: 7
+
+Inv4OK
+0
+	UNSAT: 17
+	SAT: 9
+
+Max nested temporal operator level
+
+Inv1OK
+0
+	UNSAT: 18
+	SAT: 2
+
+Inv2OK
+0
+	UNSAT: 19
+	SAT: 22
+
+Inv3OK
+0
+	UNSAT: 17
+	SAT: 7
+
+Inv4OK
+0
+	UNSAT: 17
+	SAT: 9
+
+Number of lone/one quantifiers
+
+Inv1OK
+0
+	UNSAT: 18
+	SAT: 2
+
+Inv2OK
+0
+	UNSAT: 19
+	SAT: 22
+
+Inv3OK
+0
+	UNSAT: 17
+	SAT: 6
+1
+	UNSAT: 0
+	SAT: 0
+2
+	UNSAT: 0
+	SAT: 1
+
+Inv4OK
+0
+	UNSAT: 17
+	SAT: 9
+
+Max nested quantifier level
+
+Inv1OK
+1
+	UNSAT: 18
+	SAT: 2
+
+Inv2OK
+1
+	UNSAT: 19
+	SAT: 22
+
+Inv3OK
+1
+	UNSAT: 6
+	SAT: 5
+2
+	UNSAT: 11
+	SAT: 2
+
+Inv4OK
+1
+	UNSAT: 17
+	SAT: 9
+
+* Derivation tree
+B4PpPK6bW7HJvtwao, 2020-11-27T15:28:19 (model share)
+	6rxjnmYY78v2BWT7Z, 2020-12-08T18:10:40 (Inv1OK,correct,check,)
+		kRMtiNspFtzDEMcy9, 2020-12-08T18:11:14 (Inv1OK,correct,check,)
+			GjY9dmyfaRMqxEXcY, 2020-12-08T18:11:16 (Inv2OK,incorrect,check,)
+				f4fNRkDBMwY3Wy56x, 2020-12-08T18:11:40 (Inv2OK,correct,check,)
+					Qn2gyB6to8bfiFNJY, 2020-12-08T18:12:26 (Inv3OK,correct,check,)
+						Ks7QTrckw388a7QzF, 2020-12-08T18:41:13 (Inv4OK,incorrect,check,)
+							PuzcMEGNjdiBcrRnj, 2020-12-08T18:41:41 (Inv4OK,incorrect,check,)
+								5vJRuQazicCgAZAG8, 2020-12-08T18:41:56 (Inv4OK,incorrect,check,)
+									C5nuQohG64FqCvxZT, 2020-12-08T18:42:10 (Inv4OK,incorrect,check,)
+										e98eg6HQr3fBpB7z8, 2020-12-08T18:43:38 (Inv4OK,incorrect,check,)
+											5MAfNAufNWgJXaro5, 2020-12-08T18:44:32 (Inv4OK,correct,check,)
+												Yz3A9cwB5vPCpm7WQ, 2020-12-08T18:52 (model share)
+													F5vjsyDaPcYjWBtM3, 2020-12-09T11:35:48 (There are 3 possible tokens that can appear here: NAME seq this)
+														45RLiDuY2fyFThjnX, 2020-12-09T11:36:33 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+	6SB5YheXf64CMomdW, 2020-12-09T10:13:46 (Inv1OK,incorrect,check,)
+		33ZPZL3MyR9ucc5BX, 2020-12-09T10:14:21 (Inv1OK,incorrect,check,)
+			NHEf2TFGiYeKTWoKh, 2020-12-09T10:15:02 (Inv1OK,correct,check,)
+				Mnt6RPgQsrJn5eLRq, 2020-12-09T10:16:20 (Inv2OK,incorrect,check,)
+					3jG9qPRKCWJLHwy9A, 2020-12-09T10:16:54 (Inv2OK,incorrect,check,)
+						yf43QgWjNSabzCa7e, 2020-12-09T10:22:43 (Inv2OK,correct,check,)
+							XuDmFospzygssFquB, 2020-12-09T10:23:20 (Inv3OK,correct,check,)
+								2WK8woxmFYpw7y6j6, 2020-12-09T10:27:59 (This must be a formula expression. Instead, it has the following possible type(s): {this/Position})
+									9cwgsMBfnMMzEur9m, 2020-12-09T10:31:16 (Inv4OK,correct,check,)
+	nwHmjfLnbGPYA9FZD, 2020-12-09T10:13:56 (Inv1OK,correct,check,)
+		eQoMCK8FdvdrfCAdj, 2020-12-09T10:14:36 (Inv1OK,correct,check,)
+			cyJrn2i2ru4KiLeqW, 2020-12-09T10:15:15 (Inv2OK,incorrect,check,)
+				wFeoKpMbXg5krcQxX, 2020-12-09T10:15:47 (Inv2OK,incorrect,check,)
+					gKrK9YoFZeMBFSYQi, 2020-12-09T10:16:30 (Inv2OK,incorrect,check,)
+						e97SdRTTGT6t5xTcM, 2020-12-09T10:17:17 (Inv2OK,incorrect,check,)
+							cPCEtTfEd5BBi8ar9, 2020-12-09T10:17:49 (Inv2OK,incorrect,check,)
+								SKfsFwmdRQbNanjzN, 2020-12-09T10:18:13 (Inv2OK,incorrect,check,)
+									JF8Rcsc5MgHJyzxrc, 2020-12-09T10:18:46 (Inv2OK,correct,check,)
+										Pdnu5F2GZzwKHRCRL, 2020-12-09T10:19:02 (Inv2OK,correct,check,)
+											CFJyubdoAH93tybLP, 2020-12-09T10:19:49 (Inv3OK,incorrect,check,)
+												uKwu4yu3TE7iokHta, 2020-12-09T10:20:16 (Inv3OK,correct,check,)
+													LLYE8ZcE6Lfc7vq2a, 2020-12-09T10:27:05 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+														FjjrSP47NTZC9FHpM, 2020-12-09T10:28:48 (There are 1 possible tokens that can appear here: ))
+															qFrdALzBJhGLpQ8rj, 2020-12-09T10:29:50 (There are 1 possible tokens that can appear here: ))
+																7DPjKe2n7iPZsrEFR, 2020-12-09T10:30:21 (There are 1 possible tokens that can appear here: ))
+																	z4XBKbSSAjHNkFeuX, 2020-12-09T10:31:12 (Inv4OK,correct,check,)
+	PSExWGnFttHzXmy9K, 2020-12-09T10:13:58 (The name "component" cannot be found.)
+		QW6ntSi4Q4fxcDLqQ, 2020-12-09T10:14:06 (This must be a formula expression. Instead, it has the following possible type(s): {this/Component})
+			zg6697uscB8LMB698, 2020-12-09T10:14:50 (The name "component" cannot be found.)
+				fQz33kghWQhChubjM, 2020-12-09T10:15 (The name "component" cannot be found.)
+					Zvw6K8nDKYxFYzosr, 2020-12-09T10:15:09 (This must be a formula expression. Instead, it has the following possible type(s): {this/Product})
+						MG97vfvN4w3K3xA2g, 2020-12-09T10:15:25 (This must be a formula expression. Instead, it has the following possible type(s): {this/Component->this/Component->this/Product})
+							7fNKwmYFDPEA2n8KN, 2020-12-09T10:15:33 (This must be a formula expression. Instead, it has the following possible type(s): {this/Product})
+								atDYRHPsiSJLkGMbM, 2020-12-09T10:15:40 (This must be a formula expression. Instead, it has the following possible type(s): {this/Product})
+									fgfvNmZiATrTyFLHr, 2020-12-09T10:16:14 (This cannot be a legal relational join where left hand side is n (type = {this/Component}) right hand side is this/Product (type = {this/Product}))
+										oDE3FGWbr4PGXE3Nj, 2020-12-09T10:16:21 (This cannot be a legal relational join where left hand side is n (type = {this/Component}) right hand side is this/Product (type = {this/Product}))
+											BWihBtZnDppJkRYg4, 2020-12-09T10:17:10 (Inv1OK,correct,check,)
+												3MsTMc5nqcCjtnkEQ, 2020-12-09T10:17:59 (Inv2OK,incorrect,check,)
+													7Av2dhEEMMY4JfB8Z, 2020-12-09T10:18:20 (Inv2OK,incorrect,check,)
+														gudEJBCjmuWWJEuXa, 2020-12-09T10:19:05 (Inv2OK,incorrect,check,)
+															8kphLA9JYssPA3fzd, 2020-12-09T10:19:17 (Inv2OK,correct,check,)
+																g4Ae5TH59NSud3FyB, 2020-12-09T10:19:26 (Inv2OK,correct,check,)
+																	bM3SqE8Jz2vxGP984, 2020-12-09T10:20:57 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+																		Q5tTXDv8hQ4yi22bR, 2020-12-09T10:21:10 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+																			i49XZkTKCkpXkuPM4, 2020-12-09T10:21:37 (The name "robot" cannot be found.)
+																				Ag2m7sjt6RAHrsRDQ, 2020-12-09T10:21:43 (Inv3OK,incorrect,check,)
+																					KKNAmX9oCHAcpoGJc, 2020-12-09T10:22:29 (Inv3OK,correct,check,)
+																						SkK5J3Q6e3FQxQXd8, 2020-12-09T10:23:07 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+																							k6ZRapNKHLPNcDgyz, 2020-12-09T10:23:30 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+																								XyAh9vb6oS7G29cBA, 2020-12-09T10:24:41 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+																									bipiuxbkFydvr2AsW, 2020-12-09T10:25:35 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+																										gtDgRhtC2vQMnn34D, 2020-12-09T10:25:53 (This cannot be a legal relational join where left hand side is n1 (type = {this/Component}) right hand side is this/Position (type = {this/Position}))
+																											YFhfWsXW96CE37mt8, 2020-12-09T10:25:57 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+																												e4bWYs7qwRLqXd3db, 2020-12-09T10:28:48 (There are 1 possible tokens that can appear here: ])
+																													xtGDfNv4nEMBoKito, 2020-12-09T10:28:53 (Inv4OK,incorrect,check,)
+																														gEcX5q6pKTySgqobP, 2020-12-09T10:29:01 (Inv4OK,correct,check,)
+	iY57aAuW2S2ZZ7w8Y, 2020-12-09T10:14:22 (Inv1OK,correct,check,)
+		xt2JJHGtwvztaSC68, 2020-12-09T10:14:50 (Inv2OK,incorrect,check,)
+			LmgiRuwZwfEHabFev, 2020-12-09T10:15:40 (Inv2OK,correct,check,)
+				prZycyp5EqwfiPRbx, 2020-12-09T10:16:46 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+					smWCBRdu3JedRisFF, 2020-12-09T10:16:52 (There are 3 possible tokens that can appear here: ,  { |)
+						JpTuCbYzMMZe8rrey, 2020-12-09T10:16:58 (Inv3OK,correct,check,)
+							fqnm8YrJ474WmT9Pi, 2020-12-09T10:19:44 (Inv2OK,correct,check,)
+								eXx79LQwWLaEFgP4h, 2020-12-09T10:22:30 (Inv3OK,correct,check,)
+									NkZiteQwyPQqBDrRH, 2020-12-09T10:28:56 (Inv4OK,correct,check,)
+	eq8kQ6XgamghjHQqq, 2020-12-09T10:16:35 (This must be a formula expression. Instead, it has the following possible type(s): {this/Product})
+		cCmqdXsYybJQLX6Q2, 2020-12-09T10:16:45 (Inv2OK,incorrect,check,)
+			hchRDc4jt8oCnmXA2, 2020-12-09T10:17:17 (Inv1OK,correct,check,)
+				QDv3wDikbiGnFkaTf, 2020-12-09T10:17:43 (Inv2OK,incorrect,check,)
+					z4YLWFi5JD4STxe2P, 2020-12-09T10:18:13 (Inv2OK,incorrect,check,)
+						H3G9AngDrwzYcwYAW, 2020-12-09T10:18:26 (Inv2OK,incorrect,check,)
+							7bFB8NBYpYuM8gy8q, 2020-12-09T10:29:58 (There are 5 possible tokens that can appear here: enum fun let open pred)
+								woh2PxdfxzDzELtMb, 2020-12-09T10:30:18 (There are 3 possible tokens that can appear here: ,  { |)
+									bB7w6gc86QE6wrhMC, 2020-12-09T10:30:25 (There are 3 possible tokens that can appear here: ,  { |)
+										k92hnvDS9kKMvx7qQ, 2020-12-09T10:30:56 (There are 3 possible tokens that can appear here: ,  { |)
+											YCZsBLbBfb5g6xmgD, 2020-12-09T10:31:23 (The name "c" cannot be found.)
+												RS48DnhG8gSm4fHJr, 2020-12-09T10:31:29 (Inv4OK,correct,check,)
+	pDkMgYcKPiweB27zv, 2020-12-09T10:17:25 (Inv1OK,correct,check,)
+		GmmrMsSpwPaMNoHBH, 2020-12-09T10:18:10 (Inv2OK,incorrect,check,)
+			hj3c9yrgdTurfYsAN, 2020-12-09T10:19:43 (Inv2OK,correct,check,)
+				aTxwNjFHd77KrGnSK, 2020-12-09T10:23:09 (Inv3OK,correct,check,)
+					injjY6smciwe4r6HB, 2020-12-09T10:28:18 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+						5HsFbpzPK4EaiG7m6, 2020-12-09T10:28:45 (Inv4OK,correct,check,)
+							5GgWyq6sXB42Awmw2, 2020-12-09T10:54:54 (model share)
+								heC6tLjRdkufFAWCo, 2020-12-09T12:41:58 (Inv4OK,correct,check,)
+									2mJrg8dui2h2xF6LH, 2020-12-09T12:42:02 (Inv4OK,correct,check,)
+	ETKSySiwDhXdXcjmP, 2020-12-09T10:18:30 (Inv1OK,correct,check,)
+		6y4jY3mGrqAGtqLK4, 2020-12-09T10:19:36 (in can be used only between 2 expressions of the same arity. Left type = {this/Component} Right type = {this/Component->this/Product})
+			XXHAzM6xxtWeKAgMr, 2020-12-09T10:19:56 (Inv2OK,correct,check,)
+				eFM79hbnob9FXXLvk, 2020-12-09T10:21:56 (Inv3OK,incorrect,check,)
+					MAvFLD4t4XySwri8Q, 2020-12-09T10:23:08 (Inv3OK,correct,check,)
+						SYsvrM5Zb7ZjAsgdE, 2020-12-09T10:23:38 (Inv3OK,incorrect,check,)
+							5yYf3dqvaXKGKGWXR, 2020-12-09T10:23:48 (Inv3OK,incorrect,check,)
+								YMpT3w8ir9Gzpq8WQ, 2020-12-09T10:23:53 (Inv3OK,correct,check,)
+									pTbaMHQzvAgpo5TTk, 2020-12-09T10:25:43 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+										6NXMBd8Exm2kN4uSB, 2020-12-09T10:26:58 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+											qsPGReBDndpQs8MTB, 2020-12-09T10:27:22 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+												TkGcdKhQcdsyLbGs2, 2020-12-09T10:27:28 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+													T5zhYtZYTTE9zJ2p8, 2020-12-09T10:27:41 (This must be a formula expression. Instead, it has the following possible type(s): {this/Position})
+														w3hsQxpkqWL85y8n2, 2020-12-09T10:27:57 (This must be a formula expression. Instead, it has the following possible type(s): {this/Position})
+	FDCucXGMaKBsJRqER, 2020-12-09T10:20:15 (Inv1OK,correct,check,)
+		28XSs9retSDv5WNaC, 2020-12-09T10:20:30 (Inv2OK,correct,check,)
+			WWupdkrcjJXZaJAsy, 2020-12-09T10:21:18 (Inv3OK,correct,check,)
+				nZGKLW2BswAhHp9oh, 2020-12-09T10:22:44 (Inv4OK,incorrect,check,)
+					BayK9qwXZGwpH4Bxv, 2020-12-09T10:26:34 (The name "c" cannot be found.)
+						TwXuoyihtDkdriQxy, 2020-12-09T10:26:50 (Inv4OK,incorrect,check,)
+							twWe4KnhcNq2FyjEi, 2020-12-09T10:28:52 (Inv4OK,incorrect,check,)
+								FPK4icRaWubEBGGzG, 2020-12-09T10:29:08 (Inv4OK,correct,check,)
+	44CN5dhfc3GsBNmwT, 2020-12-09T10:20:30 (Inv2OK,correct,check,)
+		fNhNZ92a4eZMan8AR, 2020-12-09T10:21:08 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+			L6p6vCazyjkHrG7i4, 2020-12-09T10:21:20 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+				szDToSEQJ3PxDr9Jz, 2020-12-09T10:21:49 (Inv1OK,correct,check,)
+	Bq9iBWe4paaxt8Grw, 2020-12-09T10:57:11 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+		dZ385JYMNLtX8aKFG, 2020-12-09T10:59:20 (Inv1OK,correct,check,)
+			BT7PLr8LQ85rxewy2, 2020-12-09T11:00:19 (Inv3OK,incorrect,check,)
+				miPsbZYkf9ESrC3bZ, 2020-12-09T11:00:26 (Inv3OK,correct,check,)
+	XTmW35xSSyLPtPko8, 2020-12-09T12:34:43 (Inv1OK,correct,check,)
+		ea5oZ4Q5Wqyvy5bez, 2020-12-09T12:35:14 (Inv2OK,incorrect,check,)
+			58xPTYf8xXovMDCQR, 2020-12-09T12:35:26 (Inv2OK,incorrect,check,)
+				9enfxnGdW52opyWnr, 2020-12-09T12:36:26 (Inv2OK,correct,check,)
+					dEnhxwvqGWgM5eSrP, 2020-12-09T12:37:27 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {this/Position})
+						NWF6gZwAdwmSfW9ZQ, 2020-12-09T12:38 (Inv3OK,correct,check,)
+							S2BTd3tLYDPKa666Y, 2020-12-09T12:41:47 (Inv4OK,correct,check,)
+								u4NqkKxaQb3fWcDRy, 2020-12-09T12:42:20 (model share)
+	5x5KL9Dzos4SFknyi, 2020-12-09T12:34:47 (The name "s" cannot be found.)
+		b4ep4x3PWvrsShp4T, 2020-12-09T12:34:52 (Inv1OK,correct,check,)
+			2cgnPpCWbEpvY7YAm, 2020-12-09T12:35:36 (Inv2OK,incorrect,check,)
+				DC8PzFuDCFAR7CFtL, 2020-12-09T12:35:58 (Inv2OK,correct,check,)
+					87m5ejmoFxiJi3s86, 2020-12-09T12:36:07 (Inv1OK,correct,check,)
+						PEjpsj5rkqu4twwEP, 2020-12-09T12:38:03 (Inv2OK,correct,check,)
+							j8MRJvpK8THvdgmce, 2020-12-09T12:38:05 (Inv3OK,correct,check,)
+								a6fsrqB6YeY9PEeGF, 2020-12-09T12:39:34 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+									XujaZrfj2naxmLycd, 2020-12-09T12:41:19 (Inv4OK,correct,check,)
+										pCNpiJzPTaeTGYBTq, 2020-12-09T12:41:28 (Inv3OK,correct,check,)
+											yygPhcsvfSmPmaTu3, 2020-12-09T12:41:31 (Inv4OK,correct,check,)
+												ruWc4LJ2K5esvepcE, 2020-12-09T12:42:30 (Inv4OK,correct,check,)
+	9dDrBg2HGaTvkBHhN, 2020-12-09T12:34:48 (Inv1OK,correct,check,)
+		HGpMMBFHtgvP2wXbF, 2020-12-09T12:35:35 (Inv2OK,incorrect,check,)
+			i3x654yRHGEhtDvHn, 2020-12-09T12:36:23 (Inv2OK,correct,check,)
+				hcX4GvfwFoCxuqpXL, 2020-12-09T12:38:05 (Inv3OK,correct,check,)
+					AMw3dYfCfm9jyDJyn, 2020-12-09T12:40:36 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+						LDD7esdsaz7z4tSWf, 2020-12-09T12:41:08 (Inv4OK,correct,check,)
+							RACXW4tnPisvyQ64B, 2020-12-09T12:41:36 (Inv4OK,correct,check,)
+								kSucimtXqBctR868A, 2020-12-09T12:57:22 (model share)
+	gR4siyQdFikpHBd5w, 2020-12-09T12:35:45 (Inv1OK,correct,check,)
+		iufwAjdofrJwa65qt, 2020-12-09T12:36:18 (Inv2OK,correct,check,)
+			gcsDLyvngqPNbpcJ9, 2020-12-09T12:37:20 (The name "Componenet" cannot be found.)
+				jJee9wtvQcNos6nmu, 2020-12-09T12:37:37 (Inv3OK,incorrect,check,)
+					gBiQXgE5pdxexJuWC, 2020-12-09T12:38:15 (Inv3OK,correct,check,)
+	WMKLLiMepvX58L8CF, 2020-12-09T12:36:07 (Inv2OK,correct,check,)
+		NvJJTxWwxceTJ9d9H, 2020-12-09T12:37:10 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+			HQriom7NDbNf2Zocr, 2020-12-09T12:37:38 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+				QM4xLxT9CwKWj4P2y, 2020-12-09T12:38:36 (Inv3OK,correct,check,)
+	nd73qtFg6KvG64nN4, 2020-12-09T12:36:29 (Inv2OK,correct,check,)
+		X8on7262MTNaaTogF, 2020-12-09T12:41:57 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+			arqPyyAznTqfFmbdw, 2020-12-09T12:42:07 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+				2Mvwye7HzZimLHBxe, 2020-12-09T12:42:26 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+					cLFbRAPvEFCa8N56Q, 2020-12-09T12:42:56 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+						cyLrmHu4yZkk4tnYF, 2020-12-09T12:43:23 (Inv4OK,correct,check,)
