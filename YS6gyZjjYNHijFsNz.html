@@ -114,8 +114,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Errorsbytype, {
    type: 'bar',
    data: {
-      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','There are 1 possible tokens that can appear here: [ ','There are 5 possible tokens that can appear here: enum fun let open pred ','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".','Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.','Name cannot be resolved; possible incorrect function/predicate call; perhaps you used(_) when you should have used [ ]  This cannot be a correct call to pred _. The parameters are _: {_} so the arguments cannot be empty. ','There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','This must be a formula expression. Instead, it has the following possible type(s): {_}','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 1 possible tokens that can appear here: ) ','!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','There are 3 possible tokens that can appear here: ,  : = ','^ can be used only with a binary relation. Instead, its possible type(s) are: {_}','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','The name _ cannot be found.','This expression failed to be typechecked line _ column _ filename=_.als','& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This must be an integer expression. Instead, it has the following possible type(s): {_}','This must be a set or relation. Instead, it has the following possible type(s): {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ ','fun this/recheableNodes cannot call itself recursively!','There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~ ','There are 3 possible tokens that can appear here: ,  { | ',],      datasets: [
-{backgroundColor: '#6c79ad', data: [15,5,14,7,9,12,10,2,4,3,42,7,13,6,1,9,16,3,54,6,2,1,10,30,6,2,3,7,]},]},
+      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','There are 1 possible tokens that can appear here: [ ','There are 5 possible tokens that can appear here: enum fun let open pred ','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".','Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.','Name cannot be resolved; possible incorrect function/predicate call; perhaps you used(_) when you should have used [ ]  This cannot be a correct call to pred _. The parameters are _: {_} so the arguments cannot be empty. ','There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','This must be a formula expression. Instead, it has the following possible type(s): {_}','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 1 possible tokens that can appear here: ) ','!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','There are 3 possible tokens that can appear here: ,  : = ','^ can be used only with a binary relation. Instead, its possible type(s) are: {_}','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','This expression failed to be typechecked line _ column _ filename=_.als','The name _ cannot be found.','& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This must be an integer expression. Instead, it has the following possible type(s): {_}','This must be a set or relation. Instead, it has the following possible type(s): {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ ','fun this/recheableNodes cannot call itself recursively!','There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~ ','There are 3 possible tokens that can appear here: ,  { | ',],      datasets: [
+{backgroundColor: '#6c79ad', data: [15,5,14,7,9,12,10,2,4,3,42,7,13,6,1,9,16,3,6,54,2,1,10,30,6,2,3,7,]},]},
    options: {
       responsive: false,
       legend: {
@@ -140,8 +140,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['undirected','noLoops','stonglyConnected','weaklyConnected','acyclic','oriented','complete','transitive',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [109,67,58,61,57,75,80,56,]},{label: 'SAT', backgroundColor: '#f0e878', data: [61,18,38,76,37,55,71,47,]},]},
+      labels: ['undirected','oriented','acyclic','complete','noLoops','weaklyConnected','stonglyConnected','transitive',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [109,75,57,80,67,61,58,56,]},{label: 'SAT', backgroundColor: '#f0e878', data: [61,55,37,71,18,76,38,47,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -218,8 +218,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['undirected','stonglyConnected','noLoops','weaklyConnected','acyclic','complete','oriented','transitive',],      datasets: [
-{label: 'solved', backgroundColor: '#93e388', data: [45,31,41,34,35,40,38,33,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [14,28,18,25,24,19,21,26,]},]},
+      labels: ['undirected','oriented','acyclic','complete','noLoops','weaklyConnected','stonglyConnected','transitive',],      datasets: [
+{label: 'solved', backgroundColor: '#93e388', data: [45,38,35,40,41,34,31,33,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [14,21,24,19,18,25,28,26,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -291,90 +291,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>noLoops</h4>
-<canvas id="Sizein10sofnodesnoLoops" ></canvas><script>
-  var chart = new Chart(Sizein10sofnodesnoLoops, {
+</script><h4>oriented</h4>
+<canvas id="Sizein10sofnodesoriented" ></canvas><script>
+  var chart = new Chart(Sizein10sofnodesoriented, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [1,15,2,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [9,54,2,2,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>stonglyConnected</h4>
-<canvas id="Sizein10sofnodesstonglyConnected" ></canvas><script>
-  var chart = new Chart(Sizein10sofnodesstonglyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['1','2','3','4','5','6',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [18,15,4,0,0,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [19,38,1,0,0,0,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>weaklyConnected</h4>
-<canvas id="Sizein10sofnodesweaklyConnected" ></canvas><script>
-  var chart = new Chart(Sizein10sofnodesweaklyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [1,56,19,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,58,3,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [16,4,28,7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [23,6,46,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -443,14 +367,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>oriented</h4>
-<canvas id="Sizein10sofnodesoriented" ></canvas><script>
-  var chart = new Chart(Sizein10sofnodesoriented, {
+</script><h4>complete</h4>
+<canvas id="Sizein10sofnodescomplete" ></canvas><script>
+  var chart = new Chart(Sizein10sofnodescomplete, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0','1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [16,4,28,7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [23,6,46,0,]},]},
+      labels: ['1','2','3',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [48,22,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [70,6,4,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -481,14 +405,90 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>complete</h4>
-<canvas id="Sizein10sofnodescomplete" ></canvas><script>
-  var chart = new Chart(Sizein10sofnodescomplete, {
+</script><h4>noLoops</h4>
+<canvas id="Sizein10sofnodesnoLoops" ></canvas><script>
+  var chart = new Chart(Sizein10sofnodesnoLoops, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1','2','3',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [1,15,2,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [9,54,2,2,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>weaklyConnected</h4>
+<canvas id="Sizein10sofnodesweaklyConnected" ></canvas><script>
+  var chart = new Chart(Sizein10sofnodesweaklyConnected, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [48,22,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [70,6,4,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [1,56,19,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,58,3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>stonglyConnected</h4>
+<canvas id="Sizein10sofnodesstonglyConnected" ></canvas><script>
+  var chart = new Chart(Sizein10sofnodesstonglyConnected, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['1','2','3','4','5','6',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [18,15,4,0,0,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [19,38,1,0,0,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -597,90 +597,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>noLoops</h4>
-<canvas id="NumberofdisjquantificationsnoLoops" ></canvas><script>
-  var chart = new Chart(NumberofdisjquantificationsnoLoops, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [18,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [67,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>stonglyConnected</h4>
-<canvas id="NumberofdisjquantificationsstonglyConnected" ></canvas><script>
-  var chart = new Chart(NumberofdisjquantificationsstonglyConnected, {
+</script><h4>oriented</h4>
+<canvas id="Numberofdisjquantificationsoriented" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsoriented, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [38,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [38,20,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>weaklyConnected</h4>
-<canvas id="NumberofdisjquantificationsweaklyConnected" ></canvas><script>
-  var chart = new Chart(NumberofdisjquantificationsweaklyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [38,23,]},{label: 'SAT', backgroundColor: '#f0e878', data: [58,18,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [25,30,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [75,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -749,14 +673,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>oriented</h4>
-<canvas id="Numberofdisjquantificationsoriented" ></canvas><script>
-  var chart = new Chart(Numberofdisjquantificationsoriented, {
+</script><h4>complete</h4>
+<canvas id="Numberofdisjquantificationscomplete" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationscomplete, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [25,30,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [75,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [65,6,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [80,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -787,14 +711,90 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>complete</h4>
-<canvas id="Numberofdisjquantificationscomplete" ></canvas><script>
-  var chart = new Chart(Numberofdisjquantificationscomplete, {
+</script><h4>noLoops</h4>
+<canvas id="NumberofdisjquantificationsnoLoops" ></canvas><script>
+  var chart = new Chart(NumberofdisjquantificationsnoLoops, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [18,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [67,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>weaklyConnected</h4>
+<canvas id="NumberofdisjquantificationsweaklyConnected" ></canvas><script>
+  var chart = new Chart(NumberofdisjquantificationsweaklyConnected, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [65,6,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [80,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [38,23,]},{label: 'SAT', backgroundColor: '#f0e878', data: [58,18,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>stonglyConnected</h4>
+<canvas id="NumberofdisjquantificationsstonglyConnected" ></canvas><script>
+  var chart = new Chart(NumberofdisjquantificationsstonglyConnected, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [38,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [38,20,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -903,90 +903,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>noLoops</h4>
-<canvas id="NumbermultiplicityarrowsnoLoops" ></canvas><script>
-  var chart = new Chart(NumbermultiplicityarrowsnoLoops, {
+</script><h4>oriented</h4>
+<canvas id="Numbermultiplicityarrowsoriented" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsoriented, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [18,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [67,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>stonglyConnected</h4>
-<canvas id="NumbermultiplicityarrowsstonglyConnected" ></canvas><script>
-  var chart = new Chart(NumbermultiplicityarrowsstonglyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [38,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>weaklyConnected</h4>
-<canvas id="NumbermultiplicityarrowsweaklyConnected" ></canvas><script>
-  var chart = new Chart(NumbermultiplicityarrowsweaklyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [61,]},{label: 'SAT', backgroundColor: '#f0e878', data: [76,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [55,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [75,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1055,14 +979,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>oriented</h4>
-<canvas id="Numbermultiplicityarrowsoriented" ></canvas><script>
-  var chart = new Chart(Numbermultiplicityarrowsoriented, {
+</script><h4>complete</h4>
+<canvas id="Numbermultiplicityarrowscomplete" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowscomplete, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [55,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [75,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [71,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1093,14 +1017,90 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>complete</h4>
-<canvas id="Numbermultiplicityarrowscomplete" ></canvas><script>
-  var chart = new Chart(Numbermultiplicityarrowscomplete, {
+</script><h4>noLoops</h4>
+<canvas id="NumbermultiplicityarrowsnoLoops" ></canvas><script>
+  var chart = new Chart(NumbermultiplicityarrowsnoLoops, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [71,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [18,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [67,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>weaklyConnected</h4>
+<canvas id="NumbermultiplicityarrowsweaklyConnected" ></canvas><script>
+  var chart = new Chart(NumbermultiplicityarrowsweaklyConnected, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [61,]},{label: 'SAT', backgroundColor: '#f0e878', data: [76,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>stonglyConnected</h4>
+<canvas id="NumbermultiplicityarrowsstonglyConnected" ></canvas><script>
+  var chart = new Chart(NumbermultiplicityarrowsstonglyConnected, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [38,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1209,90 +1209,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>noLoops</h4>
-<canvas id="NumberofbinarytemporaloperatorsnoLoops" ></canvas><script>
-  var chart = new Chart(NumberofbinarytemporaloperatorsnoLoops, {
+</script><h4>oriented</h4>
+<canvas id="Numberofbinarytemporaloperatorsoriented" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsoriented, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [18,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [67,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>stonglyConnected</h4>
-<canvas id="NumberofbinarytemporaloperatorsstonglyConnected" ></canvas><script>
-  var chart = new Chart(NumberofbinarytemporaloperatorsstonglyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [38,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>weaklyConnected</h4>
-<canvas id="NumberofbinarytemporaloperatorsweaklyConnected" ></canvas><script>
-  var chart = new Chart(NumberofbinarytemporaloperatorsweaklyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [61,]},{label: 'SAT', backgroundColor: '#f0e878', data: [76,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [55,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [75,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1361,14 +1285,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>oriented</h4>
-<canvas id="Numberofbinarytemporaloperatorsoriented" ></canvas><script>
-  var chart = new Chart(Numberofbinarytemporaloperatorsoriented, {
+</script><h4>complete</h4>
+<canvas id="Numberofbinarytemporaloperatorscomplete" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorscomplete, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [55,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [75,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [71,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1399,14 +1323,90 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>complete</h4>
-<canvas id="Numberofbinarytemporaloperatorscomplete" ></canvas><script>
-  var chart = new Chart(Numberofbinarytemporaloperatorscomplete, {
+</script><h4>noLoops</h4>
+<canvas id="NumberofbinarytemporaloperatorsnoLoops" ></canvas><script>
+  var chart = new Chart(NumberofbinarytemporaloperatorsnoLoops, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [71,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [18,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [67,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>weaklyConnected</h4>
+<canvas id="NumberofbinarytemporaloperatorsweaklyConnected" ></canvas><script>
+  var chart = new Chart(NumberofbinarytemporaloperatorsweaklyConnected, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [61,]},{label: 'SAT', backgroundColor: '#f0e878', data: [76,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>stonglyConnected</h4>
+<canvas id="NumberofbinarytemporaloperatorsstonglyConnected" ></canvas><script>
+  var chart = new Chart(NumberofbinarytemporaloperatorsstonglyConnected, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [38,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1515,90 +1515,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>noLoops</h4>
-<canvas id="NumberofquantifiersnoLoops" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersnoLoops, {
+</script><h4>oriented</h4>
+<canvas id="Numberofquantifiersoriented" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersoriented, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [3,15,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [9,55,3,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>stonglyConnected</h4>
-<canvas id="NumberofquantifiersstonglyConnected" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersstonglyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [18,18,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [19,39,0,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>weaklyConnected</h4>
-<canvas id="NumberofquantifiersweaklyConnected" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersweaklyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [6,69,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [14,47,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [17,38,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [24,50,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1667,14 +1591,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>oriented</h4>
-<canvas id="Numberofquantifiersoriented" ></canvas><script>
-  var chart = new Chart(Numberofquantifiersoriented, {
+</script><h4>complete</h4>
+<canvas id="Numberofquantifierscomplete" ></canvas><script>
+  var chart = new Chart(Numberofquantifierscomplete, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [17,38,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [24,50,1,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [8,61,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [23,53,4,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1705,14 +1629,90 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>complete</h4>
-<canvas id="Numberofquantifierscomplete" ></canvas><script>
-  var chart = new Chart(Numberofquantifierscomplete, {
+</script><h4>noLoops</h4>
+<canvas id="NumberofquantifiersnoLoops" ></canvas><script>
+  var chart = new Chart(NumberofquantifiersnoLoops, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [8,61,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [23,53,4,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [3,15,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [9,55,3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>weaklyConnected</h4>
+<canvas id="NumberofquantifiersweaklyConnected" ></canvas><script>
+  var chart = new Chart(NumberofquantifiersweaklyConnected, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['1','2','3',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [6,69,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [14,47,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>stonglyConnected</h4>
+<canvas id="NumberofquantifiersstonglyConnected" ></canvas><script>
+  var chart = new Chart(NumberofquantifiersstonglyConnected, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['1','2','3',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [18,18,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [19,39,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1821,90 +1821,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>noLoops</h4>
-<canvas id="NumberofinvertednavigationexpressionsnoLoops" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsnoLoops, {
+</script><h4>oriented</h4>
+<canvas id="Numberofinvertednavigationexpressionsoriented" ></canvas><script>
+  var chart = new Chart(Numberofinvertednavigationexpressionsoriented, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [18,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [67,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>stonglyConnected</h4>
-<canvas id="NumberofinvertednavigationexpressionsstonglyConnected" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsstonglyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [38,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>weaklyConnected</h4>
-<canvas id="NumberofinvertednavigationexpressionsweaklyConnected" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsweaklyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [61,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [75,1,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [55,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [75,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1973,14 +1897,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>oriented</h4>
-<canvas id="Numberofinvertednavigationexpressionsoriented" ></canvas><script>
-  var chart = new Chart(Numberofinvertednavigationexpressionsoriented, {
+</script><h4>complete</h4>
+<canvas id="Numberofinvertednavigationexpressionscomplete" ></canvas><script>
+  var chart = new Chart(Numberofinvertednavigationexpressionscomplete, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [55,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [75,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [71,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2011,14 +1935,90 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>complete</h4>
-<canvas id="Numberofinvertednavigationexpressionscomplete" ></canvas><script>
-  var chart = new Chart(Numberofinvertednavigationexpressionscomplete, {
+</script><h4>noLoops</h4>
+<canvas id="NumberofinvertednavigationexpressionsnoLoops" ></canvas><script>
+  var chart = new Chart(NumberofinvertednavigationexpressionsnoLoops, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [71,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [18,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [67,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>weaklyConnected</h4>
+<canvas id="NumberofinvertednavigationexpressionsweaklyConnected" ></canvas><script>
+  var chart = new Chart(NumberofinvertednavigationexpressionsweaklyConnected, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [61,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [75,1,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>stonglyConnected</h4>
+<canvas id="NumberofinvertednavigationexpressionsstonglyConnected" ></canvas><script>
+  var chart = new Chart(NumberofinvertednavigationexpressionsstonglyConnected, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [38,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2127,90 +2127,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>noLoops</h4>
-<canvas id="MaxnestedtemporaloperatorlevelnoLoops" ></canvas><script>
-  var chart = new Chart(MaxnestedtemporaloperatorlevelnoLoops, {
+</script><h4>oriented</h4>
+<canvas id="Maxnestedtemporaloperatorleveloriented" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorleveloriented, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [18,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [67,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>stonglyConnected</h4>
-<canvas id="MaxnestedtemporaloperatorlevelstonglyConnected" ></canvas><script>
-  var chart = new Chart(MaxnestedtemporaloperatorlevelstonglyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [38,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>weaklyConnected</h4>
-<canvas id="MaxnestedtemporaloperatorlevelweaklyConnected" ></canvas><script>
-  var chart = new Chart(MaxnestedtemporaloperatorlevelweaklyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [61,]},{label: 'SAT', backgroundColor: '#f0e878', data: [76,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [55,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [75,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2279,14 +2203,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>oriented</h4>
-<canvas id="Maxnestedtemporaloperatorleveloriented" ></canvas><script>
-  var chart = new Chart(Maxnestedtemporaloperatorleveloriented, {
+</script><h4>complete</h4>
+<canvas id="Maxnestedtemporaloperatorlevelcomplete" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelcomplete, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [55,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [75,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [71,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2317,14 +2241,90 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>complete</h4>
-<canvas id="Maxnestedtemporaloperatorlevelcomplete" ></canvas><script>
-  var chart = new Chart(Maxnestedtemporaloperatorlevelcomplete, {
+</script><h4>noLoops</h4>
+<canvas id="MaxnestedtemporaloperatorlevelnoLoops" ></canvas><script>
+  var chart = new Chart(MaxnestedtemporaloperatorlevelnoLoops, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [71,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [18,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [67,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>weaklyConnected</h4>
+<canvas id="MaxnestedtemporaloperatorlevelweaklyConnected" ></canvas><script>
+  var chart = new Chart(MaxnestedtemporaloperatorlevelweaklyConnected, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [61,]},{label: 'SAT', backgroundColor: '#f0e878', data: [76,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>stonglyConnected</h4>
+<canvas id="MaxnestedtemporaloperatorlevelstonglyConnected" ></canvas><script>
+  var chart = new Chart(MaxnestedtemporaloperatorlevelstonglyConnected, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [38,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2433,90 +2433,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>noLoops</h4>
-<canvas id="NumberofloneonequantifiersnoLoops" ></canvas><script>
-  var chart = new Chart(NumberofloneonequantifiersnoLoops, {
+</script><h4>oriented</h4>
+<canvas id="Numberofloneonequantifiersoriented" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersoriented, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [18,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [67,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>stonglyConnected</h4>
-<canvas id="NumberofloneonequantifiersstonglyConnected" ></canvas><script>
-  var chart = new Chart(NumberofloneonequantifiersstonglyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [38,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>weaklyConnected</h4>
-<canvas id="NumberofloneonequantifiersweaklyConnected" ></canvas><script>
-  var chart = new Chart(NumberofloneonequantifiersweaklyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [61,]},{label: 'SAT', backgroundColor: '#f0e878', data: [76,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [55,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [75,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2585,14 +2509,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>oriented</h4>
-<canvas id="Numberofloneonequantifiersoriented" ></canvas><script>
-  var chart = new Chart(Numberofloneonequantifiersoriented, {
+</script><h4>complete</h4>
+<canvas id="Numberofloneonequantifierscomplete" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifierscomplete, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [55,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [75,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [71,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2623,14 +2547,90 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>complete</h4>
-<canvas id="Numberofloneonequantifierscomplete" ></canvas><script>
-  var chart = new Chart(Numberofloneonequantifierscomplete, {
+</script><h4>noLoops</h4>
+<canvas id="NumberofloneonequantifiersnoLoops" ></canvas><script>
+  var chart = new Chart(NumberofloneonequantifiersnoLoops, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [71,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [18,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [67,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>weaklyConnected</h4>
+<canvas id="NumberofloneonequantifiersweaklyConnected" ></canvas><script>
+  var chart = new Chart(NumberofloneonequantifiersweaklyConnected, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [61,]},{label: 'SAT', backgroundColor: '#f0e878', data: [76,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>stonglyConnected</h4>
+<canvas id="NumberofloneonequantifiersstonglyConnected" ></canvas><script>
+  var chart = new Chart(NumberofloneonequantifiersstonglyConnected, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [38,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2739,90 +2739,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>noLoops</h4>
-<canvas id="MaxnestedquantifierlevelnoLoops" ></canvas><script>
-  var chart = new Chart(MaxnestedquantifierlevelnoLoops, {
+</script><h4>oriented</h4>
+<canvas id="Maxnestedquantifierleveloriented" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierleveloriented, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [3,15,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [9,58,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>stonglyConnected</h4>
-<canvas id="MaxnestedquantifierlevelstonglyConnected" ></canvas><script>
-  var chart = new Chart(MaxnestedquantifierlevelstonglyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [38,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>weaklyConnected</h4>
-<canvas id="MaxnestedquantifierlevelweaklyConnected" ></canvas><script>
-  var chart = new Chart(MaxnestedquantifierlevelweaklyConnected, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['1','2',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [61,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [75,1,]},]},
+      labels: ['0','1','2',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [17,38,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [24,50,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2891,14 +2815,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>oriented</h4>
-<canvas id="Maxnestedquantifierleveloriented" ></canvas><script>
-  var chart = new Chart(Maxnestedquantifierleveloriented, {
+</script><h4>complete</h4>
+<canvas id="Maxnestedquantifierlevelcomplete" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelcomplete, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [17,38,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [24,50,1,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [8,62,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [23,57,0,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2929,14 +2853,90 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>complete</h4>
-<canvas id="Maxnestedquantifierlevelcomplete" ></canvas><script>
-  var chart = new Chart(Maxnestedquantifierlevelcomplete, {
+</script><h4>noLoops</h4>
+<canvas id="MaxnestedquantifierlevelnoLoops" ></canvas><script>
+  var chart = new Chart(MaxnestedquantifierlevelnoLoops, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [8,62,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [23,57,0,]},]},
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [3,15,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [9,58,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>weaklyConnected</h4>
+<canvas id="MaxnestedquantifierlevelweaklyConnected" ></canvas><script>
+  var chart = new Chart(MaxnestedquantifierlevelweaklyConnected, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['1','2',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [61,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [75,1,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>stonglyConnected</h4>
+<canvas id="MaxnestedquantifierlevelstonglyConnected" ></canvas><script>
+  var chart = new Chart(MaxnestedquantifierlevelstonglyConnected, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [38,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,]},]},
    options: {
 	tooltips: {
       enabled: true,

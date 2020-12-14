@@ -163,8 +163,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['inv6Ok','inv5Ok','inv8Ok','inv7Ok','inv9Ok','inv10Ok','inv2Ok','inv1Ok','inv4Ok','inv3Ok',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [34,29,2,20,13,32,4,22,29,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [38,33,29,33,25,54,45,51,31,34,]},]},
+      labels: ['inv1Ok','inv2Ok','inv3Ok','inv4Ok','inv5Ok','inv6Ok','inv7Ok','inv8Ok','inv9Ok','inv10Ok',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [22,4,4,29,29,34,20,2,13,32,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [51,45,34,31,33,38,33,29,25,54,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -241,8 +241,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['inv6Ok','inv5Ok','inv8Ok','inv7Ok','inv10Ok','inv9Ok','inv2Ok','inv1Ok','inv4Ok','inv3Ok',],      datasets: [
-{label: 'solved', backgroundColor: '#93e388', data: [23,25,21,21,37,20,34,38,28,29,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [35,33,37,37,21,38,24,20,30,29,]},]},
+      labels: ['inv1Ok','inv2Ok','inv3Ok','inv4Ok','inv5Ok','inv6Ok','inv7Ok','inv8Ok','inv9Ok','inv10Ok',],      datasets: [
+{label: 'solved', backgroundColor: '#93e388', data: [38,34,29,28,25,23,21,21,20,37,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [20,24,29,30,33,35,37,37,38,21,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -276,14 +276,128 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </script><h2>Metrics by sub-challenge, classified</h2>
 <h3>Size in 10s of nodes</h3>
 <p>The number of executions, for a particular challenge, by the size of a command AST in tens of nodes, grouped by result.</p>
-<h4>inv6Ok</h4>
-<canvas id="Sizein10sofnodesinv6Ok" ></canvas><script>
-  var chart = new Chart(Sizein10sofnodesinv6Ok, {
+<h4>inv1Ok</h4>
+<canvas id="Sizein10sofnodesinv1Ok" ></canvas><script>
+  var chart = new Chart(Sizein10sofnodesinv1Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,32,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,37,1,]},]},
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [20,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [49,2,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv2Ok</h4>
+<canvas id="Sizein10sofnodesinv2Ok" ></canvas><script>
+  var chart = new Chart(Sizein10sofnodesinv2Ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [36,9,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv3Ok</h4>
+<canvas id="Sizein10sofnodesinv3Ok" ></canvas><script>
+  var chart = new Chart(Sizein10sofnodesinv3Ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv4Ok</h4>
+<canvas id="Sizein10sofnodesinv4Ok" ></canvas><script>
+  var chart = new Chart(Sizein10sofnodesinv4Ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [25,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [28,3,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -352,14 +466,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv8Ok</h4>
-<canvas id="Sizein10sofnodesinv8Ok" ></canvas><script>
-  var chart = new Chart(Sizein10sofnodesinv8Ok, {
+</script><h4>inv6Ok</h4>
+<canvas id="Sizein10sofnodesinv6Ok" ></canvas><script>
+  var chart = new Chart(Sizein10sofnodesinv6Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [28,1,]},]},
+      labels: ['0','1','2',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,32,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,37,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -398,6 +512,44 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    data: {
       labels: ['0','1','2',],      datasets: [
 {label: 'SAT', backgroundColor: '#f0e878', data: [2,17,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,33,0,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv8Ok</h4>
+<canvas id="Sizein10sofnodesinv8Ok" ></canvas><script>
+  var chart = new Chart(Sizein10sofnodesinv8Ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [28,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -504,90 +656,54 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
+</script><h3>Number of disj quantifications</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring disjoint first-order quantifications, grouped by result.</p>
+<h4>inv1Ok</h4>
+<canvas id="Numberofdisjquantificationsinv1Ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv1Ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [22,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [51,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
 </script><h4>inv2Ok</h4>
-<canvas id="Sizein10sofnodesinv2Ok" ></canvas><script>
-  var chart = new Chart(Sizein10sofnodesinv2Ok, {
+<canvas id="Numberofdisjquantificationsinv2Ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv2Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [36,9,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv1Ok</h4>
-<canvas id="Sizein10sofnodesinv1Ok" ></canvas><script>
-  var chart = new Chart(Sizein10sofnodesinv1Ok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [20,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [49,2,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv4Ok</h4>
-<canvas id="Sizein10sofnodesinv4Ok" ></canvas><script>
-  var chart = new Chart(Sizein10sofnodesinv4Ok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [25,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [28,3,]},]},
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [45,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -619,13 +735,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3Ok</h4>
-<canvas id="Sizein10sofnodesinv3Ok" ></canvas><script>
-  var chart = new Chart(Sizein10sofnodesinv3Ok, {
+<canvas id="Numberofdisjquantificationsinv3Ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv3Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,3,]},]},
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [34,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -656,16 +772,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Number of disj quantifications</h3>
-<p>The number of executions, for a particular challenge, by the number of occurring disjoint first-order quantifications, grouped by result.</p>
-<h4>inv6Ok</h4>
-<canvas id="Numberofdisjquantificationsinv6Ok" ></canvas><script>
-  var chart = new Chart(Numberofdisjquantificationsinv6Ok, {
+</script><h4>inv4Ok</h4>
+<canvas id="Numberofdisjquantificationsinv4Ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv4Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [38,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -734,14 +848,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv8Ok</h4>
-<canvas id="Numberofdisjquantificationsinv8Ok" ></canvas><script>
-  var chart = new Chart(Numberofdisjquantificationsinv8Ok, {
+</script><h4>inv6Ok</h4>
+<canvas id="Numberofdisjquantificationsinv6Ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv6Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [29,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [38,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -780,6 +894,44 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    data: {
       labels: ['0',],      datasets: [
 {label: 'SAT', backgroundColor: '#f0e878', data: [20,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [33,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv8Ok</h4>
+<canvas id="Numberofdisjquantificationsinv8Ok" ></canvas><script>
+  var chart = new Chart(Numberofdisjquantificationsinv8Ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [29,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -886,47 +1038,11 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv2Ok</h4>
-<canvas id="Numberofdisjquantificationsinv2Ok" ></canvas><script>
-  var chart = new Chart(Numberofdisjquantificationsinv2Ok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [45,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv1Ok</h4>
-<canvas id="Numberofdisjquantificationsinv1Ok" ></canvas><script>
-  var chart = new Chart(Numberofdisjquantificationsinv1Ok, {
+</script><h3>Number multiplicity arrows</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring multiplicity arrow tests, grouped by result.</p>
+<h4>inv1Ok</h4>
+<canvas id="Numbermultiplicityarrowsinv1Ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv1Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
@@ -962,14 +1078,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv4Ok</h4>
-<canvas id="Numberofdisjquantificationsinv4Ok" ></canvas><script>
-  var chart = new Chart(Numberofdisjquantificationsinv4Ok, {
+</script><h4>inv2Ok</h4>
+<canvas id="Numbermultiplicityarrowsinv2Ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv2Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [45,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1001,8 +1117,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3Ok</h4>
-<canvas id="Numberofdisjquantificationsinv3Ok" ></canvas><script>
-  var chart = new Chart(Numberofdisjquantificationsinv3Ok, {
+<canvas id="Numbermultiplicityarrowsinv3Ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv3Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
@@ -1038,16 +1154,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Number multiplicity arrows</h3>
-<p>The number of executions, for a particular challenge, by the number of occurring multiplicity arrow tests, grouped by result.</p>
-<h4>inv6Ok</h4>
-<canvas id="Numbermultiplicityarrowsinv6Ok" ></canvas><script>
-  var chart = new Chart(Numbermultiplicityarrowsinv6Ok, {
+</script><h4>inv4Ok</h4>
+<canvas id="Numbermultiplicityarrowsinv4Ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv4Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [33,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [33,5,]},]},
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1116,14 +1230,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv8Ok</h4>
-<canvas id="Numbermultiplicityarrowsinv8Ok" ></canvas><script>
-  var chart = new Chart(Numbermultiplicityarrowsinv8Ok, {
+</script><h4>inv6Ok</h4>
+<canvas id="Numbermultiplicityarrowsinv6Ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv6Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [29,]},]},
+      labels: ['1','2',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [33,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [33,5,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1162,6 +1276,44 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    data: {
       labels: ['0',],      datasets: [
 {label: 'SAT', backgroundColor: '#f0e878', data: [20,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [33,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv8Ok</h4>
+<canvas id="Numbermultiplicityarrowsinv8Ok" ></canvas><script>
+  var chart = new Chart(Numbermultiplicityarrowsinv8Ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [29,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1268,47 +1420,11 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv2Ok</h4>
-<canvas id="Numbermultiplicityarrowsinv2Ok" ></canvas><script>
-  var chart = new Chart(Numbermultiplicityarrowsinv2Ok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [45,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv1Ok</h4>
-<canvas id="Numbermultiplicityarrowsinv1Ok" ></canvas><script>
-  var chart = new Chart(Numbermultiplicityarrowsinv1Ok, {
+</script><h3>Number of binary temporal operators</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring binary temporal operators, grouped by result..</p>
+<h4>inv1Ok</h4>
+<canvas id="Numberofbinarytemporaloperatorsinv1Ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv1Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
@@ -1344,14 +1460,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv4Ok</h4>
-<canvas id="Numbermultiplicityarrowsinv4Ok" ></canvas><script>
-  var chart = new Chart(Numbermultiplicityarrowsinv4Ok, {
+</script><h4>inv2Ok</h4>
+<canvas id="Numberofbinarytemporaloperatorsinv2Ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv2Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [45,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1383,8 +1499,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3Ok</h4>
-<canvas id="Numbermultiplicityarrowsinv3Ok" ></canvas><script>
-  var chart = new Chart(Numbermultiplicityarrowsinv3Ok, {
+<canvas id="Numberofbinarytemporaloperatorsinv3Ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv3Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
@@ -1420,16 +1536,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Number of binary temporal operators</h3>
-<p>The number of executions, for a particular challenge, by the number of occurring binary temporal operators, grouped by result..</p>
-<h4>inv6Ok</h4>
-<canvas id="Numberofbinarytemporaloperatorsinv6Ok" ></canvas><script>
-  var chart = new Chart(Numberofbinarytemporaloperatorsinv6Ok, {
+</script><h4>inv4Ok</h4>
+<canvas id="Numberofbinarytemporaloperatorsinv4Ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv4Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [38,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1498,14 +1612,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv8Ok</h4>
-<canvas id="Numberofbinarytemporaloperatorsinv8Ok" ></canvas><script>
-  var chart = new Chart(Numberofbinarytemporaloperatorsinv8Ok, {
+</script><h4>inv6Ok</h4>
+<canvas id="Numberofbinarytemporaloperatorsinv6Ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv6Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [29,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [38,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1544,6 +1658,44 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    data: {
       labels: ['0',],      datasets: [
 {label: 'SAT', backgroundColor: '#f0e878', data: [20,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [33,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv8Ok</h4>
+<canvas id="Numberofbinarytemporaloperatorsinv8Ok" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorsinv8Ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [29,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1650,90 +1802,54 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
+</script><h3>Number of quantifiers</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
+<h4>inv1Ok</h4>
+<canvas id="Numberofquantifiersinv1Ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv1Ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [22,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [49,2,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
 </script><h4>inv2Ok</h4>
-<canvas id="Numberofbinarytemporaloperatorsinv2Ok" ></canvas><script>
-  var chart = new Chart(Numberofbinarytemporaloperatorsinv2Ok, {
+<canvas id="Numberofquantifiersinv2Ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv2Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [45,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv1Ok</h4>
-<canvas id="Numberofbinarytemporaloperatorsinv1Ok" ></canvas><script>
-  var chart = new Chart(Numberofbinarytemporaloperatorsinv1Ok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [22,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [51,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv4Ok</h4>
-<canvas id="Numberofbinarytemporaloperatorsinv4Ok" ></canvas><script>
-  var chart = new Chart(Numberofbinarytemporaloperatorsinv4Ok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,]},]},
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [39,6,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1765,13 +1881,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3Ok</h4>
-<canvas id="Numberofbinarytemporaloperatorsinv3Ok" ></canvas><script>
-  var chart = new Chart(Numberofbinarytemporaloperatorsinv3Ok, {
+<canvas id="Numberofquantifiersinv3Ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv3Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [34,]},]},
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,3,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1802,16 +1918,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Number of quantifiers</h3>
-<p>The number of executions, for a particular challenge, by the number of occurring first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
-<h4>inv6Ok</h4>
-<canvas id="Numberofquantifiersinv6Ok" ></canvas><script>
-  var chart = new Chart(Numberofquantifiersinv6Ok, {
+</script><h4>inv4Ok</h4>
+<canvas id="Numberofquantifiersinv4Ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv4Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [31,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [24,14,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [29,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [30,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1880,14 +1994,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv8Ok</h4>
-<canvas id="Numberofquantifiersinv8Ok" ></canvas><script>
-  var chart = new Chart(Numberofquantifiersinv8Ok, {
+</script><h4>inv6Ok</h4>
+<canvas id="Numberofquantifiersinv6Ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv6Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [29,]},]},
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [31,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [24,14,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1926,6 +2040,44 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    data: {
       labels: ['0','1',],      datasets: [
 {label: 'SAT', backgroundColor: '#f0e878', data: [16,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [30,3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv8Ok</h4>
+<canvas id="Numberofquantifiersinv8Ok" ></canvas><script>
+  var chart = new Chart(Numberofquantifiersinv8Ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [29,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2032,90 +2184,54 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
+</script><h3>Number of inverted navigation expressions</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring expressions of the shape x.~r, grouped by result.</p>
+<h4>inv1Ok</h4>
+<canvas id="Numberofinvertednavigationexpressionsinv1Ok" ></canvas><script>
+  var chart = new Chart(Numberofinvertednavigationexpressionsinv1Ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [22,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [51,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
 </script><h4>inv2Ok</h4>
-<canvas id="Numberofquantifiersinv2Ok" ></canvas><script>
-  var chart = new Chart(Numberofquantifiersinv2Ok, {
+<canvas id="Numberofinvertednavigationexpressionsinv2Ok" ></canvas><script>
+  var chart = new Chart(Numberofinvertednavigationexpressionsinv2Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [39,6,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv1Ok</h4>
-<canvas id="Numberofquantifiersinv1Ok" ></canvas><script>
-  var chart = new Chart(Numberofquantifiersinv1Ok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [22,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [49,2,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv4Ok</h4>
-<canvas id="Numberofquantifiersinv4Ok" ></canvas><script>
-  var chart = new Chart(Numberofquantifiersinv4Ok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [29,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [30,1,]},]},
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [45,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2147,13 +2263,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3Ok</h4>
-<canvas id="Numberofquantifiersinv3Ok" ></canvas><script>
-  var chart = new Chart(Numberofquantifiersinv3Ok, {
+<canvas id="Numberofinvertednavigationexpressionsinv3Ok" ></canvas><script>
+  var chart = new Chart(Numberofinvertednavigationexpressionsinv3Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,3,]},]},
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [34,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2184,16 +2300,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Number of inverted navigation expressions</h3>
-<p>The number of executions, for a particular challenge, by the number of occurring expressions of the shape x.~r, grouped by result.</p>
-<h4>inv6Ok</h4>
-<canvas id="Numberofinvertednavigationexpressionsinv6Ok" ></canvas><script>
-  var chart = new Chart(Numberofinvertednavigationexpressionsinv6Ok, {
+</script><h4>inv4Ok</h4>
+<canvas id="Numberofinvertednavigationexpressionsinv4Ok" ></canvas><script>
+  var chart = new Chart(Numberofinvertednavigationexpressionsinv4Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [38,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2262,14 +2376,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv8Ok</h4>
-<canvas id="Numberofinvertednavigationexpressionsinv8Ok" ></canvas><script>
-  var chart = new Chart(Numberofinvertednavigationexpressionsinv8Ok, {
+</script><h4>inv6Ok</h4>
+<canvas id="Numberofinvertednavigationexpressionsinv6Ok" ></canvas><script>
+  var chart = new Chart(Numberofinvertednavigationexpressionsinv6Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [29,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [38,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2308,6 +2422,44 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    data: {
       labels: ['0',],      datasets: [
 {label: 'SAT', backgroundColor: '#f0e878', data: [20,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [33,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv8Ok</h4>
+<canvas id="Numberofinvertednavigationexpressionsinv8Ok" ></canvas><script>
+  var chart = new Chart(Numberofinvertednavigationexpressionsinv8Ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [29,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2414,47 +2566,11 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv2Ok</h4>
-<canvas id="Numberofinvertednavigationexpressionsinv2Ok" ></canvas><script>
-  var chart = new Chart(Numberofinvertednavigationexpressionsinv2Ok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [45,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv1Ok</h4>
-<canvas id="Numberofinvertednavigationexpressionsinv1Ok" ></canvas><script>
-  var chart = new Chart(Numberofinvertednavigationexpressionsinv1Ok, {
+</script><h3>Max nested temporal operator level</h3>
+<p>The number of executions, for a particular challenge, by the maximum nested level temporal operators, grouped by result.</p>
+<h4>inv1Ok</h4>
+<canvas id="Maxnestedtemporaloperatorlevelinv1Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv1Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
@@ -2490,14 +2606,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv4Ok</h4>
-<canvas id="Numberofinvertednavigationexpressionsinv4Ok" ></canvas><script>
-  var chart = new Chart(Numberofinvertednavigationexpressionsinv4Ok, {
+</script><h4>inv2Ok</h4>
+<canvas id="Maxnestedtemporaloperatorlevelinv2Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv2Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [45,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2529,8 +2645,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3Ok</h4>
-<canvas id="Numberofinvertednavigationexpressionsinv3Ok" ></canvas><script>
-  var chart = new Chart(Numberofinvertednavigationexpressionsinv3Ok, {
+<canvas id="Maxnestedtemporaloperatorlevelinv3Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv3Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
@@ -2566,16 +2682,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Max nested temporal operator level</h3>
-<p>The number of executions, for a particular challenge, by the maximum nested level temporal operators, grouped by result.</p>
-<h4>inv6Ok</h4>
-<canvas id="Maxnestedtemporaloperatorlevelinv6Ok" ></canvas><script>
-  var chart = new Chart(Maxnestedtemporaloperatorlevelinv6Ok, {
+</script><h4>inv4Ok</h4>
+<canvas id="Maxnestedtemporaloperatorlevelinv4Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv4Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [38,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2644,14 +2758,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv8Ok</h4>
-<canvas id="Maxnestedtemporaloperatorlevelinv8Ok" ></canvas><script>
-  var chart = new Chart(Maxnestedtemporaloperatorlevelinv8Ok, {
+</script><h4>inv6Ok</h4>
+<canvas id="Maxnestedtemporaloperatorlevelinv6Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv6Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [29,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [38,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2690,6 +2804,44 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    data: {
       labels: ['0',],      datasets: [
 {label: 'SAT', backgroundColor: '#f0e878', data: [20,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [33,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv8Ok</h4>
+<canvas id="Maxnestedtemporaloperatorlevelinv8Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelinv8Ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [29,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2796,47 +2948,11 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv2Ok</h4>
-<canvas id="Maxnestedtemporaloperatorlevelinv2Ok" ></canvas><script>
-  var chart = new Chart(Maxnestedtemporaloperatorlevelinv2Ok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [45,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv1Ok</h4>
-<canvas id="Maxnestedtemporaloperatorlevelinv1Ok" ></canvas><script>
-  var chart = new Chart(Maxnestedtemporaloperatorlevelinv1Ok, {
+</script><h3>Number of lone/one quantifiers</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring lone/one quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
+<h4>inv1Ok</h4>
+<canvas id="Numberofloneonequantifiersinv1Ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv1Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
@@ -2872,14 +2988,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv4Ok</h4>
-<canvas id="Maxnestedtemporaloperatorlevelinv4Ok" ></canvas><script>
-  var chart = new Chart(Maxnestedtemporaloperatorlevelinv4Ok, {
+</script><h4>inv2Ok</h4>
+<canvas id="Numberofloneonequantifiersinv2Ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv2Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [45,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2911,8 +3027,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3Ok</h4>
-<canvas id="Maxnestedtemporaloperatorlevelinv3Ok" ></canvas><script>
-  var chart = new Chart(Maxnestedtemporaloperatorlevelinv3Ok, {
+<canvas id="Numberofloneonequantifiersinv3Ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv3Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
@@ -2948,16 +3064,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Number of lone/one quantifiers</h3>
-<p>The number of executions, for a particular challenge, by the number of occurring lone/one quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
-<h4>inv6Ok</h4>
-<canvas id="Numberofloneonequantifiersinv6Ok" ></canvas><script>
-  var chart = new Chart(Numberofloneonequantifiersinv6Ok, {
+</script><h4>inv4Ok</h4>
+<canvas id="Numberofloneonequantifiersinv4Ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv4Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [38,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3026,14 +3140,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv8Ok</h4>
-<canvas id="Numberofloneonequantifiersinv8Ok" ></canvas><script>
-  var chart = new Chart(Numberofloneonequantifiersinv8Ok, {
+</script><h4>inv6Ok</h4>
+<canvas id="Numberofloneonequantifiersinv6Ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv6Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [29,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [38,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3072,6 +3186,44 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    data: {
       labels: ['0',],      datasets: [
 {label: 'SAT', backgroundColor: '#f0e878', data: [20,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [33,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv8Ok</h4>
+<canvas id="Numberofloneonequantifiersinv8Ok" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifiersinv8Ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [29,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3178,90 +3330,54 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
+</script><h3>Max nested quantifier level</h3>
+<p>The number of executions, for a particular challenge, by the maximum nested level of first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
+<h4>inv1Ok</h4>
+<canvas id="Maxnestedquantifierlevelinv1Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv1Ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [22,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [49,2,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
 </script><h4>inv2Ok</h4>
-<canvas id="Numberofloneonequantifiersinv2Ok" ></canvas><script>
-  var chart = new Chart(Numberofloneonequantifiersinv2Ok, {
+<canvas id="Maxnestedquantifierlevelinv2Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv2Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [45,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv1Ok</h4>
-<canvas id="Numberofloneonequantifiersinv1Ok" ></canvas><script>
-  var chart = new Chart(Numberofloneonequantifiersinv1Ok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [22,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [51,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv4Ok</h4>
-<canvas id="Numberofloneonequantifiersinv4Ok" ></canvas><script>
-  var chart = new Chart(Numberofloneonequantifiersinv4Ok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,]},]},
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [39,6,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3293,13 +3409,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>inv3Ok</h4>
-<canvas id="Numberofloneonequantifiersinv3Ok" ></canvas><script>
-  var chart = new Chart(Numberofloneonequantifiersinv3Ok, {
+<canvas id="Maxnestedquantifierlevelinv3Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv3Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [34,]},]},
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,3,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3330,16 +3446,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Max nested quantifier level</h3>
-<p>The number of executions, for a particular challenge, by the maximum nested level of first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
-<h4>inv6Ok</h4>
-<canvas id="Maxnestedquantifierlevelinv6Ok" ></canvas><script>
-  var chart = new Chart(Maxnestedquantifierlevelinv6Ok, {
+</script><h4>inv4Ok</h4>
+<canvas id="Maxnestedquantifierlevelinv4Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv4Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [31,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [24,14,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [29,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [30,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3408,14 +3522,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h4>inv8Ok</h4>
-<canvas id="Maxnestedquantifierlevelinv8Ok" ></canvas><script>
-  var chart = new Chart(Maxnestedquantifierlevelinv8Ok, {
+</script><h4>inv6Ok</h4>
+<canvas id="Maxnestedquantifierlevelinv6Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv6Ok, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [29,]},]},
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [31,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [24,14,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3454,6 +3568,44 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    data: {
       labels: ['0','1',],      datasets: [
 {label: 'SAT', backgroundColor: '#f0e878', data: [16,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [30,3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>inv8Ok</h4>
+<canvas id="Maxnestedquantifierlevelinv8Ok" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelinv8Ok, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [29,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3530,158 +3682,6 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    data: {
       labels: ['1',],      datasets: [
 {label: 'SAT', backgroundColor: '#f0e878', data: [32,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [54,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv2Ok</h4>
-<canvas id="Maxnestedquantifierlevelinv2Ok" ></canvas><script>
-  var chart = new Chart(Maxnestedquantifierlevelinv2Ok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [39,6,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv1Ok</h4>
-<canvas id="Maxnestedquantifierlevelinv1Ok" ></canvas><script>
-  var chart = new Chart(Maxnestedquantifierlevelinv1Ok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [22,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [49,2,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv4Ok</h4>
-<canvas id="Maxnestedquantifierlevelinv4Ok" ></canvas><script>
-  var chart = new Chart(Maxnestedquantifierlevelinv4Ok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [29,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [30,1,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv3Ok</h4>
-<canvas id="Maxnestedquantifierlevelinv3Ok" ></canvas><script>
-  var chart = new Chart(Maxnestedquantifierlevelinv3Ok, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [31,3,]},]},
    options: {
 	tooltips: {
       enabled: true,
