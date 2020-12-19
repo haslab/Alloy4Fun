@@ -1,4 +1,4 @@
-PQAJE67kz8w5NWJuM (2020-12-14)
+PQAJE67kz8w5NWJuM (2020-12-19)
 
 * Meta-data
 Challenge name: unknown
@@ -7,3154 +7,1173 @@ Creation time: 2019-10-02
 Metric catalog: Example metric catalog
 
 * Overall metric statistics
-Total model entries: 2675
-Total executions: 2619
+Total model entries: 2655
+Total executions: 2620
 Total shares: 35
 Total error messages: 876
-Total warning messages: 37
-Total solutions: 1749
-Total sessions: 158
+Total warning messages: 34
+Total solutions: 1750
+Total sessions: 159
+Timed out re-executions: 0
 Rejected due to server errors: 21
+Inconsisistent result reports: 0
+Inconsisistent message reports: 0
 Total instance entries: 0
 Total link entries: 36
 
 * Scalar metrics
-Number of shared sessions: 22
-Alloy runtime errors: 1
-Incorrect executions: 708
-Correct executions: 1041
-Shared errored models: 6
-Incorrect executions with warnings: 20
-Longest session: 165
-Shared models: 35
-Correct executions with warnings: 14
+Number of shared sessions	22
+Shared models (model)	35
+Shares with warnings	0
+Alloy runtime errors	1
+Shared errored models	6
+Alloy static errors	869
+Shared models (instance)	0
+Average session	16.635220125786162
+Longest session	164
+Sat executions with warnings	20
+Executed errored models	870
+Unsat executions	709
+Unsat executions with warnings	14
+Errored executions with warnings	0
+Average % unsatisfiable	0.4767673206340468
+Sat executions	1041
 
 * Overall metrics
 
 Sessions by length
-1: 47
-2: 18
-3: 7
-4: 8
-5: 2
-6: 1
-7: 0
-8: 2
-9: 2
-10: 0
-11: 4
-12: 5
-13: 4
-14: 1
-15: 1
-16: 3
-17: 3
-18: 2
-19: 1
-20: 5
-21: 2
-22: 1
-23: 2
-24: 3
-25: 1
-26: 0
-27: 3
-28: 0
-29: 1
-30: 1
-31: 0
-32: 1
-33: 2
-34: 1
-35: 1
-36: 1
-37: 1
-38: 2
-39: 1
-40: 3
-41: 0
-42: 0
-43: 0
-44: 1
-45: 1
-46: 0
-47: 0
-48: 0
-49: 1
-50: 0
-51: 2
-52: 0
-53: 0
-54: 0
-55: 0
-56: 0
-57: 0
-58: 0
-59: 1
-60: 1
-61: 0
-62: 1
-63: 0
-64: 1
-65: 0
-66: 0
-67: 0
-68: 0
-69: 0
-70: 0
-71: 0
-72: 0
-73: 1
-74: 0
-75: 0
-76: 0
-77: 0
-78: 0
-79: 0
-80: 0
-81: 0
-82: 0
-83: 0
-84: 0
-85: 0
-86: 0
-87: 0
-88: 0
-89: 0
-90: 0
-91: 0
-92: 1
-93: 0
-94: 0
-95: 0
-96: 0
-97: 0
-98: 0
-99: 0
-100: 0
-101: 0
-102: 0
-103: 0
-104: 0
-105: 0
-106: 0
-107: 0
-108: 0
-109: 0
-110: 0
-111: 0
-112: 1
-113: 0
-114: 0
-115: 0
-116: 0
-117: 0
-118: 0
-119: 0
-120: 0
-121: 0
-122: 0
-123: 0
-124: 0
-125: 0
-126: 0
-127: 0
-128: 0
-129: 0
-130: 1
-131: 0
-132: 0
-133: 0
-134: 0
-135: 0
-136: 0
-137: 0
-138: 0
-139: 0
-140: 0
-141: 1
-142: 0
-143: 0
-144: 0
-145: 0
-146: 0
-147: 0
-148: 0
-149: 0
-150: 0
-151: 0
-152: 0
-153: 0
-154: 0
-155: 0
-156: 0
-157: 0
-158: 0
-159: 0
-160: 0
-161: 0
-162: 0
-163: 0
-164: 1
-
-Sessions by # of solved sub-challenges
-0: 62
-1: 16
-2: 7
-3: 6
-4: 3
-5: 6
-6: 1
-7: 0
-8: 9
-9: 11
-10: 37
+1	48
+2	18
+3	7
+4	8
+5	2
+6	1
+7	0
+8	2
+9	2
+10	0
+11	4
+12	5
+13	4
+14	1
+15	1
+16	3
+17	3
+18	2
+19	1
+20	5
+21	2
+22	1
+23	2
+24	3
+25	1
+26	0
+27	3
+28	0
+29	1
+30	1
+31	0
+32	1
+33	2
+34	1
+35	1
+36	1
+37	1
+38	2
+39	1
+40	3
+41	0
+42	0
+43	0
+44	1
+45	1
+46	0
+47	0
+48	0
+49	1
+50	0
+51	2
+52	0
+53	0
+54	0
+55	0
+56	0
+57	0
+58	0
+59	1
+60	1
+61	0
+62	1
+63	0
+64	1
+65	0
+66	0
+67	0
+68	0
+69	0
+70	0
+71	0
+72	0
+73	1
+74	0
+75	0
+76	0
+77	0
+78	0
+79	0
+80	0
+81	0
+82	0
+83	0
+84	0
+85	0
+86	0
+87	0
+88	0
+89	0
+90	0
+91	0
+92	1
+93	0
+94	0
+95	0
+96	0
+97	0
+98	0
+99	0
+100	0
+101	0
+102	0
+103	0
+104	0
+105	0
+106	0
+107	0
+108	0
+109	0
+110	0
+111	0
+112	1
+113	0
+114	0
+115	0
+116	0
+117	0
+118	0
+119	0
+120	0
+121	0
+122	0
+123	0
+124	0
+125	0
+126	0
+127	0
+128	0
+129	0
+130	1
+131	0
+132	0
+133	0
+134	0
+135	0
+136	0
+137	0
+138	0
+139	0
+140	0
+141	1
+142	0
+143	0
+144	0
+145	0
+146	0
+147	0
+148	0
+149	0
+150	0
+151	0
+152	0
+153	0
+154	0
+155	0
+156	0
+157	0
+158	0
+159	0
+160	0
+161	0
+162	0
+163	0
+164	1
 
 Warnings by type
-== is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}: 4
-Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}: 8
-This variable is unused.: 23
-Subset operator is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}: 1
-Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}: 1
+== is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}	2
+Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}	8
+This variable is unused.	22
+Subset operator is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}	1
+Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}	1
 
-Entries over time
-2019-10-02: 0
-2019-10-03: 508
-2019-10-04: 0
-2019-10-05: 0
-2019-10-06: 0
-2019-10-07: 0
-2019-10-08: 6
-2019-10-09: 0
-2019-10-10: 0
-2019-10-11: 0
-2019-10-12: 32
-2019-10-13: 6
-2019-10-14: 0
-2019-10-15: 0
-2019-10-16: 0
-2019-10-17: 2
-2019-10-18: 0
-2019-10-19: 0
-2019-10-20: 0
-2019-10-21: 2
-2019-10-22: 56
-2019-10-23: 0
-2019-10-24: 0
-2019-10-25: 0
-2019-10-26: 0
-2019-10-27: 0
-2019-10-28: 0
-2019-10-29: 0
-2019-10-30: 45
-2019-10-31: 0
-2019-11-01: 34
-2019-11-02: 0
-2019-11-03: 0
-2019-11-04: 0
-2019-11-05: 0
-2019-11-06: 0
-2019-11-07: 0
-2019-11-08: 0
-2019-11-09: 0
-2019-11-10: 13
-2019-11-11: 0
-2019-11-12: 0
-2019-11-13: 0
-2019-11-14: 36
-2019-11-15: 0
-2019-11-16: 0
-2019-11-17: 0
-2019-11-18: 0
-2019-11-19: 3
-2019-11-20: 0
-2019-11-21: 0
-2019-11-22: 0
-2019-11-23: 0
-2019-11-24: 0
-2019-11-25: 0
-2019-11-26: 0
-2019-11-27: 0
-2019-11-28: 0
-2019-11-29: 0
-2019-11-30: 0
-2019-12-01: 0
-2019-12-02: 13
-2019-12-03: 0
-2019-12-04: 0
-2019-12-05: 0
-2019-12-06: 0
-2019-12-07: 0
-2019-12-08: 0
-2019-12-09: 0
-2019-12-10: 0
-2019-12-11: 0
-2019-12-12: 0
-2019-12-13: 0
-2019-12-14: 0
-2019-12-15: 0
-2019-12-16: 0
-2019-12-17: 0
-2019-12-18: 0
-2019-12-19: 0
-2019-12-20: 0
-2019-12-21: 0
-2019-12-22: 0
-2019-12-23: 0
-2019-12-24: 0
-2019-12-25: 0
-2019-12-26: 0
-2019-12-27: 0
-2019-12-28: 0
-2019-12-29: 0
-2019-12-30: 0
-2019-12-31: 0
-2020-01-01: 0
-2020-01-02: 0
-2020-01-03: 0
-2020-01-04: 0
-2020-01-05: 0
-2020-01-06: 0
-2020-01-07: 12
-2020-01-08: 6
-2020-01-09: 0
-2020-01-10: 0
-2020-01-11: 0
-2020-01-12: 0
-2020-01-13: 0
-2020-01-14: 0
-2020-01-15: 0
-2020-01-16: 0
-2020-01-17: 0
-2020-01-18: 46
-2020-01-19: 0
-2020-01-20: 0
-2020-01-21: 16
-2020-01-22: 0
-2020-01-23: 0
-2020-01-24: 0
-2020-01-25: 0
-2020-01-26: 0
-2020-01-27: 0
-2020-01-28: 0
-2020-01-29: 0
-2020-01-30: 0
-2020-01-31: 0
-2020-02-01: 0
-2020-02-02: 0
-2020-02-03: 0
-2020-02-04: 0
-2020-02-05: 0
-2020-02-06: 0
-2020-02-07: 0
-2020-02-08: 0
-2020-02-09: 0
-2020-02-10: 0
-2020-02-11: 0
-2020-02-12: 0
-2020-02-13: 0
-2020-02-14: 0
-2020-02-15: 0
-2020-02-16: 0
-2020-02-17: 0
-2020-02-18: 0
-2020-02-19: 0
-2020-02-20: 0
-2020-02-21: 0
-2020-02-22: 0
-2020-02-23: 0
-2020-02-24: 0
-2020-02-25: 0
-2020-02-26: 0
-2020-02-27: 0
-2020-02-28: 0
-2020-02-29: 0
-2020-03-01: 0
-2020-03-02: 0
-2020-03-03: 0
-2020-03-04: 0
-2020-03-05: 0
-2020-03-06: 0
-2020-03-07: 0
-2020-03-08: 0
-2020-03-09: 0
-2020-03-10: 0
-2020-03-11: 0
-2020-03-12: 0
-2020-03-13: 0
-2020-03-14: 0
-2020-03-15: 0
-2020-03-16: 0
-2020-03-17: 0
-2020-03-18: 0
-2020-03-19: 0
-2020-03-20: 0
-2020-03-21: 0
-2020-03-22: 0
-2020-03-23: 1
-2020-03-24: 0
-2020-03-25: 0
-2020-03-26: 0
-2020-03-27: 0
-2020-03-28: 0
-2020-03-29: 0
-2020-03-30: 0
-2020-03-31: 0
-2020-04-01: 0
-2020-04-02: 0
-2020-04-03: 0
-2020-04-04: 0
-2020-04-05: 0
-2020-04-06: 0
-2020-04-07: 8
-2020-04-08: 0
-2020-04-09: 0
-2020-04-10: 0
-2020-04-11: 0
-2020-04-12: 0
-2020-04-13: 0
-2020-04-14: 0
-2020-04-15: 0
-2020-04-16: 5
-2020-04-17: 0
-2020-04-18: 1
-2020-04-19: 0
-2020-04-20: 0
-2020-04-21: 0
-2020-04-22: 0
-2020-04-23: 0
-2020-04-24: 4
-2020-04-25: 0
-2020-04-26: 0
-2020-04-27: 0
-2020-04-28: 1
-2020-04-29: 0
-2020-04-30: 1
-2020-05-01: 0
-2020-05-02: 0
-2020-05-03: 0
-2020-05-04: 2
-2020-05-05: 0
-2020-05-06: 0
-2020-05-07: 1
-2020-05-08: 4
-2020-05-09: 0
-2020-05-10: 0
-2020-05-11: 0
-2020-05-12: 0
-2020-05-13: 1
-2020-05-14: 2
-2020-05-15: 0
-2020-05-16: 0
-2020-05-17: 0
-2020-05-18: 0
-2020-05-19: 0
-2020-05-20: 1
-2020-05-21: 0
-2020-05-22: 0
-2020-05-23: 0
-2020-05-24: 0
-2020-05-25: 0
-2020-05-26: 0
-2020-05-27: 0
-2020-05-28: 1
-2020-05-29: 0
-2020-05-30: 0
-2020-05-31: 0
-2020-06-01: 0
-2020-06-02: 0
-2020-06-03: 0
-2020-06-04: 0
-2020-06-05: 0
-2020-06-06: 0
-2020-06-07: 0
-2020-06-08: 1
-2020-06-09: 0
-2020-06-10: 3
-2020-06-11: 0
-2020-06-12: 0
-2020-06-13: 0
-2020-06-14: 0
-2020-06-15: 27
-2020-06-16: 0
-2020-06-17: 0
-2020-06-18: 0
-2020-06-19: 0
-2020-06-20: 0
-2020-06-21: 0
-2020-06-22: 0
-2020-06-23: 0
-2020-06-24: 0
-2020-06-25: 0
-2020-06-26: 0
-2020-06-27: 0
-2020-06-28: 0
-2020-06-29: 0
-2020-06-30: 0
-2020-07-01: 0
-2020-07-02: 0
-2020-07-03: 0
-2020-07-04: 0
-2020-07-05: 0
-2020-07-06: 0
-2020-07-07: 0
-2020-07-08: 1
-2020-07-09: 0
-2020-07-10: 0
-2020-07-11: 0
-2020-07-12: 0
-2020-07-13: 2
-2020-07-14: 0
-2020-07-15: 0
-2020-07-16: 0
-2020-07-17: 0
-2020-07-18: 0
-2020-07-19: 0
-2020-07-20: 0
-2020-07-21: 0
-2020-07-22: 0
-2020-07-23: 0
-2020-07-24: 0
-2020-07-25: 0
-2020-07-26: 0
-2020-07-27: 0
-2020-07-28: 0
-2020-07-29: 0
-2020-07-30: 0
-2020-07-31: 0
-2020-08-01: 0
-2020-08-02: 0
-2020-08-03: 0
-2020-08-04: 0
-2020-08-05: 0
-2020-08-06: 0
-2020-08-07: 0
-2020-08-08: 0
-2020-08-09: 0
-2020-08-10: 0
-2020-08-11: 0
-2020-08-12: 0
-2020-08-13: 2
-2020-08-14: 0
-2020-08-15: 0
-2020-08-16: 0
-2020-08-17: 0
-2020-08-18: 0
-2020-08-19: 0
-2020-08-20: 0
-2020-08-21: 0
-2020-08-22: 0
-2020-08-23: 0
-2020-08-24: 0
-2020-08-25: 0
-2020-08-26: 0
-2020-08-27: 0
-2020-08-28: 0
-2020-08-29: 0
-2020-08-30: 0
-2020-08-31: 0
-2020-09-01: 0
-2020-09-02: 0
-2020-09-03: 0
-2020-09-04: 0
-2020-09-05: 0
-2020-09-06: 0
-2020-09-07: 1
-2020-09-08: 0
-2020-09-09: 0
-2020-09-10: 32
-2020-09-11: 0
-2020-09-12: 0
-2020-09-13: 0
-2020-09-14: 0
-2020-09-15: 0
-2020-09-16: 0
-2020-09-17: 0
-2020-09-18: 0
-2020-09-19: 3
-2020-09-20: 0
-2020-09-21: 1
-2020-09-22: 0
-2020-09-23: 0
-2020-09-24: 0
-2020-09-25: 0
-2020-09-26: 15
-2020-09-27: 0
-2020-09-28: 0
-2020-09-29: 0
-2020-09-30: 1
-2020-10-01: 1
-2020-10-02: 0
-2020-10-03: 0
-2020-10-04: 0
-2020-10-05: 0
-2020-10-06: 4
-2020-10-07: 0
-2020-10-08: 0
-2020-10-09: 0
-2020-10-10: 0
-2020-10-11: 0
-2020-10-12: 0
-2020-10-13: 0
-2020-10-14: 0
-2020-10-15: 3
-2020-10-16: 0
-2020-10-17: 0
-2020-10-18: 69
-2020-10-19: 76
-2020-10-20: 0
-2020-10-21: 0
-2020-10-22: 21
-2020-10-23: 0
-2020-10-24: 0
-2020-10-25: 0
-2020-10-26: 0
-2020-10-27: 58
-2020-10-28: 19
-2020-10-29: 100
-2020-10-30: 38
-2020-10-31: 174
-2020-11-01: 0
-2020-11-02: 89
-2020-11-03: 407
-2020-11-04: 193
-2020-11-05: 152
-2020-11-06: 0
-2020-11-07: 0
-2020-11-08: 0
-2020-11-09: 0
-2020-11-10: 0
-2020-11-11: 0
-2020-11-12: 47
-2020-11-13: 28
-2020-11-14: 50
-2020-11-15: 20
-2020-11-16: 1
-2020-11-17: 0
-2020-11-18: 8
-2020-11-19: 3
-2020-11-20: 2
-2020-11-21: 0
-2020-11-22: 1
-2020-11-23: 48
-2020-11-24: 29
-2020-11-25: 0
-2020-11-26: 0
-2020-11-27: 0
-2020-11-28: 0
-2020-11-29: 0
-2020-11-30: 0
-2020-12-01: 0
-2020-12-02: 0
-2020-12-03: 0
-2020-12-04: 18
-2020-12-05: 0
-2020-12-06: 0
-2020-12-07: 0
-2020-12-08: 0
-2020-12-09: 0
-2020-12-10: 0
-2020-12-11: 2
-2020-12-12: 0
-2020-12-13: 0
+Sessions by # of solved challenges
+0	63
+1	16
+2	7
+3	6
+4	3
+5	6
+6	1
+7	0
+8	9
+9	11
+10	37
 
 Errors by type
-There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ : 42
-- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}: 4
-There are 1 possible tokens that can appear here: [ : 9
-There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ : 36
-There are 5 possible tokens that can appear here: enum fun let open pred : 5
-= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}: 30
-Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.: 1
-The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".: 37
-There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ : 34
-This must be a formula expression. Instead, it has the following possible type(s): {_}: 166
-~ can be used only with a binary relation. Instead, its possible type(s) are: {_}: 6
-!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}: 14
-There are 1 possible tokens that can appear here: ) : 6
-This must be a unary set, but instead it has the following possible type(s): {_}: 2
-^ can be used only with a binary relation. Instead, its possible type(s) are: {_}: 2
-in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}: 16
-This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) : 58
-The name _ cannot be found.: 98
-This expression failed to be typechecked line _ column _ filename=_.als: 46
-& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}: 15
-Syntax error at the \ character. HEX: \u5c): 16
-This must be a set or relation. Instead, it has the following possible type(s): {_}: 138
-There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ : 73
-There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ : 7
-There are 1 possible tokens that can appear here: = : 2
-"File" is already the name of a sig/parameter in this module.: 2
-There are 1 possible tokens that can appear here: NAME : 1
-There are 3 possible tokens that can appear here: ,  { | : 10
+There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	42
+- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	4
+There are 1 possible tokens that can appear here: [ 	9
+There are 5 possible tokens that can appear here: enum fun let open pred 	5
+There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ 	36
+= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	30
+The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".	37
+Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.	1
+There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	34
+This must be a formula expression. Instead, it has the following possible type(s): {_}	166
+~ can be used only with a binary relation. Instead, its possible type(s) are: {_}	6
+This must be a unary set, but instead it has the following possible type(s): {_}	2
+There are 1 possible tokens that can appear here: ) 	6
+!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	14
+^ can be used only with a binary relation. Instead, its possible type(s) are: {_}	2
+in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	16
+The name _ cannot be found.	98
+This expression failed to be typechecked line _ column _ filename=_.als	46
+This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	58
+& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	15
+Syntax error at the \ character. HEX: \u5c)	16
+There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	73
+This must be a set or relation. Instead, it has the following possible type(s): {_}	138
+_ is already the name of a sig/parameter in this module.	2
+There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ 	7
+There are 1 possible tokens that can appear here: = 	2
+There are 1 possible tokens that can appear here: NAME 	1
+There are 3 possible tokens that can appear here: ,  { | 	10
+
+Models by number of warnings
+0	2621
+1	34
 
 * Overall metrics, classified
 
-Execution results by sub-challenge
-inv1Ok
-	UNSAT: 175
-	SAT: 64
-inv2Ok
-	UNSAT: 97
-	SAT: 31
-inv3Ok
-	UNSAT: 96
-	SAT: 34
-inv4Ok
-	UNSAT: 101
-	SAT: 64
-inv5Ok
-	UNSAT: 92
-	SAT: 140
-inv6Ok
-	UNSAT: 110
-	SAT: 95
-inv7Ok
-	UNSAT: 76
-	SAT: 114
-inv8Ok
-	UNSAT: 111
-	SAT: 1
-inv9Ok
-	UNSAT: 96
-	SAT: 69
-inv10Ok
-	UNSAT: 86
-	SAT: 94
+Execution results by challenge
+m	SAT	UNSAT	
+inv1Ok	65	175	
+inv2Ok	31	97	
+inv3Ok	34	96	
+inv4Ok	64	101	
+inv5Ok	140	92	
+inv6Ok	95	110	
+inv7Ok	114	76	
+inv8Ok	1	111	
+inv9Ok	69	96	
+inv10Ok	94	86	
 
-Executions over time classified
-2019-10-02
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-03
-	ERROR: 213
-	UNSAT: 189
-	SAT: 106
-2019-10-04
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-05
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-06
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-07
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-08
-	ERROR: 0
-	UNSAT: 6
-	SAT: 0
-2019-10-09
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-10
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-11
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-12
-	ERROR: 1
-	UNSAT: 29
-	SAT: 2
-2019-10-13
-	ERROR: 4
-	UNSAT: 0
-	SAT: 2
-2019-10-14
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-15
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-16
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-17
-	ERROR: 1
-	UNSAT: 1
-	SAT: 0
-2019-10-18
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-19
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-20
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-21
-	ERROR: 0
-	UNSAT: 2
-	SAT: 0
-2019-10-22
-	ERROR: 33
-	UNSAT: 16
-	SAT: 7
-2019-10-23
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-24
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-25
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-26
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-27
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-28
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-29
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-10-30
-	ERROR: 3
-	UNSAT: 33
-	SAT: 9
-2019-10-31
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-01
-	ERROR: 6
-	UNSAT: 28
-	SAT: 0
-2019-11-02
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-03
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-04
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-05
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-06
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-07
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-08
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-09
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-10
-	ERROR: 2
-	UNSAT: 10
-	SAT: 1
-2019-11-11
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-12
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-13
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-14
-	ERROR: 10
-	UNSAT: 13
-	SAT: 13
-2019-11-15
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-16
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-17
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-18
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-19
-	ERROR: 0
-	UNSAT: 0
-	SAT: 3
-2019-11-20
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-21
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-22
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-23
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-24
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-25
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-26
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-27
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-28
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-29
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-11-30
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-01
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-02
-	ERROR: 0
-	UNSAT: 11
-	SAT: 2
-2019-12-03
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-04
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-05
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-06
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-07
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-08
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-09
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-10
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-11
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-12
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-13
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-14
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-15
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-16
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-17
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-18
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-19
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-20
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-21
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-22
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-23
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-24
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-25
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-26
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-27
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-28
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-29
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-30
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2019-12-31
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-01
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-02
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-03
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-04
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-05
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-06
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-07
-	ERROR: 1
-	UNSAT: 8
-	SAT: 3
-2020-01-08
-	ERROR: 2
-	UNSAT: 3
-	SAT: 1
-2020-01-09
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-10
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-11
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-12
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-13
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-14
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-15
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-16
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-17
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-18
-	ERROR: 14
-	UNSAT: 18
-	SAT: 14
-2020-01-19
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-20
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-21
-	ERROR: 2
-	UNSAT: 10
-	SAT: 4
-2020-01-22
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-23
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-24
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-25
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-26
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-27
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-28
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-29
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-30
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-01-31
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-01
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-02
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-03
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-04
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-05
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-06
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-07
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-08
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-09
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-10
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-11
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-12
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-13
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-14
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-15
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-16
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-17
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-18
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-19
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-20
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-21
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-22
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-23
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-24
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-25
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-26
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-27
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-28
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-02-29
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-01
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-02
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-03
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-04
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-05
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-06
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-07
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-08
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-09
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-10
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-11
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-12
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-13
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-14
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-15
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-16
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-17
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-18
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-19
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-20
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-21
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-22
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-23
-	ERROR: 0
-	UNSAT: 0
-	SAT: 1
-2020-03-24
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-25
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-26
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-27
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-28
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-29
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-30
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-03-31
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-01
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-02
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-03
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-04
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-05
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-06
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-07
-	ERROR: 5
-	UNSAT: 0
-	SAT: 3
-2020-04-08
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-09
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-10
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-11
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-12
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-13
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-14
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-15
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-16
-	ERROR: 3
-	UNSAT: 0
-	SAT: 2
-2020-04-17
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-18
-	ERROR: 0
-	UNSAT: 0
-	SAT: 1
-2020-04-19
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-20
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-21
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-22
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-23
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-24
-	ERROR: 0
-	UNSAT: 0
-	SAT: 4
-2020-04-25
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-26
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-27
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-28
-	ERROR: 0
-	UNSAT: 0
-	SAT: 1
-2020-04-29
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-04-30
-	ERROR: 0
-	UNSAT: 0
-	SAT: 1
-2020-05-01
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-02
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-03
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-04
-	ERROR: 0
-	UNSAT: 0
-	SAT: 2
-2020-05-05
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-06
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-07
-	ERROR: 0
-	UNSAT: 0
-	SAT: 1
-2020-05-08
-	ERROR: 0
-	UNSAT: 0
-	SAT: 4
-2020-05-09
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-10
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-11
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-12
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-13
-	ERROR: 0
-	UNSAT: 0
-	SAT: 1
-2020-05-14
-	ERROR: 2
-	UNSAT: 0
-	SAT: 0
-2020-05-15
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-16
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-17
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-18
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-19
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-20
-	ERROR: 0
-	UNSAT: 0
-	SAT: 1
-2020-05-21
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-22
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-23
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-24
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-25
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-26
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-27
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-28
-	ERROR: 0
-	UNSAT: 0
-	SAT: 1
-2020-05-29
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-30
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-05-31
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-01
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-02
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-03
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-04
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-05
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-06
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-07
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-08
-	ERROR: 0
-	UNSAT: 0
-	SAT: 1
-2020-06-09
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-10
-	ERROR: 0
-	UNSAT: 0
-	SAT: 3
-2020-06-11
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-12
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-13
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-14
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-15
-	ERROR: 9
-	UNSAT: 16
-	SAT: 2
-2020-06-16
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-17
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-18
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-19
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-20
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-21
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-22
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-23
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-24
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-25
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-26
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-27
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-28
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-29
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-06-30
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-01
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-02
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-03
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-04
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-05
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-06
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-07
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-08
-	ERROR: 0
-	UNSAT: 0
-	SAT: 1
-2020-07-09
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-10
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-11
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-12
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-13
-	ERROR: 1
-	UNSAT: 1
-	SAT: 0
-2020-07-14
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-15
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-16
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-17
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-18
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-19
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-20
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-21
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-22
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-23
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-24
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-25
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-26
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-27
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-28
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-29
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-30
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-07-31
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-01
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-02
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-03
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-04
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-05
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-06
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-07
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-08
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-09
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-10
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-11
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-12
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-13
-	ERROR: 0
-	UNSAT: 0
-	SAT: 2
-2020-08-14
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-15
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-16
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-17
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-18
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-19
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-20
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-21
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-22
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-23
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-24
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-25
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-26
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-27
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-28
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-29
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-30
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-08-31
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-01
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-02
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-03
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-04
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-05
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-06
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-07
-	ERROR: 0
-	UNSAT: 0
-	SAT: 1
-2020-09-08
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-09
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-10
-	ERROR: 6
-	UNSAT: 10
-	SAT: 16
-2020-09-11
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-12
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-13
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-14
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-15
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-16
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-17
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-18
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-19
-	ERROR: 1
-	UNSAT: 1
-	SAT: 1
-2020-09-20
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-21
-	ERROR: 0
-	UNSAT: 0
-	SAT: 1
-2020-09-22
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-23
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-24
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-25
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-26
-	ERROR: 2
-	UNSAT: 12
-	SAT: 1
-2020-09-27
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-28
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-29
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-09-30
-	ERROR: 0
-	UNSAT: 0
-	SAT: 1
-2020-10-01
-	ERROR: 0
-	UNSAT: 0
-	SAT: 1
-2020-10-02
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-03
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-04
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-05
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-06
-	ERROR: 2
-	UNSAT: 1
-	SAT: 1
-2020-10-07
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-08
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-09
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-10
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-11
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-12
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-13
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-14
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-15
-	ERROR: 2
-	UNSAT: 0
-	SAT: 1
-2020-10-16
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-17
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-18
-	ERROR: 34
-	UNSAT: 19
-	SAT: 16
-2020-10-19
-	ERROR: 30
-	UNSAT: 23
-	SAT: 23
-2020-10-20
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-21
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-22
-	ERROR: 11
-	UNSAT: 6
-	SAT: 4
-2020-10-23
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-24
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-25
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-26
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-10-27
-	ERROR: 4
-	UNSAT: 31
-	SAT: 23
-2020-10-28
-	ERROR: 4
-	UNSAT: 13
-	SAT: 2
-2020-10-29
-	ERROR: 54
-	UNSAT: 25
-	SAT: 21
-2020-10-30
-	ERROR: 8
-	UNSAT: 15
-	SAT: 15
-2020-10-31
-	ERROR: 68
-	UNSAT: 35
-	SAT: 71
-2020-11-01
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-02
-	ERROR: 11
-	UNSAT: 58
-	SAT: 20
-2020-11-03
-	ERROR: 147
-	UNSAT: 128
-	SAT: 132
-2020-11-04
-	ERROR: 73
-	UNSAT: 69
-	SAT: 51
-2020-11-05
-	ERROR: 59
-	UNSAT: 59
-	SAT: 34
-2020-11-06
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-07
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-08
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-09
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-10
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-11
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-12
-	ERROR: 5
-	UNSAT: 30
-	SAT: 12
-2020-11-13
-	ERROR: 17
-	UNSAT: 11
-	SAT: 0
-2020-11-14
-	ERROR: 6
-	UNSAT: 29
-	SAT: 15
-2020-11-15
-	ERROR: 4
-	UNSAT: 12
-	SAT: 4
-2020-11-16
-	ERROR: 0
-	UNSAT: 0
-	SAT: 1
-2020-11-17
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-18
-	ERROR: 2
-	UNSAT: 4
-	SAT: 2
-2020-11-19
-	ERROR: 0
-	UNSAT: 2
-	SAT: 1
-2020-11-20
-	ERROR: 0
-	UNSAT: 0
-	SAT: 2
-2020-11-21
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-22
-	ERROR: 0
-	UNSAT: 0
-	SAT: 1
-2020-11-23
-	ERROR: 2
-	UNSAT: 32
-	SAT: 14
-2020-11-24
-	ERROR: 6
-	UNSAT: 11
-	SAT: 12
-2020-11-25
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-26
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-27
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-28
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-29
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-30
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-01
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-02
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-03
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-04
-	ERROR: 0
-	UNSAT: 11
-	SAT: 7
-2020-12-05
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-06
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-07
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-08
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-09
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-10
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-11
-	ERROR: 0
-	UNSAT: 0
-	SAT: 2
-2020-12-12
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-13
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
+Session results by challenge
+m	solved	unsolved	
+inv1Ok	84	75	
+inv2Ok	72	87	
+inv3Ok	67	92	
+inv4Ok	65	94	
+inv5Ok	59	100	
+inv6Ok	61	98	
+inv7Ok	54	105	
+inv8Ok	62	97	
+inv9Ok	59	100	
+inv10Ok	54	105	
 
-Session results by sub-challenge
-inv1Ok
-	solved: 84
-	unsolved: 74
-inv2Ok
-	solved: 72
-	unsolved: 86
-inv3Ok
-	solved: 67
-	unsolved: 91
-inv4Ok
-	solved: 65
-	unsolved: 93
-inv5Ok
-	solved: 59
-	unsolved: 99
-inv6Ok
-	solved: 61
-	unsolved: 97
-inv7Ok
-	solved: 54
-	unsolved: 104
-inv8Ok
-	solved: 62
-	unsolved: 96
-inv9Ok
-	solved: 59
-	unsolved: 99
-inv10Ok
-	solved: 54
-	unsolved: 104
+Model entries over time
+m	ERROR	SAT	UNSAT	SHARE	
+2019-10-02	0	0	0	1	
+2019-10-03	213	106	189	7	
+2019-10-04	0	0	0	0	
+2019-10-05	0	0	0	0	
+2019-10-06	0	0	0	0	
+2019-10-07	0	0	0	0	
+2019-10-08	0	0	6	0	
+2019-10-09	0	0	0	0	
+2019-10-10	0	0	0	0	
+2019-10-11	0	0	0	0	
+2019-10-12	1	2	29	1	
+2019-10-13	4	2	0	0	
+2019-10-14	0	0	0	0	
+2019-10-15	0	0	0	0	
+2019-10-16	0	0	0	0	
+2019-10-17	1	0	1	0	
+2019-10-18	0	0	0	0	
+2019-10-19	0	0	0	0	
+2019-10-20	0	0	0	0	
+2019-10-21	0	0	2	0	
+2019-10-22	33	7	16	5	
+2019-10-23	0	0	0	0	
+2019-10-24	0	0	0	0	
+2019-10-25	0	0	0	0	
+2019-10-26	0	0	0	0	
+2019-10-27	0	0	0	0	
+2019-10-28	0	0	0	0	
+2019-10-29	0	0	0	0	
+2019-10-30	3	9	33	0	
+2019-10-31	0	0	0	1	
+2019-11-01	6	0	28	1	
+2019-11-02	0	0	0	0	
+2019-11-03	0	0	0	0	
+2019-11-04	0	0	0	0	
+2019-11-05	0	0	0	0	
+2019-11-06	0	0	0	0	
+2019-11-07	0	0	0	0	
+2019-11-08	0	0	0	0	
+2019-11-09	0	0	0	0	
+2019-11-10	2	1	10	0	
+2019-11-11	0	0	0	0	
+2019-11-12	0	0	0	0	
+2019-11-13	0	0	0	0	
+2019-11-14	10	13	13	1	
+2019-11-15	0	0	0	0	
+2019-11-16	0	0	0	0	
+2019-11-17	0	0	0	0	
+2019-11-18	0	0	0	0	
+2019-11-19	0	3	0	0	
+2019-11-20	0	0	0	0	
+2019-11-21	0	0	0	0	
+2019-11-22	0	0	0	0	
+2019-11-23	0	0	0	0	
+2019-11-24	0	0	0	0	
+2019-11-25	0	0	0	0	
+2019-11-26	0	0	0	0	
+2019-11-27	0	0	0	0	
+2019-11-28	0	0	0	0	
+2019-11-29	0	0	0	0	
+2019-11-30	0	0	0	0	
+2019-12-01	0	0	0	0	
+2019-12-02	0	2	11	0	
+2019-12-03	0	0	0	0	
+2019-12-04	0	0	0	0	
+2019-12-05	0	0	0	0	
+2019-12-06	0	0	0	0	
+2019-12-07	0	0	0	0	
+2019-12-08	0	0	0	0	
+2019-12-09	0	0	0	0	
+2019-12-10	0	0	0	0	
+2019-12-11	0	0	0	0	
+2019-12-12	0	0	0	0	
+2019-12-13	0	0	0	0	
+2019-12-14	0	0	0	0	
+2019-12-15	0	0	0	0	
+2019-12-16	0	0	0	0	
+2019-12-17	0	0	0	0	
+2019-12-18	0	0	0	0	
+2019-12-19	0	0	0	0	
+2019-12-20	0	0	0	0	
+2019-12-21	0	0	0	0	
+2019-12-22	0	0	0	0	
+2019-12-23	0	0	0	0	
+2019-12-24	0	0	0	0	
+2019-12-25	0	0	0	0	
+2019-12-26	0	0	0	0	
+2019-12-27	0	0	0	0	
+2019-12-28	0	0	0	0	
+2019-12-29	0	0	0	0	
+2019-12-30	0	0	0	0	
+2019-12-31	0	0	0	0	
+2020-01-01	0	0	0	0	
+2020-01-02	0	0	0	0	
+2020-01-03	0	0	0	0	
+2020-01-04	0	0	0	0	
+2020-01-05	0	0	0	0	
+2020-01-06	0	0	0	0	
+2020-01-07	1	3	8	0	
+2020-01-08	2	1	3	2	
+2020-01-09	0	0	0	0	
+2020-01-10	0	0	0	0	
+2020-01-11	0	0	0	0	
+2020-01-12	0	0	0	0	
+2020-01-13	0	0	0	0	
+2020-01-14	0	0	0	0	
+2020-01-15	0	0	0	0	
+2020-01-16	0	0	0	0	
+2020-01-17	0	0	0	0	
+2020-01-18	14	14	18	1	
+2020-01-19	0	0	0	0	
+2020-01-20	0	0	0	0	
+2020-01-21	2	4	10	0	
+2020-01-22	0	0	0	0	
+2020-01-23	0	0	0	0	
+2020-01-24	0	0	0	0	
+2020-01-25	0	0	0	0	
+2020-01-26	0	0	0	0	
+2020-01-27	0	0	0	0	
+2020-01-28	0	0	0	0	
+2020-01-29	0	0	0	0	
+2020-01-30	0	0	0	0	
+2020-01-31	0	0	0	0	
+2020-02-01	0	0	0	0	
+2020-02-02	0	0	0	0	
+2020-02-03	0	0	0	0	
+2020-02-04	0	0	0	0	
+2020-02-05	0	0	0	0	
+2020-02-06	0	0	0	0	
+2020-02-07	0	0	0	0	
+2020-02-08	0	0	0	0	
+2020-02-09	0	0	0	0	
+2020-02-10	0	0	0	0	
+2020-02-11	0	0	0	0	
+2020-02-12	0	0	0	0	
+2020-02-13	0	0	0	0	
+2020-02-14	0	0	0	0	
+2020-02-15	0	0	0	0	
+2020-02-16	0	0	0	0	
+2020-02-17	0	0	0	0	
+2020-02-18	0	0	0	0	
+2020-02-19	0	0	0	0	
+2020-02-20	0	0	0	0	
+2020-02-21	0	0	0	0	
+2020-02-22	0	0	0	0	
+2020-02-23	0	0	0	0	
+2020-02-24	0	0	0	0	
+2020-02-25	0	0	0	0	
+2020-02-26	0	0	0	0	
+2020-02-27	0	0	0	0	
+2020-02-28	0	0	0	0	
+2020-02-29	0	0	0	0	
+2020-03-01	0	0	0	0	
+2020-03-02	0	0	0	0	
+2020-03-03	0	0	0	0	
+2020-03-04	0	0	0	0	
+2020-03-05	0	0	0	0	
+2020-03-06	0	0	0	0	
+2020-03-07	0	0	0	0	
+2020-03-08	0	0	0	0	
+2020-03-09	0	0	0	0	
+2020-03-10	0	0	0	0	
+2020-03-11	0	0	0	0	
+2020-03-12	0	0	0	0	
+2020-03-13	0	0	0	0	
+2020-03-14	0	0	0	0	
+2020-03-15	0	0	0	0	
+2020-03-16	0	0	0	0	
+2020-03-17	0	0	0	0	
+2020-03-18	0	0	0	0	
+2020-03-19	0	0	0	0	
+2020-03-20	0	0	0	0	
+2020-03-21	0	0	0	0	
+2020-03-22	0	0	0	0	
+2020-03-23	0	1	0	0	
+2020-03-24	0	0	0	0	
+2020-03-25	0	0	0	0	
+2020-03-26	0	0	0	0	
+2020-03-27	0	0	0	0	
+2020-03-28	0	0	0	0	
+2020-03-29	0	0	0	0	
+2020-03-30	0	0	0	0	
+2020-03-31	0	0	0	0	
+2020-04-01	0	0	0	0	
+2020-04-02	0	0	0	0	
+2020-04-03	0	0	0	0	
+2020-04-04	0	0	0	0	
+2020-04-05	0	0	0	0	
+2020-04-06	0	0	0	0	
+2020-04-07	5	3	0	0	
+2020-04-08	0	0	0	0	
+2020-04-09	0	0	0	0	
+2020-04-10	0	0	0	0	
+2020-04-11	0	0	0	0	
+2020-04-12	0	0	0	0	
+2020-04-13	0	0	0	0	
+2020-04-14	0	0	0	0	
+2020-04-15	0	0	0	0	
+2020-04-16	3	2	0	1	
+2020-04-17	0	0	0	0	
+2020-04-18	0	1	0	0	
+2020-04-19	0	0	0	0	
+2020-04-20	0	0	0	0	
+2020-04-21	0	0	0	0	
+2020-04-22	0	0	0	0	
+2020-04-23	0	0	0	0	
+2020-04-24	0	4	0	0	
+2020-04-25	0	0	0	0	
+2020-04-26	0	0	0	0	
+2020-04-27	0	0	0	0	
+2020-04-28	0	1	0	0	
+2020-04-29	0	0	0	0	
+2020-04-30	0	1	0	0	
+2020-05-01	0	0	0	0	
+2020-05-02	0	0	0	0	
+2020-05-03	0	0	0	0	
+2020-05-04	0	2	0	0	
+2020-05-05	0	0	0	0	
+2020-05-06	0	0	0	0	
+2020-05-07	0	1	0	0	
+2020-05-08	0	4	0	0	
+2020-05-09	0	0	0	0	
+2020-05-10	0	0	0	0	
+2020-05-11	0	0	0	0	
+2020-05-12	0	0	0	0	
+2020-05-13	0	1	0	0	
+2020-05-14	2	0	0	0	
+2020-05-15	0	0	0	0	
+2020-05-16	0	0	0	0	
+2020-05-17	0	0	0	0	
+2020-05-18	0	0	0	0	
+2020-05-19	0	0	0	0	
+2020-05-20	0	1	0	0	
+2020-05-21	0	0	0	0	
+2020-05-22	0	0	0	0	
+2020-05-23	0	0	0	0	
+2020-05-24	0	0	0	0	
+2020-05-25	0	0	0	0	
+2020-05-26	0	0	0	0	
+2020-05-27	0	0	0	0	
+2020-05-28	0	1	0	0	
+2020-05-29	0	0	0	0	
+2020-05-30	0	0	0	0	
+2020-05-31	0	0	0	0	
+2020-06-01	0	0	0	0	
+2020-06-02	0	0	0	0	
+2020-06-03	0	0	0	0	
+2020-06-04	0	0	0	0	
+2020-06-05	0	0	0	0	
+2020-06-06	0	0	0	0	
+2020-06-07	0	0	0	0	
+2020-06-08	0	1	0	0	
+2020-06-09	0	0	0	0	
+2020-06-10	0	3	0	0	
+2020-06-11	0	0	0	0	
+2020-06-12	0	0	0	0	
+2020-06-13	0	0	0	0	
+2020-06-14	0	0	0	0	
+2020-06-15	9	2	16	0	
+2020-06-16	0	0	0	0	
+2020-06-17	0	0	0	0	
+2020-06-18	0	0	0	0	
+2020-06-19	0	0	0	0	
+2020-06-20	0	0	0	0	
+2020-06-21	0	0	0	0	
+2020-06-22	0	0	0	0	
+2020-06-23	0	0	0	0	
+2020-06-24	0	0	0	0	
+2020-06-25	0	0	0	0	
+2020-06-26	0	0	0	0	
+2020-06-27	0	0	0	0	
+2020-06-28	0	0	0	0	
+2020-06-29	0	0	0	0	
+2020-06-30	0	0	0	0	
+2020-07-01	0	0	0	0	
+2020-07-02	0	0	0	0	
+2020-07-03	0	0	0	0	
+2020-07-04	0	0	0	0	
+2020-07-05	0	0	0	0	
+2020-07-06	0	0	0	0	
+2020-07-07	0	0	0	0	
+2020-07-08	0	1	0	0	
+2020-07-09	0	0	0	0	
+2020-07-10	0	0	0	0	
+2020-07-11	0	0	0	0	
+2020-07-12	0	0	0	0	
+2020-07-13	1	0	1	0	
+2020-07-14	0	0	0	0	
+2020-07-15	0	0	0	0	
+2020-07-16	0	0	0	0	
+2020-07-17	0	0	0	0	
+2020-07-18	0	0	0	0	
+2020-07-19	0	0	0	0	
+2020-07-20	0	0	0	0	
+2020-07-21	0	0	0	0	
+2020-07-22	0	0	0	0	
+2020-07-23	0	0	0	0	
+2020-07-24	0	0	0	0	
+2020-07-25	0	0	0	0	
+2020-07-26	0	0	0	0	
+2020-07-27	0	0	0	0	
+2020-07-28	0	0	0	0	
+2020-07-29	0	0	0	0	
+2020-07-30	0	0	0	0	
+2020-07-31	0	0	0	0	
+2020-08-01	0	0	0	0	
+2020-08-02	0	0	0	0	
+2020-08-03	0	0	0	0	
+2020-08-04	0	0	0	0	
+2020-08-05	0	0	0	0	
+2020-08-06	0	0	0	0	
+2020-08-07	0	0	0	0	
+2020-08-08	0	0	0	0	
+2020-08-09	0	0	0	0	
+2020-08-10	0	0	0	0	
+2020-08-11	0	0	0	0	
+2020-08-12	0	0	0	0	
+2020-08-13	0	2	0	0	
+2020-08-14	0	0	0	0	
+2020-08-15	0	0	0	0	
+2020-08-16	0	0	0	0	
+2020-08-17	0	0	0	0	
+2020-08-18	0	0	0	0	
+2020-08-19	0	0	0	0	
+2020-08-20	0	0	0	0	
+2020-08-21	0	0	0	0	
+2020-08-22	0	0	0	0	
+2020-08-23	0	0	0	0	
+2020-08-24	0	0	0	0	
+2020-08-25	0	0	0	0	
+2020-08-26	0	0	0	0	
+2020-08-27	0	0	0	0	
+2020-08-28	0	0	0	0	
+2020-08-29	0	0	0	0	
+2020-08-30	0	0	0	0	
+2020-08-31	0	0	0	0	
+2020-09-01	0	0	0	0	
+2020-09-02	0	0	0	0	
+2020-09-03	0	0	0	0	
+2020-09-04	0	0	0	0	
+2020-09-05	0	0	0	0	
+2020-09-06	0	0	0	0	
+2020-09-07	0	1	0	0	
+2020-09-08	0	0	0	0	
+2020-09-09	0	0	0	0	
+2020-09-10	6	16	10	0	
+2020-09-11	0	0	0	0	
+2020-09-12	0	0	0	0	
+2020-09-13	0	0	0	0	
+2020-09-14	0	0	0	0	
+2020-09-15	0	0	0	0	
+2020-09-16	0	0	0	0	
+2020-09-17	0	0	0	0	
+2020-09-18	0	0	0	0	
+2020-09-19	1	1	1	0	
+2020-09-20	0	0	0	0	
+2020-09-21	0	1	0	0	
+2020-09-22	0	0	0	0	
+2020-09-23	0	0	0	0	
+2020-09-24	0	0	0	0	
+2020-09-25	0	0	0	0	
+2020-09-26	2	1	12	0	
+2020-09-27	0	0	0	0	
+2020-09-28	0	0	0	0	
+2020-09-29	0	0	0	0	
+2020-09-30	0	1	0	0	
+2020-10-01	0	1	0	0	
+2020-10-02	0	0	0	0	
+2020-10-03	0	0	0	0	
+2020-10-04	0	0	0	0	
+2020-10-05	0	0	0	0	
+2020-10-06	2	1	1	0	
+2020-10-07	0	0	0	0	
+2020-10-08	0	0	0	0	
+2020-10-09	0	0	0	0	
+2020-10-10	0	0	0	0	
+2020-10-11	0	0	0	0	
+2020-10-12	0	0	0	0	
+2020-10-13	0	0	0	0	
+2020-10-14	0	0	0	0	
+2020-10-15	2	1	0	0	
+2020-10-16	0	0	0	0	
+2020-10-17	0	0	0	0	
+2020-10-18	34	16	19	0	
+2020-10-19	30	23	23	0	
+2020-10-20	0	0	0	0	
+2020-10-21	0	0	0	0	
+2020-10-22	11	4	6	2	
+2020-10-23	0	0	0	0	
+2020-10-24	0	0	0	0	
+2020-10-25	0	0	0	0	
+2020-10-26	0	0	0	0	
+2020-10-27	4	23	31	1	
+2020-10-28	4	2	13	0	
+2020-10-29	54	21	25	0	
+2020-10-30	8	15	15	0	
+2020-10-31	68	71	35	1	
+2020-11-01	0	0	0	0	
+2020-11-02	11	20	58	0	
+2020-11-03	147	132	128	3	
+2020-11-04	73	51	69	0	
+2020-11-05	59	34	59	5	
+2020-11-06	0	0	0	0	
+2020-11-07	0	0	0	0	
+2020-11-08	0	0	0	0	
+2020-11-09	0	0	0	0	
+2020-11-10	0	0	0	0	
+2020-11-11	0	0	0	0	
+2020-11-12	5	12	30	0	
+2020-11-13	17	0	11	1	
+2020-11-14	6	15	29	0	
+2020-11-15	4	4	12	0	
+2020-11-16	0	1	0	0	
+2020-11-17	0	0	0	0	
+2020-11-18	2	2	4	0	
+2020-11-19	0	1	2	0	
+2020-11-20	0	2	0	0	
+2020-11-21	0	0	0	0	
+2020-11-22	0	1	0	0	
+2020-11-23	2	14	32	1	
+2020-11-24	6	12	11	0	
+2020-11-25	0	0	0	0	
+2020-11-26	0	0	0	0	
+2020-11-27	0	0	0	0	
+2020-11-28	0	0	0	0	
+2020-11-29	0	0	0	0	
+2020-11-30	0	0	0	0	
+2020-12-01	0	0	0	0	
+2020-12-02	0	0	0	0	
+2020-12-03	0	0	0	0	
+2020-12-04	0	7	11	0	
+2020-12-05	0	0	0	0	
+2020-12-06	0	0	0	0	
+2020-12-07	0	0	0	0	
+2020-12-08	0	0	0	0	
+2020-12-09	0	0	0	0	
+2020-12-10	0	0	0	0	
+2020-12-11	0	2	0	0	
+2020-12-12	0	0	0	0	
+2020-12-13	0	0	0	0	
+2020-12-14	0	0	0	0	
+2020-12-15	0	0	0	0	
+2020-12-16	0	1	0	0	
+2020-12-17	0	0	0	0	
+2020-12-18	0	0	0	0	
+2020-12-19	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 
 Size in 10s of nodes
 
 inv1Ok
-0
-	UNSAT: 157
-	SAT: 61
-1
-	UNSAT: 18
-	SAT: 3
+m	SAT	UNSAT	
+0	62	157	
+1	3	18	
 
 inv2Ok
-0
-	UNSAT: 81
-	SAT: 25
-1
-	UNSAT: 16
-	SAT: 6
+m	SAT	UNSAT	
+0	25	81	
+1	6	16	
 
 inv3Ok
-0
-	UNSAT: 67
-	SAT: 18
-1
-	UNSAT: 29
-	SAT: 16
+m	SAT	UNSAT	
+0	18	67	
+1	16	29	
 
 inv4Ok
-0
-	UNSAT: 79
-	SAT: 43
-1
-	UNSAT: 22
-	SAT: 21
+m	SAT	UNSAT	
+0	43	79	
+1	21	22	
 
 inv5Ok
-0
-	UNSAT: 0
-	SAT: 8
-1
-	UNSAT: 91
-	SAT: 127
-2
-	UNSAT: 1
-	SAT: 5
+m	SAT	UNSAT	
+0	8	0	
+1	127	91	
+2	5	1	
 
 inv6Ok
-0
-	UNSAT: 0
-	SAT: 7
-1
-	UNSAT: 107
-	SAT: 71
-2
-	UNSAT: 3
-	SAT: 3
-3
-	UNSAT: 0
-	SAT: 10
-4
-	UNSAT: 0
-	SAT: 4
+m	SAT	UNSAT	
+0	7	0	
+1	71	107	
+2	3	3	
+3	10	0	
+4	4	0	
 
 inv7Ok
-0
-	UNSAT: 0
-	SAT: 7
-1
-	UNSAT: 70
-	SAT: 92
-2
-	UNSAT: 6
-	SAT: 15
+m	SAT	UNSAT	
+0	7	0	
+1	92	70	
+2	15	6	
 
 inv8Ok
-0
-	UNSAT: 90
-	SAT: 1
-1
-	UNSAT: 21
-	SAT: 0
+m	SAT	UNSAT	
+0	1	90	
+1	0	21	
 
 inv9Ok
-0
-	UNSAT: 42
-	SAT: 1
-1
-	UNSAT: 46
-	SAT: 58
-2
-	UNSAT: 8
-	SAT: 6
-3
-	UNSAT: 0
-	SAT: 4
+m	SAT	UNSAT	
+0	1	42	
+1	58	46	
+2	6	8	
+3	4	0	
 
 inv10Ok
-1
-	UNSAT: 0
-	SAT: 6
-2
-	UNSAT: 70
-	SAT: 61
-3
-	UNSAT: 16
-	SAT: 25
-4
-	UNSAT: 0
-	SAT: 2
+m	SAT	UNSAT	
+1	6	0	
+2	61	70	
+3	25	16	
+4	2	0	
 
 Number of binary temporal operators
 
 inv1Ok
-0
-	UNSAT: 175
-	SAT: 64
+m	SAT	UNSAT	
+0	65	175	
 
 inv2Ok
-0
-	UNSAT: 97
-	SAT: 31
+m	SAT	UNSAT	
+0	31	97	
 
 inv3Ok
-0
-	UNSAT: 96
-	SAT: 34
+m	SAT	UNSAT	
+0	34	96	
 
 inv4Ok
-0
-	UNSAT: 101
-	SAT: 64
+m	SAT	UNSAT	
+0	64	101	
 
 inv5Ok
-0
-	UNSAT: 92
-	SAT: 140
+m	SAT	UNSAT	
+0	140	92	
 
 inv6Ok
-0
-	UNSAT: 110
-	SAT: 95
+m	SAT	UNSAT	
+0	95	110	
 
 inv7Ok
-0
-	UNSAT: 76
-	SAT: 114
+m	SAT	UNSAT	
+0	114	76	
 
 inv8Ok
-0
-	UNSAT: 111
-	SAT: 1
+m	SAT	UNSAT	
+0	1	111	
 
 inv9Ok
-0
-	UNSAT: 96
-	SAT: 69
+m	SAT	UNSAT	
+0	69	96	
 
 inv10Ok
-0
-	UNSAT: 86
-	SAT: 94
+m	SAT	UNSAT	
+0	94	86	
 
 Max nested temporal operator level
 
 inv1Ok
-0
-	UNSAT: 173
-	SAT: 64
-1
-	UNSAT: 2
-	SAT: 0
+m	SAT	UNSAT	
+0	65	173	
+1	0	2	
 
 inv2Ok
-0
-	UNSAT: 97
-	SAT: 31
+m	SAT	UNSAT	
+0	31	97	
 
 inv3Ok
-0
-	UNSAT: 96
-	SAT: 34
+m	SAT	UNSAT	
+0	34	96	
 
 inv4Ok
-0
-	UNSAT: 101
-	SAT: 64
+m	SAT	UNSAT	
+0	64	101	
 
 inv5Ok
-0
-	UNSAT: 92
-	SAT: 140
+m	SAT	UNSAT	
+0	140	92	
 
 inv6Ok
-0
-	UNSAT: 110
-	SAT: 95
+m	SAT	UNSAT	
+0	95	110	
 
 inv7Ok
-0
-	UNSAT: 76
-	SAT: 113
-1
-	UNSAT: 0
-	SAT: 1
+m	SAT	UNSAT	
+0	113	76	
+1	1	0	
 
 inv8Ok
-0
-	UNSAT: 111
-	SAT: 1
+m	SAT	UNSAT	
+0	1	111	
 
 inv9Ok
-0
-	UNSAT: 96
-	SAT: 69
+m	SAT	UNSAT	
+0	69	96	
 
 inv10Ok
-0
-	UNSAT: 86
-	SAT: 94
+m	SAT	UNSAT	
+0	94	86	
 
 Number of lone/one quantifiers
 
 inv1Ok
-0
-	UNSAT: 175
-	SAT: 64
+m	SAT	UNSAT	
+0	65	175	
 
 inv2Ok
-0
-	UNSAT: 97
-	SAT: 31
+m	SAT	UNSAT	
+0	31	97	
 
 inv3Ok
-0
-	UNSAT: 96
-	SAT: 34
+m	SAT	UNSAT	
+0	34	96	
 
 inv4Ok
-0
-	UNSAT: 101
-	SAT: 64
+m	SAT	UNSAT	
+0	64	101	
 
 inv5Ok
-0
-	UNSAT: 92
-	SAT: 140
+m	SAT	UNSAT	
+0	140	92	
 
 inv6Ok
-0
-	UNSAT: 110
-	SAT: 94
-1
-	UNSAT: 0
-	SAT: 1
+m	SAT	UNSAT	
+0	94	110	
+1	1	0	
 
 inv7Ok
-0
-	UNSAT: 76
-	SAT: 114
+m	SAT	UNSAT	
+0	114	76	
 
 inv8Ok
-0
-	UNSAT: 111
-	SAT: 1
+m	SAT	UNSAT	
+0	1	111	
 
 inv9Ok
-0
-	UNSAT: 96
-	SAT: 69
+m	SAT	UNSAT	
+0	69	96	
 
 inv10Ok
-0
-	UNSAT: 86
-	SAT: 93
-1
-	UNSAT: 0
-	SAT: 1
+m	SAT	UNSAT	
+0	93	86	
+1	1	0	
 
 Max nested quantifier level
 
 inv1Ok
-0
-	UNSAT: 156
-	SAT: 61
-1
-	UNSAT: 19
-	SAT: 3
+m	SAT	UNSAT	
+0	62	156	
+1	3	19	
 
 inv2Ok
-0
-	UNSAT: 81
-	SAT: 27
-1
-	UNSAT: 16
-	SAT: 4
+m	SAT	UNSAT	
+0	27	81	
+1	4	16	
 
 inv3Ok
-0
-	UNSAT: 67
-	SAT: 28
-1
-	UNSAT: 29
-	SAT: 6
+m	SAT	UNSAT	
+0	28	67	
+1	6	29	
 
 inv4Ok
-0
-	UNSAT: 83
-	SAT: 54
-1
-	UNSAT: 18
-	SAT: 10
+m	SAT	UNSAT	
+0	54	83	
+1	10	18	
 
 inv5Ok
-0
-	UNSAT: 73
-	SAT: 124
-1
-	UNSAT: 19
-	SAT: 16
+m	SAT	UNSAT	
+0	124	73	
+1	16	19	
 
 inv6Ok
-0
-	UNSAT: 28
-	SAT: 58
-1
-	UNSAT: 82
-	SAT: 22
-2
-	UNSAT: 0
-	SAT: 14
-3
-	UNSAT: 0
-	SAT: 1
+m	SAT	UNSAT	
+0	58	28	
+1	22	82	
+2	14	0	
+3	1	0	
 
 inv7Ok
-0
-	UNSAT: 44
-	SAT: 43
-1
-	UNSAT: 31
-	SAT: 67
-2
-	UNSAT: 1
-	SAT: 4
+m	SAT	UNSAT	
+0	43	44	
+1	67	31	
+2	4	1	
 
 inv8Ok
-0
-	UNSAT: 90
-	SAT: 1
-1
-	UNSAT: 21
-	SAT: 0
+m	SAT	UNSAT	
+0	1	90	
+1	0	21	
 
 inv9Ok
-0
-	UNSAT: 59
-	SAT: 19
-1
-	UNSAT: 37
-	SAT: 44
-2
-	UNSAT: 0
-	SAT: 6
+m	SAT	UNSAT	
+0	19	59	
+1	44	37	
+2	6	0	
 
 inv10Ok
-0
-	UNSAT: 34
-	SAT: 41
-1
-	UNSAT: 41
-	SAT: 44
-2
-	UNSAT: 11
-	SAT: 9
+m	SAT	UNSAT	
+0	41	34	
+1	44	41	
+2	9	11	
 
 Number of disj quantifications
 
 inv1Ok
-0
-	UNSAT: 175
-	SAT: 64
+m	SAT	UNSAT	
+0	65	175	
 
 inv2Ok
-0
-	UNSAT: 97
-	SAT: 31
+m	SAT	UNSAT	
+0	31	97	
 
 inv3Ok
-0
-	UNSAT: 96
-	SAT: 34
+m	SAT	UNSAT	
+0	34	96	
 
 inv4Ok
-0
-	UNSAT: 101
-	SAT: 64
+m	SAT	UNSAT	
+0	64	101	
 
 inv5Ok
-0
-	UNSAT: 92
-	SAT: 140
+m	SAT	UNSAT	
+0	140	92	
 
 inv6Ok
-0
-	UNSAT: 110
-	SAT: 95
+m	SAT	UNSAT	
+0	95	110	
 
 inv7Ok
-0
-	UNSAT: 76
-	SAT: 114
+m	SAT	UNSAT	
+0	114	76	
 
 inv8Ok
-0
-	UNSAT: 111
-	SAT: 1
+m	SAT	UNSAT	
+0	1	111	
 
 inv9Ok
-0
-	UNSAT: 96
-	SAT: 61
-1
-	UNSAT: 0
-	SAT: 8
+m	SAT	UNSAT	
+0	61	96	
+1	8	0	
 
 inv10Ok
-0
-	UNSAT: 86
-	SAT: 94
+m	SAT	UNSAT	
+0	94	86	
 
 Number multiplicity arrows
 
 inv1Ok
-0
-	UNSAT: 175
-	SAT: 64
+m	SAT	UNSAT	
+0	65	175	
 
 inv2Ok
-0
-	UNSAT: 97
-	SAT: 31
+m	SAT	UNSAT	
+0	31	97	
 
 inv3Ok
-0
-	UNSAT: 96
-	SAT: 34
+m	SAT	UNSAT	
+0	34	96	
 
 inv4Ok
-0
-	UNSAT: 101
-	SAT: 64
+m	SAT	UNSAT	
+0	64	101	
 
 inv5Ok
-0
-	UNSAT: 92
-	SAT: 140
+m	SAT	UNSAT	
+0	140	92	
 
 inv6Ok
-0
-	UNSAT: 110
-	SAT: 94
-1
-	UNSAT: 0
-	SAT: 1
+m	SAT	UNSAT	
+0	94	110	
+1	1	0	
 
 inv7Ok
-0
-	UNSAT: 76
-	SAT: 114
+m	SAT	UNSAT	
+0	114	76	
 
 inv8Ok
-0
-	UNSAT: 111
-	SAT: 1
+m	SAT	UNSAT	
+0	1	111	
 
 inv9Ok
-0
-	UNSAT: 96
-	SAT: 69
+m	SAT	UNSAT	
+0	69	96	
 
 inv10Ok
-0
-	UNSAT: 86
-	SAT: 94
+m	SAT	UNSAT	
+0	94	86	
 
 Number of quantifiers
 
 inv1Ok
-0
-	UNSAT: 156
-	SAT: 61
-1
-	UNSAT: 19
-	SAT: 3
+m	SAT	UNSAT	
+0	62	156	
+1	3	19	
 
 inv2Ok
-0
-	UNSAT: 81
-	SAT: 27
-1
-	UNSAT: 16
-	SAT: 4
+m	SAT	UNSAT	
+0	27	81	
+1	4	16	
 
 inv3Ok
-0
-	UNSAT: 67
-	SAT: 28
-1
-	UNSAT: 29
-	SAT: 6
+m	SAT	UNSAT	
+0	28	67	
+1	6	29	
 
 inv4Ok
-0
-	UNSAT: 83
-	SAT: 54
-1
-	UNSAT: 18
-	SAT: 10
+m	SAT	UNSAT	
+0	54	83	
+1	10	18	
 
 inv5Ok
-0
-	UNSAT: 73
-	SAT: 124
-1
-	UNSAT: 19
-	SAT: 14
-2
-	UNSAT: 0
-	SAT: 2
+m	SAT	UNSAT	
+0	124	73	
+1	14	19	
+2	2	0	
 
 inv6Ok
-0
-	UNSAT: 28
-	SAT: 58
-1
-	UNSAT: 79
-	SAT: 21
-2
-	UNSAT: 0
-	SAT: 2
-3
-	UNSAT: 3
-	SAT: 14
+m	SAT	UNSAT	
+0	58	28	
+1	21	79	
+2	2	0	
+3	14	3	
 
 inv7Ok
-0
-	UNSAT: 44
-	SAT: 43
-1
-	UNSAT: 25
-	SAT: 61
-2
-	UNSAT: 7
-	SAT: 10
+m	SAT	UNSAT	
+0	43	44	
+1	61	25	
+2	10	7	
 
 inv8Ok
-0
-	UNSAT: 90
-	SAT: 1
-1
-	UNSAT: 21
-	SAT: 0
+m	SAT	UNSAT	
+0	1	90	
+1	0	21	
 
 inv9Ok
-0
-	UNSAT: 59
-	SAT: 19
-1
-	UNSAT: 24
-	SAT: 16
-2
-	UNSAT: 5
-	SAT: 33
-3
-	UNSAT: 8
-	SAT: 1
+m	SAT	UNSAT	
+0	19	59	
+1	16	24	
+2	33	5	
+3	1	8	
 
 inv10Ok
-0
-	UNSAT: 34
-	SAT: 41
-1
-	UNSAT: 38
-	SAT: 38
-2
-	UNSAT: 14
-	SAT: 15
+m	SAT	UNSAT	
+0	41	34	
+1	38	38	
+2	15	14	
 
 Number of inverted navigation expressions
 
 inv1Ok
-0
-	UNSAT: 175
-	SAT: 64
+m	SAT	UNSAT	
+0	65	175	
 
 inv2Ok
-0
-	UNSAT: 97
-	SAT: 31
+m	SAT	UNSAT	
+0	31	97	
 
 inv3Ok
-0
-	UNSAT: 96
-	SAT: 34
+m	SAT	UNSAT	
+0	34	96	
 
 inv4Ok
-0
-	UNSAT: 101
-	SAT: 64
+m	SAT	UNSAT	
+0	64	101	
 
 inv5Ok
-0
-	UNSAT: 92
-	SAT: 140
+m	SAT	UNSAT	
+0	140	92	
 
 inv6Ok
-0
-	UNSAT: 110
-	SAT: 95
+m	SAT	UNSAT	
+0	95	110	
 
 inv7Ok
-0
-	UNSAT: 76
-	SAT: 114
+m	SAT	UNSAT	
+0	114	76	
 
 inv8Ok
-0
-	UNSAT: 111
-	SAT: 1
+m	SAT	UNSAT	
+0	1	111	
 
 inv9Ok
-0
-	UNSAT: 92
-	SAT: 68
-1
-	UNSAT: 4
-	SAT: 1
+m	SAT	UNSAT	
+0	68	92	
+1	1	4	
 
 inv10Ok
-0
-	UNSAT: 86
-	SAT: 94
+m	SAT	UNSAT	
+0	94	86	
 
 * Derivation tree
 PQAJE67kz8w5NWJuM, 2019-10-02T21:42:47 (model share)
@@ -5832,3 +3851,4 @@ PQAJE67kz8w5NWJuM, 2019-10-02T21:42:47 (model share)
     qTpqjXHFomd8fSZYY, 2020-12-04T16:32:07 (inv10Ok,incorrect,check,)
   guxsnt7gNpgT4TNx8, 2020-12-11T14:24:44 (inv1Ok,incorrect,check,)
     rypBZBpQKJSzsSd5H, 2020-12-11T14:25:44 (inv2Ok,incorrect,check,)
+  BS8PxH8QMztud6Gh6, 2020-12-16T17:01:38 (inv1Ok,incorrect,check,)

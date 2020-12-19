@@ -1,4 +1,4 @@
-3qN2T4SAA2exYuvpE (2020-12-14)
+3qN2T4SAA2exYuvpE (2020-12-19)
 
 * Meta-data
 Challenge name: unknown
@@ -14,377 +14,277 @@ Total error messages: 1
 Total warning messages: 1
 Total solutions: 26
 Total sessions: 3
+Timed out re-executions: 0
 Rejected due to server errors: 0
+Inconsisistent result reports: 0
+Inconsisistent message reports: 0
 Total instance entries: 0
 Total link entries: 4
 
 * Scalar metrics
-Incorrect executions with warnings: 1
-Number of shared sessions: 2
-Longest session: 17
-Shared models: 3
-Warnings by type: 1
-Incorrect executions: 15
-Correct executions: 11
-Errors by type: 1
+Number of shared sessions	2
+Shared models (model)	3
+Shares with warnings	0
+Alloy runtime errors	0
+Warnings by type	1
+Shared errored models	0
+Alloy static errors	1
+Shared models (instance)	0
+Average session	9.666666666666666
+Errors by type	1
+Longest session	16
+Sat executions with warnings	1
+Executed errored models	1
+Unsat executions	15
+Unsat executions with warnings	0
+Errored executions with warnings	0
+Average % unsatisfiable	0.5767195767195767
+Sat executions	11
 
 * Overall metrics
 
 Sessions by length
-4: 1
-5: 0
-6: 0
-7: 0
-8: 0
-9: 1
-10: 0
-11: 0
-12: 0
-13: 0
-14: 0
-15: 0
-16: 1
+4	1
+5	0
+6	0
+7	0
+8	0
+9	1
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	1
 
-Sessions by # of solved sub-challenges
-2: 2
-3: 1
+Sessions by # of solved challenges
+2	2
+3	1
 
-Entries over time
-2020-11-27: 0
-2020-11-28: 0
-2020-11-29: 0
-2020-11-30: 0
-2020-12-01: 0
-2020-12-02: 0
-2020-12-03: 0
-2020-12-04: 0
-2020-12-05: 0
-2020-12-06: 0
-2020-12-07: 0
-2020-12-08: 18
-2020-12-09: 0
-2020-12-10: 0
-2020-12-11: 0
-2020-12-12: 9
-2020-12-13: 0
+Models by number of warnings
+0	29
+1	1
 
 * Overall metrics, classified
 
-Execution results by sub-challenge
-Inv1OK
-	UNSAT: 6
-	SAT: 1
-Inv2OK
-	UNSAT: 4
-	SAT: 5
-Inv3OK
-	UNSAT: 1
-	SAT: 0
-Inv4OK
-	UNSAT: 0
-	SAT: 9
+Execution results by challenge
+m	SAT	UNSAT	
+Inv1OK	1	6	
+Inv2OK	5	4	
+Inv3OK	0	1	
+Inv4OK	9	0	
 
-Executions over time classified
-2020-11-27
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-28
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-29
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-11-30
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-01
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-02
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-03
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-04
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-05
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-06
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-07
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-08
-	ERROR: 1
-	UNSAT: 7
-	SAT: 10
-2020-12-09
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-10
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-11
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
-2020-12-12
-	ERROR: 0
-	UNSAT: 4
-	SAT: 5
-2020-12-13
-	ERROR: 0
-	UNSAT: 0
-	SAT: 0
+Session results by challenge
+m	solved	unsolved	
+Inv1OK	3	0	
+Inv2OK	3	0	
+Inv3OK	1	2	
+Inv4OK	0	3	
 
-Session results by sub-challenge
-Inv1OK
-	solved: 3
-	unsolved: 0
-Inv2OK
-	solved: 3
-	unsolved: 0
-Inv3OK
-	solved: 1
-	unsolved: 2
-Inv4OK
-	solved: 0
-	unsolved: 3
+Model entries over time
+m	SAT	UNSAT	SHARE	ERROR	
+2020-11-27	0	0	1	0	
+2020-11-28	0	0	0	0	
+2020-11-29	0	0	0	0	
+2020-11-30	0	0	0	0	
+2020-12-01	0	0	0	0	
+2020-12-02	0	0	0	0	
+2020-12-03	0	0	0	0	
+2020-12-04	0	0	0	0	
+2020-12-05	0	0	0	0	
+2020-12-06	0	0	0	0	
+2020-12-07	0	0	0	0	
+2020-12-08	10	7	2	1	
+2020-12-09	0	0	0	0	
+2020-12-10	0	0	0	0	
+2020-12-11	0	0	0	0	
+2020-12-12	5	4	0	0	
+2020-12-13	0	0	0	0	
+2020-12-14	0	0	0	0	
+2020-12-15	0	0	0	0	
+2020-12-16	0	0	0	0	
+2020-12-17	0	0	0	0	
+2020-12-18	0	0	0	0	
+2020-12-19	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 
 Size in 10s of nodes
 
 Inv1OK
-10
-	UNSAT: 4
-	SAT: 1
-11
-	UNSAT: 2
-	SAT: 0
+m	SAT	UNSAT	
+10	1	4	
+11	0	2	
 
 Inv2OK
-12
-	UNSAT: 4
-	SAT: 2
-13
-	UNSAT: 0
-	SAT: 3
+m	SAT	UNSAT	
+12	2	4	
+13	3	0	
 
 Inv3OK
-15
-	UNSAT: 1
+m	UNSAT	
+15	1	
 
 Inv4OK
-13
-	SAT: 5
-14
-	SAT: 1
-15
-	SAT: 0
-16
-	SAT: 3
-
-Number of disj quantifications
-
-Inv1OK
-0
-	UNSAT: 6
-	SAT: 1
-
-Inv2OK
-0
-	UNSAT: 4
-	SAT: 5
-
-Inv3OK
-2
-	UNSAT: 1
-
-Inv4OK
-2
-	SAT: 9
-
-Number multiplicity arrows
-
-Inv1OK
-0
-	UNSAT: 6
-	SAT: 1
-
-Inv2OK
-0
-	UNSAT: 4
-	SAT: 5
-
-Inv3OK
-0
-	UNSAT: 1
-
-Inv4OK
-0
-	SAT: 9
+m	SAT	
+13	5	
+14	1	
+15	0	
+16	3	
 
 Number of binary temporal operators
 
 Inv1OK
-0
-	UNSAT: 6
-	SAT: 1
+m	SAT	UNSAT	
+0	1	6	
 
 Inv2OK
-0
-	UNSAT: 4
-	SAT: 5
+m	SAT	UNSAT	
+0	5	4	
 
 Inv3OK
-0
-	UNSAT: 1
+m	UNSAT	
+0	1	
 
 Inv4OK
-0
-	SAT: 9
-
-Number of quantifiers
-
-Inv1OK
-0
-	UNSAT: 4
-	SAT: 1
-1
-	UNSAT: 0
-	SAT: 0
-2
-	UNSAT: 2
-	SAT: 0
-
-Inv2OK
-2
-	UNSAT: 4
-	SAT: 1
-3
-	UNSAT: 0
-	SAT: 0
-4
-	UNSAT: 0
-	SAT: 4
-
-Inv3OK
-6
-	UNSAT: 1
-
-Inv4OK
-6
-	SAT: 5
-7
-	SAT: 0
-8
-	SAT: 4
-
-Number of inverted navigation expressions
-
-Inv1OK
-0
-	UNSAT: 6
-	SAT: 1
-
-Inv2OK
-0
-	UNSAT: 4
-	SAT: 5
-
-Inv3OK
-0
-	UNSAT: 1
-
-Inv4OK
-0
-	SAT: 9
+m	SAT	
+0	9	
 
 Max nested temporal operator level
 
 Inv1OK
-0
-	UNSAT: 6
-	SAT: 1
+m	SAT	UNSAT	
+0	1	6	
 
 Inv2OK
-0
-	UNSAT: 4
-	SAT: 5
+m	SAT	UNSAT	
+0	5	4	
 
 Inv3OK
-0
-	UNSAT: 1
+m	UNSAT	
+0	1	
 
 Inv4OK
-0
-	SAT: 9
+m	SAT	
+0	9	
 
 Number of lone/one quantifiers
 
 Inv1OK
-0
-	UNSAT: 6
-	SAT: 1
+m	SAT	UNSAT	
+0	1	6	
 
 Inv2OK
-0
-	UNSAT: 4
-	SAT: 5
+m	SAT	UNSAT	
+0	5	4	
 
 Inv3OK
-0
-	UNSAT: 1
+m	UNSAT	
+0	1	
 
 Inv4OK
-0
-	SAT: 9
+m	SAT	
+0	9	
 
 Max nested quantifier level
 
 Inv1OK
-0
-	UNSAT: 4
-	SAT: 1
-1
-	UNSAT: 2
-	SAT: 0
+m	SAT	UNSAT	
+0	1	4	
+1	0	2	
 
 Inv2OK
-1
-	UNSAT: 4
-	SAT: 1
-2
-	UNSAT: 0
-	SAT: 4
+m	SAT	UNSAT	
+1	1	4	
+2	4	0	
 
 Inv3OK
-2
-	UNSAT: 1
+m	UNSAT	
+2	1	
 
 Inv4OK
-2
-	SAT: 5
-3
-	SAT: 4
+m	SAT	
+2	5	
+3	4	
+
+Number of disj quantifications
+
+Inv1OK
+m	SAT	UNSAT	
+0	1	6	
+
+Inv2OK
+m	SAT	UNSAT	
+0	5	4	
+
+Inv3OK
+m	UNSAT	
+2	1	
+
+Inv4OK
+m	SAT	
+2	9	
+
+Number multiplicity arrows
+
+Inv1OK
+m	SAT	UNSAT	
+0	1	6	
+
+Inv2OK
+m	SAT	UNSAT	
+0	5	4	
+
+Inv3OK
+m	UNSAT	
+0	1	
+
+Inv4OK
+m	SAT	
+0	9	
+
+Number of quantifiers
+
+Inv1OK
+m	SAT	UNSAT	
+0	1	4	
+1	0	0	
+2	0	2	
+
+Inv2OK
+m	SAT	UNSAT	
+2	1	4	
+3	0	0	
+4	4	0	
+
+Inv3OK
+m	UNSAT	
+6	1	
+
+Inv4OK
+m	SAT	
+6	5	
+7	0	
+8	4	
+
+Number of inverted navigation expressions
+
+Inv1OK
+m	SAT	UNSAT	
+0	1	6	
+
+Inv2OK
+m	SAT	UNSAT	
+0	5	4	
+
+Inv3OK
+m	UNSAT	
+0	1	
+
+Inv4OK
+m	SAT	
+0	9	
 
 * Derivation tree
 3qN2T4SAA2exYuvpE, 2020-11-27T15:28:44 (model share)

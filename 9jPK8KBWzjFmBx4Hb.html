@@ -9,66 +9,52 @@
 </head>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-<h1>9jPK8KBWzjFmBx4Hb (2020-12-14)</h1>
+<h1>9jPK8KBWzjFmBx4Hb (2020-12-19)</h1>
 <h2>Meta-data</h2>
 <dl><dt>Challenge name</dt><dd>unknown</dd>
 <dt>Creation time</dt><dd>2019-10-31</dd>
 <dt># sub-challenges</dt><dd>20</dd>
 <dt>Metric catalog</dt><dd>Example metric catalog</dd>
 </dl><h2>Overall metric statistics</h2>
-Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total model entries</dt><dd>4850</dd>
-<dt>Total executions</dt><dd>4807</dd>
+Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total model entries</dt><dd>4907</dd>
+<dt>Total executions</dt><dd>4871</dd>
 <dt>Total shares</dt><dd>36</dd>
-<dt>Total error messages</dt><dd>826</dd>
+<dt>Total error messages</dt><dd>833</dd>
 <dt>Total warning messages</dt><dd>22</dd>
-<dt>Total solutions</dt><dd>3946</d>
-<dt>Total sessions</dt><dd>102</d>
+<dt>Total solutions</dt><dd>4039</d>
+<dt>Total sessions</dt><dd>103</d>
+<dt>Timed out re-executions</dt><dd>0</d>
 <dt>Rejected due to server errors</dt><dd>7</d>
+<dt>Inconsistent result reports</dt><dd>0</d>
+<dt>Inconsistent message reports</dt><dd>0</d>
 <dt>Total instance entries</dt><dd>0</dd>
 <dt>Total link entries</dt><dd>37</dd>
 </dl><h2>Scalar metrics</h2>
-<dl><dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared. A session is a full branch of the derivation tree.">Number of shared sessions</dt><dd>17</dd>
-<dt data-toggle="tooltip" title="Counts the number Alloy runtime errors (in contrast to syntax errors). Counts all sat executions, may refer to commands other than those of the sub-challenges.">Alloy runtime errors</dt><dd>15</dd>
-<dt data-toggle="tooltip" title="Counts the number of incorrect executions. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions</dt><dd>2695</dd>
-<dt data-toggle="tooltip" title="Counts the number of correct executions. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions</dt><dd>1287</dd>
-<dt data-toggle="tooltip" title="Counts the number of shared models that had errors. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Shared errored models</dt><dd>1</dd>
-<dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions with warnings</dt><dd>18</dd>
-<dt data-toggle="tooltip" title="The size of the longest session. A session is a full branch of the derivation tree.">Longest session</dt><dd>266</dd>
-<dt data-toggle="tooltip" title="Counts the number of shared models. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Shared models</dt><dd>36</dd>
-<dt data-toggle="tooltip" title="Counts the number of correct executions that produced warning messages. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions with warnings</dt><dd>1</dd>
+<dl><dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared.">Number of shared sessions</dt><dd>17</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models.">Shared models (model)</dt><dd>36</dd>
+<dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages.">Shares with warnings</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="Counts the number Alloy runtime errors (in contrast to parsing errors).">Alloy runtime errors</dt><dd>15</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models that had errors.">Shared errored models</dt><dd>1</dd>
+<dt data-toggle="tooltip" title="Counts the number Alloy parsing errors (in contrast to runtime errors).">Alloy static errors</dt><dd>817</dd>
+<dt data-toggle="tooltip" title="Counts the number of models from shared instances.">Shared models (instance)</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="The average session length.">Average session</dt><dd>47.13592233009709</dd>
+<dt data-toggle="tooltip" title="The size of the longest session.">Longest session</dt><dd>265</dd>
+<dt data-toggle="tooltip" title="Counts the number of satisfiable executions that produced warning messages. Considers commands other than challenges.">Sat executions with warnings</dt><dd>18</dd>
+<dt data-toggle="tooltip" title="Counts the number of executed models that had errors. Considers commands other than challenges.">Executed errored models</dt><dd>832</dd>
+<dt data-toggle="tooltip" title="Counts the number of unsatisfiable executions. Considers commands other than challenges.">Unsat executions</dt><dd>2727</dd>
+<dt data-toggle="tooltip" title="Counts the number of unsatisfiable executions that produced warning messages. Considers commands other than the challenges.">Unsat executions with warnings</dt><dd>1</dd>
+<dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages.">Errored executions with warnings</dt><dd>3</dd>
+<dt data-toggle="tooltip" title="The average of session unsatisfiable execution ratio.">Average % unsatisfiable</dt><dd>0.3525788425414868</dd>
+<dt data-toggle="tooltip" title="Counts the number of satisfiable executions. Considers commands other than challenges.">Sat executions</dt><dd>1312</dd>
 </dl><h2>Overall metrics</h2>
 <h3>Sessions by length</h3>
-<p>The number of sessions with a certain length. A session is a full branch of the derivation tree.</p>
+<p>The number of sessions with a certain length.</p>
 <canvas id="Sessionsbylength" width="1400"></canvas><script>
   var chart = new Chart(Sessionsbylength, {
    type: 'bar',
    data: {
       labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','114','115','116','117','118','119','120','121','122','123','124','125','126','127','128','129','130','131','132','133','134','135','136','137','138','139','140','141','142','143','144','145','146','147','148','149','150','151','152','153','154','155','156','157','158','159','160','161','162','163','164','165','166','167','168','169','170','171','172','173','174','175','176','177','178','179','180','181','182','183','184','185','186','187','188','189','190','191','192','193','194','195','196','197','198','199','200','201','202','203','204','205','206','207','208','209','210','211','212','213','214','215','216','217','218','219','220','221','222','223','224','225','226','227','228','229','230','231','232','233','234','235','236','237','238','239','240','241','242','243','244','245','246','247','248','249','250','251','252','253','254','255','256','257','258','259','260','261','262','263','264','265',],      datasets: [
-{backgroundColor: '#6c79ad', data: [11,5,2,1,3,2,4,4,2,2,0,1,0,0,0,0,3,2,2,0,0,2,1,1,1,1,0,0,1,0,0,0,0,2,0,1,0,1,0,1,1,0,1,0,2,2,2,0,0,0,2,0,1,0,0,0,0,0,3,0,1,1,0,1,0,0,0,2,0,2,1,0,1,0,1,1,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,2,0,2,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,]},]},
-   options: {
-      responsive: false,
-      legend: {
-         display: false
-      },
-      scales: {
-         xAxes: [{
-                ticks: {
-                    autoSkip: true,
-                    minRotation:0,
-                    maxRotation:20,
-                }
-            }],
-      }
-   }
-});
-</script><h3>Sessions by # of solved sub-challenges</h3>
-<p>The number of sessions with a certain number of sub-challenges correctly solved. A session is a full branch of the derivation tree.</p>
-<canvas id="Sessionsbyofsolvedsubchallenges" width="1400"></canvas><script>
-  var chart = new Chart(Sessionsbyofsolvedsubchallenges, {
-   type: 'bar',
-   data: {
-      labels: ['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20',],      datasets: [
-{backgroundColor: '#6c79ad', data: [13,16,8,5,5,1,3,7,7,0,4,3,3,3,2,1,2,6,3,6,4,]},]},
+{backgroundColor: '#6c79ad', data: [11,5,2,1,3,2,4,4,2,2,,1,,,,,3,2,2,,,2,1,1,1,1,,,1,,,,,2,,1,,1,,1,1,,1,,2,2,2,,,,2,,1,,,,,,3,,1,1,1,1,,,,2,,2,1,,1,,1,1,1,,,,,,,1,,,,1,,,,1,,2,,2,,,,,1,1,,,1,,,,,,,,,,2,,,,1,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,1,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,]},]},
    options: {
       responsive: false,
       legend: {
@@ -86,7 +72,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h3>Warnings by type</h3>
-<p>The number of warnings by normalized message. Each entry may throw multiple warning messages.</p>
+<p>The number of warnings by normalized message.</p>
 <canvas id="Warningsbytype" width="1400"></canvas><script>
   var chart = new Chart(Warningsbytype, {
    type: 'bar',
@@ -109,14 +95,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Entries over time</h3>
-<p>The number of entries by date. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
-<canvas id="Entriesovertime" width="1400"></canvas><script>
-  var chart = new Chart(Entriesovertime, {
+</script><h3>Sessions by # of solved challenges</h3>
+<p>The number of sessions with a certain number of challenges correctly solved.</p>
+<canvas id="Sessionsbyofsolvedchallenges" width="1400"></canvas><script>
+  var chart = new Chart(Sessionsbyofsolvedchallenges, {
    type: 'bar',
    data: {
-      labels: ['2019-10-31','2019-11-01','2019-11-02','2019-11-03','2019-11-04','2019-11-05','2019-11-06','2019-11-07','2019-11-08','2019-11-09','2019-11-10','2019-11-11','2019-11-12','2019-11-13','2019-11-14','2019-11-15','2019-11-16','2019-11-17','2019-11-18','2019-11-19','2019-11-20','2019-11-21','2019-11-22','2019-11-23','2019-11-24','2019-11-25','2019-11-26','2019-11-27','2019-11-28','2019-11-29','2019-11-30','2019-12-01','2019-12-02','2019-12-03','2019-12-04','2019-12-05','2019-12-06','2019-12-07','2019-12-08','2019-12-09','2019-12-10','2019-12-11','2019-12-12','2019-12-13','2019-12-14','2019-12-15','2019-12-16','2019-12-17','2019-12-18','2019-12-19','2019-12-20','2019-12-21','2019-12-22','2019-12-23','2019-12-24','2019-12-25','2019-12-26','2019-12-27','2019-12-28','2019-12-29','2019-12-30','2019-12-31','2020-01-01','2020-01-02','2020-01-03','2020-01-04','2020-01-05','2020-01-06','2020-01-07','2020-01-08','2020-01-09','2020-01-10','2020-01-11','2020-01-12','2020-01-13','2020-01-14','2020-01-15','2020-01-16','2020-01-17','2020-01-18','2020-01-19','2020-01-20','2020-01-21','2020-01-22','2020-01-23','2020-01-24','2020-01-25','2020-01-26','2020-01-27','2020-01-28','2020-01-29','2020-01-30','2020-01-31','2020-02-01','2020-02-02','2020-02-03','2020-02-04','2020-02-05','2020-02-06','2020-02-07','2020-02-08','2020-02-09','2020-02-10','2020-02-11','2020-02-12','2020-02-13','2020-02-14','2020-02-15','2020-02-16','2020-02-17','2020-02-18','2020-02-19','2020-02-20','2020-02-21','2020-02-22','2020-02-23','2020-02-24','2020-02-25','2020-02-26','2020-02-27','2020-02-28','2020-02-29','2020-03-01','2020-03-02','2020-03-03','2020-03-04','2020-03-05','2020-03-06','2020-03-07','2020-03-08','2020-03-09','2020-03-10','2020-03-11','2020-03-12','2020-03-13','2020-03-14','2020-03-15','2020-03-16','2020-03-17','2020-03-18','2020-03-19','2020-03-20','2020-03-21','2020-03-22','2020-03-23','2020-03-24','2020-03-25','2020-03-26','2020-03-27','2020-03-28','2020-03-29','2020-03-30','2020-03-31','2020-04-01','2020-04-02','2020-04-03','2020-04-04','2020-04-05','2020-04-06','2020-04-07','2020-04-08','2020-04-09','2020-04-10','2020-04-11','2020-04-12','2020-04-13','2020-04-14','2020-04-15','2020-04-16','2020-04-17','2020-04-18','2020-04-19','2020-04-20','2020-04-21','2020-04-22','2020-04-23','2020-04-24','2020-04-25','2020-04-26','2020-04-27','2020-04-28','2020-04-29','2020-04-30','2020-05-01','2020-05-02','2020-05-03','2020-05-04','2020-05-05','2020-05-06','2020-05-07','2020-05-08','2020-05-09','2020-05-10','2020-05-11','2020-05-12','2020-05-13','2020-05-14','2020-05-15','2020-05-16','2020-05-17','2020-05-18','2020-05-19','2020-05-20','2020-05-21','2020-05-22','2020-05-23','2020-05-24','2020-05-25','2020-05-26','2020-05-27','2020-05-28','2020-05-29','2020-05-30','2020-05-31','2020-06-01','2020-06-02','2020-06-03','2020-06-04','2020-06-05','2020-06-06','2020-06-07','2020-06-08','2020-06-09','2020-06-10','2020-06-11','2020-06-12','2020-06-13','2020-06-14','2020-06-15','2020-06-16','2020-06-17','2020-06-18','2020-06-19','2020-06-20','2020-06-21','2020-06-22','2020-06-23','2020-06-24','2020-06-25','2020-06-26','2020-06-27','2020-06-28','2020-06-29','2020-06-30','2020-07-01','2020-07-02','2020-07-03','2020-07-04','2020-07-05','2020-07-06','2020-07-07','2020-07-08','2020-07-09','2020-07-10','2020-07-11','2020-07-12','2020-07-13','2020-07-14','2020-07-15','2020-07-16','2020-07-17','2020-07-18','2020-07-19','2020-07-20','2020-07-21','2020-07-22','2020-07-23','2020-07-24','2020-07-25','2020-07-26','2020-07-27','2020-07-28','2020-07-29','2020-07-30','2020-07-31','2020-08-01','2020-08-02','2020-08-03','2020-08-04','2020-08-05','2020-08-06','2020-08-07','2020-08-08','2020-08-09','2020-08-10','2020-08-11','2020-08-12','2020-08-13','2020-08-14','2020-08-15','2020-08-16','2020-08-17','2020-08-18','2020-08-19','2020-08-20','2020-08-21','2020-08-22','2020-08-23','2020-08-24','2020-08-25','2020-08-26','2020-08-27','2020-08-28','2020-08-29','2020-08-30','2020-08-31','2020-09-01','2020-09-02','2020-09-03','2020-09-04','2020-09-05','2020-09-06','2020-09-07','2020-09-08','2020-09-09','2020-09-10','2020-09-11','2020-09-12','2020-09-13','2020-09-14','2020-09-15','2020-09-16','2020-09-17','2020-09-18','2020-09-19','2020-09-20','2020-09-21','2020-09-22','2020-09-23','2020-09-24','2020-09-25','2020-09-26','2020-09-27','2020-09-28','2020-09-29','2020-09-30','2020-10-01','2020-10-02','2020-10-03','2020-10-04','2020-10-05','2020-10-06','2020-10-07','2020-10-08','2020-10-09','2020-10-10','2020-10-11','2020-10-12','2020-10-13','2020-10-14','2020-10-15','2020-10-16','2020-10-17','2020-10-18','2020-10-19','2020-10-20','2020-10-21','2020-10-22','2020-10-23','2020-10-24','2020-10-25','2020-10-26','2020-10-27','2020-10-28','2020-10-29','2020-10-30','2020-10-31','2020-11-01','2020-11-02','2020-11-03','2020-11-04','2020-11-05','2020-11-06','2020-11-07','2020-11-08','2020-11-09','2020-11-10','2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13',],      datasets: [
-{backgroundColor: '#6c79ad', data: [1089,162,6,0,147,0,22,3,0,0,0,77,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,47,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,14,0,0,0,0,42,43,0,0,0,0,0,0,0,0,0,128,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,1,0,0,0,9,53,0,0,0,264,349,443,933,23,63,56,0,271,164,30,92,26,0,0,51,26,0,25,36,42,]},]},
+      labels: ['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20',],      datasets: [
+{backgroundColor: '#6c79ad', data: [13,16,8,5,5,1,3,7,7,,4,3,3,3,2,1,2,6,4,6,4,]},]},
    options: {
       responsive: false,
       legend: {
@@ -139,8 +125,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Errorsbytype, {
    type: 'bar',
    data: {
-      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','There are 5 possible tokens that can appear here: enum fun let open pred ','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.','The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".','There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','This must be a formula expression. Instead, it has the following possible type(s): {_}','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 8 possible tokens that can appear here: NAME disj exh part private seq this var ','There are 1 possible tokens that can appear here: ) ','This must be a unary set, but instead it has the following possible type(s): {_}','There are 3 possible tokens that can appear here: ,  : = ','There are 36 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int lone no none once one pred seq set some sum this univ { ~ ','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','The name _ cannot be found.','This expression failed to be typechecked line _ column _ filename=_.als','Syntax error at the \\ character. HEX: \\u5c)','This must be a set or relation. Instead, it has the following possible type(s): {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','Syntax error at the ´ character. HEX: \\ub4)','There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~ ','There are 31 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq set some sum this univ { ~ ','There are 3 possible tokens that can appear here: ,  { | ',],      datasets: [
-{backgroundColor: '#6c79ad', data: [27,95,7,2,15,17,16,69,1,5,60,1,2,4,38,7,134,90,1,106,94,2,1,1,31,]},]},
+      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','There are 5 possible tokens that can appear here: enum fun let open pred ','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".','Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.','There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','This must be a formula expression. Instead, it has the following possible type(s): {_}','There are 8 possible tokens that can appear here: NAME disj exh part private seq this var ','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','This must be a unary set, but instead it has the following possible type(s): {_}','There are 1 possible tokens that can appear here: ) ','There are 36 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int lone no none once one pred seq set some sum this univ { ~ ','There are 3 possible tokens that can appear here: ,  : = ','+ can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This expression failed to be typechecked line _ column _ filename=_.als','The name _ cannot be found.','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','Syntax error at the \\ character. HEX: \\u5c)','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','This must be a set or relation. Instead, it has the following possible type(s): {_}','Syntax error at the ´ character. HEX: \\ub4)','There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~ ','There are 31 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq set some sum this univ { ~ ','There are 3 possible tokens that can appear here: ,  { | ',],      datasets: [
+{backgroundColor: '#6c79ad', data: [27,7,95,2,17,15,16,70,5,1,1,60,4,2,1,38,91,136,7,1,94,108,2,1,1,31,]},]},
    options: {
       responsive: false,
       legend: {
@@ -157,16 +143,40 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
+</script><h3>Models by number of warnings</h3>
+<p>The number of entries with a certain number of warning messages.</p>
+<canvas id="Modelsbynumberofwarnings" width="1400"></canvas><script>
+  var chart = new Chart(Modelsbynumberofwarnings, {
+   type: 'bar',
+   data: {
+      labels: ['0','1',],      datasets: [
+{backgroundColor: '#6c79ad', data: [4885,22,]},]},
+   options: {
+      responsive: false,
+      legend: {
+         display: false
+      },
+      scales: {
+         xAxes: [{
+                ticks: {
+                    autoSkip: true,
+                    minRotation:0,
+                    maxRotation:20,
+                }
+            }],
+      }
+   }
+});
 </script><h2>Overall metrics, classified</h2>
-<h3>Execution results by sub-challenge</h3>
-<p>The number of successful executions by sub-challenge, classified by result. Errored executions are not considered.</p>
-<canvas id="Executionresultsbysubchallenge" ></canvas><script>
-  var chart = new Chart(Executionresultsbysubchallenge, {
+<h3>Execution results by challenge</h3>
+<p>The number of executions by challenge, classified by result. Errored executions are not considered.</p>
+<canvas id="Executionresultsbychallenge" ></canvas><script>
+  var chart = new Chart(Executionresultsbychallenge, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['prop1Ok','prop2Ok','prop3Ok','prop4Ok','prop5Ok','prop6Ok','prop7Ok','prop8Ok','prop9Ok','prop10Ok','prop11Ok','prop12Ok','prop13Ok','prop14Ok','prop15Ok','prop16Ok','prop17Ok','prop18Ok','prop19Ok','prop20Ok',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [34,122,11,124,346,250,47,257,85,271,114,358,36,89,46,92,98,173,63,79,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [111,71,88,96,57,104,86,52,81,47,70,32,74,58,43,43,41,42,42,49,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [113,71,90,98,59,106,87,53,82,48,71,32,75,59,44,44,43,43,43,51,]},{label: 'SAT', backgroundColor: '#f0e878', data: [34,131,11,124,347,255,47,257,86,271,114,365,36,91,47,93,99,176,64,79,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -197,15 +207,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Executions over time classified</h3>
-<p>The number of entries by date, classified by result. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
-<canvas id="Executionsovertimeclassified" ></canvas><script>
-  var chart = new Chart(Executionsovertimeclassified, {
+</script><h3>Session results by challenge</h3>
+<p>The number of sessions in which a certain challenge has been correctly solved.</p>
+<canvas id="Sessionresultsbychallenge" ></canvas><script>
+  var chart = new Chart(Sessionresultsbychallenge, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['2019-10-31','2019-11-01','2019-11-02','2019-11-03','2019-11-04','2019-11-05','2019-11-06','2019-11-07','2019-11-08','2019-11-09','2019-11-10','2019-11-11','2019-11-12','2019-11-13','2019-11-14','2019-11-15','2019-11-16','2019-11-17','2019-11-18','2019-11-19','2019-11-20','2019-11-21','2019-11-22','2019-11-23','2019-11-24','2019-11-25','2019-11-26','2019-11-27','2019-11-28','2019-11-29','2019-11-30','2019-12-01','2019-12-02','2019-12-03','2019-12-04','2019-12-05','2019-12-06','2019-12-07','2019-12-08','2019-12-09','2019-12-10','2019-12-11','2019-12-12','2019-12-13','2019-12-14','2019-12-15','2019-12-16','2019-12-17','2019-12-18','2019-12-19','2019-12-20','2019-12-21','2019-12-22','2019-12-23','2019-12-24','2019-12-25','2019-12-26','2019-12-27','2019-12-28','2019-12-29','2019-12-30','2019-12-31','2020-01-01','2020-01-02','2020-01-03','2020-01-04','2020-01-05','2020-01-06','2020-01-07','2020-01-08','2020-01-09','2020-01-10','2020-01-11','2020-01-12','2020-01-13','2020-01-14','2020-01-15','2020-01-16','2020-01-17','2020-01-18','2020-01-19','2020-01-20','2020-01-21','2020-01-22','2020-01-23','2020-01-24','2020-01-25','2020-01-26','2020-01-27','2020-01-28','2020-01-29','2020-01-30','2020-01-31','2020-02-01','2020-02-02','2020-02-03','2020-02-04','2020-02-05','2020-02-06','2020-02-07','2020-02-08','2020-02-09','2020-02-10','2020-02-11','2020-02-12','2020-02-13','2020-02-14','2020-02-15','2020-02-16','2020-02-17','2020-02-18','2020-02-19','2020-02-20','2020-02-21','2020-02-22','2020-02-23','2020-02-24','2020-02-25','2020-02-26','2020-02-27','2020-02-28','2020-02-29','2020-03-01','2020-03-02','2020-03-03','2020-03-04','2020-03-05','2020-03-06','2020-03-07','2020-03-08','2020-03-09','2020-03-10','2020-03-11','2020-03-12','2020-03-13','2020-03-14','2020-03-15','2020-03-16','2020-03-17','2020-03-18','2020-03-19','2020-03-20','2020-03-21','2020-03-22','2020-03-23','2020-03-24','2020-03-25','2020-03-26','2020-03-27','2020-03-28','2020-03-29','2020-03-30','2020-03-31','2020-04-01','2020-04-02','2020-04-03','2020-04-04','2020-04-05','2020-04-06','2020-04-07','2020-04-08','2020-04-09','2020-04-10','2020-04-11','2020-04-12','2020-04-13','2020-04-14','2020-04-15','2020-04-16','2020-04-17','2020-04-18','2020-04-19','2020-04-20','2020-04-21','2020-04-22','2020-04-23','2020-04-24','2020-04-25','2020-04-26','2020-04-27','2020-04-28','2020-04-29','2020-04-30','2020-05-01','2020-05-02','2020-05-03','2020-05-04','2020-05-05','2020-05-06','2020-05-07','2020-05-08','2020-05-09','2020-05-10','2020-05-11','2020-05-12','2020-05-13','2020-05-14','2020-05-15','2020-05-16','2020-05-17','2020-05-18','2020-05-19','2020-05-20','2020-05-21','2020-05-22','2020-05-23','2020-05-24','2020-05-25','2020-05-26','2020-05-27','2020-05-28','2020-05-29','2020-05-30','2020-05-31','2020-06-01','2020-06-02','2020-06-03','2020-06-04','2020-06-05','2020-06-06','2020-06-07','2020-06-08','2020-06-09','2020-06-10','2020-06-11','2020-06-12','2020-06-13','2020-06-14','2020-06-15','2020-06-16','2020-06-17','2020-06-18','2020-06-19','2020-06-20','2020-06-21','2020-06-22','2020-06-23','2020-06-24','2020-06-25','2020-06-26','2020-06-27','2020-06-28','2020-06-29','2020-06-30','2020-07-01','2020-07-02','2020-07-03','2020-07-04','2020-07-05','2020-07-06','2020-07-07','2020-07-08','2020-07-09','2020-07-10','2020-07-11','2020-07-12','2020-07-13','2020-07-14','2020-07-15','2020-07-16','2020-07-17','2020-07-18','2020-07-19','2020-07-20','2020-07-21','2020-07-22','2020-07-23','2020-07-24','2020-07-25','2020-07-26','2020-07-27','2020-07-28','2020-07-29','2020-07-30','2020-07-31','2020-08-01','2020-08-02','2020-08-03','2020-08-04','2020-08-05','2020-08-06','2020-08-07','2020-08-08','2020-08-09','2020-08-10','2020-08-11','2020-08-12','2020-08-13','2020-08-14','2020-08-15','2020-08-16','2020-08-17','2020-08-18','2020-08-19','2020-08-20','2020-08-21','2020-08-22','2020-08-23','2020-08-24','2020-08-25','2020-08-26','2020-08-27','2020-08-28','2020-08-29','2020-08-30','2020-08-31','2020-09-01','2020-09-02','2020-09-03','2020-09-04','2020-09-05','2020-09-06','2020-09-07','2020-09-08','2020-09-09','2020-09-10','2020-09-11','2020-09-12','2020-09-13','2020-09-14','2020-09-15','2020-09-16','2020-09-17','2020-09-18','2020-09-19','2020-09-20','2020-09-21','2020-09-22','2020-09-23','2020-09-24','2020-09-25','2020-09-26','2020-09-27','2020-09-28','2020-09-29','2020-09-30','2020-10-01','2020-10-02','2020-10-03','2020-10-04','2020-10-05','2020-10-06','2020-10-07','2020-10-08','2020-10-09','2020-10-10','2020-10-11','2020-10-12','2020-10-13','2020-10-14','2020-10-15','2020-10-16','2020-10-17','2020-10-18','2020-10-19','2020-10-20','2020-10-21','2020-10-22','2020-10-23','2020-10-24','2020-10-25','2020-10-26','2020-10-27','2020-10-28','2020-10-29','2020-10-30','2020-10-31','2020-11-01','2020-11-02','2020-11-03','2020-11-04','2020-11-05','2020-11-06','2020-11-07','2020-11-08','2020-11-09','2020-11-10','2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13',],      datasets: [
-{label: 'ERROR', backgroundColor: '#f06779', data: [276,19,1,0,31,0,1,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,9,18,0,0,0,0,0,0,0,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,4,7,0,0,0,40,52,70,130,2,1,3,0,59,14,8,2,0,0,0,1,4,0,3,9,2,]},{label: 'SAT', backgroundColor: '#f0e878', data: [506,97,4,0,80,0,12,2,0,0,0,30,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,4,0,0,0,0,11,17,0,0,0,0,0,0,0,0,0,73,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,1,0,0,0,4,35,0,0,0,157,222,241,538,14,54,41,0,182,109,12,69,26,0,0,45,12,0,19,15,15,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [307,46,1,0,36,0,9,1,0,0,0,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,8,0,0,0,0,22,8,0,0,0,0,0,0,0,0,0,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,1,11,0,0,0,67,75,132,265,7,8,12,0,30,41,10,21,0,0,0,5,10,0,3,12,25,]},]},
+      labels: ['prop1Ok','prop2Ok','prop3Ok','prop4Ok','prop5Ok','prop6Ok','prop7Ok','prop8Ok','prop9Ok','prop10Ok','prop11Ok','prop12Ok','prop13Ok','prop14Ok','prop15Ok','prop16Ok','prop17Ok','prop18Ok','prop19Ok','prop20Ok',],      datasets: [
+{label: 'solved', backgroundColor: '#93e388', data: [66,53,64,57,41,49,54,32,49,33,40,19,42,31,30,28,28,22,26,22,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [37,50,39,46,62,54,49,71,54,70,63,84,61,72,73,75,75,81,77,81,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -236,15 +246,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Session results by sub-challenge</h3>
-<p>The number of sessions in which a certain sub-challenge has been correctly solved.</p>
-<canvas id="Sessionresultsbysubchallenge" ></canvas><script>
-  var chart = new Chart(Sessionresultsbysubchallenge, {
+</script><h3>Model entries over time</h3>
+<p>The number of model entries by date, classified by type and result. Considers commands other than challenges.</p>
+<canvas id="Modelentriesovertime" ></canvas><script>
+  var chart = new Chart(Modelentriesovertime, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['prop1Ok','prop2Ok','prop3Ok','prop4Ok','prop5Ok','prop6Ok','prop7Ok','prop8Ok','prop9Ok','prop10Ok','prop11Ok','prop12Ok','prop13Ok','prop14Ok','prop15Ok','prop16Ok','prop17Ok','prop18Ok','prop19Ok','prop20Ok',],      datasets: [
-{label: 'solved', backgroundColor: '#93e388', data: [65,53,63,56,40,48,53,31,48,32,39,19,41,30,29,27,27,21,25,21,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [37,49,39,46,62,54,49,71,54,70,63,83,61,72,73,75,75,81,77,81,]},]},
+      labels: ['2019-10-31','2019-11-01','2019-11-02','2019-11-03','2019-11-04','2019-11-05','2019-11-06','2019-11-07','2019-11-08','2019-11-09','2019-11-10','2019-11-11','2019-11-12','2019-11-13','2019-11-14','2019-11-15','2019-11-16','2019-11-17','2019-11-18','2019-11-19','2019-11-20','2019-11-21','2019-11-22','2019-11-23','2019-11-24','2019-11-25','2019-11-26','2019-11-27','2019-11-28','2019-11-29','2019-11-30','2019-12-01','2019-12-02','2019-12-03','2019-12-04','2019-12-05','2019-12-06','2019-12-07','2019-12-08','2019-12-09','2019-12-10','2019-12-11','2019-12-12','2019-12-13','2019-12-14','2019-12-15','2019-12-16','2019-12-17','2019-12-18','2019-12-19','2019-12-20','2019-12-21','2019-12-22','2019-12-23','2019-12-24','2019-12-25','2019-12-26','2019-12-27','2019-12-28','2019-12-29','2019-12-30','2019-12-31','2020-01-01','2020-01-02','2020-01-03','2020-01-04','2020-01-05','2020-01-06','2020-01-07','2020-01-08','2020-01-09','2020-01-10','2020-01-11','2020-01-12','2020-01-13','2020-01-14','2020-01-15','2020-01-16','2020-01-17','2020-01-18','2020-01-19','2020-01-20','2020-01-21','2020-01-22','2020-01-23','2020-01-24','2020-01-25','2020-01-26','2020-01-27','2020-01-28','2020-01-29','2020-01-30','2020-01-31','2020-02-01','2020-02-02','2020-02-03','2020-02-04','2020-02-05','2020-02-06','2020-02-07','2020-02-08','2020-02-09','2020-02-10','2020-02-11','2020-02-12','2020-02-13','2020-02-14','2020-02-15','2020-02-16','2020-02-17','2020-02-18','2020-02-19','2020-02-20','2020-02-21','2020-02-22','2020-02-23','2020-02-24','2020-02-25','2020-02-26','2020-02-27','2020-02-28','2020-02-29','2020-03-01','2020-03-02','2020-03-03','2020-03-04','2020-03-05','2020-03-06','2020-03-07','2020-03-08','2020-03-09','2020-03-10','2020-03-11','2020-03-12','2020-03-13','2020-03-14','2020-03-15','2020-03-16','2020-03-17','2020-03-18','2020-03-19','2020-03-20','2020-03-21','2020-03-22','2020-03-23','2020-03-24','2020-03-25','2020-03-26','2020-03-27','2020-03-28','2020-03-29','2020-03-30','2020-03-31','2020-04-01','2020-04-02','2020-04-03','2020-04-04','2020-04-05','2020-04-06','2020-04-07','2020-04-08','2020-04-09','2020-04-10','2020-04-11','2020-04-12','2020-04-13','2020-04-14','2020-04-15','2020-04-16','2020-04-17','2020-04-18','2020-04-19','2020-04-20','2020-04-21','2020-04-22','2020-04-23','2020-04-24','2020-04-25','2020-04-26','2020-04-27','2020-04-28','2020-04-29','2020-04-30','2020-05-01','2020-05-02','2020-05-03','2020-05-04','2020-05-05','2020-05-06','2020-05-07','2020-05-08','2020-05-09','2020-05-10','2020-05-11','2020-05-12','2020-05-13','2020-05-14','2020-05-15','2020-05-16','2020-05-17','2020-05-18','2020-05-19','2020-05-20','2020-05-21','2020-05-22','2020-05-23','2020-05-24','2020-05-25','2020-05-26','2020-05-27','2020-05-28','2020-05-29','2020-05-30','2020-05-31','2020-06-01','2020-06-02','2020-06-03','2020-06-04','2020-06-05','2020-06-06','2020-06-07','2020-06-08','2020-06-09','2020-06-10','2020-06-11','2020-06-12','2020-06-13','2020-06-14','2020-06-15','2020-06-16','2020-06-17','2020-06-18','2020-06-19','2020-06-20','2020-06-21','2020-06-22','2020-06-23','2020-06-24','2020-06-25','2020-06-26','2020-06-27','2020-06-28','2020-06-29','2020-06-30','2020-07-01','2020-07-02','2020-07-03','2020-07-04','2020-07-05','2020-07-06','2020-07-07','2020-07-08','2020-07-09','2020-07-10','2020-07-11','2020-07-12','2020-07-13','2020-07-14','2020-07-15','2020-07-16','2020-07-17','2020-07-18','2020-07-19','2020-07-20','2020-07-21','2020-07-22','2020-07-23','2020-07-24','2020-07-25','2020-07-26','2020-07-27','2020-07-28','2020-07-29','2020-07-30','2020-07-31','2020-08-01','2020-08-02','2020-08-03','2020-08-04','2020-08-05','2020-08-06','2020-08-07','2020-08-08','2020-08-09','2020-08-10','2020-08-11','2020-08-12','2020-08-13','2020-08-14','2020-08-15','2020-08-16','2020-08-17','2020-08-18','2020-08-19','2020-08-20','2020-08-21','2020-08-22','2020-08-23','2020-08-24','2020-08-25','2020-08-26','2020-08-27','2020-08-28','2020-08-29','2020-08-30','2020-08-31','2020-09-01','2020-09-02','2020-09-03','2020-09-04','2020-09-05','2020-09-06','2020-09-07','2020-09-08','2020-09-09','2020-09-10','2020-09-11','2020-09-12','2020-09-13','2020-09-14','2020-09-15','2020-09-16','2020-09-17','2020-09-18','2020-09-19','2020-09-20','2020-09-21','2020-09-22','2020-09-23','2020-09-24','2020-09-25','2020-09-26','2020-09-27','2020-09-28','2020-09-29','2020-09-30','2020-10-01','2020-10-02','2020-10-03','2020-10-04','2020-10-05','2020-10-06','2020-10-07','2020-10-08','2020-10-09','2020-10-10','2020-10-11','2020-10-12','2020-10-13','2020-10-14','2020-10-15','2020-10-16','2020-10-17','2020-10-18','2020-10-19','2020-10-20','2020-10-21','2020-10-22','2020-10-23','2020-10-24','2020-10-25','2020-10-26','2020-10-27','2020-10-28','2020-10-29','2020-10-30','2020-10-31','2020-11-01','2020-11-02','2020-11-03','2020-11-04','2020-11-05','2020-11-06','2020-11-07','2020-11-08','2020-11-09','2020-11-10','2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13','2020-12-14','2020-12-15','2020-12-16','2020-12-17','2020-12-18','2020-12-19',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [506,97,4,,80,,12,2,,,,30,,,,,,,,,,,2,,,,,,,11,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6,4,,,,,11,17,,,,,,,,,,73,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,,,,,,,,,1,,,,4,35,,,,157,222,241,538,14,54,41,,182,109,12,69,26,,,45,12,,19,15,15,17,,32,,,,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [307,46,1,,36,,9,1,,,,37,,,,,,,,,,,,,,,,,,18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,16,8,,,,,22,8,,,,,,,,,,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,,,,,,,,,,,,,1,11,,,,67,75,132,265,7,8,12,,30,41,10,21,,,,5,10,,3,12,25,5,,25,,,,]},{label: 'ERROR', backgroundColor: '#f06779', data: [276,19,1,,31,,1,,,,,10,,,,,,,,,,,,,,,,,,18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,,,,,9,18,,,,,,,,,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,,,,,,,,,,,,,4,7,,,,40,52,70,130,2,1,3,,59,14,8,2,,,,1,4,,3,9,2,7,,7,,,,]},{label: 'SHARE', backgroundColor: 'null', data: [12,1,,,3,,1,,,,,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,,,,,1,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,5,2,,,,,,,1,,,,,,,,,,,,,,,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -285,7 +295,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3','4',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [19,15,0,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,105,4,2,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [19,15,,,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,107,4,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -323,7 +333,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [117,5,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [126,5,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -361,7 +371,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [9,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [87,1,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [89,1,]},{label: 'SAT', backgroundColor: '#f0e878', data: [9,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -399,7 +409,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3','4',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [15,68,35,6,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [73,19,4,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [75,19,4,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [15,68,35,6,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -437,7 +447,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['2','3','4','5','6',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [71,171,98,5,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [6,48,3,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [71,172,98,5,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [6,50,3,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -475,7 +485,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3','4','5',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [8,85,137,18,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,73,31,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [8,87,140,18,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,74,32,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -513,7 +523,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [15,30,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [62,23,1,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [15,30,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [63,23,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -551,7 +561,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['2','3','4','5','6',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [6,50,116,78,7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,39,13,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [6,50,116,78,7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,40,13,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -589,7 +599,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['2','3','4',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [53,23,9,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [69,12,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [70,12,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [54,23,9,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -627,7 +637,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3','4','5',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,129,122,9,7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,42,0,5,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,129,122,9,7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,43,,5,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -665,7 +675,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['2','3','4','5',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [35,46,32,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [12,21,37,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [35,46,32,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [12,21,38,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -703,7 +713,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['2','3','4','5','6',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [16,75,228,38,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,24,8,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [16,76,232,40,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,24,8,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -741,7 +751,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['2','3','4',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [1,9,26,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,27,47,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [1,9,26,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,27,48,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -779,7 +789,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['2','3','4','5','6','7',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [1,9,52,17,5,5,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,2,36,7,11,2,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [1,9,52,18,6,5,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,2,36,8,11,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -817,7 +827,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['2','3','4',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [11,23,12,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,43,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [11,24,12,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,44,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -855,7 +865,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['2','3','4',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [14,31,47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,29,14,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [14,31,48,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,29,15,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -893,7 +903,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3','4','5',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [1,27,39,26,5,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,26,13,2,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [1,27,40,26,5,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,27,14,2,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -931,7 +941,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['3','4','5','6','7',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,7,154,9,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,39,3,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,7,157,9,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,40,3,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -969,7 +979,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['4','5','6',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [7,50,6,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,40,2,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [7,51,6,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,41,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1007,7 +1017,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['3','4','5','6',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [1,2,76,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,47,2,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [1,2,76,,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,49,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1047,7 +1057,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [111,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [113,]},{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1085,7 +1095,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [85,0,37,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [88,,43,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1123,7 +1133,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [11,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [88,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [90,]},{label: 'SAT', backgroundColor: '#f0e878', data: [11,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1161,7 +1171,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [120,0,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [96,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [120,,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [98,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1199,7 +1209,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [327,0,19,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [57,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [328,,19,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [59,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1237,7 +1247,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [195,0,55,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [104,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [200,,55,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [106,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1275,7 +1285,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [86,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [87,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1313,7 +1323,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [256,0,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [52,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [256,,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [53,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1351,7 +1361,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [80,0,5,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [81,0,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [82,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [81,,5,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1389,7 +1399,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [253,0,18,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [47,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [253,,18,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [48,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1427,7 +1437,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [114,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [70,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},{label: 'SAT', backgroundColor: '#f0e878', data: [114,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1465,7 +1475,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [302,0,56,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [30,0,2,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [309,,56,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [30,,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1503,7 +1513,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [28,0,8,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [70,0,4,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [71,,4,]},{label: 'SAT', backgroundColor: '#f0e878', data: [28,,8,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1541,7 +1551,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [82,0,7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,0,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [59,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [84,,7,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1579,7 +1589,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [46,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [44,]},{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1617,7 +1627,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [90,0,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [91,,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [44,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1655,7 +1665,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [77,0,21,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [41,0,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [43,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [78,,21,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1693,7 +1703,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [73,0,100,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [26,0,16,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [76,,100,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [27,,16,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1731,7 +1741,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [12,0,51,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,42,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [12,,52,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,43,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1769,7 +1779,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [6,0,73,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,49,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [6,,73,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,51,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1809,7 +1819,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [21,11,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [83,26,2,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [85,26,2,]},{label: 'SAT', backgroundColor: '#f0e878', data: [21,11,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1847,7 +1857,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [19,77,26,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,71,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [20,80,31,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,71,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1885,7 +1895,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [8,1,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,88,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [8,1,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,90,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1923,7 +1933,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [5,72,43,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,96,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [5,72,43,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,98,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1961,7 +1971,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [7,217,115,7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,57,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [7,217,116,7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,59,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1999,7 +2009,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3','4',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,113,111,21,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,88,16,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,113,114,23,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,89,17,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2037,7 +2047,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [13,21,11,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,84,2,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [13,21,11,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,85,2,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2075,7 +2085,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [10,126,102,19,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,52,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [10,126,102,19,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,53,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2113,7 +2123,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,52,30,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,81,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,53,30,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,82,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2151,7 +2161,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3','4',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [5,95,142,28,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,47,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [5,95,142,28,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,48,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2189,7 +2199,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [77,36,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,70,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [77,36,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,71,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2227,7 +2237,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3','4',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [8,68,193,79,10,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,18,14,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [8,68,197,82,10,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,18,14,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2265,7 +2275,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [1,13,22,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,40,33,1,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [1,13,22,,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,41,33,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2303,7 +2313,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [3,49,34,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,58,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [3,51,34,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,59,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2341,7 +2351,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,25,19,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,43,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,26,19,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,44,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2379,7 +2389,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [47,40,5,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,43,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [48,40,5,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,44,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2417,7 +2427,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3','4',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,7,71,16,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,41,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,7,72,16,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,43,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2455,7 +2465,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,24,131,16,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,42,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,25,132,17,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,43,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2493,7 +2503,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [23,34,6,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,42,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [24,34,6,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,43,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2531,7 +2541,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [1,4,69,5,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,49,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [1,4,69,5,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,51,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2571,7 +2581,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [111,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [113,]},{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2609,7 +2619,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [122,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [131,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2647,7 +2657,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [11,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [88,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [90,]},{label: 'SAT', backgroundColor: '#f0e878', data: [11,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2685,7 +2695,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [124,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [96,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [124,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [98,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2723,7 +2733,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [346,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [57,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [347,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [59,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2761,7 +2771,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [250,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [104,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [255,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [106,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2799,7 +2809,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [86,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [87,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2837,7 +2847,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [257,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [52,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [257,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [53,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2875,7 +2885,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [85,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [81,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [82,]},{label: 'SAT', backgroundColor: '#f0e878', data: [86,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2913,7 +2923,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [271,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [47,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [271,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [48,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2951,7 +2961,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [114,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [70,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},{label: 'SAT', backgroundColor: '#f0e878', data: [114,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2989,7 +2999,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [358,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [32,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [365,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [32,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3027,7 +3037,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [36,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [74,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [36,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [75,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3065,7 +3075,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [89,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [59,]},{label: 'SAT', backgroundColor: '#f0e878', data: [91,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3103,7 +3113,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [46,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [44,]},{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3141,7 +3151,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [92,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [93,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [44,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3179,7 +3189,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [98,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [41,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},{label: 'SAT', backgroundColor: '#f0e878', data: [99,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3217,7 +3227,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [173,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [42,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [176,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3255,7 +3265,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [63,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [42,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},{label: 'SAT', backgroundColor: '#f0e878', data: [64,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3293,7 +3303,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [79,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [49,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [79,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [51,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3333,7 +3343,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [29,5,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [108,3,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [110,3,]},{label: 'SAT', backgroundColor: '#f0e878', data: [29,5,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3371,7 +3381,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [119,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [128,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3409,7 +3419,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [10,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [87,1,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [89,1,]},{label: 'SAT', backgroundColor: '#f0e878', data: [10,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3447,7 +3457,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [19,105,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [73,23,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [75,23,]},{label: 'SAT', backgroundColor: '#f0e878', data: [19,105,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3485,7 +3495,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [108,238,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [6,51,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [108,239,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [6,53,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3523,7 +3533,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [37,213,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [40,64,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [39,216,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [41,65,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3561,7 +3571,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [15,32,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [62,24,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [15,32,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [63,24,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3599,7 +3609,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [72,175,10,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,52,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [72,175,10,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,53,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3637,7 +3647,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [19,66,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,38,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [44,38,]},{label: 'SAT', backgroundColor: '#f0e878', data: [20,66,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3675,7 +3685,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [46,225,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [42,5,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [46,225,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,5,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3713,7 +3723,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [62,52,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [17,53,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [62,52,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [17,54,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3751,7 +3761,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [18,340,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,32,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [18,347,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,32,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3789,7 +3799,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [7,29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,74,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [7,29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,75,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3827,7 +3837,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [24,65,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [2,56,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [2,57,]},{label: 'SAT', backgroundColor: '#f0e878', data: [24,67,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3865,7 +3875,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [17,29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,43,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [17,30,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,44,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3903,7 +3913,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [18,74,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,43,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [18,75,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,44,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3941,7 +3951,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [15,83,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [2,39,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [15,84,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [2,41,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3979,7 +3989,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [8,165,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,42,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [8,168,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,43,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4017,7 +4027,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,59,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,42,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,60,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,43,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4055,7 +4065,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [1,78,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,49,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [1,78,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,51,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4095,7 +4105,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [111,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [113,]},{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4133,7 +4143,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [122,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [131,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4171,7 +4181,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [11,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [88,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [90,]},{label: 'SAT', backgroundColor: '#f0e878', data: [11,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4209,7 +4219,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [124,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [96,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [124,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [98,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4247,7 +4257,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [346,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [57,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [347,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [59,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4285,7 +4295,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [250,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [104,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [255,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [106,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4323,7 +4333,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [86,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [87,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4361,7 +4371,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [257,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [52,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [257,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [53,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4399,7 +4409,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [85,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [81,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [82,]},{label: 'SAT', backgroundColor: '#f0e878', data: [86,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4437,7 +4447,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [271,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [47,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [271,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [48,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4475,7 +4485,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [114,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [70,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},{label: 'SAT', backgroundColor: '#f0e878', data: [114,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4513,7 +4523,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [358,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [32,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [365,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [32,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4551,7 +4561,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [36,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [74,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [36,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [75,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4589,7 +4599,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [89,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [59,]},{label: 'SAT', backgroundColor: '#f0e878', data: [91,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4627,7 +4637,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [46,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [44,]},{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4665,7 +4675,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [92,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [93,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [44,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4703,7 +4713,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [98,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [41,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},{label: 'SAT', backgroundColor: '#f0e878', data: [99,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4741,7 +4751,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [173,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [42,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [176,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4779,7 +4789,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [63,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [42,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},{label: 'SAT', backgroundColor: '#f0e878', data: [64,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4817,7 +4827,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [79,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [49,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [79,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [51,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4857,7 +4867,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [111,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [113,]},{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4895,7 +4905,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [122,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [131,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4933,7 +4943,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [11,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [88,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [90,]},{label: 'SAT', backgroundColor: '#f0e878', data: [11,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4971,7 +4981,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [124,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [96,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [124,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [98,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5009,7 +5019,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [346,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [57,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [347,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [59,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5047,7 +5057,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [250,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [104,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [255,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [106,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5085,7 +5095,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [86,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [87,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5123,7 +5133,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [257,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [52,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [257,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [53,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5161,7 +5171,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [85,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [81,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [82,]},{label: 'SAT', backgroundColor: '#f0e878', data: [86,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5199,7 +5209,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [271,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [47,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [271,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [48,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5237,7 +5247,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [114,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [70,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},{label: 'SAT', backgroundColor: '#f0e878', data: [114,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5275,7 +5285,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [358,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [32,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [365,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [32,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5313,7 +5323,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [36,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [74,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [36,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [75,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5351,7 +5361,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [89,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [59,]},{label: 'SAT', backgroundColor: '#f0e878', data: [91,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5389,7 +5399,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [46,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [44,]},{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5427,7 +5437,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [92,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [93,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [44,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5465,7 +5475,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [98,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [41,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},{label: 'SAT', backgroundColor: '#f0e878', data: [99,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5503,7 +5513,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [173,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [42,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [176,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5541,7 +5551,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [63,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [42,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},{label: 'SAT', backgroundColor: '#f0e878', data: [64,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5579,7 +5589,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [79,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [49,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [79,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [51,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5619,7 +5629,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [29,0,5,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [108,0,3,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [110,,3,]},{label: 'SAT', backgroundColor: '#f0e878', data: [29,,5,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5657,7 +5667,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [119,0,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [128,,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5695,7 +5705,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [10,0,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [87,0,1,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [89,,1,]},{label: 'SAT', backgroundColor: '#f0e878', data: [10,,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5733,7 +5743,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [19,0,105,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [73,0,23,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [75,,23,]},{label: 'SAT', backgroundColor: '#f0e878', data: [19,,105,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5771,7 +5781,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [108,0,238,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [6,0,51,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [108,,239,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [6,,53,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5809,7 +5819,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [37,0,213,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [40,0,64,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [39,,216,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [41,,65,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5847,7 +5857,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [15,0,32,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [62,0,24,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [15,,32,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [63,,24,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5885,7 +5895,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3','4',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [72,0,152,0,33,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,42,0,10,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [72,,152,,33,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,43,,10,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5923,7 +5933,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [19,0,66,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,0,38,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [44,,38,]},{label: 'SAT', backgroundColor: '#f0e878', data: [20,,66,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5961,7 +5971,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [46,0,225,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [42,0,5,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [46,,225,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,,5,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -5999,7 +6009,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [62,0,52,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [17,0,53,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [62,,52,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [17,,54,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6037,7 +6047,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3','4',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [18,0,337,0,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,32,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [18,,344,,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,32,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6075,7 +6085,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [7,0,29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,74,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [7,,29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,75,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6113,7 +6123,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [24,0,65,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [2,0,56,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [2,,57,]},{label: 'SAT', backgroundColor: '#f0e878', data: [24,,67,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6151,7 +6161,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [17,0,29,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,43,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [17,,30,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,44,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6189,7 +6199,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [18,0,74,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,43,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [18,,75,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,44,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6227,7 +6237,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [15,0,83,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [2,0,39,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [15,,84,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [2,,41,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6265,7 +6275,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [8,0,165,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,42,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [8,,168,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,43,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6303,7 +6313,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [4,0,59,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,42,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [4,,60,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,43,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6341,7 +6351,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [1,0,78,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,49,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [1,,78,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,51,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6381,7 +6391,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [111,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [113,]},{label: 'SAT', backgroundColor: '#f0e878', data: [34,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6419,7 +6429,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [122,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [131,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6457,7 +6467,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [11,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [88,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [90,]},{label: 'SAT', backgroundColor: '#f0e878', data: [11,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6495,7 +6505,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [124,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [96,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [124,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [98,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6533,7 +6543,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [346,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [57,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [347,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [59,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6571,7 +6581,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [250,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [104,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [255,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [106,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6609,7 +6619,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [86,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [87,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6647,7 +6657,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [256,0,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [52,0,0,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [256,,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [53,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6685,7 +6695,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [85,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [81,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [82,]},{label: 'SAT', backgroundColor: '#f0e878', data: [86,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6723,7 +6733,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [271,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [47,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [271,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [48,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6761,7 +6771,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [114,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [70,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},{label: 'SAT', backgroundColor: '#f0e878', data: [114,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6799,7 +6809,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [358,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [32,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [365,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [32,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6837,7 +6847,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [36,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [74,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [36,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [75,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6875,7 +6885,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [89,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [58,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [59,]},{label: 'SAT', backgroundColor: '#f0e878', data: [91,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6913,7 +6923,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [46,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [44,]},{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6951,7 +6961,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [92,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [93,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [44,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -6989,7 +6999,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [98,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [41,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},{label: 'SAT', backgroundColor: '#f0e878', data: [99,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -7027,7 +7037,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [173,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [42,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [176,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -7065,7 +7075,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [63,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [42,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [43,]},{label: 'SAT', backgroundColor: '#f0e878', data: [64,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -7103,7 +7113,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [79,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [49,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [79,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [51,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -21628,6 +21638,198 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-Ln33T5jBWwJXAx5EN"><a href="#item-ySHGhXpZbSEjGvLZW" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:590px">
     <i id="icon-ySHGhXpZbSEjGvLZW" class="glyphicon glyphicon-minus"></i>ySHGhXpZbSEjGvLZW, 2020-12-14T00:42:25 (prop9Ok,incorrect,check,)</a>
   <div class="list-group collapse show" id="item-ySHGhXpZbSEjGvLZW"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="#item-DbawuMnt6B5R4rZtw" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-DbawuMnt6B5R4rZtw" class="glyphicon glyphicon-chevron-right"></i>DbawuMnt6B5R4rZtw, 2020-12-16T17:53:49 (prop1Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-DbawuMnt6B5R4rZtw"><a href="#item-Tmz4dnLC9MCyXJZEM" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-Tmz4dnLC9MCyXJZEM" class="glyphicon glyphicon-chevron-right"></i>Tmz4dnLC9MCyXJZEM, 2020-12-16T17:54:08 (The name "Files" cannot be found.)</a>
+  <div class="list-group collapse show" id="item-Tmz4dnLC9MCyXJZEM"><a href="#item-qB8BbuxpF9TiGbhs4" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-qB8BbuxpF9TiGbhs4" class="glyphicon glyphicon-chevron-right"></i>qB8BbuxpF9TiGbhs4, 2020-12-16T17:54:12 (prop2Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-qB8BbuxpF9TiGbhs4"><a href="#item-xe7CWHdnBmwhkrLJD" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-xe7CWHdnBmwhkrLJD" class="glyphicon glyphicon-chevron-right"></i>xe7CWHdnBmwhkrLJD, 2020-12-16T17:54:24 (prop2Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-xe7CWHdnBmwhkrLJD"><a href="#item-coycEsACDE56yYYGv" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:50px">
+    <i id="icon-coycEsACDE56yYYGv" class="glyphicon glyphicon-chevron-right"></i>coycEsACDE56yYYGv, 2020-12-16T17:54:41 (prop2Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-coycEsACDE56yYYGv"><a href="#item-RrTtrkF9nYHAjSerq" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:60px">
+    <i id="icon-RrTtrkF9nYHAjSerq" class="glyphicon glyphicon-chevron-right"></i>RrTtrkF9nYHAjSerq, 2020-12-16T17:55:03 (prop2Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-RrTtrkF9nYHAjSerq"><a href="#item-zwK5C4coo8bvmgkHJ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:70px">
+    <i id="icon-zwK5C4coo8bvmgkHJ" class="glyphicon glyphicon-chevron-right"></i>zwK5C4coo8bvmgkHJ, 2020-12-16T17:55:21 (prop2Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-zwK5C4coo8bvmgkHJ"><a href="#item-j6xMdEarQiAk6wttN" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:80px">
+    <i id="icon-j6xMdEarQiAk6wttN" class="glyphicon glyphicon-chevron-right"></i>j6xMdEarQiAk6wttN, 2020-12-16T17:55:41 (prop3Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-j6xMdEarQiAk6wttN"><a href="#item-mAaMhGDbgevxefs2f" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:90px">
+    <i id="icon-mAaMhGDbgevxefs2f" class="glyphicon glyphicon-chevron-right"></i>mAaMhGDbgevxefs2f, 2020-12-16T17:56:12 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-mAaMhGDbgevxefs2f"><a href="#item-6xmJgNsW4uPZhafM2" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:100px">
+    <i id="icon-6xmJgNsW4uPZhafM2" class="glyphicon glyphicon-chevron-right"></i>6xmJgNsW4uPZhafM2, 2020-12-16T17:56:24 (prop4Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-6xmJgNsW4uPZhafM2"><a href="#item-PKDx3ebpLN49TsfDH" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:110px">
+    <i id="icon-PKDx3ebpLN49TsfDH" class="glyphicon glyphicon-chevron-right"></i>PKDx3ebpLN49TsfDH, 2020-12-16T17:57:03 (prop5Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-PKDx3ebpLN49TsfDH"><a href="#item-E3NFeSYg32yrF6eBu" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:120px">
+    <i id="icon-E3NFeSYg32yrF6eBu" class="glyphicon glyphicon-chevron-right"></i>E3NFeSYg32yrF6eBu, 2020-12-16T17:57:18 (prop5Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-E3NFeSYg32yrF6eBu"><a href="#item-oWAGBxMkpX4fFrao2" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:130px">
+    <i id="icon-oWAGBxMkpX4fFrao2" class="glyphicon glyphicon-chevron-right"></i>oWAGBxMkpX4fFrao2, 2020-12-16T17:57:56 (prop6Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-oWAGBxMkpX4fFrao2"><a href="#item-vZBibsDMoEbeDYEyN" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:140px">
+    <i id="icon-vZBibsDMoEbeDYEyN" class="glyphicon glyphicon-chevron-right"></i>vZBibsDMoEbeDYEyN, 2020-12-16T17:58:08 (prop6Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-vZBibsDMoEbeDYEyN"><a href="#item-aEf3mPcuLAeffNEq4" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:150px">
+    <i id="icon-aEf3mPcuLAeffNEq4" class="glyphicon glyphicon-chevron-right"></i>aEf3mPcuLAeffNEq4, 2020-12-16T17:58:20 (prop6Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-aEf3mPcuLAeffNEq4"><a href="#item-ZxE7mjTbzHZuX2kyN" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:160px">
+    <i id="icon-ZxE7mjTbzHZuX2kyN" class="glyphicon glyphicon-chevron-right"></i>ZxE7mjTbzHZuX2kyN, 2020-12-16T17:58:59 (prop6Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-ZxE7mjTbzHZuX2kyN"><a href="#item-ZE2asn8zpCgjzEdM2" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:170px">
+    <i id="icon-ZE2asn8zpCgjzEdM2" class="glyphicon glyphicon-chevron-right"></i>ZE2asn8zpCgjzEdM2, 2020-12-16T17:59:08 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-ZE2asn8zpCgjzEdM2"><a href="#item-EFHWakmnHeNPqrRAs" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:180px">
+    <i id="icon-EFHWakmnHeNPqrRAs" class="glyphicon glyphicon-chevron-right"></i>EFHWakmnHeNPqrRAs, 2020-12-16T17:59:22 (prop6Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-EFHWakmnHeNPqrRAs"><a href="#item-WqSZ8shfynR736TXY" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:190px">
+    <i id="icon-WqSZ8shfynR736TXY" class="glyphicon glyphicon-chevron-right"></i>WqSZ8shfynR736TXY, 2020-12-16T17:59:28 (prop6Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-WqSZ8shfynR736TXY"><a href="#item-E4KnS9bFJZ2DC59Du" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:200px">
+    <i id="icon-E4KnS9bFJZ2DC59Du" class="glyphicon glyphicon-chevron-right"></i>E4KnS9bFJZ2DC59Du, 2020-12-16T18:00:24 (prop1Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-E4KnS9bFJZ2DC59Du"><a href="#item-nmoXemvx3Z9LadB4o" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:210px">
+    <i id="icon-nmoXemvx3Z9LadB4o" class="glyphicon glyphicon-chevron-right"></i>nmoXemvx3Z9LadB4o, 2020-12-16T18:00:44 (prop3Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-nmoXemvx3Z9LadB4o"><a href="#item-FSXZGnSsQwviob6oj" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:220px">
+    <i id="icon-FSXZGnSsQwviob6oj" class="glyphicon glyphicon-chevron-right"></i>FSXZGnSsQwviob6oj, 2020-12-16T18:00:48 (prop2Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-FSXZGnSsQwviob6oj"><a href="#item-LtcgN6fKPna8AvwoL" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:230px">
+    <i id="icon-LtcgN6fKPna8AvwoL" class="glyphicon glyphicon-chevron-right"></i>LtcgN6fKPna8AvwoL, 2020-12-16T18:01:21 (prop2Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-LtcgN6fKPna8AvwoL"><a href="#item-pvFa7vWHZ8aEmb9xT" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:240px">
+    <i id="icon-pvFa7vWHZ8aEmb9xT" class="glyphicon glyphicon-chevron-right"></i>pvFa7vWHZ8aEmb9xT, 2020-12-16T18:01:32 (prop2Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-pvFa7vWHZ8aEmb9xT"><a href="#item-QKaKjEdzeAXuta6PN" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:250px">
+    <i id="icon-QKaKjEdzeAXuta6PN" class="glyphicon glyphicon-chevron-right"></i>QKaKjEdzeAXuta6PN, 2020-12-16T18:01:46 (prop2Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-QKaKjEdzeAXuta6PN"><a href="#item-EhKNJaYbKGRJktbyk" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:260px">
+    <i id="icon-EhKNJaYbKGRJktbyk" class="glyphicon glyphicon-chevron-right"></i>EhKNJaYbKGRJktbyk, 2020-12-16T18:02:11 (prop4Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-EhKNJaYbKGRJktbyk"><a href="#item-gj8uQKYfJ4Tyq8QM5" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:270px">
+    <i id="icon-gj8uQKYfJ4Tyq8QM5" class="glyphicon glyphicon-chevron-right"></i>gj8uQKYfJ4Tyq8QM5, 2020-12-16T18:02:15 (prop5Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-gj8uQKYfJ4Tyq8QM5"><a href="#item-jsXh36P3cn5eaN2vE" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:280px">
+    <i id="icon-jsXh36P3cn5eaN2vE" class="glyphicon glyphicon-chevron-right"></i>jsXh36P3cn5eaN2vE, 2020-12-16T18:03:21 (prop7Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-jsXh36P3cn5eaN2vE"><a href="#item-biMGLGzX5Ap3kzfYW" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:290px">
+    <i id="icon-biMGLGzX5Ap3kzfYW" class="glyphicon glyphicon-chevron-right"></i>biMGLGzX5Ap3kzfYW, 2020-12-16T18:03:24 (prop6Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-biMGLGzX5Ap3kzfYW"><a href="#item-YXWfygSM7MJQ4ZZJG" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:300px">
+    <i id="icon-YXWfygSM7MJQ4ZZJG" class="glyphicon glyphicon-chevron-right"></i>YXWfygSM7MJQ4ZZJG, 2020-12-16T18:04:11 (The name "Link" cannot be found.)</a>
+  <div class="list-group collapse show" id="item-YXWfygSM7MJQ4ZZJG"><a href="#item-wQs7wPqo6uMy8gxkx" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:310px">
+    <i id="icon-wQs7wPqo6uMy8gxkx" class="glyphicon glyphicon-chevron-right"></i>wQs7wPqo6uMy8gxkx, 2020-12-16T18:05:37 (prop8Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-wQs7wPqo6uMy8gxkx"><a href="#item-fy7HkxFMsK3asutX2" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:320px">
+    <i id="icon-fy7HkxFMsK3asutX2" class="glyphicon glyphicon-chevron-right"></i>fy7HkxFMsK3asutX2, 2020-12-16T18:06:54 (prop9Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-fy7HkxFMsK3asutX2"><a href="#item-BQf6Tsvy4yFR6QpAv" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:330px">
+    <i id="icon-BQf6Tsvy4yFR6QpAv" class="glyphicon glyphicon-chevron-right"></i>BQf6Tsvy4yFR6QpAv, 2020-12-16T18:07:52 (prop9Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-BQf6Tsvy4yFR6QpAv"><a href="#item-qdFgY9Jd7TJphGybs" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:340px">
+    <i id="icon-qdFgY9Jd7TJphGybs" class="glyphicon glyphicon-chevron-right"></i>qdFgY9Jd7TJphGybs, 2020-12-16T18:08:30 (This expression failed to be typechecked line 70, column 3, filename=/tmp/alloy_heredoc340067900823865796.als)</a>
+  <div class="list-group collapse show" id="item-qdFgY9Jd7TJphGybs"><a href="#item-i7xGmuMKxNo6BNoKm" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:350px">
+    <i id="icon-i7xGmuMKxNo6BNoKm" class="glyphicon glyphicon-chevron-right"></i>i7xGmuMKxNo6BNoKm, 2020-12-16T18:08:47 (This must be a formula expression. Instead, it has the following possible type(s): {this/File})</a>
+  <div class="list-group collapse show" id="item-i7xGmuMKxNo6BNoKm"><a href="#item-5sgXtJjrHCC8hpmz8" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:360px">
+    <i id="icon-5sgXtJjrHCC8hpmz8" class="glyphicon glyphicon-chevron-right"></i>5sgXtJjrHCC8hpmz8, 2020-12-16T18:09:09 (prop10Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-5sgXtJjrHCC8hpmz8"><a href="#item-QtsBSPWAvmKJHkzwD" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:370px">
+    <i id="icon-QtsBSPWAvmKJHkzwD" class="glyphicon glyphicon-chevron-right"></i>QtsBSPWAvmKJHkzwD, 2020-12-16T18:10:10 (prop11Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-QtsBSPWAvmKJHkzwD"><a href="#item-vbKNCFFWy9EtCXRNh" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:380px">
+    <i id="icon-vbKNCFFWy9EtCXRNh" class="glyphicon glyphicon-chevron-right"></i>vbKNCFFWy9EtCXRNh, 2020-12-16T18:12:54 (prop12Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-vbKNCFFWy9EtCXRNh"><a href="#item-4k53NfRpJjdZxHJrZ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:390px">
+    <i id="icon-4k53NfRpJjdZxHJrZ" class="glyphicon glyphicon-chevron-right"></i>4k53NfRpJjdZxHJrZ, 2020-12-16T18:13:12 (prop12Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-4k53NfRpJjdZxHJrZ"><a href="#item-aghPqh5yA8CfQm7Fq" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:400px">
+    <i id="icon-aghPqh5yA8CfQm7Fq" class="glyphicon glyphicon-chevron-right"></i>aghPqh5yA8CfQm7Fq, 2020-12-16T18:14:36 (prop12Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-aghPqh5yA8CfQm7Fq"><a href="#item-tj6N7eqM36nZ2EtEs" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:410px">
+    <i id="icon-tj6N7eqM36nZ2EtEs" class="glyphicon glyphicon-chevron-right"></i>tj6N7eqM36nZ2EtEs, 2020-12-16T18:14:57 (prop12Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-tj6N7eqM36nZ2EtEs"><a href="#item-qjcLDEuZMyMtQNXMM" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:420px">
+    <i id="icon-qjcLDEuZMyMtQNXMM" class="glyphicon glyphicon-chevron-right"></i>qjcLDEuZMyMtQNXMM, 2020-12-16T18:15:09 (prop12Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-qjcLDEuZMyMtQNXMM"><a href="#item-Z6YmGAXbJqaWoPPbh" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:430px">
+    <i id="icon-Z6YmGAXbJqaWoPPbh" class="glyphicon glyphicon-chevron-right"></i>Z6YmGAXbJqaWoPPbh, 2020-12-16T18:17:41 (prop12Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-Z6YmGAXbJqaWoPPbh"><a href="#item-gBMZc8hZnas96FycM" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:440px">
+    <i id="icon-gBMZc8hZnas96FycM" class="glyphicon glyphicon-chevron-right"></i>gBMZc8hZnas96FycM, 2020-12-16T18:17:50 (+ can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-gBMZc8hZnas96FycM"><a href="#item-YqoXdnGR7GtweaHYK" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:450px">
+    <i id="icon-YqoXdnGR7GtweaHYK" class="glyphicon glyphicon-chevron-right"></i>YqoXdnGR7GtweaHYK, 2020-12-16T18:17:58 (prop12Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-YqoXdnGR7GtweaHYK"><a href="#item-M25fM9c5L8Xr9GsPN" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:460px">
+    <i id="icon-M25fM9c5L8Xr9GsPN" class="glyphicon glyphicon-chevron-right"></i>M25fM9c5L8Xr9GsPN, 2020-12-16T18:19:08 (prop13Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-M25fM9c5L8Xr9GsPN"><a href="#item-Wjon38iAxCPNAsw5m" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:470px">
+    <i id="icon-Wjon38iAxCPNAsw5m" class="glyphicon glyphicon-chevron-right"></i>Wjon38iAxCPNAsw5m, 2020-12-16T18:20:26 (prop14Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-Wjon38iAxCPNAsw5m"><a href="#item-khtSd2p2GoKq7GjAJ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:480px">
+    <i id="icon-khtSd2p2GoKq7GjAJ" class="glyphicon glyphicon-chevron-right"></i>khtSd2p2GoKq7GjAJ, 2020-12-16T18:20:58 (prop14Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-khtSd2p2GoKq7GjAJ"><a href="#item-SNCyCcxDyrKPcxqRz" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:490px">
+    <i id="icon-SNCyCcxDyrKPcxqRz" class="glyphicon glyphicon-chevron-right"></i>SNCyCcxDyrKPcxqRz, 2020-12-16T18:21:10 (prop14Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-SNCyCcxDyrKPcxqRz"><a href="#item-AZt3xv3xeywYwNu7M" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:500px">
+    <i id="icon-AZt3xv3xeywYwNu7M" class="glyphicon glyphicon-chevron-right"></i>AZt3xv3xeywYwNu7M, 2020-12-16T18:22:11 (prop15Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-AZt3xv3xeywYwNu7M"><a href="#item-JAuk2hnAL237s5Kov" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:510px">
+    <i id="icon-JAuk2hnAL237s5Kov" class="glyphicon glyphicon-chevron-right"></i>JAuk2hnAL237s5Kov, 2020-12-16T18:22:26 (prop15Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-JAuk2hnAL237s5Kov"><a href="#item-2YCXjKJL9ZaepbRjM" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:520px">
+    <i id="icon-2YCXjKJL9ZaepbRjM" class="glyphicon glyphicon-chevron-right"></i>2YCXjKJL9ZaepbRjM, 2020-12-16T18:23:29 (prop16Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-2YCXjKJL9ZaepbRjM"><a href="#item-PjgTpwcbciQ724ypM" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:530px">
+    <i id="icon-PjgTpwcbciQ724ypM" class="glyphicon glyphicon-chevron-right"></i>PjgTpwcbciQ724ypM, 2020-12-16T18:23:33 (prop16Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-PjgTpwcbciQ724ypM"><a href="#item-pey5qiH5icBKpxGB8" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:540px">
+    <i id="icon-pey5qiH5icBKpxGB8" class="glyphicon glyphicon-chevron-right"></i>pey5qiH5icBKpxGB8, 2020-12-16T18:24:50 (prop17Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-pey5qiH5icBKpxGB8"><a href="#item-x4WgY2TxTkgthCg6e" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:550px">
+    <i id="icon-x4WgY2TxTkgthCg6e" class="glyphicon glyphicon-chevron-right"></i>x4WgY2TxTkgthCg6e, 2020-12-16T18:25:08 (prop17Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-x4WgY2TxTkgthCg6e"><a href="#item-QdGJH4Sfug3GT7Y9X" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:560px">
+    <i id="icon-QdGJH4Sfug3GT7Y9X" class="glyphicon glyphicon-chevron-right"></i>QdGJH4Sfug3GT7Y9X, 2020-12-16T18:25:18 (prop17Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-QdGJH4Sfug3GT7Y9X"><a href="#item-buWuMowkmHK3gXPSp" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:570px">
+    <i id="icon-buWuMowkmHK3gXPSp" class="glyphicon glyphicon-chevron-right"></i>buWuMowkmHK3gXPSp, 2020-12-16T18:26:48 (prop18Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-buWuMowkmHK3gXPSp"><a href="#item-KmJPLd4LdKrekM8Mt" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:580px">
+    <i id="icon-KmJPLd4LdKrekM8Mt" class="glyphicon glyphicon-chevron-right"></i>KmJPLd4LdKrekM8Mt, 2020-12-16T18:26:54 (prop18Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-KmJPLd4LdKrekM8Mt"><a href="#item-KdFKtThWz7w8RooY9" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:590px">
+    <i id="icon-KdFKtThWz7w8RooY9" class="glyphicon glyphicon-chevron-right"></i>KdFKtThWz7w8RooY9, 2020-12-16T18:27:02 (prop18Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-KdFKtThWz7w8RooY9"><a href="#item-dc6bM2FaHHv35nx6D" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:600px">
+    <i id="icon-dc6bM2FaHHv35nx6D" class="glyphicon glyphicon-chevron-right"></i>dc6bM2FaHHv35nx6D, 2020-12-16T18:27:13 (prop18Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-dc6bM2FaHHv35nx6D"><a href="#item-yBvouuMypgnx5BqFD" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:610px">
+    <i id="icon-yBvouuMypgnx5BqFD" class="glyphicon glyphicon-chevron-right"></i>yBvouuMypgnx5BqFD, 2020-12-16T18:28:37 (prop19Ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-yBvouuMypgnx5BqFD"><a href="#item-otxvPuapceC3aJTmv" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:620px">
+    <i id="icon-otxvPuapceC3aJTmv" class="glyphicon glyphicon-chevron-right"></i>otxvPuapceC3aJTmv, 2020-12-16T18:28:49 (prop19Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-otxvPuapceC3aJTmv"><a href="#item-vSCEZMDEqtd2As4ri" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:630px">
+    <i id="icon-vSCEZMDEqtd2As4ri" class="glyphicon glyphicon-minus"></i>vSCEZMDEqtd2As4ri, 2020-12-16T18:31:21 (prop20Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-vSCEZMDEqtd2As4ri"></div>
+<a href="#item-FLagLPb8vEXZK4ro5" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:630px">
+    <i id="icon-FLagLPb8vEXZK4ro5" class="glyphicon glyphicon-minus"></i>FLagLPb8vEXZK4ro5, 2020-12-16T18:31:27 (prop20Ok,correct,check,)</a>
+  <div class="list-group collapse show" id="item-FLagLPb8vEXZK4ro5"></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>

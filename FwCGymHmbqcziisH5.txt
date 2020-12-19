@@ -1,0 +1,1622 @@
+FwCGymHmbqcziisH5 (2020-12-19)
+
+* Meta-data
+Challenge name: unknown
+Creation time: 2020-11-18
+# sub-challenges: 18
+Metric catalog: Example metric catalog
+
+* Overall metric statistics
+Total model entries: 702
+Total executions: 699
+Total shares: 3
+Total error messages: 165
+Total warning messages: 63
+Total solutions: 535
+Total sessions: 35
+Timed out re-executions: 0
+Rejected due to server errors: 2
+Inconsisistent result reports: 0
+Inconsisistent message reports: 0
+Total instance entries: 0
+Total link entries: 4
+
+* Scalar metrics
+Number of shared sessions	2
+Shared models (model)	3
+Shares with warnings	0
+Alloy runtime errors	0
+Shared errored models	1
+Alloy static errors	164
+Shared models (instance)	0
+Average session	20.057142857142857
+Longest session	96
+Sat executions with warnings	40
+Executed errored models	164
+Unsat executions	411
+Unsat executions with warnings	3
+Errored executions with warnings	0
+Average % unsatisfiable	0.3902091287595853
+Sat executions	124
+
+* Overall metrics
+
+Sessions by length
+1	5
+2	6
+3	0
+4	0
+5	1
+6	2
+7	1
+8	0
+9	2
+10	0
+11	1
+12	0
+13	0
+14	2
+15	0
+16	0
+17	0
+18	0
+19	0
+20	1
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+27	1
+28	1
+29	1
+30	0
+31	0
+32	2
+33	0
+34	2
+35	0
+36	1
+37	1
+38	0
+39	0
+40	0
+41	2
+42	0
+43	0
+44	0
+45	0
+46	0
+47	0
+48	0
+49	0
+50	0
+51	0
+52	0
+53	0
+54	0
+55	1
+56	0
+57	0
+58	0
+59	0
+60	0
+61	0
+62	1
+63	0
+64	0
+65	0
+66	0
+67	0
+68	0
+69	0
+70	0
+71	0
+72	0
+73	0
+74	0
+75	0
+76	0
+77	0
+78	0
+79	0
+80	0
+81	0
+82	0
+83	0
+84	0
+85	0
+86	0
+87	0
+88	0
+89	0
+90	0
+91	0
+92	0
+93	0
+94	0
+95	0
+96	1
+
+Warnings by type
+Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}	7
+- is irrelevant since the right expression is redundant. Parent's relevant type = {_} Left type = {_} Right type = {_}	2
+This variable is unused.	9
+Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}	17
+Subset operator is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}	1
+& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}	2
+Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}	1
+The join operation here always yields an empty set. Left type = {_} Right type = {_}	23
+^_ is redundant since its domain and range are disjoint: {_}	1
+
+Sessions by # of solved challenges
+0	6
+1	8
+2	4
+3	7
+4	8
+5	0
+6	1
+7	1
+
+Errors by type
+There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	20
+The name _ cannot be found.	19
+This expression failed to be typechecked line _ column _ filename=_.als	17
+This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	13
+- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	1
+Syntax error at the \ character. HEX: \u5c)	1
+There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	24
+This must be a set or relation. Instead, it has the following possible type(s): {_}	7
+There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ 	5
+There are 5 possible tokens that can appear here: enum fun let open pred 	1
+= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	2
+There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~ 	1
+The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".	6
+This must be a formula expression. Instead, it has the following possible type(s): {_}	13
+~ can be used only with a binary relation. Instead, its possible type(s) are: {_}	4
+There are 1 possible tokens that can appear here: ) 	23
+!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	1
+There are 36 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int lone no none once one pred seq set some sum this univ { ~ 	1
+There are 3 possible tokens that can appear here: ,  { | 	6
+
+Models by number of warnings
+0	659
+1	25
+2	16
+3	2
+
+* Overall metrics, classified
+
+Execution results by challenge
+m	SAT	UNSAT	
+prop1ok	40	33	
+prop2ok	52	32	
+prop3ok	122	29	
+prop4ok	42	18	
+prop5ok	39	0	
+prop6ok	62	1	
+prop7ok	20	5	
+prop8ok	0	0	
+prop9ok	6	0	
+prop10ok	0	5	
+prop11ok	6	0	
+prop12ok	2	0	
+prop13ok	0	0	
+prop14ok	0	0	
+prop15ok	11	1	
+prop16ok	5	0	
+prop17ok	4	0	
+prop18ok	0	0	
+
+Session results by challenge
+m	solved	unsolved	
+prop1ok	23	12	
+prop2ok	21	14	
+prop3ok	18	17	
+prop4ok	13	22	
+prop5ok	0	35	
+prop6ok	1	34	
+prop7ok	3	32	
+prop8ok	0	35	
+prop9ok	0	35	
+prop10ok	2	33	
+prop11ok	0	35	
+prop12ok	0	35	
+prop13ok	0	35	
+prop14ok	0	35	
+prop15ok	1	34	
+prop16ok	0	35	
+prop17ok	0	35	
+prop18ok	0	35	
+
+Model entries over time
+m	SAT	ERROR	SHARE	UNSAT	
+2020-11-18	2	2	1	2	
+2020-11-19	1	0	0	0	
+2020-11-20	0	0	0	0	
+2020-11-21	0	0	0	0	
+2020-11-22	0	0	0	0	
+2020-11-23	0	0	0	0	
+2020-11-24	2	2	1	4	
+2020-11-25	119	78	1	40	
+2020-11-26	51	19	0	17	
+2020-11-27	1	0	0	0	
+2020-11-28	23	3	0	7	
+2020-11-29	7	6	0	5	
+2020-11-30	0	0	0	0	
+2020-12-01	19	8	0	9	
+2020-12-02	80	37	0	8	
+2020-12-03	6	1	0	10	
+2020-12-04	0	0	0	0	
+2020-12-05	28	2	0	4	
+2020-12-06	2	0	0	0	
+2020-12-07	0	0	0	0	
+2020-12-08	35	3	0	3	
+2020-12-09	5	1	0	4	
+2020-12-10	0	0	0	0	
+2020-12-11	0	0	0	0	
+2020-12-12	0	0	0	0	
+2020-12-13	0	0	0	0	
+2020-12-14	0	0	0	0	
+2020-12-15	0	0	0	0	
+2020-12-16	7	1	0	3	
+2020-12-17	23	1	0	8	
+2020-12-18	0	0	0	0	
+2020-12-19	0	0	0	0	
+
+* Metrics by sub-challenge, classified
+
+Size in 10s of nodes
+
+prop1ok
+m	SAT	UNSAT	
+1	0	1	
+2	0	0	
+3	0	0	
+4	0	0	
+5	0	0	
+6	0	0	
+7	0	0	
+8	9	24	
+9	3	3	
+10	15	0	
+11	12	5	
+12	1	0	
+
+prop2ok
+m	SAT	UNSAT	
+9	2	0	
+10	45	31	
+11	5	1	
+
+prop3ok
+m	SAT	UNSAT	
+8	8	0	
+9	23	12	
+10	42	12	
+11	10	0	
+12	24	0	
+13	10	0	
+14	5	5	
+
+prop4ok
+m	SAT	UNSAT	
+9	1	0	
+10	12	14	
+11	20	2	
+12	3	1	
+13	0	1	
+14	5	0	
+15	0	0	
+16	1	0	
+
+prop5ok
+m	SAT	
+16	2	
+17	1	
+18	1	
+19	8	
+20	9	
+21	13	
+22	4	
+23	0	
+24	1	
+
+prop6ok
+m	SAT	UNSAT	
+10	1	0	
+11	7	0	
+12	17	0	
+13	3	0	
+14	33	1	
+15	1	0	
+
+prop7ok
+m	SAT	UNSAT	
+11	5	0	
+12	8	5	
+13	7	0	
+
+prop9ok
+m	SAT	
+12	4	
+13	2	
+
+prop10ok
+m	UNSAT	
+11	1	
+12	3	
+13	0	
+14	1	
+
+prop11ok
+m	SAT	
+12	3	
+13	3	
+
+prop12ok
+m	SAT	
+15	2	
+
+prop15ok
+m	SAT	UNSAT	
+11	1	0	
+12	7	1	
+13	3	0	
+
+prop16ok
+m	SAT	
+14	5	
+
+prop17ok
+m	SAT	
+17	2	
+18	2	
+
+Number of binary temporal operators
+
+prop1ok
+m	SAT	UNSAT	
+0	27	28	
+1	0	0	
+2	13	5	
+
+prop2ok
+m	SAT	UNSAT	
+0	52	32	
+
+prop3ok
+m	SAT	UNSAT	
+0	122	29	
+
+prop4ok
+m	SAT	UNSAT	
+0	42	18	
+
+prop5ok
+m	SAT	
+0	38	
+1	0	
+2	1	
+
+prop6ok
+m	SAT	UNSAT	
+0	62	1	
+
+prop7ok
+m	SAT	UNSAT	
+0	20	5	
+
+prop9ok
+m	SAT	
+0	6	
+
+prop10ok
+m	UNSAT	
+0	5	
+
+prop11ok
+m	SAT	
+0	6	
+
+prop12ok
+m	SAT	
+0	2	
+
+prop15ok
+m	SAT	UNSAT	
+0	11	1	
+
+prop16ok
+m	SAT	
+2	5	
+
+prop17ok
+m	SAT	
+0	4	
+
+Max nested temporal operator level
+
+prop1ok
+m	SAT	UNSAT	
+0	10	25	
+1	19	3	
+2	11	5	
+
+prop2ok
+m	SAT	UNSAT	
+1	32	31	
+2	19	1	
+3	1	0	
+
+prop3ok
+m	SAT	UNSAT	
+0	6	0	
+1	61	3	
+2	50	26	
+3	4	0	
+4	1	0	
+
+prop4ok
+m	SAT	UNSAT	
+0	6	0	
+1	29	18	
+2	6	0	
+3	1	0	
+
+prop5ok
+m	SAT	
+0	2	
+1	2	
+2	35	
+
+prop6ok
+m	SAT	UNSAT	
+0	1	0	
+1	2	0	
+2	43	1	
+3	15	0	
+4	1	0	
+
+prop7ok
+m	SAT	UNSAT	
+1	7	0	
+2	11	5	
+3	2	0	
+
+prop9ok
+m	SAT	
+1	6	
+
+prop10ok
+m	UNSAT	
+1	5	
+
+prop11ok
+m	SAT	
+1	1	
+2	5	
+
+prop12ok
+m	SAT	
+0	2	
+
+prop15ok
+m	SAT	UNSAT	
+2	5	0	
+3	6	1	
+
+prop16ok
+m	SAT	
+2	2	
+3	3	
+
+prop17ok
+m	SAT	
+3	4	
+
+Number of lone/one quantifiers
+
+prop1ok
+m	SAT	UNSAT	
+0	40	33	
+
+prop2ok
+m	SAT	UNSAT	
+0	52	32	
+
+prop3ok
+m	SAT	UNSAT	
+0	117	29	
+1	0	0	
+2	5	0	
+
+prop4ok
+m	SAT	UNSAT	
+0	40	18	
+1	0	0	
+2	2	0	
+
+prop5ok
+m	SAT	
+0	39	
+
+prop6ok
+m	SAT	UNSAT	
+0	60	1	
+1	0	0	
+2	2	0	
+
+prop7ok
+m	SAT	UNSAT	
+0	20	5	
+
+prop9ok
+m	SAT	
+0	6	
+
+prop10ok
+m	UNSAT	
+0	5	
+
+prop11ok
+m	SAT	
+0	6	
+
+prop12ok
+m	SAT	
+0	2	
+
+prop15ok
+m	SAT	UNSAT	
+0	11	1	
+
+prop16ok
+m	SAT	
+0	5	
+
+prop17ok
+m	SAT	
+0	4	
+
+Max nested quantifier level
+
+prop1ok
+m	SAT	UNSAT	
+0	11	25	
+1	27	8	
+2	2	0	
+
+prop2ok
+m	SAT	UNSAT	
+0	26	0	
+1	26	32	
+
+prop3ok
+m	SAT	UNSAT	
+0	49	12	
+1	43	12	
+2	30	5	
+
+prop4ok
+m	SAT	UNSAT	
+0	12	11	
+1	25	7	
+2	5	0	
+
+prop5ok
+m	SAT	
+0	3	
+1	29	
+2	7	
+
+prop6ok
+m	SAT	UNSAT	
+0	18	0	
+1	44	1	
+
+prop7ok
+m	SAT	UNSAT	
+1	20	5	
+
+prop9ok
+m	SAT	
+1	6	
+
+prop10ok
+m	UNSAT	
+0	1	
+1	4	
+
+prop11ok
+m	SAT	
+1	6	
+
+prop12ok
+m	SAT	
+0	2	
+
+prop15ok
+m	SAT	UNSAT	
+0	3	0	
+1	8	1	
+
+prop16ok
+m	SAT	
+1	5	
+
+prop17ok
+m	SAT	
+1	4	
+
+Number of disj quantifications
+
+prop1ok
+m	SAT	UNSAT	
+0	40	33	
+
+prop2ok
+m	SAT	UNSAT	
+0	52	32	
+
+prop3ok
+m	SAT	UNSAT	
+0	122	29	
+
+prop4ok
+m	SAT	UNSAT	
+0	28	14	
+1	0	0	
+2	14	4	
+
+prop5ok
+m	SAT	
+0	39	
+
+prop6ok
+m	SAT	UNSAT	
+0	62	1	
+
+prop7ok
+m	SAT	UNSAT	
+0	20	5	
+
+prop9ok
+m	SAT	
+0	6	
+
+prop10ok
+m	UNSAT	
+0	5	
+
+prop11ok
+m	SAT	
+0	6	
+
+prop12ok
+m	SAT	
+0	2	
+
+prop15ok
+m	SAT	UNSAT	
+0	11	1	
+
+prop16ok
+m	SAT	
+0	5	
+
+prop17ok
+m	SAT	
+0	4	
+
+Number multiplicity arrows
+
+prop1ok
+m	SAT	UNSAT	
+0	40	33	
+
+prop2ok
+m	SAT	UNSAT	
+0	52	32	
+
+prop3ok
+m	SAT	UNSAT	
+0	122	29	
+
+prop4ok
+m	SAT	UNSAT	
+0	42	18	
+
+prop5ok
+m	SAT	
+0	39	
+
+prop6ok
+m	SAT	UNSAT	
+0	62	1	
+
+prop7ok
+m	SAT	UNSAT	
+0	20	5	
+
+prop9ok
+m	SAT	
+0	6	
+
+prop10ok
+m	UNSAT	
+0	5	
+
+prop11ok
+m	SAT	
+0	6	
+
+prop12ok
+m	SAT	
+0	2	
+
+prop15ok
+m	SAT	UNSAT	
+0	11	1	
+
+prop16ok
+m	SAT	
+0	5	
+
+prop17ok
+m	SAT	
+0	4	
+
+Number of quantifiers
+
+prop1ok
+m	SAT	UNSAT	
+0	11	25	
+1	0	0	
+2	25	3	
+3	0	0	
+4	4	5	
+
+prop2ok
+m	SAT	UNSAT	
+0	26	0	
+1	0	0	
+2	26	32	
+
+prop3ok
+m	SAT	UNSAT	
+0	49	12	
+1	0	0	
+2	42	12	
+3	0	0	
+4	31	5	
+
+prop4ok
+m	SAT	UNSAT	
+0	12	11	
+1	0	0	
+2	2	3	
+3	0	0	
+4	23	4	
+5	0	0	
+6	4	0	
+7	0	0	
+8	1	0	
+
+prop5ok
+m	SAT	
+0	3	
+1	0	
+2	29	
+3	0	
+4	7	
+
+prop6ok
+m	SAT	UNSAT	
+0	18	0	
+1	0	0	
+2	44	1	
+
+prop7ok
+m	SAT	UNSAT	
+2	20	5	
+
+prop9ok
+m	SAT	
+2	6	
+
+prop10ok
+m	UNSAT	
+0	1	
+1	0	
+2	4	
+
+prop11ok
+m	SAT	
+2	6	
+
+prop12ok
+m	SAT	
+0	2	
+
+prop15ok
+m	SAT	UNSAT	
+0	3	0	
+1	0	0	
+2	8	1	
+
+prop16ok
+m	SAT	
+2	5	
+
+prop17ok
+m	SAT	
+2	4	
+
+Number of inverted navigation expressions
+
+prop1ok
+m	SAT	UNSAT	
+0	40	33	
+
+prop2ok
+m	SAT	UNSAT	
+0	52	32	
+
+prop3ok
+m	SAT	UNSAT	
+0	122	29	
+
+prop4ok
+m	SAT	UNSAT	
+0	42	16	
+1	0	0	
+2	0	2	
+
+prop5ok
+m	SAT	
+0	39	
+
+prop6ok
+m	SAT	UNSAT	
+0	62	1	
+
+prop7ok
+m	SAT	UNSAT	
+0	20	5	
+
+prop9ok
+m	SAT	
+0	6	
+
+prop10ok
+m	UNSAT	
+0	5	
+
+prop11ok
+m	SAT	
+0	6	
+
+prop12ok
+m	SAT	
+0	2	
+
+prop15ok
+m	SAT	UNSAT	
+0	11	1	
+
+prop16ok
+m	SAT	
+0	5	
+
+prop17ok
+m	SAT	
+0	4	
+
+* Derivation tree
+FwCGymHmbqcziisH5, 2020-11-18T07:24:33 (model share)
+  ZY44yae6EYdRAvqRK, 2020-11-18T16:44:16 (This cannot be a legal relational join where left hand side is s (type = {this/Signal}) right hand side is this/Green (type = {this/Signal}))
+    Jz67P8Gc3oQENANrK, 2020-11-18T16:44:33 (prop1ok,correct,check,This variable is unused.)
+      idYuCd6rCJ62xKSry, 2020-11-18T16:44:40 (prop1ok,correct,check,)
+        5KNdd7QcHEZGQQQYT, 2020-11-18T16:46:24 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+          vmZBLbEjLvtpYpnEk, 2020-11-18T16:55:05 (prop3ok,incorrect,check,)
+            J7XDrjEnvGXx5A3fh, 2020-11-18T16:56:17 (prop3ok,incorrect,check,)
+  woo8z5bcf9RfSxHTJ, 2020-11-19T09:12:52 (prop1ok,incorrect,check,)
+  jjhqawSh3QcviHzvc, 2020-11-24T17:23:43 (model share)
+  b7Tq9osWrgL4A4ryP, 2020-11-24T19:57:13 (prop1ok,correct,check,)
+    pM3gYJnEMpG63LPTg, 2020-11-24T19:57:49 (prop2ok,incorrect,check,)
+  avskeWHXHwXizDWCe, 2020-11-24T19:58:50 (Unknown exception occurred: java.lang.OutOfMemoryError: unable to create native thread: possibly out of memory or process/resource limits reached)
+    KnDH62aqmgKgEaYkv, 2020-11-24T20:06:19 (Unknown exception occurred: java.lang.OutOfMemoryError: unable to create native thread: possibly out of memory or process/resource limits reached)
+  E776zvvfhNjZd5eC7, 2020-11-24T22:57:01 (prop1ok,incorrect,check,)
+    WT3mSeGqzG6Qqi5QL, 2020-11-24T22:57:21 (prop1ok,correct,check,)
+      ZcHaFJZNXuiwNPhMa, 2020-11-24T22:58:33 (prop2ok,correct,check,)
+        K6ty2HqooD8SG6oQN, 2020-11-24T23:00:01 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Track})
+          kcy6XnnXoqr33JDs5, 2020-11-24T23:00:48 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Train})
+            AaW2NXWj88SCt5Deg, 2020-11-24T23:01:09 (prop4ok,correct,check,)
+  fMyM6Qh39kXdQZrY4, 2020-11-25T16:00:15 (prop1ok,correct,check,)
+    ehBaHfb2aLtLhGxCv, 2020-11-25T16:04:55 (There are 1 possible tokens that can appear here: ))
+      muTj8adK57JrhacdG, 2020-11-25T16:05:02 (prop2ok,incorrect,check,)
+        ktpc4AxRbFda76sEm, 2020-11-25T16:05:21 (prop2ok,correct,check,)
+          RcLisScW3x5izDFF8, 2020-11-25T16:06:44 (prop3ok,incorrect,check,)
+            cS5wtKgGkFoL3X23a, 2020-11-25T16:08:01 (prop4ok,correct,check,)
+              NbFSzHiEGwCsJg9xY, 2020-11-25T16:10:27 (prop6ok,incorrect,check,)
+                6zcX4s9m33hXWABjF, 2020-11-25T16:13:07 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+                  usqbZeJGujCAMvExw, 2020-11-25T16:13:13 (prop3ok,incorrect,check,)
+                    R48ucRG4vgMxyXZpk, 2020-11-25T16:14:40 (There are 1 possible tokens that can appear here: ))
+                      g755NW79EYamYeJmK, 2020-11-25T16:14:47 (prop3ok,correct,check,)
+                        fdahJAGbot3iG6GC9, 2020-11-25T16:22:40 (prop6ok,incorrect,check,)
+                          Nn4y4BhQFveQMsHhB, 2020-11-25T16:24:02 (prop6ok,incorrect,check,)
+                            xo2mkRRxFA62zsRvq, 2020-11-25T16:26:43 (There are 5 possible tokens that can appear here: enum fun let open pred)
+                              cAKbnoZ6NmEZDwbyh, 2020-11-25T16:26:51 (prop6ok,incorrect,check,)
+                                5GRn83akYGHg3isKz, 2020-11-25T16:32:35 (There are 1 possible tokens that can appear here: ))
+                                  WvrHnDSPY9mrheRCf, 2020-11-25T16:33:23 (There are 1 possible tokens that can appear here: ))
+                                    gcDogHQvKwP3wHLau, 2020-11-25T16:34:02 (There are 1 possible tokens that can appear here: ))
+                                      ru49rW22AYZALknar, 2020-11-25T16:34:20 (There are 1 possible tokens that can appear here: ))
+                                        p4aAm5xPt8FLrdbXC, 2020-11-25T16:34:47 (There are 1 possible tokens that can appear here: ))
+                                          so9B6XgRkdM6jxv2S, 2020-11-25T16:35 (There are 1 possible tokens that can appear here: ))
+                                            jHfq8C6brgGFcQpbQ, 2020-11-25T16:35:25 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+                                              gXJztDPdhmNkaWxzo, 2020-11-25T16:35:35 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+                                                jfQMHhvEvkueh56CC, 2020-11-25T16:35:46 (There are 1 possible tokens that can appear here: ))
+                                                  DEWYCWhDphuTsr3ij, 2020-11-25T16:36:50 (prop6ok,incorrect,check,)
+                                                    Zi9whaGYDNn7Z2GxR, 2020-11-25T16:37:14 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                      wRXqQoyCoifGT5BQj, 2020-11-25T16:37:24 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+                                                        ZcZD8evvM2xEnhH6N, 2020-11-25T16:37:44 (There are 1 possible tokens that can appear here: ))
+                                                          FJ3CvbFv2xNH6pBGg, 2020-11-25T16:37:51 (There are 1 possible tokens that can appear here: ))
+                                                            FgGkJyYLAD8T8hAh7, 2020-11-25T16:38:11 (There are 1 possible tokens that can appear here: ))
+                                                              kvsZSk8t6whPTDrff, 2020-11-25T16:38:16 (prop6ok,incorrect,check,)
+                                                                nbv9JNyWFf9pe6pHG, 2020-11-25T16:38:57 (prop6ok,incorrect,check,)
+                                                                  yGkquCud6kBGRdZGk, 2020-11-25T16:41:32 (prop6ok,incorrect,check,)
+                                                                    oe8wuGReKuy7SwHZx, 2020-11-25T16:45:02 (prop6ok,incorrect,check,)
+  f6nrN6NNCagDekywF, 2020-11-25T19:33:35 (prop1ok,correct,check,)
+    GSTyChKYCgAfWFfjD, 2020-11-25T19:34:07 (prop2ok,incorrect,check,)
+      Q2Je58sGNN5KuAgcB, 2020-11-25T19:34:20 (prop2ok,correct,check,)
+        dBAgaFNt3SkLCxEtg, 2020-11-25T19:35:19 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+          ZeAAQqS5TSGoEuDwL, 2020-11-25T19:35:32 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+            kA2WFuxLGBYZyLxYZ, 2020-11-25T19:35:42 (prop4ok,correct,check,)
+              ZhvZd4Eo2JG8gHeng, 2020-11-25T19:36:31 (prop4ok,correct,check,)
+                Dbkh9d4rBnJN3zC4B, 2020-11-25T19:36:35 (prop3ok,correct,check,)
+                  exiAv7xqBNJzmhtwu, 2020-11-25T19:39:12 (prop9ok,incorrect,check,)
+                    9CfRZqACwk4b8KCb6, 2020-11-25T19:39:43 (prop9ok,incorrect,check,)
+                      AwjDRqi8Rx5iGbs9W, 2020-11-25T19:40:40 (prop9ok,incorrect,check,)
+                        yDNBJPGNvHZfG3wSp, 2020-11-25T19:41:12 (prop9ok,incorrect,check,)
+                          idSsPCMc4jQ3DuPgG, 2020-11-25T19:43:30 (prop10ok,correct,check,)
+                            mnh5upBYKpAfE2yML, 2020-11-25T19:45:05 (There are 1 possible tokens that can appear here: ))
+                              kqhofdfFxhKxzCqmG, 2020-11-25T19:45:13 (prop11ok,incorrect,check,)
+                                pkZyHanaNE5YZgAxc, 2020-11-25T19:46:59 (prop11ok,incorrect,check,)
+                                  ZgfkWyjovTLx33TbN, 2020-11-25T19:52:11 (prop15ok,incorrect,check,)
+                                    758CgPsei3BbcmE6j, 2020-11-25T19:53:01 (prop15ok,incorrect,check,)
+                                      nYbPR4WmdicYGYq55, 2020-11-25T19:53:30 (prop15ok,incorrect,check,)
+                                        ieCRL3SY2dMNtQ96F, 2020-11-29T14:37:57 (There are 3 possible tokens that can appear here: ,  { |)
+                                          52aEXwi2o2aaDcWQ4, 2020-11-29T14:38:22 (prop4ok,correct,check,)
+                                            NxoNdQLLYgoREQdrg, 2020-11-29T14:49:44 (There are 1 possible tokens that can appear here: ))
+                                              22PE9FyqnSW852nTT, 2020-11-29T14:49:55 (prop7ok,correct,check,The join operation here always yields an empty set. Left type = {this/Track} Right type = {Int->Int})
+                                                gm2RXssLbrEzojpXw, 2020-11-29T14:50:27 (prop7ok,correct,check,)
+                                                  EsNu429FteEhkuoCy, 2020-11-29T14:52:08 (prop7ok,correct,check,)
+                                                    bYMuoaYLgcu4fraN5, 2020-11-29T14:52:15 (prop6ok,correct,check,)
+                                                      AWNbHmxejmxTe5YCZ, 2020-11-29T14:54:54 (There are 1 possible tokens that can appear here: ))
+                                                        FnDeSMWSfG5kXrJwa, 2020-11-29T14:55:05 (- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Track->this/Signal} Right type = {this/Signal})
+                                                          8hjG67FqZkzEBSptP, 2020-11-29T14:55:38 (This cannot be a legal relational join where left hand side is <integer/pos[];(this/Train <: pos);> . this/Track (type = {this/Train}) right hand side is this/Signal - this/Green (type = {this/Signal}))
+                                                            qi8ST9x7kJWppfrgW, 2020-11-29T14:55:56 (This cannot be a legal relational join where left hand side is <integer/pos[];(this/Train <: pos);> . this/Track . (this/Track <: signal) (type = {none}) right hand side is this/Signal - this/Green (type = {this/Signal}))
+                                                              GFWPYCoep93qiF8RT, 2020-11-29T14:57:42 (prop9ok,incorrect,check,)
+                                                                X3ZzWDsLN7pnHzT56, 2020-11-29T14:59:08 (prop11ok,incorrect,check,)
+                                                                  jAwPgEKuT2KaGjseH, 2020-11-29T14:59:16 (prop11ok,incorrect,check,)
+                                                                    NhHq6HJeM4fdPPRNF, 2020-11-29T15:02:48 (prop15ok,incorrect,check,)
+                                                                      Y77cyAiexxdyyDDpR, 2020-11-29T15:03:13 (prop15ok,incorrect,check,)
+                                                                        6ivssMKDeYsNfASur, 2020-11-29T15:05:14 (prop15ok,incorrect,check,)
+                                                                          R3unrZZAXJwugdgcA, 2020-11-29T15:05:21 (prop16ok,incorrect,check,)
+  sv4SWhCRXW67QgMhY, 2020-11-25T21:37:21 (prop1ok,incorrect,check,)
+    XqbPS5dDbRA42n9M5, 2020-11-25T21:44:46 (prop1ok,incorrect,check,)
+      L83fk29zSz86oSfqc, 2020-11-25T21:44:56 (prop1ok,correct,check,)
+        odX2bAjdDog4LBEgi, 2020-11-25T21:47:07 (prop2ok,incorrect,check,)
+          GfeS9mhD2rdLwic2a, 2020-11-25T21:47:23 (prop2ok,incorrect,check,)
+            e9va9sN9BsSaaxqbC, 2020-11-25T21:49:06 (prop2ok,correct,check,)
+              XcnDJLCroF64wr4N2, 2020-11-25T21:55:56 (The name "Trains" cannot be found.)
+                XsKaHEfsraLPM4JhP, 2020-11-25T21:56:03 (This expression failed to be typechecked line 46, column 57, filename=/tmp/alloy_heredoc6313253067811122426.als)
+                  7G5c8pSdras9v8itN, 2020-11-25T21:58:15 (This expression failed to be typechecked line 46, column 57, filename=/tmp/alloy_heredoc568051545640713967.als)
+                    ooLNwdScHtbE5tkhk, 2020-11-25T21:59:11 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                      fwiCJZYnZBAyd8akM, 2020-11-25T21:59:51 (model share)
+                        hMinECMqeAkpfYHEq, 2020-11-26T09:25:38 (prop2ok,correct,check,)
+                          XPv47MDmaLMnybgbQ, 2020-11-26T09:25:41 (prop3ok,incorrect,check,)
+                            BXCSuzYQBNpvjjcqX, 2020-11-26T11:42:36 (There are 1 possible tokens that can appear here: ))
+                              LJmMTF6po2zqo7A9k, 2020-11-26T11:42:53 (There are 1 possible tokens that can appear here: ))
+                                ujij5Z65N4JXutFrd, 2020-11-26T11:44:09 (There are 1 possible tokens that can appear here: ))
+                                  qrbyvgzDH2CnTkQGi, 2020-11-26T11:44:19 (There are 1 possible tokens that can appear here: ))
+                                    3YLDRnZzNNxxeqmfZ, 2020-11-26T11:44:25 (prop4ok,incorrect,check,)
+                                      MPQYSfh2TQex6RRsm, 2020-11-26T11:44:28 (prop2ok,correct,check,)
+                                        WfRrH9iYJymWKTN4b, 2020-11-26T11:44:30 (prop1ok,correct,check,)
+                                          7DaAQaLqcHrCjvYW2, 2020-11-26T11:46:52 (There are 1 possible tokens that can appear here: ))
+                                            aTcFDPK5KfHAnT4Tb, 2020-11-26T11:46:59 (prop1ok,correct,check,)
+                                              YwfDX9xgFHYqEPZBZ, 2020-11-26T11:47:03 (prop4ok,incorrect,check,)
+                                                zwgmKQQYks3wNLPLn, 2020-11-26T11:47:29 (prop4ok,incorrect,check,)
+                                                  XywCQYhHn7XgMtPXD, 2020-11-26T11:47:57 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+                                                    MTPQXnMJaWirKg5CK, 2020-11-26T11:48:03 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+                                                      KXNnpwnMT7JscmhS5, 2020-11-26T11:48:25 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+  zLjt7acP6abjSMs5m, 2020-11-25T22:25:46 (prop1ok,correct,check,)
+    uogwjypYRrzTSe4eb, 2020-11-25T22:26 (prop2ok,incorrect,check,)
+      AcqvSP2ng7cR58bJ6, 2020-11-25T22:26:09 (prop2ok,incorrect,check,)
+        8AwMPktgZWFhQvL4m, 2020-11-25T22:26:28 (prop2ok,correct,check,)
+          fHvXpsEWhwQWTA5jp, 2020-11-25T22:32:22 (prop2ok,correct,check,)
+            SM7d5CNyG3bfsD2RZ, 2020-11-25T22:33:07 (prop2ok,incorrect,check,)
+              uLAWKdBEtKd5KpxGL, 2020-11-25T22:33:39 (prop2ok,incorrect,check,)
+                2i8ypM6Zq8tzmQMb5, 2020-11-25T22:34:04 (prop2ok,incorrect,check,)
+                  xJ7B3QtfioYErkBBY, 2020-11-25T22:34:31 (prop2ok,correct,check,)
+                    g4rHFSXtHJcC5po5Q, 2020-11-25T22:37:28 (This expression failed to be typechecked line 47, column 19, filename=/tmp/alloy_heredoc5834383375351792638.als)
+                      vG7rtuAqpzsigQqxf, 2020-11-25T22:38:02 (prop3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track} Right type = {this/Train->this/Track})
+                        iPYGyhsCvo5Y22Dki, 2020-11-25T22:38:16 (prop3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track} Right type = {this/Train->this/Track})
+                          uLeYrrxowaE9jxv3E, 2020-11-25T22:38:22 (prop3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track} Right type = {this/Train->this/Track})
+                            nadpT9dqmcgj3C8mg, 2020-11-25T22:40:23 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                              EgyMaa6fRTwhRHEbv, 2020-11-25T22:40:39 (prop3ok,incorrect,check,)
+                                8nN5snFY4BHKA64xT, 2020-11-25T22:41:52 (prop3ok,incorrect,check,)
+                                  bntQ34geHuoELdzKu, 2020-11-25T22:42:09 (prop3ok,incorrect,check,)
+                                    xh5HoEQudxXCoqfZK, 2020-11-25T22:42:45 (prop3ok,incorrect,check,)
+                                      YkYyaxjsyupZNCJbg, 2020-11-25T22:42:50 (prop3ok,incorrect,check,)
+                                        56SimDTqpkPSSWTzf, 2020-11-25T22:43:40 (prop3ok,incorrect,check,)
+                                          QjJo8HpfLTtgha5XE, 2020-11-25T22:44:21 (There are 36 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int lone no none once one pred seq set some sum this univ { ~)
+                                            HPFEFFafMGiKbrgiR, 2020-11-25T22:44:36 (prop3ok,incorrect,check,)
+                                              e7JvjkLs5vPCbPys3, 2020-11-25T22:44:54 (prop3ok,incorrect,check,)
+                                                YWbzNC96YbcXkbunz, 2020-11-25T22:45:31 (This expression failed to be typechecked line 47, column 3, filename=/tmp/alloy_heredoc16898243702996432121.als)
+                                                  YAhGWCe7QaWyt798a, 2020-11-25T22:46:27 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                    uvrbwXqMXZZhFCg27, 2020-11-25T22:46:41 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                      vJhiv9m6TD8NaFD3N, 2020-11-25T22:47:02 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                        nX8jsENLPfFnurjBo, 2020-11-25T22:47:24 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                          tduXtQx6pXr4Qtkkz, 2020-11-25T22:47:44 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                            tPxqcJBA7qZBgGP6e, 2020-11-25T22:48:03 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                              F3Yw2hurWNdQgGgdu, 2020-11-25T22:48:13 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                                NhuTJrhNf7oMd4ExY, 2020-11-25T22:48:20 (prop2ok,correct,check,)
+                                                                  LDnrBoepBQSaFdeCD, 2020-11-25T22:48:22 (prop3ok,incorrect,check,)
+                                                                    cAThvfBg8Bt2MZL3E, 2020-11-25T22:56:44 (The name "False" cannot be found.)
+                                                                      HNgxCNbM8SdboB6fT, 2020-11-25T22:56:50 (The name "false" cannot be found.)
+                                                                        uXnpa7PXHfmZWmmSE, 2020-11-25T22:57:09 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                                          9SWLZyRTvMwRSWWhD, 2020-11-25T22:57:15 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                                            BSigNfQikbaZB4Swt, 2020-11-25T23:04:03 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                                              SvDT9BtnTboc8yzC9, 2020-11-25T23:11:17 (prop3ok,incorrect,check,)
+                                                                                Hi5C3n9sEyxHgwcqL, 2020-11-25T23:11:39 (prop3ok,incorrect,check,)
+                                                                                  S9BsCovFmFWtsMau9, 2020-11-25T23:12:52 (prop3ok,incorrect,check,)
+                                                                                    Ttpesm9ST7EaAj2Np, 2020-11-25T23:13:33 (There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~)
+                                                                                      DTXhzNSSHD5DcDAoB, 2020-11-25T23:14:27 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {PrimitiveBoolean})
+                                                                                        BsjRrmEAfEnfuNfjF, 2020-11-25T23:15:26 (prop3ok,incorrect,check,)
+                                                                                          4NSwuo4gkLvZfpFpL, 2020-11-25T23:16:12 (prop3ok,incorrect,check,)
+                                                                                            MQeaKWF4jwqyeaxBn, 2020-11-25T23:18:09 (prop3ok,incorrect,check,)
+                                                                                              hiyJLGuHEoHBPsFR8, 2020-11-25T23:18:23 (prop3ok,incorrect,check,)
+                                                                                                rFaDG8MARFbRizPGZ, 2020-11-25T23:18:43 (prop3ok,correct,check,)
+                                                                                                  PP2yDqFDniHwepwaQ, 2020-11-25T23:18:59 (prop3ok,incorrect,check,^ <integer/pos[];(this/Train <: pos);> is redundant since its domain and range are disjoint: {this/Train->this/Track})
+                                                                                                    cpDSBFumqPDABmbeE, 2020-11-25T23:19:08 (prop3ok,correct,check,)
+                                                                                                      f5DDyvGotcQoRurpg, 2020-11-25T23:20:31 (prop4ok,incorrect,check,)
+                                                                                                        tg69cJ5y9SgkMkJkZ, 2020-11-25T23:20:49 (prop4ok,incorrect,check,)
+                                                                                                          myeRetJsFySmHyeYo, 2020-11-25T23:21:05 (prop4ok,correct,check,)
+                                                                                                            F8LGtHDiki7nfPLnw, 2020-11-25T23:24:53 (prop5ok,incorrect,check,)
+                                                                                                              iPZhEpDTbRpdkntgy, 2020-11-25T23:26:59 (prop5ok,incorrect,check,)
+  6JqqFj7u7QewMzwMw, 2020-11-25T22:29:20 (!in can be used only between 2 expressions of the same arity. Left type = {this/Track->this/Signal} Right type = {this/Signal})
+    mvHKegRQRf7K9NzMX, 2020-11-25T22:29:39 (prop1ok,incorrect,check,)
+      xMJoP6pxDWBmhCKjh, 2020-11-25T22:30:41 (prop1ok,correct,check,)
+        Lki5N5psGRpji39a5, 2020-11-25T22:31:46 (prop2ok,incorrect,check,)
+          MnJfvnbbyXpL3aK3H, 2020-11-25T22:31:59 (prop2ok,incorrect,check,)
+            wavPrL8GhsmGQEbpp, 2020-11-25T22:34:14 (prop2ok,correct,check,)
+              nZWp3a5rTDSxBzxFY, 2020-11-25T22:40 (This expression failed to be typechecked line 46, column 25, filename=/tmp/alloy_heredoc14500444576090118059.als)
+                pDrvEqozXJm2nqLD2, 2020-11-25T22:40:16 (This expression failed to be typechecked line 46, column 25, filename=/tmp/alloy_heredoc6132415953032140386.als)
+                  wbSFKcoMMsaf6Ykr5, 2020-11-25T22:41:02 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+                    MCwMRxbKQfiSAtuJ6, 2020-11-25T22:41:50 (There are 3 possible tokens that can appear here: ,  { |)
+                      cGYgnbwd3bJhposLX, 2020-11-25T22:41:58 (This must be a formula expression. Instead, it has the following possible type(s): {this/Train})
+                        PcxtroXyE8n7PLBC4, 2020-11-25T22:42:34 (This must be a formula expression. Instead, it has the following possible type(s): {this/Train})
+                          pPvQ9F8ff4j7WjBqX, 2020-11-25T22:46:01 (The name "x" cannot be found.)
+                            7BX7YAhPqRM3X2zrb, 2020-11-25T22:46:07 (This expression failed to be typechecked line 46, column 17, filename=/tmp/alloy_heredoc11693361991812218940.als)
+                              pPkD3A69fj3uyu8He, 2020-11-25T22:50:21 (There are 3 possible tokens that can appear here: ,  { |)
+                                QtLmKEMt33dWGxr8y, 2020-11-25T22:50:32 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+                                  ugD3NcrgBpY8F2fs8, 2020-11-25T22:59:13 (The name "trains" cannot be found.)
+                                    i7kZdJkZGjdLQibiJ, 2020-11-25T22:59:20 (The name "trains" cannot be found.)
+                                      FSuSQKp3Ey9ZcD8k7, 2020-11-25T23:01:16 (The name "trains" cannot be found.)
+                                        x6DdzCStZ73SduoCY, 2020-11-25T23:09:59 (prop3ok,incorrect,check,)
+                                          rQfguYSfnG77HbvSr, 2020-11-25T23:10:46 (There are 3 possible tokens that can appear here: ,  { |)
+                                            TZRC9ZCkxcBHEGEjA, 2020-11-25T23:10:54 (prop3ok,incorrect,check,)
+                                              YXySo7MaQozkuTiLh, 2020-11-25T23:11:41 (prop3ok,incorrect,check,)
+                                                8dzHTZXRseFTkcjjt, 2020-11-25T23:18:59 (prop3ok,correct,check,)
+                                                  9MBL3qff6iSNvnACo, 2020-11-25T23:19:51 (prop3ok,correct,check,)
+                                                    Ca4MdN3BQWf6T5xdo, 2020-11-25T23:19:54 (prop4ok,correct,check,)
+                                                      3q9sKPwcQxa5oowHX, 2020-11-25T23:26:18 (prop5ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Train} Right type = {this/Track->this/Track})
+                                                        8yKmEm3ER8mqmrrnP, 2020-11-25T23:26:32 (prop5ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Train} Right type = {this/Track->this/Track})
+  kayocSPLfXzZoER3a, 2020-11-25T22:31:51 (prop1ok,correct,check,)
+    qhtBkv9bdfagSMngP, 2020-11-25T22:32:13 (prop2ok,incorrect,check,)
+      TLeF7Ed3AeaQcobAE, 2020-11-25T22:32:39 (prop2ok,incorrect,check,)
+        JFZ3hBKSbEGnCB3rR, 2020-11-25T22:32:49 (prop2ok,incorrect,check,)
+          Qhg2NnLSyFpeRNqRj, 2020-11-25T22:34:08 (prop2ok,incorrect,check,)
+            5xFu79HjuMogRA47b, 2020-11-25T22:34:58 (prop2ok,correct,check,)
+              NxZhooE9bounCPxza, 2020-11-25T22:41:55 (The name "pois" cannot be found.)
+                qSeFcAZJgopS6WwMg, 2020-11-25T22:42:02 (prop3ok,incorrect,check,)
+                  xs6qSjb6dwrsrTmJW, 2020-11-25T22:44:17 (This expression failed to be typechecked line 46, column 3, filename=/tmp/alloy_heredoc5882160000733650353.als)
+                    HcyjQfoKkGb6Mi2Bx, 2020-11-25T22:45:34 (This cannot be a legal relational join where left hand side is <integer/pos[t];t . (this/Train <: pos);> (type = {this/Track}) right hand side is tk (type = {this/Track}))
+                      6sq6CXRyDLvRJLaDD, 2020-11-25T22:46:13 (prop3ok,incorrect,check,)
+                        9ekio5Epgedj5nzgR, 2020-11-25T22:46:22 (prop3ok,incorrect,check,)
+                          uWJfKsXp3u24qNYXb, 2020-11-25T22:46:28 (prop3ok,incorrect,check,)
+                            k3MWgFeZfCfT9NbKK, 2020-11-25T22:46:31 (prop3ok,incorrect,check,)
+                              mckLa2gApeQ6TeGAz, 2020-11-25T22:47:47 (prop3ok,incorrect,check,)
+                                FJarGHWnfz9qwr7k9, 2020-11-25T22:48:01 (prop3ok,incorrect,check,)
+                                  BdqEYQcB8nL6EFLrP, 2020-11-25T22:49:39 (prop3ok,incorrect,check,)
+                                    dWLZpcKSFW4JHvWR7, 2020-11-25T22:49:48 (prop3ok,incorrect,check,)
+                                      sLBxqJjKY4Bzz9twk, 2020-11-25T22:51:36 (prop3ok,incorrect,check,)
+                                        QPficJ3hxyL4e4eii, 2020-11-25T22:51:59 (prop3ok,incorrect,check,)
+                                          6Gp4JDyXSFJgqNJTk, 2020-11-25T22:52:08 (prop3ok,incorrect,check,)
+                                            dsSSgZveiuyar8fg8, 2020-11-25T22:52:27 (prop3ok,incorrect,check,)
+                                              DRg6tLdWBuuFfnGfh, 2020-11-25T22:52:36 (prop3ok,incorrect,check,)
+                                                DLfgqgehLztgbf68Y, 2020-11-25T22:53:30 (prop3ok,incorrect,check,)
+                                                  GogsDE5C8ifLhdgxb, 2020-11-25T22:53:45 (prop3ok,incorrect,check,)
+                                                    8ucmjKZdhemwxTZaf, 2020-11-25T22:56:18 (prop3ok,incorrect,check,)
+                                                      zQBqtkP2b4WiJ3hac, 2020-11-25T23:01:57 (prop3ok,incorrect,check,)
+                                                        HyBg2Dar2EdhFQvf3, 2020-11-25T23:03:09 (prop3ok,correct,check,)
+                                                          XqznFbPEqmRj3y7TT, 2020-11-25T23:03:33 (prop3ok,incorrect,check,)
+                                                            un9ESmdygH482iHxD, 2020-11-25T23:03:38 (prop3ok,correct,check,)
+                                                              3APrY8ixkoPhEYjAT, 2020-11-25T23:04:27 (prop3ok,incorrect,check,)
+                                                                pGskLeNeWijxttKdo, 2020-11-25T23:05:04 (prop3ok,incorrect,check,)
+                                                                  se4DAESG95PdyeBnR, 2020-11-25T23:05:12 (prop3ok,incorrect,check,)
+                                                                    RboSzLMEiKeX9yvQW, 2020-11-25T23:05:57 (prop3ok,incorrect,check,)
+                                                                      y7pmXsWT6Mb9P8G6N, 2020-11-25T23:06:11 (prop3ok,incorrect,check,)
+                                                                        N7ftNpYunKSa32bzw, 2020-11-25T23:06:27 (prop3ok,correct,check,)
+                                                                          EjecmtQpz7nMDriPw, 2020-11-25T23:07:11 (prop3ok,correct,check,)
+                                                                            X94sHRJ4YyMH6F4Z9, 2020-11-25T23:12:03 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+                                                                              98ZxKN4ooAu6P2Gjh, 2020-11-25T23:12:29 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+                                                                                gW27N2LrRiWySgHQz, 2020-11-25T23:12:33 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+                                                                                  bpnRxtMyLQmGkLrA4, 2020-11-25T23:12:39 (prop3ok,incorrect,check,)
+                                                                                    kt9sbAGdFcQT7FBwh, 2020-11-25T23:14:06 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Train})
+                                                                                      hCvheJJrkRc9noqTA, 2020-11-25T23:14:20 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Train})
+                                                                                        jPBbcYgrLxTaTgiJa, 2020-11-25T23:14:29 (prop4ok,incorrect,check,This variable is unused.)
+                                                                                          Rqb7doDRPdjXYLhhd, 2020-11-25T23:14:38 (prop4ok,incorrect,check,)
+                                                                                            bKBcEg2kRTmoLEWyT, 2020-11-25T23:14:44 (prop4ok,incorrect,check,)
+                                                                                              e6ArToB9sgeZM5AJ2, 2020-11-25T23:14:49 (prop4ok,incorrect,check,)
+                                                                                                PyGQjMCeg8rqTTG5H, 2020-11-25T23:15:57 (prop3ok,correct,check,)
+                                                                                                  ZPPhK6cWh8oYcQjfj, 2020-11-25T23:16 (prop4ok,incorrect,check,)
+                                                                                                    p776tFSBMPPgrvdKK, 2020-11-25T23:17:29 (prop3ok,incorrect,check,)
+                                                                                                      2wfYCHHZFuFf9yPNm, 2020-11-25T23:17:40 (prop3ok,incorrect,check,)
+                                                                                                        vZ4GxDLLuQrgMrEXr, 2020-11-25T23:18 (prop3ok,incorrect,check,)
+                                                                                                          CnD28JMywubceo3T5, 2020-11-25T23:18:21 (prop3ok,correct,check,)
+                                                                                                            WP7ufoFgaaumcoJDN, 2020-11-25T23:19:10 (prop4ok,correct,check,)
+                                                                                                              J7G5QfqnM99Qp5aCC, 2020-11-25T23:24:51 (prop5ok,incorrect,check,)
+                                                                                                                AFtttsiWpvyvJpSQK, 2020-11-25T23:26:14 (prop5ok,incorrect,check,)
+                                                                                                                  gp9GhSfjhr9gXWank, 2020-11-25T23:26:33 (prop5ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Train} Right type = {this/Track})
+                                                                                                                    3r6mBBJnNqtz5Sxmm, 2020-11-25T23:26:41 (prop5ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Train} Right type = {this/Track->this/Track})
+                                                                                                                      WeEGLxrevpKie8Rkb, 2020-11-25T23:26:54 (prop5ok,incorrect,check,)
+                                                                                                                        Hz9mYKfP7vGCQFAGY, 2020-11-25T23:27:54 (prop5ok,incorrect,check,)
+                                                                                                                          E9DWBdyRLx5DC2ptw, 2020-11-26T00:00:41 (prop5ok,incorrect,check,)
+                                                                                                                            HXEzBEXzXnFa5vYNL, 2020-11-26T00:01:03 (prop4ok,correct,check,)
+  wfnjN9WrwwKXxXW3w, 2020-11-25T22:54:55 (The name "Red" cannot be found.)
+    guaSPdJ4CEP3mGwTq, 2020-11-25T22:56:05 (prop1ok,correct,check,)
+      i8u2Q6gM7wG5kmRj6, 2020-11-25T22:56:22 (prop1ok,incorrect,check,)
+        x8xiD6YaAn6FXxwyP, 2020-11-25T22:56:37 (prop1ok,correct,check,)
+          RYT2hNE2ydM3MpcDm, 2020-11-25T22:57:48 (prop2ok,incorrect,check,)
+            aAt935qmycgW7wg6v, 2020-11-25T22:58:32 (prop2ok,correct,check,)
+              uwAocRi2ujFTcqLev, 2020-11-25T22:58:58 (prop2ok,incorrect,check,)
+                qCwYpsCtPmF4gA2iF, 2020-11-25T22:59:16 (prop2ok,incorrect,check,)
+                  35FLhpzbCjDnsbQn2, 2020-11-25T23:00:14 (prop2ok,incorrect,check,)
+                    st4d7iqBpHcu4XDnG, 2020-11-25T23:00:24 (prop2ok,correct,check,)
+                      mv6EtA6mkL4H6pY8R, 2020-11-25T23:01:27 (prop3ok,incorrect,check,)
+                        qWa9FJbvf7pvqDXZJ, 2020-11-25T23:01:40 (prop3ok,incorrect,check,)
+                          YGspww6b5xEr754sc, 2020-11-25T23:02:37 (prop3ok,correct,check,)
+                            rfD6Sg9xe9nJrjX6R, 2020-11-25T23:13:37 (prop4ok,incorrect,check,)
+                              qzQjdCxexo5XwmBRo, 2020-11-25T23:16:13 (prop4ok,incorrect,check,)
+                                QZ24K2j35LZSr7PxY, 2020-11-25T23:16:35 (prop4ok,incorrect,check,)
+                                  BZgiBiJPHhKeTynYr, 2020-11-25T23:21:43 (prop6ok,incorrect,check,)
+                                    bgLxxrGeYitwk9DXH, 2020-11-25T23:22:39 (prop4ok,incorrect,check,)
+                                      6eLLva3aGe2fz4m2L, 2020-11-25T23:22:48 (prop4ok,correct,check,)
+                                        jKfDJLB3jqjoPokDD, 2020-11-25T23:29:25 (prop6ok,incorrect,check,)
+                                          QAyLPCtS6a3oWdsvk, 2020-11-25T23:29:43 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                            tGngrvHr8KPskaQWc, 2020-11-25T23:30:13 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                              fQP8g3mpPttWojuLz, 2020-11-25T23:35:34 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                spf2LzQbojh5Nch3D, 2020-11-25T23:35:54 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                  Ah7gCvcw4vwHCpyFY, 2020-11-25T23:36:16 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                    qn3jYuKQdoNsgTzCJ, 2020-11-25T23:36:21 (There are 1 possible tokens that can appear here: ))
+                                                      gTJHv66LkiLbqnqBq, 2020-11-25T23:36:37 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                        bG9TdtTuStzmny6mT, 2020-11-25T23:37:05 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                          i96MzdxcnSKrtAZnt, 2020-11-25T23:37:12 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                            ycDpfmpeuzFo2c8iz, 2020-11-25T23:37:34 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                              PyhkXqHq8SHAv77jB, 2020-11-25T23:37:38 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                                7ww6NXdhvHRh3P8nq, 2020-11-26T11:39:26 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                                  ygXpeYh8vmJBX6Pzb, 2020-11-26T11:39:49 (prop6ok,incorrect,check,)
+                                                                    SddwhWPPAhz3gQwPE, 2020-11-26T11:43:09 (prop6ok,incorrect,check,)
+                                                                      M2RxcPshuMNtLDhAY, 2020-11-26T11:47 (prop6ok,incorrect,check,)
+                                                                        XPt62bRJn3qMNEQnt, 2020-11-26T11:48:41 (prop6ok,incorrect,check,)
+                                                                          eWmmeA4gmcKodQPpF, 2020-11-26T11:49:38 (prop6ok,incorrect,check,)
+                                                                            X993o42sk5pRKczRT, 2020-11-26T11:51:59 (prop6ok,incorrect,check,)
+                                                                              2BaxL5ecmBNfq6BBd, 2020-11-26T11:52:19 (prop6ok,incorrect,check,)
+                                                                                P8AZSrfiEfeoNuh3h, 2020-11-26T12:04 (prop3ok,correct,check,)
+                                                                                  PXkMwy4ga2bas5JHH, 2020-11-27T00:05:33 (prop6ok,incorrect,check,)
+  zsAg3BijAPEm9GJbu, 2020-11-26T08:40:55 (prop1ok,correct,check,)
+    CuvMQbLGBysQmmujw, 2020-11-26T08:41:01 (prop2ok,correct,check,)
+      C2GMSMmrD2tWcjLFS, 2020-11-26T08:41:52 (prop3ok,correct,check,)
+        79e6uwDmWEytRuhjG, 2020-11-26T08:41:57 (prop4ok,correct,check,)
+          JshM6adtqt7jw8u2H, 2020-11-26T08:42:12 (prop5ok,incorrect,check,)
+  CW8TAAqnwos7iE6Li, 2020-11-26T10:43:50 (This expression failed to be typechecked line 34, column 2, filename=/tmp/alloy_heredoc7381312047692491923.als)
+    kPYWo6KLskKWkEXWX, 2020-11-26T10:43:54 (prop1ok,incorrect,check,)
+      4zCfSm23LaNX3MGNe, 2020-11-26T10:44:18 (prop1ok,correct,check,)
+        tjZBDFfbC3745atFJ, 2020-11-26T10:44:38 (prop2ok,incorrect,check,)
+          4D8NZCSKAGtvbyFWu, 2020-11-26T10:45:17 (prop2ok,correct,check,)
+            khtBhPh4okGednpek, 2020-11-26T10:45:50 (prop3ok,incorrect,check,)
+              Am9kKwQTTC5G2jGfP, 2020-11-26T10:46:10 (prop3ok,incorrect,check,)
+                LXcRtjScpGvT27hxg, 2020-11-26T10:46:13 (prop3ok,incorrect,check,)
+                  nhPQ2rEDPfxeAAbNx, 2020-11-26T10:47:04 (prop3ok,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Train} Right type = {this/Track})
+                    rB5pze2z53wycyBpJ, 2020-11-26T10:50:49 (prop3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Train} Right type = {this/Track})
+                      gTKeYWE64jCMEhyiN, 2020-11-26T10:52:47 (This expression failed to be typechecked line 46, column 2, filename=/tmp/alloy_heredoc13364618114271333900.als)
+                        FAJYgJrWG6wkKkRxd, 2020-11-26T10:52:55 (prop3ok,incorrect,check,)
+                          covAvvcayf9bEnTt6, 2020-11-26T10:54:46 (prop3ok,correct,check,)
+                            iXALDheeaJvjcKfzC, 2020-11-26T10:55:08 (prop4ok,incorrect,check,)
+  pC2DWEazhAQPjdm9w, 2020-11-26T10:51:16 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Track} Right type = {univ->univ})
+    HKqa8BDY5jereuKth, 2020-11-26T10:51:46 (This expression failed to be typechecked line 46, column 19, filename=/tmp/alloy_heredoc10178374156332957583.als)
+      wMwzKWELdXN6oBX4P, 2020-11-26T10:52:09 (prop3ok,incorrect,check,)
+        9mevcvdhrhHjpkTAx, 2020-11-26T10:52:25 (prop3ok,incorrect,check,)
+          dm5fuLGgq8NXPtDXi, 2020-11-26T10:52:50 (The name "train" cannot be found.)
+            5NbasrAwwMRo6aBfn, 2020-11-26T10:52:55 (prop3ok,correct,check,)
+              tt2Xvy77y77FWtuuN, 2020-11-26T10:55:10 (prop3ok,incorrect,check,)
+  7Ded9ixP6hgY4ujmx, 2020-11-26T11:46:19 (prop1ok,correct,check,)
+    DGrkoc3tELjmdHwip, 2020-11-26T11:46:22 (prop2ok,correct,check,)
+  bLtBEMyJfZ76CisfY, 2020-11-26T11:46:32 (prop7ok,correct,check,)
+  BBCv6yFThuSFvZZsJ, 2020-11-26T16:31:12 (prop1ok,incorrect,check,)
+    Zon9qo6puLBmAqiy8, 2020-11-26T16:32:04 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+      bNDN6BC2LTPmg4fm5, 2020-11-26T16:32:11 (prop1ok,incorrect,check,)
+        MbffeKxGJdAvhhY5K, 2020-11-26T16:32:34 (prop1ok,incorrect,check,)
+          TcEpuweAvAryvqyKu, 2020-11-26T16:33:42 (prop1ok,incorrect,check,)
+            CLhKrJSKHDzZYxTuf, 2020-11-26T16:34:10 (prop1ok,incorrect,check,)
+              wJLR7XcxhvAZQWssL, 2020-11-26T16:38:20 (prop1ok,incorrect,check,)
+                x77W9AQ8iSTxu8ZNi, 2020-11-26T16:38:28 (prop1ok,incorrect,check,)
+                  TiXaEvdZv4k9J5siP, 2020-11-26T16:38:33 (prop1ok,incorrect,check,)
+                    TdN2r5tsLYhfGEwHi, 2020-11-26T16:38:44 (prop1ok,incorrect,check,)
+                      4DPiwEdZaZ9GBMvqA, 2020-11-26T16:39:27 (prop1ok,incorrect,check,)
+                        KQbLKEKGEAZZFPg8t, 2020-11-26T16:39:32 (prop1ok,incorrect,check,)
+                          xNPKutuphbHiqrHQW, 2020-11-26T16:39:50 (prop1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Track})
+                            bwjx7xAdXG9c9zDnZ, 2020-11-26T16:40:05 (prop1ok,incorrect,check,)
+                              FcdB2DEGXwGH4EoPX, 2020-11-26T16:41:12 (The name "track" cannot be found.)
+                                Jev2MHiuTmPue7ezf, 2020-11-26T16:41:19 (prop1ok,incorrect,check,)
+                                  539CKmuEYxiiPjvvA, 2020-11-26T16:42:51 (prop1ok,incorrect,check,)
+                                    Xnfh4d6nR37WNfmKP, 2020-11-26T16:42:58 (prop1ok,incorrect,check,)
+                                      7dyorajWG6n3crdk6, 2020-11-26T16:43:12 (prop1ok,incorrect,check,)
+                                        349kzmwtcE6SFay96, 2020-11-26T16:43:41 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                          M8pf3PawEja5qifT7, 2020-11-26T16:43:48 (prop1ok,incorrect,check,)
+                                            CaCTAnpbLXHc96Kia, 2020-11-26T16:44:17 (prop2ok,incorrect,check,)
+                                              7mPx8WThAXRWnFGh7, 2020-11-26T16:44:22 (prop2ok,incorrect,check,)
+                                                b99is78fvJ7RNFERg, 2020-11-26T16:44:38 (prop2ok,incorrect,check,)
+                                                  WGJucccZuXEuLZY8b, 2020-11-26T16:44:43 (prop2ok,incorrect,check,)
+                                                    RP8kyn5Y4mvvET3XA, 2020-11-26T16:44:54 (prop2ok,incorrect,check,)
+                                                      Ck7Hbowt7fdeumMTv, 2020-11-26T16:45:21 (This expression failed to be typechecked line 40, column 2, filename=/tmp/alloy_heredoc1170885025505931046.als)
+                                                        GwP78GdfJ3sKxfHiG, 2020-11-26T16:45:26 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+                                                          5fCeZSp6QKdX4CGJZ, 2020-11-26T16:45:31 (prop2ok,incorrect,check,)
+  Zw6zTYkbpFkJgvnkd, 2020-11-26T18:28:04 (prop3ok,incorrect,check,)
+    yv7jLwRgXkRcPLof9, 2020-11-26T18:28:15 (prop3ok,incorrect,check,)
+  66puv5rTezqcecams, 2020-11-28T15:45:11 (prop1ok,incorrect,check,)
+    wjGpbG84kfd3sgSBQ, 2020-11-28T15:45:24 (prop1ok,incorrect,check,)
+      Yd7Naw3tkytRht2Mn, 2020-11-28T15:46:49 (prop1ok,incorrect,check,)
+        8xGvEqLK3XxBWZuQQ, 2020-11-28T15:48:01 (prop1ok,incorrect,check,)
+          ihNywd3jgr2ZYtgxZ, 2020-11-28T15:48:08 (prop1ok,incorrect,check,)
+            XiT75v2vCFP9Wv4Hi, 2020-11-28T15:49:26 (prop1ok,incorrect,check,)
+              Hpu5e49N47swh7SeN, 2020-11-28T15:49:52 (prop1ok,incorrect,check,)
+                udCZqLugmvByHzsy6, 2020-11-28T15:50:25 (There are 3 possible tokens that can appear here: ,  { |)
+                  BR7gNNH5fJM7PFu7p, 2020-11-28T15:50:33 (prop1ok,incorrect,check,)
+                    ZdhDGMguuBKSfhWkp, 2020-11-28T15:51:02 (prop2ok,incorrect,check,)
+                      KHkyTz8MkYw8zQ6h2, 2020-11-28T15:51:23 (prop2ok,incorrect,check,)
+                        CYLKy4ExqbErg4ozc, 2020-11-28T15:51:30 (prop2ok,incorrect,check,)
+                          ZxshJELdsMjEXRFqM, 2020-11-28T15:51:38 (prop2ok,incorrect,check,)
+                            AhCBdkvvNarRnw26F, 2020-11-28T15:52:30 (prop2ok,incorrect,check,)
+                              WCN55DuPE5c6zi7ez, 2020-11-28T15:52:36 (prop2ok,incorrect,check,)
+                                mJFBBdhac625m5gQt, 2020-11-28T15:53:11 (prop2ok,incorrect,check,)
+                                  3B2CiQAW33hTw4hC8, 2020-11-28T15:53:19 (prop2ok,correct,check,)
+                                    FJFpZ85RA5JMS3khb, 2020-11-28T15:53:27 (prop2ok,correct,check,)
+                                      DiLnnSYE6mWe9xNfv, 2020-11-28T15:54:26 (prop1ok,incorrect,check,)
+                                        WeJzzmY2kmPhAYTJL, 2020-11-28T15:54:39 (prop1ok,incorrect,check,)
+                                          c24ZPpw9KEqGvkXKL, 2020-11-28T15:56:21 (prop1ok,correct,check,)
+                                            pWGorWk9r36QD9txp, 2020-11-28T15:57:08 (prop1ok,correct,check,)
+                                              T6vRuLfkEt9FXiTXY, 2020-11-28T15:57:12 (prop2ok,correct,check,)
+                                                rhJqbsmYfntxHk2TT, 2020-11-28T15:57:24 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+                                                  h5MNx9K6jx2wBA5vZ, 2020-11-28T15:57:29 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+                                                    thwWCPJjCdJGdrnbL, 2020-11-28T15:57:34 (prop2ok,correct,check,)
+                                                      vrFz5CR9dN8wserCS, 2020-11-28T15:57:39 (prop1ok,correct,check,)
+                                                        qTAJNXWaioBgFvzw3, 2020-11-28T15:58:31 (prop3ok,incorrect,check,)
+                                                          PWCJcnms843QPTf3R, 2020-11-28T15:58:56 (prop3ok,incorrect,check,)
+                                                            Bv8T4MNY2hK8iJWdX, 2020-11-28T16:00:27 (prop3ok,incorrect,check,)
+                                                              P4ytnCsDz4ZGi4b7T, 2020-11-28T16:01:30 (prop3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Train->this/Track} Right type = {this/Train})
+                                                                899hZ2wwtHGChMHxG, 2020-11-28T16:01:45 (prop3ok,incorrect,check,)
+                                                                SsMdBXSzeCxTEyWbX, 2020-11-28T16:01:45 (prop3ok,incorrect,check,)
+  4NHh2AwbMFrrsxpSv, 2020-12-01T20:46:55 (prop2ok,correct,check,)
+    F83sy75kuFyAqi6u2, 2020-12-01T20:48:15 (The name "t" cannot be found.)
+      4PJHC8s3eDWFW7AmN, 2020-12-01T20:48:40 (prop3ok,incorrect,check,)
+        vwmeiCMJGN9tFKwvg, 2020-12-01T20:49:21 (prop3ok,correct,check,)
+          MhTnexDqcsaW4G9ko, 2020-12-01T20:49:23 (prop4ok,correct,check,)
+            Pv25ezbXnBpnHYP57, 2020-12-01T20:51:18 (prop5ok,incorrect,check,)
+              qT5Proi28HkXL3ZGs, 2020-12-01T20:52:04 (prop5ok,incorrect,check,)
+                K49LPBuHjmSFiyXWp, 2020-12-01T20:54:06 (prop7ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Train->this/Track} Right type = {this/Train})
+                  At8GQvxyedzhrsEnK, 2020-12-01T20:54:49 (prop7ok,correct,check,)
+                    5x5FkhrdYKn7gasFT, 2020-12-01T21:04:34 (This cannot be a legal relational join where left hand side is (this/Track <: prox) . this/Junction . (this/Track <: signal) (type = {this/Signal}) right hand side is this/Green (type = {this/Signal}))
+                      hMQuNtcnia3kCCeAR, 2020-12-01T21:06:19 (prop10ok,correct,check,This variable is unused.)
+                        Md27pnLssJ4hAXTic, 2020-12-01T21:06:55 (prop10ok,correct,check,)
+                          ThrCm5LGiFGt38oco, 2020-12-01T21:07:34 (prop10ok,correct,check,)
+                            EiuDnnCkoEhuuyYdu, 2020-12-01T21:07:42 (prop10ok,correct,check,)
+                              i6zZea6jukAcLuySN, 2020-12-01T21:08:53 (There are 1 possible tokens that can appear here: ))
+                                Rpxo7eosoJ43N6xAC, 2020-12-01T21:09:01 (prop11ok,incorrect,check,)
+                                  72mg9SHCbikXkvFtW, 2020-12-01T21:10:53 (prop11ok,incorrect,check,)
+                                    vF2err7gsNC6Hs8db, 2020-12-01T21:15:39 (prop12ok,incorrect,check,)
+                                      zz3PrsJZM2JR275tt, 2020-12-01T21:16:13 (prop12ok,incorrect,check,)
+                                        JpQTrqN3LHz2qG2QN, 2020-12-01T21:18:34 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                          ZtS8SHFp39QYnvWXx, 2020-12-01T21:18:42 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                            wPMLMG9vWzQEbKSjc, 2020-12-01T21:18:53 (This cannot be a legal relational join where left hand side is <integer/pos[];(this/Train <: pos);> . this/Track . (this/Track <: signal) (type = {none}) right hand side is this/Green (type = {this/Signal}))
+                                              WfzCmS7qDvrJjsPMi, 2020-12-01T21:20:10 (prop15ok,incorrect,check,)
+                                                W2Lb3GbSmg5fPAjM5, 2020-12-01T21:20:57 (prop15ok,incorrect,check,)
+                                                  qK6xRzqGgrJ4Lkv3j, 2020-12-01T21:21:29 (prop15ok,incorrect,check,)
+                                                    7XPCCk95MDKd2fz3n, 2020-12-01T21:22:57 (prop15ok,correct,check,)
+                                                      tR6bX5WLM8EjziXte, 2020-12-01T21:25:19 (prop16ok,incorrect,check,)
+                                                        dPDF4LL7ZhYAbjNMY, 2020-12-01T21:25:45 (prop16ok,incorrect,check,)
+                                                          DCyf3Q3tbQvyyRjGh, 2020-12-01T21:28:14 (prop17ok,incorrect,check,)
+                                                            qdb7PD9iyDsrGBcfB, 2020-12-01T21:29:05 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                              7afxh5pxQCCNTor2K, 2020-12-01T21:29:17 (prop17ok,incorrect,check,)
+                                                                w6mmjJnwzDhEbSRRY, 2020-12-01T21:30:18 (prop17ok,incorrect,check,)
+                                                                  T9qxmSX7GqD6BqSam, 2020-12-01T21:32:53 (This cannot be a legal relational join where left hand side is this/Train (type = {this/Train}) right hand side is this/Exit (type = {this/Track}))
+                                                                    D4yACXSAPnabDMaty, 2020-12-01T21:33:41 (prop17ok,incorrect,check,)
+                                                                      AspHXJtbhq4wBxo3t, 2020-12-01T21:36:42 (prop16ok,incorrect,check,)
+                                                                        qwZiHJwA7cJpgkLkt, 2020-12-01T21:39:45 (prop16ok,incorrect,check,)
+  w8Z5RTuvx37XYQdB9, 2020-12-02T10:33:16 (prop6ok,incorrect,check,)
+    R4XuuLRizJJZD2tSk, 2020-12-02T10:33:24 (prop5ok,incorrect,check,)
+      Fsbd8kiju8kH6xDdB, 2020-12-02T10:33:30 (prop4ok,correct,check,)
+        PPfTqQTouo8q76jSi, 2020-12-02T10:41:21 (prop7ok,incorrect,check,)
+          ds8FxKRMHEYRXCp4A, 2020-12-02T10:41:31 (prop7ok,incorrect,check,)
+            dycmqtBQLJJXHavMs, 2020-12-02T10:41:58 (prop7ok,incorrect,check,)
+              k4HuCk9xDSjxrkb9N, 2020-12-02T10:43 (prop7ok,incorrect,check,)
+                nYBNMEmyhKjjfCDxH, 2020-12-02T10:44:51 (prop7ok,incorrect,check,)
+                  WdCR33X22wsfShXFh, 2020-12-02T10:44:55 (prop7ok,incorrect,check,)
+  kARaPuE7h266e2Dzo, 2020-12-02T22:22:07 (prop1ok,correct,check,)
+    mfgGTWxQoWN53them, 2020-12-02T22:22:21 (This expression failed to be typechecked line 40, column 2, filename=/tmp/alloy_heredoc7686562476253641609.als)
+      6GngTm9rKWAZEENGK, 2020-12-02T22:22:35 (prop2ok,incorrect,check,)
+        eciDQyv4cANtqcbD2, 2020-12-02T22:23:13 (prop2ok,incorrect,check,)
+          AAR8nvgwzTWGgp6Rv, 2020-12-02T22:25:29 (prop2ok,incorrect,check,)
+            dhQDJ8gs6R989NwPS, 2020-12-02T22:25:40 (prop2ok,incorrect,check,This variable is unused.)
+              Enz7MXtoPbAwhjMzz, 2020-12-02T22:26:36 (prop2ok,incorrect,check,)
+                kpLaCdcCY4CHz7ns7, 2020-12-02T22:27:01 (prop2ok,incorrect,check,)
+                  x5APBbTtespiYBexf, 2020-12-02T22:28:43 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                    3e4bDLkKozEXerqAa, 2020-12-02T22:28:49 (prop3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Train} Right type = {this/Track})
+                      LQptHZt26zqaLRGCX, 2020-12-02T22:28:58 (prop3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Train} Right type = {this/Track})
+                        MNzGxwb8npcY754fb, 2020-12-02T22:29:18 (prop3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Train} Right type = {this/Track})
+                          4nsnayKaTKYhmfE3R, 2020-12-02T22:30:32 (prop3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Train} Right type = {this/Track})
+                            5DABu7gEFeYvv8cva, 2020-12-02T22:30:54 (prop3ok,incorrect,check,)
+                              gSYyRo3qFyJHm7k29, 2020-12-02T22:31:26 (prop3ok,incorrect,check,)
+                                pQ4DpwdrDfbMXz7XH, 2020-12-02T22:31:34 (prop3ok,incorrect,check,)
+                                  5cvSyRo9P5DQTEQ67, 2020-12-02T22:31:40 (prop3ok,incorrect,check,)
+                                    mbnnwfGnRb26E956H, 2020-12-02T22:31:51 (prop3ok,incorrect,check,)
+                                      Af3Yc6AQj3ciMwEdw, 2020-12-02T22:32:33 (This cannot be a legal relational join where left hand side is <integer/pos[this/Train];this/Train . (this/Train <: pos);> (type = {this/Track}) right hand side is this/Track (type = {this/Track}))
+                                        G3fDXvCLw79pnRbZJ, 2020-12-02T22:32:55 (This expression failed to be typechecked line 45, column 2, filename=/tmp/alloy_heredoc6385532553855789987.als)
+                                          ddvYBjihFNXb7Nbim, 2020-12-02T22:33:49 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                            cQi6HCZrXvMJ5mAcv, 2020-12-02T22:33:56 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                              RDazKBFGWpbP6YmeQ, 2020-12-02T22:34:08 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                                pjvXtuptvxf3RigLy, 2020-12-02T22:34:59 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+                                                  jERJtyEiqWafScKvk, 2020-12-02T22:35:18 (prop2ok,incorrect,check,)
+                                                    weG9RvWywMEpTFEF3, 2020-12-02T22:35:28 (prop2ok,incorrect,check,)
+                                                      xsYS2FdfasvnDNXkE, 2020-12-02T22:36:12 (prop2ok,incorrect,check,)
+                                                        Jsjy39X9wMEb5Kviq, 2020-12-02T22:36:52 (prop2ok,incorrect,check,)
+                                                          Hh3AAivmmG7jN5DQg, 2020-12-02T22:37:47 (prop2ok,correct,check,)
+                                                            CBMjudLFGZogZizvL, 2020-12-02T22:39:22 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                                              Ho7tjxbJ5NQsGKe5a, 2020-12-02T22:39:29 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                                                xE5DyyN2EH4B9vJcv, 2020-12-02T22:40:05 (prop4ok,incorrect,check,This variable is unused.)
+                                                                  PpDMmoYBJ3vR5xRMK, 2020-12-02T22:40:36 (prop4ok,incorrect,check,)
+                                                                    QTbpR62Af9hDgoGSi, 2020-12-02T22:41:08 (prop4ok,incorrect,check,)
+                                                                      j2HEH2W6uYZvb7FM7, 2020-12-02T22:41:16 (prop4ok,incorrect,check,)
+                                                                        xynK92PLyCynoNcQa, 2020-12-02T22:41:33 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                                                          yiSvNGkZvchLmDrnv, 2020-12-02T22:43:27 (This expression failed to be typechecked line 46, column 18, filename=/tmp/alloy_heredoc891461127924996322.als)
+                                                                            Qhz6txHc6aRc4qdpk, 2020-12-02T22:44:03 (prop3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Train} Right type = {this/Track})
+                                                                              EPYGg5SWRXGwq35kn, 2020-12-02T22:44:11 (prop3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Train} Right type = {this/Track})
+                                                                                kaQrshhmi5xC8M4Py, 2020-12-02T22:44:29 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                                                  LEo5KXWH9L5fYbQqA, 2020-12-02T22:44:41 (prop3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Train} Right type = {this/Track})
+                                                                                    YHdiFcsdke6XDoNDp, 2020-12-02T22:46:35 (prop3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Train} Right type = {this/Track})
+                                                                                      YhBEEGQez3QuwJ3nB, 2020-12-02T22:46:46 (This expression failed to be typechecked line 46, column 25, filename=/tmp/alloy_heredoc7499252306172384403.als)
+                                                                                        adJGBBCEGF7GC8j92, 2020-12-02T22:46:59 (prop3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Train} Right type = {this/Track})
+                                                                                          4ezYNgj5bMy2Cj9s4, 2020-12-02T22:47:20 (prop3ok,incorrect,check,)
+                                                                                            LHjRLwYERrHh55n6K, 2020-12-02T22:47:35 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                                                              wwB8NZS4WxFBdigHr, 2020-12-02T22:47:46 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                                                                GeXB7MqfjkSuKAq8t, 2020-12-02T22:47:59 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                                                                  xYtRCoF5qEBavsDH6, 2020-12-02T22:48:16 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+                                                                                                    RntH6FCJPr3T5Q8Db, 2020-12-02T22:48:58 (prop3ok,incorrect,check,)
+                                                                                                      4P2gR7yBz63umuBLx, 2020-12-02T22:50:03 (prop3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Train} Right type = {this/Track})
+                                                                                                        aEne8the3vRMbWgb3, 2020-12-02T22:50:22 (prop3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Train} Right type = {this/Track})
+                                                                                                          Lc9329N5zwBwnWCh5, 2020-12-02T22:50:35 (prop3ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Train} Right type = {this/Track})
+                                                                                                            auuWSCrbN4tPnCc2v, 2020-12-02T22:50:50 (prop3ok,incorrect,check,)
+                                                                                                              kjiPzLq98g4oTqzSo, 2020-12-02T22:51:36 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                                                                                yNeYKMSYpZrNuZTXE, 2020-12-02T22:51:43 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                                                                                  h5bBYzpvhzzWH72pG, 2020-12-02T22:52:02 (prop3ok,incorrect,check,)
+                                                                                                                    42Z7XjoYfqswhjBtA, 2020-12-02T22:53:09 (prop3ok,correct,check,)
+                                                                                                                      S6jBqWKutg4jxCEge, 2020-12-02T22:54:14 (prop6ok,incorrect,check,)
+                                                                                                                        4fNukhWP7Dy7xLwq2, 2020-12-02T22:54:26 (prop6ok,incorrect,check,)
+                                                                                                                          LzKRroGrDStG5wwvC, 2020-12-02T22:55:05 (prop6ok,incorrect,check,)
+                                                                                                                            kTmM7EyasTWRH9fgH, 2020-12-02T22:56:46 (prop6ok,incorrect,check,)
+                                                                                                                              XNGLNgjWPynrGFGEh, 2020-12-02T22:57:04 (prop6ok,incorrect,check,)
+                                                                                                                                NgbYFfvN9zEwJeE3i, 2020-12-02T23:00:11 (This cannot be a legal relational join where left hand side is <integer/pos[t1];t1 . (this/Train <: pos);> (type = {this/Track}) right hand side is tr1 (type = {this/Track}))
+                                                                                                                                  xgCodt2mXPRiLuaX8, 2020-12-02T23:00:33 (prop4ok,incorrect,check,This variable is unused.)
+                                                                                                                                    Rm86nBcWSrG6qQvmN, 2020-12-02T23:00:42 (prop4ok,incorrect,check,)
+                                                                                                                                      8agC8ydsaKCCs9jMs, 2020-12-02T23:00:52 (prop4ok,incorrect,check,)
+                                                                                                                                        TR4g5o9e5Jd9A7dQd, 2020-12-02T23:02:41 (prop4ok,incorrect,check,)
+                                                                                                                                          7L9ciKbxvy9k2XwKL, 2020-12-02T23:03:34 (This cannot be a legal relational join where left hand side is <integer/pos[t1];t1 . (this/Train <: pos);> (type = {this/Track}) right hand side is tr1 (type = {this/Track}))
+                                                                                                                                            S5MkqQ92ajMaEmNnt, 2020-12-02T23:03:46 (This cannot be a legal relational join where left hand side is <integer/pos[t1];t1 . (this/Train <: pos);> (type = {this/Track}) right hand side is tr1 (type = {this/Track}))
+                                                                                                                                              C2Wd6LnkcyW8o7szM, 2020-12-02T23:04:03 (This cannot be a legal relational join where left hand side is <integer/pos[t1];t1 . (this/Train <: pos);> (type = {this/Track}) right hand side is tr1 (type = {this/Track}))
+                                                                                                                                                XxGMPEs5TqPfJiMxw, 2020-12-02T23:04:16 (This cannot be a legal relational join where left hand side is <integer/pos[t1];t1 . (this/Train <: pos);> (type = {this/Track}) right hand side is tr1 (type = {this/Track}))
+                                                                                                                                                  5xh7eq5PJxHhnuJHb, 2020-12-02T23:05:17 (prop4ok,incorrect,check,This variable is unused.)
+                                                                                                                                                    hYvKpkGRP8LY4gyJf, 2020-12-02T23:05:33 (prop4ok,incorrect,check,)
+                                                                                                                                                      zGy5QwHA7g9J5G2ZH, 2020-12-02T23:06:21 (This expression failed to be typechecked line 52, column 31, filename=/tmp/alloy_heredoc6024456158796594668.als)
+                                                                                                                                                        YfMZ9Eyoo2LW8M8hw, 2020-12-02T23:06:30 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+                                                                                                                                                          47kGb6MLfvciY5Edz, 2020-12-02T23:08:13 (prop6ok,incorrect,check,)
+                                                                                                                                                            p7d2nwfKzPK5wWBwT, 2020-12-02T23:09:13 (prop6ok,incorrect,check,)
+                                                                                                                                                              45yKmhyZi98RQkJHo, 2020-12-02T23:09:26 (prop6ok,incorrect,check,)
+                                                                                                                                                                jAfcwyoGJuuBgGnZc, 2020-12-02T23:09:30 (prop6ok,incorrect,check,)
+                                                                                                                                                                  z2qWsuETaQsj6Bpv2, 2020-12-02T23:09:38 (prop6ok,incorrect,check,)
+                                                                                                                                                                    wuCDCiTwZyhEezyC4, 2020-12-02T23:09:46 (prop6ok,incorrect,check,)
+                                                                                                                                                                      CPRbeqYYqqxGnbfiS, 2020-12-02T23:09:56 (prop6ok,incorrect,check,)
+                                                                                                                                                                        PFw9qgdM8AR4ACKP7, 2020-12-02T23:10:33 (prop6ok,incorrect,check,)
+                                                                                                                                                                          bjYkrRNbHzu2MkrxD, 2020-12-02T23:10:41 (prop6ok,incorrect,check,)
+                                                                                                                                                                            aB2NLTmBSDS9tWGMp, 2020-12-02T23:11:10 (prop6ok,incorrect,check,)
+                                                                                                                                                                              iDwWo8GPkaq7oyv8T, 2020-12-02T23:11:15 (prop6ok,incorrect,check,)
+                                                                                                                                                                                mzBpNxf8aZJvNKFB2, 2020-12-02T23:11:23 (prop6ok,incorrect,check,)
+                                                                                                                                                                                  GfJ3oS684tFZid3nt, 2020-12-02T23:12:19 (prop6ok,incorrect,check,)
+                                                                                                                                                                                    X827SPYqu2tp5bzMA, 2020-12-02T23:12:25 (prop6ok,incorrect,check,)
+                                                                                                                                                                                      8agr4BFJcnYJLm4FH, 2020-12-02T23:12:46 (prop6ok,incorrect,check,)
+                                                                                                                                                                                        mF8fBmDQS7KKoiY9z, 2020-12-02T23:12:50 (prop6ok,incorrect,check,)
+                                                                                                                                                                                          bwG6vgKiteAxwjEKg, 2020-12-02T23:13:16 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                                                                                                                                                            2eg3sLFQrouzbpDbe, 2020-12-02T23:13:22 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                                                                                                                                                              Ej2yvyaxQvK2tkNYB, 2020-12-02T23:13:38 (prop6ok,incorrect,check,)
+                                                                                                                                                                                                WxPdc3vg2mpjjajjh, 2020-12-02T23:14:01 (prop6ok,incorrect,check,)
+  2KL3Mx4HJPgs7DvJG, 2020-12-02T22:34:05 (prop1ok,correct,check,)
+    CpbhxkuaqRoQyJTqa, 2020-12-02T22:34:18 (prop1ok,correct,check,)
+      RDSoQyrdJMSQeLBZK, 2020-12-02T22:35:30 (prop2ok,incorrect,check,)
+        y7ZtAGLfWdWZAjpaB, 2020-12-02T22:36:31 (prop2ok,incorrect,check,)
+          EgTcSqv3Q5BD9Rm9W, 2020-12-02T22:37:24 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+            iJTGteFP8KpP4nDFf, 2020-12-02T22:37:33 (prop2ok,correct,check,)
+              n6ipR5dFB5ayjY3Sd, 2020-12-02T22:41:43 (The name "f" cannot be found.)
+                z6aXKETuHcsbktDy9, 2020-12-02T22:41:56 (prop3ok,incorrect,check,)
+                  funf95cBicDwD6icA, 2020-12-02T22:42:12 (prop3ok,incorrect,check,)
+                    8uKf8K62XMTwPsSh6, 2020-12-02T22:42:38 (prop3ok,incorrect,check,)
+                      3QN2YB97naPsrAdHi, 2020-12-02T22:42:47 (prop3ok,incorrect,check,)
+                        iMpP3YZBn5NG7Rqca, 2020-12-02T22:48:42 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                          WJnGRvBbtkHXD7yix, 2020-12-02T22:48:50 (Syntax error at the \ character. HEX: \u5c))
+                            YY8XZxaqMHMkRF4vv, 2020-12-02T22:50:52 (prop3ok,incorrect,check,)
+                              Gp5rgJouM4dyHnPsC, 2020-12-02T22:53:12 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                4osG5uqF6NSjFzPqR, 2020-12-02T22:54:11 (prop3ok,incorrect,check,)
+                                  CqMALrtHXgGv85ica, 2020-12-02T22:54:57 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                    DgAnBEkcY7gRH4tty, 2020-12-02T22:55:07 (prop3ok,correct,check,)
+                                      vPGNYjQ32eJqKgc5c, 2020-12-02T22:55:20 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                        nsyj3XAhWL9kNGMWC, 2020-12-02T22:57:25 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+  Ytyj2bFsiw9id3Gbe, 2020-12-03T09:40:15 (prop3ok,correct,check,)
+  DnXXqc4nf7T6vBgJF, 2020-12-03T09:47:23 (prop1ok,correct,check,)
+    9bfNid74p7vhFHeDW, 2020-12-03T09:47:31 (prop2ok,correct,check,)
+  puPdrx54duvD8nia4, 2020-12-03T10:24:41 (The name "Red" cannot be found.)
+    mJPQjbLsADkJbwBDG, 2020-12-03T10:24:47 (prop1ok,incorrect,check,)
+      QL4xhLXvQdFi2PA7Y, 2020-12-03T10:25:41 (prop1ok,incorrect,check,)
+        9mYct2qzkrn7HTTRf, 2020-12-03T10:26:11 (prop1ok,incorrect,check,Subset operator is redundant, because the left and right expressions always have the same value. Left type = {univ->univ} Right type = {univ->univ})
+          KuFFeCTkHT5R8BrrS, 2020-12-03T10:26:39 (prop1ok,incorrect,check,)
+            rbfuqHskngQWQd4A8, 2020-12-03T10:27:37 (prop1ok,correct,check,)
+              7QxmnWQvP3jyYmKW9, 2020-12-03T10:27:46 (prop1ok,correct,check,)
+                7aAryYBueJDAZyZeb, 2020-12-03T10:27:49 (prop1ok,correct,check,)
+                  nTkZNtG5Q582w4yph, 2020-12-03T10:28:18 (prop2ok,incorrect,check,)
+                    9F9ryk7y2ZRXY2B7Z, 2020-12-03T10:28:43 (prop2ok,correct,check,)
+                      63TwSvA7ypSkhFas2, 2020-12-03T10:29:43 (prop3ok,correct,check,)
+                        Bkt24rAPK7ZZAYoNj, 2020-12-03T10:32:01 (prop4ok,incorrect,check,)
+                          NWkKNkMmntA4MzeLu, 2020-12-03T10:36:36 (prop4ok,correct,check,)
+                            LA3GhyTiw2JMHpbct, 2020-12-03T10:37:10 (prop4ok,correct,check,)
+  ZXeAw5qCWo8YEHPeE, 2020-12-05T00:00:50 (The name "Red" cannot be found.)
+    p6aiNWmSGJjdu4Xbr, 2020-12-05T00:02 (prop1ok,correct,check,)
+      27CZcpNJEphhznjKu, 2020-12-05T00:02:39 (prop2ok,incorrect,check,)
+        jHn7bKHeiAXzSYk3o, 2020-12-05T00:04:14 (prop2ok,correct,check,)
+          9tjsmyeG6QMaHxnd2, 2020-12-05T00:04:41 (prop2ok,incorrect,check,)
+            PJWyn4jaHogseZmRo, 2020-12-05T00:04:52 (prop2ok,incorrect,check,)
+              Hcw55G4MbLjgY2HL8, 2020-12-05T00:05:15 (prop2ok,correct,check,)
+                csS2ME8x6T3PmZPCL, 2020-12-05T00:05:51 (prop3ok,incorrect,check,)
+                  AdwPAKgDxr7zdb3B3, 2020-12-05T00:08:10 (prop3ok,incorrect,check,)
+                    98SRPaJKG79Y7wpME, 2020-12-05T00:08:17 (prop3ok,incorrect,check,)
+                      megMfkHgFGYxLn44b, 2020-12-05T00:09:20 (prop3ok,incorrect,check,)
+                        fyZoXmPN8T6W6y5XD, 2020-12-05T00:10:34 (The name "Trains" cannot be found.)
+                          orLDDMyXsQDP6rNXv, 2020-12-05T00:10:38 (prop3ok,incorrect,check,)
+                            iSSLLgwhu8Lmgcj5k, 2020-12-05T00:11:13 (prop3ok,incorrect,check,)
+                              Kg3xegpi23nc2qcqt, 2020-12-05T00:12:41 (prop3ok,incorrect,check,)
+                                8ZYLKYCZucDatq2ET, 2020-12-05T00:13:15 (prop3ok,incorrect,check,)
+                                  MzAtMtgNJmKW6vvQj, 2020-12-05T00:13:48 (prop3ok,incorrect,check,)
+                                    oh4Tc3WNCjwbuAgPp, 2020-12-05T00:14:03 (prop3ok,incorrect,check,)
+                                      jRdkaK9aFMyN2Rvba, 2020-12-05T00:14:23 (prop3ok,incorrect,check,)
+                                        iDvZ52TmQy3CjwtMq, 2020-12-05T00:15:59 (prop4ok,incorrect,check,)
+                                          KZdRfdj9kid9hCCMd, 2020-12-05T00:16:41 (prop4ok,correct,check,)
+                                            c3hCdbTTjAyTw7pLP, 2020-12-05T00:21 (prop5ok,incorrect,check,)
+                                              XXiFxKYrgScjSMzbQ, 2020-12-05T00:21:40 (prop5ok,incorrect,check,)
+                                                8Wtwdr5FoLWjyvz9p, 2020-12-05T00:22:28 (prop5ok,incorrect,check,)
+                                                  wQ7Zn2W9fLLBNuihb, 2020-12-05T00:23:48 (prop5ok,incorrect,check,)
+                                                    GQFMy2yH67L7eLz4F, 2020-12-05T00:24:08 (prop5ok,incorrect,check,)
+                                                      Skk6SYvRHqpwfrqqh, 2020-12-05T00:26:37 (prop6ok,incorrect,check,)
+                                                        EoGzFEMtaQ8W8f7zm, 2020-12-05T00:27:11 (prop6ok,incorrect,check,)
+                                                          phf8hKyL9mqFR6jZs, 2020-12-05T00:27:45 (prop6ok,incorrect,check,)
+                                                            ddfx92eDt48qT2n5a, 2020-12-05T00:28:26 (prop6ok,incorrect,check,)
+                                                              8kf3HGTXJePATtsJi, 2020-12-05T00:29:36 (prop7ok,incorrect,check,)
+                                                                kwNi58SGbu9f9BogJ, 2020-12-05T00:29:58 (prop7ok,incorrect,check,)
+                                                                  dkHGCXPEySQtPBx68, 2020-12-05T00:30:46 (prop7ok,incorrect,check,)
+                                                                    AZne5Qktha3d5NEqj, 2020-12-05T00:30:59 (prop7ok,incorrect,check,)
+  tQTQt8CmLJ96sTzBM, 2020-12-06T17:21:20 (prop6ok,incorrect,check,This variable is unused.)
+    xKee2HzkfhHA927eo, 2020-12-06T17:23:16 (prop6ok,incorrect,check,)
+  AWQCKBfgG4qGraTbt, 2020-12-08T00:54:26 (prop3ok,incorrect,check,)
+    mR6xYeXhS5regdgpe, 2020-12-08T00:55:05 (prop3ok,incorrect,check,)
+      TPoXKYWctkj9wf9qb, 2020-12-08T00:55:20 (prop3ok,incorrect,check,)
+        EgrWjQcRFk5XM6HBK, 2020-12-08T00:55:53 (prop3ok,incorrect,check,)
+          yT4iE3jWrGtqwJb26, 2020-12-08T01:10:42 (prop3ok,incorrect,check,)
+            kiML2bvqv4E9vFDEA, 2020-12-08T01:11:28 (prop5ok,incorrect,check,)
+              qoA596Jg5jNYfw3Rr, 2020-12-08T01:12:26 (prop3ok,incorrect,check,)
+                jatGGNqfz5wDBDMF7, 2020-12-08T01:13:33 (prop3ok,incorrect,check,)
+                  q7PvvFp4zTKsG4TAZ, 2020-12-08T01:14:17 (prop3ok,correct,check,)
+                    HQm8sHFeDsxL8MJFx, 2020-12-08T01:14:33 (prop3ok,correct,check,)
+                      FavwXGsfZdj68h3qB, 2020-12-08T01:14:42 (prop3ok,incorrect,check,)
+                        tycX6LzsmiYkScvsX, 2020-12-08T01:14:46 (prop3ok,correct,check,)
+                          w34dYjtDjzZ9jD3vW, 2020-12-08T01:16:33 (prop5ok,incorrect,check,)
+                            D8Ndmbk8EeNZNvdFP, 2020-12-08T01:17:21 (prop5ok,incorrect,check,)
+                              fNZ5bNJg67dLRkDj5, 2020-12-08T01:18:10 (prop5ok,incorrect,check,)
+                                d3jMeE6cZiRiqDsRx, 2020-12-08T01:18:15 (prop5ok,incorrect,check,)
+                                  M7JJDBRt2MwPSL9M4, 2020-12-08T01:18:49 (prop5ok,incorrect,check,)
+                                    sPq6DgQx9fyFExid8, 2020-12-08T01:19:57 (prop5ok,incorrect,check,)
+                                      gHjp3TwwoSbB546ta, 2020-12-08T01:21:45 (There are 1 possible tokens that can appear here: ))
+                                        km5tmJhvvrNfBZphb, 2020-12-08T01:21:51 (prop6ok,incorrect,check,)
+                                          HJ7TyYcpaoisWTLt6, 2020-12-08T01:22:46 (prop6ok,incorrect,check,)
+                                            Ya5caPxcBkTeNwbWC, 2020-12-08T01:25:12 (prop6ok,incorrect,check,)
+                                              dWh6pz2Fhkp2d23Xx, 2020-12-08T01:28 (prop7ok,incorrect,check,)
+                                                oWcQrd3oipeD3fGKd, 2020-12-08T01:28:38 (prop7ok,incorrect,check,)
+                                                  BC72eXpKW48pHYReK, 2020-12-08T01:29:53 (prop5ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track} Right type = {Int->Int})
+                                                    FoT3cytj8eDf962nb, 2020-12-08T01:30:06 (prop5ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track} Right type = {Int->Int})
+                                                      a8rbSKRQNbmDKP7cg, 2020-12-08T01:30:33 (prop5ok,incorrect,check,)
+                                                        uzups8rY62xC5nAiR, 2020-12-08T01:32:50 (prop5ok,incorrect,check,)
+                                                          e6tAJEZig5oczLSfA, 2020-12-08T01:33:13 (prop5ok,incorrect,check,)
+                                                            mmwRHXJnLwt6SSLTQ, 2020-12-08T01:33:32 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+                                                              nswCdqfpyyrqpLCzY, 2020-12-08T01:33:52 (prop5ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track} Right type = {Int->Int})
+                                                                X4ZKumargmniSCj3p, 2020-12-08T01:34:16 (prop5ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track} Right type = {Int->Int})
+                                                                  3fBioBvfkvRPXyema, 2020-12-08T01:37:06 (prop6ok,incorrect,check,)
+                                                                    w2bzeCeiAztymnAqn, 2020-12-08T01:38:08 (prop5ok,incorrect,check,)
+                                                                      9XGijNgzytRNitQ84, 2020-12-08T01:38:33 (There are 3 possible tokens that can appear here: ,  { |)
+                                                                        eR6Yta2x4JXnw4aD7, 2020-12-08T01:38:38 (prop5ok,incorrect,check,)
+                                                                          nQQGoyRnvNPckQKf9, 2020-12-08T01:40:37 (prop6ok,incorrect,check,)
+                                                                            spoJuHMFrs3KXLJYp, 2020-12-08T01:42:17 (prop6ok,incorrect,check,)
+                                                                              QqKPhoBXdAAfPyWDW, 2020-12-08T01:42:50 (prop6ok,incorrect,check,)
+                                                                                pRQQi2skS7Q7gYvac, 2020-12-08T01:43:12 (prop6ok,incorrect,check,)
+                                                                                  2Z7ppb6FjBhAtRaF5, 2020-12-08T01:45:09 (prop6ok,incorrect,check,)
+  KavcJqrLP5bghEq4Y, 2020-12-09T14:04:10 (prop1ok,incorrect,check,)
+    yX5j2qRNeq9SFQ9P3, 2020-12-09T14:04:28 (prop1ok,correct,check,)
+      5WdWqjfvr53wzWSYa, 2020-12-09T14:04:57 (prop2ok,correct,check,)
+        5wk87KRp2uZHvP7q9, 2020-12-09T14:05:41 (The name "allways" cannot be found.)
+          uAmE5cNb2SBDevAF6, 2020-12-09T14:05:55 (prop3ok,correct,check,)
+            CSfh4veZPbjeKwgtT, 2020-12-09T14:07:41 (prop4ok,incorrect,check,)
+              6AmNRS3gRx9GHCfqj, 2020-12-09T14:08:02 (prop4ok,incorrect,check,)
+                PNTJWWLBSoH4mNhxv, 2020-12-09T14:08:07 (prop4ok,incorrect,check,)
+                  Y5GKBN62D2wfJQYgT, 2020-12-09T14:11:20 (prop4ok,incorrect,check,)
+  XZdicZEsoYy5X5hqP, 2020-12-09T22:31:01 (prop1ok,correct,check,)
+  Joz8Hi3RTqn4TAeTK, 2020-12-16T18:35:22 (prop1ok,correct,check,)
+    Fz4vWE27yr5YKsXzD, 2020-12-16T18:35:44 (prop2ok,incorrect,check,)
+      YWozLMBWhgHf3sXFP, 2020-12-16T18:36:19 (prop2ok,incorrect,check,)
+        FJfDE3m9ya9jbiExE, 2020-12-16T18:36:33 (prop2ok,correct,check,)
+          P3WkBNjvjXjTEetgw, 2020-12-16T18:58 (prop3ok,correct,check,)
+            vZE8BwbQCNbstTgvm, 2020-12-16T19:01:59 (The name "on" cannot be found.)
+              ZQzr6tnhE4JdJWQfu, 2020-12-16T19:02:04 (prop4ok,incorrect,check,)
+                FnpXH5dhd6fFHQidr, 2020-12-16T19:03:27 (prop4ok,incorrect,check,)
+                  JAHYjdrSJB4d7cjYd, 2020-12-16T19:03:45 (prop4ok,incorrect,check,)
+                    6mTY8tzh6RxWqQjRa, 2020-12-16T19:04:09 (prop4ok,incorrect,check,)
+                      wjBhA3PcfLfCNcCWE, 2020-12-16T19:04:33 (prop4ok,incorrect,check,)
+  93FQEYWq9aq9Kkw4J, 2020-12-17T00:03:55 (prop1ok,correct,check,)
+    KyFQAe7DjY7QpQ7LK, 2020-12-17T00:04:30 (The name "Sinal" cannot be found.)
+      XE5MBRpgCkoC26K8b, 2020-12-17T00:04:37 (prop2ok,correct,check,)
+        w6X7PSmxpQu99aJmR, 2020-12-17T00:05:08 (prop3ok,correct,check,)
+          row4qJpDvf2qxo94C, 2020-12-17T00:05:49 (prop4ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Signal} Right type = {this/Train->this/Track})
+            DAFKZ4qRZhNGK6ajT, 2020-12-17T00:06:01 (prop4ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Signal} Right type = {this/Train->this/Track})
+              6LYo3fDNLaCW39n9K, 2020-12-17T00:06:26 (prop4ok,incorrect,check,- is irrelevant since the right expression is redundant. Parent's relevant type = {this/Signal} Left type = {this/Signal} Right type = {this/Track})
+                L88LDZm4e6LjvixXd, 2020-12-17T00:06:50 (prop4ok,incorrect,check,- is irrelevant since the right expression is redundant. Parent's relevant type = {this/Signal} Left type = {this/Signal} Right type = {this/Track})
+                  yapEcopEENDh2BgrK, 2020-12-17T00:10:12 (prop4ok,incorrect,check,)
+                    uKSr3eE9QG2FWw79C, 2020-12-17T00:16:10 (prop1ok,correct,check,)
+                      yfETKH89rEKH365bS, 2020-12-17T00:16:12 (prop2ok,correct,check,)
+                        ARwSettjmRsCxpwbz, 2020-12-17T00:16:15 (prop3ok,correct,check,)
+                          XqeSi3wZ6yZnmwN93, 2020-12-17T00:16:18 (prop4ok,incorrect,check,)
+                            55frXgngepY66WWoL, 2020-12-17T00:18:22 (prop4ok,correct,check,)
+                              92hpzyEgnN6zq2Jfb, 2020-12-17T00:23:14 (prop5ok,incorrect,check,)
+                                DhStsWnAmGW9oMKMA, 2020-12-17T00:27:49 (prop5ok,incorrect,check,)
+                                  ppneJXxFt3MizCZHg, 2020-12-17T00:29:46 (prop6ok,incorrect,check,)
+                                    Jy7HyndXDqp94aHhw, 2020-12-17T00:31:17 (prop6ok,incorrect,check,)
+                                      odsNTKD4XhMc6JiGG, 2020-12-17T00:32:37 (prop6ok,incorrect,check,)
+                                        Kr44ZJpFHKXW6XZfP, 2020-12-17T00:36:08 (prop4ok,correct,check,)
+                                          KbgMNzmNJParn78oZ, 2020-12-17T00:36:11 (prop5ok,incorrect,check,)
+                                            AxxguuqojH2SbicrZ, 2020-12-17T00:36:14 (prop6ok,incorrect,check,)
+                                              iyeFBBPDHr2zATriH, 2020-12-17T00:38:05 (prop7ok,incorrect,check,)
+                                                3fwMQEoRzByygMubR, 2020-12-17T00:38:22 (prop7ok,incorrect,check,)
+                                                  h8KTJ3QpXaLeQ4sAf, 2020-12-17T00:38:50 (prop7ok,incorrect,check,)
+                                                    hvesXMXCrCBffhM9q, 2020-12-17T00:39:28 (prop7ok,incorrect,check,)
+                                                      WxiPx7hkfcRiRLj46, 2020-12-17T00:39:48 (prop7ok,incorrect,check,)
+                                                        WHxmSWFk4L3ofkkew, 2020-12-17T00:41:50 (prop7ok,incorrect,check,)
+                                                          u28KE4nxLmvnwSQPz, 2020-12-17T00:43:26 (prop7ok,incorrect,check,)
+                                                            HMzXzjTXrBkE3WmQy, 2020-12-17T00:45:07 (prop9ok,incorrect,check,)
+                                                              9m5N5rh6Cv8dTEwHA, 2020-12-17T00:49:21 (prop15ok,incorrect,check,)
+                                                                JzmgF5eH6TvnN4gfd, 2020-12-17T00:49:51 (prop15ok,incorrect,check,)

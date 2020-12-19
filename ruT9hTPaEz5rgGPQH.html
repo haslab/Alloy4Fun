@@ -9,63 +9,52 @@
 </head>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-<h1>ruT9hTPaEz5rgGPQH (2020-12-14)</h1>
+<h1>ruT9hTPaEz5rgGPQH (2020-12-19)</h1>
 <h2>Meta-data</h2>
 <dl><dt>Challenge name</dt><dd>unknown</dd>
 <dt>Creation time</dt><dd>2020-10-28</dd>
 <dt># sub-challenges</dt><dd>1</dd>
 <dt>Metric catalog</dt><dd>Example metric catalog</dd>
 </dl><h2>Overall metric statistics</h2>
-Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total model entries</dt><dd>1066</dd>
+Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total model entries</dt><dd>1063</dd>
 <dt>Total executions</dt><dd>1021</dd>
 <dt>Total shares</dt><dd>42</dd>
 <dt>Total error messages</dt><dd>211</dd>
-<dt>Total warning messages</dt><dd>127</dd>
+<dt>Total warning messages</dt><dd>131</dd>
 <dt>Total solutions</dt><dd>810</d>
 <dt>Total sessions</dt><dd>54</d>
+<dt>Timed out re-executions</dt><dd>0</d>
 <dt>Rejected due to server errors</dt><dd>3</d>
+<dt>Inconsistent result reports</dt><dd>0</d>
+<dt>Inconsistent message reports</dt><dd>0</d>
 <dt>Total instance entries</dt><dd>0</dd>
 <dt>Total link entries</dt><dd>43</dd>
 </dl><h2>Scalar metrics</h2>
-<dl><dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions with warnings</dt><dd>94</dd>
-<dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared. A session is a full branch of the derivation tree.">Number of shared sessions</dt><dd>13</dd>
-<dt data-toggle="tooltip" title="The size of the longest session. A session is a full branch of the derivation tree.">Longest session</dt><dd>72</dd>
-<dt data-toggle="tooltip" title="Counts the number of shared models. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Shared models</dt><dd>42</dd>
-<dt data-toggle="tooltip" title="Counts the number of incorrect executions. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions</dt><dd>730</dd>
-<dt data-toggle="tooltip" title="Counts the number of correct executions. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions</dt><dd>80</dd>
+<dl><dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared.">Number of shared sessions</dt><dd>13</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models.">Shared models (model)</dt><dd>42</dd>
+<dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages.">Shares with warnings</dt><dd>1</dd>
+<dt data-toggle="tooltip" title="Counts the number Alloy runtime errors (in contrast to parsing errors).">Alloy runtime errors</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models that had errors.">Shared errored models</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="Counts the number Alloy parsing errors (in contrast to runtime errors).">Alloy static errors</dt><dd>211</dd>
+<dt data-toggle="tooltip" title="Counts the number of models from shared instances.">Shared models (instance)</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="The average session length.">Average session</dt><dd>19.12962962962963</dd>
+<dt data-toggle="tooltip" title="The size of the longest session.">Longest session</dt><dd>71</dd>
+<dt data-toggle="tooltip" title="Counts the number of satisfiable executions that produced warning messages. Considers commands other than challenges.">Sat executions with warnings</dt><dd>94</dd>
+<dt data-toggle="tooltip" title="Counts the number of executed models that had errors. Considers commands other than challenges.">Executed errored models</dt><dd>211</dd>
+<dt data-toggle="tooltip" title="Counts the number of unsatisfiable executions. Considers commands other than challenges.">Unsat executions</dt><dd>730</dd>
+<dt data-toggle="tooltip" title="Counts the number of unsatisfiable executions that produced warning messages. Considers commands other than the challenges.">Unsat executions with warnings</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages.">Errored executions with warnings</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="The average of session unsatisfiable execution ratio.">Average % unsatisfiable</dt><dd>0.1517818619740631</dd>
+<dt data-toggle="tooltip" title="Counts the number of satisfiable executions. Considers commands other than challenges.">Sat executions</dt><dd>80</dd>
 </dl><h2>Overall metrics</h2>
 <h3>Sessions by length</h3>
-<p>The number of sessions with a certain length. A session is a full branch of the derivation tree.</p>
+<p>The number of sessions with a certain length.</p>
 <canvas id="Sessionsbylength" width="1400"></canvas><script>
   var chart = new Chart(Sessionsbylength, {
    type: 'bar',
    data: {
       labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71',],      datasets: [
-{backgroundColor: '#6c79ad', data: [5,1,5,2,2,1,3,0,0,1,2,1,2,1,2,0,3,2,0,0,2,1,2,0,0,1,2,0,0,0,0,0,0,1,1,0,2,0,1,2,1,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,]},]},
-   options: {
-      responsive: false,
-      legend: {
-         display: false
-      },
-      scales: {
-         xAxes: [{
-                ticks: {
-                    autoSkip: true,
-                    minRotation:0,
-                    maxRotation:20,
-                }
-            }],
-      }
-   }
-});
-</script><h3>Sessions by # of solved sub-challenges</h3>
-<p>The number of sessions with a certain number of sub-challenges correctly solved. A session is a full branch of the derivation tree.</p>
-<canvas id="Sessionsbyofsolvedsubchallenges" width="1400"></canvas><script>
-  var chart = new Chart(Sessionsbyofsolvedsubchallenges, {
-   type: 'bar',
-   data: {
-      labels: ['0','1',],      datasets: [
-{backgroundColor: '#6c79ad', data: [25,29,]},]},
+{backgroundColor: '#6c79ad', data: [5,1,5,2,2,1,3,,,1,2,1,2,1,2,,3,2,,,2,1,2,,,1,2,,,,,,,1,1,,2,,1,2,1,,1,,1,,,,,1,,,,,,,,,,,,,1,,,,,,,,1,]},]},
    options: {
       responsive: false,
       legend: {
@@ -83,13 +72,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h3>Warnings by type</h3>
-<p>The number of warnings by normalized message. Each entry may throw multiple warning messages.</p>
+<p>The number of warnings by normalized message.</p>
 <canvas id="Warningsbytype" width="1400"></canvas><script>
   var chart = new Chart(Warningsbytype, {
    type: 'bar',
    data: {
-      labels: ['^(_) is redundant since its domain and range are disjoint: {_}','- is irrelevant since the right expression is redundant. Parent\'s relevant type = {_} Left type = {_} Right type = {_}','This variable is unused.','Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}','& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}','The join operation here always yields an empty set. Left type = {_} Right type = {_}','== is redundant, because the left and right expressions are always disjoint. Left type = {_} Right type = {_}',],      datasets: [
-{backgroundColor: '#6c79ad', data: [1,3,47,14,2,57,3,]},]},
+      labels: ['- is irrelevant since the right expression is redundant. Parent\'s relevant type = {_} Left type = {_} Right type = {_}','This variable is unused.','Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}','& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}','The join operation here always yields an empty set. Left type = {_} Right type = {_}','^_ is redundant since its domain and range are disjoint: {_}','== is redundant, because the left and right expressions are always disjoint. Left type = {_} Right type = {_}',],      datasets: [
+{backgroundColor: '#6c79ad', data: [3,51,14,2,57,1,3,]},]},
    options: {
       responsive: false,
       legend: {
@@ -106,14 +95,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Entries over time</h3>
-<p>The number of entries by date. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
-<canvas id="Entriesovertime" width="1400"></canvas><script>
-  var chart = new Chart(Entriesovertime, {
+</script><h3>Sessions by # of solved challenges</h3>
+<p>The number of sessions with a certain number of challenges correctly solved.</p>
+<canvas id="Sessionsbyofsolvedchallenges" width="1400"></canvas><script>
+  var chart = new Chart(Sessionsbyofsolvedchallenges, {
    type: 'bar',
    data: {
-      labels: ['2020-10-28','2020-10-29','2020-10-30','2020-10-31','2020-11-01','2020-11-02','2020-11-03','2020-11-04','2020-11-05','2020-11-06','2020-11-07','2020-11-08','2020-11-09','2020-11-10','2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13',],      datasets: [
-{backgroundColor: '#6c79ad', data: [4,7,0,0,0,0,0,51,853,15,78,3,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]},]},
+      labels: ['0','1',],      datasets: [
+{backgroundColor: '#6c79ad', data: [25,29,]},]},
    options: {
       responsive: false,
       legend: {
@@ -136,8 +125,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Errorsbytype, {
    type: 'bar',
    data: {
-      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This expression failed to be typechecked line _ column _ filename=_.als','The name _ cannot be found.','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','This must be a set or relation. Instead, it has the following possible type(s): {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','There are 1 possible tokens that can appear here: = ','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".','There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','This must be a formula expression. Instead, it has the following possible type(s): {_}','There are 8 possible tokens that can appear here: NAME disj exh part private seq this var ','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 1 possible tokens that can appear here: ) ','There are 3 possible tokens that can appear here: ,  { | ',],      datasets: [
-{backgroundColor: '#6c79ad', data: [9,6,3,34,83,10,8,1,8,1,7,1,29,2,4,3,2,]},]},
+      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','This expression failed to be typechecked line _ column _ filename=_.als','The name _ cannot be found.','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','This must be a set or relation. Instead, it has the following possible type(s): {_}','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','There are 1 possible tokens that can appear here: = ','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".','There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','This must be a formula expression. Instead, it has the following possible type(s): {_}','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 8 possible tokens that can appear here: NAME disj exh part private seq this var ','There are 1 possible tokens that can appear here: ) ','There are 3 possible tokens that can appear here: ,  { | ',],      datasets: [
+{backgroundColor: '#6c79ad', data: [9,6,83,3,34,8,10,8,1,1,7,1,29,4,2,3,2,]},]},
    options: {
       responsive: false,
       legend: {
@@ -154,11 +143,35 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
+</script><h3>Models by number of warnings</h3>
+<p>The number of entries with a certain number of warning messages.</p>
+<canvas id="Modelsbynumberofwarnings" width="1400"></canvas><script>
+  var chart = new Chart(Modelsbynumberofwarnings, {
+   type: 'bar',
+   data: {
+      labels: ['0','1','2','3','4',],      datasets: [
+{backgroundColor: '#6c79ad', data: [968,75,10,4,6,]},]},
+   options: {
+      responsive: false,
+      legend: {
+         display: false
+      },
+      scales: {
+         xAxes: [{
+                ticks: {
+                    autoSkip: true,
+                    minRotation:0,
+                    maxRotation:20,
+                }
+            }],
+      }
+   }
+});
 </script><h2>Overall metrics, classified</h2>
-<h3>Execution results by sub-challenge</h3>
-<p>The number of successful executions by sub-challenge, classified by result. Errored executions are not considered.</p>
-<canvas id="Executionresultsbysubchallenge" ></canvas><script>
-  var chart = new Chart(Executionresultsbysubchallenge, {
+<h3>Execution results by challenge</h3>
+<p>The number of executions by challenge, classified by result. Errored executions are not considered.</p>
+<canvas id="Executionresultsbychallenge" ></canvas><script>
+  var chart = new Chart(Executionresultsbychallenge, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
@@ -194,15 +207,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Executions over time classified</h3>
-<p>The number of entries by date, classified by result. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
-<canvas id="Executionsovertimeclassified" ></canvas><script>
-  var chart = new Chart(Executionsovertimeclassified, {
+</script><h3>Session results by challenge</h3>
+<p>The number of sessions in which a certain challenge has been correctly solved.</p>
+<canvas id="Sessionresultsbychallenge" ></canvas><script>
+  var chart = new Chart(Sessionresultsbychallenge, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['2020-10-28','2020-10-29','2020-10-30','2020-10-31','2020-11-01','2020-11-02','2020-11-03','2020-11-04','2020-11-05','2020-11-06','2020-11-07','2020-11-08','2020-11-09','2020-11-10','2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13',],      datasets: [
-{label: 'ERROR', backgroundColor: '#f06779', data: [0,4,0,0,0,0,0,0,180,6,19,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,1,0,0,0,0,0,2,63,4,6,1,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [4,2,0,0,0,0,0,49,610,5,53,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]},]},
+      labels: ['check$1',],      datasets: [
+{label: 'solved', backgroundColor: '#93e388', data: [29,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [25,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -233,15 +246,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Session results by sub-challenge</h3>
-<p>The number of sessions in which a certain sub-challenge has been correctly solved.</p>
-<canvas id="Sessionresultsbysubchallenge" ></canvas><script>
-  var chart = new Chart(Sessionresultsbysubchallenge, {
+</script><h3>Model entries over time</h3>
+<p>The number of model entries by date, classified by type and result. Considers commands other than challenges.</p>
+<canvas id="Modelentriesovertime" ></canvas><script>
+  var chart = new Chart(Modelentriesovertime, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['check$1',],      datasets: [
-{label: 'solved', backgroundColor: '#93e388', data: [29,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [25,]},]},
+      labels: ['2020-10-28','2020-10-29','2020-10-30','2020-10-31','2020-11-01','2020-11-02','2020-11-03','2020-11-04','2020-11-05','2020-11-06','2020-11-07','2020-11-08','2020-11-09','2020-11-10','2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13','2020-12-14','2020-12-15','2020-12-16','2020-12-17','2020-12-18','2020-12-19',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [,1,,,,,,2,63,4,6,1,,,,,,,,,,,2,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [4,2,,,,,,49,610,5,53,,,,,,,,,,,,,,,,,7,,,,,,,,,,,,,,,,,,,,,,,,,,]},{label: 'ERROR', backgroundColor: '#f06779', data: [,4,,,,,,,180,6,19,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]},{label: 'SHARE', backgroundColor: 'null', data: [1,,,,,,,,34,3,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -282,7 +295,167 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,0,15,37,8,9,4,0,2,1,2,2,0,0,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [49,162,177,157,50,56,22,32,6,2,10,1,2,2,1,0,1,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [,,,15,37,8,9,4,,2,1,2,2,,,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [49,162,177,157,50,56,22,32,6,2,10,1,2,2,1,,1,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Number of binary temporal operators</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring binary temporal operators, grouped by result..</p>
+<h4>check$1</h4>
+<canvas id="Numberofbinarytemporaloperatorscheck1" ></canvas><script>
+  var chart = new Chart(Numberofbinarytemporaloperatorscheck1, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},{label: 'SAT', backgroundColor: '#f0e878', data: [730,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Max nested temporal operator level</h3>
+<p>The number of executions, for a particular challenge, by the maximum nested level temporal operators, grouped by result.</p>
+<h4>check$1</h4>
+<canvas id="Maxnestedtemporaloperatorlevelcheck1" ></canvas><script>
+  var chart = new Chart(Maxnestedtemporaloperatorlevelcheck1, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},{label: 'SAT', backgroundColor: '#f0e878', data: [730,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Number of lone/one quantifiers</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring lone/one quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
+<h4>check$1</h4>
+<canvas id="Numberofloneonequantifierscheck1" ></canvas><script>
+  var chart = new Chart(Numberofloneonequantifierscheck1, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1','2',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [80,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [711,16,3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Max nested quantifier level</h3>
+<p>The number of executions, for a particular challenge, by the maximum nested level of first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
+<h4>check$1</h4>
+<canvas id="Maxnestedquantifierlevelcheck1" ></canvas><script>
+  var chart = new Chart(Maxnestedquantifierlevelcheck1, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1','2','3',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [,59,20,1,]},{label: 'SAT', backgroundColor: '#f0e878', data: [134,450,122,24,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -393,46 +566,6 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Number of binary temporal operators</h3>
-<p>The number of executions, for a particular challenge, by the number of occurring binary temporal operators, grouped by result..</p>
-<h4>check$1</h4>
-<canvas id="Numberofbinarytemporaloperatorscheck1" ></canvas><script>
-  var chart = new Chart(Numberofbinarytemporaloperatorscheck1, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},{label: 'SAT', backgroundColor: '#f0e878', data: [730,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
 </script><h3>Number of quantifiers</h3>
 <p>The number of executions, for a particular challenge, by the number of occurring first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
 <h4>check$1</h4>
@@ -442,7 +575,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [0,3,3,14,31,8,8,4,2,0,0,2,2,1,2,0,0,0,0,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [134,120,146,116,68,61,19,31,11,3,3,1,7,4,2,1,1,1,0,0,1,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [,3,3,14,31,8,8,4,2,,,2,2,1,2,,,,,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [134,120,146,116,68,61,19,31,11,3,3,1,7,4,2,1,1,1,,,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -483,126 +616,6 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    data: {
       labels: ['0','1','2',],      datasets: [
 {label: 'UNSAT', backgroundColor: '#93e388', data: [73,3,4,]},{label: 'SAT', backgroundColor: '#f0e878', data: [685,21,24,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h3>Max nested temporal operator level</h3>
-<p>The number of executions, for a particular challenge, by the maximum nested level temporal operators, grouped by result.</p>
-<h4>check$1</h4>
-<canvas id="Maxnestedtemporaloperatorlevelcheck1" ></canvas><script>
-  var chart = new Chart(Maxnestedtemporaloperatorlevelcheck1, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [80,]},{label: 'SAT', backgroundColor: '#f0e878', data: [730,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h3>Number of lone/one quantifiers</h3>
-<p>The number of executions, for a particular challenge, by the number of occurring lone/one quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
-<h4>check$1</h4>
-<canvas id="Numberofloneonequantifierscheck1" ></canvas><script>
-  var chart = new Chart(Numberofloneonequantifierscheck1, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1','2',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [80,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [711,16,3,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h3>Max nested quantifier level</h3>
-<p>The number of executions, for a particular challenge, by the maximum nested level of first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
-<h4>check$1</h4>
-<canvas id="Maxnestedquantifierlevelcheck1" ></canvas><script>
-  var chart = new Chart(Maxnestedquantifierlevelcheck1, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1','2','3',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [0,59,20,1,]},{label: 'SAT', backgroundColor: '#f0e878', data: [134,450,122,24,]},]},
    options: {
 	tooltips: {
       enabled: true,

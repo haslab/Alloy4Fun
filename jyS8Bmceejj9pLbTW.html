@@ -9,65 +9,52 @@
 </head>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-<h1>jyS8Bmceejj9pLbTW (2020-12-14)</h1>
+<h1>jyS8Bmceejj9pLbTW (2020-12-19)</h1>
 <h2>Meta-data</h2>
 <dl><dt>Challenge name</dt><dd>unknown</dd>
 <dt>Creation time</dt><dd>2019-10-17</dd>
 <dt># sub-challenges</dt><dd>4</dd>
 <dt>Metric catalog</dt><dd>Example metric catalog</dd>
 </dl><h2>Overall metric statistics</h2>
-Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total model entries</dt><dd>503</dd>
-<dt>Total executions</dt><dd>499</dd>
+Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total model entries</dt><dd>502</dd>
+<dt>Total executions</dt><dd>498</dd>
 <dt>Total shares</dt><dd>4</dd>
-<dt>Total error messages</dt><dd>154</dd>
+<dt>Total error messages</dt><dd>153</dd>
 <dt>Total warning messages</dt><dd>22</dd>
-<dt>Total solutions</dt><dd>0</d>
-<dt>Total sessions</dt><dd>44</d>
-<dt>Rejected due to server errors</dt><dd>0</d>
+<dt>Total solutions</dt><dd>345</d>
+<dt>Total sessions</dt><dd>45</d>
+<dt>Timed out re-executions</dt><dd>0</d>
+<dt>Rejected due to server errors</dt><dd>2</d>
+<dt>Inconsistent result reports</dt><dd>0</d>
+<dt>Inconsistent message reports</dt><dd>0</d>
 <dt>Total instance entries</dt><dd>0</dd>
 <dt>Total link entries</dt><dd>5</dd>
 </dl><h2>Scalar metrics</h2>
-<dl><dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared. A session is a full branch of the derivation tree.">Number of shared sessions</dt><dd>3</dd>
-<dt data-toggle="tooltip" title="Counts the number Alloy runtime errors (in contrast to syntax errors). Counts all sat executions, may refer to commands other than those of the sub-challenges.">Alloy runtime errors</dt><dd>1</dd>
-<dt data-toggle="tooltip" title="Counts the number of incorrect executions. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions</dt><dd>199</dd>
-<dt data-toggle="tooltip" title="Counts the number of correct executions. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions</dt><dd>145</dd>
-<dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions with warnings</dt><dd>15</dd>
-<dt data-toggle="tooltip" title="The size of the longest session. A session is a full branch of the derivation tree.">Longest session</dt><dd>61</dd>
-<dt data-toggle="tooltip" title="Counts the number of shared models. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Shared models</dt><dd>4</dd>
-<dt data-toggle="tooltip" title="Counts the number of correct executions that produced warning messages. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions with warnings</dt><dd>3</dd>
+<dl><dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared.">Number of shared sessions</dt><dd>3</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models.">Shared models (model)</dt><dd>4</dd>
+<dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages.">Shares with warnings</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="Counts the number Alloy runtime errors (in contrast to parsing errors).">Alloy runtime errors</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models that had errors.">Shared errored models</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="Counts the number Alloy parsing errors (in contrast to runtime errors).">Alloy static errors</dt><dd>153</dd>
+<dt data-toggle="tooltip" title="Counts the number of models from shared instances.">Shared models (instance)</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="The average session length.">Average session</dt><dd>11.133333333333333</dd>
+<dt data-toggle="tooltip" title="The size of the longest session.">Longest session</dt><dd>60</dd>
+<dt data-toggle="tooltip" title="Counts the number of satisfiable executions that produced warning messages. Considers commands other than challenges.">Sat executions with warnings</dt><dd>15</dd>
+<dt data-toggle="tooltip" title="Counts the number of executed models that had errors. Considers commands other than challenges.">Executed errored models</dt><dd>153</dd>
+<dt data-toggle="tooltip" title="Counts the number of unsatisfiable executions. Considers commands other than challenges.">Unsat executions</dt><dd>200</dd>
+<dt data-toggle="tooltip" title="Counts the number of unsatisfiable executions that produced warning messages. Considers commands other than the challenges.">Unsat executions with warnings</dt><dd>3</dd>
+<dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages.">Errored executions with warnings</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="The average of session unsatisfiable execution ratio.">Average % unsatisfiable</dt><dd>0.4196477247768496</dd>
+<dt data-toggle="tooltip" title="Counts the number of satisfiable executions. Considers commands other than challenges.">Sat executions</dt><dd>145</dd>
 </dl><h2>Overall metrics</h2>
 <h3>Sessions by length</h3>
-<p>The number of sessions with a certain length. A session is a full branch of the derivation tree.</p>
+<p>The number of sessions with a certain length.</p>
 <canvas id="Sessionsbylength" width="1400"></canvas><script>
   var chart = new Chart(Sessionsbylength, {
    type: 'bar',
    data: {
       labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60',],      datasets: [
-{backgroundColor: '#6c79ad', data: [10,2,6,2,1,2,0,3,1,0,2,2,1,0,1,0,1,2,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,]},]},
-   options: {
-      responsive: false,
-      legend: {
-         display: false
-      },
-      scales: {
-         xAxes: [{
-                ticks: {
-                    autoSkip: true,
-                    minRotation:0,
-                    maxRotation:20,
-                }
-            }],
-      }
-   }
-});
-</script><h3>Sessions by # of solved sub-challenges</h3>
-<p>The number of sessions with a certain number of sub-challenges correctly solved. A session is a full branch of the derivation tree.</p>
-<canvas id="Sessionsbyofsolvedsubchallenges" width="1400"></canvas><script>
-  var chart = new Chart(Sessionsbyofsolvedsubchallenges, {
-   type: 'bar',
-   data: {
-      labels: ['0','1','2','3','4',],      datasets: [
-{backgroundColor: '#6c79ad', data: [13,5,7,7,12,]},]},
+{backgroundColor: '#6c79ad', data: [11,2,6,2,1,2,,3,1,,2,2,1,,1,,1,2,1,,,1,,,,,,,,,,1,,1,1,,,,1,,,1,,,,,,,,,,,,,,,,,,1,]},]},
    options: {
       responsive: false,
       legend: {
@@ -85,13 +72,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h3>Warnings by type</h3>
-<p>The number of warnings by normalized message. Each entry may throw multiple warning messages.</p>
+<p>The number of warnings by normalized message.</p>
 <canvas id="Warningsbytype" width="1400"></canvas><script>
   var chart = new Chart(Warningsbytype, {
    type: 'bar',
    data: {
-      labels: ['Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}','<: is irrelevant because the result is always empty. Left type = {_} Right type = {_}','This variable is unused.','Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}','^ <(this/Component <: position);(this/Robot <: position);> is redundant since its domain and range are disjoint: {this/Robot->this/Position, this/Component->this/Position}','& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}','The join operation here always yields an empty set. Left type = {_} Right type = {_}',],      datasets: [
-{backgroundColor: '#6c79ad', data: [1,2,2,9,1,4,3,]},]},
+      labels: ['Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}','<: is irrelevant because the result is always empty. Left type = {_} Right type = {_}','This variable is unused.','Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}','& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}','The join operation here always yields an empty set. Left type = {_} Right type = {_}','^_ is redundant since its domain and range are disjoint: {_}',],      datasets: [
+{backgroundColor: '#6c79ad', data: [1,2,2,9,4,3,1,]},]},
    options: {
       responsive: false,
       legend: {
@@ -108,14 +95,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Entries over time</h3>
-<p>The number of entries by date. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
-<canvas id="Entriesovertime" width="1400"></canvas><script>
-  var chart = new Chart(Entriesovertime, {
+</script><h3>Sessions by # of solved challenges</h3>
+<p>The number of sessions with a certain number of challenges correctly solved.</p>
+<canvas id="Sessionsbyofsolvedchallenges" width="1400"></canvas><script>
+  var chart = new Chart(Sessionsbyofsolvedchallenges, {
    type: 'bar',
    data: {
-      labels: ['2019-10-17','2019-10-18','2019-10-19','2019-10-20','2019-10-21','2019-10-22','2019-10-23','2019-10-24','2019-10-25','2019-10-26','2019-10-27','2019-10-28','2019-10-29','2019-10-30','2019-10-31','2019-11-01','2019-11-02','2019-11-03','2019-11-04','2019-11-05','2019-11-06','2019-11-07','2019-11-08','2019-11-09','2019-11-10','2019-11-11','2019-11-12','2019-11-13','2019-11-14','2019-11-15','2019-11-16','2019-11-17','2019-11-18','2019-11-19','2019-11-20','2019-11-21','2019-11-22','2019-11-23','2019-11-24','2019-11-25','2019-11-26','2019-11-27','2019-11-28','2019-11-29','2019-11-30','2019-12-01','2019-12-02','2019-12-03','2019-12-04','2019-12-05','2019-12-06','2019-12-07','2019-12-08','2019-12-09','2019-12-10','2019-12-11','2019-12-12','2019-12-13','2019-12-14','2019-12-15','2019-12-16','2019-12-17','2019-12-18','2019-12-19','2019-12-20','2019-12-21','2019-12-22','2019-12-23','2019-12-24','2019-12-25','2019-12-26','2019-12-27','2019-12-28','2019-12-29','2019-12-30','2019-12-31','2020-01-01','2020-01-02','2020-01-03','2020-01-04','2020-01-05','2020-01-06','2020-01-07','2020-01-08','2020-01-09','2020-01-10','2020-01-11','2020-01-12','2020-01-13','2020-01-14','2020-01-15','2020-01-16','2020-01-17','2020-01-18','2020-01-19','2020-01-20','2020-01-21','2020-01-22','2020-01-23','2020-01-24','2020-01-25','2020-01-26','2020-01-27','2020-01-28','2020-01-29','2020-01-30','2020-01-31','2020-02-01','2020-02-02','2020-02-03','2020-02-04','2020-02-05','2020-02-06','2020-02-07','2020-02-08','2020-02-09','2020-02-10','2020-02-11','2020-02-12','2020-02-13','2020-02-14','2020-02-15','2020-02-16','2020-02-17','2020-02-18','2020-02-19','2020-02-20','2020-02-21','2020-02-22','2020-02-23','2020-02-24','2020-02-25','2020-02-26','2020-02-27','2020-02-28','2020-02-29','2020-03-01','2020-03-02','2020-03-03','2020-03-04','2020-03-05','2020-03-06','2020-03-07','2020-03-08','2020-03-09','2020-03-10','2020-03-11','2020-03-12','2020-03-13','2020-03-14','2020-03-15','2020-03-16','2020-03-17','2020-03-18','2020-03-19','2020-03-20','2020-03-21','2020-03-22','2020-03-23','2020-03-24','2020-03-25','2020-03-26','2020-03-27','2020-03-28','2020-03-29','2020-03-30','2020-03-31','2020-04-01','2020-04-02','2020-04-03','2020-04-04','2020-04-05','2020-04-06','2020-04-07','2020-04-08','2020-04-09','2020-04-10','2020-04-11','2020-04-12','2020-04-13','2020-04-14','2020-04-15','2020-04-16','2020-04-17','2020-04-18','2020-04-19','2020-04-20','2020-04-21','2020-04-22','2020-04-23','2020-04-24','2020-04-25','2020-04-26','2020-04-27','2020-04-28','2020-04-29','2020-04-30','2020-05-01','2020-05-02','2020-05-03','2020-05-04','2020-05-05','2020-05-06','2020-05-07','2020-05-08','2020-05-09','2020-05-10','2020-05-11','2020-05-12','2020-05-13','2020-05-14','2020-05-15','2020-05-16','2020-05-17','2020-05-18','2020-05-19','2020-05-20','2020-05-21','2020-05-22','2020-05-23','2020-05-24','2020-05-25','2020-05-26','2020-05-27','2020-05-28','2020-05-29','2020-05-30','2020-05-31','2020-06-01','2020-06-02','2020-06-03','2020-06-04','2020-06-05','2020-06-06','2020-06-07','2020-06-08','2020-06-09','2020-06-10','2020-06-11','2020-06-12','2020-06-13','2020-06-14','2020-06-15','2020-06-16','2020-06-17','2020-06-18','2020-06-19','2020-06-20','2020-06-21','2020-06-22','2020-06-23','2020-06-24','2020-06-25','2020-06-26','2020-06-27','2020-06-28','2020-06-29','2020-06-30','2020-07-01','2020-07-02','2020-07-03','2020-07-04','2020-07-05','2020-07-06','2020-07-07','2020-07-08','2020-07-09','2020-07-10','2020-07-11','2020-07-12','2020-07-13','2020-07-14','2020-07-15','2020-07-16','2020-07-17','2020-07-18','2020-07-19','2020-07-20','2020-07-21','2020-07-22','2020-07-23','2020-07-24','2020-07-25','2020-07-26','2020-07-27','2020-07-28','2020-07-29','2020-07-30','2020-07-31','2020-08-01','2020-08-02','2020-08-03','2020-08-04','2020-08-05','2020-08-06','2020-08-07','2020-08-08','2020-08-09','2020-08-10','2020-08-11','2020-08-12','2020-08-13','2020-08-14','2020-08-15','2020-08-16','2020-08-17','2020-08-18','2020-08-19','2020-08-20','2020-08-21','2020-08-22','2020-08-23','2020-08-24','2020-08-25','2020-08-26','2020-08-27','2020-08-28','2020-08-29','2020-08-30','2020-08-31','2020-09-01','2020-09-02','2020-09-03','2020-09-04','2020-09-05','2020-09-06','2020-09-07','2020-09-08','2020-09-09','2020-09-10','2020-09-11','2020-09-12','2020-09-13','2020-09-14','2020-09-15','2020-09-16','2020-09-17','2020-09-18','2020-09-19','2020-09-20','2020-09-21','2020-09-22','2020-09-23','2020-09-24','2020-09-25','2020-09-26','2020-09-27','2020-09-28','2020-09-29','2020-09-30','2020-10-01','2020-10-02','2020-10-03','2020-10-04','2020-10-05','2020-10-06','2020-10-07','2020-10-08','2020-10-09','2020-10-10','2020-10-11','2020-10-12','2020-10-13','2020-10-14','2020-10-15','2020-10-16','2020-10-17','2020-10-18','2020-10-19','2020-10-20','2020-10-21','2020-10-22','2020-10-23','2020-10-24','2020-10-25','2020-10-26','2020-10-27','2020-10-28','2020-10-29','2020-10-30','2020-10-31','2020-11-01','2020-11-02','2020-11-03','2020-11-04','2020-11-05','2020-11-06','2020-11-07','2020-11-08','2020-11-09','2020-11-10','2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13',],      datasets: [
-{backgroundColor: '#6c79ad', data: [48,60,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,45,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,5,27,0,18,0,3,0,72,21,0,0,0,22,0,78,0,0,0,0,0,0,0,0,45,0,0,0,0,0,0,0,0,0,]},]},
+      labels: ['0','1','2','3','4',],      datasets: [
+{backgroundColor: '#6c79ad', data: [14,5,7,7,12,]},]},
    options: {
       responsive: false,
       legend: {
@@ -138,8 +125,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Errorsbytype, {
    type: 'bar',
    data: {
-      labels: [' This name cannot be resolved; its relevant type does not intersect with any of the following candidates: field this/Component <: position field this/Robot <: position','Sig "ordering/Ord" is not bound to a legal value during translation. ',' This name is ambiguous due to multiple matches: field this/Component <: position field this/Robot <: position','Name cannot be resolved; possible incorrect function/predicate call; perhaps you used(_) when you should have used [ ]  This cannot be a correct call to fun integer/nexts. The parameters are _: {_} so the arguments cannot be   c(_)  This cannot be a correct call to fun ordering/nexts. The parameters are _: {_} so the arguments cannot be   c(_) ','This must be a unary set, but instead it has the following possible type(s): {this/Robot->this/Position, this/Component->this/Position}','There are 1 possible tokens that can appear here: ] ','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','This must be a formula expression. Instead, it has the following possible type(s): {this/Robot, this/Component}','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}',' This name is ambiguous due to multiple matches: fun integer/next fun ordering/next','There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','This must be a formula expression. Instead, it has the following possible type(s): {_}','There are 8 possible tokens that can appear here: NAME disj exh part private seq this var ','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 1 possible tokens that can appear here: ) ','This must be a unary set, but instead it has the following possible type(s): {_}','!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','Name cannot be resolved; possible incorrect function/predicate call; perhaps you used(_) when you should have used [ ]  This cannot be a correct call to pred _. The parameters are _: {_}   n2: {_} so the arguments cannot be   <this/Component .(_) .(_);this/Component .(_) .(_);>(_)   this/Component .(_)(_)  This cannot be a correct call to pred _. The parameters are _: {_}   e2: {_} so the arguments cannot be   <this/Component .(_) .(_);this/Component .(_) .(_);>(_)   this/Component .(_)(_) ','This must be a unary set, but instead it has the following possible type(s): {this/Robot->this/Robot, this/Robot->this/Component, this/Component->this/Robot, this/Component->this/Component}','^ can be used only with a binary relation. Instead, its possible type(s) are: {_}','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','The name _ cannot be found.','& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This must be an integer expression. Instead, it has the following possible type(s): {_}','This must be a set or relation. Instead, it has the following possible type(s): {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ ',' This name is ambiguous due to multiple matches: fun integer/prev fun ordering/prev','This must be a formula expression. Instead, it has the following possible type(s): {this/Robot->this/Robot, this/Robot->this/Component, this/Component->this/Robot, this/Component->this/Component}','* can be used only with a binary relation. Instead, its possible type(s) are: {_}','Name cannot be resolved; possible incorrect function/predicate call; perhaps you used(_) when you should have used [ ]  This cannot be a correct call to fun integer/prevs. The parameters are _: {_} so the arguments cannot be   c .(_)(_)  This cannot be a correct call to fun ordering/prevs. The parameters are _: {_} so the arguments cannot be   c .(_)(_) ','There are 3 possible tokens that can appear here: ,  { | ','Name cannot be resolved; possible incorrect function/predicate call; perhaps you used(_) when you should have used [ ]  This cannot be a correct call to fun integer/prevs. The parameters are _: {_} so the arguments cannot be empty.  This cannot be a correct call to fun ordering/prevs. The parameters are _: {_} so the arguments cannot be empty. ',],      datasets: [
-{backgroundColor: '#6c79ad', data: [1,1,15,1,4,2,4,3,1,9,2,11,2,1,1,2,4,1,2,2,5,19,16,1,8,15,9,1,2,1,3,3,1,1,]},]},
+      labels: ['Name cannot be resolved; possible incorrect function/predicate call; perhaps you used(_) when you should have used [ ]  _ The parameters are  _ so the arguments cannot be empty.  _ The parameters are  _ so the arguments cannot be empty. ','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','There are 1 possible tokens that can appear here: ] ','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','Name cannot be resolved; possible incorrect function/predicate call; perhaps you used(_) when you should have used [ ]  _ The parameters are  _ so the arguments cannot be  _  This cannot be a correct call to _ The parameters are  _ so the arguments cannot be  _ ','This must be a formula expression. Instead, it has the following possible type(s): {_}','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 8 possible tokens that can appear here: NAME disj exh part private seq this var ','This must be a unary set, but instead it has the following possible type(s): {_}','!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','There are 1 possible tokens that can appear here: ) ','^ can be used only with a binary relation. Instead, its possible type(s) are: {_}','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','The name _ cannot be found.','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This must be an integer expression. Instead, it has the following possible type(s): {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','This must be a set or relation. Instead, it has the following possible type(s): {_}',' This name is ambiguous due to multiple matches: _ _ ','There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ ','* can be used only with a binary relation. Instead, its possible type(s) are: {_}','Name cannot be resolved; possible incorrect function/predicate call; perhaps you used(_) when you should have used [ ]  _ The parameters are  _   _ so the arguments cannot be  _   _  This cannot be a correct call to _ The parameters are  _   _ so the arguments cannot be  _   _ ','There are 3 possible tokens that can appear here: ,  { | ',' This name cannot be resolved; its relevant type does not intersect with any of the following candidates: _ _ ',],      datasets: [
+{backgroundColor: '#6c79ad', data: [1,4,2,1,2,4,15,1,2,8,4,1,2,5,16,19,1,8,9,15,26,1,3,1,1,1,]},]},
    options: {
       responsive: false,
       legend: {
@@ -156,16 +143,40 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
+</script><h3>Models by number of warnings</h3>
+<p>The number of entries with a certain number of warning messages.</p>
+<canvas id="Modelsbynumberofwarnings" width="1400"></canvas><script>
+  var chart = new Chart(Modelsbynumberofwarnings, {
+   type: 'bar',
+   data: {
+      labels: ['0','1','2',],      datasets: [
+{backgroundColor: '#6c79ad', data: [484,14,4,]},]},
+   options: {
+      responsive: false,
+      legend: {
+         display: false
+      },
+      scales: {
+         xAxes: [{
+                ticks: {
+                    autoSkip: true,
+                    minRotation:0,
+                    maxRotation:20,
+                }
+            }],
+      }
+   }
+});
 </script><h2>Overall metrics, classified</h2>
-<h3>Execution results by sub-challenge</h3>
-<p>The number of successful executions by sub-challenge, classified by result. Errored executions are not considered.</p>
-<canvas id="Executionresultsbysubchallenge" ></canvas><script>
-  var chart = new Chart(Executionresultsbysubchallenge, {
+<h3>Execution results by challenge</h3>
+<p>The number of executions by challenge, classified by result. Errored executions are not considered.</p>
+<canvas id="Executionresultsbychallenge" ></canvas><script>
+  var chart = new Chart(Executionresultsbychallenge, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['Inv1OK','Inv2OK','Inv3OK','Inv4OK',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [49,33,38,25,]},{label: 'SAT', backgroundColor: '#f0e878', data: [36,62,20,81,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [49,33,38,25,]},{label: 'SAT', backgroundColor: '#f0e878', data: [37,62,20,81,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -196,15 +207,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Executions over time classified</h3>
-<p>The number of entries by date, classified by result. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
-<canvas id="Executionsovertimeclassified" ></canvas><script>
-  var chart = new Chart(Executionsovertimeclassified, {
+</script><h3>Session results by challenge</h3>
+<p>The number of sessions in which a certain challenge has been correctly solved.</p>
+<canvas id="Sessionresultsbychallenge" ></canvas><script>
+  var chart = new Chart(Sessionresultsbychallenge, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['2019-10-17','2019-10-18','2019-10-19','2019-10-20','2019-10-21','2019-10-22','2019-10-23','2019-10-24','2019-10-25','2019-10-26','2019-10-27','2019-10-28','2019-10-29','2019-10-30','2019-10-31','2019-11-01','2019-11-02','2019-11-03','2019-11-04','2019-11-05','2019-11-06','2019-11-07','2019-11-08','2019-11-09','2019-11-10','2019-11-11','2019-11-12','2019-11-13','2019-11-14','2019-11-15','2019-11-16','2019-11-17','2019-11-18','2019-11-19','2019-11-20','2019-11-21','2019-11-22','2019-11-23','2019-11-24','2019-11-25','2019-11-26','2019-11-27','2019-11-28','2019-11-29','2019-11-30','2019-12-01','2019-12-02','2019-12-03','2019-12-04','2019-12-05','2019-12-06','2019-12-07','2019-12-08','2019-12-09','2019-12-10','2019-12-11','2019-12-12','2019-12-13','2019-12-14','2019-12-15','2019-12-16','2019-12-17','2019-12-18','2019-12-19','2019-12-20','2019-12-21','2019-12-22','2019-12-23','2019-12-24','2019-12-25','2019-12-26','2019-12-27','2019-12-28','2019-12-29','2019-12-30','2019-12-31','2020-01-01','2020-01-02','2020-01-03','2020-01-04','2020-01-05','2020-01-06','2020-01-07','2020-01-08','2020-01-09','2020-01-10','2020-01-11','2020-01-12','2020-01-13','2020-01-14','2020-01-15','2020-01-16','2020-01-17','2020-01-18','2020-01-19','2020-01-20','2020-01-21','2020-01-22','2020-01-23','2020-01-24','2020-01-25','2020-01-26','2020-01-27','2020-01-28','2020-01-29','2020-01-30','2020-01-31','2020-02-01','2020-02-02','2020-02-03','2020-02-04','2020-02-05','2020-02-06','2020-02-07','2020-02-08','2020-02-09','2020-02-10','2020-02-11','2020-02-12','2020-02-13','2020-02-14','2020-02-15','2020-02-16','2020-02-17','2020-02-18','2020-02-19','2020-02-20','2020-02-21','2020-02-22','2020-02-23','2020-02-24','2020-02-25','2020-02-26','2020-02-27','2020-02-28','2020-02-29','2020-03-01','2020-03-02','2020-03-03','2020-03-04','2020-03-05','2020-03-06','2020-03-07','2020-03-08','2020-03-09','2020-03-10','2020-03-11','2020-03-12','2020-03-13','2020-03-14','2020-03-15','2020-03-16','2020-03-17','2020-03-18','2020-03-19','2020-03-20','2020-03-21','2020-03-22','2020-03-23','2020-03-24','2020-03-25','2020-03-26','2020-03-27','2020-03-28','2020-03-29','2020-03-30','2020-03-31','2020-04-01','2020-04-02','2020-04-03','2020-04-04','2020-04-05','2020-04-06','2020-04-07','2020-04-08','2020-04-09','2020-04-10','2020-04-11','2020-04-12','2020-04-13','2020-04-14','2020-04-15','2020-04-16','2020-04-17','2020-04-18','2020-04-19','2020-04-20','2020-04-21','2020-04-22','2020-04-23','2020-04-24','2020-04-25','2020-04-26','2020-04-27','2020-04-28','2020-04-29','2020-04-30','2020-05-01','2020-05-02','2020-05-03','2020-05-04','2020-05-05','2020-05-06','2020-05-07','2020-05-08','2020-05-09','2020-05-10','2020-05-11','2020-05-12','2020-05-13','2020-05-14','2020-05-15','2020-05-16','2020-05-17','2020-05-18','2020-05-19','2020-05-20','2020-05-21','2020-05-22','2020-05-23','2020-05-24','2020-05-25','2020-05-26','2020-05-27','2020-05-28','2020-05-29','2020-05-30','2020-05-31','2020-06-01','2020-06-02','2020-06-03','2020-06-04','2020-06-05','2020-06-06','2020-06-07','2020-06-08','2020-06-09','2020-06-10','2020-06-11','2020-06-12','2020-06-13','2020-06-14','2020-06-15','2020-06-16','2020-06-17','2020-06-18','2020-06-19','2020-06-20','2020-06-21','2020-06-22','2020-06-23','2020-06-24','2020-06-25','2020-06-26','2020-06-27','2020-06-28','2020-06-29','2020-06-30','2020-07-01','2020-07-02','2020-07-03','2020-07-04','2020-07-05','2020-07-06','2020-07-07','2020-07-08','2020-07-09','2020-07-10','2020-07-11','2020-07-12','2020-07-13','2020-07-14','2020-07-15','2020-07-16','2020-07-17','2020-07-18','2020-07-19','2020-07-20','2020-07-21','2020-07-22','2020-07-23','2020-07-24','2020-07-25','2020-07-26','2020-07-27','2020-07-28','2020-07-29','2020-07-30','2020-07-31','2020-08-01','2020-08-02','2020-08-03','2020-08-04','2020-08-05','2020-08-06','2020-08-07','2020-08-08','2020-08-09','2020-08-10','2020-08-11','2020-08-12','2020-08-13','2020-08-14','2020-08-15','2020-08-16','2020-08-17','2020-08-18','2020-08-19','2020-08-20','2020-08-21','2020-08-22','2020-08-23','2020-08-24','2020-08-25','2020-08-26','2020-08-27','2020-08-28','2020-08-29','2020-08-30','2020-08-31','2020-09-01','2020-09-02','2020-09-03','2020-09-04','2020-09-05','2020-09-06','2020-09-07','2020-09-08','2020-09-09','2020-09-10','2020-09-11','2020-09-12','2020-09-13','2020-09-14','2020-09-15','2020-09-16','2020-09-17','2020-09-18','2020-09-19','2020-09-20','2020-09-21','2020-09-22','2020-09-23','2020-09-24','2020-09-25','2020-09-26','2020-09-27','2020-09-28','2020-09-29','2020-09-30','2020-10-01','2020-10-02','2020-10-03','2020-10-04','2020-10-05','2020-10-06','2020-10-07','2020-10-08','2020-10-09','2020-10-10','2020-10-11','2020-10-12','2020-10-13','2020-10-14','2020-10-15','2020-10-16','2020-10-17','2020-10-18','2020-10-19','2020-10-20','2020-10-21','2020-10-22','2020-10-23','2020-10-24','2020-10-25','2020-10-26','2020-10-27','2020-10-28','2020-10-29','2020-10-30','2020-10-31','2020-11-01','2020-11-02','2020-11-03','2020-11-04','2020-11-05','2020-11-06','2020-11-07','2020-11-08','2020-11-09','2020-11-10','2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [11,10,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,14,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,0,5,0,3,0,20,9,0,0,0,13,0,23,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [24,27,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,14,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,2,6,0,7,0,0,0,26,9,0,0,0,8,0,27,0,0,0,0,0,0,0,0,20,0,0,0,0,0,0,0,0,0,]},{label: 'ERROR', backgroundColor: '#f06779', data: [13,23,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,17,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,8,0,6,0,0,0,26,3,0,0,0,1,0,28,0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0,0,0,]},]},
+      labels: ['Inv1OK','Inv2OK','Inv3OK','Inv4OK',],      datasets: [
+{label: 'solved', backgroundColor: '#93e388', data: [30,23,22,13,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [15,22,23,32,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -235,15 +246,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Session results by sub-challenge</h3>
-<p>The number of sessions in which a certain sub-challenge has been correctly solved.</p>
-<canvas id="Sessionresultsbysubchallenge" ></canvas><script>
-  var chart = new Chart(Sessionresultsbysubchallenge, {
+</script><h3>Model entries over time</h3>
+<p>The number of model entries by date, classified by type and result. Considers commands other than challenges.</p>
+<canvas id="Modelentriesovertime" ></canvas><script>
+  var chart = new Chart(Modelentriesovertime, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['Inv1OK','Inv2OK','Inv3OK','Inv4OK',],      datasets: [
-{label: 'solved', backgroundColor: '#93e388', data: [30,23,22,13,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [14,21,22,31,]},]},
+      labels: ['2019-10-17','2019-10-18','2019-10-19','2019-10-20','2019-10-21','2019-10-22','2019-10-23','2019-10-24','2019-10-25','2019-10-26','2019-10-27','2019-10-28','2019-10-29','2019-10-30','2019-10-31','2019-11-01','2019-11-02','2019-11-03','2019-11-04','2019-11-05','2019-11-06','2019-11-07','2019-11-08','2019-11-09','2019-11-10','2019-11-11','2019-11-12','2019-11-13','2019-11-14','2019-11-15','2019-11-16','2019-11-17','2019-11-18','2019-11-19','2019-11-20','2019-11-21','2019-11-22','2019-11-23','2019-11-24','2019-11-25','2019-11-26','2019-11-27','2019-11-28','2019-11-29','2019-11-30','2019-12-01','2019-12-02','2019-12-03','2019-12-04','2019-12-05','2019-12-06','2019-12-07','2019-12-08','2019-12-09','2019-12-10','2019-12-11','2019-12-12','2019-12-13','2019-12-14','2019-12-15','2019-12-16','2019-12-17','2019-12-18','2019-12-19','2019-12-20','2019-12-21','2019-12-22','2019-12-23','2019-12-24','2019-12-25','2019-12-26','2019-12-27','2019-12-28','2019-12-29','2019-12-30','2019-12-31','2020-01-01','2020-01-02','2020-01-03','2020-01-04','2020-01-05','2020-01-06','2020-01-07','2020-01-08','2020-01-09','2020-01-10','2020-01-11','2020-01-12','2020-01-13','2020-01-14','2020-01-15','2020-01-16','2020-01-17','2020-01-18','2020-01-19','2020-01-20','2020-01-21','2020-01-22','2020-01-23','2020-01-24','2020-01-25','2020-01-26','2020-01-27','2020-01-28','2020-01-29','2020-01-30','2020-01-31','2020-02-01','2020-02-02','2020-02-03','2020-02-04','2020-02-05','2020-02-06','2020-02-07','2020-02-08','2020-02-09','2020-02-10','2020-02-11','2020-02-12','2020-02-13','2020-02-14','2020-02-15','2020-02-16','2020-02-17','2020-02-18','2020-02-19','2020-02-20','2020-02-21','2020-02-22','2020-02-23','2020-02-24','2020-02-25','2020-02-26','2020-02-27','2020-02-28','2020-02-29','2020-03-01','2020-03-02','2020-03-03','2020-03-04','2020-03-05','2020-03-06','2020-03-07','2020-03-08','2020-03-09','2020-03-10','2020-03-11','2020-03-12','2020-03-13','2020-03-14','2020-03-15','2020-03-16','2020-03-17','2020-03-18','2020-03-19','2020-03-20','2020-03-21','2020-03-22','2020-03-23','2020-03-24','2020-03-25','2020-03-26','2020-03-27','2020-03-28','2020-03-29','2020-03-30','2020-03-31','2020-04-01','2020-04-02','2020-04-03','2020-04-04','2020-04-05','2020-04-06','2020-04-07','2020-04-08','2020-04-09','2020-04-10','2020-04-11','2020-04-12','2020-04-13','2020-04-14','2020-04-15','2020-04-16','2020-04-17','2020-04-18','2020-04-19','2020-04-20','2020-04-21','2020-04-22','2020-04-23','2020-04-24','2020-04-25','2020-04-26','2020-04-27','2020-04-28','2020-04-29','2020-04-30','2020-05-01','2020-05-02','2020-05-03','2020-05-04','2020-05-05','2020-05-06','2020-05-07','2020-05-08','2020-05-09','2020-05-10','2020-05-11','2020-05-12','2020-05-13','2020-05-14','2020-05-15','2020-05-16','2020-05-17','2020-05-18','2020-05-19','2020-05-20','2020-05-21','2020-05-22','2020-05-23','2020-05-24','2020-05-25','2020-05-26','2020-05-27','2020-05-28','2020-05-29','2020-05-30','2020-05-31','2020-06-01','2020-06-02','2020-06-03','2020-06-04','2020-06-05','2020-06-06','2020-06-07','2020-06-08','2020-06-09','2020-06-10','2020-06-11','2020-06-12','2020-06-13','2020-06-14','2020-06-15','2020-06-16','2020-06-17','2020-06-18','2020-06-19','2020-06-20','2020-06-21','2020-06-22','2020-06-23','2020-06-24','2020-06-25','2020-06-26','2020-06-27','2020-06-28','2020-06-29','2020-06-30','2020-07-01','2020-07-02','2020-07-03','2020-07-04','2020-07-05','2020-07-06','2020-07-07','2020-07-08','2020-07-09','2020-07-10','2020-07-11','2020-07-12','2020-07-13','2020-07-14','2020-07-15','2020-07-16','2020-07-17','2020-07-18','2020-07-19','2020-07-20','2020-07-21','2020-07-22','2020-07-23','2020-07-24','2020-07-25','2020-07-26','2020-07-27','2020-07-28','2020-07-29','2020-07-30','2020-07-31','2020-08-01','2020-08-02','2020-08-03','2020-08-04','2020-08-05','2020-08-06','2020-08-07','2020-08-08','2020-08-09','2020-08-10','2020-08-11','2020-08-12','2020-08-13','2020-08-14','2020-08-15','2020-08-16','2020-08-17','2020-08-18','2020-08-19','2020-08-20','2020-08-21','2020-08-22','2020-08-23','2020-08-24','2020-08-25','2020-08-26','2020-08-27','2020-08-28','2020-08-29','2020-08-30','2020-08-31','2020-09-01','2020-09-02','2020-09-03','2020-09-04','2020-09-05','2020-09-06','2020-09-07','2020-09-08','2020-09-09','2020-09-10','2020-09-11','2020-09-12','2020-09-13','2020-09-14','2020-09-15','2020-09-16','2020-09-17','2020-09-18','2020-09-19','2020-09-20','2020-09-21','2020-09-22','2020-09-23','2020-09-24','2020-09-25','2020-09-26','2020-09-27','2020-09-28','2020-09-29','2020-09-30','2020-10-01','2020-10-02','2020-10-03','2020-10-04','2020-10-05','2020-10-06','2020-10-07','2020-10-08','2020-10-09','2020-10-10','2020-10-11','2020-10-12','2020-10-13','2020-10-14','2020-10-15','2020-10-16','2020-10-17','2020-10-18','2020-10-19','2020-10-20','2020-10-21','2020-10-22','2020-10-23','2020-10-24','2020-10-25','2020-10-26','2020-10-27','2020-10-28','2020-10-29','2020-10-30','2020-10-31','2020-11-01','2020-11-02','2020-11-03','2020-11-04','2020-11-05','2020-11-06','2020-11-07','2020-11-08','2020-11-09','2020-11-10','2020-11-11','2020-11-12','2020-11-13','2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13','2020-12-14','2020-12-15','2020-12-16','2020-12-17','2020-12-18','2020-12-19',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [11,10,,,,5,,,,,,,,,,,,,,,,,,,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,14,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13,,5,,3,,20,9,,,,13,,23,,,,,,,,,10,,,,,,,,,,,,,,,,]},{label: 'ERROR', backgroundColor: '#f06779', data: [13,23,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,17,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,8,,6,,,,26,3,,,,1,,28,,,,,,,,,15,,,,,,,,,,,,,,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [24,27,,,,7,,,,,,,,,,,,,,,,,,,5,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,14,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,1,,,,,2,6,,7,,,,26,9,,,,8,,27,,,,,,,,,20,,,,,,,,,,,,,1,,,]},{label: 'SHARE', backgroundColor: 'null', data: [2,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -284,7 +295,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['7','8','9','10',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [0,49,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [18,15,2,1,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [,49,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [19,15,2,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -322,7 +333,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['7','8','9','10','11','12','13',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [4,0,29,0,0,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [7,9,43,0,1,0,2,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [4,,29,,,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [7,9,43,,1,,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -360,7 +371,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['7','8','9','10','11','12','13','14',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [0,9,19,9,1,0,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [1,1,7,9,0,0,0,2,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [,9,19,9,1,,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [1,1,7,9,,,,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -398,7 +409,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['8','9','10','11','12','13','14',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,0,4,15,4,2,]},{label: 'SAT', backgroundColor: '#f0e878', data: [3,0,10,27,34,7,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [,,,4,15,4,2,]},{label: 'SAT', backgroundColor: '#f0e878', data: [3,,10,27,34,7,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -438,7 +449,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [49,]},{label: 'SAT', backgroundColor: '#f0e878', data: [36,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [49,]},{label: 'SAT', backgroundColor: '#f0e878', data: [37,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -592,7 +603,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [49,]},{label: 'SAT', backgroundColor: '#f0e878', data: [36,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [49,]},{label: 'SAT', backgroundColor: '#f0e878', data: [37,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -746,7 +757,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [49,]},{label: 'SAT', backgroundColor: '#f0e878', data: [36,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [49,]},{label: 'SAT', backgroundColor: '#f0e878', data: [37,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -900,7 +911,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [11,38,]},{label: 'SAT', backgroundColor: '#f0e878', data: [29,7,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [11,38,]},{label: 'SAT', backgroundColor: '#f0e878', data: [30,7,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -938,7 +949,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [4,29,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [12,47,3,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [4,29,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [12,47,3,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -976,7 +987,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3','4',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [9,17,11,1,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [3,9,6,0,2,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [9,17,11,1,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [3,9,6,,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1014,7 +1025,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [0,18,4,3,]},{label: 'SAT', backgroundColor: '#f0e878', data: [11,63,4,3,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [,18,4,3,]},{label: 'SAT', backgroundColor: '#f0e878', data: [11,63,4,3,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1054,7 +1065,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [49,]},{label: 'SAT', backgroundColor: '#f0e878', data: [36,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [49,]},{label: 'SAT', backgroundColor: '#f0e878', data: [37,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1092,7 +1103,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [33,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [61,0,1,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [33,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [61,,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1168,7 +1179,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [25,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [79,0,2,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [25,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [79,,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1208,7 +1219,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [44,0,5,]},{label: 'SAT', backgroundColor: '#f0e878', data: [36,0,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [44,,5,]},{label: 'SAT', backgroundColor: '#f0e878', data: [37,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1362,7 +1373,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [11,0,38,]},{label: 'SAT', backgroundColor: '#f0e878', data: [29,0,7,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [11,,38,]},{label: 'SAT', backgroundColor: '#f0e878', data: [30,,7,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1400,7 +1411,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3','4','5','6',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [4,0,29,0,0,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [12,0,46,0,1,0,3,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [4,,29,,,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [12,,46,,1,,3,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1438,7 +1449,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3','4','5','6','7','8','9','10',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [9,0,17,0,11,0,1,0,0,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [3,0,9,0,6,0,0,0,0,0,2,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [9,,17,,11,,1,,,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [3,,9,,6,,,,,,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1476,7 +1487,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3','4','5','6',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,18,0,4,0,3,]},{label: 'SAT', backgroundColor: '#f0e878', data: [11,0,61,0,6,0,3,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [,,18,,4,,3,]},{label: 'SAT', backgroundColor: '#f0e878', data: [11,,61,,6,,3,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1516,7 +1527,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [49,0,0,]},{label: 'SAT', backgroundColor: '#f0e878', data: [35,0,1,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [49,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [36,,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -3172,6 +3183,9 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   <div class="list-group collapse show" id="item-mk5AxQYbEse6jJgvo"></div>
 </div>
 </div>
+<a href="#item-XXtP59jThbfWjcjWZ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-XXtP59jThbfWjcjWZ" class="glyphicon glyphicon-minus"></i>XXtP59jThbfWjcjWZ, 2020-12-17T11:16:58 (Inv1OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-XXtP59jThbfWjcjWZ"></div>
 </div>
 </div>
 </div><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

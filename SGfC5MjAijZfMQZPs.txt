@@ -1,4 +1,4 @@
-SGfC5MjAijZfMQZPs (2020-12-14)
+SGfC5MjAijZfMQZPs (2020-12-19)
 
 * Meta-data
 Challenge name: unknown
@@ -7,621 +7,402 @@ Creation time: 2020-11-14
 Metric catalog: Example metric catalog
 
 * Overall metric statistics
-Total model entries: 1139
-Total executions: 1120
+Total model entries: 1140
+Total executions: 1121
 Total shares: 19
 Total error messages: 364
-Total warning messages: 277
-Total solutions: 757
-Total sessions: 43
+Total warning messages: 279
+Total solutions: 758
+Total sessions: 44
+Timed out re-executions: 0
 Rejected due to server errors: 0
+Inconsisistent result reports: 0
+Inconsisistent message reports: 0
 Total instance entries: 0
 Total link entries: 20
 
 * Scalar metrics
-Number of shared sessions: 12
-Alloy runtime errors: 14
-Incorrect executions: 531
-Correct executions: 226
-Shared errored models: 1
-Incorrect executions with warnings: 162
-Longest session: 83
-Shared models: 19
-Correct executions with warnings: 16
+Number of shared sessions	12
+Shared models (model)	19
+Shares with warnings	1
+Alloy runtime errors	14
+Shared errored models	1
+Alloy static errors	349
+Shared models (instance)	0
+Average session	25.295454545454547
+Longest session	82
+Sat executions with warnings	162
+Executed errored models	363
+Unsat executions	532
+Unsat executions with warnings	16
+Errored executions with warnings	5
+Average % unsatisfiable	0.41714963605015215
+Sat executions	226
 
 * Overall metrics
 
 Sessions by length
-1: 2
-2: 3
-3: 1
-4: 0
-5: 0
-6: 1
-7: 1
-8: 1
-9: 1
-10: 0
-11: 0
-12: 1
-13: 2
-14: 0
-15: 2
-16: 2
-17: 1
-18: 2
-19: 0
-20: 1
-21: 0
-22: 0
-23: 1
-24: 1
-25: 1
-26: 0
-27: 1
-28: 4
-29: 1
-30: 0
-31: 2
-32: 0
-33: 0
-34: 0
-35: 0
-36: 2
-37: 0
-38: 1
-39: 1
-40: 0
-41: 0
-42: 0
-43: 0
-44: 0
-45: 0
-46: 0
-47: 1
-48: 1
-49: 0
-50: 0
-51: 0
-52: 0
-53: 1
-54: 0
-55: 0
-56: 0
-57: 0
-58: 0
-59: 0
-60: 0
-61: 0
-62: 0
-63: 0
-64: 0
-65: 0
-66: 1
-67: 0
-68: 0
-69: 0
-70: 0
-71: 0
-72: 1
-73: 0
-74: 0
-75: 0
-76: 0
-77: 0
-78: 0
-79: 1
-80: 0
-81: 0
-82: 1
-
-Sessions by # of solved sub-challenges
-0: 5
-1: 7
-2: 4
-3: 27
+1	3
+2	3
+3	1
+4	0
+5	0
+6	1
+7	1
+8	1
+9	1
+10	0
+11	0
+12	1
+13	2
+14	0
+15	2
+16	2
+17	1
+18	2
+19	0
+20	1
+21	0
+22	0
+23	1
+24	1
+25	1
+26	0
+27	1
+28	4
+29	1
+30	0
+31	2
+32	0
+33	0
+34	0
+35	0
+36	2
+37	0
+38	1
+39	1
+40	0
+41	0
+42	0
+43	0
+44	0
+45	0
+46	0
+47	1
+48	1
+49	0
+50	0
+51	0
+52	0
+53	1
+54	0
+55	0
+56	0
+57	0
+58	0
+59	0
+60	0
+61	0
+62	0
+63	0
+64	0
+65	0
+66	1
+67	0
+68	0
+69	0
+70	0
+71	0
+72	1
+73	0
+74	0
+75	0
+76	0
+77	0
+78	0
+79	1
+80	0
+81	0
+82	1
 
 Warnings by type
-== is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}: 4
-Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}: 6
-- is irrelevant since the right expression is redundant. Parent's relevant type = {_} Left type = {_} Right type = {_}: 5
-<: is irrelevant because the result is always empty. Left type = {_} Right type = {_}: 4
-This variable is unused.: 49
-Subset operator is redundant, because both subexpressions are always empty. Left type = {_} Right type = {_}: 1
-Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}: 23
-Subset operator is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}: 1
-& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}: 19
-Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}: 19
-The join operation here always yields an empty set. Left type = {_} Right type = {_}: 144
-The right expression of -> is irrelevant because the left expression is always empty. Left type = {_} Right type = {_}: 2
+== is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}	4
+- is irrelevant since the right expression is redundant. Parent's relevant type = {_} Left type = {_} Right type = {_}	5
+Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}	6
+<: is irrelevant because the result is always empty. Left type = {_} Right type = {_}	4
+This variable is unused.	49
+Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}	23
+Subset operator is redundant, because both subexpressions are always empty. Left type = {_} Right type = {_}	1
+& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}	19
+Subset operator is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}	1
+Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}	19
+The join operation here always yields an empty set. Left type = {_} Right type = {_}	146
+The right expression of -> is irrelevant because the left expression is always empty. Left type = {_} Right type = {_}	2
 
-Entries over time
-2020-11-14: 1
-2020-11-15: 0
-2020-11-16: 0
-2020-11-17: 0
-2020-11-18: 0
-2020-11-19: 950
-2020-11-20: 14
-2020-11-21: 9
-2020-11-22: 0
-2020-11-23: 26
-2020-11-24: 43
-2020-11-25: 2
-2020-11-26: 17
-2020-11-27: 0
-2020-11-28: 0
-2020-11-29: 0
-2020-11-30: 0
-2020-12-01: 10
-2020-12-02: 6
-2020-12-03: 3
-2020-12-04: 39
-2020-12-05: 0
-2020-12-06: 0
-2020-12-07: 0
-2020-12-08: 0
-2020-12-09: 0
-2020-12-10: 0
-2020-12-11: 0
-2020-12-12: 0
-2020-12-13: 0
+Sessions by # of solved challenges
+0	6
+1	7
+2	4
+3	27
 
 Errors by type
-There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ : 8
-Syntax error at the § character. HEX: \ua7): 1
-There are 1 possible tokens that can appear here: [ : 3
-There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ : 10
-= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}: 2
-The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".: 2
-Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.: 14
-There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ : 1
-There are 1 possible tokens that can appear here: ' : 2
-This must be a formula expression. Instead, it has the following possible type(s): {_}: 77
-There are 8 possible tokens that can appear here: NAME disj exh part private seq this var : 7
-~ can be used only with a binary relation. Instead, its possible type(s) are: {_}: 14
-There are 1 possible tokens that can appear here: ) : 8
-!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}: 12
-There are 3 possible tokens that can appear here: ,  : = : 3
-^ can be used only with a binary relation. Instead, its possible type(s) are: {_}: 1
-in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}: 24
-This expression failed to be typechecked line _ column _ filename=_.als: 7
-The name _ cannot be found.: 45
-This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) : 47
-& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}: 6
-This must be a set or relation. Instead, it has the following possible type(s): {_}: 25
-There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ : 31
-There are 1 possible tokens that can appear here: } : 2
-There are 1 possible tokens that can appear here: = : 1
-There are 1 possible tokens that can appear here: NAME : 1
-There are 3 possible tokens that can appear here: ,  { | : 10
+There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	8
+Syntax error at the § character. HEX: \ua7)	1
+There are 1 possible tokens that can appear here: [ 	3
+There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ 	10
+= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	2
+Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.	14
+The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".	2
+There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	1
+This must be a formula expression. Instead, it has the following possible type(s): {_}	77
+There are 1 possible tokens that can appear here: ' 	2
+~ can be used only with a binary relation. Instead, its possible type(s) are: {_}	14
+There are 8 possible tokens that can appear here: NAME disj exh part private seq this var 	7
+!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	12
+There are 1 possible tokens that can appear here: ) 	8
+There are 3 possible tokens that can appear here: ,  : = 	3
+^ can be used only with a binary relation. Instead, its possible type(s) are: {_}	1
+in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	24
+This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	47
+The name _ cannot be found.	45
+This expression failed to be typechecked line _ column _ filename=_.als	7
+& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	6
+There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	31
+This must be a set or relation. Instead, it has the following possible type(s): {_}	25
+There are 1 possible tokens that can appear here: = 	1
+There are 1 possible tokens that can appear here: } 	2
+There are 1 possible tokens that can appear here: NAME 	1
+There are 3 possible tokens that can appear here: ,  { | 	10
+
+Models by number of warnings
+0	956
+1	109
+2	56
+3	18
+4	1
 
 * Overall metrics, classified
 
-Execution results by sub-challenge
-inv1ok
-	SAT: 211
-	UNSAT: 81
-inv2ok
-	SAT: 117
-	UNSAT: 71
-inv3ok
-	SAT: 203
-	UNSAT: 74
+Execution results by challenge
+m	SAT	UNSAT	
+inv1ok	212	81	
+inv2ok	117	71	
+inv3ok	203	74	
 
-Executions over time classified
-2020-11-14
-	ERROR: 0
-	SAT: 1
-	UNSAT: 0
-2020-11-15
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-11-16
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-11-17
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-11-18
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-11-19
-	ERROR: 326
-	SAT: 459
-	UNSAT: 165
-2020-11-20
-	ERROR: 4
-	SAT: 9
-	UNSAT: 1
-2020-11-21
-	ERROR: 1
-	SAT: 0
-	UNSAT: 8
-2020-11-22
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-11-23
-	ERROR: 6
-	SAT: 15
-	UNSAT: 5
-2020-11-24
-	ERROR: 6
-	SAT: 18
-	UNSAT: 19
-2020-11-25
-	ERROR: 1
-	SAT: 0
-	UNSAT: 1
-2020-11-26
-	ERROR: 4
-	SAT: 8
-	UNSAT: 5
-2020-11-27
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-11-28
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-11-29
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-11-30
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-12-01
-	ERROR: 0
-	SAT: 4
-	UNSAT: 6
-2020-12-02
-	ERROR: 1
-	SAT: 1
-	UNSAT: 4
-2020-12-03
-	ERROR: 0
-	SAT: 0
-	UNSAT: 3
-2020-12-04
-	ERROR: 14
-	SAT: 16
-	UNSAT: 9
-2020-12-05
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-12-06
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-12-07
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-12-08
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-12-09
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-12-10
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-12-11
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-12-12
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
-2020-12-13
-	ERROR: 0
-	SAT: 0
-	UNSAT: 0
+Session results by challenge
+m	solved	unsolved	
+inv1ok	30	14	
+inv2ok	32	12	
+inv3ok	34	10	
 
-Session results by sub-challenge
-inv1ok
-	solved: 30
-	unsolved: 13
-inv2ok
-	solved: 32
-	unsolved: 11
-inv3ok
-	solved: 34
-	unsolved: 9
+Model entries over time
+m	SAT	UNSAT	SHARE	ERROR	
+2020-11-14	1	0	1	0	
+2020-11-15	0	0	0	0	
+2020-11-16	0	0	0	0	
+2020-11-17	0	0	0	0	
+2020-11-18	0	0	0	0	
+2020-11-19	459	165	13	326	
+2020-11-20	9	1	1	4	
+2020-11-21	0	8	1	1	
+2020-11-22	0	0	0	0	
+2020-11-23	15	5	1	6	
+2020-11-24	18	19	0	6	
+2020-11-25	0	1	0	1	
+2020-11-26	8	5	0	4	
+2020-11-27	0	0	0	0	
+2020-11-28	0	0	0	0	
+2020-11-29	0	0	0	0	
+2020-11-30	0	0	0	0	
+2020-12-01	4	6	1	0	
+2020-12-02	1	4	0	1	
+2020-12-03	0	3	1	0	
+2020-12-04	16	9	0	14	
+2020-12-05	0	0	0	0	
+2020-12-06	0	0	0	0	
+2020-12-07	0	0	0	0	
+2020-12-08	0	0	0	0	
+2020-12-09	0	0	0	0	
+2020-12-10	0	0	0	0	
+2020-12-11	0	0	0	0	
+2020-12-12	0	0	0	0	
+2020-12-13	0	0	0	0	
+2020-12-14	0	0	0	0	
+2020-12-15	1	0	0	0	
+2020-12-16	0	0	0	0	
+2020-12-17	0	0	0	0	
+2020-12-18	0	0	0	0	
+2020-12-19	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 
 Size in 10s of nodes
 
 inv1ok
-1
-	SAT: 121
-	UNSAT: 59
-2
-	SAT: 74
-	UNSAT: 10
-3
-	SAT: 14
-	UNSAT: 12
-4
-	SAT: 2
-	UNSAT: 0
+m	SAT	UNSAT	
+1	122	59	
+2	74	10	
+3	14	12	
+4	2	0	
 
 inv2ok
-0
-	SAT: 3
-	UNSAT: 0
-1
-	SAT: 31
-	UNSAT: 9
-2
-	SAT: 78
-	UNSAT: 61
-3
-	SAT: 5
-	UNSAT: 0
-4
-	SAT: 0
-	UNSAT: 1
+m	SAT	UNSAT	
+0	3	0	
+1	31	9	
+2	78	61	
+3	5	0	
+4	0	1	
 
 inv3ok
-1
-	SAT: 2
-	UNSAT: 0
-2
-	SAT: 115
-	UNSAT: 58
-3
-	SAT: 53
-	UNSAT: 7
-4
-	SAT: 27
-	UNSAT: 9
-5
-	SAT: 6
-	UNSAT: 0
+m	SAT	UNSAT	
+1	2	0	
+2	115	58	
+3	53	7	
+4	27	9	
+5	6	0	
 
 Number of binary temporal operators
 
 inv1ok
-0
-	SAT: 211
-	UNSAT: 81
+m	SAT	UNSAT	
+0	212	81	
 
 inv2ok
-0
-	SAT: 117
-	UNSAT: 71
+m	SAT	UNSAT	
+0	117	71	
 
 inv3ok
-0
-	SAT: 203
-	UNSAT: 74
+m	SAT	UNSAT	
+0	203	74	
 
 Max nested temporal operator level
 
 inv1ok
-0
-	SAT: 202
-	UNSAT: 81
-1
-	SAT: 9
-	UNSAT: 0
+m	SAT	UNSAT	
+0	203	81	
+1	9	0	
 
 inv2ok
-0
-	SAT: 117
-	UNSAT: 71
+m	SAT	UNSAT	
+0	117	71	
 
 inv3ok
-0
-	SAT: 203
-	UNSAT: 74
+m	SAT	UNSAT	
+0	203	74	
 
 Number of lone/one quantifiers
 
 inv1ok
-0
-	SAT: 211
-	UNSAT: 81
+m	SAT	UNSAT	
+0	212	81	
 
 inv2ok
-0
-	SAT: 117
-	UNSAT: 71
+m	SAT	UNSAT	
+0	117	71	
 
 inv3ok
-0
-	SAT: 200
-	UNSAT: 74
-1
-	SAT: 3
-	UNSAT: 0
+m	SAT	UNSAT	
+0	200	74	
+1	3	0	
 
 Max nested quantifier level
 
 inv1ok
-0
-	SAT: 47
-	UNSAT: 8
-1
-	SAT: 102
-	UNSAT: 55
-2
-	SAT: 45
-	UNSAT: 18
-3
-	SAT: 17
-	UNSAT: 0
+m	SAT	UNSAT	
+0	48	8	
+1	102	55	
+2	45	18	
+3	17	0	
 
 inv2ok
-0
-	SAT: 19
-	UNSAT: 5
-1
-	SAT: 71
-	UNSAT: 39
-2
-	SAT: 20
-	UNSAT: 14
-3
-	SAT: 7
-	UNSAT: 13
+m	SAT	UNSAT	
+0	19	5	
+1	71	39	
+2	20	14	
+3	7	13	
 
 inv3ok
-0
-	SAT: 6
-	UNSAT: 0
-1
-	SAT: 53
-	UNSAT: 11
-2
-	SAT: 97
-	UNSAT: 47
-3
-	SAT: 47
-	UNSAT: 16
+m	SAT	UNSAT	
+0	6	0	
+1	53	11	
+2	97	47	
+3	47	16	
 
 Number of disj quantifications
 
 inv1ok
-0
-	SAT: 207
-	UNSAT: 72
-1
-	SAT: 4
-	UNSAT: 9
+m	SAT	UNSAT	
+0	208	72	
+1	4	9	
 
 inv2ok
-0
-	SAT: 117
-	UNSAT: 71
+m	SAT	UNSAT	
+0	117	71	
 
 inv3ok
-0
-	SAT: 185
-	UNSAT: 64
-1
-	SAT: 17
-	UNSAT: 10
-2
-	SAT: 1
-	UNSAT: 0
+m	SAT	UNSAT	
+0	185	64	
+1	17	10	
+2	1	0	
 
 Number multiplicity arrows
 
 inv1ok
-0
-	SAT: 211
-	UNSAT: 81
+m	SAT	UNSAT	
+0	212	81	
 
 inv2ok
-0
-	SAT: 117
-	UNSAT: 71
+m	SAT	UNSAT	
+0	117	71	
 
 inv3ok
-0
-	SAT: 203
-	UNSAT: 74
+m	SAT	UNSAT	
+0	203	74	
 
 Number of quantifiers
 
 inv1ok
-0
-	SAT: 47
-	UNSAT: 8
-1
-	SAT: 73
-	UNSAT: 51
-2
-	SAT: 59
-	UNSAT: 4
-3
-	SAT: 29
-	UNSAT: 16
-4
-	SAT: 3
-	UNSAT: 2
+m	SAT	UNSAT	
+0	48	8	
+1	73	51	
+2	59	4	
+3	29	16	
+4	3	2	
 
 inv2ok
-0
-	SAT: 19
-	UNSAT: 5
-1
-	SAT: 71
-	UNSAT: 39
-2
-	SAT: 20
-	UNSAT: 13
-3
-	SAT: 7
-	UNSAT: 14
+m	SAT	UNSAT	
+0	19	5	
+1	71	39	
+2	20	13	
+3	7	14	
 
 inv3ok
-0
-	SAT: 6
-	UNSAT: 0
-1
-	SAT: 50
-	UNSAT: 11
-2
-	SAT: 48
-	UNSAT: 43
-3
-	SAT: 61
-	UNSAT: 5
-4
-	SAT: 26
-	UNSAT: 15
-5
-	SAT: 10
-	UNSAT: 0
-6
-	SAT: 2
-	UNSAT: 0
+m	SAT	UNSAT	
+0	6	0	
+1	50	11	
+2	48	43	
+3	61	5	
+4	26	15	
+5	10	0	
+6	2	0	
 
 Number of inverted navigation expressions
 
 inv1ok
-0
-	SAT: 210
-	UNSAT: 70
-1
-	SAT: 1
-	UNSAT: 11
+m	SAT	UNSAT	
+0	211	70	
+1	1	11	
 
 inv2ok
-0
-	SAT: 112
-	UNSAT: 71
-1
-	SAT: 4
-	UNSAT: 0
-2
-	SAT: 1
-	UNSAT: 0
+m	SAT	UNSAT	
+0	112	71	
+1	4	0	
+2	1	0	
 
 inv3ok
-0
-	SAT: 203
-	UNSAT: 66
-1
-	SAT: 0
-	UNSAT: 8
+m	SAT	UNSAT	
+0	203	66	
+1	0	8	
 
 * Derivation tree
 SGfC5MjAijZfMQZPs, 2020-11-14T13:50:56 (model share)
@@ -1763,3 +1544,4 @@ SGfC5MjAijZfMQZPs, 2020-11-14T13:50:56 (model share)
                                                                           7yJcgbsY3Rcgf7NEK, 2020-12-04T22:09 (inv3ok,correct,check,)
                                                                             ZDfiyPX6CohF6Q5Zb, 2020-12-04T22:09:14 (inv3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Pessoa->this/Valor} Right type = {this/Pessoa})
                                                                               Au5FQki2pbNyeo2tG, 2020-12-04T22:09:30 (inv3ok,correct,check,)
+  xwAw8n8DRESvs652D, 2020-12-15T15:35:53 (inv1ok,incorrect,check,)

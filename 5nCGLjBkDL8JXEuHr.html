@@ -9,7 +9,7 @@
 </head>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-<h1>5nCGLjBkDL8JXEuHr (2020-12-14)</h1>
+<h1>5nCGLjBkDL8JXEuHr (2020-12-19)</h1>
 <h2>Meta-data</h2>
 <dl><dt>Challenge name</dt><dd>unknown</dd>
 <dt>Creation time</dt><dd>2020-11-27</dd>
@@ -23,50 +23,38 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 <dt>Total warning messages</dt><dd>4</dd>
 <dt>Total solutions</dt><dd>70</d>
 <dt>Total sessions</dt><dd>5</d>
+<dt>Timed out re-executions</dt><dd>0</d>
 <dt>Rejected due to server errors</dt><dd>0</d>
+<dt>Inconsistent result reports</dt><dd>0</d>
+<dt>Inconsistent message reports</dt><dd>0</d>
 <dt>Total instance entries</dt><dd>0</dd>
 <dt>Total link entries</dt><dd>4</dd>
 </dl><h2>Scalar metrics</h2>
-<dl><dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions with warnings</dt><dd>3</dd>
-<dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared. A session is a full branch of the derivation tree.">Number of shared sessions</dt><dd>2</dd>
-<dt data-toggle="tooltip" title="The size of the longest session. A session is a full branch of the derivation tree.">Longest session</dt><dd>44</dd>
-<dt data-toggle="tooltip" title="Counts the number of shared models. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Shared models</dt><dd>3</dd>
-<dt data-toggle="tooltip" title="Counts the number of incorrect executions. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions</dt><dd>37</dd>
-<dt data-toggle="tooltip" title="Counts the number of correct executions. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions</dt><dd>33</dd>
-<dt data-toggle="tooltip" title="Counts the number of correct executions that produced warning messages. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions with warnings</dt><dd>1</dd>
+<dl><dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared.">Number of shared sessions</dt><dd>2</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models.">Shared models (model)</dt><dd>3</dd>
+<dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages.">Shares with warnings</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="Counts the number Alloy runtime errors (in contrast to parsing errors).">Alloy runtime errors</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models that had errors.">Shared errored models</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="Counts the number Alloy parsing errors (in contrast to runtime errors).">Alloy static errors</dt><dd>13</dd>
+<dt data-toggle="tooltip" title="Counts the number of models from shared instances.">Shared models (instance)</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="The average session length.">Average session</dt><dd>16.6</dd>
+<dt data-toggle="tooltip" title="The size of the longest session.">Longest session</dt><dd>43</dd>
+<dt data-toggle="tooltip" title="Counts the number of satisfiable executions that produced warning messages. Considers commands other than challenges.">Sat executions with warnings</dt><dd>3</dd>
+<dt data-toggle="tooltip" title="Counts the number of executed models that had errors. Considers commands other than challenges.">Executed errored models</dt><dd>13</dd>
+<dt data-toggle="tooltip" title="Counts the number of unsatisfiable executions. Considers commands other than challenges.">Unsat executions</dt><dd>37</dd>
+<dt data-toggle="tooltip" title="Counts the number of unsatisfiable executions that produced warning messages. Considers commands other than the challenges.">Unsat executions with warnings</dt><dd>1</dd>
+<dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages.">Errored executions with warnings</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="The average of session unsatisfiable execution ratio.">Average % unsatisfiable</dt><dd>0.6277199074074074</dd>
+<dt data-toggle="tooltip" title="Counts the number of satisfiable executions. Considers commands other than challenges.">Sat executions</dt><dd>33</dd>
 </dl><h2>Overall metrics</h2>
 <h3>Sessions by length</h3>
-<p>The number of sessions with a certain length. A session is a full branch of the derivation tree.</p>
+<p>The number of sessions with a certain length.</p>
 <canvas id="Sessionsbylength" width="1400"></canvas><script>
   var chart = new Chart(Sessionsbylength, {
    type: 'bar',
    data: {
       labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43',],      datasets: [
-{backgroundColor: '#6c79ad', data: [2,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,]},]},
-   options: {
-      responsive: false,
-      legend: {
-         display: false
-      },
-      scales: {
-         xAxes: [{
-                ticks: {
-                    autoSkip: true,
-                    minRotation:0,
-                    maxRotation:20,
-                }
-            }],
-      }
-   }
-});
-</script><h3>Sessions by # of solved sub-challenges</h3>
-<p>The number of sessions with a certain number of sub-challenges correctly solved. A session is a full branch of the derivation tree.</p>
-<canvas id="Sessionsbyofsolvedsubchallenges" width="1400"></canvas><script>
-  var chart = new Chart(Sessionsbyofsolvedsubchallenges, {
-   type: 'bar',
-   data: {
-      labels: ['0','1','2','3','4','5','6','7','8','9','10','11',],      datasets: [
-{backgroundColor: '#6c79ad', data: [1,1,0,0,0,1,0,1,0,0,0,1,]},]},
+{backgroundColor: '#6c79ad', data: [2,,,,,,,,,,1,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,1,]},]},
    options: {
       responsive: false,
       legend: {
@@ -84,7 +72,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h3>Warnings by type</h3>
-<p>The number of warnings by normalized message. Each entry may throw multiple warning messages.</p>
+<p>The number of warnings by normalized message.</p>
 <canvas id="Warningsbytype" width="1400"></canvas><script>
   var chart = new Chart(Warningsbytype, {
    type: 'bar',
@@ -107,14 +95,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Entries over time</h3>
-<p>The number of entries by date. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
-<canvas id="Entriesovertime" width="1400"></canvas><script>
-  var chart = new Chart(Entriesovertime, {
+</script><h3>Sessions by # of solved challenges</h3>
+<p>The number of sessions with a certain number of challenges correctly solved.</p>
+<canvas id="Sessionsbyofsolvedchallenges" width="1400"></canvas><script>
+  var chart = new Chart(Sessionsbyofsolvedchallenges, {
    type: 'bar',
    data: {
-      labels: ['2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13',],      datasets: [
-{backgroundColor: '#6c79ad', data: [0,0,0,0,0,39,0,0,0,0,0,1,0,0,0,43,0,]},]},
+      labels: ['0','1','2','3','4','5','6','7','8','9','10','11',],      datasets: [
+{backgroundColor: '#6c79ad', data: [1,1,,,,1,,1,,,,1,]},]},
    options: {
       responsive: false,
       legend: {
@@ -137,7 +125,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Errorsbytype, {
    type: 'bar',
    data: {
-      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','The name _ cannot be found.','- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','This must be a formula expression. Instead, it has the following possible type(s): {_}','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}',],      datasets: [
+      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','The name _ cannot be found.','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','This must be a formula expression. Instead, it has the following possible type(s): {_}','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}',],      datasets: [
 {backgroundColor: '#6c79ad', data: [4,1,1,2,2,1,1,1,]},]},
    options: {
       responsive: false,
@@ -155,16 +143,40 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
+</script><h3>Models by number of warnings</h3>
+<p>The number of entries with a certain number of warning messages.</p>
+<canvas id="Modelsbynumberofwarnings" width="1400"></canvas><script>
+  var chart = new Chart(Modelsbynumberofwarnings, {
+   type: 'bar',
+   data: {
+      labels: ['0','1',],      datasets: [
+{backgroundColor: '#6c79ad', data: [82,4,]},]},
+   options: {
+      responsive: false,
+      legend: {
+         display: false
+      },
+      scales: {
+         xAxes: [{
+                ticks: {
+                    autoSkip: true,
+                    minRotation:0,
+                    maxRotation:20,
+                }
+            }],
+      }
+   }
+});
 </script><h2>Overall metrics, classified</h2>
-<h3>Execution results by sub-challenge</h3>
-<p>The number of successful executions by sub-challenge, classified by result. Errored executions are not considered.</p>
-<canvas id="Executionresultsbysubchallenge" ></canvas><script>
-  var chart = new Chart(Executionresultsbysubchallenge, {
+<h3>Execution results by challenge</h3>
+<p>The number of executions by challenge, classified by result. Errored executions are not considered.</p>
+<canvas id="Executionresultsbychallenge" ></canvas><script>
+  var chart = new Chart(Executionresultsbychallenge, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['inv1OK','inv2OK','inv3OK','inv4OK','inv5OK','inv6OK','inv7OK','inv8OK','inv9OK','inv10OK','inv11OK','inv12OK','inv13OK','inv14OK','inv15OK',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,0,0,3,2,5,1,19,4,1,0,0,0,0,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [4,3,5,4,3,6,4,1,1,1,0,0,1,0,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [4,3,5,4,3,6,4,1,1,1,,,1,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [2,,,3,2,5,1,19,4,1,,,,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -195,15 +207,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Executions over time classified</h3>
-<p>The number of entries by date, classified by result. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
-<canvas id="Executionsovertimeclassified" ></canvas><script>
-  var chart = new Chart(Executionsovertimeclassified, {
+</script><h3>Session results by challenge</h3>
+<p>The number of sessions in which a certain challenge has been correctly solved.</p>
+<canvas id="Sessionresultsbychallenge" ></canvas><script>
+  var chart = new Chart(Sessionresultsbychallenge, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [0,0,0,0,0,14,0,0,0,0,0,0,0,0,0,23,0,]},{label: 'ERROR', backgroundColor: '#f06779', data: [0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,11,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,0,0,0,23,0,0,0,0,0,1,0,0,0,9,0,]},]},
+      labels: ['inv1OK','inv2OK','inv3OK','inv4OK','inv5OK','inv6OK','inv7OK','inv8OK','inv9OK','inv10OK','inv11OK','inv12OK','inv13OK','inv14OK','inv15OK',],      datasets: [
+{label: 'solved', backgroundColor: '#93e388', data: [4,3,3,3,3,2,2,1,1,1,,,1,,,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [1,2,2,2,2,3,3,4,4,4,5,5,4,5,5,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -234,15 +246,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Session results by sub-challenge</h3>
-<p>The number of sessions in which a certain sub-challenge has been correctly solved.</p>
-<canvas id="Sessionresultsbysubchallenge" ></canvas><script>
-  var chart = new Chart(Sessionresultsbysubchallenge, {
+</script><h3>Model entries over time</h3>
+<p>The number of model entries by date, classified by type and result. Considers commands other than challenges.</p>
+<canvas id="Modelentriesovertime" ></canvas><script>
+  var chart = new Chart(Modelentriesovertime, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['inv1OK','inv2OK','inv3OK','inv4OK','inv5OK','inv6OK','inv7OK','inv8OK','inv9OK','inv10OK','inv11OK','inv12OK','inv13OK','inv14OK','inv15OK',],      datasets: [
-{label: 'solved', backgroundColor: '#93e388', data: [4,3,3,3,3,2,2,1,1,1,0,0,1,0,0,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [1,2,2,2,2,3,3,4,4,4,5,5,4,5,5,]},]},
+      labels: ['2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13','2020-12-14','2020-12-15','2020-12-16','2020-12-17','2020-12-18','2020-12-19',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [,,,,,23,,,,,,1,,,,9,,,,,,,,]},{label: 'ERROR', backgroundColor: '#f06779', data: [,,,,,2,,,,,,,,,,11,,,,,,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [,,,,,14,,,,,,,,,,23,,,,,,,,]},{label: 'SHARE', backgroundColor: 'null', data: [1,,,,,2,,,,,,,,,,,,,,,,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -283,7 +295,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [4,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [4,]},{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -373,27 +385,3 @@ Overall statistics for this challenge. Note that for challenges correctness is u
               sum += data.data[value.index];
           });
           return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>inv4OK</h4>
-<canvas id="Sizein10sofnodesinv4OK" ></canvas><script>
-  var chart = new Chart(Sizein10sofnodesinv4OK, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['1',

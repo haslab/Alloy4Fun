@@ -9,66 +9,52 @@
 </head>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-<h1>SGfC5MjAijZfMQZPs (2020-12-14)</h1>
+<h1>SGfC5MjAijZfMQZPs (2020-12-19)</h1>
 <h2>Meta-data</h2>
 <dl><dt>Challenge name</dt><dd>unknown</dd>
 <dt>Creation time</dt><dd>2020-11-14</dd>
 <dt># sub-challenges</dt><dd>3</dd>
 <dt>Metric catalog</dt><dd>Example metric catalog</dd>
 </dl><h2>Overall metric statistics</h2>
-Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total model entries</dt><dd>1139</dd>
-<dt>Total executions</dt><dd>1120</dd>
+Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total model entries</dt><dd>1140</dd>
+<dt>Total executions</dt><dd>1121</dd>
 <dt>Total shares</dt><dd>19</dd>
 <dt>Total error messages</dt><dd>364</dd>
-<dt>Total warning messages</dt><dd>277</dd>
-<dt>Total solutions</dt><dd>757</d>
-<dt>Total sessions</dt><dd>43</d>
+<dt>Total warning messages</dt><dd>279</dd>
+<dt>Total solutions</dt><dd>758</d>
+<dt>Total sessions</dt><dd>44</d>
+<dt>Timed out re-executions</dt><dd>0</d>
 <dt>Rejected due to server errors</dt><dd>0</d>
+<dt>Inconsistent result reports</dt><dd>0</d>
+<dt>Inconsistent message reports</dt><dd>0</d>
 <dt>Total instance entries</dt><dd>0</dd>
 <dt>Total link entries</dt><dd>20</dd>
 </dl><h2>Scalar metrics</h2>
-<dl><dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared. A session is a full branch of the derivation tree.">Number of shared sessions</dt><dd>12</dd>
-<dt data-toggle="tooltip" title="Counts the number Alloy runtime errors (in contrast to syntax errors). Counts all sat executions, may refer to commands other than those of the sub-challenges.">Alloy runtime errors</dt><dd>14</dd>
-<dt data-toggle="tooltip" title="Counts the number of incorrect executions. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions</dt><dd>531</dd>
-<dt data-toggle="tooltip" title="Counts the number of correct executions. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions</dt><dd>226</dd>
-<dt data-toggle="tooltip" title="Counts the number of shared models that had errors. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Shared errored models</dt><dd>1</dd>
-<dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Incorrect executions with warnings</dt><dd>162</dd>
-<dt data-toggle="tooltip" title="The size of the longest session. A session is a full branch of the derivation tree.">Longest session</dt><dd>83</dd>
-<dt data-toggle="tooltip" title="Counts the number of shared models. Counts all sat executions, may refer to commands other than those of the sub-challenges.">Shared models</dt><dd>19</dd>
-<dt data-toggle="tooltip" title="Counts the number of correct executions that produced warning messages. Counts all unsat executions, may refer to commands other than those of the sub-challenges.">Correct executions with warnings</dt><dd>16</dd>
+<dl><dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared.">Number of shared sessions</dt><dd>12</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models.">Shared models (model)</dt><dd>19</dd>
+<dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages.">Shares with warnings</dt><dd>1</dd>
+<dt data-toggle="tooltip" title="Counts the number Alloy runtime errors (in contrast to parsing errors).">Alloy runtime errors</dt><dd>14</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models that had errors.">Shared errored models</dt><dd>1</dd>
+<dt data-toggle="tooltip" title="Counts the number Alloy parsing errors (in contrast to runtime errors).">Alloy static errors</dt><dd>349</dd>
+<dt data-toggle="tooltip" title="Counts the number of models from shared instances.">Shared models (instance)</dt><dd>0</dd>
+<dt data-toggle="tooltip" title="The average session length.">Average session</dt><dd>25.295454545454547</dd>
+<dt data-toggle="tooltip" title="The size of the longest session.">Longest session</dt><dd>82</dd>
+<dt data-toggle="tooltip" title="Counts the number of satisfiable executions that produced warning messages. Considers commands other than challenges.">Sat executions with warnings</dt><dd>162</dd>
+<dt data-toggle="tooltip" title="Counts the number of executed models that had errors. Considers commands other than challenges.">Executed errored models</dt><dd>363</dd>
+<dt data-toggle="tooltip" title="Counts the number of unsatisfiable executions. Considers commands other than challenges.">Unsat executions</dt><dd>532</dd>
+<dt data-toggle="tooltip" title="Counts the number of unsatisfiable executions that produced warning messages. Considers commands other than the challenges.">Unsat executions with warnings</dt><dd>16</dd>
+<dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages.">Errored executions with warnings</dt><dd>5</dd>
+<dt data-toggle="tooltip" title="The average of session unsatisfiable execution ratio.">Average % unsatisfiable</dt><dd>0.41714963605015215</dd>
+<dt data-toggle="tooltip" title="Counts the number of satisfiable executions. Considers commands other than challenges.">Sat executions</dt><dd>226</dd>
 </dl><h2>Overall metrics</h2>
 <h3>Sessions by length</h3>
-<p>The number of sessions with a certain length. A session is a full branch of the derivation tree.</p>
+<p>The number of sessions with a certain length.</p>
 <canvas id="Sessionsbylength" width="1400"></canvas><script>
   var chart = new Chart(Sessionsbylength, {
    type: 'bar',
    data: {
       labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82',],      datasets: [
-{backgroundColor: '#6c79ad', data: [2,3,1,0,0,1,1,1,1,0,0,1,2,0,2,2,1,2,0,1,0,0,1,1,1,0,1,4,1,0,2,0,0,0,0,2,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,]},]},
-   options: {
-      responsive: false,
-      legend: {
-         display: false
-      },
-      scales: {
-         xAxes: [{
-                ticks: {
-                    autoSkip: true,
-                    minRotation:0,
-                    maxRotation:20,
-                }
-            }],
-      }
-   }
-});
-</script><h3>Sessions by # of solved sub-challenges</h3>
-<p>The number of sessions with a certain number of sub-challenges correctly solved. A session is a full branch of the derivation tree.</p>
-<canvas id="Sessionsbyofsolvedsubchallenges" width="1400"></canvas><script>
-  var chart = new Chart(Sessionsbyofsolvedsubchallenges, {
-   type: 'bar',
-   data: {
-      labels: ['0','1','2','3',],      datasets: [
-{backgroundColor: '#6c79ad', data: [5,7,4,27,]},]},
+{backgroundColor: '#6c79ad', data: [3,3,1,,,1,1,1,1,,,1,2,,2,2,1,2,,1,,,1,1,1,,1,4,1,,2,,,,,2,,1,1,,,,,,,,1,1,,,,,1,,,,,,,,,,,,,1,,,,,,1,,,,,,,1,,,1,]},]},
    options: {
       responsive: false,
       legend: {
@@ -86,13 +72,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h3>Warnings by type</h3>
-<p>The number of warnings by normalized message. Each entry may throw multiple warning messages.</p>
+<p>The number of warnings by normalized message.</p>
 <canvas id="Warningsbytype" width="1400"></canvas><script>
   var chart = new Chart(Warningsbytype, {
    type: 'bar',
    data: {
-      labels: ['== is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}','Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}','- is irrelevant since the right expression is redundant. Parent\'s relevant type = {_} Left type = {_} Right type = {_}','<: is irrelevant because the result is always empty. Left type = {_} Right type = {_}','This variable is unused.','Subset operator is redundant, because both subexpressions are always empty. Left type = {_} Right type = {_}','Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}','Subset operator is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}','& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}','Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}','The join operation here always yields an empty set. Left type = {_} Right type = {_}','The right expression of -> is irrelevant because the left expression is always empty. Left type = {_} Right type = {_}',],      datasets: [
-{backgroundColor: '#6c79ad', data: [4,6,5,4,49,1,23,1,19,19,144,2,]},]},
+      labels: ['== is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}','- is irrelevant since the right expression is redundant. Parent\'s relevant type = {_} Left type = {_} Right type = {_}','Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}','<: is irrelevant because the result is always empty. Left type = {_} Right type = {_}','This variable is unused.','Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}','Subset operator is redundant, because both subexpressions are always empty. Left type = {_} Right type = {_}','& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}','Subset operator is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}','Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}','The join operation here always yields an empty set. Left type = {_} Right type = {_}','The right expression of -> is irrelevant because the left expression is always empty. Left type = {_} Right type = {_}',],      datasets: [
+{backgroundColor: '#6c79ad', data: [4,5,6,4,49,23,1,19,1,19,146,2,]},]},
    options: {
       responsive: false,
       legend: {
@@ -109,14 +95,14 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Entries over time</h3>
-<p>The number of entries by date. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
-<canvas id="Entriesovertime" width="1400"></canvas><script>
-  var chart = new Chart(Entriesovertime, {
+</script><h3>Sessions by # of solved challenges</h3>
+<p>The number of sessions with a certain number of challenges correctly solved.</p>
+<canvas id="Sessionsbyofsolvedchallenges" width="1400"></canvas><script>
+  var chart = new Chart(Sessionsbyofsolvedchallenges, {
    type: 'bar',
    data: {
-      labels: ['2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13',],      datasets: [
-{backgroundColor: '#6c79ad', data: [1,0,0,0,0,950,14,9,0,26,43,2,17,0,0,0,0,10,6,3,39,0,0,0,0,0,0,0,0,0,]},]},
+      labels: ['0','1','2','3',],      datasets: [
+{backgroundColor: '#6c79ad', data: [6,7,4,27,]},]},
    options: {
       responsive: false,
       legend: {
@@ -139,8 +125,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Errorsbytype, {
    type: 'bar',
    data: {
-      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','Syntax error at the § character. HEX: \\ua7)','There are 1 possible tokens that can appear here: [ ','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".','Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.','There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','There are 1 possible tokens that can appear here: \' ','This must be a formula expression. Instead, it has the following possible type(s): {_}','There are 8 possible tokens that can appear here: NAME disj exh part private seq this var ','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 1 possible tokens that can appear here: ) ','!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','There are 3 possible tokens that can appear here: ,  : = ','^ can be used only with a binary relation. Instead, its possible type(s) are: {_}','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This expression failed to be typechecked line _ column _ filename=_.als','The name _ cannot be found.','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This must be a set or relation. Instead, it has the following possible type(s): {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','There are 1 possible tokens that can appear here: } ','There are 1 possible tokens that can appear here: = ','There are 1 possible tokens that can appear here: NAME ','There are 3 possible tokens that can appear here: ,  { | ',],      datasets: [
-{backgroundColor: '#6c79ad', data: [8,1,3,10,2,2,14,1,2,77,7,14,8,12,3,1,24,7,45,47,6,25,31,2,1,1,10,]},]},
+      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','Syntax error at the § character. HEX: \\ua7)','There are 1 possible tokens that can appear here: [ ','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.','The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".','There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','This must be a formula expression. Instead, it has the following possible type(s): {_}','There are 1 possible tokens that can appear here: \' ','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 8 possible tokens that can appear here: NAME disj exh part private seq this var ','!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','There are 1 possible tokens that can appear here: ) ','There are 3 possible tokens that can appear here: ,  : = ','^ can be used only with a binary relation. Instead, its possible type(s) are: {_}','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','The name _ cannot be found.','This expression failed to be typechecked line _ column _ filename=_.als','& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','This must be a set or relation. Instead, it has the following possible type(s): {_}','There are 1 possible tokens that can appear here: = ','There are 1 possible tokens that can appear here: } ','There are 1 possible tokens that can appear here: NAME ','There are 3 possible tokens that can appear here: ,  { | ',],      datasets: [
+{backgroundColor: '#6c79ad', data: [8,1,3,10,2,14,2,1,77,2,14,7,12,8,3,1,24,47,45,7,6,31,25,1,2,1,10,]},]},
    options: {
       responsive: false,
       legend: {
@@ -157,16 +143,40 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
+</script><h3>Models by number of warnings</h3>
+<p>The number of entries with a certain number of warning messages.</p>
+<canvas id="Modelsbynumberofwarnings" width="1400"></canvas><script>
+  var chart = new Chart(Modelsbynumberofwarnings, {
+   type: 'bar',
+   data: {
+      labels: ['0','1','2','3','4',],      datasets: [
+{backgroundColor: '#6c79ad', data: [956,109,56,18,1,]},]},
+   options: {
+      responsive: false,
+      legend: {
+         display: false
+      },
+      scales: {
+         xAxes: [{
+                ticks: {
+                    autoSkip: true,
+                    minRotation:0,
+                    maxRotation:20,
+                }
+            }],
+      }
+   }
+});
 </script><h2>Overall metrics, classified</h2>
-<h3>Execution results by sub-challenge</h3>
-<p>The number of successful executions by sub-challenge, classified by result. Errored executions are not considered.</p>
-<canvas id="Executionresultsbysubchallenge" ></canvas><script>
-  var chart = new Chart(Executionresultsbysubchallenge, {
+<h3>Execution results by challenge</h3>
+<p>The number of executions by challenge, classified by result. Errored executions are not considered.</p>
+<canvas id="Executionresultsbychallenge" ></canvas><script>
+  var chart = new Chart(Executionresultsbychallenge, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['inv1ok','inv2ok','inv3ok',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [211,117,203,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [81,71,74,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [81,71,74,]},{label: 'SAT', backgroundColor: '#f0e878', data: [212,117,203,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -197,15 +207,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Executions over time classified</h3>
-<p>The number of entries by date, classified by result. Entries may contain executions to commands other than the sub-challenges, if defined by the users.</p>
-<canvas id="Executionsovertimeclassified" ></canvas><script>
-  var chart = new Chart(Executionsovertimeclassified, {
+</script><h3>Session results by challenge</h3>
+<p>The number of sessions in which a certain challenge has been correctly solved.</p>
+<canvas id="Sessionresultsbychallenge" ></canvas><script>
+  var chart = new Chart(Sessionresultsbychallenge, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [1,0,0,0,0,459,9,0,0,15,18,0,8,0,0,0,0,4,1,0,16,0,0,0,0,0,0,0,0,0,]},{label: 'ERROR', backgroundColor: '#f06779', data: [0,0,0,0,0,326,4,1,0,6,6,1,4,0,0,0,0,0,1,0,14,0,0,0,0,0,0,0,0,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,0,0,0,0,165,1,8,0,5,19,1,5,0,0,0,0,6,4,3,9,0,0,0,0,0,0,0,0,0,]},]},
+      labels: ['inv1ok','inv2ok','inv3ok',],      datasets: [
+{label: 'solved', backgroundColor: '#93e388', data: [30,32,34,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [14,12,10,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -236,15 +246,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Session results by sub-challenge</h3>
-<p>The number of sessions in which a certain sub-challenge has been correctly solved.</p>
-<canvas id="Sessionresultsbysubchallenge" ></canvas><script>
-  var chart = new Chart(Sessionresultsbysubchallenge, {
+</script><h3>Model entries over time</h3>
+<p>The number of model entries by date, classified by type and result. Considers commands other than challenges.</p>
+<canvas id="Modelentriesovertime" ></canvas><script>
+  var chart = new Chart(Modelentriesovertime, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['inv1ok','inv2ok','inv3ok',],      datasets: [
-{label: 'solved', backgroundColor: '#93e388', data: [30,32,34,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [13,11,9,]},]},
+      labels: ['2020-11-14','2020-11-15','2020-11-16','2020-11-17','2020-11-18','2020-11-19','2020-11-20','2020-11-21','2020-11-22','2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13','2020-12-14','2020-12-15','2020-12-16','2020-12-17','2020-12-18','2020-12-19',],      datasets: [
+{label: 'UNSAT', backgroundColor: '#93e388', data: [,,,,,165,1,8,,5,19,1,5,,,,,6,4,3,9,,,,,,,,,,,,,,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [1,,,,,459,9,,,15,18,,8,,,,,4,1,,16,,,,,,,,,,,1,,,,,]},{label: 'ERROR', backgroundColor: '#f06779', data: [,,,,,326,4,1,,6,6,1,4,,,,,,1,,14,,,,,,,,,,,,,,,,]},{label: 'SHARE', backgroundColor: 'null', data: [1,,,,,13,1,1,,1,,,,,,,,1,,1,,,,,,,,,,,,,,,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -285,7 +295,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3','4',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [121,74,14,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [59,10,12,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [59,10,12,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [122,74,14,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -323,7 +333,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3','4',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [3,31,78,5,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,9,61,0,1,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [,9,61,,1,]},{label: 'SAT', backgroundColor: '#f0e878', data: [3,31,78,5,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -361,7 +371,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['1','2','3','4','5',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [2,115,53,27,6,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,58,7,9,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [,58,7,9,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [2,115,53,27,6,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -401,7 +411,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [211,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [81,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [81,]},{label: 'SAT', backgroundColor: '#f0e878', data: [212,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -439,7 +449,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [117,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},{label: 'SAT', backgroundColor: '#f0e878', data: [117,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -477,7 +487,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [203,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [74,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [74,]},{label: 'SAT', backgroundColor: '#f0e878', data: [203,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -517,7 +527,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [202,9,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [81,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [81,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [203,9,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -555,7 +565,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [117,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},{label: 'SAT', backgroundColor: '#f0e878', data: [117,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -593,7 +603,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [203,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [74,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [74,]},{label: 'SAT', backgroundColor: '#f0e878', data: [203,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -633,7 +643,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [211,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [81,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [81,]},{label: 'SAT', backgroundColor: '#f0e878', data: [212,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -671,7 +681,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [117,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},{label: 'SAT', backgroundColor: '#f0e878', data: [117,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -709,7 +719,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [200,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [74,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [74,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [200,3,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -749,7 +759,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [47,102,45,17,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [8,55,18,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [8,55,18,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [48,102,45,17,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -787,7 +797,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [19,71,20,7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [5,39,14,13,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [5,39,14,13,]},{label: 'SAT', backgroundColor: '#f0e878', data: [19,71,20,7,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -825,7 +835,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [6,53,97,47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,11,47,16,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [,11,47,16,]},{label: 'SAT', backgroundColor: '#f0e878', data: [6,53,97,47,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -865,7 +875,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [207,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [72,9,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [72,9,]},{label: 'SAT', backgroundColor: '#f0e878', data: [208,4,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -903,7 +913,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [117,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},{label: 'SAT', backgroundColor: '#f0e878', data: [117,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -941,7 +951,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [185,17,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [64,10,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [64,10,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [185,17,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -981,7 +991,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [211,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [81,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [81,]},{label: 'SAT', backgroundColor: '#f0e878', data: [212,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1019,7 +1029,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [117,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [71,]},{label: 'SAT', backgroundColor: '#f0e878', data: [117,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1057,7 +1067,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [203,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [74,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [74,]},{label: 'SAT', backgroundColor: '#f0e878', data: [203,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1097,7 +1107,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3','4',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [47,73,59,29,3,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [8,51,4,16,2,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [8,51,4,16,2,]},{label: 'SAT', backgroundColor: '#f0e878', data: [48,73,59,29,3,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1135,7 +1145,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [19,71,20,7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [5,39,13,14,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [5,39,13,14,]},{label: 'SAT', backgroundColor: '#f0e878', data: [19,71,20,7,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1173,7 +1183,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3','4','5','6',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [6,50,48,61,26,10,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [0,11,43,5,15,0,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [,11,43,5,15,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [6,50,48,61,26,10,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1213,7 +1223,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [210,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [70,11,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [70,11,]},{label: 'SAT', backgroundColor: '#f0e878', data: [211,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1251,7 +1261,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [112,4,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [71,0,0,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [71,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [112,4,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1289,7 +1299,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [203,0,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [66,8,]},]},
+{label: 'UNSAT', backgroundColor: '#93e388', data: [66,8,]},{label: 'SAT', backgroundColor: '#f0e878', data: [203,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -4739,6 +4749,9 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </div>
 </div>
 </div>
+<a href="#item-xwAw8n8DRESvs652D" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-xwAw8n8DRESvs652D" class="glyphicon glyphicon-minus"></i>xwAw8n8DRESvs652D, 2020-12-15T15:35:53 (inv1ok,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-xwAw8n8DRESvs652D"></div>
 </div>
 </div>
 </div><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
