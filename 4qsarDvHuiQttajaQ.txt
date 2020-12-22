@@ -1,4 +1,4 @@
-4qsarDvHuiQttajaQ (2020-12-19)
+4qsarDvHuiQttajaQ (2020-12-22)
 
 * Meta-data
 Challenge name: unknown
@@ -7,44 +7,44 @@ Creation time: 2020-11-25
 Metric catalog: Example metric catalog
 
 * Overall metric statistics
-Total model entries: 1665
-Total executions: 1655
-Total shares: 10
-Total error messages: 558
+Total model entries: 1668
+Total executions: 1657
+Total shares: 11
+Total error messages: 559
 Total warning messages: 332
-Total solutions: 1098
-Total sessions: 35
+Total solutions: 1099
+Total sessions: 36
 Timed out re-executions: 0
 Rejected due to server errors: 0
 Inconsisistent result reports: 0
 Inconsisistent message reports: 0
 Total instance entries: 0
-Total link entries: 11
+Total link entries: 12
 
 * Scalar metrics
-Number of shared sessions	6
-Shared models (model)	10
+Number of shared sessions	7
+Shared models (model)	11
 Shares with warnings	1
 Alloy runtime errors	2
 Shared errored models	1
-Alloy static errors	555
+Alloy static errors	556
 Shared models (instance)	0
-Average session	47.25714285714286
+Average session	46.02777777777778
 Longest session	141
 Sat executions with warnings	186
-Executed errored models	557
+Executed errored models	558
 Unsat executions	929
 Unsat executions with warnings	12
 Errored executions with warnings	2
-Average % unsatisfiable	0.2305288667816666
-Sat executions	169
+Average % unsatisfiable	0.2525137563021904
+Sat executions	170
 
 * Overall metrics
 
 Sessions by length
 1	2
 2	2
-3	1
+3	2
 4	0
 5	0
 6	0
@@ -201,7 +201,7 @@ The join operation here always yields an empty set. Left type = {_} Right type =
 
 Sessions by # of solved challenges
 0	5
-1	3
+1	4
 2	14
 3	13
 
@@ -225,7 +225,7 @@ There are 3 possible tokens that can appear here: ,  : = 	2
 != can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	2
 in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	8
 This expression failed to be typechecked line _ column _ filename=_.als	45
-The name _ cannot be found.	70
+The name _ cannot be found.	71
 This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	115
 & can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	2
 This must be an integer expression. Instead, it has the following possible type(s): {_}	1
@@ -236,7 +236,7 @@ There are 1 possible tokens that can appear here: } 	1
 There are 3 possible tokens that can appear here: ,  { | 	9
 
 Models by number of warnings
-0	1464
+0	1467
 1	127
 2	44
 3	18
@@ -251,20 +251,20 @@ Models by number of warnings
 * Overall metrics, classified
 
 Execution results by challenge
-m	SAT	UNSAT	
-prop1ok	189	74	
-prop2ok	191	56	
-prop3ok	549	39	
+m	UNSAT	SAT	
+prop1ok	75	189	
+prop2ok	56	191	
+prop3ok	39	549	
 
 Session results by challenge
 m	solved	unsolved	
-prop1ok	28	7	
-prop2ok	27	8	
-prop3ok	15	20	
+prop1ok	29	7	
+prop2ok	27	9	
+prop3ok	15	21	
 
 Model entries over time
-m	SAT	UNSAT	SHARE	ERROR	
-2020-11-25	3	0	1	0	
+m	ERROR	UNSAT	SHARE	SAT	
+2020-11-25	0	0	1	3	
 2020-11-26	0	0	0	0	
 2020-11-27	0	0	0	0	
 2020-11-28	0	0	0	0	
@@ -272,10 +272,10 @@ m	SAT	UNSAT	SHARE	ERROR
 2020-11-30	0	0	0	0	
 2020-12-01	0	0	0	0	
 2020-12-02	0	0	0	0	
-2020-12-03	854	157	8	525	
-2020-12-04	8	2	1	13	
+2020-12-03	525	157	8	854	
+2020-12-04	13	2	1	8	
 2020-12-05	0	0	0	0	
-2020-12-06	51	5	0	12	
+2020-12-06	12	5	0	51	
 2020-12-07	0	0	0	0	
 2020-12-08	0	0	0	0	
 2020-12-09	0	0	0	0	
@@ -285,183 +285,186 @@ m	SAT	UNSAT	SHARE	ERROR
 2020-12-13	0	0	0	0	
 2020-12-14	0	0	0	0	
 2020-12-15	0	0	0	0	
-2020-12-16	1	0	0	0	
-2020-12-17	12	5	0	7	
+2020-12-16	0	0	0	1	
+2020-12-17	7	5	0	12	
 2020-12-18	0	0	0	0	
 2020-12-19	0	0	0	0	
+2020-12-20	0	0	0	0	
+2020-12-21	1	1	1	0	
+2020-12-22	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 
 Size in 10s of nodes
 
 prop1ok
-m	SAT	UNSAT	
-1	106	23	
-2	76	37	
-3	7	14	
+m	UNSAT	SAT	
+1	23	106	
+2	38	76	
+3	14	7	
 
 prop2ok
-m	SAT	UNSAT	
-1	1	0	
-2	115	4	
-3	73	52	
-4	2	0	
+m	UNSAT	SAT	
+1	0	1	
+2	4	115	
+3	52	73	
+4	0	2	
 
 prop3ok
-m	SAT	UNSAT	
-1	5	0	
-2	255	7	
-3	229	32	
-4	52	0	
-5	6	0	
-6	2	0	
+m	UNSAT	SAT	
+1	0	5	
+2	7	255	
+3	32	229	
+4	0	52	
+5	0	6	
+6	0	2	
 
 Number of binary temporal operators
 
 prop1ok
-m	SAT	UNSAT	
-0	189	74	
+m	UNSAT	SAT	
+0	75	189	
 
 prop2ok
-m	SAT	UNSAT	
-0	180	56	
-1	11	0	
+m	UNSAT	SAT	
+0	56	180	
+1	0	11	
 
 prop3ok
-m	SAT	UNSAT	
-0	527	39	
-1	22	0	
+m	UNSAT	SAT	
+0	39	527	
+1	0	22	
 
 Max nested temporal operator level
 
 prop1ok
-m	SAT	UNSAT	
-0	27	0	
-1	144	71	
-2	18	3	
+m	UNSAT	SAT	
+0	0	27	
+1	72	144	
+2	3	18	
 
 prop2ok
-m	SAT	UNSAT	
-0	1	0	
-1	83	0	
-2	101	56	
-3	6	0	
+m	UNSAT	SAT	
+0	0	1	
+1	0	83	
+2	56	101	
+3	0	6	
 
 prop3ok
-m	SAT	UNSAT	
-0	7	0	
-1	264	0	
-2	232	39	
-3	46	0	
+m	UNSAT	SAT	
+0	0	7	
+1	0	264	
+2	39	232	
+3	0	46	
 
 Number of lone/one quantifiers
 
 prop1ok
-m	SAT	UNSAT	
-0	186	74	
-1	3	0	
+m	UNSAT	SAT	
+0	75	186	
+1	0	3	
 
 prop2ok
-m	SAT	UNSAT	
-0	191	56	
+m	UNSAT	SAT	
+0	56	191	
 
 prop3ok
-m	SAT	UNSAT	
-0	533	39	
-1	14	0	
-2	2	0	
+m	UNSAT	SAT	
+0	39	533	
+1	0	12	
+2	0	4	
 
 Max nested quantifier level
 
 prop1ok
-m	SAT	UNSAT	
-0	45	23	
-1	130	42	
-2	12	9	
-3	2	0	
+m	UNSAT	SAT	
+0	23	45	
+1	43	130	
+2	9	12	
+3	0	2	
 
 prop2ok
-m	SAT	UNSAT	
-0	10	0	
-1	175	56	
-2	6	0	
+m	UNSAT	SAT	
+0	0	10	
+1	56	175	
+2	0	6	
 
 prop3ok
-m	SAT	UNSAT	
-0	46	0	
-1	303	0	
-2	198	39	
-3	2	0	
+m	UNSAT	SAT	
+0	0	46	
+1	0	303	
+2	39	198	
+3	0	2	
 
 Number of disj quantifications
 
 prop1ok
-m	SAT	UNSAT	
-0	189	74	
+m	UNSAT	SAT	
+0	75	189	
 
 prop2ok
-m	SAT	UNSAT	
-0	191	56	
+m	UNSAT	SAT	
+0	56	191	
 
 prop3ok
-m	SAT	UNSAT	
-0	490	19	
-1	59	20	
+m	UNSAT	SAT	
+0	19	490	
+1	20	59	
 
 Number multiplicity arrows
 
 prop1ok
-m	SAT	UNSAT	
-0	189	74	
+m	UNSAT	SAT	
+0	75	189	
 
 prop2ok
-m	SAT	UNSAT	
-0	191	56	
+m	UNSAT	SAT	
+0	56	191	
 
 prop3ok
-m	SAT	UNSAT	
-0	549	39	
+m	UNSAT	SAT	
+0	39	549	
 
 Number of quantifiers
 
 prop1ok
-m	SAT	UNSAT	
-0	45	23	
-1	130	42	
-2	12	9	
-3	2	0	
+m	UNSAT	SAT	
+0	23	45	
+1	43	130	
+2	9	12	
+3	0	2	
 
 prop2ok
-m	SAT	UNSAT	
-0	10	0	
-1	175	56	
-2	6	0	
+m	UNSAT	SAT	
+0	0	10	
+1	56	175	
+2	0	6	
 
 prop3ok
-m	SAT	UNSAT	
-0	46	0	
-1	200	0	
-2	184	15	
-3	118	24	
-4	1	0	
+m	UNSAT	SAT	
+0	0	46	
+1	0	200	
+2	15	184	
+3	24	118	
+4	0	1	
 
 Number of inverted navigation expressions
 
 prop1ok
-m	SAT	UNSAT	
-0	189	74	
+m	UNSAT	SAT	
+0	75	189	
 
 prop2ok
-m	SAT	UNSAT	
-0	191	56	
+m	UNSAT	SAT	
+0	56	191	
 
 prop3ok
-m	SAT	UNSAT	
-0	493	39	
-1	20	0	
-2	21	0	
-3	13	0	
-4	2	0	
+m	UNSAT	SAT	
+0	39	493	
+1	0	20	
+2	0	21	
+3	0	13	
+4	0	2	
 
 * Derivation tree
 4qsarDvHuiQttajaQ, 2020-11-25T08:50:21 (model share)
@@ -2129,3 +2132,6 @@ m	SAT	UNSAT
                                             o8uYagBeYSYyS2bgW, 2020-12-17T02:57:30 (prop3ok,incorrect,check,)
                                               8REZSepai3kCFSeHC, 2020-12-17T02:58:07 (prop3ok,incorrect,check,)
           6yioKYwwnytNnKcbL, 2020-12-17T02:31:14 (prop3ok,incorrect,check,)
+  J4u9GhbRnoZCG5Gue, 2020-12-21T11:47:52 (The name "Cliente" cannot be found.)
+    sRCme7auFWFEmZQnp, 2020-12-21T11:47:58 (prop1ok,correct,check,)
+      xw2ZELDKwAqvY8uQG, 2020-12-21T11:53:44 (model share)
