@@ -305,9 +305,9 @@ There are 3 possible tokens that can appear here: ,  : = 	7
 + can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	10
 ^ can be used only with a binary relation. Instead, its possible type(s) are: {_}	10
 in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	138
-This expression failed to be typechecked line _ column _ filename=_.als	45
 This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	331
 The name _ cannot be found.	181
+This expression failed to be typechecked line _ column _ filename=_.als	45
 & can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	31
 Syntax error at the \ character. HEX: \u5c)	1
 This must be an integer expression. Instead, it has the following possible type(s): {_}	1
@@ -331,22 +331,22 @@ Models by number of warnings
 * Overall metrics, classified
 
 Execution results by challenge
-m	UNSAT	SAT	
-inv1OK	169	50	
-inv2OK	98	8	
-inv3OK	104	47	
-inv4OK	120	93	
-inv5OK	100	150	
-inv6OK	111	85	
-inv7OK	103	126	
-inv8OK	105	69	
-inv9OK	91	212	
-inv10OK	93	178	
-inv11OK	64	263	
-inv12OK	52	123	
-inv13OK	73	67	
-inv14OK	35	228	
-inv15OK	40	140	
+m	SAT	UNSAT	
+inv1OK	50	169	
+inv2OK	8	98	
+inv3OK	47	104	
+inv4OK	93	120	
+inv5OK	150	100	
+inv6OK	85	111	
+inv7OK	126	103	
+inv8OK	69	105	
+inv9OK	212	91	
+inv10OK	178	93	
+inv11OK	263	64	
+inv12OK	123	52	
+inv13OK	67	73	
+inv14OK	228	35	
+inv15OK	140	40	
 
 Session results by challenge
 m	solved	unsolved	
@@ -367,36 +367,36 @@ inv14OK	16	166
 inv15OK	25	157	
 
 Model entries over time
-m	UNSAT	ERROR	SAT	SHARE	
+m	ERROR	SAT	UNSAT	SHARE	
 2019-10-02	0	0	0	1	
-2019-10-03	196	259	229	8	
-2019-10-04	0	15	4	0	
+2019-10-03	259	229	196	8	
+2019-10-04	15	4	0	0	
 2019-10-05	0	0	0	0	
-2019-10-06	0	0	1	0	
-2019-10-07	2	0	0	0	
-2019-10-08	13	1	4	0	
-2019-10-09	3	2	8	0	
-2019-10-10	1	1	6	0	
-2019-10-11	17	2	10	1	
+2019-10-06	0	1	0	0	
+2019-10-07	0	0	2	0	
+2019-10-08	1	4	13	0	
+2019-10-09	2	8	3	0	
+2019-10-10	1	6	1	0	
+2019-10-11	2	10	17	1	
 2019-10-12	0	0	0	0	
-2019-10-13	4	44	46	0	
-2019-10-14	17	53	43	0	
-2019-10-15	8	49	30	2	
+2019-10-13	44	46	4	0	
+2019-10-14	53	43	17	0	
+2019-10-15	49	30	8	2	
 2019-10-16	0	0	0	0	
 2019-10-17	0	0	0	0	
 2019-10-18	0	0	0	0	
 2019-10-19	0	0	0	0	
 2019-10-20	0	0	0	0	
 2019-10-21	0	0	0	0	
-2019-10-22	21	22	25	2	
+2019-10-22	22	25	21	2	
 2019-10-23	0	0	0	0	
 2019-10-24	1	1	1	0	
 2019-10-25	0	0	0	0	
 2019-10-26	0	0	0	0	
-2019-10-27	0	0	1	0	
+2019-10-27	0	1	0	0	
 2019-10-28	0	0	0	0	
 2019-10-29	0	0	0	0	
-2019-10-30	4	3	3	0	
+2019-10-30	3	3	4	0	
 2019-10-31	0	0	0	0	
 2019-11-01	0	0	0	0	
 2019-11-02	0	0	0	0	
@@ -405,13 +405,13 @@ m	UNSAT	ERROR	SAT	SHARE
 2019-11-05	0	0	0	0	
 2019-11-06	0	0	0	0	
 2019-11-07	0	0	0	0	
-2019-11-08	12	7	10	0	
+2019-11-08	7	10	12	0	
 2019-11-09	0	0	0	0	
-2019-11-10	11	3	1	0	
-2019-11-11	1	0	0	0	
-2019-11-12	11	20	6	0	
-2019-11-13	28	35	28	1	
-2019-11-14	4	0	12	0	
+2019-11-10	3	1	11	0	
+2019-11-11	0	0	1	0	
+2019-11-12	20	6	11	0	
+2019-11-13	35	28	28	1	
+2019-11-14	0	12	4	0	
 2019-11-15	0	0	0	0	
 2019-11-16	0	0	0	0	
 2019-11-17	0	0	0	0	
@@ -432,10 +432,10 @@ m	UNSAT	ERROR	SAT	SHARE
 2019-12-02	0	0	0	0	
 2019-12-03	0	0	0	0	
 2019-12-04	0	0	0	0	
-2019-12-05	0	0	1	0	
+2019-12-05	0	1	0	0	
 2019-12-06	0	0	0	0	
 2019-12-07	0	0	0	0	
-2019-12-08	5	2	2	0	
+2019-12-08	2	2	5	0	
 2019-12-09	0	0	0	0	
 2019-12-10	0	0	0	0	
 2019-12-11	0	0	0	0	
@@ -443,7 +443,7 @@ m	UNSAT	ERROR	SAT	SHARE
 2019-12-13	0	0	0	0	
 2019-12-14	0	0	0	0	
 2019-12-15	0	0	0	0	
-2019-12-16	0	0	1	0	
+2019-12-16	0	1	0	0	
 2019-12-17	0	0	0	0	
 2019-12-18	0	0	0	0	
 2019-12-19	0	0	0	0	
@@ -460,15 +460,15 @@ m	UNSAT	ERROR	SAT	SHARE
 2019-12-30	0	0	0	0	
 2019-12-31	0	0	0	0	
 2020-01-01	0	0	0	0	
-2020-01-02	24	6	22	3	
+2020-01-02	6	22	24	3	
 2020-01-03	0	0	0	0	
 2020-01-04	0	0	0	0	
 2020-01-05	0	0	0	0	
 2020-01-06	0	0	0	0	
-2020-01-07	12	4	5	0	
-2020-01-08	10	47	22	3	
+2020-01-07	4	5	12	0	
+2020-01-08	47	22	10	3	
 2020-01-09	0	0	0	0	
-2020-01-10	2	0	1	0	
+2020-01-10	0	1	2	0	
 2020-01-11	0	0	0	0	
 2020-01-12	0	0	0	0	
 2020-01-13	0	0	0	0	
@@ -477,7 +477,7 @@ m	UNSAT	ERROR	SAT	SHARE
 2020-01-16	0	0	0	0	
 2020-01-17	0	0	0	0	
 2020-01-18	0	0	0	0	
-2020-01-19	12	27	10	1	
+2020-01-19	27	10	12	1	
 2020-01-20	0	0	0	0	
 2020-01-21	0	0	0	0	
 2020-01-22	0	0	0	0	
@@ -503,18 +503,18 @@ m	UNSAT	ERROR	SAT	SHARE
 2020-02-11	0	0	0	0	
 2020-02-12	0	0	0	0	
 2020-02-13	0	0	0	0	
-2020-02-14	1	0	1	0	
+2020-02-14	0	1	1	0	
 2020-02-15	0	0	0	0	
 2020-02-16	0	0	0	0	
 2020-02-17	0	0	0	0	
-2020-02-18	0	0	1	0	
+2020-02-18	0	1	0	0	
 2020-02-19	0	0	0	0	
 2020-02-20	0	0	0	0	
 2020-02-21	0	0	0	0	
 2020-02-22	0	0	0	0	
 2020-02-23	0	0	0	0	
-2020-02-24	6	1	1	0	
-2020-02-25	0	0	1	0	
+2020-02-24	1	1	6	0	
+2020-02-25	0	1	0	0	
 2020-02-26	0	0	0	0	
 2020-02-27	0	0	0	0	
 2020-02-28	0	0	0	0	
@@ -564,8 +564,8 @@ m	UNSAT	ERROR	SAT	SHARE
 2020-04-12	0	0	0	0	
 2020-04-13	0	0	0	0	
 2020-04-14	0	0	0	0	
-2020-04-15	0	0	1	0	
-2020-04-16	0	0	1	0	
+2020-04-15	0	1	0	0	
+2020-04-16	0	1	0	0	
 2020-04-17	0	0	0	0	
 2020-04-18	0	0	0	0	
 2020-04-19	0	0	0	0	
@@ -581,17 +581,17 @@ m	UNSAT	ERROR	SAT	SHARE
 2020-04-29	0	0	0	0	
 2020-04-30	0	0	0	0	
 2020-05-01	0	0	0	0	
-2020-05-02	0	0	1	0	
+2020-05-02	0	1	0	0	
 2020-05-03	0	0	0	0	
-2020-05-04	0	0	2	0	
+2020-05-04	0	2	0	0	
 2020-05-05	0	0	0	0	
 2020-05-06	0	0	0	0	
-2020-05-07	1	0	0	0	
+2020-05-07	0	0	1	0	
 2020-05-08	0	0	0	0	
 2020-05-09	0	0	0	0	
 2020-05-10	0	0	0	0	
 2020-05-11	0	0	0	0	
-2020-05-12	0	7	0	1	
+2020-05-12	7	0	0	1	
 2020-05-13	0	0	0	0	
 2020-05-14	0	0	0	0	
 2020-05-15	0	0	0	0	
@@ -620,7 +620,7 @@ m	UNSAT	ERROR	SAT	SHARE
 2020-06-07	0	0	0	0	
 2020-06-08	0	0	0	0	
 2020-06-09	0	0	0	0	
-2020-06-10	7	0	3	0	
+2020-06-10	0	3	7	0	
 2020-06-11	0	0	0	0	
 2020-06-12	0	0	0	0	
 2020-06-13	0	0	0	0	
@@ -649,12 +649,12 @@ m	UNSAT	ERROR	SAT	SHARE
 2020-07-06	0	0	0	0	
 2020-07-07	0	0	0	0	
 2020-07-08	0	0	0	0	
-2020-07-09	0	0	1	0	
+2020-07-09	0	1	0	0	
 2020-07-10	0	0	0	0	
 2020-07-11	0	0	0	0	
 2020-07-12	0	0	0	0	
 2020-07-13	0	0	0	0	
-2020-07-14	0	0	2	0	
+2020-07-14	0	2	0	0	
 2020-07-15	0	0	0	0	
 2020-07-16	0	0	0	0	
 2020-07-17	0	0	0	0	
@@ -714,18 +714,18 @@ m	UNSAT	ERROR	SAT	SHARE
 2020-09-09	0	0	0	0	
 2020-09-10	0	0	0	0	
 2020-09-11	0	0	0	0	
-2020-09-12	20	8	20	0	
+2020-09-12	8	20	20	0	
 2020-09-13	0	0	0	0	
 2020-09-14	0	0	0	0	
 2020-09-15	0	0	0	0	
 2020-09-16	0	0	0	0	
 2020-09-17	0	0	0	0	
-2020-09-18	0	0	1	0	
+2020-09-18	0	1	0	0	
 2020-09-19	0	0	0	0	
 2020-09-20	0	0	0	0	
 2020-09-21	0	0	0	0	
 2020-09-22	0	0	0	0	
-2020-09-23	0	0	1	0	
+2020-09-23	0	1	0	0	
 2020-09-24	0	0	0	0	
 2020-09-25	0	0	0	0	
 2020-09-26	0	0	0	0	
@@ -751,24 +751,24 @@ m	UNSAT	ERROR	SAT	SHARE
 2020-10-16	0	0	0	0	
 2020-10-17	0	0	0	0	
 2020-10-18	0	0	0	0	
-2020-10-19	10	14	18	0	
+2020-10-19	14	18	10	0	
 2020-10-20	0	0	0	0	
-2020-10-21	19	40	24	0	
+2020-10-21	40	24	19	0	
 2020-10-22	0	0	0	0	
 2020-10-23	0	0	0	0	
 2020-10-24	0	0	0	0	
 2020-10-25	0	0	0	0	
 2020-10-26	0	0	0	0	
 2020-10-27	0	0	0	0	
-2020-10-28	32	46	71	0	
-2020-10-29	32	50	48	2	
-2020-10-30	35	63	104	1	
-2020-10-31	78	133	181	1	
+2020-10-28	46	71	32	0	
+2020-10-29	50	48	32	2	
+2020-10-30	63	104	35	1	
+2020-10-31	133	181	78	1	
 2020-11-01	0	0	0	0	
-2020-11-02	92	68	107	2	
-2020-11-03	129	158	186	1	
-2020-11-04	144	174	204	4	
-2020-11-05	85	118	99	6	
+2020-11-02	68	107	92	2	
+2020-11-03	158	186	129	1	
+2020-11-04	174	204	144	4	
+2020-11-05	118	99	85	6	
 2020-11-06	0	0	0	0	
 2020-11-07	0	0	0	0	
 2020-11-08	0	0	0	0	
@@ -776,43 +776,43 @@ m	UNSAT	ERROR	SAT	SHARE
 2020-11-10	0	0	0	0	
 2020-11-11	0	0	0	0	
 2020-11-12	0	0	0	0	
-2020-11-13	8	1	3	0	
-2020-11-14	53	53	31	2	
-2020-11-15	0	1	0	0	
-2020-11-16	11	3	5	0	
+2020-11-13	1	3	8	0	
+2020-11-14	53	31	53	2	
+2020-11-15	1	0	0	0	
+2020-11-16	3	5	11	0	
 2020-11-17	0	0	0	0	
-2020-11-18	29	10	19	0	
-2020-11-19	16	0	0	0	
-2020-11-20	0	0	1	0	
+2020-11-18	10	19	29	0	
+2020-11-19	0	0	16	0	
+2020-11-20	0	1	0	0	
 2020-11-21	0	0	0	0	
 2020-11-22	0	0	0	0	
-2020-11-23	33	24	50	1	
-2020-11-24	22	29	26	1	
-2020-11-25	16	23	19	0	
+2020-11-23	24	50	33	1	
+2020-11-24	29	26	22	1	
+2020-11-25	23	19	16	0	
 2020-11-26	0	0	0	0	
 2020-11-27	0	0	0	0	
 2020-11-28	0	0	0	0	
 2020-11-29	0	0	0	0	
 2020-11-30	0	0	0	0	
 2020-12-01	0	0	0	0	
-2020-12-02	6	0	22	0	
-2020-12-03	13	0	1	1	
-2020-12-04	16	6	22	0	
+2020-12-02	0	22	6	0	
+2020-12-03	0	1	13	1	
+2020-12-04	6	22	16	0	
 2020-12-05	0	0	0	0	
 2020-12-06	0	0	0	0	
 2020-12-07	0	0	0	0	
-2020-12-08	8	31	4	1	
+2020-12-08	31	4	8	1	
 2020-12-09	0	0	0	0	
 2020-12-10	0	0	0	0	
 2020-12-11	0	0	0	0	
 2020-12-12	0	0	0	0	
 2020-12-13	0	0	0	0	
-2020-12-14	0	15	1	0	
+2020-12-14	15	1	0	0	
 2020-12-15	0	0	0	0	
 2020-12-16	0	0	0	0	
 2020-12-17	0	0	0	0	
-2020-12-18	9	0	7	1	
-2020-12-19	9	9	18	0	
+2020-12-18	0	7	9	1	
+2020-12-19	9	18	9	0	
 2020-12-20	0	0	0	0	
 2020-12-21	0	0	0	0	
 2020-12-22	0	0	0	0	
@@ -822,691 +822,691 @@ m	UNSAT	ERROR	SAT	SHARE
 Size in 10s of nodes
 
 inv1OK
-m	UNSAT	SAT	
-0	114	49	
-1	55	1	
+m	SAT	UNSAT	
+0	49	114	
+1	1	55	
 
 inv2OK
-m	UNSAT	SAT	
-0	95	7	
-1	3	1	
+m	SAT	UNSAT	
+0	7	95	
+1	1	3	
 
 inv3OK
-m	UNSAT	SAT	
-0	78	8	
-1	21	35	
-2	4	2	
-3	1	2	
+m	SAT	UNSAT	
+0	8	78	
+1	35	21	
+2	2	4	
+3	2	1	
 
 inv4OK
-m	UNSAT	SAT	
-0	0	2	
-1	99	78	
-2	21	12	
-3	0	1	
+m	SAT	UNSAT	
+0	2	0	
+1	78	99	
+2	12	21	
+3	1	0	
 
 inv5OK
-m	UNSAT	SAT	
-0	77	45	
-1	23	102	
-2	0	3	
+m	SAT	UNSAT	
+0	45	77	
+1	102	23	
+2	3	0	
 
 inv6OK
-m	UNSAT	SAT	
-1	104	83	
-2	7	2	
+m	SAT	UNSAT	
+1	83	104	
+2	2	7	
 
 inv7OK
-m	UNSAT	SAT	
-1	46	89	
-2	57	37	
+m	SAT	UNSAT	
+1	89	46	
+2	37	57	
 
 inv8OK
-m	UNSAT	SAT	
-1	96	64	
-2	6	5	
-3	3	0	
+m	SAT	UNSAT	
+1	64	96	
+2	5	6	
+3	0	3	
 
 inv9OK
-m	UNSAT	SAT	
-1	2	125	
-2	81	87	
-3	8	0	
+m	SAT	UNSAT	
+1	125	2	
+2	87	81	
+3	0	8	
 
 inv10OK
-m	UNSAT	SAT	
-1	0	20	
-2	73	133	
-3	20	25	
+m	SAT	UNSAT	
+1	20	0	
+2	133	73	
+3	25	20	
 
 inv11OK
-m	UNSAT	SAT	
-1	0	11	
-2	53	112	
-3	8	122	
-4	3	17	
-5	0	1	
+m	SAT	UNSAT	
+1	11	0	
+2	112	53	
+3	122	8	
+4	17	3	
+5	1	0	
 
 inv12OK
-m	UNSAT	SAT	
-1	0	36	
-2	49	65	
-3	2	21	
+m	SAT	UNSAT	
+1	36	0	
+2	65	49	
+3	21	2	
 4	1	1	
 
 inv13OK
-m	UNSAT	SAT	
-0	0	2	
-1	19	26	
-2	52	38	
-3	2	1	
+m	SAT	UNSAT	
+0	2	0	
+1	26	19	
+2	38	52	
+3	1	2	
 
 inv14OK
-m	UNSAT	SAT	
-2	0	6	
-3	0	18	
-4	15	124	
-5	20	79	
-6	0	1	
+m	SAT	UNSAT	
+2	6	0	
+3	18	0	
+4	124	15	
+5	79	20	
+6	1	0	
 
 inv15OK
-m	UNSAT	SAT	
-1	0	37	
-2	40	96	
-3	0	6	
-4	0	1	
+m	SAT	UNSAT	
+1	37	0	
+2	96	40	
+3	6	0	
+4	1	0	
 
 Number of binary temporal operators
 
 inv1OK
-m	UNSAT	SAT	
-0	169	50	
+m	SAT	UNSAT	
+0	50	169	
 
 inv2OK
-m	UNSAT	SAT	
-0	98	8	
+m	SAT	UNSAT	
+0	8	98	
 
 inv3OK
-m	UNSAT	SAT	
-0	104	47	
+m	SAT	UNSAT	
+0	47	104	
 
 inv4OK
-m	UNSAT	SAT	
-0	120	93	
+m	SAT	UNSAT	
+0	93	120	
 
 inv5OK
-m	UNSAT	SAT	
-0	100	150	
+m	SAT	UNSAT	
+0	150	100	
 
 inv6OK
-m	UNSAT	SAT	
-0	111	85	
+m	SAT	UNSAT	
+0	85	111	
 
 inv7OK
-m	UNSAT	SAT	
-0	103	126	
+m	SAT	UNSAT	
+0	126	103	
 
 inv8OK
-m	UNSAT	SAT	
-0	105	69	
+m	SAT	UNSAT	
+0	69	105	
 
 inv9OK
-m	UNSAT	SAT	
-0	91	212	
+m	SAT	UNSAT	
+0	212	91	
 
 inv10OK
-m	UNSAT	SAT	
-0	93	178	
+m	SAT	UNSAT	
+0	178	93	
 
 inv11OK
-m	UNSAT	SAT	
-0	64	263	
+m	SAT	UNSAT	
+0	263	64	
 
 inv12OK
-m	UNSAT	SAT	
-0	52	123	
+m	SAT	UNSAT	
+0	123	52	
 
 inv13OK
-m	UNSAT	SAT	
-0	73	67	
+m	SAT	UNSAT	
+0	67	73	
 
 inv14OK
-m	UNSAT	SAT	
-0	35	228	
+m	SAT	UNSAT	
+0	228	35	
 
 inv15OK
-m	UNSAT	SAT	
-0	40	140	
+m	SAT	UNSAT	
+0	140	40	
 
 Max nested temporal operator level
 
 inv1OK
-m	UNSAT	SAT	
-0	169	50	
+m	SAT	UNSAT	
+0	50	169	
 
 inv2OK
-m	UNSAT	SAT	
-0	98	8	
+m	SAT	UNSAT	
+0	8	98	
 
 inv3OK
-m	UNSAT	SAT	
-0	104	47	
+m	SAT	UNSAT	
+0	47	104	
 
 inv4OK
-m	UNSAT	SAT	
-0	120	93	
+m	SAT	UNSAT	
+0	93	120	
 
 inv5OK
-m	UNSAT	SAT	
-0	100	150	
+m	SAT	UNSAT	
+0	150	100	
 
 inv6OK
-m	UNSAT	SAT	
-0	111	85	
+m	SAT	UNSAT	
+0	85	111	
 
 inv7OK
-m	UNSAT	SAT	
-0	103	126	
+m	SAT	UNSAT	
+0	126	103	
 
 inv8OK
-m	UNSAT	SAT	
-0	105	69	
+m	SAT	UNSAT	
+0	69	105	
 
 inv9OK
-m	UNSAT	SAT	
-0	91	212	
+m	SAT	UNSAT	
+0	212	91	
 
 inv10OK
-m	UNSAT	SAT	
-0	93	178	
+m	SAT	UNSAT	
+0	178	93	
 
 inv11OK
-m	UNSAT	SAT	
-0	64	263	
+m	SAT	UNSAT	
+0	263	64	
 
 inv12OK
-m	UNSAT	SAT	
-0	52	123	
+m	SAT	UNSAT	
+0	123	52	
 
 inv13OK
-m	UNSAT	SAT	
-0	73	67	
+m	SAT	UNSAT	
+0	67	73	
 
 inv14OK
-m	UNSAT	SAT	
-0	35	228	
+m	SAT	UNSAT	
+0	228	35	
 
 inv15OK
-m	UNSAT	SAT	
-0	40	140	
+m	SAT	UNSAT	
+0	140	40	
 
 Number of lone/one quantifiers
 
 inv1OK
-m	UNSAT	SAT	
-0	169	50	
+m	SAT	UNSAT	
+0	50	169	
 
 inv2OK
-m	UNSAT	SAT	
-0	98	8	
+m	SAT	UNSAT	
+0	8	98	
 
 inv3OK
-m	UNSAT	SAT	
-0	104	46	
-1	0	1	
+m	SAT	UNSAT	
+0	46	104	
+1	1	0	
 
 inv4OK
-m	UNSAT	SAT	
-0	120	93	
+m	SAT	UNSAT	
+0	93	120	
 
 inv5OK
-m	UNSAT	SAT	
-0	100	150	
+m	SAT	UNSAT	
+0	150	100	
 
 inv6OK
-m	UNSAT	SAT	
-0	111	85	
+m	SAT	UNSAT	
+0	85	111	
 
 inv7OK
-m	UNSAT	SAT	
-0	103	126	
+m	SAT	UNSAT	
+0	126	103	
 
 inv8OK
-m	UNSAT	SAT	
-0	102	65	
-1	3	4	
+m	SAT	UNSAT	
+0	65	102	
+1	4	3	
 
 inv9OK
-m	UNSAT	SAT	
-0	83	206	
-1	8	6	
+m	SAT	UNSAT	
+0	206	83	
+1	6	8	
 
 inv10OK
-m	UNSAT	SAT	
-0	93	166	
-1	0	11	
-2	0	1	
+m	SAT	UNSAT	
+0	166	93	
+1	10	0	
+2	2	0	
 
 inv11OK
-m	UNSAT	SAT	
-0	64	261	
-1	0	2	
+m	SAT	UNSAT	
+0	261	64	
+1	2	0	
 
 inv12OK
-m	UNSAT	SAT	
-0	52	123	
+m	SAT	UNSAT	
+0	123	52	
 
 inv13OK
-m	UNSAT	SAT	
-0	73	67	
+m	SAT	UNSAT	
+0	67	73	
 
 inv14OK
-m	UNSAT	SAT	
-0	35	227	
-1	0	1	
+m	SAT	UNSAT	
+0	227	35	
+1	1	0	
 
 inv15OK
-m	UNSAT	SAT	
-0	40	140	
+m	SAT	UNSAT	
+0	140	40	
 
 Max nested quantifier level
 
 inv1OK
-m	UNSAT	SAT	
-0	119	50	
-1	50	0	
+m	SAT	UNSAT	
+0	50	119	
+1	0	50	
 
 inv2OK
-m	UNSAT	SAT	
-0	95	7	
-1	3	1	
+m	SAT	UNSAT	
+0	7	95	
+1	1	3	
 
 inv3OK
-m	UNSAT	SAT	
-0	89	28	
-1	14	19	
-2	1	0	
+m	SAT	UNSAT	
+0	28	89	
+1	19	14	
+2	0	1	
 
 inv4OK
-m	UNSAT	SAT	
-0	95	74	
-1	25	19	
+m	SAT	UNSAT	
+0	74	95	
+1	19	25	
 
 inv5OK
-m	UNSAT	SAT	
-0	80	64	
-1	11	69	
-2	9	16	
-3	0	1	
-
-inv6OK
-m	UNSAT	SAT	
-0	40	54	
-1	67	29	
-2	4	2	
-
-inv7OK
-m	UNSAT	SAT	
-0	46	45	
-1	42	78	
-2	15	3	
-
-inv8OK
-m	UNSAT	SAT	
-0	17	45	
-1	81	19	
-2	6	5	
+m	SAT	UNSAT	
+0	64	80	
+1	69	11	
+2	16	9	
 3	1	0	
 
+inv6OK
+m	SAT	UNSAT	
+0	54	40	
+1	29	67	
+2	2	4	
+
+inv7OK
+m	SAT	UNSAT	
+0	45	46	
+1	78	42	
+2	3	15	
+
+inv8OK
+m	SAT	UNSAT	
+0	45	17	
+1	19	81	
+2	5	6	
+3	0	1	
+
 inv9OK
-m	UNSAT	SAT	
-0	11	54	
-1	60	130	
-2	18	28	
-3	2	0	
+m	SAT	UNSAT	
+0	54	11	
+1	130	60	
+2	28	18	
+3	0	2	
 
 inv10OK
-m	UNSAT	SAT	
-0	4	63	
-1	14	56	
-2	55	38	
-3	20	21	
+m	SAT	UNSAT	
+0	63	4	
+1	56	14	
+2	38	55	
+3	21	20	
 
 inv11OK
-m	UNSAT	SAT	
-0	4	28	
-1	55	166	
-2	2	48	
-3	3	6	
-4	0	15	
+m	SAT	UNSAT	
+0	28	4	
+1	166	55	
+2	48	2	
+3	6	3	
+4	15	0	
 
 inv12OK
-m	UNSAT	SAT	
-0	2	29	
-1	42	50	
-2	6	24	
-3	1	17	
-4	1	3	
+m	SAT	UNSAT	
+0	29	2	
+1	50	42	
+2	24	6	
+3	17	1	
+4	3	1	
 
 inv13OK
-m	UNSAT	SAT	
-0	51	36	
-1	16	5	
-2	6	22	
-3	0	4	
+m	SAT	UNSAT	
+0	36	51	
+1	5	16	
+2	22	6	
+3	4	0	
 
 inv14OK
-m	UNSAT	SAT	
-0	0	22	
-1	4	59	
-2	11	75	
-3	17	56	
-4	3	16	
+m	SAT	UNSAT	
+0	22	0	
+1	59	4	
+2	75	11	
+3	56	17	
+4	16	3	
 
 inv15OK
-m	UNSAT	SAT	
-0	0	30	
-1	38	95	
-2	2	15	
+m	SAT	UNSAT	
+0	30	0	
+1	95	38	
+2	15	2	
 
 Number of disj quantifications
 
 inv1OK
-m	UNSAT	SAT	
-0	169	50	
+m	SAT	UNSAT	
+0	50	169	
 
 inv2OK
-m	UNSAT	SAT	
-0	98	8	
+m	SAT	UNSAT	
+0	8	98	
 
 inv3OK
-m	UNSAT	SAT	
-0	104	47	
+m	SAT	UNSAT	
+0	47	104	
 
 inv4OK
-m	UNSAT	SAT	
-0	120	93	
+m	SAT	UNSAT	
+0	93	120	
 
 inv5OK
-m	UNSAT	SAT	
-0	100	150	
+m	SAT	UNSAT	
+0	150	100	
 
 inv6OK
-m	UNSAT	SAT	
-0	111	85	
+m	SAT	UNSAT	
+0	85	111	
 
 inv7OK
-m	UNSAT	SAT	
-0	103	126	
+m	SAT	UNSAT	
+0	126	103	
 
 inv8OK
-m	UNSAT	SAT	
-0	105	69	
+m	SAT	UNSAT	
+0	69	105	
 
 inv9OK
-m	UNSAT	SAT	
-0	87	212	
-1	4	0	
+m	SAT	UNSAT	
+0	212	87	
+1	0	4	
 
 inv10OK
-m	UNSAT	SAT	
-0	93	178	
+m	SAT	UNSAT	
+0	178	93	
 
 inv11OK
-m	UNSAT	SAT	
-0	64	263	
+m	SAT	UNSAT	
+0	263	64	
 
 inv12OK
-m	UNSAT	SAT	
-0	52	123	
+m	SAT	UNSAT	
+0	123	52	
 
 inv13OK
-m	UNSAT	SAT	
-0	73	67	
+m	SAT	UNSAT	
+0	67	73	
 
 inv14OK
-m	UNSAT	SAT	
-0	35	228	
+m	SAT	UNSAT	
+0	228	35	
 
 inv15OK
-m	UNSAT	SAT	
-0	40	140	
+m	SAT	UNSAT	
+0	140	40	
 
 Number multiplicity arrows
 
 inv1OK
-m	UNSAT	SAT	
-0	169	50	
+m	SAT	UNSAT	
+0	50	169	
 
 inv2OK
-m	UNSAT	SAT	
-0	98	8	
+m	SAT	UNSAT	
+0	8	98	
 
 inv3OK
-m	UNSAT	SAT	
-0	104	47	
+m	SAT	UNSAT	
+0	47	104	
 
 inv4OK
-m	UNSAT	SAT	
-0	120	93	
+m	SAT	UNSAT	
+0	93	120	
 
 inv5OK
-m	UNSAT	SAT	
-0	100	150	
+m	SAT	UNSAT	
+0	150	100	
 
 inv6OK
-m	UNSAT	SAT	
-0	111	85	
+m	SAT	UNSAT	
+0	85	111	
 
 inv7OK
-m	UNSAT	SAT	
-0	103	125	
-1	0	1	
+m	SAT	UNSAT	
+0	125	103	
+1	1	0	
 
 inv8OK
-m	UNSAT	SAT	
-0	104	67	
-1	1	2	
+m	SAT	UNSAT	
+0	67	104	
+1	2	1	
 
 inv9OK
-m	UNSAT	SAT	
-0	91	210	
-1	0	2	
+m	SAT	UNSAT	
+0	210	91	
+1	2	0	
 
 inv10OK
-m	UNSAT	SAT	
-0	93	178	
+m	SAT	UNSAT	
+0	178	93	
 
 inv11OK
-m	UNSAT	SAT	
-0	64	263	
+m	SAT	UNSAT	
+0	263	64	
 
 inv12OK
-m	UNSAT	SAT	
-0	52	123	
+m	SAT	UNSAT	
+0	123	52	
 
 inv13OK
-m	UNSAT	SAT	
-0	73	67	
+m	SAT	UNSAT	
+0	67	73	
 
 inv14OK
-m	UNSAT	SAT	
-0	35	228	
+m	SAT	UNSAT	
+0	228	35	
 
 inv15OK
-m	UNSAT	SAT	
-0	40	140	
+m	SAT	UNSAT	
+0	140	40	
 
 Number of quantifiers
 
 inv1OK
-m	UNSAT	SAT	
-0	119	50	
-1	50	0	
+m	SAT	UNSAT	
+0	50	119	
+1	0	50	
 
 inv2OK
-m	UNSAT	SAT	
-0	95	7	
-1	3	0	
-2	0	1	
-
-inv3OK
-m	UNSAT	SAT	
-0	89	28	
-1	14	19	
+m	SAT	UNSAT	
+0	7	95	
+1	0	3	
 2	1	0	
 
+inv3OK
+m	SAT	UNSAT	
+0	28	89	
+1	19	14	
+2	0	1	
+
 inv4OK
-m	UNSAT	SAT	
-0	95	74	
-1	25	19	
+m	SAT	UNSAT	
+0	74	95	
+1	19	25	
 
 inv5OK
-m	UNSAT	SAT	
-0	80	64	
-1	11	69	
-2	9	16	
-3	0	1	
+m	SAT	UNSAT	
+0	64	80	
+1	69	11	
+2	16	9	
+3	1	0	
 
 inv6OK
-m	UNSAT	SAT	
-0	40	54	
-1	67	29	
-2	4	2	
+m	SAT	UNSAT	
+0	54	40	
+1	29	67	
+2	2	4	
 
 inv7OK
-m	UNSAT	SAT	
-0	46	45	
-1	42	78	
-2	15	3	
+m	SAT	UNSAT	
+0	45	46	
+1	78	42	
+2	3	15	
 
 inv8OK
-m	UNSAT	SAT	
-0	17	45	
-1	81	19	
-2	3	4	
-3	4	1	
+m	SAT	UNSAT	
+0	45	17	
+1	19	81	
+2	4	3	
+3	1	4	
 
 inv9OK
-m	UNSAT	SAT	
-0	11	54	
-1	60	130	
-2	8	27	
-3	12	1	
+m	SAT	UNSAT	
+0	54	11	
+1	130	60	
+2	27	8	
+3	1	12	
 
 inv10OK
-m	UNSAT	SAT	
-0	4	63	
-1	14	56	
-2	55	38	
-3	20	21	
+m	SAT	UNSAT	
+0	63	4	
+1	56	14	
+2	38	55	
+3	21	20	
 
 inv11OK
-m	UNSAT	SAT	
-0	4	28	
-1	55	166	
-2	2	48	
-3	1	6	
-4	2	15	
+m	SAT	UNSAT	
+0	28	4	
+1	166	55	
+2	48	2	
+3	6	1	
+4	15	2	
 
 inv12OK
-m	UNSAT	SAT	
-0	2	29	
-1	42	50	
-2	6	24	
-3	1	17	
-4	1	3	
+m	SAT	UNSAT	
+0	29	2	
+1	50	42	
+2	24	6	
+3	17	1	
+4	3	1	
 
 inv13OK
-m	UNSAT	SAT	
-0	51	36	
-1	2	5	
-2	20	22	
-3	0	4	
+m	SAT	UNSAT	
+0	36	51	
+1	5	2	
+2	22	20	
+3	4	0	
 
 inv14OK
-m	UNSAT	SAT	
-0	0	22	
-1	4	56	
-2	11	65	
-3	16	49	
-4	4	36	
+m	SAT	UNSAT	
+0	22	0	
+1	56	4	
+2	65	11	
+3	49	16	
+4	36	4	
 
 inv15OK
-m	UNSAT	SAT	
-0	0	30	
-1	38	95	
-2	2	15	
+m	SAT	UNSAT	
+0	30	0	
+1	95	38	
+2	15	2	
 
 Number of inverted navigation expressions
 
 inv1OK
-m	UNSAT	SAT	
-0	169	50	
+m	SAT	UNSAT	
+0	50	169	
 
 inv2OK
-m	UNSAT	SAT	
-0	98	8	
+m	SAT	UNSAT	
+0	8	98	
 
 inv3OK
-m	UNSAT	SAT	
-0	104	47	
+m	SAT	UNSAT	
+0	47	104	
 
 inv4OK
-m	UNSAT	SAT	
-0	120	93	
+m	SAT	UNSAT	
+0	93	120	
 
 inv5OK
-m	UNSAT	SAT	
-0	100	148	
-1	0	2	
+m	SAT	UNSAT	
+0	148	100	
+1	2	0	
 
 inv6OK
-m	UNSAT	SAT	
-0	111	84	
-1	0	1	
+m	SAT	UNSAT	
+0	84	111	
+1	1	0	
 
 inv7OK
-m	UNSAT	SAT	
-0	97	123	
-1	6	3	
+m	SAT	UNSAT	
+0	123	97	
+1	3	6	
 
 inv8OK
-m	UNSAT	SAT	
-0	103	67	
+m	SAT	UNSAT	
+0	67	103	
 1	2	2	
 
 inv9OK
-m	UNSAT	SAT	
-0	70	209	
-1	21	3	
+m	SAT	UNSAT	
+0	209	70	
+1	3	21	
 
 inv10OK
-m	UNSAT	SAT	
-0	93	178	
+m	SAT	UNSAT	
+0	178	93	
 
 inv11OK
-m	UNSAT	SAT	
-0	58	259	
-1	6	4	
+m	SAT	UNSAT	
+0	259	58	
+1	4	6	
 
 inv12OK
-m	UNSAT	SAT	
-0	52	116	
-1	0	7	
+m	SAT	UNSAT	
+0	116	52	
+1	7	0	
 
 inv13OK
-m	UNSAT	SAT	
-0	73	67	
+m	SAT	UNSAT	
+0	67	73	
 
 inv14OK
-m	UNSAT	SAT	
-0	35	228	
+m	SAT	UNSAT	
+0	228	35	
 
 inv15OK
-m	UNSAT	SAT	
-0	40	139	
-1	0	1	
+m	SAT	UNSAT	
+0	139	40	
+1	1	0	
 
 * Derivation tree
 zRAn69AocpkmxXZnW, 2019-10-02T21:44:17 (model share)

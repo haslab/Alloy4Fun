@@ -1,4 +1,4 @@
-9jPK8KBWzjFmBx4Hb (2020-12-19)
+9jPK8KBWzjFmBx4Hb (2020-12-22)
 
 * Meta-data
 Challenge name: unknown
@@ -834,6 +834,9 @@ m	ERROR	UNSAT	SAT	SHARE
 2020-12-17	0	0	0	0	
 2020-12-18	0	0	0	0	
 2020-12-19	0	0	0	0	
+2020-12-20	0	0	0	0	
+2020-12-21	0	0	0	0	
+2020-12-22	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 

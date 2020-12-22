@@ -1,4 +1,4 @@
-JC8Tij8o8GZb99gEJ (2020-12-19)
+JC8Tij8o8GZb99gEJ (2020-12-22)
 
 * Meta-data
 Challenge name: unknown
@@ -175,8 +175,8 @@ Errors by type
 There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	6
 in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	17
 This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	46
-This expression failed to be typechecked line _ column _ filename=_.als	7
 The name _ cannot be found.	27
+This expression failed to be typechecked line _ column _ filename=_.als	7
 & can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	2
 There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	14
 This must be a set or relation. Instead, it has the following possible type(s): {_}	27
@@ -655,6 +655,9 @@ m	UNSAT	ERROR	SHARE	SAT
 2020-12-17	0	0	0	0	
 2020-12-18	0	0	0	0	
 2020-12-19	0	0	0	0	
+2020-12-20	0	0	0	0	
+2020-12-21	0	0	0	0	
+2020-12-22	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 
