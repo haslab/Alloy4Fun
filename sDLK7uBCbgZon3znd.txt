@@ -1,4 +1,4 @@
-sDLK7uBCbgZon3znd (2020-12-19)
+sDLK7uBCbgZon3znd (2020-12-22)
 
 * Meta-data
 Challenge name: unknown
@@ -187,8 +187,8 @@ There are 1 possible tokens that can appear here: ) 	16
 !in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	69
 There are 3 possible tokens that can appear here: ,  : = 	4
 in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	98
-This expression failed to be typechecked line _ column _ filename=_.als	13
 The name _ cannot be found.	176
+This expression failed to be typechecked line _ column _ filename=_.als	13
 This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	8
 & can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	1
 Syntax error at the \ character. HEX: \u5c)	1
@@ -689,6 +689,9 @@ m	SAT	UNSAT	ERROR	SHARE
 2020-12-17	0	0	0	0	
 2020-12-18	0	0	0	0	
 2020-12-19	0	0	0	0	
+2020-12-20	0	0	0	0	
+2020-12-21	0	0	0	0	
+2020-12-22	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 

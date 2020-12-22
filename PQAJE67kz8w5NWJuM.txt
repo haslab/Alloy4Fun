@@ -1,4 +1,4 @@
-PQAJE67kz8w5NWJuM (2020-12-19)
+PQAJE67kz8w5NWJuM (2020-12-22)
 
 * Meta-data
 Challenge name: unknown
@@ -736,6 +736,9 @@ m	ERROR	SAT	UNSAT	SHARE
 2020-12-17	0	0	0	0	
 2020-12-18	0	0	0	0	
 2020-12-19	0	0	0	0	
+2020-12-20	0	0	0	0	
+2020-12-21	0	0	0	0	
+2020-12-22	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 

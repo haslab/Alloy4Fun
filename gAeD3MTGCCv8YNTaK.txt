@@ -1,4 +1,4 @@
-gAeD3MTGCCv8YNTaK (2020-12-19)
+gAeD3MTGCCv8YNTaK (2020-12-22)
 
 * Meta-data
 Challenge name: unknown
@@ -175,15 +175,15 @@ Models by number of warnings
 * Overall metrics, classified
 
 Execution results by challenge
-m	UNSAT	SAT	
-undirected	122	90	
-oriented	101	68	
-acyclic	92	73	
-complete	106	85	
-noLoops	82	46	
-weaklyConnected	53	330	
-stonglyConnected	60	92	
-transitive	64	23	
+m	SAT	UNSAT	
+undirected	90	122	
+oriented	68	101	
+acyclic	73	92	
+complete	85	106	
+noLoops	46	82	
+weaklyConnected	330	53	
+stonglyConnected	92	60	
+transitive	23	64	
 
 Session results by challenge
 m	solved	unsolved	
@@ -197,24 +197,24 @@ stonglyConnected	39	87
 transitive	48	78	
 
 Model entries over time
-m	ERROR	SHARE	UNSAT	SAT	
-2019-10-02	0	1	0	0	
+m	SAT	ERROR	SHARE	UNSAT	
+2019-10-02	0	0	1	0	
 2019-10-03	0	0	0	0	
-2019-10-04	1	0	0	3	
+2019-10-04	3	1	0	0	
 2019-10-05	0	0	0	0	
 2019-10-06	0	0	0	0	
-2019-10-07	0	1	2	1	
-2019-10-08	0	0	3	0	
+2019-10-07	1	0	1	2	
+2019-10-08	0	0	0	3	
 2019-10-09	0	0	0	0	
 2019-10-10	0	0	0	0	
 2019-10-11	0	0	0	0	
-2019-10-12	4	0	0	4	
+2019-10-12	4	4	0	0	
 2019-10-13	0	0	0	0	
 2019-10-14	0	0	0	0	
 2019-10-15	0	0	0	0	
-2019-10-16	44	0	15	101	
-2019-10-17	125	8	107	159	
-2019-10-18	15	0	13	10	
+2019-10-16	101	44	0	15	
+2019-10-17	159	125	8	107	
+2019-10-18	10	15	0	13	
 2019-10-19	0	0	0	0	
 2019-10-20	0	0	0	0	
 2019-10-21	0	0	0	0	
@@ -227,7 +227,7 @@ m	ERROR	SHARE	UNSAT	SAT
 2019-10-28	0	0	0	0	
 2019-10-29	0	0	0	0	
 2019-10-30	0	0	0	0	
-2019-10-31	0	1	0	0	
+2019-10-31	0	0	1	0	
 2019-11-01	0	0	0	0	
 2019-11-02	0	0	0	0	
 2019-11-03	0	0	0	0	
@@ -237,10 +237,10 @@ m	ERROR	SHARE	UNSAT	SAT
 2019-11-07	0	0	0	0	
 2019-11-08	0	0	0	0	
 2019-11-09	0	0	0	0	
-2019-11-10	6	1	18	28	
-2019-11-11	8	3	45	22	
+2019-11-10	28	6	1	18	
+2019-11-11	22	8	3	45	
 2019-11-12	0	0	0	0	
-2019-11-13	1	0	3	0	
+2019-11-13	0	1	0	3	
 2019-11-14	0	0	0	0	
 2019-11-15	0	0	0	0	
 2019-11-16	0	0	0	0	
@@ -248,9 +248,9 @@ m	ERROR	SHARE	UNSAT	SAT
 2019-11-18	0	0	0	0	
 2019-11-19	0	0	0	0	
 2019-11-20	0	0	0	0	
-2019-11-21	0	1	10	2	
+2019-11-21	2	0	1	10	
 2019-11-22	0	0	0	0	
-2019-11-23	0	0	0	1	
+2019-11-23	1	0	0	0	
 2019-11-24	0	0	0	0	
 2019-11-25	0	0	0	0	
 2019-11-26	0	0	0	0	
@@ -258,8 +258,8 @@ m	ERROR	SHARE	UNSAT	SAT
 2019-11-28	0	0	0	0	
 2019-11-29	0	0	0	0	
 2019-11-30	0	0	0	0	
-2019-12-01	1	0	21	13	
-2019-12-02	5	0	55	6	
+2019-12-01	13	1	0	21	
+2019-12-02	6	5	0	55	
 2019-12-03	0	0	0	0	
 2019-12-04	0	0	0	0	
 2019-12-05	0	0	0	0	
@@ -295,8 +295,8 @@ m	ERROR	SHARE	UNSAT	SAT
 2020-01-04	0	0	0	0	
 2020-01-05	0	0	0	0	
 2020-01-06	0	0	0	0	
-2020-01-07	2	0	24	4	
-2020-01-08	5	2	8	7	
+2020-01-07	4	2	0	24	
+2020-01-08	7	5	2	8	
 2020-01-09	0	0	0	0	
 2020-01-10	0	0	0	0	
 2020-01-11	0	0	0	0	
@@ -307,9 +307,9 @@ m	ERROR	SHARE	UNSAT	SAT
 2020-01-16	0	0	0	0	
 2020-01-17	0	0	0	0	
 2020-01-18	0	0	0	0	
-2020-01-19	15	1	6	15	
+2020-01-19	15	15	1	6	
 2020-01-20	0	0	0	0	
-2020-01-21	0	0	8	0	
+2020-01-21	0	0	0	8	
 2020-01-22	0	0	0	0	
 2020-01-23	0	0	0	0	
 2020-01-24	0	0	0	0	
@@ -394,8 +394,8 @@ m	ERROR	SHARE	UNSAT	SAT
 2020-04-12	0	0	0	0	
 2020-04-13	0	0	0	0	
 2020-04-14	0	0	0	0	
-2020-04-15	0	0	0	1	
-2020-04-16	0	0	7	1	
+2020-04-15	1	0	0	0	
+2020-04-16	1	0	0	7	
 2020-04-17	0	0	0	0	
 2020-04-18	0	0	0	0	
 2020-04-19	0	0	0	0	
@@ -450,17 +450,17 @@ m	ERROR	SHARE	UNSAT	SAT
 2020-06-07	0	0	0	0	
 2020-06-08	0	0	0	0	
 2020-06-09	0	0	0	0	
-2020-06-10	0	0	0	1	
+2020-06-10	1	0	0	0	
 2020-06-11	0	0	0	0	
 2020-06-12	0	0	0	0	
 2020-06-13	0	0	0	0	
 2020-06-14	0	0	0	0	
-2020-06-15	0	0	4	0	
+2020-06-15	0	0	0	4	
 2020-06-16	0	0	0	0	
 2020-06-17	0	0	0	0	
 2020-06-18	0	0	0	0	
 2020-06-19	0	0	0	0	
-2020-06-20	0	0	0	1	
+2020-06-20	1	0	0	0	
 2020-06-21	0	0	0	0	
 2020-06-22	0	0	0	0	
 2020-06-23	0	0	0	0	
@@ -474,11 +474,11 @@ m	ERROR	SHARE	UNSAT	SAT
 2020-07-01	0	0	0	0	
 2020-07-02	0	0	0	0	
 2020-07-03	0	0	0	0	
-2020-07-04	0	0	0	1	
+2020-07-04	1	0	0	0	
 2020-07-05	0	0	0	0	
 2020-07-06	0	0	0	0	
 2020-07-07	0	0	0	0	
-2020-07-08	0	0	0	3	
+2020-07-08	3	0	0	0	
 2020-07-09	0	0	0	0	
 2020-07-10	0	0	0	0	
 2020-07-11	0	0	0	0	
@@ -549,7 +549,7 @@ m	ERROR	SHARE	UNSAT	SAT
 2020-09-14	0	0	0	0	
 2020-09-15	0	0	0	0	
 2020-09-16	0	0	0	0	
-2020-09-17	0	1	0	1	
+2020-09-17	1	0	1	0	
 2020-09-18	0	0	0	0	
 2020-09-19	0	0	0	0	
 2020-09-20	0	0	0	0	
@@ -584,13 +584,13 @@ m	ERROR	SHARE	UNSAT	SAT
 2020-10-19	0	0	0	0	
 2020-10-20	0	0	0	0	
 2020-10-21	0	0	0	0	
-2020-10-22	0	0	0	1	
+2020-10-22	1	0	0	0	
 2020-10-23	0	0	0	0	
 2020-10-24	0	0	0	0	
 2020-10-25	0	0	0	0	
 2020-10-26	0	0	0	0	
 2020-10-27	0	0	0	0	
-2020-10-28	0	0	0	1	
+2020-10-28	1	0	0	0	
 2020-10-29	0	0	0	0	
 2020-10-30	0	0	0	0	
 2020-10-31	0	0	0	0	
@@ -598,44 +598,44 @@ m	ERROR	SHARE	UNSAT	SAT
 2020-11-02	0	0	0	0	
 2020-11-03	0	0	0	0	
 2020-11-04	0	0	0	0	
-2020-11-05	129	1	141	186	
-2020-11-06	1	0	13	14	
-2020-11-07	55	0	22	29	
+2020-11-05	186	129	1	141	
+2020-11-06	14	1	0	13	
+2020-11-07	29	55	0	22	
 2020-11-08	0	0	0	0	
-2020-11-09	8	0	9	30	
-2020-11-10	11	0	14	31	
+2020-11-09	30	8	0	9	
+2020-11-10	31	11	0	14	
 2020-11-11	0	0	0	0	
-2020-11-12	3	0	16	13	
+2020-11-12	13	3	0	16	
 2020-11-13	0	0	0	0	
 2020-11-14	0	0	0	0	
-2020-11-15	10	0	24	27	
-2020-11-16	5	0	12	10	
+2020-11-15	27	10	0	24	
+2020-11-16	10	5	0	12	
 2020-11-17	0	0	0	0	
-2020-11-18	9	0	22	38	
-2020-11-19	0	0	14	4	
+2020-11-18	38	9	0	22	
+2020-11-19	4	0	0	14	
 2020-11-20	0	0	0	0	
 2020-11-21	0	0	0	0	
 2020-11-22	0	0	0	0	
 2020-11-23	0	0	0	0	
 2020-11-24	0	0	0	0	
-2020-11-25	3	0	8	11	
-2020-11-26	0	0	0	2	
+2020-11-25	11	3	0	8	
+2020-11-26	2	0	0	0	
 2020-11-27	0	0	0	0	
 2020-11-28	0	0	0	0	
 2020-11-29	0	0	0	0	
-2020-11-30	1	0	0	0	
+2020-11-30	0	1	0	0	
 2020-12-01	0	0	0	0	
-2020-12-02	0	0	1	0	
-2020-12-03	5	1	14	11	
-2020-12-04	1	0	9	9	
+2020-12-02	0	0	0	1	
+2020-12-03	11	5	1	14	
+2020-12-04	9	1	0	9	
 2020-12-05	0	0	0	0	
-2020-12-06	0	1	8	5	
+2020-12-06	5	0	1	8	
 2020-12-07	0	0	0	0	
 2020-12-08	0	0	0	0	
-2020-12-09	0	0	3	1	
-2020-12-10	0	0	1	0	
+2020-12-09	1	0	0	3	
+2020-12-10	0	0	0	1	
 2020-12-11	0	0	0	0	
-2020-12-12	0	0	0	1	
+2020-12-12	1	0	0	0	
 2020-12-13	0	0	0	0	
 2020-12-14	0	0	0	0	
 2020-12-15	0	0	0	0	
@@ -643,388 +643,391 @@ m	ERROR	SHARE	UNSAT	SAT
 2020-12-17	0	0	0	0	
 2020-12-18	0	0	0	0	
 2020-12-19	0	0	0	0	
+2020-12-20	0	0	0	0	
+2020-12-21	0	0	0	0	
+2020-12-22	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 
 Size in 10s of nodes
 
 undirected
-m	UNSAT	SAT	
-0	42	44	
-1	16	38	
-2	63	8	
-3	1	0	
+m	SAT	UNSAT	
+0	44	42	
+1	38	16	
+2	8	63	
+3	0	1	
 
 oriented
-m	UNSAT	SAT	
-0	45	24	
-1	7	31	
-2	48	13	
-3	1	0	
+m	SAT	UNSAT	
+0	24	45	
+1	31	7	
+2	13	48	
+3	0	1	
 
 acyclic
-m	UNSAT	SAT	
-1	8	28	
-2	82	31	
-3	2	14	
+m	SAT	UNSAT	
+1	28	8	
+2	31	82	
+3	14	2	
 
 complete
-m	UNSAT	SAT	
-0	0	1	
-1	100	77	
-2	5	7	
-3	1	0	
+m	SAT	UNSAT	
+0	1	0	
+1	77	100	
+2	7	5	
+3	0	1	
 
 noLoops
-m	UNSAT	SAT	
-0	13	8	
-1	66	33	
-2	3	5	
+m	SAT	UNSAT	
+0	8	13	
+1	33	66	
+2	5	3	
 
 weaklyConnected
-m	UNSAT	SAT	
-1	0	16	
-2	52	272	
-3	1	40	
-4	0	2	
+m	SAT	UNSAT	
+1	16	0	
+2	272	52	
+3	40	1	
+4	2	0	
 
 stonglyConnected
-m	UNSAT	SAT	
-1	5	18	
-2	55	72	
-3	0	2	
+m	SAT	UNSAT	
+1	18	5	
+2	72	55	
+3	2	0	
 
 transitive
-m	UNSAT	SAT	
-0	0	4	
-1	18	11	
-2	45	6	
-3	1	2	
+m	SAT	UNSAT	
+0	4	0	
+1	11	18	
+2	6	45	
+3	2	1	
 
 Number of binary temporal operators
 
 undirected
-m	UNSAT	SAT	
-0	122	90	
+m	SAT	UNSAT	
+0	90	122	
 
 oriented
-m	UNSAT	SAT	
-0	101	68	
+m	SAT	UNSAT	
+0	68	101	
 
 acyclic
-m	UNSAT	SAT	
-0	92	73	
+m	SAT	UNSAT	
+0	73	92	
 
 complete
-m	UNSAT	SAT	
-0	106	85	
+m	SAT	UNSAT	
+0	85	106	
 
 noLoops
-m	UNSAT	SAT	
-0	82	46	
+m	SAT	UNSAT	
+0	46	82	
 
 weaklyConnected
-m	UNSAT	SAT	
-0	53	330	
+m	SAT	UNSAT	
+0	330	53	
 
 stonglyConnected
-m	UNSAT	SAT	
-0	60	92	
+m	SAT	UNSAT	
+0	92	60	
 
 transitive
-m	UNSAT	SAT	
-0	64	23	
+m	SAT	UNSAT	
+0	23	64	
 
 Max nested temporal operator level
 
 undirected
-m	UNSAT	SAT	
-0	122	90	
+m	SAT	UNSAT	
+0	90	122	
 
 oriented
-m	UNSAT	SAT	
-0	101	68	
+m	SAT	UNSAT	
+0	68	101	
 
 acyclic
-m	UNSAT	SAT	
-0	92	73	
+m	SAT	UNSAT	
+0	73	92	
 
 complete
-m	UNSAT	SAT	
-0	106	85	
+m	SAT	UNSAT	
+0	85	106	
 
 noLoops
-m	UNSAT	SAT	
-0	82	46	
+m	SAT	UNSAT	
+0	46	82	
 
 weaklyConnected
-m	UNSAT	SAT	
-0	53	330	
+m	SAT	UNSAT	
+0	330	53	
 
 stonglyConnected
-m	UNSAT	SAT	
-0	60	92	
+m	SAT	UNSAT	
+0	92	60	
 
 transitive
-m	UNSAT	SAT	
-0	64	23	
+m	SAT	UNSAT	
+0	23	64	
 
 Number of lone/one quantifiers
 
 undirected
-m	UNSAT	SAT	
-0	122	90	
+m	SAT	UNSAT	
+0	90	122	
 
 oriented
-m	UNSAT	SAT	
-0	101	68	
+m	SAT	UNSAT	
+0	68	101	
 
 acyclic
-m	UNSAT	SAT	
-0	92	73	
+m	SAT	UNSAT	
+0	73	92	
 
 complete
-m	UNSAT	SAT	
-0	106	85	
+m	SAT	UNSAT	
+0	85	106	
 
 noLoops
-m	UNSAT	SAT	
-0	82	46	
+m	SAT	UNSAT	
+0	46	82	
 
 weaklyConnected
-m	UNSAT	SAT	
-0	53	330	
+m	SAT	UNSAT	
+0	330	53	
 
 stonglyConnected
-m	UNSAT	SAT	
-0	60	92	
+m	SAT	UNSAT	
+0	92	60	
 
 transitive
-m	UNSAT	SAT	
-0	64	23	
+m	SAT	UNSAT	
+0	23	64	
 
 Max nested quantifier level
 
 undirected
-m	UNSAT	SAT	
-0	52	68	
-1	64	19	
-2	6	3	
+m	SAT	UNSAT	
+0	68	52	
+1	19	64	
+2	3	6	
 
 oriented
-m	UNSAT	SAT	
-0	46	36	
-1	51	31	
-2	4	1	
+m	SAT	UNSAT	
+0	36	46	
+1	31	51	
+2	1	4	
 
 acyclic
-m	UNSAT	SAT	
-0	8	24	
-1	84	48	
-2	0	1	
+m	SAT	UNSAT	
+0	24	8	
+1	48	84	
+2	1	0	
 
 complete
-m	UNSAT	SAT	
-0	26	22	
-1	76	62	
-2	4	1	
+m	SAT	UNSAT	
+0	22	26	
+1	62	76	
+2	1	4	
 
 noLoops
-m	UNSAT	SAT	
-0	15	13	
-1	67	33	
+m	SAT	UNSAT	
+0	13	15	
+1	33	67	
 
 weaklyConnected
-m	UNSAT	SAT	
-0	5	43	
-1	47	281	
-2	1	6	
+m	SAT	UNSAT	
+0	43	5	
+1	281	47	
+2	6	1	
 
 stonglyConnected
-m	UNSAT	SAT	
-0	5	25	
-1	54	66	
+m	SAT	UNSAT	
+0	25	5	
+1	66	54	
 2	1	1	
 
 transitive
-m	UNSAT	SAT	
+m	SAT	UNSAT	
 0	11	11	
-1	52	9	
-2	0	3	
-3	1	0	
+1	9	52	
+2	3	0	
+3	0	1	
 
 Number of disj quantifications
 
 undirected
-m	UNSAT	SAT	
-0	116	89	
-1	6	1	
+m	SAT	UNSAT	
+0	89	116	
+1	1	6	
 
 oriented
-m	UNSAT	SAT	
-0	100	65	
-1	1	3	
+m	SAT	UNSAT	
+0	65	100	
+1	3	1	
 
 acyclic
-m	UNSAT	SAT	
-0	92	73	
+m	SAT	UNSAT	
+0	73	92	
 
 complete
-m	UNSAT	SAT	
-0	106	84	
-1	0	1	
+m	SAT	UNSAT	
+0	84	106	
+1	1	0	
 
 noLoops
-m	UNSAT	SAT	
-0	82	46	
+m	SAT	UNSAT	
+0	46	82	
 
 weaklyConnected
-m	UNSAT	SAT	
-0	53	328	
-1	0	2	
+m	SAT	UNSAT	
+0	328	53	
+1	2	0	
 
 stonglyConnected
-m	UNSAT	SAT	
-0	60	92	
+m	SAT	UNSAT	
+0	92	60	
 
 transitive
-m	UNSAT	SAT	
-0	64	22	
-1	0	1	
+m	SAT	UNSAT	
+0	22	64	
+1	1	0	
 
 Number multiplicity arrows
 
 undirected
-m	UNSAT	SAT	
-0	122	90	
+m	SAT	UNSAT	
+0	90	122	
 
 oriented
-m	UNSAT	SAT	
-0	101	68	
+m	SAT	UNSAT	
+0	68	101	
 
 acyclic
-m	UNSAT	SAT	
-0	92	73	
+m	SAT	UNSAT	
+0	73	92	
 
 complete
-m	UNSAT	SAT	
-0	106	85	
+m	SAT	UNSAT	
+0	85	106	
 
 noLoops
-m	UNSAT	SAT	
-0	82	46	
+m	SAT	UNSAT	
+0	46	82	
 
 weaklyConnected
-m	UNSAT	SAT	
-0	53	330	
+m	SAT	UNSAT	
+0	330	53	
 
 stonglyConnected
-m	UNSAT	SAT	
-0	60	92	
+m	SAT	UNSAT	
+0	92	60	
 
 transitive
-m	UNSAT	SAT	
-0	64	23	
+m	SAT	UNSAT	
+0	23	64	
 
 Number of quantifiers
 
 undirected
-m	UNSAT	SAT	
-0	52	68	
-1	6	11	
-2	63	11	
+m	SAT	UNSAT	
+0	68	52	
+1	11	6	
+2	11	63	
 3	0	0	
-4	1	0	
+4	0	1	
 
 oriented
-m	UNSAT	SAT	
-0	46	36	
-1	6	19	
-2	48	13	
+m	SAT	UNSAT	
+0	36	46	
+1	19	6	
+2	13	48	
 3	0	0	
-4	1	0	
+4	0	1	
 
 acyclic
-m	UNSAT	SAT	
-0	8	24	
-1	82	24	
-2	2	18	
-3	0	7	
+m	SAT	UNSAT	
+0	24	8	
+1	24	82	
+2	18	2	
+3	7	0	
 
 complete
-m	UNSAT	SAT	
-0	26	22	
-1	52	55	
-2	27	8	
-3	1	0	
-
-noLoops
-m	UNSAT	SAT	
-0	15	13	
-1	63	28	
-2	4	4	
+m	SAT	UNSAT	
+0	22	26	
+1	55	52	
+2	8	27	
 3	0	1	
 
+noLoops
+m	SAT	UNSAT	
+0	13	15	
+1	28	63	
+2	4	4	
+3	1	0	
+
 weaklyConnected
-m	UNSAT	SAT	
-0	5	43	
-1	44	225	
-2	4	59	
-3	0	3	
+m	SAT	UNSAT	
+0	43	5	
+1	225	44	
+2	59	4	
+3	3	0	
 
 stonglyConnected
-m	UNSAT	SAT	
-0	5	25	
-1	52	57	
-2	3	10	
+m	SAT	UNSAT	
+0	25	5	
+1	57	52	
+2	10	3	
 
 transitive
-m	UNSAT	SAT	
+m	SAT	UNSAT	
 0	11	11	
-1	7	3	
-2	3	2	
-3	43	7	
+1	3	7	
+2	2	3	
+3	7	43	
 
 Number of inverted navigation expressions
 
 undirected
-m	UNSAT	SAT	
-0	122	89	
-1	0	1	
+m	SAT	UNSAT	
+0	89	122	
+1	1	0	
 
 oriented
-m	UNSAT	SAT	
-0	100	68	
-1	1	0	
-
-acyclic
-m	UNSAT	SAT	
-0	91	73	
-1	1	0	
-
-complete
-m	UNSAT	SAT	
-0	106	83	
-1	0	2	
-
-noLoops
-m	UNSAT	SAT	
-0	82	45	
+m	SAT	UNSAT	
+0	68	100	
 1	0	1	
 
+acyclic
+m	SAT	UNSAT	
+0	73	91	
+1	0	1	
+
+complete
+m	SAT	UNSAT	
+0	83	106	
+1	2	0	
+
+noLoops
+m	SAT	UNSAT	
+0	45	82	
+1	1	0	
+
 weaklyConnected
-m	UNSAT	SAT	
-0	53	316	
-1	0	14	
+m	SAT	UNSAT	
+0	316	53	
+1	14	0	
 
 stonglyConnected
-m	UNSAT	SAT	
-0	60	90	
-1	0	2	
+m	SAT	UNSAT	
+0	90	60	
+1	2	0	
 
 transitive
-m	UNSAT	SAT	
-0	64	23	
+m	SAT	UNSAT	
+0	23	64	
 
 * Derivation tree
 gAeD3MTGCCv8YNTaK, 2019-10-02T21:44:55 (model share)

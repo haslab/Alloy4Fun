@@ -1,4 +1,4 @@
-YH3ANm7Y5Qe5dSYem (2020-12-19)
+YH3ANm7Y5Qe5dSYem (2020-12-22)
 
 * Meta-data
 Challenge name: unknown
@@ -757,6 +757,9 @@ m	ERROR	SAT	UNSAT	SHARE
 2020-12-17	0	0	0	0	
 2020-12-18	0	0	0	0	
 2020-12-19	0	0	0	0	
+2020-12-20	0	0	0	0	
+2020-12-21	0	0	0	0	
+2020-12-22	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 

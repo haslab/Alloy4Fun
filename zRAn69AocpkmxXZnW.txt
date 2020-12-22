@@ -1,4 +1,4 @@
-zRAn69AocpkmxXZnW (2020-12-19)
+zRAn69AocpkmxXZnW (2020-12-22)
 
 * Meta-data
 Challenge name: unknown
@@ -7,13 +7,13 @@ Creation time: 2019-10-02
 Metric catalog: Example metric catalog
 
 * Overall metric statistics
-Total model entries: 4902
-Total executions: 4851
+Total model entries: 4938
+Total executions: 4887
 Total shares: 51
-Total error messages: 1685
-Total warning messages: 485
-Total solutions: 3172
-Total sessions: 179
+Total error messages: 1694
+Total warning messages: 491
+Total solutions: 3199
+Total sessions: 182
 Timed out re-executions: 0
 Rejected due to server errors: 40
 Inconsisistent result reports: 0
@@ -27,17 +27,17 @@ Shared models (model)	49
 Shares with warnings	3
 Alloy runtime errors	11
 Shared errored models	6
-Alloy static errors	1668
+Alloy static errors	1677
 Shared models (instance)	2
-Average session	27.01675977653631
+Average session	26.76923076923077
 Longest session	207
-Sat executions with warnings	306
-Executed errored models	1679
-Unsat executions	1822
+Sat executions with warnings	310
+Executed errored models	1688
+Unsat executions	1840
 Unsat executions with warnings	46
 Errored executions with warnings	4
-Average % unsatisfiable	0.4389203854861407
-Sat executions	1350
+Average % unsatisfiable	0.4374783360639872
+Sat executions	1359
 
 * Overall metrics
 
@@ -48,10 +48,10 @@ Sessions by length
 4	7
 5	3
 6	2
-7	4
+7	5
 8	3
 9	6
-10	3
+10	4
 11	5
 12	0
 13	2
@@ -60,7 +60,7 @@ Sessions by length
 16	4
 17	3
 18	0
-19	3
+19	4
 20	2
 21	2
 22	2
@@ -252,7 +252,7 @@ Sessions by length
 
 Warnings by type
 Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}	62
-& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}	23
+& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}	25
 Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}	24
 ^_ is redundant since its domain and range are disjoint: {_}	14
 == is redundant, because the left and right expressions are always disjoint. Left type = {_} Right type = {_}	12
@@ -264,14 +264,14 @@ Subset operator is redundant, because the right subexpression is always empty. L
 This variable is unused.	83
 :> is irrelevant because the result is always empty. Left type = {_} Right type = {_}	3
 The left expression of -> is irrelevant because the right expression is always empty. Left type = {_} Right type = {_}	3
-The join operation here always yields an empty set. Left type = {_} Right type = {_}	226
+The join operation here always yields an empty set. Left type = {_} Right type = {_}	230
 
 Sessions by # of solved challenges
 0	52
 1	24
-2	6
+2	8
 3	9
-4	17
+4	18
 5	6
 6	7
 7	4
@@ -291,10 +291,10 @@ There are 5 possible tokens that can appear here: enum fun let open pred 	12
 There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ 	30
 = can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	24
 This must be a unary set. Instead, its type is {_}	1
-The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".	57
+The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".	58
 Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.	11
 There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	23
-This must be a formula expression. Instead, it has the following possible type(s): {_}	347
+This must be a formula expression. Instead, it has the following possible type(s): {_}	353
 ~ can be used only with a binary relation. Instead, its possible type(s) are: {_}	26
 There are 8 possible tokens that can appear here: NAME disj exh part private seq this var 	14
 This must be a unary set, but instead it has the following possible type(s): {_}	29
@@ -305,9 +305,9 @@ There are 3 possible tokens that can appear here: ,  : = 	7
 + can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	10
 ^ can be used only with a binary relation. Instead, its possible type(s) are: {_}	10
 in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	138
-This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	331
-The name _ cannot be found.	180
 This expression failed to be typechecked line _ column _ filename=_.als	45
+This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	331
+The name _ cannot be found.	181
 & can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	31
 Syntax error at the \ character. HEX: \u5c)	1
 This must be an integer expression. Instead, it has the following possible type(s): {_}	1
@@ -318,85 +318,85 @@ Multiplicity expression not allowed here.	2
 * can be used only with a binary relation. Instead, its possible type(s) are: {_}	1
 There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~ 	1
 There are 1 possible tokens that can appear here: NAME 	1
-There are 3 possible tokens that can appear here: ,  { | 	47
+There are 3 possible tokens that can appear here: ,  { | 	48
 There are 1 possible tokens that can appear here: . 	8
 
 Models by number of warnings
-0	4543
-1	253
-2	87
+0	4575
+1	255
+2	89
 3	18
 4	1
 
 * Overall metrics, classified
 
 Execution results by challenge
-m	SAT	UNSAT	
-inv1OK	47	169	
-inv2OK	8	98	
-inv3OK	47	104	
-inv4OK	93	120	
-inv5OK	150	100	
-inv6OK	85	111	
-inv7OK	126	103	
-inv8OK	69	105	
-inv9OK	212	91	
-inv10OK	176	92	
-inv11OK	255	63	
-inv12OK	123	51	
-inv13OK	67	71	
-inv14OK	228	33	
-inv15OK	135	38	
+m	UNSAT	SAT	
+inv1OK	169	50	
+inv2OK	98	8	
+inv3OK	104	47	
+inv4OK	120	93	
+inv5OK	100	150	
+inv6OK	111	85	
+inv7OK	103	126	
+inv8OK	105	69	
+inv9OK	91	212	
+inv10OK	93	178	
+inv11OK	64	263	
+inv12OK	52	123	
+inv13OK	73	67	
+inv14OK	35	228	
+inv15OK	40	140	
 
 Session results by challenge
 m	solved	unsolved	
-inv1OK	96	83	
-inv2OK	81	98	
-inv3OK	82	97	
-inv4OK	79	100	
-inv5OK	61	118	
-inv6OK	66	113	
-inv7OK	62	117	
-inv8OK	64	115	
-inv9OK	55	124	
-inv10OK	48	131	
-inv11OK	29	150	
-inv12OK	25	154	
-inv13OK	39	140	
-inv14OK	14	165	
-inv15OK	23	156	
+inv1OK	96	86	
+inv2OK	81	101	
+inv3OK	82	100	
+inv4OK	79	103	
+inv5OK	61	121	
+inv6OK	66	116	
+inv7OK	62	120	
+inv8OK	64	118	
+inv9OK	55	127	
+inv10OK	49	133	
+inv11OK	30	152	
+inv12OK	26	156	
+inv13OK	40	142	
+inv14OK	16	166	
+inv15OK	25	157	
 
 Model entries over time
-m	SAT	UNSAT	ERROR	SHARE	
+m	UNSAT	ERROR	SAT	SHARE	
 2019-10-02	0	0	0	1	
-2019-10-03	229	196	259	8	
-2019-10-04	4	0	15	0	
+2019-10-03	196	259	229	8	
+2019-10-04	0	15	4	0	
 2019-10-05	0	0	0	0	
-2019-10-06	1	0	0	0	
-2019-10-07	0	2	0	0	
-2019-10-08	4	13	1	0	
-2019-10-09	8	3	2	0	
-2019-10-10	6	1	1	0	
-2019-10-11	10	17	2	1	
+2019-10-06	0	0	1	0	
+2019-10-07	2	0	0	0	
+2019-10-08	13	1	4	0	
+2019-10-09	3	2	8	0	
+2019-10-10	1	1	6	0	
+2019-10-11	17	2	10	1	
 2019-10-12	0	0	0	0	
-2019-10-13	46	4	44	0	
-2019-10-14	43	17	53	0	
-2019-10-15	30	8	49	2	
+2019-10-13	4	44	46	0	
+2019-10-14	17	53	43	0	
+2019-10-15	8	49	30	2	
 2019-10-16	0	0	0	0	
 2019-10-17	0	0	0	0	
 2019-10-18	0	0	0	0	
 2019-10-19	0	0	0	0	
 2019-10-20	0	0	0	0	
 2019-10-21	0	0	0	0	
-2019-10-22	25	21	22	2	
+2019-10-22	21	22	25	2	
 2019-10-23	0	0	0	0	
 2019-10-24	1	1	1	0	
 2019-10-25	0	0	0	0	
 2019-10-26	0	0	0	0	
-2019-10-27	1	0	0	0	
+2019-10-27	0	0	1	0	
 2019-10-28	0	0	0	0	
 2019-10-29	0	0	0	0	
-2019-10-30	3	4	3	0	
+2019-10-30	4	3	3	0	
 2019-10-31	0	0	0	0	
 2019-11-01	0	0	0	0	
 2019-11-02	0	0	0	0	
@@ -405,13 +405,13 @@ m	SAT	UNSAT	ERROR	SHARE
 2019-11-05	0	0	0	0	
 2019-11-06	0	0	0	0	
 2019-11-07	0	0	0	0	
-2019-11-08	10	12	7	0	
+2019-11-08	12	7	10	0	
 2019-11-09	0	0	0	0	
-2019-11-10	1	11	3	0	
-2019-11-11	0	1	0	0	
-2019-11-12	6	11	20	0	
-2019-11-13	28	28	35	1	
-2019-11-14	12	4	0	0	
+2019-11-10	11	3	1	0	
+2019-11-11	1	0	0	0	
+2019-11-12	11	20	6	0	
+2019-11-13	28	35	28	1	
+2019-11-14	4	0	12	0	
 2019-11-15	0	0	0	0	
 2019-11-16	0	0	0	0	
 2019-11-17	0	0	0	0	
@@ -432,10 +432,10 @@ m	SAT	UNSAT	ERROR	SHARE
 2019-12-02	0	0	0	0	
 2019-12-03	0	0	0	0	
 2019-12-04	0	0	0	0	
-2019-12-05	1	0	0	0	
+2019-12-05	0	0	1	0	
 2019-12-06	0	0	0	0	
 2019-12-07	0	0	0	0	
-2019-12-08	2	5	2	0	
+2019-12-08	5	2	2	0	
 2019-12-09	0	0	0	0	
 2019-12-10	0	0	0	0	
 2019-12-11	0	0	0	0	
@@ -443,7 +443,7 @@ m	SAT	UNSAT	ERROR	SHARE
 2019-12-13	0	0	0	0	
 2019-12-14	0	0	0	0	
 2019-12-15	0	0	0	0	
-2019-12-16	1	0	0	0	
+2019-12-16	0	0	1	0	
 2019-12-17	0	0	0	0	
 2019-12-18	0	0	0	0	
 2019-12-19	0	0	0	0	
@@ -460,15 +460,15 @@ m	SAT	UNSAT	ERROR	SHARE
 2019-12-30	0	0	0	0	
 2019-12-31	0	0	0	0	
 2020-01-01	0	0	0	0	
-2020-01-02	22	24	6	3	
+2020-01-02	24	6	22	3	
 2020-01-03	0	0	0	0	
 2020-01-04	0	0	0	0	
 2020-01-05	0	0	0	0	
 2020-01-06	0	0	0	0	
-2020-01-07	5	12	4	0	
-2020-01-08	22	10	47	3	
+2020-01-07	12	4	5	0	
+2020-01-08	10	47	22	3	
 2020-01-09	0	0	0	0	
-2020-01-10	1	2	0	0	
+2020-01-10	2	0	1	0	
 2020-01-11	0	0	0	0	
 2020-01-12	0	0	0	0	
 2020-01-13	0	0	0	0	
@@ -477,7 +477,7 @@ m	SAT	UNSAT	ERROR	SHARE
 2020-01-16	0	0	0	0	
 2020-01-17	0	0	0	0	
 2020-01-18	0	0	0	0	
-2020-01-19	10	12	27	1	
+2020-01-19	12	27	10	1	
 2020-01-20	0	0	0	0	
 2020-01-21	0	0	0	0	
 2020-01-22	0	0	0	0	
@@ -503,18 +503,18 @@ m	SAT	UNSAT	ERROR	SHARE
 2020-02-11	0	0	0	0	
 2020-02-12	0	0	0	0	
 2020-02-13	0	0	0	0	
-2020-02-14	1	1	0	0	
+2020-02-14	1	0	1	0	
 2020-02-15	0	0	0	0	
 2020-02-16	0	0	0	0	
 2020-02-17	0	0	0	0	
-2020-02-18	1	0	0	0	
+2020-02-18	0	0	1	0	
 2020-02-19	0	0	0	0	
 2020-02-20	0	0	0	0	
 2020-02-21	0	0	0	0	
 2020-02-22	0	0	0	0	
 2020-02-23	0	0	0	0	
-2020-02-24	1	6	1	0	
-2020-02-25	1	0	0	0	
+2020-02-24	6	1	1	0	
+2020-02-25	0	0	1	0	
 2020-02-26	0	0	0	0	
 2020-02-27	0	0	0	0	
 2020-02-28	0	0	0	0	
@@ -564,8 +564,8 @@ m	SAT	UNSAT	ERROR	SHARE
 2020-04-12	0	0	0	0	
 2020-04-13	0	0	0	0	
 2020-04-14	0	0	0	0	
-2020-04-15	1	0	0	0	
-2020-04-16	1	0	0	0	
+2020-04-15	0	0	1	0	
+2020-04-16	0	0	1	0	
 2020-04-17	0	0	0	0	
 2020-04-18	0	0	0	0	
 2020-04-19	0	0	0	0	
@@ -581,17 +581,17 @@ m	SAT	UNSAT	ERROR	SHARE
 2020-04-29	0	0	0	0	
 2020-04-30	0	0	0	0	
 2020-05-01	0	0	0	0	
-2020-05-02	1	0	0	0	
+2020-05-02	0	0	1	0	
 2020-05-03	0	0	0	0	
-2020-05-04	2	0	0	0	
+2020-05-04	0	0	2	0	
 2020-05-05	0	0	0	0	
 2020-05-06	0	0	0	0	
-2020-05-07	0	1	0	0	
+2020-05-07	1	0	0	0	
 2020-05-08	0	0	0	0	
 2020-05-09	0	0	0	0	
 2020-05-10	0	0	0	0	
 2020-05-11	0	0	0	0	
-2020-05-12	0	0	7	1	
+2020-05-12	0	7	0	1	
 2020-05-13	0	0	0	0	
 2020-05-14	0	0	0	0	
 2020-05-15	0	0	0	0	
@@ -620,7 +620,7 @@ m	SAT	UNSAT	ERROR	SHARE
 2020-06-07	0	0	0	0	
 2020-06-08	0	0	0	0	
 2020-06-09	0	0	0	0	
-2020-06-10	3	7	0	0	
+2020-06-10	7	0	3	0	
 2020-06-11	0	0	0	0	
 2020-06-12	0	0	0	0	
 2020-06-13	0	0	0	0	
@@ -649,12 +649,12 @@ m	SAT	UNSAT	ERROR	SHARE
 2020-07-06	0	0	0	0	
 2020-07-07	0	0	0	0	
 2020-07-08	0	0	0	0	
-2020-07-09	1	0	0	0	
+2020-07-09	0	0	1	0	
 2020-07-10	0	0	0	0	
 2020-07-11	0	0	0	0	
 2020-07-12	0	0	0	0	
 2020-07-13	0	0	0	0	
-2020-07-14	2	0	0	0	
+2020-07-14	0	0	2	0	
 2020-07-15	0	0	0	0	
 2020-07-16	0	0	0	0	
 2020-07-17	0	0	0	0	
@@ -714,18 +714,18 @@ m	SAT	UNSAT	ERROR	SHARE
 2020-09-09	0	0	0	0	
 2020-09-10	0	0	0	0	
 2020-09-11	0	0	0	0	
-2020-09-12	20	20	8	0	
+2020-09-12	20	8	20	0	
 2020-09-13	0	0	0	0	
 2020-09-14	0	0	0	0	
 2020-09-15	0	0	0	0	
 2020-09-16	0	0	0	0	
 2020-09-17	0	0	0	0	
-2020-09-18	1	0	0	0	
+2020-09-18	0	0	1	0	
 2020-09-19	0	0	0	0	
 2020-09-20	0	0	0	0	
 2020-09-21	0	0	0	0	
 2020-09-22	0	0	0	0	
-2020-09-23	1	0	0	0	
+2020-09-23	0	0	1	0	
 2020-09-24	0	0	0	0	
 2020-09-25	0	0	0	0	
 2020-09-26	0	0	0	0	
@@ -751,24 +751,24 @@ m	SAT	UNSAT	ERROR	SHARE
 2020-10-16	0	0	0	0	
 2020-10-17	0	0	0	0	
 2020-10-18	0	0	0	0	
-2020-10-19	18	10	14	0	
+2020-10-19	10	14	18	0	
 2020-10-20	0	0	0	0	
-2020-10-21	24	19	40	0	
+2020-10-21	19	40	24	0	
 2020-10-22	0	0	0	0	
 2020-10-23	0	0	0	0	
 2020-10-24	0	0	0	0	
 2020-10-25	0	0	0	0	
 2020-10-26	0	0	0	0	
 2020-10-27	0	0	0	0	
-2020-10-28	71	32	46	0	
-2020-10-29	48	32	50	2	
-2020-10-30	104	35	63	1	
-2020-10-31	181	78	133	1	
+2020-10-28	32	46	71	0	
+2020-10-29	32	50	48	2	
+2020-10-30	35	63	104	1	
+2020-10-31	78	133	181	1	
 2020-11-01	0	0	0	0	
-2020-11-02	107	92	68	2	
-2020-11-03	186	129	158	1	
-2020-11-04	204	144	174	4	
-2020-11-05	99	85	118	6	
+2020-11-02	92	68	107	2	
+2020-11-03	129	158	186	1	
+2020-11-04	144	174	204	4	
+2020-11-05	85	118	99	6	
 2020-11-06	0	0	0	0	
 2020-11-07	0	0	0	0	
 2020-11-08	0	0	0	0	
@@ -776,734 +776,737 @@ m	SAT	UNSAT	ERROR	SHARE
 2020-11-10	0	0	0	0	
 2020-11-11	0	0	0	0	
 2020-11-12	0	0	0	0	
-2020-11-13	3	8	1	0	
-2020-11-14	31	53	53	2	
-2020-11-15	0	0	1	0	
-2020-11-16	5	11	3	0	
+2020-11-13	8	1	3	0	
+2020-11-14	53	53	31	2	
+2020-11-15	0	1	0	0	
+2020-11-16	11	3	5	0	
 2020-11-17	0	0	0	0	
-2020-11-18	19	29	10	0	
-2020-11-19	0	16	0	0	
-2020-11-20	1	0	0	0	
+2020-11-18	29	10	19	0	
+2020-11-19	16	0	0	0	
+2020-11-20	0	0	1	0	
 2020-11-21	0	0	0	0	
 2020-11-22	0	0	0	0	
-2020-11-23	50	33	24	1	
-2020-11-24	26	22	29	1	
-2020-11-25	19	16	23	0	
+2020-11-23	33	24	50	1	
+2020-11-24	22	29	26	1	
+2020-11-25	16	23	19	0	
 2020-11-26	0	0	0	0	
 2020-11-27	0	0	0	0	
 2020-11-28	0	0	0	0	
 2020-11-29	0	0	0	0	
 2020-11-30	0	0	0	0	
 2020-12-01	0	0	0	0	
-2020-12-02	22	6	0	0	
-2020-12-03	1	13	0	1	
-2020-12-04	22	16	6	0	
+2020-12-02	6	0	22	0	
+2020-12-03	13	0	1	1	
+2020-12-04	16	6	22	0	
 2020-12-05	0	0	0	0	
 2020-12-06	0	0	0	0	
 2020-12-07	0	0	0	0	
-2020-12-08	4	8	31	1	
+2020-12-08	8	31	4	1	
 2020-12-09	0	0	0	0	
 2020-12-10	0	0	0	0	
 2020-12-11	0	0	0	0	
 2020-12-12	0	0	0	0	
 2020-12-13	0	0	0	0	
-2020-12-14	1	0	15	0	
+2020-12-14	0	15	1	0	
 2020-12-15	0	0	0	0	
 2020-12-16	0	0	0	0	
 2020-12-17	0	0	0	0	
-2020-12-18	7	9	0	1	
-2020-12-19	0	0	0	0	
+2020-12-18	9	0	7	1	
+2020-12-19	9	9	18	0	
+2020-12-20	0	0	0	0	
+2020-12-21	0	0	0	0	
+2020-12-22	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 
 Size in 10s of nodes
 
 inv1OK
-m	SAT	UNSAT	
-0	46	114	
-1	1	55	
+m	UNSAT	SAT	
+0	114	49	
+1	55	1	
 
 inv2OK
-m	SAT	UNSAT	
-0	7	95	
-1	1	3	
+m	UNSAT	SAT	
+0	95	7	
+1	3	1	
 
 inv3OK
-m	SAT	UNSAT	
-0	8	78	
-1	35	21	
-2	2	4	
-3	2	1	
+m	UNSAT	SAT	
+0	78	8	
+1	21	35	
+2	4	2	
+3	1	2	
 
 inv4OK
-m	SAT	UNSAT	
-0	2	0	
-1	78	99	
-2	12	21	
-3	1	0	
+m	UNSAT	SAT	
+0	0	2	
+1	99	78	
+2	21	12	
+3	0	1	
 
 inv5OK
-m	SAT	UNSAT	
-0	45	77	
-1	102	23	
-2	3	0	
+m	UNSAT	SAT	
+0	77	45	
+1	23	102	
+2	0	3	
 
 inv6OK
-m	SAT	UNSAT	
-1	83	104	
-2	2	7	
+m	UNSAT	SAT	
+1	104	83	
+2	7	2	
 
 inv7OK
-m	SAT	UNSAT	
-1	89	46	
-2	37	57	
+m	UNSAT	SAT	
+1	46	89	
+2	57	37	
 
 inv8OK
-m	SAT	UNSAT	
-1	64	96	
-2	5	6	
-3	0	3	
+m	UNSAT	SAT	
+1	96	64	
+2	6	5	
+3	3	0	
 
 inv9OK
-m	SAT	UNSAT	
-1	125	2	
-2	87	81	
-3	0	8	
+m	UNSAT	SAT	
+1	2	125	
+2	81	87	
+3	8	0	
 
 inv10OK
-m	SAT	UNSAT	
-1	20	0	
-2	131	72	
-3	25	20	
+m	UNSAT	SAT	
+1	0	20	
+2	73	133	
+3	20	25	
 
 inv11OK
-m	SAT	UNSAT	
-1	11	0	
-2	105	52	
-3	121	8	
-4	17	3	
-5	1	0	
+m	UNSAT	SAT	
+1	0	11	
+2	53	112	
+3	8	122	
+4	3	17	
+5	0	1	
 
 inv12OK
-m	SAT	UNSAT	
-1	36	0	
-2	65	48	
-3	21	2	
+m	UNSAT	SAT	
+1	0	36	
+2	49	65	
+3	2	21	
 4	1	1	
 
 inv13OK
-m	SAT	UNSAT	
-0	2	0	
-1	26	18	
-2	38	51	
-3	1	2	
+m	UNSAT	SAT	
+0	0	2	
+1	19	26	
+2	52	38	
+3	2	1	
 
 inv14OK
-m	SAT	UNSAT	
-2	6	0	
-3	18	0	
-4	124	13	
-5	79	20	
-6	1	0	
+m	UNSAT	SAT	
+2	0	6	
+3	0	18	
+4	15	124	
+5	20	79	
+6	0	1	
 
 inv15OK
-m	SAT	UNSAT	
-1	34	0	
-2	94	38	
-3	6	0	
-4	1	0	
+m	UNSAT	SAT	
+1	0	37	
+2	40	96	
+3	0	6	
+4	0	1	
 
 Number of binary temporal operators
 
 inv1OK
-m	SAT	UNSAT	
-0	47	169	
+m	UNSAT	SAT	
+0	169	50	
 
 inv2OK
-m	SAT	UNSAT	
-0	8	98	
+m	UNSAT	SAT	
+0	98	8	
 
 inv3OK
-m	SAT	UNSAT	
-0	47	104	
+m	UNSAT	SAT	
+0	104	47	
 
 inv4OK
-m	SAT	UNSAT	
-0	93	120	
+m	UNSAT	SAT	
+0	120	93	
 
 inv5OK
-m	SAT	UNSAT	
-0	150	100	
+m	UNSAT	SAT	
+0	100	150	
 
 inv6OK
-m	SAT	UNSAT	
-0	85	111	
+m	UNSAT	SAT	
+0	111	85	
 
 inv7OK
-m	SAT	UNSAT	
-0	126	103	
+m	UNSAT	SAT	
+0	103	126	
 
 inv8OK
-m	SAT	UNSAT	
-0	69	105	
+m	UNSAT	SAT	
+0	105	69	
 
 inv9OK
-m	SAT	UNSAT	
-0	212	91	
+m	UNSAT	SAT	
+0	91	212	
 
 inv10OK
-m	SAT	UNSAT	
-0	176	92	
+m	UNSAT	SAT	
+0	93	178	
 
 inv11OK
-m	SAT	UNSAT	
-0	255	63	
+m	UNSAT	SAT	
+0	64	263	
 
 inv12OK
-m	SAT	UNSAT	
-0	123	51	
+m	UNSAT	SAT	
+0	52	123	
 
 inv13OK
-m	SAT	UNSAT	
-0	67	71	
+m	UNSAT	SAT	
+0	73	67	
 
 inv14OK
-m	SAT	UNSAT	
-0	228	33	
+m	UNSAT	SAT	
+0	35	228	
 
 inv15OK
-m	SAT	UNSAT	
-0	135	38	
+m	UNSAT	SAT	
+0	40	140	
 
 Max nested temporal operator level
 
 inv1OK
-m	SAT	UNSAT	
-0	47	169	
+m	UNSAT	SAT	
+0	169	50	
 
 inv2OK
-m	SAT	UNSAT	
-0	8	98	
+m	UNSAT	SAT	
+0	98	8	
 
 inv3OK
-m	SAT	UNSAT	
-0	47	104	
+m	UNSAT	SAT	
+0	104	47	
 
 inv4OK
-m	SAT	UNSAT	
-0	93	120	
+m	UNSAT	SAT	
+0	120	93	
 
 inv5OK
-m	SAT	UNSAT	
-0	150	100	
+m	UNSAT	SAT	
+0	100	150	
 
 inv6OK
-m	SAT	UNSAT	
-0	85	111	
+m	UNSAT	SAT	
+0	111	85	
 
 inv7OK
-m	SAT	UNSAT	
-0	126	103	
+m	UNSAT	SAT	
+0	103	126	
 
 inv8OK
-m	SAT	UNSAT	
-0	69	105	
+m	UNSAT	SAT	
+0	105	69	
 
 inv9OK
-m	SAT	UNSAT	
-0	212	91	
+m	UNSAT	SAT	
+0	91	212	
 
 inv10OK
-m	SAT	UNSAT	
-0	176	92	
+m	UNSAT	SAT	
+0	93	178	
 
 inv11OK
-m	SAT	UNSAT	
-0	255	63	
+m	UNSAT	SAT	
+0	64	263	
 
 inv12OK
-m	SAT	UNSAT	
-0	123	51	
+m	UNSAT	SAT	
+0	52	123	
 
 inv13OK
-m	SAT	UNSAT	
-0	67	71	
+m	UNSAT	SAT	
+0	73	67	
 
 inv14OK
-m	SAT	UNSAT	
-0	228	33	
+m	UNSAT	SAT	
+0	35	228	
 
 inv15OK
-m	SAT	UNSAT	
-0	135	38	
+m	UNSAT	SAT	
+0	40	140	
 
 Number of lone/one quantifiers
 
 inv1OK
-m	SAT	UNSAT	
-0	47	169	
+m	UNSAT	SAT	
+0	169	50	
 
 inv2OK
-m	SAT	UNSAT	
-0	8	98	
+m	UNSAT	SAT	
+0	98	8	
 
 inv3OK
-m	SAT	UNSAT	
-0	46	104	
-1	1	0	
+m	UNSAT	SAT	
+0	104	46	
+1	0	1	
 
 inv4OK
-m	SAT	UNSAT	
-0	93	120	
+m	UNSAT	SAT	
+0	120	93	
 
 inv5OK
-m	SAT	UNSAT	
-0	150	100	
+m	UNSAT	SAT	
+0	100	150	
 
 inv6OK
-m	SAT	UNSAT	
-0	85	111	
+m	UNSAT	SAT	
+0	111	85	
 
 inv7OK
-m	SAT	UNSAT	
-0	126	103	
+m	UNSAT	SAT	
+0	103	126	
 
 inv8OK
-m	SAT	UNSAT	
-0	65	102	
-1	4	3	
+m	UNSAT	SAT	
+0	102	65	
+1	3	4	
 
 inv9OK
-m	SAT	UNSAT	
-0	206	83	
-1	6	8	
+m	UNSAT	SAT	
+0	83	206	
+1	8	6	
 
 inv10OK
-m	SAT	UNSAT	
-0	164	92	
-1	11	0	
-2	1	0	
+m	UNSAT	SAT	
+0	93	166	
+1	0	11	
+2	0	1	
 
 inv11OK
-m	SAT	UNSAT	
-0	253	63	
-1	2	0	
+m	UNSAT	SAT	
+0	64	261	
+1	0	2	
 
 inv12OK
-m	SAT	UNSAT	
-0	123	51	
+m	UNSAT	SAT	
+0	52	123	
 
 inv13OK
-m	SAT	UNSAT	
-0	67	71	
+m	UNSAT	SAT	
+0	73	67	
 
 inv14OK
-m	SAT	UNSAT	
-0	227	33	
-1	1	0	
+m	UNSAT	SAT	
+0	35	227	
+1	0	1	
 
 inv15OK
-m	SAT	UNSAT	
-0	135	38	
+m	UNSAT	SAT	
+0	40	140	
 
 Max nested quantifier level
 
 inv1OK
-m	SAT	UNSAT	
-0	47	119	
-1	0	50	
+m	UNSAT	SAT	
+0	119	50	
+1	50	0	
 
 inv2OK
-m	SAT	UNSAT	
-0	7	95	
-1	1	3	
+m	UNSAT	SAT	
+0	95	7	
+1	3	1	
 
 inv3OK
-m	SAT	UNSAT	
-0	28	89	
-1	19	14	
-2	0	1	
+m	UNSAT	SAT	
+0	89	28	
+1	14	19	
+2	1	0	
 
 inv4OK
-m	SAT	UNSAT	
-0	74	95	
-1	19	25	
+m	UNSAT	SAT	
+0	95	74	
+1	25	19	
 
 inv5OK
-m	SAT	UNSAT	
-0	64	80	
-1	69	11	
-2	16	9	
-3	1	0	
-
-inv6OK
-m	SAT	UNSAT	
-0	54	40	
-1	29	67	
-2	2	4	
-
-inv7OK
-m	SAT	UNSAT	
-0	45	46	
-1	78	42	
-2	3	15	
-
-inv8OK
-m	SAT	UNSAT	
-0	45	17	
-1	19	81	
-2	5	6	
+m	UNSAT	SAT	
+0	80	64	
+1	11	69	
+2	9	16	
 3	0	1	
 
+inv6OK
+m	UNSAT	SAT	
+0	40	54	
+1	67	29	
+2	4	2	
+
+inv7OK
+m	UNSAT	SAT	
+0	46	45	
+1	42	78	
+2	15	3	
+
+inv8OK
+m	UNSAT	SAT	
+0	17	45	
+1	81	19	
+2	6	5	
+3	1	0	
+
 inv9OK
-m	SAT	UNSAT	
-0	54	11	
-1	130	60	
-2	28	18	
-3	0	2	
+m	UNSAT	SAT	
+0	11	54	
+1	60	130	
+2	18	28	
+3	2	0	
 
 inv10OK
-m	SAT	UNSAT	
-0	63	4	
-1	56	14	
-2	36	54	
-3	21	20	
+m	UNSAT	SAT	
+0	4	63	
+1	14	56	
+2	55	38	
+3	20	21	
 
 inv11OK
-m	SAT	UNSAT	
-0	21	4	
-1	166	54	
-2	47	2	
-3	6	3	
-4	15	0	
+m	UNSAT	SAT	
+0	4	28	
+1	55	166	
+2	2	48	
+3	3	6	
+4	0	15	
 
 inv12OK
-m	SAT	UNSAT	
-0	29	2	
-1	50	41	
-2	24	6	
-3	17	1	
-4	3	1	
+m	UNSAT	SAT	
+0	2	29	
+1	42	50	
+2	6	24	
+3	1	17	
+4	1	3	
 
 inv13OK
-m	SAT	UNSAT	
-0	36	49	
-1	5	16	
-2	22	6	
-3	4	0	
+m	UNSAT	SAT	
+0	51	36	
+1	16	5	
+2	6	22	
+3	0	4	
 
 inv14OK
-m	SAT	UNSAT	
-0	22	0	
-1	59	4	
-2	75	9	
-3	56	17	
-4	16	3	
+m	UNSAT	SAT	
+0	0	22	
+1	4	59	
+2	11	75	
+3	17	56	
+4	3	16	
 
 inv15OK
-m	SAT	UNSAT	
-0	27	0	
-1	93	36	
-2	15	2	
+m	UNSAT	SAT	
+0	0	30	
+1	38	95	
+2	2	15	
 
 Number of disj quantifications
 
 inv1OK
-m	SAT	UNSAT	
-0	47	169	
+m	UNSAT	SAT	
+0	169	50	
 
 inv2OK
-m	SAT	UNSAT	
-0	8	98	
+m	UNSAT	SAT	
+0	98	8	
 
 inv3OK
-m	SAT	UNSAT	
-0	47	104	
+m	UNSAT	SAT	
+0	104	47	
 
 inv4OK
-m	SAT	UNSAT	
-0	93	120	
+m	UNSAT	SAT	
+0	120	93	
 
 inv5OK
-m	SAT	UNSAT	
-0	150	100	
+m	UNSAT	SAT	
+0	100	150	
 
 inv6OK
-m	SAT	UNSAT	
-0	85	111	
+m	UNSAT	SAT	
+0	111	85	
 
 inv7OK
-m	SAT	UNSAT	
-0	126	103	
+m	UNSAT	SAT	
+0	103	126	
 
 inv8OK
-m	SAT	UNSAT	
-0	69	105	
+m	UNSAT	SAT	
+0	105	69	
 
 inv9OK
-m	SAT	UNSAT	
-0	212	87	
-1	0	4	
+m	UNSAT	SAT	
+0	87	212	
+1	4	0	
 
 inv10OK
-m	SAT	UNSAT	
-0	176	92	
+m	UNSAT	SAT	
+0	93	178	
 
 inv11OK
-m	SAT	UNSAT	
-0	255	63	
+m	UNSAT	SAT	
+0	64	263	
 
 inv12OK
-m	SAT	UNSAT	
-0	123	51	
+m	UNSAT	SAT	
+0	52	123	
 
 inv13OK
-m	SAT	UNSAT	
-0	67	71	
+m	UNSAT	SAT	
+0	73	67	
 
 inv14OK
-m	SAT	UNSAT	
-0	228	33	
+m	UNSAT	SAT	
+0	35	228	
 
 inv15OK
-m	SAT	UNSAT	
-0	135	38	
+m	UNSAT	SAT	
+0	40	140	
 
 Number multiplicity arrows
 
 inv1OK
-m	SAT	UNSAT	
-0	47	169	
+m	UNSAT	SAT	
+0	169	50	
 
 inv2OK
-m	SAT	UNSAT	
-0	8	98	
+m	UNSAT	SAT	
+0	98	8	
 
 inv3OK
-m	SAT	UNSAT	
-0	47	104	
+m	UNSAT	SAT	
+0	104	47	
 
 inv4OK
-m	SAT	UNSAT	
-0	93	120	
+m	UNSAT	SAT	
+0	120	93	
 
 inv5OK
-m	SAT	UNSAT	
-0	150	100	
+m	UNSAT	SAT	
+0	100	150	
 
 inv6OK
-m	SAT	UNSAT	
-0	85	111	
+m	UNSAT	SAT	
+0	111	85	
 
 inv7OK
-m	SAT	UNSAT	
-0	125	103	
-1	1	0	
+m	UNSAT	SAT	
+0	103	125	
+1	0	1	
 
 inv8OK
-m	SAT	UNSAT	
-0	67	104	
-1	2	1	
+m	UNSAT	SAT	
+0	104	67	
+1	1	2	
 
 inv9OK
-m	SAT	UNSAT	
-0	210	91	
-1	2	0	
+m	UNSAT	SAT	
+0	91	210	
+1	0	2	
 
 inv10OK
-m	SAT	UNSAT	
-0	176	92	
+m	UNSAT	SAT	
+0	93	178	
 
 inv11OK
-m	SAT	UNSAT	
-0	255	63	
+m	UNSAT	SAT	
+0	64	263	
 
 inv12OK
-m	SAT	UNSAT	
-0	123	51	
+m	UNSAT	SAT	
+0	52	123	
 
 inv13OK
-m	SAT	UNSAT	
-0	67	71	
+m	UNSAT	SAT	
+0	73	67	
 
 inv14OK
-m	SAT	UNSAT	
-0	228	33	
+m	UNSAT	SAT	
+0	35	228	
 
 inv15OK
-m	SAT	UNSAT	
-0	135	38	
+m	UNSAT	SAT	
+0	40	140	
 
 Number of quantifiers
 
 inv1OK
-m	SAT	UNSAT	
-0	47	119	
-1	0	50	
+m	UNSAT	SAT	
+0	119	50	
+1	50	0	
 
 inv2OK
-m	SAT	UNSAT	
-0	7	95	
-1	0	3	
-2	1	0	
-
-inv3OK
-m	SAT	UNSAT	
-0	28	89	
-1	19	14	
+m	UNSAT	SAT	
+0	95	7	
+1	3	0	
 2	0	1	
 
+inv3OK
+m	UNSAT	SAT	
+0	89	28	
+1	14	19	
+2	1	0	
+
 inv4OK
-m	SAT	UNSAT	
-0	74	95	
-1	19	25	
+m	UNSAT	SAT	
+0	95	74	
+1	25	19	
 
 inv5OK
-m	SAT	UNSAT	
-0	64	80	
-1	69	11	
-2	16	9	
-3	1	0	
+m	UNSAT	SAT	
+0	80	64	
+1	11	69	
+2	9	16	
+3	0	1	
 
 inv6OK
-m	SAT	UNSAT	
-0	54	40	
-1	29	67	
-2	2	4	
+m	UNSAT	SAT	
+0	40	54	
+1	67	29	
+2	4	2	
 
 inv7OK
-m	SAT	UNSAT	
-0	45	46	
-1	78	42	
-2	3	15	
+m	UNSAT	SAT	
+0	46	45	
+1	42	78	
+2	15	3	
 
 inv8OK
-m	SAT	UNSAT	
-0	45	17	
-1	19	81	
-2	4	3	
-3	1	4	
+m	UNSAT	SAT	
+0	17	45	
+1	81	19	
+2	3	4	
+3	4	1	
 
 inv9OK
-m	SAT	UNSAT	
-0	54	11	
-1	130	60	
-2	27	8	
-3	1	12	
+m	UNSAT	SAT	
+0	11	54	
+1	60	130	
+2	8	27	
+3	12	1	
 
 inv10OK
-m	SAT	UNSAT	
-0	63	4	
-1	56	14	
-2	36	54	
-3	21	20	
+m	UNSAT	SAT	
+0	4	63	
+1	14	56	
+2	55	38	
+3	20	21	
 
 inv11OK
-m	SAT	UNSAT	
-0	21	4	
-1	166	54	
-2	47	2	
-3	6	1	
-4	15	2	
+m	UNSAT	SAT	
+0	4	28	
+1	55	166	
+2	2	48	
+3	1	6	
+4	2	15	
 
 inv12OK
-m	SAT	UNSAT	
-0	29	2	
-1	50	41	
-2	24	6	
-3	17	1	
-4	3	1	
+m	UNSAT	SAT	
+0	2	29	
+1	42	50	
+2	6	24	
+3	1	17	
+4	1	3	
 
 inv13OK
-m	SAT	UNSAT	
-0	36	49	
-1	5	2	
-2	22	20	
-3	4	0	
+m	UNSAT	SAT	
+0	51	36	
+1	2	5	
+2	20	22	
+3	0	4	
 
 inv14OK
-m	SAT	UNSAT	
-0	22	0	
-1	56	4	
-2	65	9	
-3	49	16	
-4	36	4	
+m	UNSAT	SAT	
+0	0	22	
+1	4	56	
+2	11	65	
+3	16	49	
+4	4	36	
 
 inv15OK
-m	SAT	UNSAT	
-0	27	0	
-1	93	36	
-2	15	2	
+m	UNSAT	SAT	
+0	0	30	
+1	38	95	
+2	2	15	
 
 Number of inverted navigation expressions
 
 inv1OK
-m	SAT	UNSAT	
-0	47	169	
+m	UNSAT	SAT	
+0	169	50	
 
 inv2OK
-m	SAT	UNSAT	
-0	8	98	
+m	UNSAT	SAT	
+0	98	8	
 
 inv3OK
-m	SAT	UNSAT	
-0	47	104	
+m	UNSAT	SAT	
+0	104	47	
 
 inv4OK
-m	SAT	UNSAT	
-0	93	120	
+m	UNSAT	SAT	
+0	120	93	
 
 inv5OK
-m	SAT	UNSAT	
-0	148	100	
-1	2	0	
+m	UNSAT	SAT	
+0	100	148	
+1	0	2	
 
 inv6OK
-m	SAT	UNSAT	
-0	84	111	
-1	1	0	
+m	UNSAT	SAT	
+0	111	84	
+1	0	1	
 
 inv7OK
-m	SAT	UNSAT	
-0	123	97	
-1	3	6	
+m	UNSAT	SAT	
+0	97	123	
+1	6	3	
 
 inv8OK
-m	SAT	UNSAT	
-0	67	103	
+m	UNSAT	SAT	
+0	103	67	
 1	2	2	
 
 inv9OK
-m	SAT	UNSAT	
-0	209	70	
-1	3	21	
+m	UNSAT	SAT	
+0	70	209	
+1	21	3	
 
 inv10OK
-m	SAT	UNSAT	
-0	176	92	
+m	UNSAT	SAT	
+0	93	178	
 
 inv11OK
-m	SAT	UNSAT	
-0	251	58	
-1	4	5	
+m	UNSAT	SAT	
+0	58	259	
+1	6	4	
 
 inv12OK
-m	SAT	UNSAT	
-0	116	51	
-1	7	0	
+m	UNSAT	SAT	
+0	52	116	
+1	0	7	
 
 inv13OK
-m	SAT	UNSAT	
-0	67	71	
+m	UNSAT	SAT	
+0	73	67	
 
 inv14OK
-m	SAT	UNSAT	
-0	228	33	
+m	UNSAT	SAT	
+0	35	228	
 
 inv15OK
-m	SAT	UNSAT	
-0	134	38	
-1	1	0	
+m	UNSAT	SAT	
+0	40	139	
+1	0	1	
 
 * Derivation tree
 zRAn69AocpkmxXZnW, 2019-10-02T21:44:17 (model share)
@@ -6448,3 +6451,39 @@ zRAn69AocpkmxXZnW, 2019-10-02T21:44:17 (model share)
                               p2qF2jhL2ffnks3ss, 2020-12-18T11:52:19 (inv14OK,incorrect,check,)
                                 SGFdPN5D6jojwf4Fc, 2020-12-18T11:52:29 (inv14OK,correct,check,)
                                   ArB7fmC2vGHMaBGaJ, 2020-12-18T12:21:12 (model share)
+  rzYauwR5uZcLRy6jJ, 2020-12-19T18:37:22 (inv10OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Person} Right type = {this/Class->this/Person->this/Group})
+    msC2FWsZGxXJmb9oA, 2020-12-19T18:47:45 (inv10OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Person} Right type = {this/Class->this/Person->this/Group})
+      ik7xQbRYbqZsKcwXx, 2020-12-19T18:48:55 (inv10OK,correct,check,)
+        qLzXy5agkWWrXwkGR, 2020-12-19T19:13:32 (inv11OK,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Class} Right type = {this/Person})
+          rxLFRMm9btJn6i2k6, 2020-12-19T19:21:07 (The name "p" cannot be found.)
+            x4Ma3Qiseu67a7NNh, 2020-12-19T19:21:13 (inv11OK,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Class} Right type = {this/Person})
+              X36cofu3QGt3ugkXn, 2020-12-19T19:21:37 (inv11OK,incorrect,check,)
+                HyqqotoHA2r8GqzLL, 2020-12-19T19:21:47 (inv11OK,incorrect,check,)
+                  Rm8c5eXbzPAgvGpDe, 2020-12-19T19:22:03 (This must be a formula expression. Instead, it has the following possible type(s): {this/Group})
+                    pamiYDSDG2FpCSGEH, 2020-12-19T19:22:09 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+                      BnshqNmwXFSKMDaFd, 2020-12-19T19:22:14 (inv11OK,incorrect,check,)
+                        Lbcz4sBRkpBtnYzLs, 2020-12-19T19:26:38 (inv11OK,incorrect,check,)
+                          hMb2mxNbxN2NsPp6m, 2020-12-19T19:26:42 (inv11OK,incorrect,check,)
+                            BYGJ2syRqQqmByEkw, 2020-12-19T19:27:03 (inv11OK,incorrect,check,)
+                              2qnMwcWp7Sz83x8hT, 2020-12-19T19:27:23 (inv11OK,correct,check,)
+                                GjxczyzXeMdArsC84, 2020-12-19T19:57:28 (This must be a formula expression. Instead, it has the following possible type(s): {this/Person})
+                                  K4gzJnGAqERoW2JjB, 2020-12-19T19:57:34 (This must be a formula expression. Instead, it has the following possible type(s): {this/Person})
+                                    5ePaESkfLtM8Sx2v3, 2020-12-19T20:02:15 (This must be a formula expression. Instead, it has the following possible type(s): {this/Person->this/Group})
+                                      db3bzWYbvdJDw38q7, 2020-12-19T20:02:30 (This must be a formula expression. Instead, it has the following possible type(s): {this/Person->this/Group})
+  Nb9uszvZbvR8WGJ3J, 2020-12-19T20:03:02 (This must be a formula expression. Instead, it has the following possible type(s): {this/Person->this/Group})
+    SpgoMhTnmj2GyhZrx, 2020-12-19T20:03:23 (inv12OK,correct,check,)
+      i85kmYxD3yaBzP3FZ, 2020-12-19T20:11 (inv13OK,correct,check,)
+        Sz45AReFtTf5LfYFB, 2020-12-19T20:21:14 (inv13OK,correct,check,)
+          qfKjjLNcMLtx7pJeo, 2020-12-19T21:20:34 (inv15OK,incorrect,check,)
+            NLPGoAjqrMwQY3bsJ, 2020-12-19T21:21:11 (inv15OK,incorrect,check,)
+              Mx7CwKJJeAiwBpPri, 2020-12-19T21:21:32 (inv15OK,incorrect,check,)
+                XbpiGqS8DRq8J4eSE, 2020-12-19T21:21:45 (There are 3 possible tokens that can appear here: ,  { |)
+                  gFf2TgzBXi8CwwBjh, 2020-12-19T21:21:51 (inv15OK,correct,check,)
+                    5RYcmD23EcD7MX6FE, 2020-12-19T22:37:35 (inv14OK,correct,check,)
+  yA9v4cTYRFLMSMyRR, 2020-12-19T23:00:46 (inv1OK,incorrect,check,)
+    ro9FKwKxjQc2XeD5E, 2020-12-19T23:01:04 (inv1OK,incorrect,check,)
+      nhsyRKN4h2dSec5t9, 2020-12-19T23:01:31 (inv1OK,incorrect,check,)
+        2n4DmLGZoCKdPrdeA, 2020-12-19T23:01:34 (inv14OK,correct,check,)
+          k7C4cpK9j2cr79MHZ, 2020-12-19T23:44:16 (inv15OK,incorrect,check,)
+            YNp8w2uLwxHJM9MqS, 2020-12-19T23:44:27 (inv15OK,incorrect,check,)
+              tFzFxkvg629TDRhkA, 2020-12-19T23:44:50 (inv15OK,correct,check,)
