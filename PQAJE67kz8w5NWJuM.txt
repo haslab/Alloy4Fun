@@ -1,4 +1,4 @@
-PQAJE67kz8w5NWJuM (2020-12-22)
+PQAJE67kz8w5NWJuM (2021-03-24)
 
 * Meta-data
 Challenge name: unknown
@@ -7,43 +7,43 @@ Creation time: 2019-10-02
 Metric catalog: Example metric catalog
 
 * Overall metric statistics
-Total model entries: 2655
-Total executions: 2620
-Total shares: 35
-Total error messages: 876
+Total model entries: 2864
+Total executions: 2828
+Total shares: 36
+Total error messages: 894
 Total warning messages: 34
-Total solutions: 1750
-Total sessions: 159
+Total solutions: 1940
+Total sessions: 177
 Timed out re-executions: 0
 Rejected due to server errors: 21
 Inconsisistent result reports: 0
 Inconsisistent message reports: 0
 Total instance entries: 0
-Total link entries: 36
+Total link entries: 37
 
 * Scalar metrics
-Number of shared sessions	22
-Shared models (model)	35
+Number of shared sessions	23
+Shared models (model)	36
 Shares with warnings	0
 Alloy runtime errors	1
 Shared errored models	6
-Alloy static errors	869
+Alloy static errors	887
 Shared models (instance)	0
-Average session	16.635220125786162
+Average session	16.124293785310734
 Longest session	164
 Sat executions with warnings	20
-Executed errored models	870
-Unsat executions	709
+Executed errored models	888
+Unsat executions	1173
 Unsat executions with warnings	14
 Errored executions with warnings	0
-Average % unsatisfiable	0.4767673206340468
-Sat executions	1041
+Average % unsatisfiable	0.46963504967875785
+Sat executions	767
 
 * Overall metrics
 
 Sessions by length
-1	48
-2	18
+1	56
+2	19
 3	7
 4	8
 5	2
@@ -58,21 +58,21 @@ Sessions by length
 14	1
 15	1
 16	3
-17	3
-18	2
+17	4
+18	3
 19	1
-20	5
-21	2
-22	1
+20	6
+21	3
+22	4
 23	2
 24	3
 25	1
-26	0
+26	1
 27	3
 28	0
 29	1
 30	1
-31	0
+31	1
 32	1
 33	2
 34	1
@@ -215,7 +215,7 @@ Subset operator is redundant, because the left and right expressions always have
 Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}	1
 
 Sessions by # of solved challenges
-0	63
+0	72
 1	16
 2	7
 3	6
@@ -224,8 +224,8 @@ Sessions by # of solved challenges
 6	1
 7	0
 8	9
-9	11
-10	37
+9	12
+10	45
 
 Errors by type
 There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	42
@@ -234,75 +234,76 @@ There are 1 possible tokens that can appear here: [ 	9
 There are 5 possible tokens that can appear here: enum fun let open pred 	5
 There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ 	36
 = can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	30
-The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".	37
+The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".	40
 Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.	1
 There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	34
-This must be a formula expression. Instead, it has the following possible type(s): {_}	166
+This must be a formula expression. Instead, it has the following possible type(s): {_}	167
 ~ can be used only with a binary relation. Instead, its possible type(s) are: {_}	6
 This must be a unary set, but instead it has the following possible type(s): {_}	2
 There are 1 possible tokens that can appear here: ) 	6
-!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	14
+!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	19
 ^ can be used only with a binary relation. Instead, its possible type(s) are: {_}	2
 in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	16
-The name _ cannot be found.	98
 This expression failed to be typechecked line _ column _ filename=_.als	46
+The name _ cannot be found.	101
 This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	58
 & can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	15
 Syntax error at the \ character. HEX: \u5c)	16
 There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	73
-This must be a set or relation. Instead, it has the following possible type(s): {_}	138
+This must be a set or relation. Instead, it has the following possible type(s): {_}	143
 _ is already the name of a sig/parameter in this module.	2
 There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ 	7
 There are 1 possible tokens that can appear here: = 	2
 There are 1 possible tokens that can appear here: NAME 	1
-There are 3 possible tokens that can appear here: ,  { | 	10
+There are 3 possible tokens that can appear here: ,  { | 	11
 
 Models by number of warnings
-0	2621
+0	2830
 1	34
 
 * Overall metrics, classified
 
-Execution results by challenge
+Execution results by command
 m	SAT	UNSAT	
-inv1Ok	65	175	
-inv2Ok	31	97	
-inv3Ok	34	96	
-inv4Ok	64	101	
-inv5Ok	140	92	
-inv6Ok	95	110	
-inv7Ok	114	76	
-inv8Ok	1	111	
-inv9Ok	69	96	
-inv10Ok	94	86	
+inv1Ok	73	188	
+inv2Ok	34	111	
+inv3Ok	34	108	
+inv4Ok	65	113	
+inv5Ok	147	106	
+inv6Ok	104	124	
+inv7Ok	128	90	
+inv8Ok	1	123	
+inv9Ok	74	109	
+inv10Ok	105	100	
+test	2	1	
 
 Session results by challenge
 m	solved	unsolved	
-inv1Ok	84	75	
-inv2Ok	72	87	
-inv3Ok	67	92	
-inv4Ok	65	94	
-inv5Ok	59	100	
-inv6Ok	61	98	
-inv7Ok	54	105	
-inv8Ok	62	97	
-inv9Ok	59	100	
-inv10Ok	54	105	
+inv1Ok	93	84	
+inv2Ok	81	96	
+inv3Ok	76	101	
+inv4Ok	74	103	
+inv5Ok	68	109	
+inv6Ok	70	107	
+inv7Ok	63	114	
+inv8Ok	71	106	
+inv9Ok	68	109	
+inv10Ok	62	115	
 
 Model entries over time
-m	SAT	ERROR	UNSAT	SHARE	
+m	SAT	UNSAT	ERROR	SHARE	
 2019-10-02	0	0	0	1	
-2019-10-03	106	213	189	7	
+2019-10-03	106	189	213	7	
 2019-10-04	0	0	0	0	
 2019-10-05	0	0	0	0	
 2019-10-06	0	0	0	0	
 2019-10-07	0	0	0	0	
-2019-10-08	0	0	6	0	
+2019-10-08	0	6	0	0	
 2019-10-09	0	0	0	0	
 2019-10-10	0	0	0	0	
 2019-10-11	0	0	0	0	
-2019-10-12	2	1	29	1	
-2019-10-13	2	4	0	0	
+2019-10-12	2	29	1	1	
+2019-10-13	2	0	4	0	
 2019-10-14	0	0	0	0	
 2019-10-15	0	0	0	0	
 2019-10-16	0	0	0	0	
@@ -310,8 +311,8 @@ m	SAT	ERROR	UNSAT	SHARE
 2019-10-18	0	0	0	0	
 2019-10-19	0	0	0	0	
 2019-10-20	0	0	0	0	
-2019-10-21	0	0	2	0	
-2019-10-22	7	33	16	5	
+2019-10-21	0	2	0	0	
+2019-10-22	7	16	33	5	
 2019-10-23	0	0	0	0	
 2019-10-24	0	0	0	0	
 2019-10-25	0	0	0	0	
@@ -319,9 +320,9 @@ m	SAT	ERROR	UNSAT	SHARE
 2019-10-27	0	0	0	0	
 2019-10-28	0	0	0	0	
 2019-10-29	0	0	0	0	
-2019-10-30	9	3	33	0	
+2019-10-30	9	33	3	0	
 2019-10-31	0	0	0	1	
-2019-11-01	0	6	28	1	
+2019-11-01	0	28	6	1	
 2019-11-02	0	0	0	0	
 2019-11-03	0	0	0	0	
 2019-11-04	0	0	0	0	
@@ -330,11 +331,11 @@ m	SAT	ERROR	UNSAT	SHARE
 2019-11-07	0	0	0	0	
 2019-11-08	0	0	0	0	
 2019-11-09	0	0	0	0	
-2019-11-10	1	2	10	0	
+2019-11-10	1	10	2	0	
 2019-11-11	0	0	0	0	
 2019-11-12	0	0	0	0	
 2019-11-13	0	0	0	0	
-2019-11-14	13	10	13	1	
+2019-11-14	13	13	10	1	
 2019-11-15	0	0	0	0	
 2019-11-16	0	0	0	0	
 2019-11-17	0	0	0	0	
@@ -352,7 +353,7 @@ m	SAT	ERROR	UNSAT	SHARE
 2019-11-29	0	0	0	0	
 2019-11-30	0	0	0	0	
 2019-12-01	0	0	0	0	
-2019-12-02	2	0	11	0	
+2019-12-02	2	11	0	0	
 2019-12-03	0	0	0	0	
 2019-12-04	0	0	0	0	
 2019-12-05	0	0	0	0	
@@ -388,8 +389,8 @@ m	SAT	ERROR	UNSAT	SHARE
 2020-01-04	0	0	0	0	
 2020-01-05	0	0	0	0	
 2020-01-06	0	0	0	0	
-2020-01-07	3	1	8	0	
-2020-01-08	1	2	3	2	
+2020-01-07	3	8	1	0	
+2020-01-08	1	3	2	2	
 2020-01-09	0	0	0	0	
 2020-01-10	0	0	0	0	
 2020-01-11	0	0	0	0	
@@ -399,10 +400,10 @@ m	SAT	ERROR	UNSAT	SHARE
 2020-01-15	0	0	0	0	
 2020-01-16	0	0	0	0	
 2020-01-17	0	0	0	0	
-2020-01-18	14	14	18	1	
+2020-01-18	14	18	14	1	
 2020-01-19	0	0	0	0	
 2020-01-20	0	0	0	0	
-2020-01-21	4	2	10	0	
+2020-01-21	4	10	2	0	
 2020-01-22	0	0	0	0	
 2020-01-23	0	0	0	0	
 2020-01-24	0	0	0	0	
@@ -479,7 +480,7 @@ m	SAT	ERROR	UNSAT	SHARE
 2020-04-04	0	0	0	0	
 2020-04-05	0	0	0	0	
 2020-04-06	0	0	0	0	
-2020-04-07	3	5	0	0	
+2020-04-07	3	0	5	0	
 2020-04-08	0	0	0	0	
 2020-04-09	0	0	0	0	
 2020-04-10	0	0	0	0	
@@ -488,7 +489,7 @@ m	SAT	ERROR	UNSAT	SHARE
 2020-04-13	0	0	0	0	
 2020-04-14	0	0	0	0	
 2020-04-15	0	0	0	0	
-2020-04-16	2	3	0	1	
+2020-04-16	2	0	3	1	
 2020-04-17	0	0	0	0	
 2020-04-18	1	0	0	0	
 2020-04-19	0	0	0	0	
@@ -516,7 +517,7 @@ m	SAT	ERROR	UNSAT	SHARE
 2020-05-11	0	0	0	0	
 2020-05-12	0	0	0	0	
 2020-05-13	1	0	0	0	
-2020-05-14	0	2	0	0	
+2020-05-14	0	0	2	0	
 2020-05-15	0	0	0	0	
 2020-05-16	0	0	0	0	
 2020-05-17	0	0	0	0	
@@ -548,7 +549,7 @@ m	SAT	ERROR	UNSAT	SHARE
 2020-06-12	0	0	0	0	
 2020-06-13	0	0	0	0	
 2020-06-14	0	0	0	0	
-2020-06-15	2	9	16	0	
+2020-06-15	2	16	9	0	
 2020-06-16	0	0	0	0	
 2020-06-17	0	0	0	0	
 2020-06-18	0	0	0	0	
@@ -635,7 +636,7 @@ m	SAT	ERROR	UNSAT	SHARE
 2020-09-07	1	0	0	0	
 2020-09-08	0	0	0	0	
 2020-09-09	0	0	0	0	
-2020-09-10	16	6	10	0	
+2020-09-10	16	10	6	0	
 2020-09-11	0	0	0	0	
 2020-09-12	0	0	0	0	
 2020-09-13	0	0	0	0	
@@ -651,7 +652,7 @@ m	SAT	ERROR	UNSAT	SHARE
 2020-09-23	0	0	0	0	
 2020-09-24	0	0	0	0	
 2020-09-25	0	0	0	0	
-2020-09-26	1	2	12	0	
+2020-09-26	1	12	2	0	
 2020-09-27	0	0	0	0	
 2020-09-28	0	0	0	0	
 2020-09-29	0	0	0	0	
@@ -661,7 +662,7 @@ m	SAT	ERROR	UNSAT	SHARE
 2020-10-03	0	0	0	0	
 2020-10-04	0	0	0	0	
 2020-10-05	0	0	0	0	
-2020-10-06	1	2	1	0	
+2020-10-06	1	1	2	0	
 2020-10-07	0	0	0	0	
 2020-10-08	0	0	0	0	
 2020-10-09	0	0	0	0	
@@ -670,27 +671,27 @@ m	SAT	ERROR	UNSAT	SHARE
 2020-10-12	0	0	0	0	
 2020-10-13	0	0	0	0	
 2020-10-14	0	0	0	0	
-2020-10-15	1	2	0	0	
+2020-10-15	1	0	2	0	
 2020-10-16	0	0	0	0	
 2020-10-17	0	0	0	0	
-2020-10-18	16	34	19	0	
-2020-10-19	23	30	23	0	
+2020-10-18	16	19	34	0	
+2020-10-19	23	23	30	0	
 2020-10-20	0	0	0	0	
 2020-10-21	0	0	0	0	
-2020-10-22	4	11	6	2	
+2020-10-22	4	6	11	2	
 2020-10-23	0	0	0	0	
 2020-10-24	0	0	0	0	
 2020-10-25	0	0	0	0	
 2020-10-26	0	0	0	0	
-2020-10-27	23	4	31	1	
-2020-10-28	2	4	13	0	
-2020-10-29	21	54	25	0	
-2020-10-30	15	8	15	0	
-2020-10-31	71	68	35	1	
+2020-10-27	23	31	4	1	
+2020-10-28	2	13	4	0	
+2020-10-29	21	25	54	0	
+2020-10-30	15	15	8	0	
+2020-10-31	71	35	68	1	
 2020-11-01	0	0	0	0	
-2020-11-02	20	11	58	0	
-2020-11-03	132	147	128	3	
-2020-11-04	51	73	69	0	
+2020-11-02	20	58	11	0	
+2020-11-03	132	128	147	3	
+2020-11-04	51	69	73	0	
 2020-11-05	34	59	59	5	
 2020-11-06	0	0	0	0	
 2020-11-07	0	0	0	0	
@@ -698,19 +699,19 @@ m	SAT	ERROR	UNSAT	SHARE
 2020-11-09	0	0	0	0	
 2020-11-10	0	0	0	0	
 2020-11-11	0	0	0	0	
-2020-11-12	12	5	30	0	
-2020-11-13	0	17	11	1	
-2020-11-14	15	6	29	0	
-2020-11-15	4	4	12	0	
+2020-11-12	12	30	5	0	
+2020-11-13	0	11	17	1	
+2020-11-14	15	29	6	0	
+2020-11-15	4	12	4	0	
 2020-11-16	1	0	0	0	
 2020-11-17	0	0	0	0	
-2020-11-18	2	2	4	0	
-2020-11-19	1	0	2	0	
+2020-11-18	2	4	2	0	
+2020-11-19	1	2	0	0	
 2020-11-20	2	0	0	0	
 2020-11-21	0	0	0	0	
 2020-11-22	1	0	0	0	
-2020-11-23	14	2	32	1	
-2020-11-24	12	6	11	0	
+2020-11-23	14	32	2	1	
+2020-11-24	12	11	6	0	
 2020-11-25	0	0	0	0	
 2020-11-26	0	0	0	0	
 2020-11-27	0	0	0	0	
@@ -720,7 +721,7 @@ m	SAT	ERROR	UNSAT	SHARE
 2020-12-01	0	0	0	0	
 2020-12-02	0	0	0	0	
 2020-12-03	0	0	0	0	
-2020-12-04	7	0	11	0	
+2020-12-04	7	11	0	0	
 2020-12-05	0	0	0	0	
 2020-12-06	0	0	0	0	
 2020-12-07	0	0	0	0	
@@ -739,6 +740,98 @@ m	SAT	ERROR	UNSAT	SHARE
 2020-12-20	0	0	0	0	
 2020-12-21	0	0	0	0	
 2020-12-22	0	0	0	0	
+2020-12-23	0	0	0	0	
+2020-12-24	0	0	0	0	
+2020-12-25	5	12	5	0	
+2020-12-26	0	0	0	0	
+2020-12-27	2	0	0	0	
+2020-12-28	0	0	0	0	
+2020-12-29	0	0	0	0	
+2020-12-30	0	0	0	0	
+2020-12-31	5	15	2	0	
+2021-01-01	0	0	0	0	
+2021-01-02	0	0	0	0	
+2021-01-03	1	0	0	0	
+2021-01-04	2	0	0	0	
+2021-01-05	0	0	0	0	
+2021-01-06	0	0	0	0	
+2021-01-07	0	0	0	0	
+2021-01-08	4	11	7	0	
+2021-01-09	0	0	0	0	
+2021-01-10	21	37	0	0	
+2021-01-11	0	0	0	0	
+2021-01-12	10	39	2	0	
+2021-01-13	6	18	2	0	
+2021-01-14	0	0	0	0	
+2021-01-15	0	0	0	0	
+2021-01-16	0	0	0	0	
+2021-01-17	0	0	0	0	
+2021-01-18	0	0	0	0	
+2021-01-19	0	0	0	0	
+2021-01-20	0	0	0	0	
+2021-01-21	1	0	0	0	
+2021-01-22	0	0	0	0	
+2021-01-23	0	0	0	0	
+2021-01-24	0	0	0	0	
+2021-01-25	0	0	0	0	
+2021-01-26	0	0	0	0	
+2021-01-27	0	0	0	0	
+2021-01-28	0	0	0	0	
+2021-01-29	0	0	0	0	
+2021-01-30	0	0	0	0	
+2021-01-31	0	0	0	0	
+2021-02-01	0	0	0	0	
+2021-02-02	0	0	0	0	
+2021-02-03	0	0	0	0	
+2021-02-04	0	0	0	0	
+2021-02-05	0	0	0	0	
+2021-02-06	0	0	0	0	
+2021-02-07	0	0	0	0	
+2021-02-08	0	0	0	0	
+2021-02-09	0	0	0	0	
+2021-02-10	0	0	0	0	
+2021-02-11	0	0	0	0	
+2021-02-12	0	0	0	0	
+2021-02-13	0	0	0	0	
+2021-02-14	0	0	0	0	
+2021-02-15	0	0	0	0	
+2021-02-16	0	0	0	0	
+2021-02-17	0	0	0	0	
+2021-02-18	0	0	0	0	
+2021-02-19	0	0	0	0	
+2021-02-20	0	0	0	0	
+2021-02-21	0	0	0	0	
+2021-02-22	0	0	0	0	
+2021-02-23	0	0	0	0	
+2021-02-24	0	0	0	0	
+2021-02-25	0	0	0	0	
+2021-02-26	0	0	0	0	
+2021-02-27	0	0	0	0	
+2021-02-28	0	0	0	0	
+2021-03-01	0	0	0	0	
+2021-03-02	0	0	0	0	
+2021-03-03	0	0	0	0	
+2021-03-04	0	0	0	0	
+2021-03-05	0	0	0	0	
+2021-03-06	1	0	0	0	
+2021-03-07	0	0	0	0	
+2021-03-08	0	0	0	0	
+2021-03-09	0	0	0	0	
+2021-03-10	0	0	0	0	
+2021-03-11	0	0	0	0	
+2021-03-12	0	0	0	0	
+2021-03-13	0	0	0	0	
+2021-03-14	0	0	0	0	
+2021-03-15	0	0	0	0	
+2021-03-16	0	0	0	0	
+2021-03-17	0	0	0	0	
+2021-03-18	0	0	0	1	
+2021-03-19	0	0	0	0	
+2021-03-20	0	0	0	0	
+2021-03-21	0	0	0	0	
+2021-03-22	0	0	0	0	
+2021-03-23	0	0	0	0	
+2021-03-24	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 
@@ -746,437 +839,489 @@ Size in 10s of nodes
 
 inv1Ok
 m	SAT	UNSAT	
-0	62	157	
-1	3	18	
+0	70	166	
+1	3	22	
 
 inv2Ok
 m	SAT	UNSAT	
-0	25	81	
-1	6	16	
+0	28	92	
+1	6	19	
 
 inv3Ok
 m	SAT	UNSAT	
-0	18	67	
-1	16	29	
+0	18	75	
+1	16	33	
 
 inv4Ok
 m	SAT	UNSAT	
-0	43	79	
-1	21	22	
+0	43	86	
+1	22	27	
 
 inv5Ok
 m	SAT	UNSAT	
-0	8	0	
-1	127	91	
-2	5	1	
+0	9	0	
+1	133	104	
+2	5	2	
 
 inv6Ok
 m	SAT	UNSAT	
-0	7	0	
-1	71	107	
+0	8	0	
+1	78	118	
 2	3	3	
-3	10	0	
-4	4	0	
+3	11	2	
+4	4	1	
 
 inv7Ok
 m	SAT	UNSAT	
 0	7	0	
-1	92	70	
-2	15	6	
+1	103	80	
+2	18	10	
 
 inv8Ok
 m	SAT	UNSAT	
-0	1	90	
-1	0	21	
+0	1	100	
+1	0	22	
+2	0	1	
 
 inv9Ok
 m	SAT	UNSAT	
-0	1	42	
-1	58	46	
-2	6	8	
+0	6	45	
+1	58	53	
+2	6	11	
 3	4	0	
 
 inv10Ok
 m	SAT	UNSAT	
-1	6	0	
-2	61	70	
-3	25	16	
+1	7	0	
+2	69	81	
+3	27	19	
 4	2	0	
+
+Number of quantified variables
+
+inv1Ok
+m	SAT	UNSAT	
+0	70	165	
+1	3	23	
+
+inv2Ok
+m	SAT	UNSAT	
+0	30	92	
+1	4	19	
+
+inv3Ok
+m	SAT	UNSAT	
+0	28	75	
+1	6	33	
+
+inv4Ok
+m	SAT	UNSAT	
+0	54	91	
+1	11	22	
+
+inv5Ok
+m	SAT	UNSAT	
+0	131	81	
+1	14	25	
+2	2	0	
+
+inv6Ok
+m	SAT	UNSAT	
+0	63	32	
+1	24	86	
+2	2	0	
+3	14	3	
+4	1	3	
+
+inv7Ok
+m	SAT	UNSAT	
+0	50	48	
+1	68	32	
+2	10	10	
+
+inv8Ok
+m	SAT	UNSAT	
+0	1	100	
+1	0	21	
+2	0	2	
+
+inv9Ok
+m	SAT	UNSAT	
+0	24	65	
+1	16	28	
+2	33	7	
+3	1	9	
+
+inv10Ok
+m	SAT	UNSAT	
+0	47	39	
+1	42	46	
+2	16	15	
 
 Number of binary temporal operators
 
 inv1Ok
 m	SAT	UNSAT	
-0	65	175	
+0	73	188	
 
 inv2Ok
 m	SAT	UNSAT	
-0	31	97	
+0	34	111	
 
 inv3Ok
 m	SAT	UNSAT	
-0	34	96	
+0	34	108	
 
 inv4Ok
 m	SAT	UNSAT	
-0	64	101	
+0	65	113	
 
 inv5Ok
 m	SAT	UNSAT	
-0	140	92	
+0	147	106	
 
 inv6Ok
 m	SAT	UNSAT	
-0	95	110	
+0	104	124	
 
 inv7Ok
 m	SAT	UNSAT	
-0	114	76	
+0	128	90	
 
 inv8Ok
 m	SAT	UNSAT	
-0	1	111	
+0	1	123	
 
 inv9Ok
 m	SAT	UNSAT	
-0	69	96	
+0	74	109	
 
 inv10Ok
 m	SAT	UNSAT	
-0	94	86	
+0	105	100	
 
 Max nested temporal operator level
 
 inv1Ok
 m	SAT	UNSAT	
-0	65	173	
+0	73	186	
 1	0	2	
 
 inv2Ok
 m	SAT	UNSAT	
-0	31	97	
+0	34	111	
 
 inv3Ok
 m	SAT	UNSAT	
-0	34	96	
+0	34	108	
 
 inv4Ok
 m	SAT	UNSAT	
-0	64	101	
+0	65	113	
 
 inv5Ok
 m	SAT	UNSAT	
-0	140	92	
+0	147	106	
 
 inv6Ok
 m	SAT	UNSAT	
-0	95	110	
+0	104	124	
 
 inv7Ok
 m	SAT	UNSAT	
-0	113	76	
+0	127	90	
 1	1	0	
 
 inv8Ok
 m	SAT	UNSAT	
-0	1	111	
+0	1	123	
 
 inv9Ok
 m	SAT	UNSAT	
-0	69	96	
+0	74	109	
 
 inv10Ok
 m	SAT	UNSAT	
-0	94	86	
+0	105	100	
 
 Number of lone/one quantifiers
 
 inv1Ok
 m	SAT	UNSAT	
-0	65	175	
+0	73	188	
 
 inv2Ok
 m	SAT	UNSAT	
-0	31	97	
+0	34	111	
 
 inv3Ok
 m	SAT	UNSAT	
-0	34	96	
+0	34	108	
 
 inv4Ok
 m	SAT	UNSAT	
-0	64	101	
+0	65	113	
 
 inv5Ok
 m	SAT	UNSAT	
-0	140	92	
+0	147	106	
 
 inv6Ok
 m	SAT	UNSAT	
-0	94	110	
+0	103	124	
 1	1	0	
 
 inv7Ok
 m	SAT	UNSAT	
-0	114	76	
+0	128	90	
 
 inv8Ok
 m	SAT	UNSAT	
-0	1	111	
+0	1	123	
 
 inv9Ok
 m	SAT	UNSAT	
-0	69	96	
+0	74	109	
 
 inv10Ok
 m	SAT	UNSAT	
-0	93	86	
+0	104	100	
 1	1	0	
 
 Max nested quantifier level
 
 inv1Ok
 m	SAT	UNSAT	
-0	62	156	
-1	3	19	
+0	70	165	
+1	3	23	
 
 inv2Ok
 m	SAT	UNSAT	
-0	27	81	
-1	4	16	
+0	30	92	
+1	4	19	
 
 inv3Ok
 m	SAT	UNSAT	
-0	28	67	
-1	6	29	
+0	28	75	
+1	6	33	
 
 inv4Ok
 m	SAT	UNSAT	
-0	54	83	
-1	10	18	
+0	54	91	
+1	11	22	
 
 inv5Ok
 m	SAT	UNSAT	
-0	124	73	
-1	16	19	
+0	131	81	
+1	16	25	
 
 inv6Ok
 m	SAT	UNSAT	
-0	58	28	
-1	22	82	
+0	63	32	
+1	26	92	
 2	14	0	
 3	1	0	
 
 inv7Ok
 m	SAT	UNSAT	
-0	43	44	
-1	67	31	
-2	4	1	
+0	50	48	
+1	74	40	
+2	4	2	
 
 inv8Ok
 m	SAT	UNSAT	
-0	1	90	
-1	0	21	
+0	1	100	
+1	0	22	
+2	0	1	
 
 inv9Ok
 m	SAT	UNSAT	
-0	19	59	
-1	44	37	
-2	6	0	
+0	24	65	
+1	44	42	
+2	6	2	
 
 inv10Ok
 m	SAT	UNSAT	
-0	41	34	
-1	44	41	
+0	47	39	
+1	49	50	
 2	9	11	
 
 Number of disj quantifications
 
 inv1Ok
 m	SAT	UNSAT	
-0	65	175	
+0	73	188	
 
 inv2Ok
 m	SAT	UNSAT	
-0	31	97	
+0	34	111	
 
 inv3Ok
 m	SAT	UNSAT	
-0	34	96	
+0	34	108	
 
 inv4Ok
 m	SAT	UNSAT	
-0	64	101	
+0	65	113	
 
 inv5Ok
 m	SAT	UNSAT	
-0	140	92	
+0	147	106	
 
 inv6Ok
 m	SAT	UNSAT	
-0	95	110	
+0	104	124	
 
 inv7Ok
 m	SAT	UNSAT	
-0	114	76	
+0	128	90	
 
 inv8Ok
 m	SAT	UNSAT	
-0	1	111	
+0	1	123	
 
 inv9Ok
 m	SAT	UNSAT	
-0	61	96	
+0	66	109	
 1	8	0	
 
 inv10Ok
 m	SAT	UNSAT	
-0	94	86	
+0	105	100	
+
+Number of reversed relation navigation
+
+inv1Ok
+m	SAT	UNSAT	
+0	73	188	
+
+inv2Ok
+m	SAT	UNSAT	
+0	34	111	
+
+inv3Ok
+m	SAT	UNSAT	
+0	34	108	
+
+inv4Ok
+m	SAT	UNSAT	
+0	65	113	
+
+inv5Ok
+m	SAT	UNSAT	
+0	147	106	
+
+inv6Ok
+m	SAT	UNSAT	
+0	104	124	
+
+inv7Ok
+m	SAT	UNSAT	
+0	128	90	
+
+inv8Ok
+m	SAT	UNSAT	
+0	1	123	
+
+inv9Ok
+m	SAT	UNSAT	
+0	73	105	
+1	1	4	
+
+inv10Ok
+m	SAT	UNSAT	
+0	105	100	
 
 Number multiplicity arrows
 
 inv1Ok
 m	SAT	UNSAT	
-0	65	175	
+0	73	188	
 
 inv2Ok
 m	SAT	UNSAT	
-0	31	97	
+0	34	111	
 
 inv3Ok
 m	SAT	UNSAT	
-0	34	96	
+0	34	108	
 
 inv4Ok
 m	SAT	UNSAT	
-0	64	101	
+0	65	113	
 
 inv5Ok
 m	SAT	UNSAT	
-0	140	92	
+0	147	106	
 
 inv6Ok
 m	SAT	UNSAT	
-0	94	110	
+0	103	124	
 1	1	0	
 
 inv7Ok
 m	SAT	UNSAT	
-0	114	76	
+0	128	90	
 
 inv8Ok
 m	SAT	UNSAT	
-0	1	111	
+0	1	123	
 
 inv9Ok
 m	SAT	UNSAT	
-0	69	96	
+0	74	109	
 
 inv10Ok
 m	SAT	UNSAT	
-0	94	86	
+0	105	100	
 
-Number of quantifiers
+Number of inverted navigation
 
 inv1Ok
 m	SAT	UNSAT	
-0	62	156	
-1	3	19	
+0	73	188	
 
 inv2Ok
 m	SAT	UNSAT	
-0	27	81	
-1	4	16	
+0	34	111	
 
 inv3Ok
 m	SAT	UNSAT	
-0	28	67	
-1	6	29	
+0	34	108	
 
 inv4Ok
 m	SAT	UNSAT	
-0	54	83	
-1	10	18	
+0	65	113	
 
 inv5Ok
 m	SAT	UNSAT	
-0	124	73	
-1	14	19	
-2	2	0	
+0	147	106	
 
 inv6Ok
 m	SAT	UNSAT	
-0	58	28	
-1	21	79	
+0	99	124	
+1	5	0	
+
+inv7Ok
+m	SAT	UNSAT	
+0	116	77	
+1	12	13	
+
+inv8Ok
+m	SAT	UNSAT	
+0	1	123	
+
+inv9Ok
+m	SAT	UNSAT	
+0	66	104	
+1	6	5	
 2	2	0	
-3	14	3	
-
-inv7Ok
-m	SAT	UNSAT	
-0	43	44	
-1	61	25	
-2	10	7	
-
-inv8Ok
-m	SAT	UNSAT	
-0	1	90	
-1	0	21	
-
-inv9Ok
-m	SAT	UNSAT	
-0	19	59	
-1	16	24	
-2	33	5	
-3	1	8	
 
 inv10Ok
 m	SAT	UNSAT	
-0	41	34	
-1	38	38	
-2	15	14	
-
-Number of inverted navigation expressions
-
-inv1Ok
-m	SAT	UNSAT	
-0	65	175	
-
-inv2Ok
-m	SAT	UNSAT	
-0	31	97	
-
-inv3Ok
-m	SAT	UNSAT	
-0	34	96	
-
-inv4Ok
-m	SAT	UNSAT	
-0	64	101	
-
-inv5Ok
-m	SAT	UNSAT	
-0	140	92	
-
-inv6Ok
-m	SAT	UNSAT	
-0	95	110	
-
-inv7Ok
-m	SAT	UNSAT	
-0	114	76	
-
-inv8Ok
-m	SAT	UNSAT	
-0	1	111	
-
-inv9Ok
-m	SAT	UNSAT	
-0	68	92	
-1	1	4	
-
-inv10Ok
-m	SAT	UNSAT	
-0	94	86	
+0	87	100	
+1	17	0	
+2	1	0	
 
 * Derivation tree
 PQAJE67kz8w5NWJuM, 2019-10-02T21:42:47 (model share)
@@ -3855,3 +4000,212 @@ PQAJE67kz8w5NWJuM, 2019-10-02T21:42:47 (model share)
   guxsnt7gNpgT4TNx8, 2020-12-11T14:24:44 (inv1Ok,incorrect,check,)
     rypBZBpQKJSzsSd5H, 2020-12-11T14:25:44 (inv2Ok,incorrect,check,)
   BS8PxH8QMztud6Gh6, 2020-12-16T17:01:38 (inv1Ok,incorrect,check,)
+  veP3JcbFB7pfJunJr, 2020-12-25T12:59:32 (inv1Ok,correct,check,)
+    jDj3SQ7zrewhCxBCp, 2020-12-25T12:59:46 (inv2Ok,incorrect,check,)
+      PZ8ebpQs3De7kTN4T, 2020-12-25T13:00:01 (inv2Ok,correct,check,)
+        YaWksoDvvSXBb6omo, 2020-12-25T13:00:13 (inv3Ok,correct,check,)
+          mbHXq36tqx32Yvtas, 2020-12-25T13:00:33 (inv4Ok,correct,check,)
+            TvvG6T352GhYiumpz, 2020-12-25T13:01:29 (inv5Ok,incorrect,check,)
+              aSQMdwAxZH3bCtucM, 2020-12-25T13:02:11 (inv6Ok,correct,check,)
+                6qnNjHf5v9rGyjRMo, 2020-12-25T13:02:34 (inv8Ok,correct,check,)
+                  tWGTihtS4vzBEhzXS, 2020-12-25T13:02:59 (inv9Ok,correct,check,)
+                    NcLGPZBFKjiHbnfjs, 2020-12-25T13:03:39 (inv10Ok,correct,check,)
+                      F4hi6NG6bHrFBRXfv, 2020-12-25T13:04:41 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+                        dipA8YzcmfPnP9qvh, 2020-12-25T13:05:21 (!in can be used only between 2 expressions of the same arity. Left type = {this/File->this/File} Right type = {this/File})
+                          zr7uhsRhJNkAnFdRk, 2020-12-25T13:05:39 (!in can be used only between 2 expressions of the same arity. Left type = {this/File->this/File} Right type = {this/File})
+                            TtLuGfTEbGhtwWa79, 2020-12-25T13:06:06 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+                              53SYmEKcazKDZ2bH5, 2020-12-25T13:07:06 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+                                KbaLF8CLnApyartCr, 2020-12-25T13:07:17 (inv5Ok,correct,check,)
+                                  rFHhLkepkrcKCYiyf, 2020-12-25T13:08:23 (inv5Ok,incorrect,check,)
+                                    opGbqnhzgu8St8jFp, 2020-12-25T13:11:02 (inv5Ok,correct,check,)
+                                      nkjmgPhQDfZBm7uwg, 2020-12-25T13:14:46 (inv5Ok,incorrect,check,)
+                                        yAtgta8oMFwNy9mPn, 2020-12-25T13:15:01 (inv5Ok,correct,check,)
+                                          CivrwF3RznopueY5h, 2020-12-25T13:16:24 (inv7Ok,incorrect,check,)
+                                            ap3piyZswP92jDLWY, 2020-12-25T13:17:53 (inv7Ok,correct,check,)
+  RETYhbXX9Z5mmWpNx, 2020-12-27T11:02:04 (inv1Ok,incorrect,check,)
+  SDJoEgxxbJqKPTMNN, 2020-12-27T16:12:14 (inv5Ok,incorrect,check,)
+  ZPSE9XjnRDjgFeQ9q, 2020-12-31T19:44:14 (inv1Ok,incorrect,check,)
+    YhnMMJkgzzsA8G7qi, 2020-12-31T19:52:39 (The name "inv1" cannot be found.)
+      5XWJwG6whShCuK9db, 2020-12-31T19:53:04 (inv1Ok,incorrect,check,)
+        eTfbn9h4sBGEEjP6S, 2020-12-31T19:53:29 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+          m5x3yTZgkL9SgACTR, 2020-12-31T19:53:58 (inv1Ok,correct,check,)
+            9ftjeuwMWxt4wGfNR, 2020-12-31T19:54:26 (inv1Ok,correct,check,)
+              XP84Pb7T7vKNgrZrj, 2020-12-31T20:40:38 (inv1Ok,correct,check,)
+                Ra95XfaAZgnd7EnFL, 2020-12-31T20:40:46 (inv2Ok,correct,check,)
+                  NFGZsN2FnCjwhwS2b, 2020-12-31T20:40:50 (inv3Ok,correct,check,)
+                    dFfmfrZ9y2mizKKqB, 2020-12-31T20:40:54 (inv4Ok,incorrect,check,)
+                      ZkFthx9bh2XLHCex8, 2020-12-31T20:41:05 (inv4Ok,correct,check,)
+                        2BomMGGMxsxdskwBu, 2020-12-31T20:41:13 (inv5Ok,correct,check,)
+                          TaYC58YKK8i67x5Xf, 2020-12-31T20:45:22 (inv6Ok,correct,check,)
+                            cFji58LnDBfmDc5Lk, 2020-12-31T20:47 (inv6Ok,correct,check,)
+                              p5f7vW4T8ReWWfZGT, 2020-12-31T20:49:13 (inv7Ok,correct,check,)
+                                kD2LWz4ePXG7QE74t, 2020-12-31T20:49:20 (inv7Ok,correct,check,)
+                                  y2BpXv4y3hJW9pXW3, 2020-12-31T20:51:24 (inv8Ok,correct,check,)
+                                    ef9iqBmgA9a785RZC, 2020-12-31T20:52:39 (inv9Ok,correct,check,)
+                                      3iEvqB33DhHWAQmsq, 2020-12-31T21:00:37 (inv10Ok,incorrect,check,)
+                                        wgJNWCFyENpvTXMLo, 2020-12-31T21:01:27 (inv10Ok,correct,check,)
+                                          Y2nMQbdgQwojJtLQk, 2020-12-31T21:42:39 (inv5Ok,incorrect,check,)
+                                            9Z4dqiGKpw2LfmxDA, 2020-12-31T21:42:55 (inv5Ok,correct,check,)
+  QK9DAHWnqnXMhsBXH, 2021-01-03T19:45:44 (inv1Ok,incorrect,check,)
+  6idP7GpEZW9XNT6Jq, 2021-01-04T16:08:53 (inv1Ok,incorrect,check,)
+    bFnPH6rCmEsTeh8co, 2021-01-04T16:09:02 (inv10Ok,incorrect,check,)
+  PHwighXPhhFE5xS4x, 2021-01-08T02:27:16 (inv1Ok,correct,check,)
+    YAyNZeCDF4v5Yfg3R, 2021-01-08T02:27:40 (inv2Ok,correct,check,)
+      sBvbf2Fr6FCZJapJM, 2021-01-08T02:28:57 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+        G9tkL59GuWhWixjnZ, 2021-01-08T02:29:06 (inv2Ok,correct,check,)
+          edTcrdtTvj4o3kpni, 2021-01-08T02:29:38 (inv4Ok,correct,check,)
+            NT3vi6fPvPtAL7HN5, 2021-01-08T02:29:40 (inv3Ok,correct,check,)
+              DEYeZxZm4eiF5mtgu, 2021-01-08T02:30:05 (inv5Ok,correct,check,)
+                p3RWMqXpgA5eaijHJ, 2021-01-08T02:32:09 (inv6Ok,incorrect,check,)
+                  xsjtsEGvPCYbomn8c, 2021-01-08T02:32:27 (There are 3 possible tokens that can appear here: ,  { |)
+                    qTvnKKnZLQarytgvM, 2021-01-08T02:32:36 (inv6Ok,correct,check,)
+                      cCHpJ6JdXKt3gvvRY, 2021-01-08T02:32:45 (inv7Ok,incorrect,check,)
+                        MouRuXtYm2nDBKaoh, 2021-01-08T02:32:57 (inv7Ok,incorrect,check,)
+                          gNSPYAwSBKFxYHrvv, 2021-01-08T02:33:16 (inv7Ok,correct,check,)
+                            smnY7534Bsort2vZp, 2021-01-08T02:33:34 (inv8Ok,correct,check,)
+                              B6mCzein4c8AKYoCE, 2021-01-08T02:34:06 (!in can be used only between 2 expressions of the same arity. Left type = {this/File->this/File} Right type = {this/File})
+                                Dmkx8vndBJ6DjYY45, 2021-01-08T02:34:27 (inv9Ok,incorrect,check,)
+                                  QgD2MTTFNZFBHQ3EK, 2021-01-08T02:37:01 (!in can be used only between 2 expressions of the same arity. Left type = {this/File->this/File} Right type = {this/File})
+                                    FkPHp4fDB8CngrTQb, 2021-01-08T02:39:03 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                      FPMyEAtKiF2dyzvQc, 2021-01-08T02:41:05 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                        hoWYcGHd7pjhJZrab, 2021-01-08T02:42:12 (inv9Ok,correct,check,)
+                                          SmdTAp88AN5eaegoH, 2021-01-08T02:42:25 (inv9Ok,correct,check,)
+  Kh7NRyuao76thgT2P, 2021-01-08T13:47:41 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+  64rE4mKyYTJa3k6Dt, 2021-01-10T18:14:55 (inv1Ok,incorrect,check,)
+  rmHp6GRs4NybMZRPC, 2021-01-10T22:26:18 (inv1Ok,correct,check,)
+    eKBXEPjWG283W9vWw, 2021-01-10T22:26:38 (inv2Ok,correct,check,)
+      6HSKCu9SJe6NR9PQ6, 2021-01-10T22:27:41 (inv3Ok,correct,check,)
+        NqDpr3Zdiyo63Cxqz, 2021-01-10T22:27:43 (inv4Ok,correct,check,)
+          kTJbMK84CQaigPtjW, 2021-01-10T22:28:09 (inv5Ok,incorrect,check,)
+            8wTdQehDPE77vW725, 2021-01-10T22:28:26 (inv5Ok,correct,check,)
+              qaQQD3WjLiTfvaMXQ, 2021-01-10T22:28:50 (inv6Ok,incorrect,check,)
+                ufGpRSSZ9adiwqBWC, 2021-01-10T22:29:02 (inv6Ok,correct,check,)
+                  5aK9EtuvHqi2LxGDa, 2021-01-10T22:29:54 (inv7Ok,incorrect,check,)
+                    LqSuDqBJheJ74cmaY, 2021-01-10T22:30:02 (inv7Ok,correct,check,)
+                      sKpSiDWGzCt4BcEpW, 2021-01-10T22:31:05 (inv8Ok,correct,check,)
+                        eRritQgttQc36CHZb, 2021-01-10T22:31:07 (inv9Ok,correct,check,)
+                          4e7j9eg5eZa94rsTq, 2021-01-10T22:32:10 (inv10Ok,incorrect,check,)
+                            3dQ2RpmqG43iFARJH, 2021-01-10T22:32:19 (inv10Ok,incorrect,check,)
+                              Bgqx6DmW3rsKguwcr, 2021-01-10T22:32:58 (inv10Ok,correct,check,)
+                                ZPu4LhT5QNsPxvnpz, 2021-01-10T22:33:46 (inv10Ok,correct,check,)
+                                  KWomcbFERuXc8jXKP, 2021-01-10T22:36 (inv10Ok,incorrect,check,)
+                                    tdfaQtnwcxBB6PXyf, 2021-01-10T22:36:05 (inv10Ok,correct,check,)
+  CNc3YwtrjQBN3m5Mi, 2021-01-10T22:27:19 (inv1Ok,correct,check,)
+    EdJmkwWjmKBSRwXuT, 2021-01-10T22:27:21 (inv2Ok,incorrect,check,)
+      wogg3ZpfQLuSvTrbh, 2021-01-10T22:27:35 (inv2Ok,correct,check,)
+        NvnfiLkNisHXZb6Mx, 2021-01-10T22:27:44 (inv3Ok,correct,check,)
+          hjPhsAfNaadfkMKuc, 2021-01-10T22:28:08 (inv4Ok,correct,check,)
+            6eWzL8Wwq3Ttsabot, 2021-01-10T22:28:31 (inv5Ok,correct,check,)
+              uajatq2iARWY5fDyg, 2021-01-10T22:29:11 (inv6Ok,correct,check,)
+                hhzhDg3ud638RkJbr, 2021-01-10T22:29:32 (inv6Ok,correct,check,)
+                  NHoCHcXBzeyTceCY6, 2021-01-10T22:29:35 (inv7Ok,incorrect,check,)
+                    az6poYTegGbtRXacM, 2021-01-10T22:29:47 (inv7Ok,incorrect,check,)
+                      6x9AyMpidgTA87p6T, 2021-01-10T22:30:11 (inv7Ok,correct,check,)
+                        Z2Zme5BhEhyhgdRFr, 2021-01-10T22:31:21 (inv8Ok,correct,check,)
+                          3R8jreRF7pXWfhiQm, 2021-01-10T22:31:42 (inv9Ok,correct,check,)
+                            SRwefMuYan5QLEmTc, 2021-01-10T22:32:55 (inv10Ok,incorrect,check,)
+                              QgqjFq3KJ2d3QNf7n, 2021-01-10T22:34:10 (inv10Ok,correct,check,)
+                                B2asX7sxK4Arpa22z, 2021-01-10T22:34:27 (inv10Ok,incorrect,check,)
+                                  be7GNpFh2btNTEpxw, 2021-01-10T22:36:13 (inv10Ok,correct,check,)
+  s3HLdYEQ29MZBc369, 2021-01-10T22:27:20 (inv1Ok,correct,check,)
+    ao6nHd75n2Lh29HEY, 2021-01-10T22:27:22 (inv2Ok,correct,check,)
+      wHwrRKKHoL989nYjk, 2021-01-10T22:27:35 (inv2Ok,correct,check,)
+        iffwYGKJPkAAHWQLL, 2021-01-10T22:27:36 (inv3Ok,correct,check,)
+          9x8YQusnMEpJ6fpRq, 2021-01-10T22:27:45 (inv3Ok,correct,check,)
+            2DW3APPvvTvZsEjGH, 2021-01-10T22:27:59 (inv4Ok,correct,check,)
+              vGjmEZZkFoahWincB, 2021-01-10T22:28:16 (inv5Ok,correct,check,)
+                BzcWKcCgBg6dwZ5HZ, 2021-01-10T22:28:44 (inv6Ok,incorrect,check,)
+                  tWNyCvWnA5LvbGv9p, 2021-01-10T22:28:56 (inv6Ok,correct,check,)
+                    JhYpsLoPESYuCKBBQ, 2021-01-10T22:29:49 (inv7Ok,incorrect,check,)
+                      wX2mD3rpt3joyfmMJ, 2021-01-10T22:30:05 (inv7Ok,incorrect,check,)
+                        XWrWBnqALmGWbGDWF, 2021-01-10T22:30:13 (inv7Ok,correct,check,)
+                          4TX5Qk4FDXYb38NMB, 2021-01-10T22:31:03 (inv8Ok,correct,check,)
+                            3aJ2nLRrNQtHBWxRo, 2021-01-10T22:31:53 (inv9Ok,incorrect,check,)
+                              DYYLsezAbFvRcoEZ2, 2021-01-10T22:31:59 (inv9Ok,incorrect,check,)
+                                PZJsMNFcwnJkqXytF, 2021-01-10T22:32:08 (inv9Ok,incorrect,check,)
+                                  7rFsMmygxYJXHRBuT, 2021-01-10T22:32:17 (inv9Ok,incorrect,check,)
+                                    hcuS42qpzjvQXyc4n, 2021-01-10T22:32:23 (inv9Ok,correct,check,)
+                                      T2JxEkwRXrQX2BNBr, 2021-01-10T22:33:06 (inv10Ok,correct,check,)
+                                        yLMxiLimc5gWguMQ2, 2021-01-10T22:33:54 (inv10Ok,incorrect,check,)
+                                          zikJ37wFecEDLCy8J, 2021-01-10T22:34:03 (inv10Ok,incorrect,check,)
+                                            Q6mRekupDkHxR8wm7, 2021-01-10T22:34:11 (inv10Ok,correct,check,)
+  DBMriDNWikY2nzpmw, 2021-01-12T17:18:55 (inv1Ok,correct,check,)
+    b3LQRvSN97bZcbchu, 2021-01-12T17:19:52 (inv1Ok,correct,check,)
+      3P8Bfgdb2HL22Gm6Q, 2021-01-12T17:21:15 (inv2Ok,correct,check,)
+        y5LnceYZNX4uteS5w, 2021-01-12T17:21:48 (inv3Ok,correct,check,)
+          782DmjeLmWYnkzG6j, 2021-01-12T17:22 (inv3Ok,correct,check,)
+            fFsFiGdvLf8D8ApDA, 2021-01-12T17:22:48 (inv4Ok,correct,check,)
+              EaFXvGDyn4yrKr2xg, 2021-01-12T17:23:16 (inv4Ok,correct,check,)
+                N7r5bmzP3cquMsFou, 2021-01-12T17:24:51 (inv4Ok,correct,check,)
+                  oaLvyd9HSSx4QFA6d, 2021-01-12T17:24:57 (inv5Ok,correct,check,)
+                    XSLd725y3jzGwt5Qz, 2021-01-12T17:25:30 (inv5Ok,correct,check,)
+                      xemN6fNFHBNfu5PYK, 2021-01-12T17:25:59 (inv6Ok,incorrect,check,)
+                        bgQ5MGuqSsrkJwYth, 2021-01-12T17:27:37 (inv6Ok,incorrect,check,)
+                          ytD6TpirfHeHgzwG2, 2021-01-12T17:27:58 (inv6Ok,correct,check,)
+                            znsqefAzYBgrWqJk4, 2021-01-12T17:28:57 (inv6Ok,correct,check,)
+                              3vcv5BDcPEtxLbjSA, 2021-01-12T17:29:03 (inv6Ok,incorrect,check,)
+                                jc89kbDJzPmz8BQAJ, 2021-01-12T17:29:07 (inv6Ok,correct,check,)
+                                  3Y7jKjiiAq6vDBNug, 2021-01-12T17:30:24 (!in can be used only between 2 expressions of the same arity. Left type = {this/File->this/File} Right type = {this/File})
+                                    SAfX5JpWoiAFBqP8E, 2021-01-12T17:30:36 (inv7Ok,incorrect,check,)
+                                      uTihAbXR4Cq96zXdR, 2021-01-12T17:32:13 (inv7Ok,incorrect,check,)
+                                        mL2NcDHP7xD2dBuaJ, 2021-01-12T17:32:20 (inv7Ok,correct,check,)
+                                          LDsh3QputAuFYAwk7, 2021-01-12T17:34:48 (inv7Ok,correct,check,)
+                                            vd9czbjrJSTxsctQ7, 2021-01-12T17:37:16 (inv7Ok,correct,check,)
+                                              542jmgpYSpu2nRWdn, 2021-01-12T17:38:30 (inv7Ok,correct,check,)
+                                                YusraFexwyJPeLbPn, 2021-01-12T17:39:51 (inv8Ok,correct,check,)
+                                                  JERmKhxpndKScne4n, 2021-01-12T17:40:39 (inv8Ok,correct,check,)
+                                                    JCvhPTB7XwGgomfGo, 2021-01-12T17:42:23 (inv9Ok,correct,check,)
+                                                      566Kqmk9X9re9Bve5, 2021-01-12T17:43:01 (inv9Ok,correct,check,)
+                                                        Bvjv9RxyEsEp5GK6W, 2021-01-12T17:48:05 (inv9Ok,correct,check,)
+                                                          gxJpSbABZ6AKeA4Tn, 2021-01-12T17:48:51 (inv10Ok,correct,check,)
+                                                            8sc4WPXzALbqmDQta, 2021-01-12T17:59:54 (inv10Ok,correct,check,)
+                                                              bTkPs89C4NBzhNcmq, 2021-01-12T18:14:50 (inv10Ok,correct,check,)
+  uQ6eX39gCRLEiAsz3, 2021-01-12T21:02:38 (inv1Ok,correct,check,)
+    CQYtaaaeYdYgrccNp, 2021-01-12T21:05:11 (inv2Ok,correct,check,)
+      D9CuCyYeKgjCLb9dh, 2021-01-12T21:05:27 (inv2Ok,correct,check,)
+        dJGShBxmSmj7SmQrD, 2021-01-12T21:05:38 (inv2Ok,correct,check,)
+          cC22swHzYRK2sXrvT, 2021-01-12T21:05:50 (inv2Ok,correct,check,)
+            EsuGveXHoSZRFGX69, 2021-01-12T21:05:52 (inv3Ok,correct,check,)
+              JHJwb8dGW6wd9dmdL, 2021-01-12T22:36:34 (inv4Ok,correct,check,)
+                r9dWajyCKdXjNx3S4, 2021-01-12T22:36:48 (inv5Ok,correct,check,)
+                  2e4qrHAXk2ghccZRT, 2021-01-12T22:37:01 (inv6Ok,incorrect,check,)
+                    iFQANih9BSTdJtGmN, 2021-01-12T22:37:08 (inv6Ok,correct,check,)
+                      YXQfvD8N4XiBdNzc2, 2021-01-12T22:37:40 (inv7Ok,incorrect,check,)
+                        A5pyMaETc4ygrE3df, 2021-01-12T22:37:45 (This must be a formula expression. Instead, it has the following possible type(s): {this/File})
+                          tWDgtuJoLBLSFCJtK, 2021-01-12T22:38:05 (inv7Ok,incorrect,check,)
+                            CZ7LfCs5t4f78vTna, 2021-01-12T22:38:44 (inv7Ok,incorrect,check,)
+                              gqYfyQfNDf4LxZRkT, 2021-01-12T22:39:56 (inv7Ok,correct,check,)
+                                JP3iw2Zs5gCjGPPad, 2021-01-12T22:40:05 (inv8Ok,correct,check,)
+                                  roZwzRCPgFJXR488w, 2021-01-12T22:40:38 (inv8Ok,correct,check,)
+                                    RMEwP8KGXA4YfZ6hN, 2021-01-12T22:40:57 (inv9Ok,correct,check,)
+                                      Pxs5nKD9Pu5gnGnvB, 2021-01-12T22:40:59 (inv10Ok,incorrect,check,)
+                                        y67s4Kovxozyxn4vZ, 2021-01-12T22:41:08 (inv10Ok,correct,check,)
+  GELYwHXEHKZoG5aEW, 2021-01-13T16:35:51 (The name "trash" cannot be found.)
+    iEgD62JEukBEpJmpm, 2021-01-13T16:36 (inv1Ok,correct,check,)
+      LNhmS32znvzBZiqpe, 2021-01-13T16:36:51 (inv1Ok,correct,check,)
+        7W7jMBLe3kNyvkX93, 2021-01-13T16:36:55 (inv2Ok,incorrect,check,)
+          3ne23FPNpv9gQa36N, 2021-01-13T16:38:24 (inv2Ok,correct,check,)
+            mjCN8Cn8JwjCM6eZR, 2021-01-13T16:38:39 (inv3Ok,correct,check,)
+              Htu2WyxFNcT5Gypms, 2021-01-13T16:39:35 (inv3Ok,correct,check,)
+                XT6nHRCEQmuef6Eue, 2021-01-13T16:39:43 (inv4Ok,correct,check,)
+                  bTrfYC3rYbpHsKwPi, 2021-01-13T16:40:38 (inv4Ok,correct,check,)
+                    eaGMPeqABp5Bg4eQ4, 2021-01-13T16:40:43 (inv5Ok,incorrect,check,)
+                      TCoM3zTqnq6SHWjZx, 2021-01-13T16:41:28 (inv5Ok,correct,check,)
+                        QoED5FMqTsWsHyfAr, 2021-01-13T16:43:47 (inv5Ok,correct,check,)
+                          pg9RSyGFwizsgmWwA, 2021-01-13T16:43:51 (inv6Ok,incorrect,check,)
+                            SL3crsyow6DvaYwjz, 2021-01-13T16:44:03 (inv6Ok,incorrect,check,)
+                              FxpbTxKdRrazCCp8u, 2021-01-13T16:44:28 (inv6Ok,correct,check,)
+                                voE4ZLZMqPK87hNoe, 2021-01-13T16:46:44 (inv6Ok,correct,check,)
+                                  mW7N48NwX3MDqkz8D, 2021-01-13T16:46:48 (inv7Ok,incorrect,check,)
+                                    pXchgtFdgB62XCi3w, 2021-01-13T16:47:38 (inv7Ok,correct,check,)
+                                      c98YGjAdp9pne6QPQ, 2021-01-13T16:48:42 (inv8Ok,correct,check,)
+                                        swEy5Prqs8Af8hZLL, 2021-01-13T16:48:46 (inv7Ok,correct,check,)
+                                          HSyLSBSPgPcvTS2ZH, 2021-01-13T16:49:51 (inv8Ok,correct,check,)
+                                            DutHZgR37KrsTeber, 2021-01-13T16:49:56 (inv9Ok,correct,check,)
+                                              kC4dE5GYX4eYRPxSm, 2021-01-13T16:52:20 (The name "trash" cannot be found.)
+                                                99HCrvPJrk2b7DG9K, 2021-01-13T16:52:29 (inv9Ok,correct,check,)
+                                                  Y3eHBbjYAWedWRYXB, 2021-01-13T16:52:33 (inv10Ok,incorrect,check,)
+                                                    LiuXM29EqD8PKandW, 2021-01-13T16:52:52 (inv10Ok,correct,check,)
+  sEer8zPoSqMcgDJax, 2021-01-21T10:27:39 (inv1Ok,incorrect,check,)
+  SAk6Zwitkjyw9LScD, 2021-03-06T18:04:20 (inv1Ok,incorrect,check,)
+  r5weoNhkw9ef42DNX, 2021-03-18T17:44:07 (model share)

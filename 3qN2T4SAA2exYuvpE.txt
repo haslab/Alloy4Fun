@@ -1,4 +1,4 @@
-3qN2T4SAA2exYuvpE (2020-12-19)
+3qN2T4SAA2exYuvpE (2021-03-24)
 
 * Meta-data
 Challenge name: unknown
@@ -7,84 +7,163 @@ Creation time: 2020-11-27
 Metric catalog: Example metric catalog
 
 * Overall metric statistics
-Total model entries: 30
-Total executions: 27
-Total shares: 3
-Total error messages: 1
-Total warning messages: 1
-Total solutions: 26
-Total sessions: 3
+Total model entries: 830
+Total executions: 825
+Total shares: 5
+Total error messages: 224
+Total warning messages: 89
+Total solutions: 601
+Total sessions: 63
 Timed out re-executions: 0
 Rejected due to server errors: 0
 Inconsisistent result reports: 0
 Inconsisistent message reports: 0
 Total instance entries: 0
-Total link entries: 4
+Total link entries: 6
 
 * Scalar metrics
-Number of shared sessions	2
-Shared models (model)	3
+Number of shared sessions	4
+Shared models (model)	5
 Shares with warnings	0
-Alloy runtime errors	0
-Warnings by type	1
+Alloy runtime errors	9
 Shared errored models	0
-Alloy static errors	1
+Alloy static errors	215
 Shared models (instance)	0
-Average session	9.666666666666666
-Errors by type	1
-Longest session	16
-Sat executions with warnings	1
-Executed errored models	1
-Unsat executions	15
-Unsat executions with warnings	0
-Errored executions with warnings	0
-Average % unsatisfiable	0.5767195767195767
-Sat executions	11
+Average session	13.047619047619047
+Longest session	45
+Sat executions with warnings	40
+Executed errored models	224
+Unsat executions	215
+Unsat executions with warnings	5
+Errored executions with warnings	2
+Average % unsatisfiable	0.45631528768837903
+Sat executions	386
 
 * Overall metrics
 
 Sessions by length
-4	1
-5	0
-6	0
-7	0
-8	0
-9	1
-10	0
-11	0
-12	0
-13	0
-14	0
-15	0
-16	1
+1	2
+2	3
+3	3
+4	2
+5	2
+6	3
+7	3
+8	5
+9	5
+10	5
+11	5
+12	2
+13	2
+14	3
+15	1
+16	2
+17	1
+18	0
+19	1
+20	1
+21	1
+22	2
+23	0
+24	1
+25	1
+26	0
+27	0
+28	1
+29	0
+30	2
+31	0
+32	0
+33	1
+34	0
+35	0
+36	0
+37	0
+38	0
+39	0
+40	1
+41	0
+42	0
+43	1
+44	0
+45	1
+
+Warnings by type
+== is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}	2
+Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}	16
+This variable is unused.	16
+Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}	10
+Subset operator is redundant, because both subexpressions are always empty. Left type = {_} Right type = {_}	1
+& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}	11
+Subset operator is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}	1
+The join operation here always yields an empty set. Left type = {_} Right type = {_}	28
+== is redundant, because the left and right expressions are always disjoint. Left type = {_} Right type = {_}	4
 
 Sessions by # of solved challenges
-2	2
-3	1
+0	3
+1	12
+2	15
+3	22
+4	11
+
+Errors by type
+There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	5
+- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	2
+There are 1 possible tokens that can appear here: [ 	28
+There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ 	4
+There are 5 possible tokens that can appear here: enum fun let open pred 	3
+= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	11
+Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.	7
+The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".	2
+This must be a formula expression. Instead, it has the following possible type(s): {_}	20
+There are 8 possible tokens that can appear here: NAME disj exh part private seq this var 	4
+~ can be used only with a binary relation. Instead, its possible type(s) are: {_}	1
+!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	1
+There are 1 possible tokens that can appear here: ) 	1
++ can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	2
+^ can be used only with a binary relation. Instead, its possible type(s) are: {_}	1
+in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	31
+This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	23
+This expression failed to be typechecked line _ column _ filename=_.als	2
+The name _ cannot be found.	29
+& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	3
+There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	13
+This must be a set or relation. Instead, it has the following possible type(s): {_}	8
+There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~ 	11
+There are 1 possible tokens that can appear here: NAME 	1
+Local variable "u" cannot be bound to a 'disjoint' expression.	2
+There are 3 possible tokens that can appear here: ,  { | 	7
+The assertion "Inv1" cannot be found.	2
 
 Models by number of warnings
-0	29
-1	1
+0	783
+1	25
+2	11
+3	4
+4	6
+5	0
+6	1
 
 * Overall metrics, classified
 
-Execution results by challenge
-m	SAT	UNSAT	
-Inv1OK	1	6	
-Inv2OK	5	4	
-Inv3OK	0	1	
-Inv4OK	9	0	
+Execution results by command
+m	UNSAT	SAT	
+Inv1OK	86	26	
+Inv2OK	72	89	
+Inv3OK	45	138	
+Inv4OK	12	132	
+Inv2	0	1	
 
 Session results by challenge
 m	solved	unsolved	
-Inv1OK	3	0	
-Inv2OK	3	0	
-Inv3OK	1	2	
-Inv4OK	0	3	
+Inv1OK	56	7	
+Inv2OK	51	12	
+Inv3OK	34	29	
+Inv4OK	11	52	
 
 Model entries over time
-m	SAT	UNSAT	SHARE	ERROR	
-2020-11-27	0	0	1	0	
+m	ERROR	UNSAT	SAT	SHARE	
+2020-11-27	0	0	0	1	
 2020-11-28	0	0	0	0	
 2020-11-29	0	0	0	0	
 2020-11-30	0	0	0	0	
@@ -95,196 +174,389 @@ m	SAT	UNSAT	SHARE	ERROR
 2020-12-05	0	0	0	0	
 2020-12-06	0	0	0	0	
 2020-12-07	0	0	0	0	
-2020-12-08	10	7	2	1	
+2020-12-08	1	7	10	2	
 2020-12-09	0	0	0	0	
 2020-12-10	0	0	0	0	
 2020-12-11	0	0	0	0	
-2020-12-12	5	4	0	0	
+2020-12-12	0	4	5	0	
 2020-12-13	0	0	0	0	
 2020-12-14	0	0	0	0	
 2020-12-15	0	0	0	0	
 2020-12-16	0	0	0	0	
 2020-12-17	0	0	0	0	
 2020-12-18	0	0	0	0	
-2020-12-19	0	0	0	0	
+2020-12-19	2	7	0	0	
+2020-12-20	0	0	0	0	
+2020-12-21	0	0	0	0	
+2020-12-22	0	0	0	0	
+2020-12-23	0	0	0	0	
+2020-12-24	0	0	0	0	
+2020-12-25	0	1	0	0	
+2020-12-26	11	10	11	0	
+2020-12-27	6	16	15	0	
+2020-12-28	6	4	15	0	
+2020-12-29	8	12	20	0	
+2020-12-30	11	13	11	1	
+2020-12-31	4	1	3	0	
+2021-01-01	12	6	5	0	
+2021-01-02	17	14	24	0	
+2021-01-03	3	7	5	0	
+2021-01-04	6	14	13	0	
+2021-01-05	5	10	14	0	
+2021-01-06	36	24	70	1	
+2021-01-07	57	32	77	0	
+2021-01-08	26	18	52	0	
+2021-01-09	1	2	3	0	
+2021-01-10	0	0	0	0	
+2021-01-11	0	0	0	0	
+2021-01-12	0	0	0	0	
+2021-01-13	0	0	0	0	
+2021-01-14	0	0	0	0	
+2021-01-15	0	0	0	0	
+2021-01-16	0	0	0	0	
+2021-01-17	0	0	0	0	
+2021-01-18	0	0	0	0	
+2021-01-19	0	0	0	0	
+2021-01-20	0	0	0	0	
+2021-01-21	0	0	0	0	
+2021-01-22	0	0	0	0	
+2021-01-23	0	0	0	0	
+2021-01-24	2	3	25	0	
+2021-01-25	10	10	8	0	
+2021-01-26	0	0	0	0	
+2021-01-27	0	0	0	0	
+2021-01-28	0	0	0	0	
+2021-01-29	0	0	0	0	
+2021-01-30	0	0	0	0	
+2021-01-31	0	0	0	0	
+2021-02-01	0	0	0	0	
+2021-02-02	0	0	0	0	
+2021-02-03	0	0	0	0	
+2021-02-04	0	0	0	0	
+2021-02-05	0	0	0	0	
+2021-02-06	0	0	0	0	
+2021-02-07	0	0	0	0	
+2021-02-08	0	0	0	0	
+2021-02-09	0	0	0	0	
+2021-02-10	0	0	0	0	
+2021-02-11	0	0	0	0	
+2021-02-12	0	0	0	0	
+2021-02-13	0	0	0	0	
+2021-02-14	0	0	0	0	
+2021-02-15	0	0	0	0	
+2021-02-16	0	0	0	0	
+2021-02-17	0	0	0	0	
+2021-02-18	0	0	0	0	
+2021-02-19	0	0	0	0	
+2021-02-20	0	0	0	0	
+2021-02-21	0	0	0	0	
+2021-02-22	0	0	0	0	
+2021-02-23	0	0	0	0	
+2021-02-24	0	0	0	0	
+2021-02-25	0	0	0	0	
+2021-02-26	0	0	0	0	
+2021-02-27	0	0	0	0	
+2021-02-28	0	0	0	0	
+2021-03-01	0	0	0	0	
+2021-03-02	0	0	0	0	
+2021-03-03	0	0	0	0	
+2021-03-04	0	0	0	0	
+2021-03-05	0	0	0	0	
+2021-03-06	0	0	0	0	
+2021-03-07	0	0	0	0	
+2021-03-08	0	0	0	0	
+2021-03-09	0	0	0	0	
+2021-03-10	0	0	0	0	
+2021-03-11	0	0	0	0	
+2021-03-12	0	0	0	0	
+2021-03-13	0	0	0	0	
+2021-03-14	0	0	0	0	
+2021-03-15	0	0	0	0	
+2021-03-16	0	0	0	0	
+2021-03-17	0	0	0	0	
+2021-03-18	0	0	0	0	
+2021-03-19	0	0	0	0	
+2021-03-20	0	0	0	0	
+2021-03-21	0	0	0	0	
+2021-03-22	0	0	0	0	
+2021-03-23	0	0	0	0	
+2021-03-24	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 
 Size in 10s of nodes
 
 Inv1OK
-m	SAT	UNSAT	
-10	1	4	
-11	0	2	
+m	UNSAT	SAT	
+9	2	2	
+10	32	11	
+11	43	3	
+12	8	10	
+13	1	0	
 
 Inv2OK
-m	SAT	UNSAT	
-12	2	4	
-13	3	0	
+m	UNSAT	SAT	
+11	1	11	
+12	48	29	
+13	11	30	
+14	12	15	
+15	0	4	
 
 Inv3OK
-m	UNSAT	
-15	1	
+m	UNSAT	SAT	
+10	0	4	
+11	0	3	
+12	0	8	
+13	0	9	
+14	0	35	
+15	39	37	
+16	2	24	
+17	2	7	
+18	1	8	
+19	0	0	
+20	1	1	
+21	0	2	
 
 Inv4OK
-m	SAT	
-13	5	
-14	1	
-15	0	
-16	3	
+m	UNSAT	SAT	
+10	0	4	
+11	0	2	
+12	0	15	
+13	0	24	
+14	0	31	
+15	12	20	
+16	0	22	
+17	0	0	
+18	0	4	
+19	0	0	
+20	0	2	
+21	0	1	
+22	0	3	
+23	0	3	
+24	0	0	
+25	0	0	
+26	0	0	
+27	0	0	
+28	0	1	
+
+Number of quantified variables
+
+Inv1OK
+m	UNSAT	SAT	
+0	34	13	
+1	0	0	
+2	44	6	
+3	0	0	
+4	7	5	
+5	0	0	
+6	1	2	
+
+Inv2OK
+m	UNSAT	SAT	
+0	1	2	
+1	0	0	
+2	43	45	
+3	0	0	
+4	28	41	
+5	0	0	
+6	0	1	
+
+Inv3OK
+m	UNSAT	SAT	
+0	0	8	
+1	0	0	
+2	0	13	
+3	0	0	
+4	1	27	
+5	0	0	
+6	42	82	
+7	0	0	
+8	2	7	
+9	0	0	
+10	0	1	
+
+Inv4OK
+m	UNSAT	SAT	
+0	0	6	
+1	0	0	
+2	0	1	
+3	0	0	
+4	0	4	
+5	0	0	
+6	12	105	
+7	0	0	
+8	0	13	
+9	0	0	
+10	0	1	
+11	0	0	
+12	0	1	
+13	0	0	
+14	0	1	
 
 Number of binary temporal operators
 
 Inv1OK
-m	SAT	UNSAT	
-0	1	6	
+m	UNSAT	SAT	
+0	86	26	
 
 Inv2OK
-m	SAT	UNSAT	
-0	5	4	
+m	UNSAT	SAT	
+0	72	89	
 
 Inv3OK
-m	UNSAT	
-0	1	
+m	UNSAT	SAT	
+0	45	138	
 
 Inv4OK
-m	SAT	
-0	9	
+m	UNSAT	SAT	
+0	12	132	
 
 Max nested temporal operator level
 
 Inv1OK
-m	SAT	UNSAT	
-0	1	6	
+m	UNSAT	SAT	
+0	86	26	
 
 Inv2OK
-m	SAT	UNSAT	
-0	5	4	
+m	UNSAT	SAT	
+0	72	89	
 
 Inv3OK
-m	UNSAT	
-0	1	
+m	UNSAT	SAT	
+0	45	138	
 
 Inv4OK
-m	SAT	
-0	9	
+m	UNSAT	SAT	
+0	12	132	
 
 Number of lone/one quantifiers
 
 Inv1OK
-m	SAT	UNSAT	
-0	1	6	
+m	UNSAT	SAT	
+0	86	26	
 
 Inv2OK
-m	SAT	UNSAT	
-0	5	4	
+m	UNSAT	SAT	
+0	72	89	
 
 Inv3OK
-m	UNSAT	
-0	1	
+m	UNSAT	SAT	
+0	45	138	
 
 Inv4OK
-m	SAT	
-0	9	
+m	UNSAT	SAT	
+0	12	132	
 
 Max nested quantifier level
 
 Inv1OK
-m	SAT	UNSAT	
-0	1	4	
-1	0	2	
+m	UNSAT	SAT	
+0	34	13	
+1	44	6	
+2	8	7	
 
 Inv2OK
-m	SAT	UNSAT	
-1	1	4	
-2	4	0	
+m	UNSAT	SAT	
+0	1	2	
+1	45	48	
+2	26	38	
+3	0	1	
 
 Inv3OK
-m	UNSAT	
-2	1	
+m	UNSAT	SAT	
+0	0	8	
+1	0	37	
+2	42	83	
+3	2	7	
+4	1	3	
 
 Inv4OK
-m	SAT	
-2	5	
-3	4	
+m	UNSAT	SAT	
+0	0	6	
+1	0	3	
+2	12	110	
+3	0	12	
+4	0	1	
 
 Number of disj quantifications
 
 Inv1OK
-m	SAT	UNSAT	
-0	1	6	
+m	UNSAT	SAT	
+0	86	25	
+1	0	0	
+2	0	1	
 
 Inv2OK
-m	SAT	UNSAT	
-0	5	4	
+m	UNSAT	SAT	
+0	72	89	
 
 Inv3OK
-m	UNSAT	
-2	1	
+m	UNSAT	SAT	
+0	5	90	
+1	0	0	
+2	40	48	
 
 Inv4OK
-m	SAT	
-2	9	
+m	UNSAT	SAT	
+0	0	57	
+1	0	0	
+2	12	75	
+
+Number of reversed relation navigation
+
+Inv1OK
+m	UNSAT	SAT	
+0	86	26	
+
+Inv2OK
+m	UNSAT	SAT	
+0	72	89	
+
+Inv3OK
+m	UNSAT	SAT	
+0	45	138	
+
+Inv4OK
+m	UNSAT	SAT	
+0	12	132	
 
 Number multiplicity arrows
 
 Inv1OK
-m	SAT	UNSAT	
-0	1	6	
+m	UNSAT	SAT	
+0	86	26	
 
 Inv2OK
-m	SAT	UNSAT	
-0	5	4	
+m	UNSAT	SAT	
+0	72	89	
 
 Inv3OK
-m	UNSAT	
-0	1	
+m	UNSAT	SAT	
+0	45	138	
 
 Inv4OK
-m	SAT	
-0	9	
+m	UNSAT	SAT	
+0	12	132	
 
-Number of quantifiers
+Number of inverted navigation
 
 Inv1OK
-m	SAT	UNSAT	
-0	1	4	
+m	UNSAT	SAT	
+0	86	26	
+
+Inv2OK
+m	UNSAT	SAT	
+0	72	89	
+
+Inv3OK
+m	UNSAT	SAT	
+0	44	131	
 1	0	0	
-2	0	2	
-
-Inv2OK
-m	SAT	UNSAT	
-2	1	4	
-3	0	0	
-4	4	0	
-
-Inv3OK
-m	UNSAT	
-6	1	
+2	1	7	
 
 Inv4OK
-m	SAT	
-6	5	
-7	0	
-8	4	
-
-Number of inverted navigation expressions
-
-Inv1OK
-m	SAT	UNSAT	
-0	1	6	
-
-Inv2OK
-m	SAT	UNSAT	
-0	5	4	
-
-Inv3OK
-m	UNSAT	
-0	1	
-
-Inv4OK
-m	SAT	
-0	9	
+m	UNSAT	SAT	
+0	12	132	
 
 * Derivation tree
 3qN2T4SAA2exYuvpE, 2020-11-27T15:28:44 (model share)
@@ -308,6 +580,18 @@ m	SAT
     8ci68ZS4Cv8eygbnt, 2020-12-08T21:55:43 (Inv2OK,correct,check,)
       6KQX9K6egom9gMwBK, 2020-12-08T21:55:46 (Inv3OK,correct,check,)
         cmHHp5SCRk33pQmh5, 2020-12-08T21:55:58 (model share)
+          oTDhjXxYEjFFeuo2Q, 2020-12-19T22:10:15 (Inv1OK,correct,check,)
+          hcCb7ripdFSxD9wYX, 2021-01-03T16:20:03 (Inv1OK,correct,check,)
+          uiBixyvBtjpoLPGb3, 2021-01-04T21:33:42 (Inv1OK,correct,check,)
+            Bqtfwy9WE4zezAczy, 2021-01-04T21:33:43 (Inv4OK,correct,check,)
+              wJbiGLYzpFh6wKNqk, 2021-01-04T21:33:45 (Inv3OK,correct,check,)
+                7cdB9LPES4tAHB6wF, 2021-01-04T21:33:47 (Inv2OK,correct,check,)
+          QhQuNXyfuaf9pDbWd, 2021-01-09T01:09:43 (Inv1OK,correct,check,)
+          QHhMPsasRQYi27s5X, 2021-01-09T06:14:44 (Inv4OK,incorrect,check,)
+            q3GmQ9P5iMTThPreF, 2021-01-09T06:24:47 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+              tYJKWs6FXM33NYJA9, 2021-01-09T06:25:30 (Inv4OK,incorrect,check,)
+                NqZ7w9yD5D74yJNYa, 2021-01-09T06:26:32 (Inv4OK,incorrect,check,)
+                  BEMf4uMcrGviomhgj, 2021-01-09T06:26:53 (Inv4OK,correct,check,)
   FzYFMj6tKodQJEDvW, 2020-12-12T21:51:43 (Inv1OK,correct,check,)
     KHFhaD5yfu9uMRZgF, 2020-12-12T21:51:54 (Inv1OK,correct,check,)
       v2QSmfiMScTRraYKj, 2020-12-12T21:52:01 (Inv1OK,incorrect,check,Subset operator is redundant, because the left and right expressions always have the same value. Left type = {this/User->this/Work} Right type = {this/User->this/Work})
@@ -317,3 +601,791 @@ m	SAT
               mRij2ZkFDQQh8MiwZ, 2020-12-12T21:55:19 (Inv2OK,incorrect,check,)
                 FXPTXgZZZFmk4hugJ, 2020-12-12T21:55:29 (Inv2OK,incorrect,check,)
                   cAtS7fGBs8C8SL7gT, 2020-12-12T21:56:28 (Inv2OK,correct,check,)
+  vN7TTGLdDZwfMQhvh, 2020-12-19T21:48:23 (Inv1OK,correct,check,)
+    eJnkNrkksdFB3j6ZG, 2020-12-19T21:48:39 (Inv1OK,correct,check,)
+      QiwqwJr7evuYzdf9j, 2020-12-19T21:50:38 (The name "Insituition" cannot be found.)
+        HWceLXsdGv6a44QRK, 2020-12-19T21:50:46 (The name "Instituition" cannot be found.)
+          8BTq8dakznBof5gBQ, 2020-12-19T21:50:54 (Inv1OK,correct,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/User} Right type = {this/Id})
+            SLmacjrtyWwBgsXpt, 2020-12-19T21:51:21 (Inv1OK,correct,check,)
+              PkvFM2NJAYsL9Zm5N, 2020-12-19T21:54:59 (Inv1OK,correct,check,)
+                hnapxCWpS5aGZS3f8, 2020-12-19T21:55:24 (Inv1OK,correct,check,)
+  ubogrT5ZxpEzER6sk, 2020-12-25T19:14:52 (Inv1OK,correct,check,)
+  AofPD4FoNFKwx43ev, 2020-12-26T21:45:08 (Inv1OK,incorrect,check,)
+    YYRhrvCgzxwtwBAA9, 2020-12-26T21:45:19 (Inv1OK,incorrect,check,)
+      BX7ikYASxt74K8HTM, 2020-12-26T21:46:55 (Inv1OK,correct,check,This variable is unused.)
+        K4LdyhAMrbQjSjcpu, 2020-12-26T21:47:01 (Inv1OK,correct,check,)
+          thP62hZAnvvQ3o6By, 2020-12-26T21:48:43 (Inv2OK,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Work} Right type = {this/Source})
+            36J3GmCbT2Q7gZFSL, 2020-12-26T21:49:15 (Inv2OK,correct,check,)
+              CbKRMXhdc72YdF3wX, 2020-12-26T21:50:48 (The name "work" cannot be found.)
+                zmrmrPkjynM9LQJAK, 2020-12-26T21:50:58 (Inv3OK,incorrect,check,This variable is unused.)
+  h6wDa3fZCHnjWFvh6, 2020-12-26T23:37:31 (Inv1OK,correct,check,)
+    tZWq4SLgSMJSL4sWF, 2020-12-26T23:39:24 (Inv2OK,correct,check,)
+      Wrmbo3rEsG7dr56p7, 2020-12-26T23:42:17 (The name "id" cannot be found.)
+        6N3Kjgd4htgywJseM, 2020-12-26T23:42:22 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+          4R9NPfYGoGsDu6Q7R, 2020-12-26T23:42:45 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+            zqdaCvncBrLQ7j2s8, 2020-12-26T23:42:58 (Inv3OK,incorrect,check,)
+              EsbJZxX6E6iwdxQBT, 2020-12-26T23:46:20 (Inv3OK,correct,check,)
+                acWHY4cKxQR8diZxj, 2020-12-26T23:47:32 (Inv4OK,incorrect,check,)
+                  hAzjtJS2DnsZxAfPc, 2020-12-26T23:48:35 (Inv4OK,incorrect,check,)
+                    X5iv3HC97LqBPPzP3, 2020-12-26T23:49:21 (- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Work} Right type = {univ->univ})
+                      JCKDoXs7hEXfoBGs9, 2020-12-26T23:49:31 (- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Work} Right type = {univ->univ})
+                        yrv2bYkgjHbeWZ4Cm, 2020-12-26T23:49:48 (Inv4OK,incorrect,check,)
+                          MJrSdFMEn8gceRaAP, 2020-12-26T23:52:14 (Inv4OK,incorrect,check,)
+  h5TEgp4fbF9uCAi6a, 2020-12-26T23:37:38 (Inv1OK,correct,check,)
+    cxaJcAC7oY8Lihhe8, 2020-12-26T23:38:03 (Inv1OK,correct,check,)
+      N3N2NHdmhiBwPXkXs, 2020-12-26T23:40:08 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+        CMAW9EJCrFPdz8rPW, 2020-12-26T23:40:11 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+          GKXaKwZgrmbgJcjLe, 2020-12-26T23:40:49 (Inv2OK,correct,check,)
+            r5uJQToogErKvG8Co, 2020-12-26T23:42:40 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+              5cZM37zk7m3QfzrPF, 2020-12-26T23:43:01 (There are 1 possible tokens that can appear here: [)
+                5AnhedHLNm8FfvAbx, 2020-12-26T23:43:18 (There are 1 possible tokens that can appear here: [)
+                  sKeuPxLyHtRxXkbBk, 2020-12-26T23:43:31 (Inv3OK,incorrect,check,)
+                    gaXhkawGJxnkeskv9, 2020-12-26T23:45:58 (Inv3OK,incorrect,check,)
+                      pW8jdd2AhkfWbLN2N, 2020-12-26T23:46:42 (Inv3OK,correct,check,)
+  WPSynsePEGKtizNPF, 2020-12-27T17:02:18 (Inv1OK,incorrect,check,)
+    wJvpg5d4CjCKCvWMM, 2020-12-27T17:06:12 (This must be a formula expression. Instead, it has the following possible type(s): {this/Work})
+      2DZx2cmzeBd68v9au, 2020-12-27T17:08:23 (Inv1OK,incorrect,check,)
+        W7QragNxfRcNuZpcT, 2020-12-27T17:09:34 (This must be a formula expression. Instead, it has the following possible type(s): {this/Work->this/Work})
+          hAP7GNW2H8tENdpbv, 2020-12-27T17:10:08 (This must be a formula expression. Instead, it has the following possible type(s): {this/Work})
+            CjX5acQ8FqEQWT9eh, 2020-12-27T17:10:20 (Inv1OK,correct,check,)
+  PmBFJoEBQdzPtjtae, 2020-12-27T17:18:32 (Inv1OK,correct,check,)
+    iPgoXAezXJZmogxnv, 2020-12-27T17:20:01 (Inv2OK,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Institution} Right type = {this/Id})
+      MKxpnbBx6vmNAPSET, 2020-12-27T17:23:12 (This cannot be a legal relational join where left hand side is u . (this/User <: profile) (type = {this/Work}) right hand side is this/Source (type = {this/Source}))
+        RGf5YFPTAHqpcMdGu, 2020-12-27T17:23:30 (This cannot be a legal relational join where left hand side is u . (this/User <: profile) (type = {this/Work}) right hand side is this/Source (type = {this/Source}))
+          wTPTDv5yRrNsW9Qx7, 2020-12-27T17:24:51 (Inv2OK,correct,check,)
+            TsHWxCDGnWMCWbWuj, 2020-12-27T17:26:50 (Inv2OK,correct,check,)
+              aRQHjQuPGFvAxovCF, 2020-12-27T17:28:29 (Inv3OK,correct,check,)
+                vhpwXHKsYeSAa8kwB, 2020-12-27T17:28:31 (Inv4OK,correct,check,)
+  2zMnXWfPT7gFnacGW, 2020-12-27T18:12:21 (Inv1OK,correct,check,)
+    cP4Esgt3BfPNtYMNn, 2020-12-27T18:15:37 (Inv2OK,correct,check,)
+      mtnjMpCQ4fZg8gT8o, 2020-12-27T18:19:38 (Inv3OK,incorrect,check,)
+        drBhwBHGimLoG7EpR, 2020-12-27T18:20:22 (Inv3OK,incorrect,check,)
+          6YFNvRk5yyLgbnRnB, 2020-12-27T18:21:14 (Inv3OK,incorrect,check,)
+            kGZ248kd9GJQyF9cA, 2020-12-27T18:23:09 (Inv3OK,incorrect,check,)
+              e9YpkPv9yjCjcmaCw, 2020-12-27T18:24:18 (Inv3OK,correct,check,)
+                3MBQTnPCPFd35fiFc, 2020-12-27T18:25:27 (Inv4OK,incorrect,check,)
+                  wbaf7gTfPpJWtZJ7X, 2020-12-27T18:26:23 (Inv4OK,incorrect,check,)
+  65pmh49fK4a4dqHn2, 2020-12-27T18:12:48 (Inv1OK,correct,check,)
+    wXJRq7LwWYNfRBdxx, 2020-12-27T18:14:18 (Inv1OK,correct,check,)
+      y6FsrbTDtoodXRMqW, 2020-12-27T18:14:21 (Inv2OK,incorrect,check,)
+        dC9t5PXR2GFnsT4fR, 2020-12-27T18:14:50 (Inv2OK,incorrect,check,)
+          tLqFCD2HtPTTgKaWL, 2020-12-27T18:15:13 (Inv2OK,incorrect,check,)
+            7EYRjdB4N8ngQZ3Zk, 2020-12-27T18:15:56 (Inv2OK,correct,check,)
+              oMwK45bQ3n5AGM5YE, 2020-12-27T18:16:02 (Inv2OK,correct,check,)
+                4btveAFSwPN8hFsgg, 2020-12-27T18:20:19 (Inv3OK,incorrect,check,)
+                  gHsGp38MtsgTJirzG, 2020-12-27T18:20:40 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {this/Id})
+                    wKZqyScRNmDgBroaf, 2020-12-27T18:21 (Inv3OK,correct,check,)
+                      f7JewetgrGGyLEjJC, 2020-12-27T18:21:12 (Inv3OK,incorrect,check,)
+                        gECTzcDGtenREth65, 2020-12-27T18:22:05 (Inv3OK,correct,check,)
+                          LcrnRAbK46ZpZGKiA, 2020-12-27T18:25:44 (Inv3OK,correct,check,)
+                            fSjopmnYhA8mXmXfi, 2020-12-27T18:26:16 (Inv4OK,incorrect,check,)
+  tZZR3Bm44Wyt8Wv6W, 2020-12-28T15:59:13 (Inv1OK,correct,check,)
+    vKXhNfZtFPWK9EQGB, 2020-12-28T16:06:57 (Inv2OK,correct,check,)
+      KJuHjptpM5azW5LEj, 2020-12-28T16:10:48 (There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~)
+        qWrdWMf49WcMypBPJ, 2020-12-28T16:10:54 (There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~)
+          vkEmDN9NjwCuxydSt, 2020-12-28T16:11:06 (There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~)
+            Bgfvo4sfP8uXsRvAa, 2020-12-28T16:11:12 (There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~)
+              PRuDgFzPnyt2d8ZBz, 2020-12-28T16:11:36 (Inv3OK,incorrect,check,)
+                PhYiXLr5hhb3uDpAX, 2020-12-28T16:16:32 (Inv3OK,incorrect,check,)
+                  zMsBs4hiqgHPc8C9y, 2020-12-28T16:21:15 (Inv3OK,incorrect,check,)
+                    d3oA6C4NHFgD8QYsh, 2020-12-28T16:21:37 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                      ZFi8o4xyTCanrqqbE, 2020-12-28T16:21:45 (Inv3OK,incorrect,check,)
+                        Ay5uy5ZWBP4pY3yRA, 2020-12-28T16:22:43 (Inv3OK,incorrect,check,)
+                          G5YA5Pr4RRbP4Nt5z, 2020-12-28T16:23:55 (Inv3OK,correct,check,)
+                            nZnyE2Z2wsFJ4n6gF, 2020-12-28T16:25:18 (Inv3OK,incorrect,check,)
+                              MyQAgC3tyPxnB5RNC, 2020-12-28T16:25:30 (Inv3OK,correct,check,)
+                                f6jrh8gDRu8JfvbnN, 2020-12-28T16:36:11 (Inv4OK,incorrect,check,)
+                                  QZuY5yNYEs7sLK3PC, 2020-12-28T16:38:41 (Inv4OK,incorrect,check,)
+                                    PP2agvSMMCP95sr4e, 2020-12-28T16:40:57 (The name "n2" cannot be found.)
+                                      CSkHo5nbddeficFQf, 2020-12-28T16:41:02 (Inv4OK,incorrect,check,)
+                                        C4DGXddNHckA4vCe3, 2020-12-28T16:41:17 (Inv4OK,incorrect,check,)
+                                          AGDToNbkTdR8EPfgN, 2020-12-28T16:42:51 (Inv4OK,incorrect,check,)
+                                            DLD3MwFyykuXiTokH, 2020-12-28T16:43:18 (Inv4OK,incorrect,check,)
+                                              6p8fjnc3eion93hQX, 2020-12-28T16:43:32 (Inv4OK,incorrect,check,)
+                                                R2KcXpohYPHc9D6yC, 2020-12-28T16:44:15 (Inv4OK,incorrect,check,)
+                                                  XK9d7Mob4JFwDZjrF, 2020-12-28T16:44:50 (Inv4OK,incorrect,check,)
+  9K9mhdKFYwgAXvCgB, 2020-12-29T15:11:53 (The name "Visible" cannot be found.)
+    fToaqHcEi9XXxbziY, 2020-12-29T15:12:03 (Inv1OK,incorrect,check,)
+      Lg8s3nwx8xQDkRvCY, 2020-12-29T15:12:36 (Inv1OK,correct,check,)
+        29NFH9XChvmnbppuW, 2020-12-29T15:15:37 (Inv2OK,incorrect,check,)
+          b34iTGggev76oG8ZD, 2020-12-29T15:15:53 (Inv2OK,correct,check,)
+            Sb4Zh7CSvbGa8xwRP, 2020-12-29T15:17:25 (Inv2OK,correct,check,)
+              K92HTCJHBfngBCkYz, 2020-12-29T15:17:28 (Inv3OK,correct,check,)
+                QKK89BRRFLD2zupqo, 2020-12-29T15:18:30 (Inv4OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Work} Right type = {this/User->this/Work})
+                  s2iuDAigdTMw7eBGc, 2020-12-29T15:18:47 (Inv4OK,incorrect,check,)
+                    zRKtp2gMPoxT52Fbn, 2020-12-29T15:19:03 (Inv4OK,correct,check,)
+  Css62Z8wAgJk53vhA, 2020-12-29T16:10:13 (Inv1OK,correct,check,)
+    SBmcEs7z38sbRH362, 2020-12-29T16:12:24 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+      ZetyhGkJzq3tvigKP, 2020-12-29T16:12:38 (The name "prOfile" cannot be found.)
+        Y3cT5yighJwmrPeXn, 2020-12-29T16:12:42 (Inv2OK,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Work} Right type = {this/Institution})
+          WHATrZGHnF3DwFMXD, 2020-12-29T16:12:56 (Inv2OK,correct,check,)
+            8si6L7DJkxJXfPwgS, 2020-12-29T16:13:09 (Inv2OK,correct,check,)
+              xyxfWmXrefrQxfHS7, 2020-12-29T16:21:09 (Inv3OK,incorrect,check,)
+                Hv4bXwATS5p9EiDgf, 2020-12-29T16:22:05 (Inv3OK,incorrect,check,)
+                  7jAop4wtPMmLirLXf, 2020-12-29T16:22:17 (Inv3OK,incorrect,check,)
+                    TDDof4BdP32EaZneT, 2020-12-29T16:22:30 (Inv3OK,correct,check,)
+                      cyG6J42CAZf5R8uQQ, 2020-12-29T16:23:12 (Inv4OK,incorrect,check,)
+                        6ymCotWPWsbyAFvvY, 2020-12-29T16:25:34 (Inv4OK,incorrect,check,)
+                          66bk8a7AWfhLhLCPu, 2020-12-29T16:27:53 (Inv4OK,incorrect,check,)
+                            v6HkHKHD37Cw6pYH8, 2020-12-29T16:28:40 (Inv4OK,incorrect,check,)
+                              E5326BDtuQSTLwytr, 2020-12-29T16:33:11 (Inv4OK,incorrect,check,)
+                                pLECMRmir5x9r8eoy, 2020-12-29T16:36:36 (Inv4OK,incorrect,check,)
+                                  6SvgcPXbCtMAfY9k4, 2020-12-29T16:36:49 (Inv4OK,incorrect,check,)
+                                    CGgRTqTkSDfRunmoW, 2020-12-29T16:37:19 (Local variable "u" cannot be bound to a 'disjoint' expression.)
+                                      saMBWAHWnZJQqxKcM, 2020-12-29T16:37:32 (Local variable "u" cannot be bound to a 'disjoint' expression.)
+                                        7eb5QhgursHa6oKk7, 2020-12-29T16:37:41 (Inv4OK,incorrect,check,)
+  rE9SWNF62uaMDqGSj, 2020-12-29T17:20:27 (Inv1OK,correct,check,)
+    JMqixZeifsNNejRT5, 2020-12-29T17:22:04 (The name "user" cannot be found.)
+      hwPnoQjCH68KSSNBK, 2020-12-29T17:22:11 (Inv2OK,correct,check,)
+        DKatNrauCWiiFjjPW, 2020-12-29T17:23:19 (There are 1 possible tokens that can appear here: [)
+          nPjz7DdJn5jWmX9k9, 2020-12-29T17:23:29 (There are 1 possible tokens that can appear here: [)
+            yp2Stihcy57MP2dad, 2020-12-29T17:24:08 (Inv3OK,incorrect,check,)
+              EQJmoovwxMzHEQeAf, 2020-12-29T17:24:28 (Inv3OK,incorrect,check,)
+                9jLZwNmJCAZLkjgsp, 2020-12-29T17:25:19 (Inv3OK,correct,check,)
+                  AQj5ewgma4ZqwjjyZ, 2020-12-29T17:27:02 (Inv4OK,incorrect,check,)
+                    wQvgmBjkyjYnWfhxv, 2020-12-29T17:27:38 (Inv4OK,incorrect,check,)
+  m5hd8JbrxxPbSvm9Q, 2020-12-30T16:27 (Inv1OK,correct,check,)
+    QpoiaKoANRDcFkQxn, 2020-12-30T16:34:49 (Inv2OK,incorrect,check,)
+      DiguR5D4QnPvGyu5D, 2020-12-30T16:35:10 (Inv2OK,correct,check,)
+        wGQXfivAnY6A7veJz, 2020-12-30T16:41:06 (Inv3OK,incorrect,check,)
+          8CNwtioTePrB5vFrg, 2020-12-30T16:44:38 (There are 5 possible tokens that can appear here: enum fun let open pred)
+            Ko3D9hEaN7pWNGghi, 2020-12-30T16:44:46 (There are 5 possible tokens that can appear here: enum fun let open pred)
+              2MF7X8S7WCKyKRdTW, 2020-12-30T16:45 (There are 5 possible tokens that can appear here: enum fun let open pred)
+                syGziin9pJTpXbqHz, 2020-12-30T16:45:21 (Inv2OK,correct,check,)
+  fDHp8PL3ZPyguMdEH, 2020-12-30T18:46:59 (Inv1OK,correct,check,)
+    NcpWTQoSjoYm9KiNd, 2020-12-30T18:51:18 (This cannot be a legal relational join where left hand side is this/Id (type = {this/Id}) right hand side is u . (this/User <: profile) (type = {this/Work}))
+      kb82Ec3qhSLnaZ6o8, 2020-12-30T18:51:25 (This cannot be a legal relational join where left hand side is this/Id (type = {this/Id}) right hand side is u . (this/User <: profile) (type = {this/Work}))
+        mTfzeEvRqpXaEPc3z, 2020-12-30T18:53:54 (This cannot be a legal relational join where left hand side is this/Id (type = {this/Id}) right hand side is u . (this/User <: profile) (type = {this/Work}))
+          R8gXfGk4h3ok3bhdm, 2020-12-30T18:55:59 (Inv2OK,incorrect,check,)
+            pYzfH4Bq9k3QQrXtx, 2020-12-30T18:56:14 (Inv2OK,correct,check,)
+              7dZ3Jfd74KbEKNny8, 2020-12-30T19:12:55 (Inv3OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Source} Right type = {this/Work->this/Id})
+                rZEzBvRwJMgv7H5mb, 2020-12-30T19:15:14 (Inv3OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Source} Right type = {this/Work->this/Id})
+                  TmdSwZKbe9rAhjT7c, 2020-12-30T19:16:49 (Inv3OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Source} Right type = {this/Work->this/Id})
+                    eqwNyE3v83GqxF8fm, 2020-12-30T19:18:59 (Inv3OK,incorrect,check,)
+                      Xpz5xfkLbLdmytEPy, 2020-12-30T19:19:08 (Inv3OK,incorrect,check,)
+                        6Qe38cuGfxZaqxi4u, 2020-12-30T19:23:54 (There are 1 possible tokens that can appear here: [)
+                          ru5kDahEFQueqE8LD, 2020-12-30T19:24 (There are 1 possible tokens that can appear here: [)
+                            Ak2KxjygASaMLzmqg, 2020-12-30T19:24:27 (There are 1 possible tokens that can appear here: [)
+                              j5H3DXyCQ9uecTfjH, 2020-12-30T19:24:51 (There are 1 possible tokens that can appear here: [)
+                                WGE8MonrKTGLrTuwA, 2020-12-30T19:25:21 (There are 1 possible tokens that can appear here: [)
+                                  Zkp4sXeyja9BWZnSX, 2020-12-30T19:25:43 (Inv3OK,correct,check,)
+                                    2H9ZwptCi9vdXQHwf, 2020-12-30T21:46:57 (Inv4OK,correct,check,)
+                                      r8Z8J6utnFwZYTwF8, 2020-12-30T21:50:25 (model share)
+  WJ5X8WLMrWD7tmTQH, 2020-12-30T23:36:17 (Inv1OK,correct,check,)
+    Dsj7kCjhcP7qngzXo, 2020-12-30T23:36:42 (Inv1OK,correct,check,)
+      zpDsekRX5bTgamnz2, 2020-12-30T23:36:46 (Inv1OK,correct,check,)
+        9va4MFweeGF2c4iCK, 2020-12-30T23:38:42 (Inv2OK,correct,check,)
+          HNcboA7S2XQvYuWyr, 2020-12-30T23:38:47 (Inv3OK,incorrect,check,)
+            PQM5fiKZzjdAA8eqB, 2020-12-30T23:38:49 (Inv2OK,correct,check,)
+              Cjr3W6dSPrkgQmLrF, 2020-12-30T23:40:21 (Inv2OK,correct,check,)
+                9KXBRS3MGgg3Gc78K, 2020-12-30T23:59:05 (Inv3OK,incorrect,check,)
+                  fTohhvtisQW6gJxCz, 2020-12-30T23:59:22 (Inv3OK,incorrect,check,)
+                    vzsRjf6HqKiAyAryS, 2020-12-31T00:00:39 (Inv3OK,incorrect,check,This variable is unused.)
+                      cf5W4kmAwM3sNyx2m, 2020-12-31T00:00:51 (Inv3OK,correct,check,)
+                        kJngaSw77hRHH3ehb, 2020-12-31T00:02:46 (The name "user" cannot be found.)
+                          AjyFRNo7xPQS3TDJY, 2020-12-31T00:03:09 (The name "user" cannot be found.)
+                            xcjPuZFWhmuqhcYjw, 2020-12-31T00:03:17 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+                              uNfJzqtz79jua8pfw, 2020-12-31T00:03:56 (Inv4OK,incorrect,check,)
+                                oTHWxa3dbHNEQAcLh, 2020-12-31T00:04:26 (There are 3 possible tokens that can appear here: ,  { |)
+                                  dqjhjsQZPXCh5Cvs2, 2020-12-31T00:04:39 (Inv4OK,incorrect,check,)
+  RMXfEWT3bmeyzDcvJ, 2021-01-01T11:23:46 (Inv1OK,correct,check,)
+    YfRLNHk3SSrNW8aaS, 2021-01-01T11:24:52 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+      nDo4ss9CxojiH238e, 2021-01-01T11:25:17 (Inv1OK,correct,check,)
+        dFRNNxkqpSx5Dd6Gf, 2021-01-01T11:27:09 (There are 1 possible tokens that can appear here: [)
+          hynRDNNkQRdH4durS, 2021-01-01T11:27:23 (There are 1 possible tokens that can appear here: [)
+            ze7bbR2aNAQKz35k2, 2021-01-01T11:27:59 (Inv1OK,correct,check,)
+              YJKEgASjwvYPtepCK, 2021-01-01T11:30 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+  PLTKJDike62KjjpYd, 2021-01-01T21:50:26 (Inv1OK,correct,check,)
+    pmBxwHk2EuaG38iJm, 2021-01-01T21:51:46 (Inv2OK,correct,check,)
+      6PgmCwJGRuJaT8Lmx, 2021-01-01T21:56:25 (There are 1 possible tokens that can appear here: [)
+        Akc8yqgT9Lv5Cp3Lk, 2021-01-01T21:56:41 (There are 1 possible tokens that can appear here: [)
+          3LcHg3ra77YyrfwB4, 2021-01-01T21:57:26 (There are 1 possible tokens that can appear here: [)
+            t7E7QFxT3XsA5a7XZ, 2021-01-01T21:57:33 (There are 1 possible tokens that can appear here: [)
+              i6L5eLh36MHqBWfRh, 2021-01-01T21:58:04 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+                uPXBGC5kAxEz9jxcz, 2021-01-01T21:58:20 (Inv3OK,incorrect,check,)
+                  pXAR5taHRwLE7t75g, 2021-01-01T22:02:14 (Inv3OK,correct,check,)
+                    W4FBJFC9kodouAXoD, 2021-01-01T22:05:48 (Inv4OK,incorrect,check,)
+                      2Mh3zbbNRpjW93ix6, 2021-01-01T22:07:55 (Inv4OK,incorrect,check,)
+                        AJSGD4sr86ty3kjLy, 2021-01-01T22:09:37 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                          RRNkvbrJNphK2SZg6, 2021-01-01T22:09:52 (This cannot be a legal relational join where left hand side is u . (this/User <: visible) (type = {this/Work}) right hand side is this/Source (type = {this/Source}))
+                            HYrbxdHT7RB3oy8Pn, 2021-01-01T22:11:03 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Work})
+                              G9uZ4XDYWSbynae6F, 2021-01-01T22:11:29 (Inv4OK,incorrect,check,)
+                                ZccCxmcvLtxD8qSRi, 2021-01-01T22:13:26 (Inv4OK,incorrect,check,)
+  ipjMS78mGCHW3ZaB8, 2021-01-02T11:44:29 (Inv1OK,correct,check,)
+    YaTSpZqtpf7upCjzx, 2021-01-02T11:44:53 (Inv1OK,correct,check,)
+      dxzz2YY4NpEn5Htpc, 2021-01-02T11:47:20 (Inv2OK,correct,check,)
+        s6McPHPNyiWwdGKLg, 2021-01-02T11:49:27 (This must be a formula expression. Instead, it has the following possible type(s): {this/Work})
+          bmAXT2nMEgCMg2K6k, 2021-01-02T11:49:51 (Inv3OK,incorrect,check,)
+            P4xsEGYS7tachAnXG, 2021-01-02T11:49:58 (Inv3OK,incorrect,check,)
+              xTFCMFJ669S2WCXqy, 2021-01-02T11:50:06 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {this/Work})
+                oGuweH4Pt8F3ggyif, 2021-01-02T11:51:51 (Inv3OK,correct,check,)
+                  hdRWzcqqPAWsx7sfy, 2021-01-02T11:58:25 (Inv4OK,correct,check,)
+  vrdSGpAGEMksH5u7J, 2021-01-02T15:07:08 (Inv1OK,correct,check,)
+    iX5T9MiF87DDmjRte, 2021-01-02T15:09:03 (Inv2OK,correct,check,)
+      KX83xbegfoXB9tAir, 2021-01-02T15:10:29 (Inv4OK,incorrect,check,)
+        pXxDpQbpdFwPf3kCC, 2021-01-02T15:12 (Inv4OK,incorrect,check,)
+          pzNxFBAciDkp8yXTc, 2021-01-02T15:12:43 (Inv4OK,incorrect,check,)
+            dd9pkFhjozWmYbTid, 2021-01-02T15:14:28 (Inv2OK,correct,check,)
+              HGjXGpsr7cSpPJuzi, 2021-01-02T15:15:36 (Inv3OK,incorrect,check,)
+                dChH6pBdfNQ5mfu82, 2021-01-02T15:15:44 (Inv3OK,incorrect,check,)
+                  LfrWZPn5kp2qE6CGE, 2021-01-02T15:15:57 (Inv3OK,correct,check,)
+                    R689Mys539dpkof9b, 2021-01-02T17:18:14 (Inv4OK,incorrect,check,)
+                      aBaAhGBayhsYybTAc, 2021-01-02T17:44:31 (Inv4OK,correct,check,)
+  XCBXQnJqNwtBvvCuX, 2021-01-02T21:12:10 (Inv1OK,correct,check,)
+    gGeu4ry5xETsQW3y4, 2021-01-02T21:13:04 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/User->this/Work} Right type = {this/Work, this/Institution})
+      WsfB44KbqtMkq5JE7, 2021-01-02T21:13:17 (+ can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Work->this/Source} Right type = {this/Institution})
+        RHyEzkjoEtbLwdYYq, 2021-01-02T21:13:29 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/User->this/Work} Right type = {this/Source})
+          wxeyMFYqGuJ2LNCYE, 2021-01-02T21:13:48 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/User->this/Work} Right type = {this/Source})
+            CsXNmEqihABRXWPxD, 2021-01-02T21:13:58 (Inv2OK,incorrect,check,== is redundant, because the left and right expressions are always disjoint. Left type = {this/Work} Right type = {this/Source})
+              S79NRPJZH8Xr384vz, 2021-01-02T21:14:35 (Inv2OK,incorrect,check,== is redundant, because the left and right expressions are always disjoint. Left type = {this/Work} Right type = {this/Source})
+                5rrERcNJfJGyszKHv, 2021-01-02T21:14:46 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/User->this/Work} Right type = {this/Source})
+                  jTNQNkJ8ddxjpPtYX, 2021-01-02T21:16:05 (The name "Intitution" cannot be found.)
+                    zXyNEbCe9KQagtJic, 2021-01-02T21:16:11 (Inv2OK,incorrect,check,)
+                      zDMiwpPAu3pyzfKPw, 2021-01-02T21:16:35 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/User->this/Source} Right type = {this/Source})
+  CThAE4bMnZcCJEPXH, 2021-01-02T21:18:38 (Inv1OK,correct,check,)
+    RQwjsJ4JavAsrzgum, 2021-01-02T21:18:59 (in can be used only between 2 expressions of the same arity. Left type = {this/User->this/Source} Right type = {this/Source})
+      iXnuwde95wDGLAqbb, 2021-01-02T21:19:33 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+        cQnytSe3tCTb6FGXi, 2021-01-02T21:20 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+          ocbpK526fuftp6qxA, 2021-01-02T21:21:01 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+            kWbGkSLyKFTpEzGNX, 2021-01-02T21:21:11 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+              dyTwQPk3hdHmjRkg3, 2021-01-02T21:21:27 (Inv2OK,correct,check,)
+                7N7ndAci7vsaGoYG3, 2021-01-02T21:22:44 (Inv3OK,incorrect,check,)
+                  huxMWNFCpd6TMK5NM, 2021-01-02T21:24:01 (Inv3OK,incorrect,check,)
+                    WNy496B22SqbDBfRC, 2021-01-02T21:24:07 (Inv3OK,incorrect,check,)
+                      eiDkPBf6QekkqKdFu, 2021-01-02T21:25:24 (Inv3OK,incorrect,check,)
+                        ZcsuD7zdRLyMbcy3c, 2021-01-02T21:25:56 (Inv3OK,incorrect,check,)
+                          2KrckKWrGbfiFeixQ, 2021-01-02T21:26:51 (This must be a formula expression. Instead, it has the following possible type(s): {this/Work})
+                            9CpcdH5oTYA697cu9, 2021-01-02T21:27:03 (The name "work" cannot be found.)
+                              BnvQDyGgvSLDh8efT, 2021-01-02T21:27:09 (Inv3OK,incorrect,check,)
+                                EFfHr5TosZ8hpR2uf, 2021-01-02T21:28:25 (Inv3OK,incorrect,check,)
+                                  vyfC28wHKxcwYBh7D, 2021-01-02T21:29:21 (Inv3OK,incorrect,check,)
+                                    SAFBbF6gLT3nXju43, 2021-01-02T21:30:24 (Inv3OK,correct,check,)
+                                      9eLqWzDj7XpoK5Zcu, 2021-01-02T21:31:53 (Inv4OK,incorrect,check,)
+                                        MS7CuCaTNjPSJfBzf, 2021-01-02T21:32:47 (Inv4OK,incorrect,check,)
+                                          2Z5rQaSFXWgJPhMu5, 2021-01-02T21:38:05 (!in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+                                            bg2GpdirRKrHHksWH, 2021-01-02T21:38:09 (Inv4OK,incorrect,check,)
+                                              WZcnzocwJjp7ZKdi9, 2021-01-02T21:39:29 (Inv4OK,incorrect,check,)
+                                                GrBHYmLsp8Y2MCay8, 2021-01-02T21:39:56 (Inv4OK,incorrect,check,)
+  yhcQxbFFNuNffgp9n, 2021-01-03T12:12:04 (Inv1OK,correct,check,)
+  2ZXLcmK8QW5P4j26D, 2021-01-03T16:19:59 (Inv1OK,correct,check,)
+    kRqbtDTXS7ThQFd2e, 2021-01-03T16:20:43 (in can be used only between 2 expressions of the same arity. Left type = {this/Work->this/Source} Right type = {this/Source})
+  aYHBMXNpdkbp93XTj, 2021-01-03T22:03:05 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+    LmeSHy9j4DnA5ujwz, 2021-01-03T22:03:53 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+      h3auhPcESzsNdPfrL, 2021-01-03T22:04:02 (Inv1OK,correct,check,)
+        XnAJ2E3iyxs7MEWpu, 2021-01-03T22:06:04 (Inv2OK,incorrect,check,)
+          JLGXFk3sB4vgJz92P, 2021-01-03T22:07:37 (Inv2OK,correct,check,)
+            Gssmzeg9KtTmdvmYW, 2021-01-03T22:08:55 (Inv3OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Work} Right type = {this/User->this/Work})
+              L4zuKXsnpPzezTzr7, 2021-01-03T22:09:37 (Inv3OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Work} Right type = {this/User->this/Work})
+                M9DJYi8thXJuaTSqN, 2021-01-03T22:11:32 (Inv3OK,incorrect,check,)
+                  9S3ehGTfnRLFtwjTf, 2021-01-03T22:12:38 (Inv3OK,correct,check,)
+                    3e2mM23wpk8mopJra, 2021-01-03T22:13:26 (Inv4OK,incorrect,check,)
+                      ErosMm24su5oc6j6R, 2021-01-03T22:17:16 (Inv4OK,correct,check,)
+  DzcTGvpXmJtg2r4r8, 2021-01-04T10:29:07 (Inv1OK,incorrect,check,)
+    m3Ydx6WcxnPyfPuPy, 2021-01-04T10:29:38 (Inv1OK,correct,check,)
+      XkfEEPpjt4GRhHQX3, 2021-01-04T10:32:45 (Inv2OK,correct,check,)
+        a6F85mgn2zsQWDqKD, 2021-01-04T10:42:51 (This cannot be a legal relational join where left hand side is this/Work (type = {this/Work}) right hand side is s (type = {this/Source}))
+          n4H8YzpBhJ3umRJFs, 2021-01-04T10:43:41 (This cannot be a legal relational join where left hand side is this/Work (type = {this/Work}) right hand side is this/Source (type = {this/Source}))
+            4C9Ka3eAnRnEKzo3Y, 2021-01-04T10:43:48 (This cannot be a legal relational join where left hand side is this/Work (type = {this/Work}) right hand side is this/Source (type = {this/Source}))
+              yTAWowHtsBpKkK9X4, 2021-01-04T10:44:01 (Inv2OK,correct,check,)
+                YDA87YzKTXinw8FQD, 2021-01-04T10:46:05 (Inv3OK,incorrect,check,)
+                  tGdssnTCcJ9dKrhkz, 2021-01-04T10:46:33 (Inv3OK,correct,check,)
+                    vGH4vPwSxsxQSdfe8, 2021-01-04T10:47:07 (This must be a formula expression. Instead, it has the following possible type(s): {this/User->this/Work})
+  YTz6nMzsvE4QJH99G, 2021-01-04T12:44:14 (Inv1OK,correct,check,)
+    WmBj9t6nvRnj2LMjS, 2021-01-04T12:46:45 (Inv3OK,incorrect,check,)
+      wQc2kuYSyLPoFYK9a, 2021-01-04T12:46:48 (Inv2OK,correct,check,)
+        6nFkq7ewPF8hKhgsE, 2021-01-04T12:49:55 (The name "id" cannot be found.)
+          D9WGZmAaBQNdSGKsG, 2021-01-04T12:50:04 (Inv3OK,incorrect,check,)
+            vk4P6J63HjCQwMKky, 2021-01-04T12:50:43 (Inv3OK,incorrect,check,)
+              XKESAGX9bt5vGWpd3, 2021-01-04T12:51:11 (Inv3OK,correct,check,)
+  QfmppLEyB7AKdcjWL, 2021-01-04T18:07:51 (Inv1OK,correct,check,)
+    uHTJk2bPsTn7Xmoq3, 2021-01-04T18:08:56 (Inv2OK,correct,check,)
+      oy4NaYqzbRdb6jNZH, 2021-01-04T18:10:37 (Inv3OK,incorrect,check,)
+        E5ZeBXtMS9jF3Z8d3, 2021-01-04T18:12:05 (Inv3OK,incorrect,check,)
+          w2NijxWnLwrJeHE8A, 2021-01-04T18:12:09 (Inv3OK,incorrect,check,)
+            Fn22joSecFik93Pha, 2021-01-04T18:13:13 (Inv3OK,incorrect,check,)
+              ovTAW3ut6BRAwCpG8, 2021-01-04T18:16:17 (Inv3OK,incorrect,check,)
+                Q2yPqJ4BCNGXLPyeh, 2021-01-04T18:18:18 (Inv3OK,correct,check,)
+                  dZbcJv52gYrAzPfmR, 2021-01-04T18:19:15 (Inv4OK,incorrect,check,)
+                    jHrWteGD4eEWdk5Sg, 2021-01-04T18:19:36 (Inv4OK,incorrect,check,)
+                      JsNfhFyM5GQ9PpYB5, 2021-01-04T18:22:38 (There are 3 possible tokens that can appear here: ,  { |)
+                        ugvRp4xPNGQsT3Yms, 2021-01-04T18:22:57 (Inv4OK,incorrect,check,)
+  EhCZLPLeGoJkL2Rqh, 2021-01-05T13:04:17 (Inv1OK,correct,check,)
+    s5fztkKW3c2EE2Df4, 2021-01-05T15:43:26 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+      nqELnhZXNFQ5Xb8By, 2021-01-05T15:43:53 (Inv2OK,incorrect,check,)
+        RB8XdC2ct7LWA8zty, 2021-01-05T15:44:10 (Inv2OK,incorrect,check,)
+          a2cAeGP5WsB8e8SkX, 2021-01-05T15:55:48 (Inv2OK,incorrect,check,)
+            Yg8rLPQooM72GcaNz, 2021-01-05T15:56:54 (Inv2OK,incorrect,check,)
+              pFWptmDs2YYu3TfS2, 2021-01-05T15:57:07 (Inv2OK,correct,check,)
+                2QQeQTdW8zX9JD2Ja, 2021-01-05T16:10:43 (There are 1 possible tokens that can appear here: [)
+                  bTBY5vJTKdtJ89j5e, 2021-01-05T16:12:12 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                    GWb8fREZDusBvQbB4, 2021-01-05T16:13:04 (Inv2OK,correct,check,)
+                      6GQXzepXEqJiQx28b, 2021-01-05T16:18:18 (Inv2OK,correct,check,)
+                        PujzAS2XrQeJ7DZLH, 2021-01-05T16:18:22 (Inv3OK,incorrect,check,)
+                          4Srwntmaexi89RaBH, 2021-01-05T16:44:19 (Inv3OK,incorrect,check,)
+  5e64HeXhZhWa2CXET, 2021-01-05T18:57:25 (Inv1OK,correct,check,)
+    Z8Luo99G78umHibib, 2021-01-05T18:58:30 (Inv2OK,incorrect,check,)
+  HdKSEpSNXgz6yThY2, 2021-01-05T19:35:53 (Inv1OK,incorrect,check,)
+    oGEw3GPXwYSHCv56w, 2021-01-05T19:37:40 (Inv1OK,correct,check,)
+      sQP877a7rA7tD4SGD, 2021-01-05T19:38:37 (Inv1OK,correct,check,)
+        et4Mw7qgjv9EW8Edt, 2021-01-05T19:40:56 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+  shrdNE8urdNpvAfbZ, 2021-01-05T19:43:56 (Inv3OK,incorrect,check,)
+    n4mNh8Jo9aehvuP8F, 2021-01-05T19:44:54 (Inv3OK,incorrect,check,)
+      icvFDdZmownGT2gvh, 2021-01-05T19:47:31 (Inv2OK,correct,check,)
+        rPcYbMpfXdyDWkNyE, 2021-01-05T19:48:40 (Inv2OK,correct,check,)
+          jkHsrmEkntKZJh5Ks, 2021-01-05T19:48:42 (Inv3OK,incorrect,check,)
+            iKbjTW5mFAWS3Bi3i, 2021-01-05T19:48:57 (Inv3OK,incorrect,check,)
+              SpAyyXJ2X2fhBs2Ng, 2021-01-05T19:49:35 (Inv3OK,incorrect,check,)
+                9nBtkKANfzPKRKfnd, 2021-01-05T19:50:06 (Inv3OK,correct,check,)
+                  5zkTMrNY9QeiWiTMz, 2021-01-05T19:51:32 (There are 1 possible tokens that can appear here: [)
+                    mkrqrEnorpunCJuBj, 2021-01-05T19:51:43 (Inv4OK,incorrect,check,)
+  fSQ358c8EbpFiphqo, 2021-01-06T15:01:37 (Inv1OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Work} Right type = {this/User->this/Work})
+    MtTGmmDkwSyxFbWLb, 2021-01-06T15:02:20 (Inv1OK,incorrect,check,)
+      36EcxKtDimKLEtWyK, 2021-01-06T15:02:34 (Inv1OK,correct,check,)
+        hAZvTyqY9StCF8nK6, 2021-01-06T15:05:27 (There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~)
+          RENsL8eXngpsXTMDC, 2021-01-06T15:06:23 (Inv2OK,incorrect,check,)
+            H83KAmosWvYqWHNZc, 2021-01-06T15:06:42 (Inv2OK,incorrect,check,)
+              k4bXhwhjty3pdaWqt, 2021-01-06T15:09:14 (Inv3OK,incorrect,check,)
+                8BtRc4GpfwSFYfHn6, 2021-01-06T15:10:06 (Inv3OK,incorrect,check,)
+                  8QZyTWQmbZfwWFEk6, 2021-01-06T15:10:10 (Inv3OK,incorrect,check,)
+                    JyXjtKAD2962QPh4D, 2021-01-06T15:10:18 (Inv3OK,correct,check,)
+                      fkfmX4t2fjcQdrMz5, 2021-01-06T15:10:36 (Inv3OK,incorrect,check,)
+                        NcWPDcqJx2jv3LHAN, 2021-01-06T15:11:49 (Inv2OK,incorrect,check,)
+                          nWFDuPBbaXD2MpBMP, 2021-01-06T15:16:04 (This must be a formula expression. Instead, it has the following possible type(s): {this/Work})
+                            J4S3zJH4nnRjgm25t, 2021-01-06T15:16:24 (This must be a formula expression. Instead, it has the following possible type(s): {this/Work})
+                              AKGtDzKxs42gwGtkA, 2021-01-06T15:16:39 (This must be a formula expression. Instead, it has the following possible type(s): {this/Work})
+                                mJYashL8xCjR6hTzM, 2021-01-06T15:16:51 (Inv2OK,incorrect,check,)
+                                  utvT2qEnhgaJe3LrJ, 2021-01-06T15:16:57 (Inv2OK,incorrect,check,This variable is unused.)
+                                    e2dJvAEoNviRj7EL3, 2021-01-06T15:17:11 (There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~)
+                                      7FATPLqCTqGgMoAmA, 2021-01-06T15:17:16 (There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~)
+                                        8nTgrxKWDDNcnjfvm, 2021-01-06T15:17:21 (Inv2OK,incorrect,check,)
+                                          xAhp2EPAsDi8rATkh, 2021-01-06T15:17:55 (Inv2OK,incorrect,check,)
+                                            axsewHGYyNf79YyxS, 2021-01-06T15:18:08 (Inv2OK,incorrect,check,)
+                                              XcXMSy4kqCP7iew7K, 2021-01-06T15:35:30 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                                o84P2MM3zujTdQR52, 2021-01-06T15:35:36 (Inv2OK,incorrect,check,)
+                                                  DN9QJgKW2YMKrRLgY, 2021-01-06T15:36:34 (There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~)
+                                                    CbzgHDZvGz76CyXWP, 2021-01-06T15:37:33 (Inv2OK,incorrect,check,)
+                                                      2k8gt6J8a6SnKjo25, 2021-01-06T15:38:39 (Inv2OK,incorrect,check,)
+                                                        rARkv9NCcR7i9FcNw, 2021-01-06T15:38:52 (There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~)
+                                                          sQuvQSZniBo6nzSoN, 2021-01-06T15:38:57 (Inv2OK,incorrect,check,)
+                                                            d58Y4bu9SCJBjoYo4, 2021-01-06T15:39:22 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                                              KWY6HdSSpb99eY5GL, 2021-01-06T15:39:32 (Inv2OK,incorrect,check,)
+                                                                YWWgjzzt4CApH3epS, 2021-01-06T15:41:52 (Inv2OK,incorrect,check,)
+                                                                  WEHDFHZ4sYsrwujyz, 2021-01-06T15:45:22 (Inv2OK,correct,check,)
+  Wy8Z9pXLL77tMq3jh, 2021-01-06T15:41:48 (Inv2OK,incorrect,check,)
+    qLy4SjpLyCaBp63C9, 2021-01-06T15:42:40 (This must be a formula expression. Instead, it has the following possible type(s): {this/User})
+      aK9zSMyqD7MpqZ3Lm, 2021-01-06T15:42:43 (Inv2OK,incorrect,check,)
+        kkyK3TZ2ZwYcbMCMn, 2021-01-06T15:42:47 (This must be a formula expression. Instead, it has the following possible type(s): {this/Institution})
+          w9oXZAYuKYwaicXFE, 2021-01-06T15:42:50 (This must be a formula expression. Instead, it has the following possible type(s): {this/Institution})
+            R84X46MPkCe9jEWhu, 2021-01-06T15:43 (There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~)
+              vCahLBizWJvCdhyvL, 2021-01-06T15:43:07 (There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~)
+                MtGdBxeeCscz5wrug, 2021-01-06T15:43:13 (The name "i" cannot be found.)
+                  BcE66quEZeoYcPjj8, 2021-01-06T15:43:16 (Inv2OK,incorrect,check,)
+                    MDmrBv6ySPb8tvKrH, 2021-01-06T15:46:06 (Inv2OK,incorrect,check,This variable is unused.)
+  tnThWe99CGKj5Q5wp, 2021-01-06T15:42:44 (The name "u" cannot be found.)
+    CGAJZMc5HfBwoAA9g, 2021-01-06T15:42:49 (Inv2OK,incorrect,check,)
+      7QWdLgyz7i2gnLGNj, 2021-01-06T15:44:18 (Inv2OK,correct,check,)
+        Fd8KtEvL4zeuiqCuz, 2021-01-06T15:46:19 (Inv2OK,incorrect,check,)
+  kT3fj5sF9hM7MNYif, 2021-01-06T16:06:28 (Inv1OK,incorrect,check,)
+    uBZX2bYpQQHcJDCGx, 2021-01-06T16:08:20 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+      citGActs4eN9rrr7h, 2021-01-06T16:08:25 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Work} Right type = {this/User->this/Work})
+        PkPvohNPAayqkaSZH, 2021-01-06T16:09:04 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+          5MMYkkG8a9WAcbLKF, 2021-01-06T16:09:17 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+            Pjwx82AKLNGphxeFZ, 2021-01-06T16:12:48 (The name "user" cannot be found.)
+              QYK8tHfvnfw94Gtpg, 2021-01-06T16:12:54 (Inv1OK,correct,check,)
+                kFQW966gHnubiyhSo, 2021-01-06T16:13:33 (Inv1OK,incorrect,check,)
+                  RDA6a9RpJCCuoYCrg, 2021-01-06T16:16:56 (Inv1OK,correct,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Work} Right type = {this/Institution})
+                    yrFaKDXkX2QgrTsDZ, 2021-01-06T16:17:02 (Inv2OK,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Work} Right type = {this/Institution})
+                      qtYX4uPEzzZyMch2s, 2021-01-06T16:17:11 (Inv2OK,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Work} Right type = {this/Institution})
+                        92NPyYW8vzjKtSqjH, 2021-01-06T16:17:19 (Inv2OK,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Work} Right type = {this/Institution})
+                          WzA4GGWY67CjM4jXG, 2021-01-06T16:17:24 (Inv2OK,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Work} Right type = {this/Institution})
+                            6eikFBPTr3qLvACPb, 2021-01-06T16:17:30 (Inv2OK,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Work} Right type = {this/Institution})
+                              zqv6L7uZdDSLpda6u, 2021-01-06T16:18 (Inv2OK,incorrect,check,)
+                                nSJNz3mJSkb8x3bWh, 2021-01-06T16:18:08 (+ can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/User->this/Work} Right type = {this/Institution})
+                                  eih7mRERPAjQxPs4y, 2021-01-06T16:18:21 (Inv2OK,incorrect,check,)
+                                    HhKMimxjYZeH5EBFw, 2021-01-06T16:18:46 (Inv2OK,incorrect,check,)
+                                      qhSLZtY296wkh7QGh, 2021-01-06T16:19:06 (Inv2OK,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Source} Right type = {this/Work})
+                                        oYdazEyoe4J77mTNZ, 2021-01-06T16:19:48 (Inv2OK,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Work} Right type = {this/Source})
+                                          GE2JTnpBznHJi964m, 2021-01-06T16:20:01 (Inv2OK,incorrect,check,)
+                                            7wsqpv7EGAKLYHJSk, 2021-01-06T16:21:04 (Inv2OK,incorrect,check,)
+                                              i5HBC6AP9txXTBZxo, 2021-01-06T16:22:14 (in can be used only between 2 expressions of the same arity. Left type = {this/User->this/Work} Right type = {this/Work, this/Institution})
+                                                RBedRT4eih73emr9j, 2021-01-06T16:22:23 (in can be used only between 2 expressions of the same arity. Left type = {this/User->this/Work} Right type = {this/Work, this/Institution})
+                                                  Gsrj9b9dhZThgxY7v, 2021-01-06T16:22:44 (in can be used only between 2 expressions of the same arity. Left type = {this/User->this/Work} Right type = {this/Work})
+                                                    yg39qgShSvi9ftyMe, 2021-01-06T16:23:19 (in can be used only between 2 expressions of the same arity. Left type = {this/Work->this/Work} Right type = {this/Work})
+                                                      yjZxpoR2Km2mznJzP, 2021-01-06T16:24:07 (& can be used only between 2 expressions of the same arity. Left type = {this/User->this/Work} Right type = {this/Institution})
+                                                        9yQMj653pTjLCEwwm, 2021-01-06T16:24:20 (& can be used only between 2 expressions of the same arity. Left type = {this/User->this/Work} Right type = {this/Institution})
+                                                          jDjHox2usF7BR3dXq, 2021-01-06T16:24:42 (& can be used only between 2 expressions of the same arity. Left type = {this/User->this/Work} Right type = {this/Institution})
+                                                            WQzmh5sJQjC2phseD, 2021-01-06T16:25:28 (Inv2OK,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Work} Right type = {this/Source})
+                                                              htY6ASA3zPtcTFno5, 2021-01-06T16:25:45 (This must be a formula expression. Instead, it has the following possible type(s): {this/Source})
+                                                                sZQnA57g75vJ5hL6X, 2021-01-06T16:25:50 (Inv2OK,incorrect,check,This variable is unused.)
+                                                                  jiAaJkKQDdxGX7EMq, 2021-01-06T16:26:03 (Inv2OK,incorrect,check,)
+                                                                    49sdDZbmoqTs5Bfme, 2021-01-06T16:27:02 (Inv2OK,incorrect,check,)
+                                                                      EyuDx5mRP7FE9ADgG, 2021-01-06T16:27:28 (Inv2OK,incorrect,check,)
+                                                                        smcqPu3cSLwHiPZD5, 2021-01-06T16:27:48 (Inv2OK,incorrect,check,)
+                                                                          Hwqc5KxqPA3wEzHBm, 2021-01-06T16:28:56 (Inv2OK,incorrect,check,)
+                                                                            Gq8XqtArdXvtTCJrP, 2021-01-06T16:29:21 (Inv2OK,incorrect,check,)
+                                                                              ktJ4DyGBkcxLRQ6m9, 2021-01-06T16:29:38 (Inv2OK,correct,check,)
+                                                                                rqcoBMnqzvP2wbmJZ, 2021-01-06T16:30:02 (Inv2OK,correct,check,)
+                                                                                  AcmQt3qu5zLbYeknQ, 2021-01-06T16:33:43 (Inv2OK,correct,check,)
+                                                                                    HN8nLratpMeivA6Re, 2021-01-06T16:33:45 (Inv3OK,correct,check,)
+                                                                                      jacX7RksdbRy4MksD, 2021-01-06T16:36:22 (model share)
+  qPeXG4L6x6jDoa8XH, 2021-01-06T19:00:49 (Inv1OK,correct,check,)
+    AjSdRaYxc2XewKThZ, 2021-01-06T19:02:18 (The name "Intitution" cannot be found.)
+      7yYTxdbHBXRg5cNKd, 2021-01-06T19:02:23 (Inv2OK,correct,check,)
+        9BZYsAyWk5HpnBQCN, 2021-01-06T19:03:40 (The name "id" cannot be found.)
+          6SyAqqo5u96xjtCjB, 2021-01-06T19:03:47 (Inv3OK,incorrect,check,)
+            7ynmuLZCmYrpuJGBG, 2021-01-06T19:04:20 (Inv3OK,correct,check,)
+  PsWuxcqmx7diXP2Lt, 2021-01-06T20:25:13 (Inv1OK,incorrect,check,)
+    xs7WxTNGpAb8s37XB, 2021-01-06T20:25:57 (Inv1OK,correct,check,)
+      sdiibtLCTSQjME3Lb, 2021-01-06T20:26:52 (Inv2OK,correct,check,)
+        r2MdDML82cahuCCHD, 2021-01-06T20:28:30 (Inv3OK,incorrect,check,)
+          FbW3oKhAJPeqFd6f7, 2021-01-06T20:29:48 (Inv3OK,incorrect,check,)
+            n7WbXrNXkt8e57Y97, 2021-01-06T20:30:11 (Inv3OK,correct,check,)
+              3Aut7BH4LbwJe9ZNw, 2021-01-06T20:31:31 (Inv4OK,incorrect,check,)
+                wjKocgFagYcsJxPzg, 2021-01-06T20:32:49 (The name "n2" cannot be found.)
+                  hLhDgygmew5eQDynh, 2021-01-06T20:32:54 (Inv4OK,incorrect,check,)
+                    dJtviHR8urKZKQBLN, 2021-01-06T20:33:41 (Inv4OK,incorrect,check,)
+                      GZuPXhYyj5DZnZWsC, 2021-01-06T20:34:14 (Inv4OK,incorrect,check,)
+                        uP2dYoXMw7TGNY7zE, 2021-01-06T20:35:52 (Inv4OK,incorrect,check,)
+                          xYNMEq3KvYYFm83fM, 2021-01-06T20:36:22 (Inv4OK,incorrect,check,)
+                            u39wewjkXYjnDLMA2, 2021-01-06T20:36:27 (Inv4OK,incorrect,check,)
+                              2sy5QbYCjdzY6ZieD, 2021-01-06T20:37:39 (Inv4OK,incorrect,check,)
+                                otvAaNooTJbp499Bj, 2021-01-06T20:38:16 (Inv4OK,incorrect,check,)
+                                  HqnwyapTuSjnkoYsY, 2021-01-06T20:39:54 (Inv4OK,incorrect,check,)
+                                    T5bbJs5fRjQKHYLwv, 2021-01-06T20:40:25 (Inv4OK,incorrect,check,)
+                                      GqzgZAbzs3pDmCcof, 2021-01-06T20:40:32 (Inv4OK,incorrect,check,)
+                                        kf9q2kLx8sLmewxqi, 2021-01-06T20:41:33 (Inv4OK,incorrect,check,)
+                                          uRRMfS9rD3PCh6neM, 2021-01-06T20:42:06 (Inv4OK,incorrect,check,)
+                                            8KuNEwQtCgDsR9Ggo, 2021-01-06T21:33:40 (Inv1OK,correct,check,)
+                                              wQJuspcCjkQ7XqzJi, 2021-01-06T21:33:55 (Inv2OK,correct,check,)
+                                                5ruBBaJ9q6EZE3237, 2021-01-06T21:34:11 (Inv3OK,correct,check,)
+                                                  FR5MDvXeCJv2LvGyi, 2021-01-06T21:34:35 (Inv4OK,incorrect,check,)
+                                                    6SE9CvMkkqeRCDWzd, 2021-01-06T21:40:58 (Inv4OK,incorrect,check,)
+                                                      seegczexcnrW68LCx, 2021-01-06T21:42:04 (Inv4OK,incorrect,check,)
+                                                        3pj2auQ7WoCneEFn5, 2021-01-06T21:42:50 (Inv4OK,incorrect,check,)
+                                                          RXniHc7ZZRaSdyNdn, 2021-01-06T21:44:35 (Inv3OK,correct,check,)
+                                                            SpLjSWjZEsC6gS7tx, 2021-01-06T21:47:30 (Inv4OK,correct,check,)
+  8FwjkGSPPP5fa9hbP, 2021-01-06T21:26:29 (Inv1OK,correct,check,)
+    LAAjSqRfAPpf9A626, 2021-01-06T21:28:24 (Inv2OK,correct,check,)
+      vZMobfZfo5byfFgJt, 2021-01-06T21:33:24 (This cannot be a legal relational join where left hand side is w1 (type = {this/Work}) right hand side is s (type = {this/Source}))
+  88x4GyWZk5bCGQpHT, 2021-01-06T21:52:26 (This must be a formula expression. Instead, it has the following possible type(s): {this/Source})
+    aB3bPTWJp4koS7JNA, 2021-01-06T21:53:17 (Inv2OK,correct,check,)
+  g5BgpbBj87eLLogam, 2021-01-07T15:15:08 (Inv1OK,incorrect,check,)
+    JZZXAkYwKFQecDHvf, 2021-01-07T15:15:40 (Inv1OK,incorrect,check,)
+      pCac86Qdh9sx5pPaW, 2021-01-07T15:16:23 (Inv1OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Work} Right type = {this/User->this/Work})
+        ipM8DvAMaapYPD8Q6, 2021-01-07T15:16:29 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+          5BXauXR2cZWogy6Cd, 2021-01-07T15:16:45 (Inv1OK,correct,check,)
+            i7rzPsMaPcs7ymoPt, 2021-01-07T15:20:01 (Inv1OK,correct,check,This variable is unused.)
+              xa5b2g5DRejeptd6o, 2021-01-07T15:20:06 (Inv2OK,correct,check,This variable is unused.)
+                qLHGEvWdAQ3cjqxa7, 2021-01-07T15:20:11 (Inv2OK,correct,check,)
+                  BgxT5fGBrPJh94Nh2, 2021-01-07T15:26:08 (Inv3OK,incorrect,check,)
+                    XfgJ6BYK7ca8WhiGj, 2021-01-07T15:26:28 (Inv3OK,incorrect,check,)
+                      caqJusq2kunkgSv6s, 2021-01-07T15:26:42 (Inv3OK,incorrect,check,)
+  uAaPm9waZAuTn7xrD, 2021-01-07T19:21:57 (The name "user" cannot be found.)
+    vYh78ipFm4ZhSBDZe, 2021-01-07T19:22:02 (Inv1OK,correct,check,)
+      TrRWB8LYwJJeb59wk, 2021-01-07T19:25:13 (The name "Instituiton" cannot be found.)
+        jtWJfpMkXyFyDRnBg, 2021-01-07T19:25:19 (Inv2OK,correct,check,)
+          MJkjxFZy3LmBshNTK, 2021-01-07T19:28:05 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+            YBCzd2Sbu6tTh6yLC, 2021-01-07T19:28:20 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+              AZihABEtdrao2kh4P, 2021-01-07T19:28:32 (The name "Ids" cannot be found.)
+                63Pqphh2jsysR7exE, 2021-01-07T19:28:39 (This cannot be a legal relational join where left hand side is w1 (type = {this/Work}) right hand side is this/Id (type = {this/Id}))
+                  PgeY8PMy2u6sxqSxT, 2021-01-07T19:29:05 (Inv3OK,incorrect,check,)
+                    u56L4r23TQgr7vFaS, 2021-01-07T19:29:39 (Inv3OK,incorrect,check,)
+                      LpWWTZZDGNQ5T6mjv, 2021-01-07T19:32:04 (in can be used only between 2 expressions of the same arity. Left type = {this/User->this/Work} Right type = {this/Work})
+                        vdLmBNiCbtrDknNx4, 2021-01-07T19:32:25 (in can be used only between 2 expressions of the same arity. Left type = {this/User->this/Work} Right type = {this/Work})
+                          BwW9WxPqE2PeZXBus, 2021-01-07T19:33 (Inv3OK,incorrect,check,)
+                            LLvFPKifGMPPdxaSe, 2021-01-07T19:33:20 (Inv3OK,incorrect,check,)
+                              ds5WZXPwAbH6ANWxg, 2021-01-07T19:33:52 (Inv3OK,incorrect,check,)
+                                N8LQzkt4d7WiQC9ii, 2021-01-07T19:34:33 (Inv3OK,incorrect,check,)
+                                  B7ehZPQKBiDndsa3J, 2021-01-07T19:56:49 (There are 1 possible tokens that can appear here: [)
+                                    GB5mnmjWsNf7JYh3q, 2021-01-07T19:57:01 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+                                      TQtXpKwumiumcwB7f, 2021-01-07T19:57:27 (There are 1 possible tokens that can appear here: [)
+                                        M3g8kgcMYdtxfWsJG, 2021-01-07T19:58:19 (There are 1 possible tokens that can appear here: [)
+                                          QQMK683aJDnHq7Epv, 2021-01-07T19:58:32 (Inv4OK,incorrect,check,)
+                                            Ct6LcPmS6676HxsuN, 2021-01-07T20:00:42 (Inv4OK,incorrect,check,)
+  ZfHhqZFKXruaHRJ8g, 2021-01-07T19:28:53 (Inv1OK,correct,check,)
+    cK7hSmxaHTBWgz5bn, 2021-01-07T19:31:17 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+      oZT8kxydwHBr5wMMK, 2021-01-07T19:31:46 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+        ZqwDmvFMNoAd7YYcW, 2021-01-07T19:32:41 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+          GsoSfG29kjSPBPNKR, 2021-01-07T19:33:38 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+            2wa8dXdEgtKACezn4, 2021-01-07T19:33:57 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+              a8YHyJZnwFhQnfqBA, 2021-01-07T19:34:22 (There are 1 possible tokens that can appear here: NAME)
+                SGxWuuiF7fLDAKRko, 2021-01-07T19:34:27 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+                  z2gBXqmicG2nnLJg8, 2021-01-07T19:35 (Inv2OK,incorrect,check,)
+                    hcZwkfy732Nxnx68T, 2021-01-07T19:35:03 (Inv2OK,incorrect,check,)
+                      DSHsTWj65fDAvdSkL, 2021-01-07T19:35:08 (Inv2OK,incorrect,check,== is redundant, because the left and right expressions are always disjoint. Left type = {this/Source} Right type = {this/Work})
+                        fRg8CzmXET5sQLKrK, 2021-01-07T19:36:08 (There are 3 possible tokens that can appear here: ,  { |)
+                          zErvkArgzsEYHwza2, 2021-01-07T19:36:50 (Inv2OK,incorrect,check,)
+                            2GodJmHvoCLSf5dwC, 2021-01-07T19:38:40 (Inv2OK,incorrect,check,)
+                              fFMBEnuSo5LJL8uwt, 2021-01-07T19:38:56 (Inv2OK,correct,check,)
+                                TrG2FJvqGXwHdeXP8, 2021-01-07T19:41:04 (The name "id" cannot be found.)
+                                  4e5KAKnmSYcToTzDa, 2021-01-07T19:41:09 (Inv3OK,incorrect,check,)
+                                    ZCuwS69QjAbLrHwcd, 2021-01-07T19:41:35 (Inv3OK,incorrect,check,)
+                                      pHsipGTCWHmzkEPYs, 2021-01-07T19:42:15 (Inv3OK,incorrect,check,)
+                                        TNRaQYgGERhhMgnyP, 2021-01-07T19:42:20 (Inv3OK,incorrect,check,)
+                                          RR8385JbXFe7ow2zp, 2021-01-07T19:42:39 (Inv3OK,incorrect,check,)
+                                            t2WwgF7uc3YFm2Cka, 2021-01-07T19:43:14 (Inv3OK,incorrect,check,)
+                                              QiDBcDWXeCH4Gktjg, 2021-01-07T19:43:29 (There are 1 possible tokens that can appear here: [)
+                                                eiHumsEf94gfSdpnf, 2021-01-07T19:43:39 (Inv3OK,incorrect,check,)
+                                                  ApzcpAYfnu395CaA8, 2021-01-07T19:44:19 (Inv3OK,correct,check,)
+                                                    p8GrPkcjrqztf35bj, 2021-01-07T19:47:38 (There are 3 possible tokens that can appear here: ,  { |)
+                                                      vuEyN7tiSiXKk5vgd, 2021-01-07T19:47:50 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+                                                        5mnkY88JwZFMvXRbL, 2021-01-07T19:48:14 (There are 1 possible tokens that can appear here: [)
+                                                          mcs839fuEnamitPpd, 2021-01-07T19:48:57 (There are 3 possible tokens that can appear here: ,  { |)
+                                                            fWF8kKtdptMRayLqf, 2021-01-07T19:49:13 (There are 3 possible tokens that can appear here: ,  { |)
+                                                              GBEtSFKCRGHHwkcu9, 2021-01-07T19:49:38 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                                H2wzq99aQwrRNw2bT, 2021-01-07T19:49:50 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                                                  wuqx4v47pKTXH9M5a, 2021-01-07T19:50:08 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                                                    b8W2P5yvFXmAmpWLG, 2021-01-07T19:50:46 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                                                      bYcj3dHNy7a62ctCy, 2021-01-07T19:50:58 (There are 3 possible tokens that can appear here: ,  { |)
+                                                                        493Lrm8JzXSBWegB9, 2021-01-07T19:51:03 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                                                          TD36W5aEkZco25Ah4, 2021-01-07T19:51:38 (Inv4OK,incorrect,check,)
+                                                                            YSnbM7ajZ5iZCTSAG, 2021-01-07T19:51:46 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+                                                                              RxnHMLZMSwB9rGN2K, 2021-01-07T19:51:51 (Inv4OK,incorrect,check,)
+                                                                                xhqcCFGbqpkWBXx6L, 2021-01-07T19:53:05 (Inv4OK,incorrect,check,)
+                                                                                  qjLZsCwFBwNi2FY53, 2021-01-07T19:53:16 (Inv4OK,incorrect,check,)
+                                                                                    RDGPuNwb95waXGhdF, 2021-01-07T19:53:20 (Inv4OK,incorrect,check,)
+                                                                                      kHEdSxgYyAD3thghb, 2021-01-07T19:53:27 (Inv4OK,incorrect,check,)
+                                                                                        jZbR3uTPHyM6CgyR5, 2021-01-07T19:53:42 (Inv4OK,incorrect,check,)
+                                                                                          ntQ9tNzJxvs9WtcSE, 2021-01-07T19:53:45 (Inv4OK,incorrect,check,)
+  vpayKZhZ8TDWLjaKe, 2021-01-07T19:34:55 (Inv1OK,correct,check,)
+    evTXAe2tPj4iqEnHk, 2021-01-07T19:37:01 (Inv2OK,correct,check,)
+      phXa8qDHBGGRe4Tjb, 2021-01-07T19:40:41 (Inv3OK,incorrect,check,)
+        LjB6BpkBu2upwDKHf, 2021-01-07T19:41:22 (Inv3OK,incorrect,check,)
+          NRgx28aenpdpMhQqs, 2021-01-07T19:44:47 (Inv3OK,correct,check,)
+            MeN5cCTDxTo3zJCKz, 2021-01-07T19:47:29 (Inv4OK,incorrect,check,)
+              Ryh9GBGPA2mTzMbXj, 2021-01-07T19:48:14 (Inv4OK,incorrect,check,)
+                Takq5kEoeSjyTccc9, 2021-01-07T19:49:06 (Inv4OK,incorrect,check,)
+                  pSr2PqEXXGj9CYrJd, 2021-01-07T19:49:37 (This must be a formula expression. Instead, it has the following possible type(s): {this/Id})
+                    CA7aWq9yHesKWtWDN, 2021-01-07T19:49:47 (This must be a formula expression. Instead, it has the following possible type(s): {this/Id})
+                      eKv3AWCcRSQK3cS8W, 2021-01-07T19:50:42 (Inv4OK,incorrect,check,)
+                        GH5ZpKQTrpDtuN6Tu, 2021-01-07T19:53:02 (Inv4OK,incorrect,check,)
+                          HCWpTyR7qfb6TpNM4, 2021-01-07T19:54:15 (Inv4OK,incorrect,check,)
+                            xmoRx8m9gSCg5hcxf, 2021-01-07T19:56:27 (Inv4OK,incorrect,check,)
+  KKNj8NhbKHXsu5Pyk, 2021-01-07T21:49:55 (Inv1OK,correct,check,)
+    ACrDBc5aGttQZiA22, 2021-01-07T21:51:06 (The name "work" cannot be found.)
+      8nSr3qyxuvmksLEZM, 2021-01-07T21:51:12 (Inv2OK,incorrect,check,)
+        9obWvJK3u8Jh8urTQ, 2021-01-07T21:53:14 (This cannot be a legal relational join where left hand side is u . (this/User <: profile) (type = {this/Work}) right hand side is this/Work (type = {this/Work}))
+          tSES8SgctvXcQgadg, 2021-01-07T21:53:29 (Inv2OK,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Work} Right type = {this/Source})
+            rPjFHR86rH5cZtWCu, 2021-01-07T21:53:45 (This cannot be a legal relational join where left hand side is u . (this/User <: profile) (type = {this/Work}) right hand side is this/Work (type = {this/Work}))
+              FtpjDgqvML3E9qv6v, 2021-01-07T21:53:52 (Inv2OK,correct,check,)
+                pJ76zogkHkrtEWDNZ, 2021-01-07T21:55:04 (Inv3OK,incorrect,check,)
+                  eE5csZCnQjnrTLH9o, 2021-01-07T22:00:06 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                    LdB7TYrJikQ6vykoY, 2021-01-07T22:00:10 (Inv3OK,incorrect,check,)
+                      9nJSd5tktsD9x6Y8u, 2021-01-07T22:00:19 (Inv3OK,incorrect,check,)
+                        TuNPn5CRTTcMauhPg, 2021-01-07T22:00:45 (Inv3OK,correct,check,)
+                          zDWtZcQenp2aLJRro, 2021-01-07T22:01:43 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/Work})
+                            bFRbgwhoRKPnox8AP, 2021-01-07T22:03:04 (Inv4OK,incorrect,check,)
+                              WFhhC4eeyEnTDYpE8, 2021-01-07T22:04:10 (Inv4OK,correct,check,)
+  Xpzm2hF9gAMn8Me6B, 2021-01-07T21:55:27 (Inv1OK,incorrect,check,)
+    rGE5LJ9YHuznheAcp, 2021-01-07T21:55:53 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+      N8K8WErP4Gu7E9A3n, 2021-01-07T21:56:13 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+  94wAinunAbH8iXLNW, 2021-01-07T21:56:27 (Inv1OK,incorrect,check,)
+    kGomHbCkwMnZc4cnh, 2021-01-07T21:56:44 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+      ePY338jWB99oDHSKS, 2021-01-07T21:57:09 (Inv1OK,correct,check,)
+        hxhEMkKGDu9nehvC8, 2021-01-07T21:57:22 (Inv1OK,incorrect,check,)
+          MwqwgsjKQg5f7m8Gn, 2021-01-07T21:59:12 (Inv2OK,correct,check,)
+  2DLNXxELtvPk7gbp7, 2021-01-07T22:35:41 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+    vaJzDPFkkczHaCwSS, 2021-01-07T22:38:33 (Inv1OK,incorrect,check,)
+      ZuJbPvrX9SYXM3g5v, 2021-01-07T22:38:50 (Inv1OK,correct,check,)
+        kAwb2zoTZn5LFpzEe, 2021-01-07T22:42:58 (Inv1OK,correct,check,)
+          BiKtxTAxT3mdiChpL, 2021-01-07T22:43 (Inv2OK,incorrect,check,)
+            BJvDHqHXimzSX6Lv8, 2021-01-07T22:44:54 (Inv2OK,incorrect,check,)
+              bm9DGCjmvaqph2Tht, 2021-01-07T22:45:27 (Inv2OK,incorrect,check,)
+                Aq5E9hyqDgHBwMoeM, 2021-01-07T22:45:31 (Inv2OK,incorrect,check,)
+                  d3SDqtmsRWZjeAXhs, 2021-01-07T22:45:35 (Inv2OK,incorrect,check,)
+                    rZYXJZ6DbStMjnZdM, 2021-01-07T22:46:42 (Inv2OK,incorrect,check,)
+                      7xxik5nXrYs9qZajh, 2021-01-07T22:54:18 (Inv2OK,correct,check,)
+                        fLPihhedCo3te7bAw, 2021-01-07T22:54:50 (Inv2OK,correct,check,)
+                          gFZ4syWrxNJ5jfWnX, 2021-01-07T22:57:25 (Inv3OK,incorrect,check,)
+                            r8A9uXMkYJRpZWX6k, 2021-01-07T22:57:34 (Inv3OK,incorrect,check,)
+                              372ob46iRNvfaXZAA, 2021-01-07T23:03:59 (in can be used only between 2 expressions of the same arity. Left type = {this/Work->this/Id} Right type = {this/Work})
+                                TS9gg55TmLLhwngR4, 2021-01-07T23:04:10 (in can be used only between 2 expressions of the same arity. Left type = {this/Work->this/Id} Right type = {this/Work})
+                                  QvZg8uEv47BJz7AMZ, 2021-01-07T23:17:55 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+                                    TNKTmeGZkLMBGtehi, 2021-01-07T23:18:15 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+                                      nfgWdsshzbAWp8bt9, 2021-01-07T23:18:22 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+                                        vgs7hRc6X7ZcXpYi2, 2021-01-07T23:21:57 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+                                          tqsmrHhqJCa2wTwJE, 2021-01-07T23:25:26 (Inv3OK,incorrect,check,)
+                                            myPE54FXj6i4i7ELX, 2021-01-07T23:25:36 (Inv3OK,correct,check,)
+  gnnRcQqHeZH97PBpf, 2021-01-07T23:25:19 (Inv2OK,correct,check,)
+    TjYufFH3AuKXLq6xe, 2021-01-07T23:32:08 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+      W6TynvGog8xTs7HQE, 2021-01-07T23:33:41 (This cannot be a legal relational join where left hand side is this/Work (type = {this/Work}) right hand side is src (type = {this/Source}))
+        uF3gRTQ8KR9KvMT9A, 2021-01-07T23:36:07 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+          DAwRyrWZkFXcTGJ7d, 2021-01-07T23:36:53 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})
+            mXHHZ7sN7kc7Trx9E, 2021-01-07T23:37:58 (Inv3OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/User->this/Work} Right type = {this/User})
+              aTXoYWuoPK8jFGSvB, 2021-01-07T23:38:03 (Inv3OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/User->this/Work} Right type = {this/User})
+                4aXYhxDKF6sxBzhs9, 2021-01-07T23:38:54 (Inv3OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/User->this/Work} Right type = {this/User})
+                  sN8Yym9q3CXeuTmiJ, 2021-01-07T23:39:46 (Inv3OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/User->this/Work} Right type = {this/User})
+                    a7ykK5CxdhpeyKCpp, 2021-01-07T23:40:10 (Inv3OK,incorrect,check,)
+                      nGSYitEP2ueEFPxii, 2021-01-07T23:41:01 (Inv3OK,incorrect,check,)
+                        a6wADgoQesptuE8Mn, 2021-01-07T23:41:05 (Inv3OK,incorrect,check,)
+                          85Bfv48se3icqAjFp, 2021-01-07T23:48:17 (Inv4OK,incorrect,check,)
+                            XCjZpzKmowfMu847c, 2021-01-08T00:02:49 (Inv4OK,incorrect,check,)
+  emBgi9xQ9a9B5Tt42, 2021-01-07T23:27:57 (Inv1OK,correct,check,)
+    QzeDiYJ6vz7kLxtZB, 2021-01-07T23:32:25 (Inv2OK,correct,check,)
+      szFjPAaD6bATQHsgH, 2021-01-07T23:35:57 (Inv2OK,correct,check,)
+        7jPh6ncz36Cu6Ee8m, 2021-01-07T23:49:53 (Inv3OK,incorrect,check,)
+          dXXJ9q4t3emrqiuRr, 2021-01-07T23:52:46 (Inv3OK,incorrect,check,)
+            zTNQLsNfjEjghThvh, 2021-01-07T23:54:56 (Inv3OK,incorrect,check,)
+              drBJdgHCTR7xJhpw6, 2021-01-07T23:56:11 (Inv3OK,incorrect,check,)
+                K4qKSz8CtFYs6QQZ2, 2021-01-07T23:57:35 (Inv3OK,correct,check,)
+                  MQbPEnBoExgWsrf5H, 2021-01-07T23:58:43 (Inv4OK,incorrect,check,)
+                    2ANfpjZd4KzwF4DCq, 2021-01-08T00:02:44 (The name "id" cannot be found.)
+                      DjANfdf8Twru5NkN8, 2021-01-08T00:02:48 (Inv4OK,incorrect,check,)
+                        3gqnRphiGtKF3bivf, 2021-01-08T00:03:19 (Inv4OK,incorrect,check,)
+                          zTDdxPkSQsRFKbC9v, 2021-01-08T00:03:23 (Inv4OK,incorrect,check,)
+                            st4pygqckrLJEWSNb, 2021-01-08T00:05:29 (There are 1 possible tokens that can appear here: ))
+                              hoEBFhZwe4Wx5vgds, 2021-01-08T00:05:33 (Inv4OK,incorrect,check,)
+                                LMKe6qebf79AHwm7w, 2021-01-08T00:06:32 (Inv4OK,incorrect,check,)
+                                  u373ZqY9tNbeCmXoz, 2021-01-08T00:07:28 (There are 1 possible tokens that can appear here: [)
+                                    eXH9YxTJBDmpAsdqD, 2021-01-08T00:08:01 (There are 1 possible tokens that can appear here: [)
+                                      7FdmfguzmoS9Dj9HZ, 2021-01-08T00:08:03 (There are 1 possible tokens that can appear here: [)
+                                        Sjs36y9QyFjpbdzr5, 2021-01-08T00:08:28 (Inv4OK,correct,check,)
+                                          cZqogiZsg9okoQb6v, 2021-01-08T00:10:24 (Inv4OK,incorrect,check,)
+                                            okeFZMhXiyC96AFyd, 2021-01-08T00:10:29 (Inv4OK,incorrect,check,)
+                                              WzFgiNAsegnw8EQ5C, 2021-01-08T00:15:56 (Inv4OK,incorrect,check,)
+                                                CMgaLYr42vnParoea, 2021-01-08T00:18:17 (Inv4OK,incorrect,check,)
+                                                  XDNDSCWZNwnqhrg3d, 2021-01-08T00:19:20 (Inv4OK,incorrect,check,)
+                                                    fxZiYifBH4zgMNtW9, 2021-01-08T00:20:26 (Inv4OK,incorrect,check,)
+                                                      GdpgG4fHCYCLtp4Su, 2021-01-08T00:20:53 (Inv4OK,incorrect,check,)
+                                                        26LcraYyRiuayuyWG, 2021-01-08T00:21:03 (The name "w1" cannot be found.)
+                                                          fuM5uw5AfnnhuyYdc, 2021-01-08T00:21:14 (Inv4OK,incorrect,check,)
+                                                            FGryZWBhPQRfWf2Rw, 2021-01-08T00:23:04 (Inv4OK,incorrect,check,)
+                                                              MMZJhqcjbeRPR87Bp, 2021-01-08T00:24:01 (Inv4OK,incorrect,check,)
+                                                                wB6ERMZKKSLegxYi8, 2021-01-08T00:24:23 (Inv4OK,incorrect,check,)
+                                                                  3RqWtNuHH4PAkZ3Dh, 2021-01-08T00:24:26 (Inv4OK,incorrect,check,)
+                                                                    uDckZLTperKsRCnTm, 2021-01-08T00:25:26 (Inv4OK,incorrect,check,)
+                                                                      vq9gknKCkQw3ratNj, 2021-01-08T00:27:18 (This must be a formula expression. Instead, it has the following possible type(s): {this/Id})
+                                                                        h2WCYegH24XAHZhht, 2021-01-08T00:27:25 (This must be a formula expression. Instead, it has the following possible type(s): {this/Id})
+                                                                          KzFS9EDWZaFrNy59D, 2021-01-08T00:27:43 (This must be a formula expression. Instead, it has the following possible type(s): {this/Id})
+                                                                            mspsStRdhSwx4PHr6, 2021-01-08T00:28:17 (Inv4OK,incorrect,check,)
+                                                                              zigPdkA9qq3qhxzFP, 2021-01-08T00:30:39 (Inv4OK,incorrect,check,)
+                                                                                SeBtErZJtXSzzNzQs, 2021-01-08T00:32:53 (Inv4OK,incorrect,check,)
+  ecJR3oqMjs7np2LZ2, 2021-01-07T23:31:35 (Inv1OK,correct,check,)
+    nsYq2jqSLvWqBpgkQ, 2021-01-07T23:34:08 (Inv1OK,correct,check,)
+      KeixAQ3xpnG7paTPx, 2021-01-07T23:37:45 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+        dP2cikcD7AxeFucjw, 2021-01-07T23:38:08 (Inv1OK,correct,check,)
+          QfcELbhopYHemYJqq, 2021-01-07T23:38:26 (Inv2OK,correct,check,)
+            QbNKeYZC2BmnG5D4W, 2021-01-07T23:38:28 (Inv3OK,incorrect,check,)
+              fTi4kJ9s3tRYh7CyC, 2021-01-07T23:41:54 (Inv3OK,incorrect,check,)
+  dK2ar4cFLMPXuP3S8, 2021-01-08T13:11:57 (Inv1OK,correct,check,)
+    N4HDJThhvJby7afRy, 2021-01-08T13:12:23 (Inv1OK,correct,check,)
+      vHdRkH3scfuFNCbag, 2021-01-08T13:14:11 (The name "institution" cannot be found.)
+        gbiqDQxL7Nwpopwhu, 2021-01-08T13:14:20 (Inv2OK,correct,check,)
+          rBJtqMBRFTESaCzxy, 2021-01-08T13:15:36 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+            RTpubaZQohMDWMkRt, 2021-01-08T13:15:53 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+              ZexriBFbrDFtmonnb, 2021-01-08T13:16:04 (Inv3OK,correct,check,)
+                6a3ry6sk2emjneGWx, 2021-01-08T13:16:53 (Inv4OK,incorrect,check,)
+                  Gh6yffr4aKurCC6es, 2021-01-08T14:34:57 (Inv4OK,incorrect,check,)
+  KwjZ5s9fxxfv2sR6X, 2021-01-08T14:40:57 (Inv1OK,correct,check,)
+    MFo6MaiCyfS5HfXR8, 2021-01-08T14:44:09 (Inv2OK,correct,check,)
+      a5rqa2APP9icDynrf, 2021-01-08T14:52:25 (This must be a formula expression. Instead, it has the following possible type(s): {this/Work})
+        cApHHkSPhbkSeWCy6, 2021-01-08T14:52:30 (Inv3OK,incorrect,check,)
+          8Yt894hkGqksnfAMQ, 2021-01-08T14:54:53 (Inv3OK,incorrect,check,)
+            ngvqCwzX2cybc8FkZ, 2021-01-08T14:56:11 (Inv3OK,correct,check,)
+              9XCGivDDJwXrMekbR, 2021-01-08T14:57:35 (This expression failed to be typechecked line 42, column 36, filename=/tmp/alloy_heredoc1700830610245892940.als)
+                Yw5krqHgWdvcgsYtu, 2021-01-08T14:59:08 (Inv4OK,incorrect,check,)
+  GfRnuNfGPPPype7GF, 2021-01-08T15:02:22 (Inv1OK,correct,check,)
+    XZMvmpbTRKGSRLWTn, 2021-01-08T15:05:40 (Inv2,incorrect,run,)
+      Z3iwZxqeP49NxTv3W, 2021-01-08T15:10:23 (Inv2OK,correct,check,)
+        jawJvno5jk9ZxQcY9, 2021-01-08T15:31:34 (Inv3OK,incorrect,check,)
+          3JYdpfK7qrFrpFfoP, 2021-01-08T15:37:10 (Inv3OK,incorrect,check,)
+            xqd7hrLBtTH9sN7c9, 2021-01-08T15:40:02 (Inv3OK,incorrect,check,)
+              uTvCnk89ksYM5gQne, 2021-01-08T15:41:12 (Inv3OK,incorrect,check,)
+                BMdRrq2zuB8rSQqMH, 2021-01-08T15:49:41 (Inv3OK,incorrect,check,)
+                  cyxfq5NMS99PtLcrK, 2021-01-08T15:55:15 (Inv3OK,incorrect,check,)
+                    5CMjz4QiykagyzYh2, 2021-01-08T18:27:30 (Inv3OK,correct,check,)
+                      EwGSBP4dktt3mbZRF, 2021-01-08T18:29:27 (Inv3OK,correct,check,)
+                        bdEaDyu7N3mTGwqbf, 2021-01-08T18:30:24 (Inv4OK,incorrect,check,)
+  Hd7vGBLQWEeQNxx95, 2021-01-08T18:05:55 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+    JrLwukEovwgosWnPv, 2021-01-08T18:06:12 (Inv4OK,incorrect,check,)
+      PvZoKXk33MiouXj23, 2021-01-08T18:07:08 (Inv4OK,incorrect,check,)
+        2PKRPcmqR4t6drf9t, 2021-01-08T18:14:07 (Inv1OK,correct,check,)
+          ui2usoE64RNSz2ZQt, 2021-01-08T18:15:53 (Inv2OK,correct,check,)
+            nQszqzXW5mKQYDp8T, 2021-01-08T18:17:44 (Inv3OK,incorrect,check,)
+  BCkAyHPy7AGbEQJ3Y, 2021-01-08T18:36:15 (Inv1OK,correct,check,)
+    vsXdGtng5F8nPgFQX, 2021-01-08T18:42:20 (Inv2OK,correct,check,)
+      ZEzJsmtWXGjm8v5gE, 2021-01-08T18:43:15 (Inv3OK,incorrect,check,== is redundant, because the left and right expressions always have the same value. Left type = {this/Id} Right type = {this/Id})
+        WznNMmnGGcuiYevpC, 2021-01-08T18:43:23 (Inv3OK,incorrect,check,== is redundant, because the left and right expressions always have the same value. Left type = {this/Id} Right type = {this/Id})
+          T8YfCSLtm6dvbwbxw, 2021-01-08T18:43:30 (Inv3OK,incorrect,check,)
+  SA3H5W6tJMrWkQkDG, 2021-01-08T20:21:04 (Inv1OK,incorrect,check,== is redundant, because the left and right expressions are always disjoint. Left type = {this/Source} Right type = {this/Work})
+    f25uXSy9gTMuBJsb7, 2021-01-08T20:23:10 (Inv1OK,incorrect,check,)
+      jJCqBRZfFZdGi64wn, 2021-01-08T20:23:29 (Inv1OK,incorrect,check,)
+        57LykSD669uNhimtz, 2021-01-08T20:24:16 (Inv1OK,correct,check,)
+          XRCaGJNL9TrNsuFq4, 2021-01-08T20:31:02 (Inv2OK,correct,check,)
+            9THNThYCCSDCEjFPz, 2021-01-08T20:42:31 (There are 1 possible tokens that can appear here: [)
+              kEMkdinMdx4xRfJCd, 2021-01-08T20:42:39 (There are 1 possible tokens that can appear here: [)
+                bxC9KTieJDQkmkgs5, 2021-01-08T20:43:16 (There are 1 possible tokens that can appear here: [)
+                  JmFEA3cLrTCD2LNgQ, 2021-01-08T20:44:17 (Inv3OK,incorrect,check,)
+                    KhrhGyDp73huemuPM, 2021-01-08T20:44:49 (Inv3OK,incorrect,check,)
+                      rM9Z8sGTs93d2irKu, 2021-01-08T20:45:09 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                        CDGXsP8oN48KRY3aZ, 2021-01-08T20:45:15 (Inv3OK,incorrect,check,)
+                          67bh6vB3XbddfRFGS, 2021-01-08T20:47:57 (This cannot be a legal relational join where left hand side is this/User . (this/User <: profile) . (this/Work <: ids) (type = {this/Id}) right hand side is id (type = {this/Id}))
+                            HpnD62cpSwDHn5WH6, 2021-01-08T20:48:34 (This cannot be a legal relational join where left hand side is this/User . (this/User <: profile) (type = {this/Work}) right hand side is this/Work (type = {this/Work}))
+                              C9FZThjRsHzivEhue, 2021-01-08T20:48:56 (Inv3OK,incorrect,check,This variable is unused.)
+                                7skfSg8wpYNrZMZEK, 2021-01-08T20:49:24 (Inv3OK,incorrect,check,)
+                                  gr3WbXZY5HtDLDrvM, 2021-01-08T20:50:06 (Inv3OK,incorrect,check,)
+                                    pXiiEGgoa8RnCueFP, 2021-01-08T20:52:54 (This cannot be a legal relational join where left hand side is u . (this/User <: visible) (type = {this/Work}) right hand side is w (type = {this/Work}))
+                                      G38nR5kpoLTX2Sh3e, 2021-01-08T20:54:38 (This cannot be a legal relational join where left hand side is u . (this/User <: visible) (type = {this/Work}) right hand side is w (type = {this/Work}))
+                                        avQtScSGoye297pT7, 2021-01-08T20:54:47 (Inv4OK,incorrect,check,This variable is unused.)
+                                          S335o3ivHG3iLn9Sg, 2021-01-08T20:57 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+  sxAMYGGthHAj7C3YZ, 2021-01-08T21:58:10 (Inv1OK,incorrect,check,)
+    gxucoyZ956dqMSz6w, 2021-01-08T21:58:32 (The assertion "Inv1" cannot be found.)
+      2uREX787BLeLGxoHA, 2021-01-08T21:58:48 (The assertion "Inv1" cannot be found.)
+  mF5M7ZjpLhXYsPsFy, 2021-01-24T12:26:51 (Inv1OK,correct,check,)
+    wFEMnMgs3M6DW7Avd, 2021-01-24T12:27:07 (Inv1OK,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/User->this/Work} Right type = {this/Work->this/Source})
+      TsxiTb6FHdHjzgJiY, 2021-01-24T12:27:17 (Inv1OK,correct,check,)
+        WsicWgEYicFeZHvGe, 2021-01-24T12:32:06 (Inv2OK,incorrect,check,)
+          7NJK5ZnpDtQ6WDZw9, 2021-01-24T12:33:11 (Inv2OK,incorrect,check,)
+            LAWFMfMujpsPv4NWA, 2021-01-24T12:33:35 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+              wihmTymuE7uSK6pma, 2021-01-24T12:33:42 (Inv2OK,incorrect,check,)
+                uW9gueMjhueTzcK8q, 2021-01-24T12:33:56 (Inv2OK,incorrect,check,)
+                  7Bv7Ed4Nzjnk93af4, 2021-01-24T12:34:20 (Inv2OK,incorrect,check,)
+                    G9ke9FESQX7qd3J5k, 2021-01-24T12:35:09 (Inv2OK,incorrect,check,)
+                      8BC3Tgs32XAbp33nZ, 2021-01-24T12:36:20 (Inv2OK,incorrect,check,)
+                        Gj3DAbqv24AkE7EbB, 2021-01-24T12:36:47 (Inv2OK,incorrect,check,)
+                          j9vdbysWkjoKQbGip, 2021-01-24T12:38:06 (Inv2OK,incorrect,check,)
+                            yWuLuBZTaNNxukbhZ, 2021-01-24T12:38:17 (Inv2OK,incorrect,check,)
+                              4vDfnqyQR6aSNs4jv, 2021-01-24T12:39:27 (Inv2OK,incorrect,check,This variable is unused.)
+                                eyFQp4MTwSwmeD2pj, 2021-01-24T12:40:04 (Inv2OK,incorrect,check,)
+                                  GQgdwP84JnLHideNJ, 2021-01-24T12:40:19 (Inv2OK,incorrect,check,)
+                                    Y5Bp3PkNk6cErhuqE, 2021-01-24T12:40:50 (Inv2OK,correct,check,)
+                                      TsGc9wrXvap2YdPr4, 2021-01-24T12:42:35 (Inv3OK,incorrect,check,)
+                                        CRk2iaYbRrG5fHg3f, 2021-01-24T12:44:04 (Inv3OK,incorrect,check,)
+                                          8oH3N65MrNnqB6ZFo, 2021-01-24T12:44:12 (Inv3OK,incorrect,check,)
+                                            PBH8rz27thQ4bY6Lr, 2021-01-24T15:01:13 (Inv3OK,incorrect,check,)
+                                              vkwpmcpd7Nqbnv5Xz, 2021-01-24T15:02:46 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                hZGhQrKRypgE8tJGX, 2021-01-24T15:02:51 (Inv3OK,incorrect,check,)
+                                                  BuB26LapSQcfEK9jY, 2021-01-24T15:06:33 (Inv3OK,incorrect,check,)
+                                                    cJEzhv4nenQXHL5aZ, 2021-01-24T15:07:10 (Inv3OK,incorrect,check,)
+                                                      Y7XXj5ABk2wDixWcp, 2021-01-24T16:00:12 (Inv3OK,incorrect,check,)
+                                                        XfD3FiFZ4h9aSNrbJ, 2021-01-24T16:04:34 (Inv4OK,incorrect,check,)
+                                                          Gcsmnfx9YBSpp8h3D, 2021-01-24T16:06:03 (Inv4OK,incorrect,check,)
+                                                            yDmfjiBLgEwAed6mT, 2021-01-24T16:18:52 (Inv4OK,incorrect,check,)
+  e7LxYp6X3HJnqWDdY, 2021-01-25T15:41:38 (Inv1OK,incorrect,check,)
+    c5Fdh9Jhs6mba4Bgs, 2021-01-25T15:41:53 (Inv1OK,correct,check,)
+      uBvsw8krjuHsyXvs3, 2021-01-25T15:44:11 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/User->this/Source} Right type = {none})
+        DLsXEuLwsZPdo75uj, 2021-01-25T15:44:49 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/User->this/Source} Right type = {none})
+          ZkxpSpCqJHxm4ygZK, 2021-01-25T15:45:06 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/User->this/Source} Right type = {this/Institution})
+            BFZfwZdkCzRWa3gaj, 2021-01-25T15:46:55 (Inv1OK,correct,check,)
+              vPKvbZwL9zfBd2Tma, 2021-01-25T15:46:58 (Inv2OK,correct,check,)
+                p7XxSGBsSZiEcMPGq, 2021-01-25T15:49:33 (Inv2OK,correct,check,)
+                  DL8EpdXDuwm33n892, 2021-01-25T15:49:37 (Inv3OK,incorrect,check,)
+                    29gG6jLSvaengYvnT, 2021-01-25T15:51:12 (Inv3OK,incorrect,check,)
+                      xGfX7bjTiEvNFxY93, 2021-01-25T15:52:24 (This cannot be a legal relational join where left hand side is id1 (type = {this/Id}) right hand side is this/Work (type = {this/Work}))
+                        kEoR384ogKMvSJBxX, 2021-01-25T15:52:47 (This cannot be a legal relational join where left hand side is id1 (type = {this/Id}) right hand side is this/Work . (this/Work <: source) (type = {this/Source}))
+                          G829gmhDJqiLrCKqq, 2021-01-25T15:53:07 (This cannot be a legal relational join where left hand side is id1 (type = {this/Id}) right hand side is this/Work . (this/Work <: source) (type = {this/Source}))
+                            2JdM4qGinLsoiijrk, 2021-01-25T15:55:04 (Inv3OK,incorrect,check,)
+                              GRRFQToMFQ6wbcb4S, 2021-01-25T15:55:15 (Inv3OK,incorrect,check,)
+                                ijavtBeuRRWaCtbZc, 2021-01-25T15:55:25 (Inv3OK,incorrect,check,)
+                                  DHCva87sbAvz7SDwG, 2021-01-25T15:55:55 (Inv3OK,correct,check,)
+                                    at5eNRTAfR5Y885ip, 2021-01-25T15:56:02 (Inv3OK,correct,check,)
+                                      jn6nf6dhBhSdnQBQP, 2021-01-25T15:56:21 (This cannot be a legal relational join where left hand side is w1 (type = {this/Id}) right hand side is this/Work (type = {this/Work}))
+                                        PSDs23Nf8EaTt55NY, 2021-01-25T15:56:39 (This cannot be a legal relational join where left hand side is w1 (type = {this/Id}) right hand side is this/Work . (this/Work <: source) (type = {this/Source}))
+                                          NPLPPS5jZrNwybcQa, 2021-01-25T15:56:47 (Inv3OK,correct,check,)
+                                            FAPqyuDgoxRHaKRNB, 2021-01-25T15:56:53 (Inv3OK,correct,check,)
+                                              mjcSE6jhYNKCdoRgR, 2021-01-25T15:58:30 (Inv3OK,correct,check,)
+                                                GJvPCgj6m7v7fFeHY, 2021-01-25T15:58:36 (Inv4OK,incorrect,check,)
+                                                  n5vqydWavAaGZn8dp, 2021-01-25T15:59:24 (This expression failed to be typechecked line 42, column 40, filename=/tmp/alloy_heredoc8322657548172354043.als)
+                                                    Gnjee35eyDgpeS5T7, 2021-01-25T15:59:32 (Inv4OK,incorrect,check,)
+                                                      yGH7abYpdSBM7dH7o, 2021-01-25T16:03:22 (The name "x" cannot be found.)
+                                                        Cvi5jkvrvkNZks5EE, 2021-01-25T16:03:30 (Inv4OK,correct,check,)

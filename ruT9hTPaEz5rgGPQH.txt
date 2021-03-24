@@ -1,4 +1,4 @@
-ruT9hTPaEz5rgGPQH (2020-12-22)
+ruT9hTPaEz5rgGPQH (2021-03-24)
 
 * Meta-data
 Challenge name: unknown
@@ -7,13 +7,13 @@ Creation time: 2020-10-28
 Metric catalog: Example metric catalog
 
 * Overall metric statistics
-Total model entries: 1063
-Total executions: 1021
+Total model entries: 1090
+Total executions: 1048
 Total shares: 42
-Total error messages: 211
-Total warning messages: 131
-Total solutions: 810
-Total sessions: 54
+Total error messages: 215
+Total warning messages: 159
+Total solutions: 833
+Total sessions: 56
 Timed out re-executions: 0
 Rejected due to server errors: 3
 Inconsisistent result reports: 0
@@ -27,17 +27,17 @@ Shared models (model)	42
 Shares with warnings	1
 Alloy runtime errors	0
 Shared errored models	0
-Alloy static errors	211
+Alloy static errors	215
 Shared models (instance)	0
-Average session	19.12962962962963
+Average session	18.928571428571427
 Longest session	71
-Sat executions with warnings	94
-Executed errored models	211
-Unsat executions	730
+Sat executions with warnings	102
+Executed errored models	215
+Unsat executions	82
 Unsat executions with warnings	0
 Errored executions with warnings	0
-Average % unsatisfiable	0.1517818619740631
-Sat executions	80
+Average % unsatisfiable	0.14949838949465852
+Sat executions	751
 
 * Overall metrics
 
@@ -50,7 +50,7 @@ Sessions by length
 6	1
 7	3
 8	0
-9	0
+9	1
 10	1
 11	2
 12	1
@@ -59,7 +59,7 @@ Sessions by length
 15	2
 16	0
 17	3
-18	2
+18	3
 19	0
 20	0
 21	2
@@ -116,28 +116,29 @@ Sessions by length
 
 Warnings by type
 - is irrelevant since the right expression is redundant. Parent's relevant type = {_} Left type = {_} Right type = {_}	3
-This variable is unused.	51
+This variable is unused.	55
 Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}	14
 & is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}	2
-The join operation here always yields an empty set. Left type = {_} Right type = {_}	57
+Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}	10
+The join operation here always yields an empty set. Left type = {_} Right type = {_}	71
 ^_ is redundant since its domain and range are disjoint: {_}	1
 == is redundant, because the left and right expressions are always disjoint. Left type = {_} Right type = {_}	3
 
 Sessions by # of solved challenges
 0	25
-1	29
+1	31
 
 Errors by type
 There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	9
 in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	6
-This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	83
+This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	86
 The name _ cannot be found.	34
 This expression failed to be typechecked line _ column _ filename=_.als	3
 There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	8
 This must be a set or relation. Instead, it has the following possible type(s): {_}	10
 There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ 	8
 There are 1 possible tokens that can appear here: = 	1
-= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	1
+= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	2
 The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".	7
 There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	1
 This must be a formula expression. Instead, it has the following possible type(s): {_}	29
@@ -147,36 +148,38 @@ There are 1 possible tokens that can appear here: ) 	3
 There are 3 possible tokens that can appear here: ,  { | 	2
 
 Models by number of warnings
-0	968
-1	75
+0	987
+1	78
 2	10
 3	4
-4	6
+4	7
+5	3
+6	1
 
 * Overall metrics, classified
 
-Execution results by challenge
-m	UNSAT	SAT	
-check$1	80	730	
+Execution results by command
+m	SAT	UNSAT	
+check$1	751	82	
 
 Session results by challenge
 m	solved	unsolved	
-check$1	29	25	
+check$1	31	25	
 
 Model entries over time
-m	ERROR	UNSAT	SAT	SHARE	
-2020-10-28	0	0	4	1	
-2020-10-29	4	1	2	0	
+m	ERROR	SAT	UNSAT	SHARE	
+2020-10-28	0	4	0	1	
+2020-10-29	4	2	1	0	
 2020-10-30	0	0	0	0	
 2020-10-31	0	0	0	0	
 2020-11-01	0	0	0	0	
 2020-11-02	0	0	0	0	
 2020-11-03	0	0	0	0	
-2020-11-04	0	2	49	0	
-2020-11-05	180	63	610	34	
-2020-11-06	6	4	5	3	
-2020-11-07	19	6	53	2	
-2020-11-08	2	1	0	2	
+2020-11-04	0	49	2	0	
+2020-11-05	180	610	63	34	
+2020-11-06	6	5	4	3	
+2020-11-07	19	53	6	2	
+2020-11-08	2	0	1	2	
 2020-11-09	0	0	0	0	
 2020-11-10	0	0	0	0	
 2020-11-11	0	0	0	0	
@@ -187,12 +190,12 @@ m	ERROR	UNSAT	SAT	SHARE
 2020-11-16	0	0	0	0	
 2020-11-17	0	0	0	0	
 2020-11-18	0	0	0	0	
-2020-11-19	0	2	0	0	
+2020-11-19	0	0	2	0	
 2020-11-20	0	0	0	0	
 2020-11-21	0	0	0	0	
 2020-11-22	0	0	0	0	
 2020-11-23	0	0	0	0	
-2020-11-24	0	1	7	0	
+2020-11-24	0	7	1	0	
 2020-11-25	0	0	0	0	
 2020-11-26	0	0	0	0	
 2020-11-27	0	0	0	0	
@@ -221,108 +224,212 @@ m	ERROR	UNSAT	SAT	SHARE
 2020-12-20	0	0	0	0	
 2020-12-21	0	0	0	0	
 2020-12-22	0	0	0	0	
+2020-12-23	0	0	0	0	
+2020-12-24	0	0	0	0	
+2020-12-25	0	0	0	0	
+2020-12-26	0	0	0	0	
+2020-12-27	0	0	0	0	
+2020-12-28	0	0	0	0	
+2020-12-29	0	0	0	0	
+2020-12-30	0	0	0	0	
+2020-12-31	0	0	0	0	
+2021-01-01	0	0	0	0	
+2021-01-02	0	0	0	0	
+2021-01-03	0	0	0	0	
+2021-01-04	0	0	0	0	
+2021-01-05	0	0	0	0	
+2021-01-06	0	0	0	0	
+2021-01-07	0	0	0	0	
+2021-01-08	0	0	0	0	
+2021-01-09	0	0	0	0	
+2021-01-10	0	0	0	0	
+2021-01-11	0	0	0	0	
+2021-01-12	0	0	0	0	
+2021-01-13	4	21	2	0	
+2021-01-14	0	0	0	0	
+2021-01-15	0	0	0	0	
+2021-01-16	0	0	0	0	
+2021-01-17	0	0	0	0	
+2021-01-18	0	0	0	0	
+2021-01-19	0	0	0	0	
+2021-01-20	0	0	0	0	
+2021-01-21	0	0	0	0	
+2021-01-22	0	0	0	0	
+2021-01-23	0	0	0	0	
+2021-01-24	0	0	0	0	
+2021-01-25	0	0	0	0	
+2021-01-26	0	0	0	0	
+2021-01-27	0	0	0	0	
+2021-01-28	0	0	0	0	
+2021-01-29	0	0	0	0	
+2021-01-30	0	0	0	0	
+2021-01-31	0	0	0	0	
+2021-02-01	0	0	0	0	
+2021-02-02	0	0	0	0	
+2021-02-03	0	0	0	0	
+2021-02-04	0	0	0	0	
+2021-02-05	0	0	0	0	
+2021-02-06	0	0	0	0	
+2021-02-07	0	0	0	0	
+2021-02-08	0	0	0	0	
+2021-02-09	0	0	0	0	
+2021-02-10	0	0	0	0	
+2021-02-11	0	0	0	0	
+2021-02-12	0	0	0	0	
+2021-02-13	0	0	0	0	
+2021-02-14	0	0	0	0	
+2021-02-15	0	0	0	0	
+2021-02-16	0	0	0	0	
+2021-02-17	0	0	0	0	
+2021-02-18	0	0	0	0	
+2021-02-19	0	0	0	0	
+2021-02-20	0	0	0	0	
+2021-02-21	0	0	0	0	
+2021-02-22	0	0	0	0	
+2021-02-23	0	0	0	0	
+2021-02-24	0	0	0	0	
+2021-02-25	0	0	0	0	
+2021-02-26	0	0	0	0	
+2021-02-27	0	0	0	0	
+2021-02-28	0	0	0	0	
+2021-03-01	0	0	0	0	
+2021-03-02	0	0	0	0	
+2021-03-03	0	0	0	0	
+2021-03-04	0	0	0	0	
+2021-03-05	0	0	0	0	
+2021-03-06	0	0	0	0	
+2021-03-07	0	0	0	0	
+2021-03-08	0	0	0	0	
+2021-03-09	0	0	0	0	
+2021-03-10	0	0	0	0	
+2021-03-11	0	0	0	0	
+2021-03-12	0	0	0	0	
+2021-03-13	0	0	0	0	
+2021-03-14	0	0	0	0	
+2021-03-15	0	0	0	0	
+2021-03-16	0	0	0	0	
+2021-03-17	0	0	0	0	
+2021-03-18	0	0	0	0	
+2021-03-19	0	0	0	0	
+2021-03-20	0	0	0	0	
+2021-03-21	0	0	0	0	
+2021-03-22	0	0	0	0	
+2021-03-23	0	0	0	0	
+2021-03-24	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 
 Size in 10s of nodes
 
 check$1
-m	UNSAT	SAT	
-3	0	49	
-4	0	162	
-5	0	177	
-6	15	157	
-7	37	50	
-8	8	56	
-9	9	22	
-10	4	32	
-11	0	6	
+m	SAT	UNSAT	
+3	50	0	
+4	170	0	
+5	180	0	
+6	159	15	
+7	55	39	
+8	58	8	
+9	22	9	
+10	32	4	
+11	6	0	
 12	2	2	
-13	1	10	
-14	2	1	
+13	10	1	
+14	1	2	
 15	2	2	
-16	0	2	
-17	0	1	
+16	2	0	
+17	1	0	
 18	0	0	
-19	0	1	
+19	1	0	
+
+Number of quantified variables
+
+check$1
+m	SAT	UNSAT	
+0	135	0	
+1	128	3	
+2	149	3	
+3	118	14	
+4	68	33	
+5	68	8	
+6	19	8	
+7	31	4	
+8	11	2	
+9	3	0	
+10	3	0	
+11	1	2	
+12	7	2	
+13	4	1	
+14	2	2	
+15	1	0	
+16	1	0	
+17	1	0	
+18	0	0	
+19	0	0	
+20	1	0	
 
 Number of binary temporal operators
 
 check$1
-m	UNSAT	SAT	
-0	80	730	
+m	SAT	UNSAT	
+0	751	82	
 
 Max nested temporal operator level
 
 check$1
-m	UNSAT	SAT	
-0	80	730	
+m	SAT	UNSAT	
+0	751	82	
 
 Number of lone/one quantifiers
 
 check$1
-m	UNSAT	SAT	
-0	80	711	
-1	0	16	
-2	0	3	
+m	SAT	UNSAT	
+0	732	82	
+1	16	0	
+2	3	0	
 
 Max nested quantifier level
 
 check$1
-m	UNSAT	SAT	
-0	0	134	
-1	59	450	
-2	20	122	
-3	1	24	
+m	SAT	UNSAT	
+0	135	0	
+1	470	61	
+2	122	20	
+3	24	1	
 
 Number of disj quantifications
 
 check$1
-m	UNSAT	SAT	
-0	74	701	
-1	6	29	
+m	SAT	UNSAT	
+0	715	76	
+1	36	6	
+
+Number of reversed relation navigation
+
+check$1
+m	SAT	UNSAT	
+0	706	75	
+1	21	3	
+2	24	4	
 
 Number multiplicity arrows
 
 check$1
-m	UNSAT	SAT	
-0	73	673	
-1	3	9	
-2	4	48	
+m	SAT	UNSAT	
+0	694	75	
+1	9	3	
+2	48	4	
 
-Number of quantifiers
-
-check$1
-m	UNSAT	SAT	
-0	0	134	
-1	3	120	
-2	3	146	
-3	14	116	
-4	31	68	
-5	8	61	
-6	8	19	
-7	4	31	
-8	2	11	
-9	0	3	
-10	0	3	
-11	2	1	
-12	2	7	
-13	1	4	
-14	2	2	
-15	0	1	
-16	0	1	
-17	0	1	
-18	0	0	
-19	0	0	
-20	0	1	
-
-Number of inverted navigation expressions
+Number of inverted navigation
 
 check$1
-m	UNSAT	SAT	
-0	73	685	
-1	3	21	
-2	4	24	
+m	SAT	UNSAT	
+0	491	15	
+1	162	32	
+2	50	33	
+3	36	0	
+4	10	2	
+5	1	0	
+6	1	0	
 
 * Derivation tree
 ruT9hTPaEz5rgGPQH, 2020-10-28T10:01:08 (model share)
@@ -1391,3 +1498,30 @@ ruT9hTPaEz5rgGPQH, 2020-10-28T10:01:08 (model share)
           F4DHWWTAH7ptBFojB, 2020-11-24T02:46:46 (check$1,incorrect,check,)
             4pdMzS38mziJGXrGc, 2020-11-24T02:47:23 (check$1,incorrect,check,)
               pHfTdmJfe6qjqraDB, 2020-11-24T02:47:34 (check$1,incorrect,check,)
+  WzXHY4Sk9QoDsKyQ2, 2021-01-13T01:23:06 (check$1,incorrect,check,)
+    mps474Bd9Qcu4QXQX, 2021-01-13T01:24:09 (check$1,incorrect,check,)
+      zzFRCdEGrkvyqcidD, 2021-01-13T01:38:51 (check$1,incorrect,check,)
+        wH4R44zSbBasFkmE9, 2021-01-13T01:38:52 (check$1,incorrect,check,)
+          iJpKSq7f3EazRPPtv, 2021-01-13T01:41 (check$1,incorrect,check,)
+            AivkSoX9kyRMXvzEd, 2021-01-13T01:41:33 (check$1,incorrect,check,)
+              WYEFuTvh4n9sJngYQ, 2021-01-13T01:42:44 (check$1,incorrect,check,)
+                amumfXSFck2xPW6Ae, 2021-01-13T01:46:52 (check$1,incorrect,check,)
+                  LAerXz3wpaZXoAXMR, 2021-01-13T01:53:29 (check$1,correct,check,)
+  NNXRPakht2PuJJJWF, 2021-01-13T16:13:01 (check$1,incorrect,check,)
+    bMqe7To4k4dtWq5bw, 2021-01-13T16:13:19 (check$1,incorrect,check,The join operation here always yields an empty set. Left type = {this/Sala->this/Edificio} Right type = {this/Sala})
+      jvoszWhhH89b3or87, 2021-01-13T16:13:27 (check$1,incorrect,check,The join operation here always yields an empty set. Left type = {this/Sala->this/Edificio} Right type = {this/Sala})
+        oxFwpmykAwCktWPax, 2021-01-13T16:13:33 (check$1,incorrect,check,)
+          3uhn4PheW52zcg5vd, 2021-01-13T16:13:50 (check$1,incorrect,check,)
+            rjFZNEA7zAGEoXmXq, 2021-01-13T16:13:53 (check$1,incorrect,check,)
+              hGXH3GBBsvhupFkwh, 2021-01-13T16:16:49 (check$1,incorrect,check,The join operation here always yields an empty set. Left type = {this/Curso} Right type = {this/Sala->this/Edificio})
+                HpxHXf49qdjJGJge6, 2021-01-13T16:16:55 (check$1,incorrect,check,The join operation here always yields an empty set. Left type = {this/Sala->this/Curso} Right type = {this/Sala})
+                  xBjAR6qaAiMumnTtu, 2021-01-13T16:17:09 (This cannot be a legal relational join where left hand side is c (type = {this/Curso}) right hand side is this/Sala (type = {this/Sala}))
+                    kAeSrJrSSDSNnGmBm, 2021-01-13T16:17:15 (check$1,incorrect,check,The join operation here always yields an empty set. Left type = {this/Curso} Right type = {this/Sala->this/Edificio})
+                      kgMk4a2mxwF7LKrcb, 2021-01-13T16:17:20 (check$1,incorrect,check,The join operation here always yields an empty set. Left type = {this/Curso} Right type = {this/Sala->this/Curso})
+                        AMDX4zwKz3KycR5Pq, 2021-01-13T16:18:20 (check$1,incorrect,check,The join operation here always yields an empty set. Left type = {this/Curso} Right type = {this/Sala->this/Edificio})
+                          YKEW6w6CKkhPA2YEu, 2021-01-13T16:20:14 (This cannot be a legal relational join where left hand side is this/Sala (type = {this/Sala}) right hand side is c1 (type = {this/Curso}))
+                            XSrysH9MqbsCxmRDZ, 2021-01-13T16:22 (check$1,incorrect,check,This variable is unused.)
+                              BtmfznC4fEYJSb6Dy, 2021-01-13T16:22:10 (This cannot be a legal relational join where left hand side is this/Sala (type = {this/Sala}) right hand side is c (type = {this/Curso}))
+                                7Wk4g8eGTRyrvwi5j, 2021-01-13T16:23:09 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {this/Curso})
+                                  xhvc85TtBGyQd2w6x, 2021-01-13T16:23:31 (check$1,incorrect,check,)
+                                    scc5eJgiBjA8JcXjD, 2021-01-13T16:24:31 (check$1,correct,check,)

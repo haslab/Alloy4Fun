@@ -1,4 +1,4 @@
-B4PpPK6bW7HJvtwao (2020-12-19)
+B4PpPK6bW7HJvtwao (2021-03-24)
 
 * Meta-data
 Challenge name: unknown
@@ -7,112 +7,140 @@ Creation time: 2020-11-27
 Metric catalog: Example metric catalog
 
 * Overall metric statistics
-Total model entries: 174
-Total executions: 169
-Total shares: 5
-Total error messages: 58
-Total warning messages: 0
-Total solutions: 111
-Total sessions: 17
+Total model entries: 679
+Total executions: 671
+Total shares: 8
+Total error messages: 187
+Total warning messages: 7
+Total solutions: 484
+Total sessions: 67
 Timed out re-executions: 0
 Rejected due to server errors: 0
 Inconsisistent result reports: 0
 Inconsisistent message reports: 0
 Total instance entries: 0
-Total link entries: 6
+Total link entries: 9
 
 * Scalar metrics
-Number of shared sessions	4
-Shared models (model)	5
+Number of shared sessions	7
+Shared models (model)	8
 Shares with warnings	0
 Alloy runtime errors	0
 Shared errored models	0
-Alloy static errors	58
+Alloy static errors	187
 Shared models (instance)	0
-Average session	10.176470588235293
-Models by number of warnings	174
+Average session	9.880597014925373
 Longest session	30
-Sat executions with warnings	0
-Executed errored models	58
-Unsat executions	40
-Unsat executions with warnings	0
+Sat executions with warnings	5
+Executed errored models	187
+Unsat executions	303
+Unsat executions with warnings	1
 Errored executions with warnings	0
-Average % unsatisfiable	0.7013662807780454
-Sat executions	71
+Average % unsatisfiable	0.6988334582084582
+Sat executions	181
 
 * Overall metrics
 
 Sessions by length
-4	3
-5	1
-6	1
-7	0
-8	3
-9	3
-10	0
-11	0
-12	2
-13	0
+2	2
+3	4
+4	5
+5	6
+6	9
+7	2
+8	8
+9	8
+10	2
+11	1
+12	4
+13	1
 14	2
-15	0
+15	2
 16	0
-17	1
+17	2
 18	0
-19	0
-20	0
-21	0
+19	1
+20	3
+21	1
 22	0
-23	0
+23	1
 24	0
 25	0
-26	0
+26	1
 27	0
 28	0
-29	0
+29	1
 30	1
 
+Warnings by type
+Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}	1
+This variable is unused.	3
+Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}	1
+& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}	1
+^_ is redundant since its domain and range are disjoint: {_}	1
+
 Sessions by # of solved challenges
-2	5
-3	2
-4	10
+0	1
+1	5
+2	7
+3	16
+4	38
 
 Errors by type
-There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	6
-in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	1
-The name _ cannot be found.	8
-This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	3
-This must be an integer expression. Instead, it has the following possible type(s): {_}	9
-There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	4
-This must be a set or relation. Instead, it has the following possible type(s): {_}	2
-There are 5 possible tokens that can appear here: enum fun let open pred 	1
-There are 1 possible tokens that can appear here: ] 	1
+There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	7
+There are 1 possible tokens that can appear here: ] 	3
+There are 5 possible tokens that can appear here: enum fun let open pred 	2
 There are 3 possible tokens that can appear here: NAME seq this 	1
-= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	1
-The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".	4
-This must be a formula expression. Instead, it has the following possible type(s): {_}	9
-There are 8 possible tokens that can appear here: NAME disj exh part private seq this var 	1
-There are 1 possible tokens that can appear here: ) 	3
-There are 3 possible tokens that can appear here: ,  { | 	4
+Name cannot be resolved; possible incorrect function/predicate call; perhaps you used(_) when you should have used [ ]  _ left hand side is _(_) right hand side is _(_)  _ left hand side is _(_) right hand side is _(_) 	6
+= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	2
+The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".	5
+This must be a formula expression. Instead, it has the following possible type(s): {_}	19
+There are 8 possible tokens that can appear here: NAME disj exh part private seq this var 	3
+!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	5
+Syntax error at the ? character. HEX: \ud83d)	1
+There are 1 possible tokens that can appear here: ) 	7
+^ can be used only with a binary relation. Instead, its possible type(s) are: {_}	4
+in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	2
+This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	24
+The name _ cannot be found.	35
+This expression failed to be typechecked line _ column _ filename=_.als	1
+& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	1
+This must be an integer expression. Instead, it has the following possible type(s): {_}	21
+There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	5
+This must be a set or relation. Instead, it has the following possible type(s): {_}	12
+ This name is ambiguous due to multiple matches: _ _ 	6
+There are 7 possible tokens that can appear here: abstract lone one private sig some var 	2
+There are 1 possible tokens that can appear here: { 	3
+Name cannot be resolved; possible incorrect function/predicate call; perhaps you used(_) when you should have used [ ]  _ The parameters are  _   _ so the arguments cannot be  _   _  This cannot be a correct call to _ The parameters are  _   _ so the arguments cannot be  _   _ 	5
+There are 3 possible tokens that can appear here: ,  { | 	5
+
+Models by number of warnings
+0	673
+1	5
+2	1
 
 * Overall metrics, classified
 
-Execution results by challenge
-m	UNSAT	SAT	
-Inv1OK	18	2	
-Inv2OK	19	22	
-Inv3OK	17	7	
-Inv4OK	17	9	
+Execution results by command
+m	SAT	UNSAT	
+Inv1OK	23	104	
+Inv2OK	91	68	
+Inv3OK	24	72	
+Inv4OK	38	58	
+Inv4	1	0	
+Inv2	1	0	
+show	3	1	
 
 Session results by challenge
 m	solved	unsolved	
-Inv1OK	15	2	
-Inv2OK	15	2	
-Inv3OK	14	3	
-Inv4OK	12	5	
+Inv1OK	62	5	
+Inv2OK	57	10	
+Inv3OK	58	9	
+Inv4OK	42	25	
 
 Model entries over time
-m	UNSAT	SAT	SHARE	ERROR	
-2020-11-27	0	0	1	0	
+m	SAT	ERROR	UNSAT	SHARE	
+2020-11-27	0	0	0	1	
 2020-11-28	0	0	0	0	
 2020-11-29	0	0	0	0	
 2020-11-30	0	0	0	0	
@@ -123,8 +151,8 @@ m	UNSAT	SAT	SHARE	ERROR
 2020-12-05	0	0	0	0	
 2020-12-06	0	0	0	0	
 2020-12-07	0	0	0	0	
-2020-12-08	5	6	1	0	
-2020-12-09	66	34	3	58	
+2020-12-08	6	0	5	1	
+2020-12-09	34	58	66	3	
 2020-12-10	0	0	0	0	
 2020-12-11	0	0	0	0	
 2020-12-12	0	0	0	0	
@@ -134,7 +162,102 @@ m	UNSAT	SAT	SHARE	ERROR
 2020-12-16	0	0	0	0	
 2020-12-17	0	0	0	0	
 2020-12-18	0	0	0	0	
-2020-12-19	0	0	0	0	
+2020-12-19	0	0	5	0	
+2020-12-20	0	0	0	0	
+2020-12-21	0	0	0	0	
+2020-12-22	0	0	0	0	
+2020-12-23	0	0	0	0	
+2020-12-24	0	0	0	0	
+2020-12-25	0	0	0	0	
+2020-12-26	0	2	4	0	
+2020-12-27	7	8	10	0	
+2020-12-28	17	5	14	0	
+2020-12-29	5	9	13	0	
+2020-12-30	2	3	5	0	
+2020-12-31	9	4	11	1	
+2021-01-01	5	17	18	0	
+2021-01-02	7	6	12	0	
+2021-01-03	11	7	21	1	
+2021-01-04	6	8	11	0	
+2021-01-05	3	5	8	0	
+2021-01-06	5	16	12	1	
+2021-01-07	22	12	28	0	
+2021-01-08	32	14	38	0	
+2021-01-09	3	2	9	0	
+2021-01-10	0	0	0	0	
+2021-01-11	0	0	0	0	
+2021-01-12	0	0	0	0	
+2021-01-13	0	0	0	0	
+2021-01-14	0	0	0	0	
+2021-01-15	0	0	0	0	
+2021-01-16	0	0	0	0	
+2021-01-17	0	0	0	0	
+2021-01-18	0	0	0	0	
+2021-01-19	0	0	0	0	
+2021-01-20	0	0	0	0	
+2021-01-21	0	0	0	0	
+2021-01-22	0	0	0	0	
+2021-01-23	0	0	0	0	
+2021-01-24	0	0	0	0	
+2021-01-25	7	11	13	0	
+2021-01-26	0	0	0	0	
+2021-01-27	0	0	0	0	
+2021-01-28	0	0	0	0	
+2021-01-29	0	0	0	0	
+2021-01-30	0	0	0	0	
+2021-01-31	0	0	0	0	
+2021-02-01	0	0	0	0	
+2021-02-02	0	0	0	0	
+2021-02-03	0	0	0	0	
+2021-02-04	0	0	0	0	
+2021-02-05	0	0	0	0	
+2021-02-06	0	0	0	0	
+2021-02-07	0	0	0	0	
+2021-02-08	0	0	0	0	
+2021-02-09	0	0	0	0	
+2021-02-10	0	0	0	0	
+2021-02-11	0	0	0	0	
+2021-02-12	0	0	0	0	
+2021-02-13	0	0	0	0	
+2021-02-14	0	0	0	0	
+2021-02-15	0	0	0	0	
+2021-02-16	0	0	0	0	
+2021-02-17	0	0	0	0	
+2021-02-18	0	0	0	0	
+2021-02-19	0	0	0	0	
+2021-02-20	0	0	0	0	
+2021-02-21	0	0	0	0	
+2021-02-22	0	0	0	0	
+2021-02-23	0	0	0	0	
+2021-02-24	0	0	0	0	
+2021-02-25	0	0	0	0	
+2021-02-26	0	0	0	0	
+2021-02-27	0	0	0	0	
+2021-02-28	0	0	0	0	
+2021-03-01	0	0	0	0	
+2021-03-02	0	0	0	0	
+2021-03-03	0	0	0	0	
+2021-03-04	0	0	0	0	
+2021-03-05	0	0	0	0	
+2021-03-06	0	0	0	0	
+2021-03-07	0	0	0	0	
+2021-03-08	0	0	0	0	
+2021-03-09	0	0	0	0	
+2021-03-10	0	0	0	0	
+2021-03-11	0	0	0	0	
+2021-03-12	0	0	0	0	
+2021-03-13	0	0	0	0	
+2021-03-14	0	0	0	0	
+2021-03-15	0	0	0	0	
+2021-03-16	0	0	0	0	
+2021-03-17	0	0	0	0	
+2021-03-18	0	0	0	0	
+2021-03-19	0	0	0	0	
+2021-03-20	0	0	0	0	
+2021-03-21	0	0	0	0	
+2021-03-22	0	0	0	0	
+2021-03-23	0	0	0	0	
+2021-03-24	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 
@@ -142,191 +265,230 @@ Size in 10s of nodes
 
 Inv1OK
 m	SAT	UNSAT	
-7	2	0	
-8	0	18	
+7	17	0	
+8	6	102	
+9	0	2	
 
 Inv2OK
-m	UNSAT	SAT	
-7	1	0	
-8	0	0	
-9	17	21	
-10	1	0	
-11	0	1	
+m	SAT	UNSAT	
+7	2	3	
+8	1	0	
+9	81	63	
+10	3	2	
+11	2	0	
+12	1	0	
+13	1	0	
 
 Inv3OK
 m	SAT	UNSAT	
-8	2	3	
-9	2	3	
-10	3	11	
+7	1	0	
+8	5	18	
+9	8	25	
+10	7	28	
+11	3	1	
 
 Inv4OK
 m	SAT	UNSAT	
-11	6	0	
-12	1	15	
-13	2	2	
+10	6	0	
+11	15	0	
+12	13	44	
+13	4	12	
+14	0	2	
+
+Number of quantified variables
+
+Inv1OK
+m	SAT	UNSAT	
+0	20	3	
+1	0	0	
+2	3	101	
+
+Inv2OK
+m	SAT	UNSAT	
+0	2	3	
+1	0	0	
+2	80	64	
+3	0	0	
+4	9	1	
+
+Inv3OK
+m	SAT	UNSAT	
+0	3	18	
+1	0	0	
+2	13	25	
+3	0	0	
+4	7	28	
+5	0	0	
+6	1	1	
+
+Inv4OK
+m	SAT	UNSAT	
+0	3	0	
+1	0	0	
+2	17	29	
+3	0	0	
+4	16	27	
+5	0	0	
+6	2	2	
 
 Number of binary temporal operators
 
 Inv1OK
-m	UNSAT	SAT	
-0	18	2	
+m	SAT	UNSAT	
+0	23	104	
 
 Inv2OK
 m	SAT	UNSAT	
-0	22	19	
+0	91	68	
 
 Inv3OK
-m	UNSAT	SAT	
-0	17	7	
+m	SAT	UNSAT	
+0	24	72	
 
 Inv4OK
-m	UNSAT	SAT	
-0	17	9	
+m	SAT	UNSAT	
+0	38	58	
 
 Max nested temporal operator level
 
 Inv1OK
-m	UNSAT	SAT	
-0	18	2	
+m	SAT	UNSAT	
+0	23	104	
 
 Inv2OK
 m	SAT	UNSAT	
-0	22	19	
+0	91	68	
 
 Inv3OK
-m	UNSAT	SAT	
-0	17	7	
+m	SAT	UNSAT	
+0	24	72	
 
 Inv4OK
-m	UNSAT	SAT	
-0	17	9	
+m	SAT	UNSAT	
+0	38	58	
 
 Number of lone/one quantifiers
 
 Inv1OK
-m	UNSAT	SAT	
-0	18	2	
+m	SAT	UNSAT	
+0	23	104	
 
 Inv2OK
 m	SAT	UNSAT	
-0	22	19	
+0	91	68	
 
 Inv3OK
-m	UNSAT	SAT	
-0	17	6	
+m	SAT	UNSAT	
+0	23	72	
 1	0	0	
-2	0	1	
+2	1	0	
 
 Inv4OK
-m	UNSAT	SAT	
-0	17	9	
+m	SAT	UNSAT	
+0	38	58	
 
 Max nested quantifier level
 
 Inv1OK
 m	SAT	UNSAT	
-0	2	0	
-1	0	18	
+0	20	3	
+1	3	101	
 
 Inv2OK
-m	UNSAT	SAT	
-0	1	0	
-1	18	22	
+m	SAT	UNSAT	
+0	2	3	
+1	86	64	
+2	3	1	
 
 Inv3OK
 m	SAT	UNSAT	
-0	1	3	
-1	3	3	
-2	3	11	
+0	3	18	
+1	13	25	
+2	7	28	
+3	1	1	
 
 Inv4OK
-m	UNSAT	SAT	
-1	8	9	
-2	9	0	
+m	SAT	UNSAT	
+0	3	0	
+1	21	32	
+2	13	24	
+3	1	2	
 
 Number of disj quantifications
 
 Inv1OK
-m	UNSAT	SAT	
-0	18	2	
+m	SAT	UNSAT	
+0	23	104	
 
 Inv2OK
 m	SAT	UNSAT	
-0	22	19	
+0	86	68	
+1	0	0	
+2	5	0	
 
 Inv3OK
-m	UNSAT	SAT	
-0	17	7	
+m	SAT	UNSAT	
+0	24	72	
 
 Inv4OK
-m	UNSAT	SAT	
-0	17	9	
+m	SAT	UNSAT	
+0	38	58	
+
+Number of reversed relation navigation
+
+Inv1OK
+m	SAT	UNSAT	
+0	23	104	
+
+Inv2OK
+m	SAT	UNSAT	
+0	91	68	
+
+Inv3OK
+m	SAT	UNSAT	
+0	24	72	
+
+Inv4OK
+m	SAT	UNSAT	
+0	38	58	
 
 Number multiplicity arrows
 
 Inv1OK
-m	UNSAT	SAT	
-0	18	2	
+m	SAT	UNSAT	
+0	23	101	
+1	0	0	
+2	0	3	
 
 Inv2OK
 m	SAT	UNSAT	
-0	22	19	
+0	91	68	
 
 Inv3OK
-m	UNSAT	SAT	
-0	17	7	
+m	SAT	UNSAT	
+0	24	72	
 
 Inv4OK
-m	UNSAT	SAT	
-0	17	9	
+m	SAT	UNSAT	
+0	38	58	
 
-Number of quantifiers
+Number of inverted navigation
 
 Inv1OK
 m	SAT	UNSAT	
-0	2	0	
-1	0	0	
-2	0	18	
-
-Inv2OK
-m	UNSAT	SAT	
-0	1	0	
-1	0	0	
-2	18	21	
-3	0	0	
-4	0	1	
-
-Inv3OK
-m	SAT	UNSAT	
-0	1	3	
-1	0	0	
-2	3	3	
-3	0	0	
-4	3	11	
-
-Inv4OK
-m	UNSAT	SAT	
-2	6	6	
-3	0	0	
-4	11	3	
-
-Number of inverted navigation expressions
-
-Inv1OK
-m	UNSAT	SAT	
-0	18	2	
+0	23	104	
 
 Inv2OK
 m	SAT	UNSAT	
-0	22	19	
+0	91	68	
 
 Inv3OK
-m	UNSAT	SAT	
-0	17	7	
+m	SAT	UNSAT	
+0	24	72	
 
 Inv4OK
-m	UNSAT	SAT	
-0	17	9	
+m	SAT	UNSAT	
+0	38	58	
 
 * Derivation tree
 B4PpPK6bW7HJvtwao, 2020-11-27T15:28:19 (model share)
@@ -344,6 +506,27 @@ B4PpPK6bW7HJvtwao, 2020-11-27T15:28:19 (model share)
                         Yz3A9cwB5vPCpm7WQ, 2020-12-08T18:52 (model share)
                           F5vjsyDaPcYjWBtM3, 2020-12-09T11:35:48 (There are 3 possible tokens that can appear here: NAME seq this)
                             45RLiDuY2fyFThjnX, 2020-12-09T11:36:33 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                          NkdrrLDPmYsb3BewB, 2020-12-29T17:48:37 (Inv1OK,correct,check,)
+                          x5HKG2P88t5nEujdm, 2021-01-01T12:25:34 (Inv1OK,correct,check,)
+                          ZjFBSg6gTHusEMQr2, 2021-01-01T14:15:39 (Inv1OK,correct,check,)
+                            6ZAFwZo7dfY9K7b57, 2021-01-01T14:16:07 (Inv1OK,correct,check,)
+                              FzjpwDuELhvuD6TWz, 2021-01-01T14:16:18 (Inv1OK,correct,check,)
+                                dDaNwJ2RgkfG5dx57, 2021-01-01T14:16:27 (Inv3OK,correct,check,)
+                                  Gk67MKtTD4FJToG2X, 2021-01-01T14:16:32 (Inv3OK,incorrect,check,)
+                                    SsKDk3BbWWEZNaMo8, 2021-01-01T14:16:40 (Inv4OK,correct,check,)
+                                      vaDvFFfCbcdsSK96u, 2021-01-01T14:16:44 (Inv4OK,correct,check,)
+                                        gig5eW4qr4pePsHWQ, 2021-01-01T14:16:51 (Inv4OK,correct,check,)
+                          2MW7boJQuF9HRnYw7, 2021-01-03T15:35:54 (Inv1OK,correct,check,)
+                            4Exzm8rm9hjS39JPs, 2021-01-03T15:40:06 (Inv3OK,correct,check,)
+                          Kxry7ypbShiutG2s8, 2021-01-03T15:36:59 (Inv2OK,correct,check,)
+                            fvxnRorGF5mJQNKgk, 2021-01-03T16:13:16 (Inv1OK,correct,check,)
+                          R8pNurHuna3KxKxeA, 2021-01-03T16:26:57 (Inv1OK,correct,check,)
+                            DF3sK7z8CrXzMc2Hu, 2021-01-03T16:27:11 (Inv1OK,correct,check,)
+                          3JaS8y4zdfDuZLrRe, 2021-01-06T17:20:53 (Inv1OK,correct,check,)
+                          3zRn6yRtJYacTXHrd, 2021-01-06T21:33:13 (Inv4OK,correct,check,)
+                          5RFw2M5E6R8ozRhyr, 2021-01-07T10:27:35 (Inv4OK,correct,check,)
+                          t59Y8pH5vppvMuuaw, 2021-01-08T00:52:33 (Inv4OK,correct,check,)
+                            WFTja6q3bZnDGcS9q, 2021-01-08T00:53:39 (Inv4OK,correct,check,)
   6SB5YheXf64CMomdW, 2020-12-09T10:13:46 (Inv1OK,incorrect,check,)
     33ZPZL3MyR9ucc5BX, 2020-12-09T10:14:21 (Inv1OK,incorrect,check,)
       NHEf2TFGiYeKTWoKh, 2020-12-09T10:15:02 (Inv1OK,correct,check,)
@@ -430,6 +613,7 @@ B4PpPK6bW7HJvtwao, 2020-11-27T15:28:19 (model share)
               5GgWyq6sXB42Awmw2, 2020-12-09T10:54:54 (model share)
                 heC6tLjRdkufFAWCo, 2020-12-09T12:41:58 (Inv4OK,correct,check,)
                   2mJrg8dui2h2xF6LH, 2020-12-09T12:42:02 (Inv4OK,correct,check,)
+                TPa7p7DAXS3j5mrtD, 2021-01-07T17:55:32 (Inv1OK,correct,check,)
   ETKSySiwDhXdXcjmP, 2020-12-09T10:18:30 (Inv1OK,correct,check,)
     6y4jY3mGrqAGtqLK4, 2020-12-09T10:19:36 (in can be used only between 2 expressions of the same arity. Left type = {this/Component} Right type = {this/Component->this/Product})
       XXHAzM6xxtWeKAgMr, 2020-12-09T10:19:56 (Inv2OK,correct,check,)
@@ -503,3 +687,486 @@ B4PpPK6bW7HJvtwao, 2020-11-27T15:28:19 (model share)
         2Mvwye7HzZimLHBxe, 2020-12-09T12:42:26 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
           cLFbRAPvEFCa8N56Q, 2020-12-09T12:42:56 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
             cyLrmHu4yZkk4tnYF, 2020-12-09T12:43:23 (Inv4OK,correct,check,)
+  huKentSFjeQMQENuJ, 2020-12-19T22:12:05 (Inv1OK,correct,check,)
+    aSctTnvDcpP8x87JK, 2020-12-19T22:12:29 (Inv1OK,correct,check,)
+      RMtoWzDXDfXYcvjbK, 2020-12-19T22:12:49 (Inv1OK,correct,check,)
+        ZnAMnfDLZkpwRecrq, 2020-12-19T22:13:53 (Inv1OK,correct,check,)
+          FKZR22Du9ePDSNjGR, 2020-12-19T22:16 (Inv1OK,correct,check,)
+  dG9vzN5z3ehFn4KTg, 2020-12-26T23:54:46 (Inv1OK,correct,check,)
+    vkWQJgNkRCZQKFdcg, 2020-12-26T23:56:40 (Inv2OK,correct,check,)
+      fYrJZAhqjEym7jHRX, 2020-12-27T00:02:45 (Inv3OK,correct,check,)
+        tjMhkjkek3EMEMHvD, 2020-12-27T00:11:34 (There are 1 possible tokens that can appear here: ))
+          vFPwBgyBefKji3rXj, 2020-12-27T00:11:50 (Inv4OK,correct,check,)
+  f4gG9YdXrxGMp8zdX, 2020-12-26T23:58:01 (Inv1OK,correct,check,)
+    wQH9JeuBm7CxnPgqv, 2020-12-26T23:58:40 (The name "Components" cannot be found.)
+      EnD9TBZAa6MdTyHLT, 2020-12-26T23:58:47 (The name "Components" cannot be found.)
+        odvAXGE7XR9sJrxsE, 2020-12-26T23:58:53 (Inv2OK,correct,check,)
+          jrYqQwKDJMy4x98b7, 2020-12-27T00:00:08 (Inv3OK,correct,check,)
+            4g4ZJ9MCDLvekaK69, 2020-12-27T00:01:31 (Inv4OK,correct,check,)
+  FXWmsEagNCFbv5N3z, 2020-12-27T17:30:09 (The name "Compoment" cannot be found.)
+    SCQZbuBZyS86J7TzG, 2020-12-27T17:30:19 (Inv1OK,incorrect,check,)
+      tLa8ginS5KbWWDB2B, 2020-12-27T17:31:27 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+        rFTz5iYNbzeqPe77t, 2020-12-27T17:31:46 (Inv1OK,correct,check,)
+          qLNHYCHcHxLN8iboe, 2020-12-27T17:34:06 (Inv1OK,correct,check,)
+            jnPQHrRdaDfXMms5a, 2020-12-27T17:34:09 (Inv2OK,incorrect,check,)
+              4DSA9nebtLDcxkh4r, 2020-12-27T17:34:40 (Inv2OK,incorrect,check,)
+                uC24cvFcxmaS9oGbc, 2020-12-27T17:35:06 (!in can be used only between 2 expressions of the same arity. Left type = {this/Component} Right type = {univ->univ})
+                  sBDG2Gx4TrmoE9jAk, 2020-12-27T17:35:17 (Inv2OK,incorrect,check,)
+                    TXx4u2pK2y6LkKaqf, 2020-12-27T17:36:12 (Inv2OK,incorrect,check,)
+                      mWTwHtnczgmHtJjBw, 2020-12-27T17:36:33 (Inv2OK,incorrect,check,)
+                        6WYaihqJLksgrXYWW, 2020-12-27T17:36:44 (Inv2OK,correct,check,)
+                          PqnJLpF4DcPPqSYFs, 2020-12-27T17:39:06 (The name "positin" cannot be found.)
+                            ztyF7ya8oksLmsqGn, 2020-12-27T17:39:24 (Inv2OK,correct,check,)
+                              hFyukFMEqyhk47245, 2020-12-27T17:39:27 (Inv3OK,incorrect,check,)
+                                janPkdNuvKkbxdvCW, 2020-12-27T17:39:43 (The name "somec" cannot be found.)
+                                  LvneAvYMrk8Eget6F, 2020-12-27T17:39:48 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                    cC7NdvkSFXBL2hMRh, 2020-12-27T17:40:03 (Inv3OK,correct,check,)
+                                      FpFuEwAdato8CCgNR, 2020-12-27T18:22:55 (There are 1 possible tokens that can appear here: ))
+                                        C8FgJpQy3vBZHiHvQ, 2020-12-27T18:23:17 (Inv4OK,correct,check,)
+  LnJAbTKuqwv6p6Giv, 2020-12-28T14:40:51 (Inv1OK,correct,check,)
+    j3NfuqttysctX5t8H, 2020-12-28T14:41:21 (Inv1OK,correct,check,)
+      JWJyeYMx7JDkDNByx, 2020-12-28T14:41:23 (Inv2OK,incorrect,check,)
+        AAzC35iGnWFtqD4gz, 2020-12-28T14:42:06 (Inv2OK,correct,check,)
+          ujPYEoE26aT8kAcaH, 2020-12-28T14:43:42 (Inv3OK,correct,check,)
+            obo36jXqJzFnCDu6R, 2020-12-28T14:46:50 (Inv3OK,correct,check,)
+              3TnuuWPTvoexvK5Zi, 2020-12-28T14:46:53 (Inv4OK,incorrect,check,)
+                PYHRFjtF2YeNWbva9, 2020-12-28T14:47:16 (Inv4OK,incorrect,check,)
+                  FNutwewhNazTTEY2K, 2020-12-28T14:47:21 (Inv4OK,incorrect,check,)
+                    uNjLJ6CKc9StfpqcG, 2020-12-28T14:51:23 (Inv4OK,incorrect,check,)
+                      KRbCmH66RZsde5pJL, 2020-12-28T14:52:17 (Inv4OK,incorrect,check,)
+                        7at7HWmKkpyCzvHzN, 2020-12-28T14:53:13 (Inv4OK,incorrect,check,)
+                          KsDKhNhhvdDjy8a9i, 2020-12-28T14:53:19 (This must be a formula expression. Instead, it has the following possible type(s): {this/Position})
+                            YggmJsJ7bSTvNfLPT, 2020-12-28T14:53:24 (Inv4OK,incorrect,check,)
+                              a9mf52PDSssAyXRFg, 2020-12-28T14:55:02 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+                                8Cr66hpQNxR58roMn, 2020-12-28T14:58:21 (This must be a formula expression. Instead, it has the following possible type(s): {this/Position})
+                                  rgfaJTttqswgPBPZf, 2020-12-28T15:08:25 (There are 1 possible tokens that can appear here: ))
+                                    2snrFPoGiAk5jTssp, 2020-12-28T15:08:41 (Inv4OK,incorrect,check,)
+                                      6vqyRg5mg8QYJQuTB, 2020-12-28T15:09:12 (Inv4OK,correct,check,)
+  iF37EKpTuY4N87fCr, 2020-12-28T14:40:56 (Inv1OK,correct,check,)
+    s28oxn72eZAeD8vkJ, 2020-12-28T14:41:20 (Inv2OK,incorrect,check,)
+      SSmH2jporypjbcJgj, 2020-12-28T14:42:50 (Inv2OK,incorrect,check,)
+        dx5mfSDJttSCatAqX, 2020-12-28T14:44:05 (Inv2OK,incorrect,check,)
+          qMfpSCzFcoNpn6bnm, 2020-12-28T14:44:41 (Inv2OK,correct,check,)
+            6EBaSgJHGNcoghSKi, 2020-12-28T14:49:03 (Inv3OK,incorrect,check,)
+              2SZgHjjSmshysqy5B, 2020-12-28T14:50:43 (Inv3OK,correct,check,)
+                Fossb6CgmeDasLsht, 2020-12-28T14:52:27 (Inv4OK,incorrect,check,)
+                  hebkRyNHnHsquGsJk, 2020-12-28T14:53 (Inv4OK,incorrect,check,)
+                    Z3FoCnCucf5sN7drL, 2020-12-28T15:00:15 (Inv4OK,correct,check,)
+                      S2yMhWg295XAswXiv, 2020-12-28T15:10:25 (Inv4OK,incorrect,check,)
+  erSsm3ybk8MXoWdPc, 2020-12-28T16:48:45 (Inv1OK,correct,check,)
+    GTByr9fmcERsfGTJQ, 2020-12-28T16:49:05 (Inv2OK,incorrect,check,)
+      522nRkc59Gs4SewLP, 2020-12-28T16:49:16 (Inv2OK,correct,check,)
+        6RzuGTXvmmCD4WL8Y, 2020-12-28T16:50:24 (Inv3OK,correct,check,)
+          twa7Nn2ErcHWmxQHM, 2020-12-28T16:51:50 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+            Nou2dPXGRLNvh6XXc, 2020-12-28T16:52:38 (Inv4OK,correct,check,)
+  7G93u7hqZZenAZ6Gi, 2020-12-29T16:40 (There are 3 possible tokens that can appear here: ,  { |)
+    SSEEPBERfZNmQ9Tim, 2020-12-29T16:40:05 (Inv1OK,correct,check,)
+      c6JBGjPBxQZXMuFde, 2020-12-29T16:42:08 (Inv2OK,correct,check,)
+        Fm2EtmL9H2KQA4Pmq, 2020-12-29T16:43:06 (This cannot be a legal relational join where left hand side is this/Component (type = {this/Component}) right hand side is this/Position (type = {this/Position}))
+          LYQWiXWbbWjThGKom, 2020-12-29T16:43:27 (Inv3OK,correct,check,)
+            EabjQEfYGkrTRdBuP, 2020-12-29T16:48:34 (There are 1 possible tokens that can appear here: ))
+              728h4js697zLYdJ2z, 2020-12-29T16:48:43 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a correct call to pred integer/lte. The parameters are   n1: {Int}   n2: {Int} so the arguments cannot be   c (type = {this/Component})   p (type = {this/Product})  This cannot be a correct call to pred ordering/lte. The parameters are   e1: {this/Position}   e2: {this/Position} so the arguments cannot be   c (type = {this/Component})   p (type = {this/Product}))
+                FHdC3gH5fGHLBieAX, 2020-12-29T16:56 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a correct call to pred integer/lte. The parameters are   n1: {Int}   n2: {Int} so the arguments cannot be   c (type = {this/Component})   p (type = {this/Product})  This cannot be a correct call to pred ordering/lte. The parameters are   e1: {this/Position}   e2: {this/Position} so the arguments cannot be   c (type = {this/Component})   p (type = {this/Product}))
+                  KdScGCuhtpZxtFypg, 2020-12-29T16:56:15 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a correct call to pred integer/lt. The parameters are   n1: {Int}   n2: {Int} so the arguments cannot be   c (type = {this/Component})   p (type = {this/Product})  This cannot be a correct call to pred ordering/lt. The parameters are   e1: {this/Position}   e2: {this/Position} so the arguments cannot be   c (type = {this/Component})   p (type = {this/Product}))
+                    tQbcj92nvpqagsBF6, 2020-12-29T16:56:48 (Inv4OK,incorrect,check,)
+                      Ds9FbRRxHzDL7g4e2, 2020-12-29T16:57:01 (Inv4OK,incorrect,check,)
+                        Lwk29uJXGiNvTk7gp, 2020-12-29T16:57:27 (Inv4OK,correct,check,)
+  H92KonNsCA2DQjBc4, 2020-12-29T17:40:13 (Inv1OK,correct,check,)
+    a4249jQKutYq8pPaP, 2020-12-29T17:40:29 (Inv2OK,incorrect,check,)
+      anEEhGH4jJSqwaJaT, 2020-12-29T17:41:03 (Inv2OK,correct,check,)
+        qvuaG6E6Dkmo4BKDx, 2020-12-29T17:41:32 (Inv3OK,correct,check,)
+          NLHerMP9YoHAtMmCr, 2020-12-29T17:43:04 (Inv4OK,incorrect,check,)
+            igJTEtbG9B7myw3nB, 2020-12-29T17:48:46 (Inv4OK,correct,check,)
+  MKchvbd7SP9ZEJgxk, 2020-12-29T22:35:08 (in can be used only between 2 expressions of the same arity. Left type = {this/Component->this/Product} Right type = {this/Component})
+    AHLisojuisXfMY3bN, 2020-12-29T22:35:47 (The name "Components" cannot be found.)
+      3gHcroTPrxn6tsDce, 2020-12-29T22:35:55 (Inv1OK,correct,check,)
+        tSMY748M7H2wAf3Fq, 2020-12-29T22:36:34 (Inv2OK,incorrect,check,)
+          Y4LDf8cSGxe7taqCX, 2020-12-29T22:36:47 (The name "ˆparts" cannot be found.)
+            bxFkT9mA78YxazWRv, 2020-12-29T22:37:03 (Inv2OK,correct,check,)
+              77f89qR6FdspACbwK, 2020-12-29T22:38:22 (Inv3OK,correct,check,)
+                MuMHjarC5nDgHyonH, 2020-12-29T22:39:04 (Inv4OK,correct,check,)
+  WhwhAPZnJosETRAgC, 2020-12-30T16:54:23 (Inv1OK,incorrect,check,)
+    fqPXY8HNNkuLAxAbY, 2020-12-30T16:55:02 (Inv1OK,correct,check,)
+      8fG62tAXT37r9CEsg, 2020-12-30T16:55:31 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/Component})
+        9bsCKsHH3qRkacfsE, 2020-12-30T16:55:37 (Inv2OK,incorrect,check,)
+          EA4tEYjdH3A3CZAWp, 2020-12-30T16:56:04 (Inv2OK,correct,check,)
+            2DyEBNunqoS4ibg5k, 2020-12-30T16:59:23 (Inv3OK,correct,check,)
+              6rPPi7gCAY2BdgG88, 2020-12-30T16:59:53 (This must be an integer expression. Instead, it has the following possible type(s): {this/Component->this/Position})
+                bedTPBqsQktgEwX9o, 2020-12-30T17:00:38 (This must be a formula expression. Instead, it has the following possible type(s): {this/Component->this/Position})
+                  MZStLDnAMwzvArYvp, 2020-12-30T17:01:13 (Inv4OK,correct,check,)
+                    r4bNaZuhHpsseaguX, 2020-12-30T17:01:22 (Inv3OK,correct,check,)
+  5actPKBYHjL3Jbspp, 2020-12-31T00:10:31 (Inv1OK,incorrect,check,)
+    iv8Sy97KeHH83Lf2B, 2020-12-31T00:10:42 (Inv1OK,correct,check,)
+      HBBfTHZJGkxsWaiHK, 2020-12-31T00:11:08 (Inv2OK,incorrect,check,)
+        KqomgYc5TYLCjTeZN, 2020-12-31T00:11:29 (Inv2OK,incorrect,check,)
+          rFDRTE7gJdQMpqYoi, 2020-12-31T00:11:54 (Inv2OK,incorrect,check,)
+            kLFnC7ebJMny52nDw, 2020-12-31T00:12 (Inv2OK,correct,check,)
+              xQjdFx5AB8SkTcgb3, 2020-12-31T00:13:18 (Inv3OK,correct,check,)
+                WJEsL7LqPk8ckgvv8, 2020-12-31T00:15:19 (Inv4OK,correct,check,)
+  6S77Gg2BFdWJZDByc, 2020-12-31T11:22:56 (Inv1OK,incorrect,check,)
+    homK5xWcPxtoQy2gY, 2020-12-31T11:23:43 (Inv1OK,incorrect,check,)
+      WviiwEKJNdqyn6oLB, 2020-12-31T11:24:12 (Inv1OK,correct,check,)
+        LzbAzGQnNxZoRAKfu, 2020-12-31T11:24:21 (Inv1OK,incorrect,check,)
+          Kijm4bnmqAPQSP2xr, 2020-12-31T11:24:40 (Inv1OK,correct,check,)
+            W3x9pb4Lamseucsdf, 2020-12-31T11:25:40 (Inv2OK,incorrect,check,)
+              y8SqdSrRSFJuT9pJE, 2020-12-31T11:27:14 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/Product})
+                xC5XTD47FNSCo9iBJ, 2020-12-31T11:27:38 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/Product})
+                  Eyk7Yz9mpsW6vSkA2, 2020-12-31T11:27:45 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/Product})
+                    vdMq4LCtWdtr6FdXr, 2020-12-31T11:28:05 (Inv2OK,incorrect,check,)
+                      SKDcrjFwdLFPRHtzg, 2020-12-31T11:28:41 (Inv2OK,correct,check,)
+                        pfC8dJRNAo8JPYEyA, 2020-12-31T11:33:08 (This name is ambiguous due to multiple matches: field this/Component <: position field this/Robot <: position)
+                          bWvukQbgaPTQ5MZmX, 2020-12-31T11:35:36 (Inv3OK,correct,check,)
+                            6kGqfjhkPWMip3d43, 2020-12-31T11:36:16 (Inv3OK,correct,check,)
+                              fSceohMXdE4fpSQiZ, 2020-12-31T11:36:24 (Inv3OK,correct,check,)
+                                zJstfPrFbjWtsYy96, 2020-12-31T12:00:19 (Inv4OK,correct,check,)
+                                  5yCq32fCodhwP2kfx, 2020-12-31T12:01:53 (model share)
+  YQLLyEWoxXC5j4Z5n, 2021-01-01T12:07:29 (Inv1OK,incorrect,check,)
+    sYR8EYmyAjHa8q5T7, 2021-01-01T12:13:13 (Inv1OK,correct,check,)
+      6BgXnwoL6jL5kgWqY, 2021-01-01T12:13:34 (Inv1OK,correct,check,)
+        ZvAbJxY8os9itreXr, 2021-01-01T12:14:29 (Inv1OK,correct,check,)
+          5h74nrGAue9mdnLkt, 2021-01-01T12:19:32 (The name "postion" cannot be found.)
+            igc9W6Rs4pkrDQTdD, 2021-01-01T12:19:37 (Inv1OK,correct,check,^ <(this/Component <: position);(this/Robot <: position);> is redundant since its domain and range are disjoint: {this/Robot->this/Position, this/Component->this/Position})
+              5N7f7ydPZQEtwhStz, 2021-01-01T12:19:53 (Inv1OK,correct,check,)
+                MXrFLuHsPqQzxKJGB, 2021-01-01T12:26:22 (Inv1OK,correct,check,)
+                  7sxQEgCEKiKTn67Xm, 2021-01-01T12:28:34 (There are 7 possible tokens that can appear here: abstract lone one private sig some var)
+                    F8E69p84iak2EwfPP, 2021-01-01T12:28:45 (There are 7 possible tokens that can appear here: abstract lone one private sig some var)
+                      yCtpkiffgmDHFQ2Kn, 2021-01-01T12:28:51 (The name "Component" cannot be found.)
+                        fepWGQmvte7YGB9Gn, 2021-01-01T12:29:58 (The name "Component" cannot be found.)
+                          wLToiG24vai4jcvM3, 2021-01-01T12:30:03 (The name "Component" cannot be found.)
+                            E9XTBceQ55Wtk8pdJ, 2021-01-01T12:30:21 (The name "Component" cannot be found.)
+                              G95L2iNSoZnz6b94g, 2021-01-01T12:30:36 (The name "Component" cannot be found.)
+                                dFx2DiPwWf5QWYab4, 2021-01-01T13:51:51 (There are 1 possible tokens that can appear here: {)
+                                  e6wutG749whBHApYG, 2021-01-01T13:52:02 (There are 1 possible tokens that can appear here: {)
+                                    a5AtuhWEStXBqMS5g, 2021-01-01T13:52:27 (There are 1 possible tokens that can appear here: {)
+                                      kgDznC8QdxiANwnpz, 2021-01-01T13:55:29 (The name "x" cannot be found.)
+                                        6jbYJJYT6cqgStTQ4, 2021-01-01T13:55:41 (The name "Component" cannot be found.)
+  jStruW2JNgukcaHN8, 2021-01-01T14:15 (!in can be used only between 2 expressions of the same arity. Left type = {this/Component} Right type = {this/Component->this/Product})
+    LfXRohreaGPoYrh5A, 2021-01-01T14:15:46 (!in can be used only between 2 expressions of the same arity. Left type = {this/Component} Right type = {this/Component->this/Product})
+  t53JYSB2BwnDZdWD5, 2021-01-01T23:03:08 (Inv1OK,correct,check,)
+    n4AjR7ixqpyKqgPWE, 2021-01-01T23:03:33 (Inv2OK,incorrect,check,)
+      trAj5rh2BhxmvkT2s, 2021-01-01T23:03:54 (Inv2OK,correct,check,)
+        54Jqe7F8XrSA9ysMK, 2021-01-01T23:05:08 (& can be used only between 2 expressions of the same arity. Left type = {this/Position} Right type = {this/Position->this/Robot, this/Position->this/Component})
+          96TtqEF4QXDFhtMHw, 2021-01-01T23:05:45 (Inv3OK,correct,check,)
+            jm3wziAJCfCHZTscg, 2021-01-01T23:18:25 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+              Q746kc5bR5omWzkoR, 2021-01-01T23:21:26 (Inv4OK,incorrect,check,)
+                9yNgawQfFsdAgQNqk, 2021-01-01T23:21:52 (Inv4OK,incorrect,check,)
+                  2Evd9vynH3x9dBTPN, 2021-01-01T23:22:32 (Inv4OK,correct,check,)
+  Hs5Nr7hf8HfA5iHDJ, 2021-01-02T12:06:09 (Inv1OK,correct,check,)
+    xpkoywSDTB5WuaXiK, 2021-01-02T12:06:31 (!in can be used only between 2 expressions of the same arity. Left type = {this/Component} Right type = {this/Component->this/Product})
+      zd4rFu46cPmzTH4r6, 2021-01-02T12:06:38 (Inv2OK,incorrect,check,)
+        CPMxGnFiS44sJv3Wn, 2021-01-02T12:06:50 (Inv2OK,correct,check,)
+          Qb88rmNssiRNP9Jex, 2021-01-02T12:09:52 (Inv3OK,correct,check,)
+            kGcLN7SiSPyauuNZA, 2021-01-02T12:19:43 (Inv4OK,correct,check,)
+  Hk7y3zj9CFkYkYzph, 2021-01-02T17:32:42 (Inv1OK,incorrect,check,)
+    NjCjRtkzzC9ywvwNL, 2021-01-02T17:34:13 (Inv1OK,incorrect,check,)
+      PkCjJ6pePAurvKwZf, 2021-01-02T17:34:20 (Inv1OK,incorrect,check,)
+        Rw5NxLkXXvK5j5LEN, 2021-01-02T17:34:38 (Inv1OK,correct,check,)
+          jPhoD6GrDpSEhZxf8, 2021-01-02T17:35:03 (Inv1OK,incorrect,check,)
+            HpmgJDPjzgHrtEvah, 2021-01-02T17:35:24 (The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".)
+              c8H9PNoozTTr2Ctvw, 2021-01-02T17:35:31 (Inv1OK,correct,check,)
+                6WMQFhYqmMJTpsiFS, 2021-01-02T17:35:47 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                  75p3uKR3yiQqhDNoD, 2021-01-02T17:35:54 (Inv2OK,incorrect,check,)
+                    84YdWR9orc8fweFti, 2021-01-02T17:36:07 (Inv2OK,correct,check,)
+                      L8GWjbYxtKd5nxRih, 2021-01-02T17:37 (This name is ambiguous due to multiple matches: field this/Component <: position field this/Robot <: position)
+                        K5ZKhp7NxRJqvjabr, 2021-01-02T17:37:07 (This name is ambiguous due to multiple matches: field this/Component <: position field this/Robot <: position)
+                          2SHWRDivfvKSW8TEH, 2021-01-02T17:37:47 (Inv3OK,correct,check,)
+                            JqApBktnS7tnE2BNA, 2021-01-02T17:38:56 (Inv4OK,correct,check,)
+  fkAHQYRRM4Dkc5jdt, 2021-01-02T17:48:49 (Inv1OK,correct,check,)
+    QhTmQth9fsi86nnCX, 2021-01-02T17:49:06 (Inv2OK,correct,check,)
+      yJqw2axpQLovxPwCz, 2021-01-02T17:50:59 (Inv3OK,incorrect,check,This variable is unused.)
+        bhrWQnKjHrZeSNn43, 2021-01-02T17:51:50 (This name is ambiguous due to multiple matches: field this/Component <: position field this/Robot <: position)
+          5qmieikBFkReSzZ6w, 2021-01-02T17:52:24 (Inv3OK,correct,check,)
+  cmtwWMopWSgQu5obS, 2021-01-03T16:26:54 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a legal relational join where left hand side is this/Robot (type = {this/Robot}) right hand side is c . (this/Component <: position) (type = {this/Position})  This cannot be a legal relational join where left hand side is this/Robot (type = {this/Robot}) right hand side is c . (this/Robot <: position) (type = {none}))
+    QcYpN6HWXGsD54tex, 2021-01-03T16:27:23 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a legal relational join where left hand side is this/Robot (type = {this/Robot}) right hand side is c . (this/Component <: position) (type = {this/Position})  This cannot be a legal relational join where left hand side is this/Robot (type = {this/Robot}) right hand side is c . (this/Robot <: position) (type = {none}))
+      6CjWENoESAcfxwip9, 2021-01-03T16:27:35 (Inv1OK,correct,check,)
+        q8oiTiAhN6CiBikmo, 2021-01-03T16:27:40 (Inv1OK,correct,check,)
+          rdbTSBPuvYaexsiji, 2021-01-03T16:27:43 (Inv2OK,correct,check,)
+            6SMEocmHFLn2hXWaD, 2021-01-03T16:27:50 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a legal relational join where left hand side is this/Robot (type = {this/Robot}) right hand side is c . (this/Component <: position) (type = {this/Position})  This cannot be a legal relational join where left hand side is this/Robot (type = {this/Robot}) right hand side is c . (this/Robot <: position) (type = {none}))
+              ehhTtsmYN9W2vHmmn, 2021-01-03T16:28:09 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                75sGijvbi4uWxBsMi, 2021-01-03T16:28:32 (Inv2OK,correct,check,)
+                  Zq5GTcWCnWypLrcuC, 2021-01-03T16:28:34 (Inv3OK,incorrect,check,)
+                    J5eaWsXgjiHrvuZCu, 2021-01-03T16:29:38 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a legal relational join where left hand side is <this/Robot . (this/Component <: position);this/Robot . (this/Robot <: position);> (type = {this/Position}) right hand side is c . (this/Component <: position) (type = {this/Position})  This cannot be a legal relational join where left hand side is <this/Robot . (this/Component <: position);this/Robot . (this/Robot <: position);> (type = {this/Position}) right hand side is c . (this/Robot <: position) (type = {none}))
+                      SG3f23jYLS2Xx7ud7, 2021-01-03T16:29:54 (Inv3OK,incorrect,check,)
+                        CSkPboqZfHj5m4xfJ, 2021-01-03T16:30:09 (Inv3OK,incorrect,check,This variable is unused.)
+                          mBqjqXKefRYmqc88C, 2021-01-03T16:30:53 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a legal relational join where left hand side is <c . (this/Component <: position);c . (this/Robot <: position);> (type = {this/Position}) right hand side is this/Robot . (this/Component <: position) (type = {none})  This cannot be a legal relational join where left hand side is <c . (this/Component <: position);c . (this/Robot <: position);> (type = {this/Position}) right hand side is this/Robot . (this/Robot <: position) (type = {this/Position}))
+                            SsXgEoMxRGM6ih4bh, 2021-01-03T16:31:26 (Inv3OK,incorrect,check,)
+                              yHvLrBWYEnE3iKQqu, 2021-01-03T16:31:55 (Inv3OK,correct,check,)
+  STA2jfibzYYicxEv9, 2021-01-03T22:18:14 (Inv1OK,correct,check,)
+    kx3c6wRCZgixzapbJ, 2021-01-03T22:18:49 (Inv2OK,correct,check,)
+      rKuwRyXJj4drCt2xu, 2021-01-03T22:19:41 (Inv3OK,correct,check,)
+        ya9NCiYx3T2B3jHkW, 2021-01-03T22:23:15 (Inv4OK,correct,check,)
+  Apo3roJ9hLAyWTgKh, 2021-01-03T23:14:37 (Inv1OK,correct,check,)
+    RbAWwAxKvsEJP93h9, 2021-01-03T23:15:02 (Inv2OK,incorrect,check,)
+      rT9ah2sYfvoNzd3De, 2021-01-03T23:15:15 (Inv2OK,incorrect,check,)
+        zyj8HvT5RDLTXuenp, 2021-01-03T23:16:36 (Inv2OK,incorrect,check,)
+          CdxiWrmcEo2pkipbc, 2021-01-03T23:18:47 (Inv2OK,incorrect,check,)
+            dGRsaQDnZ5e58mfBv, 2021-01-03T23:19:40 (Inv2OK,correct,check,)
+              7NQZ6dHCG6uGmfqE5, 2021-01-03T23:22:13 (Inv3OK,incorrect,check,)
+                tZSAdBfknHuZ2ggRD, 2021-01-03T23:23:15 (The name "Postion" cannot be found.)
+                  EYRr9jr6gjFgJrzHg, 2021-01-03T23:23:20 (Inv3OK,incorrect,check,)
+                    N96gAktkt6JueCnDX, 2021-01-03T23:26:23 (Inv3OK,incorrect,check,)
+                      kRdvnnbZHpCoN4p7w, 2021-01-03T23:27:04 (Inv3OK,correct,check,)
+                        rXAQeDiaLLnNZc5qq, 2021-01-03T23:31:53 (Inv4OK,correct,check,)
+                          7nfP7Zse2wkCeKavr, 2021-01-03T23:32:34 (Inv4OK,correct,check,)
+                            WBvwcdgdBQ3Po9Cin, 2021-01-03T23:32:38 (Inv2OK,correct,check,)
+                              NZcpNNqvXqbFKv5TK, 2021-01-03T23:32:40 (model share)
+  YZnqA7d7tgFhYbJNo, 2021-01-04T15:15:53 (Inv1OK,incorrect,check,)
+    hN9y5kbCXmyX8cdsw, 2021-01-04T15:16:12 (Inv1OK,correct,check,)
+      aSks7JWpFv5oyeYSr, 2021-01-04T15:16:46 (Inv2OK,incorrect,check,)
+        BZAePLwKE8v8rQurq, 2021-01-04T15:17:25 (Inv2OK,correct,check,)
+          DwbP2SYGGdmWowSDa, 2021-01-04T15:24:11 (The name "robot" cannot be found.)
+            utTcZMKzDGga8uSyE, 2021-01-04T15:24:17 (This cannot be a legal relational join where left hand side is <c . (this/Component <: position);c . (this/Robot <: position);> (type = {this/Position}) right hand side is this/Robot (type = {this/Robot}))
+              ETvniyMSFmnjXW3wY, 2021-01-04T15:24:29 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a legal relational join where left hand side is this/Robot (type = {this/Robot}) right hand side is c . (this/Component <: position) (type = {this/Position})  This cannot be a legal relational join where left hand side is this/Robot (type = {this/Robot}) right hand side is c . (this/Robot <: position) (type = {none}))
+                LgzLMs7Qr9WLSHcPr, 2021-01-04T15:24:42 (This must be a formula expression. Instead, it has the following possible type(s): {this/Position})
+                  ZDdcZ5C7YR3kRWDc4, 2021-01-04T15:25:07 (Inv3OK,correct,check,)
+  kgLQqJTLHsxx7YDA6, 2021-01-04T18:51:32 (Inv1OK,correct,check,)
+    TJ4kKvBDfKzj6p3aQ, 2021-01-04T18:55:56 (Inv2OK,incorrect,check,)
+      awb9jSmFSNWkbxjHp, 2021-01-04T18:56:21 (Inv2OK,incorrect,check,)
+        PkQrGuZH7c9iqX39s, 2021-01-04T18:56:41 (Inv2OK,correct,check,)
+          uEywkfu8jXoph29nP, 2021-01-04T19:37:52 (Inv3OK,correct,check,)
+            RFdbHrAmR8ANgR96J, 2021-01-04T19:40:47 (Inv4OK,correct,check,)
+  KiW2Dyg4k5bRj5ijs, 2021-01-04T21:56:54 (This must be a formula expression. Instead, it has the following possible type(s): {this/Component->this/Product})
+    MJhjNCNzZGzMCRre3, 2021-01-04T21:57:19 (This must be a formula expression. Instead, it has the following possible type(s): {this/Product})
+      f3QREDw7LrF4ZrwS8, 2021-01-04T21:57:46 (Inv1OK,correct,check,)
+        eS2xpRa4Gm5KS3vW6, 2021-01-04T21:59:12 (Inv1OK,correct,check,)
+          4pu6ZCDGTk6BwvWXG, 2021-01-04T21:59:15 (Inv2OK,incorrect,check,)
+            XoM5R9jriEfkbtuQd, 2021-01-04T22:00:43 (Inv2OK,incorrect,check,)
+              Z7GZzY3Nqzi5FA77Q, 2021-01-04T22:07:04 (Inv2OK,correct,check,)
+                kuaGb6B3ztmWZsrqm, 2021-01-04T22:24:17 (This cannot be a legal relational join where left hand side is <c . (this/Component <: position);c . (this/Robot <: position);> (type = {this/Position}) right hand side is this/Robot (type = {this/Robot}))
+                  EcEdYyb3cLK8QHGES, 2021-01-04T22:29:44 (Inv3OK,correct,check,)
+                    n2vow7qaJ9iBcErip, 2021-01-04T22:35:52 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+  wcSsKf73zaATdKv2s, 2021-01-05T19:40:32 (Inv1OK,correct,check,)
+    fv2DMsjFcvut3g7vf, 2021-01-05T19:40:47 (Inv2OK,incorrect,check,)
+      hPfAMpePNWESQXmEq, 2021-01-05T19:41:06 (Inv2OK,correct,check,)
+        3bo9vpooPRMbYNCuT, 2021-01-05T19:43:41 (Inv3OK,correct,check,)
+          wbXb9puN7FFRtvE5A, 2021-01-05T19:45:12 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+            Zxcw9GkBYXuS5xrdX, 2021-01-05T19:45:35 (There are 1 possible tokens that can appear here: ])
+              WHcAcTG2eNvJQY8yH, 2021-01-05T19:48:23 (There are 1 possible tokens that can appear here: ])
+                wQjRbojSExTf7wQAL, 2021-01-05T19:48:37 (Inv4OK,incorrect,check,)
+                  rSTa2sXPnekyZ6nah, 2021-01-05T19:48:42 (Inv4OK,correct,check,)
+  tZcsdB3fCEfumuG66, 2021-01-05T19:59:27 (Inv1OK,correct,check,)
+    HYiCKMqj9SmvjrkSM, 2021-01-05T19:59:54 (Inv1OK,correct,check,)
+      WhqFqd3CtSvBsxbWD, 2021-01-05T19:59:57 (Inv2OK,incorrect,check,)
+        sKaMzaZroTafrfk2A, 2021-01-05T20:00:16 (Inv2OK,correct,check,)
+          cXcS8wHL8gB8AmiE3, 2021-01-05T20:02:16 (The name "p" cannot be found.)
+            x2fLrLcsqy6AHPj6v, 2021-01-05T20:02:29 (This name is ambiguous due to multiple matches: field this/Component <: position field this/Robot <: position)
+              REgaL9N6SagFMzqrz, 2021-01-05T20:02:39 (Inv3OK,correct,check,)
+  rXQDyN5knDMyFx7S3, 2021-01-06T16:45:28 (The name "Compoment" cannot be found.)
+    A9rEehCwzzKxXQaBv, 2021-01-06T16:45:38 (Inv1OK,correct,check,)
+      4ktamyQfrXhCHa9PW, 2021-01-06T16:46:32 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+        yN3EZ9bT7Zy8y8Jrv, 2021-01-06T16:46:42 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+          oJuZtWJCyfDJb3P2J, 2021-01-06T16:47:28 (Inv2OK,incorrect,check,)
+            FQQr7zKn3ikTcwnL6, 2021-01-06T16:47:46 (Inv2OK,correct,check,)
+              zPwSwT8rpAD34Fizi, 2021-01-06T16:48:57 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                rxSkAFaXYQLuDZpDS, 2021-01-06T16:49:10 (This cannot be a legal relational join where left hand side is this/Robot (type = {this/Robot}) right hand side is this/Position (type = {this/Position}))
+                  acwXYsqH2ckGeRqz8, 2021-01-06T16:49:21 (This cannot be a legal relational join where left hand side is this/Robot (type = {this/Robot}) right hand side is this/Position (type = {this/Position}))
+                    euNsKY8oiAd23qTsG, 2021-01-06T16:50:18 (This must be a formula expression. Instead, it has the following possible type(s): {this/Position})
+                      vMATHSrEsbWRJE4kf, 2021-01-06T16:50:24 (This cannot be a legal relational join where left hand side is this/Robot (type = {this/Robot}) right hand side is this/Position (type = {this/Position}))
+                        sjaAimTvu4mN2nzyx, 2021-01-06T16:50:30 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                          HAnewK7TnznXKrXoa, 2021-01-06T16:52:36 (The name "potision" cannot be found.)
+                            dQDZDzhJYgGKXRJan, 2021-01-06T16:52:49 (Inv3OK,incorrect,check,)
+                              yKyDCscPhcdECy9Kt, 2021-01-06T16:53:29 (This cannot be a legal relational join where left hand side is this/Component (type = {this/Component}) right hand side is p (type = {this/Position}))
+                                9v4WXv7z4DW9tvQuP, 2021-01-06T16:56:01 (This must be a formula expression. Instead, it has the following possible type(s): {this/Component})
+                                  yamoc7Hpj8T3TF4Pt, 2021-01-06T16:56:08 (Inv3OK,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Component} Right type = {this/Robot})
+                                    DDKDPN2kR5hKr3o8Q, 2021-01-06T16:56:25 (This name is ambiguous due to multiple matches: field this/Component <: position field this/Robot <: position)
+                                      3eY7aDWky2xneQdzp, 2021-01-06T16:56:53 (This cannot be a legal relational join where left hand side is this/Robot (type = {this/Robot}) right hand side is this/Position (type = {this/Position}))
+                                        7eKEkDF7eBqTzDGTR, 2021-01-06T16:57:07 (This cannot be a legal relational join where left hand side is this/Robot (type = {this/Robot}) right hand side is this/Position (type = {this/Position}))
+                                          cykE64kCm82xL2f3N, 2021-01-06T16:57:15 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                            ZkFqAWrABsENZw4Sg, 2021-01-06T16:57:42 (Inv3OK,correct,check,)
+                                              8xCggNbEQXfQndrjQ, 2021-01-06T16:58:18 (Inv4OK,correct,check,)
+  w7XZmaudsS3SgBdrG, 2021-01-06T17:05:20 (Inv1OK,correct,check,)
+    TbTR2vzDATR6EhKyy, 2021-01-06T17:05:22 (Inv3OK,correct,check,)
+      TCLJ6s8hqvedqZ89C, 2021-01-06T17:05:32 (model share)
+  KAKGES3LFkd5ToBHy, 2021-01-06T20:43:27 (Inv1OK,correct,check,)
+    eSTbRe5dYzdSG7tjq, 2021-01-06T20:43:52 (Inv2OK,incorrect,check,)
+      GFnRJp93tNSJ5wDM5, 2021-01-06T20:44:01 (Inv2OK,correct,check,)
+        2dyFja2RwYdymYBoF, 2021-01-06T20:46:06 (Inv3OK,correct,check,)
+          bTH34aP6GcPLpb5Cu, 2021-01-06T21:30:13 (Inv4OK,incorrect,check,)
+            yrfb3YgC6sjayFTTY, 2021-01-06T21:30:54 (Inv4OK,correct,check,)
+  JTjpx6ekc26a6x2fc, 2021-01-07T10:13:27 (Inv1OK,correct,check,)
+    hM5gsxpRhAuCjBoee, 2021-01-07T10:15 (Inv2OK,incorrect,check,)
+      ZRuHF8qFmuwrQwvGg, 2021-01-07T10:15:38 (Inv2OK,incorrect,check,)
+        pxpmH6XkSiBDc9KcQ, 2021-01-07T10:16:43 (Inv2OK,correct,check,)
+          eyYmk4LrneXCQQYCH, 2021-01-07T10:19:11 (Inv3OK,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Position} Right type = {this/Robot})
+            RzvcLXKWXyufpSxNY, 2021-01-07T10:19:31 (Inv3OK,correct,check,)
+              wRvxqQE3tvanDw3np, 2021-01-07T10:26:02 (This cannot be a legal relational join where left hand side is c1 (type = {this/Product}) right hand side is this/Position (type = {this/Position}))
+                XfZaM8kkDvj8S2MWc, 2021-01-07T10:26:33 (This cannot be a legal relational join where left hand side is c1 (type = {this/Component}) right hand side is this/Position (type = {this/Position}))
+  pNhWKxgJ2PtzHPgFN, 2021-01-07T14:41:40 (Inv1OK,correct,check,)
+    9uBDb3NGhcfyDXQ2p, 2021-01-07T14:42:05 (Inv2OK,incorrect,check,)
+      FXqF5sxDSz6H2qNvZ, 2021-01-07T14:42:23 (Inv2OK,correct,check,)
+        XPXs35v6QRXiw7uWd, 2021-01-07T14:50:02 (Inv3OK,correct,check,)
+          ypQPMeonaCyEWtxqh, 2021-01-07T14:54:39 (Inv4OK,incorrect,check,)
+            KttXx2bAoRqEdLZGZ, 2021-01-07T14:55:30 (The name "positions" cannot be found.)
+              rdwGEB4L7uf4Rqgaq, 2021-01-07T14:55:37 (Inv4OK,correct,check,)
+                Dnn4XZKyFXiqD8SS7, 2021-01-07T14:55:43 (Inv4OK,correct,check,)
+  dbs9Wd2koeiMsQruS, 2021-01-07T15:36:08 (Inv1OK,incorrect,check,)
+    8BRB5EkHn64rrFLzy, 2021-01-07T15:36:43 (Inv1OK,correct,check,)
+      pEinSCSyWMGJrc73k, 2021-01-07T15:37:43 (This must be a formula expression. Instead, it has the following possible type(s): {this/Component->this/Product})
+        DzcPR3Xote3qsphei, 2021-01-07T15:38:38 (Inv2OK,correct,check,)
+          ub3pKXhJjbWt2jfjv, 2021-01-07T15:40:06 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+            4NyfTw5TFSG9fMM84, 2021-01-07T15:40:35 (Inv3OK,correct,check,)
+  XaMk6NdtFEKJzv2My, 2021-01-07T17:38:12 (Inv1OK,incorrect,check,This variable is unused.)
+    kozuwHdS4SZPdQcsT, 2021-01-07T17:38:54 (Inv1OK,correct,check,)
+      Ypt4ajfuwAnJmgxLd, 2021-01-07T17:42:46 (Inv1OK,correct,check,)
+        tryTmKJiTaDYa6MJX, 2021-01-07T17:43:30 (Inv1OK,correct,check,)
+          xbj845LH5WmxzrACF, 2021-01-07T17:48:58 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+            FwWbz3chMrACdykpt, 2021-01-07T17:49:47 (Inv1OK,correct,check,)
+              EkhnvuGcESkQruWGR, 2021-01-07T17:54:41 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+                MtCsZkBiStwY8xaC2, 2021-01-07T17:56:21 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+                  XFYRvXCcRfxTtEEKX, 2021-01-07T17:56:52 (Inv1OK,correct,check,)
+  ENDC4DY2XiRDBCrEh, 2021-01-07T22:32:29 (Inv1OK,correct,check,)
+    cRpMy8Xoh5ZpNNtbe, 2021-01-07T22:32:45 (Inv2OK,incorrect,check,)
+      AX7em3JfSRKXnKcQB, 2021-01-07T22:32:54 (Inv2OK,correct,check,)
+        PLcyGzfNpN9rW6g45, 2021-01-07T22:33:33 (Inv3OK,correct,check,)
+  vMkoeh6s8HfrPco9t, 2021-01-07T22:40:21 (The name "Components" cannot be found.)
+    jqMTKqxBusAo79JDM, 2021-01-07T22:40:35 (The name "Components" cannot be found.)
+      ioPKov86KLNathkuD, 2021-01-07T22:40:40 (Inv4OK,correct,check,)
+  YWp7ZMNcpGMcvo8G4, 2021-01-07T23:09:58 (Inv1OK,incorrect,check,)
+    9hTGyHABmr4MdRPTq, 2021-01-07T23:10:11 (Inv1OK,incorrect,check,)
+      RktkZuBrhbdQNXx2M, 2021-01-07T23:10:51 (Inv1OK,correct,check,)
+        n2odmxyTGyfQ5zJmF, 2021-01-07T23:11:40 (Inv2OK,incorrect,check,)
+          Yr2BtEYY4Pansh5Ga, 2021-01-07T23:12:06 (Inv2OK,incorrect,check,)
+            3vEb9bWXk6b3mJJX2, 2021-01-07T23:18:08 (Inv2OK,incorrect,check,)
+              L7DCYbWMvBQ2XfRvX, 2021-01-07T23:20:06 (Inv2OK,incorrect,check,)
+                wE5kdcaHfk84jg6rc, 2021-01-07T23:22:02 (Inv2OK,incorrect,check,)
+                  MdBwdk7Z8PctybRv9, 2021-01-07T23:22:18 (Inv2OK,incorrect,check,)
+                    GSDszTtyJRGnkAw8r, 2021-01-07T23:22:28 (Inv2OK,incorrect,check,)
+                      mdfk6da6jPdmvqixj, 2021-01-07T23:22:54 (Inv2OK,incorrect,check,)
+                        pZNcxBAQqCrr7NkJz, 2021-01-07T23:23:02 (Inv2OK,incorrect,check,)
+                          yuxQZcSqKC4oBmzqT, 2021-01-07T23:23:09 (Inv2OK,incorrect,check,)
+                            NpWC7rNHYJcsPkaHX, 2021-01-07T23:27:03 (Inv2OK,incorrect,check,)
+                              A33YRrc7nHtkWgnGv, 2021-01-07T23:27:28 (Inv2OK,correct,check,)
+                                MN4ne3iyDvsvCapvq, 2021-01-07T23:38:29 (Syntax error at the ? character. HEX: \ud83d))
+                                  mnA4NRFyAo4Tx3zNN, 2021-01-07T23:56:31 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {this/Position})
+                                    w5GXCyvztHzdisATB, 2021-01-07T23:59:23 (Inv3OK,correct,check,)
+                                      DyZ2hZoHaCRzrxRhZ, 2021-01-08T00:06:46 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a correct call to pred integer/lt. The parameters are   n1: {Int}   n2: {Int} so the arguments cannot be   <c . (this/Component <: parts) . (this/Component <: position);c . (this/Component <: parts) . (this/Robot <: position);> (type = {this/Position})   <(this/Component <: position);(this/Robot <: position);> . ordering/last (type = {this/Robot, this/Component})  This cannot be a correct call to pred ordering/lt. The parameters are   e1: {this/Position}   e2: {this/Position} so the arguments cannot be   <c . (this/Component <: parts) . (this/Component <: position);c . (this/Component <: parts) . (this/Robot <: position);> (type = {this/Position})   <(this/Component <: position);(this/Robot <: position);> . ordering/last (type = {this/Robot, this/Component}))
+                                        E5aGb7S9niFH6LcEt, 2021-01-08T00:07:29 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a correct call to pred integer/lt. The parameters are   n1: {Int}   n2: {Int} so the arguments cannot be   <c . (this/Component <: position);c . (this/Robot <: position);> (type = {this/Position})   <(this/Component <: position);(this/Robot <: position);> (type = {this/Robot->this/Position, this/Component->this/Position})  This cannot be a correct call to pred ordering/lt. The parameters are   e1: {this/Position}   e2: {this/Position} so the arguments cannot be   <c . (this/Component <: position);c . (this/Robot <: position);> (type = {this/Position})   <(this/Component <: position);(this/Robot <: position);> (type = {this/Robot->this/Position, this/Component->this/Position}))
+                                          rfP6aoMfCzEuaMjGQ, 2021-01-08T00:12:25 (Inv4OK,incorrect,check,)
+                                            dLaGjYRauxnnGwaAa, 2021-01-08T00:12:43 (Inv4OK,incorrect,check,)
+                                              HBvbTLG5hTm6rxaKK, 2021-01-08T00:12:48 (Inv4OK,incorrect,check,)
+                                                jNzjLsCHp4PWKyg7v, 2021-01-08T00:13:02 (Inv4OK,incorrect,check,)
+                                                  7eC98hs9RYss2NzBA, 2021-01-08T00:13:08 (Inv4OK,incorrect,check,)
+                                                    zwzmcTZwiDG2tsroq, 2021-01-08T00:20:36 (Inv4OK,correct,check,)
+  FirnWsR3DNaegXbT4, 2021-01-07T23:38:08 (Inv1OK,incorrect,check,)
+    xSt4Yit9qKGPMuExu, 2021-01-08T00:09:55 (Inv1OK,correct,check,)
+      XcJjZwXSEn599r37W, 2021-01-08T00:22:12 (Inv2OK,incorrect,check,)
+        u2m9WkvewD6PZE2Fg, 2021-01-08T00:23:06 (Inv2OK,correct,check,)
+          XZfdgZRLTdPRefHMP, 2021-01-08T00:29:59 (Inv3OK,correct,check,)
+  HkxJgP5FAbFv62mRb, 2021-01-07T23:49:32 (Inv1OK,correct,check,)
+    Aqr5SPvuhsA8kmTvf, 2021-01-07T23:50:25 (Inv2OK,correct,check,)
+      ehsiRxcx9kvf9g7WA, 2021-01-07T23:52:42 (Inv3OK,correct,check,)
+  vhtnxhWm4KGvbKAeD, 2021-01-08T00:30:40 (Inv1OK,incorrect,check,)
+    zqNJmMtFTwRaMq8ZD, 2021-01-08T00:31:20 (The name "Components" cannot be found.)
+      Mc9uyLpZJsmYHh2Dd, 2021-01-08T00:31:43 (Inv1OK,correct,check,)
+        JG3xMQJZqmei7iNPx, 2021-01-08T00:39:49 (There are 5 possible tokens that can appear here: enum fun let open pred)
+          Ye2qcAKe69ej7b2bg, 2021-01-08T00:40:05 (Inv2OK,incorrect,check,)
+            MoG5uby9cdPAByJZQ, 2021-01-08T00:40:32 (Inv2OK,correct,check,)
+              9Ksfgg38YyBgCcMdD, 2021-01-08T00:43:15 (The name "component" cannot be found.)
+                YRaFmMcc7jToCczGk, 2021-01-08T00:43:29 (Inv3OK,correct,check,)
+  j3izdip7LjnHpT2DJ, 2021-01-08T00:40:47 (Inv1OK,correct,check,)
+    475H79GHMt3hgwxTv, 2021-01-08T00:42:05 (Inv2OK,correct,check,)
+      MRWxN7P4C5S5pDvGJ, 2021-01-08T00:45:54 (Inv3OK,correct,check,)
+  bCNph6hAYwtYc2FMM, 2021-01-08T14:39:14 (Inv1OK,correct,check,)
+    yvuJQvDz2XcSpcuQW, 2021-01-08T14:39:27 (Inv1OK,correct,check,)
+      jXvSnbpvjCNqKgNMa, 2021-01-08T14:39:29 (Inv2OK,incorrect,check,)
+        ajAkBAS6jHHiMJkeA, 2021-01-08T14:40:26 (!in can be used only between 2 expressions of the same arity. Left type = {this/Component} Right type = {this/Component->this/Product})
+          L6zeEN2d487SwLWSP, 2021-01-08T14:40:37 (Inv2OK,correct,check,)
+            kXarxc3MidwhGDqQm, 2021-01-08T14:40:42 (Inv2OK,correct,check,)
+              EvQSzX7fsQwSPXDRJ, 2021-01-08T14:41:10 (Inv1OK,correct,check,)
+                Re6XKzNWhyn3sgXgr, 2021-01-08T14:41:13 (Inv2,incorrect,run,)
+                  rxEjwzupBo5uxfB4q, 2021-01-08T14:48:08 (Inv1OK,correct,check,)
+                    5erhqic7mobMnu5gB, 2021-01-08T14:48:10 (Inv3OK,correct,check,)
+                      oXZfyActu7WqcQhjF, 2021-01-08T14:48:20 (Inv3OK,correct,check,)
+                        M95k7nfbPrXZXdXMb, 2021-01-08T14:48:54 (Inv4OK,incorrect,check,)
+                          YzZYdHRwRMnurPYMW, 2021-01-08T14:49:35 (Inv4OK,incorrect,check,)
+                            pWsa8N4HgLheS5MjY, 2021-01-08T14:50:27 (Inv4OK,correct,check,)
+                              hcajm4CPmACxErmwG, 2021-01-08T14:50:53 (Inv4OK,incorrect,check,)
+                                Z9QAzES7inWq8n4oZ, 2021-01-08T14:51:53 (Inv4,incorrect,run,)
+                                  mWXQJYXzNTeKJTTAz, 2021-01-08T14:52:57 (Inv1OK,correct,check,)
+                                    QRaTqYwC7otPQYhJq, 2021-01-08T14:52:59 (show,incorrect,run,)
+                                      mCexwHNBjsrz6h79y, 2021-01-08T14:53:13 (show,correct,run,)
+                                        2HETFWagjEbnk6uPm, 2021-01-08T14:53:18 (show,incorrect,run,)
+                                          auoPSHuxdaSRQ7gZS, 2021-01-08T14:53:27 (show,incorrect,run,)
+  yDQAH9KgXHah5AY8m, 2021-01-08T15:09:03 (Inv1OK,incorrect,check,)
+    qF6sjSstKreuwRcu6, 2021-01-08T15:09:31 (Inv1OK,correct,check,)
+      ynGq6vfJeqKptinAq, 2021-01-08T15:10:12 (Inv2OK,incorrect,check,)
+        u6S4vqPiHiMfWwxas, 2021-01-08T15:10:41 (Inv2OK,incorrect,check,)
+          DN9HYsbyxrz2PxysH, 2021-01-08T15:12:02 (Inv2OK,incorrect,check,)
+            2697P8CkkXtntodLu, 2021-01-08T15:12:28 (Inv2OK,incorrect,check,)
+              Jrs7MtZ4DwZ9SsSk2, 2021-01-08T15:13:07 (Inv2OK,correct,check,)
+                iW8ntouPfxdJ7h74f, 2021-01-08T15:17:27 (Inv3OK,correct,check,)
+                  s4WoB3HtH95Xcfgau, 2021-01-08T15:17:54 (Inv3OK,correct,check,)
+                    tvXAJfF3zSEhNNQZM, 2021-01-08T15:20:22 (This must be an integer expression. Instead, it has the following possible type(s): {this/Component})
+                      XXGgXGjDPbrTxdh7q, 2021-01-08T15:26:13 (Inv4OK,incorrect,check,)
+                        sFgXsPjiyAQDwnxTB, 2021-01-08T15:26:49 (Inv4OK,correct,check,)
+  KvhA2SYbW2jdpXvTp, 2021-01-08T18:42:28 (Inv1OK,correct,check,)
+    mWSGSbm47nkxLow5B, 2021-01-08T18:43:01 (Inv2OK,incorrect,check,)
+      bbnRqP7n5rftBk85R, 2021-01-08T18:43:15 (Inv2OK,incorrect,check,)
+        zzynqN7e5Wu8FPLyv, 2021-01-08T18:44:52 (Inv2OK,incorrect,check,)
+          jMQd4MS2ZepHDvMWa, 2021-01-08T18:46:38 (Inv3OK,correct,check,)
+            vx9jRTysCCiiqecZ2, 2021-01-08T18:47:19 (Inv2OK,incorrect,check,)
+              b4JKA6XYYFrQ9gzTb, 2021-01-08T18:47:51 (Inv2OK,correct,check,)
+  wx3zjktpdwaYaJS3d, 2021-01-08T21:26:16 (Inv1OK,correct,check,)
+    Gk6cimxAe3aamBmLp, 2021-01-08T21:26:27 (Inv2OK,incorrect,check,)
+      MgEnKLAP6qrEaYcay, 2021-01-08T21:26:51 (Inv2OK,incorrect,check,)
+        RnF7okb4hgADnzotY, 2021-01-08T21:26:56 (Inv2OK,correct,check,)
+          LZkP6sdPyvRFAKzj8, 2021-01-08T21:27:35 (Inv3OK,correct,check,)
+            DHziJaHdDWG2xy8sK, 2021-01-08T21:29:12 (Inv4OK,correct,check,)
+  SCKQYzzCuC45qGEvA, 2021-01-08T21:56:23 (Inv1OK,correct,check,)
+    gaCBvdjSKEahQBbWk, 2021-01-08T21:56:50 (Inv2OK,incorrect,check,)
+      dSxWcS8gFrehbWYsk, 2021-01-08T21:56:54 (Inv2OK,correct,check,)
+        WznLKKW8hNiLwwGyi, 2021-01-08T22:08:03 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+          nPh7SauP7KskDP6Du, 2021-01-08T22:09:06 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+            LZKPb8CGTQvcQ4TdQ, 2021-01-08T22:09:17 (Inv3OK,incorrect,check,)
+              pDcQZstNyL5xPkpNy, 2021-01-08T22:10:33 (This cannot be a legal relational join where left hand side is this/Component (type = {this/Component}) right hand side is this/Position (type = {this/Position}))
+                jBhTz9BSbEdQJnriC, 2021-01-08T22:11:17 (Inv3OK,incorrect,check,)
+                  ge32bEPCYpNeiDTRG, 2021-01-08T22:18:43 (This cannot be a legal relational join where left hand side is this/Component (type = {this/Component}) right hand side is p (type = {this/Position}))
+                    RbD29QPZesSR8B6bo, 2021-01-08T22:19:09 (This cannot be a legal relational join where left hand side is this/Component (type = {this/Component}) right hand side is this/Position (type = {this/Position}))
+                      GqgQyfnkXiMh77dgG, 2021-01-08T22:19:23 (This cannot be a legal relational join where left hand side is this/Component (type = {this/Component}) right hand side is this/Position (type = {this/Position}))
+                        EQwyFvBpXsmNrTFEA, 2021-01-08T22:19:44 (This cannot be a legal relational join where left hand side is this/Component (type = {this/Component}) right hand side is this/Position (type = {this/Position}))
+                          dPxTh5bwbbAfRyskr, 2021-01-08T22:19:52 (Inv3OK,correct,check,)
+  WedmZKSRkTR9eseW8, 2021-01-09T00:00:53 (Inv3OK,correct,check,)
+    dA53A2REnGjSEgpp5, 2021-01-09T00:00:59 (Inv3OK,correct,check,)
+      XZuAEdQ33JS2QRDqx, 2021-01-09T00:01:03 (Inv3OK,correct,check,)
+        K4PeThkvTuZBGmMYT, 2021-01-09T00:01:56 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+          zvEpFhEjnN8DaDawf, 2021-01-09T00:02:02 (Inv4OK,correct,check,)
+  mavJpjd9QDHKZtemL, 2021-01-09T00:50:26 (Inv1OK,incorrect,check,)
+    YPai8e2BdknWK6Dug, 2021-01-09T00:50:44 (Inv1OK,correct,check,)
+      bywk8ecDcNWKhMybM, 2021-01-09T00:51:08 (Inv1OK,correct,check,)
+        Ka5tW6cmAr6uzEXvD, 2021-01-09T00:51:11 (Inv2OK,incorrect,check,)
+          LwTuRWm4qWMWdmDED, 2021-01-09T00:52:45 (Inv2OK,correct,check,)
+            3JPCtqZuZvG7wEqdz, 2021-01-09T00:54 (Inv3OK,correct,check,)
+              CBmYxFRLgkHaBqqtC, 2021-01-09T00:55:28 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+                9v43QbnFrjj7jH3Qh, 2021-01-09T00:57:52 (Inv4OK,incorrect,check,)
+                  oxFi7hyhbgxQ6So4o, 2021-01-09T00:59:24 (Inv4OK,correct,check,)
+  aaDth4nRKdRjAwnzt, 2021-01-25T16:08:30 (This must be a formula expression. Instead, it has the following possible type(s): {this/Component->this/Component->this/Product})
+    oCBZdRoqXh3P7ArXE, 2021-01-25T16:08:54 (Inv1OK,incorrect,check,)
+      xzHYdzFXog6RrN4Tr, 2021-01-25T16:09:43 (Inv1OK,correct,check,)
+        MpovqDpFNeEb2MC8N, 2021-01-25T16:09:48 (Inv1OK,correct,check,)
+          uQB6Dtsj7MsuFsSJf, 2021-01-25T16:10:56 (This expression failed to be typechecked line 32, column 21, filename=/tmp/alloy_heredoc9500766524257166383.als)
+            MT7wNwama6yK55pxn, 2021-01-25T16:11:06 (Inv1OK,correct,check,)
+              B5eXvKddDL8LjKYkX, 2021-01-25T16:11:12 (Inv2OK,incorrect,check,)
+                RzwSdgyquCrAcJ3hL, 2021-01-25T16:11:47 (Inv2OK,incorrect,check,)
+                  c5veB9D8KYp8EjMTa, 2021-01-25T16:12:03 (This cannot be a legal relational join where left hand side is c (type = {this/Component}) right hand side is c . (this/Component <: parts) (type = {this/Product}))
+                    jbKnFEJfuEpwnvk8J, 2021-01-25T16:12:30 (Inv2OK,incorrect,check,)
+                      dFr59D6ZqN8oXMSZo, 2021-01-25T16:13:29 (Inv2OK,incorrect,check,)
+                        rfuwEFmqLXWisjmqe, 2021-01-25T16:14:32 (Inv2OK,correct,check,)
+                          zCBNoDGNrZwMjaNtt, 2021-01-25T16:14:43 (Inv2OK,incorrect,check,)
+                            gmiwNKtb2ReduPq2i, 2021-01-25T16:14:51 (Inv2OK,correct,check,)
+                              c6ga2GRXgG9wY87Zb, 2021-01-25T16:19:10 (The name "p" cannot be found.)
+                                i28rP6YNWvYL6Dmyo, 2021-01-25T16:19:20 (This cannot be a legal relational join where left hand side is p (type = {this/Position}) right hand side is this/Robot (type = {this/Robot}))
+                                  5hDRFafrPxt8N6MdW, 2021-01-25T16:19:40 (This cannot be a legal relational join where left hand side is this/Robot (type = {this/Robot}) right hand side is p (type = {this/Position}))
+                                    rJgLajQQknBiab8Rg, 2021-01-25T16:19:59 (This cannot be a legal relational join where left hand side is this/Robot (type = {this/Robot}) right hand side is p (type = {this/Position}))
+                                      8KAzHsbqWLjzvwQL3, 2021-01-25T16:20:14 (This cannot be a legal relational join where left hand side is r (type = {this/Robot}) right hand side is p (type = {this/Position}))
+                                        TdiKZiMkDPnLr4bmY, 2021-01-25T16:20:34 (Inv2OK,correct,check,)
+                                          gb6D9ueGcykLERcox, 2021-01-25T16:20:39 (Inv3OK,incorrect,check,)
+                                            5qR2uBAC66dfA7Lf4, 2021-01-25T16:21:21 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+                                              e4KE7iYF4buQCbKuX, 2021-01-25T16:21:28 (Inv3OK,correct,check,)
+                                                6YRvwDTzQFub5c46v, 2021-01-25T16:23:38 (The name "Components" cannot be found.)
+                                                  QSy3ouNfjRM6SerRk, 2021-01-25T16:23:46 (This must be an integer expression. Instead, it has the following possible type(s): {this/Position})
+                                                    a6MZYhWGvHokYbF9C, 2021-01-25T16:25:25 (Inv3OK,correct,check,)
+                                                      iZvC7su3C39JdCGCC, 2021-01-25T16:25:29 (Inv4OK,correct,check,)
+                                                        htFu67rsFyJKNjnv4, 2021-01-25T16:25:57 (Inv4OK,correct,check,)
+                                                          wYdTbjsAqjRuJi99S, 2021-01-25T16:26:06 (Inv4OK,correct,check,)
+  etQvH98HTC8idgAid, 2021-01-25T16:44:45 (Inv1OK,correct,check,)
+    jiQMZioGXPJvZKegP, 2021-01-25T16:45:06 (Inv1OK,correct,check,)

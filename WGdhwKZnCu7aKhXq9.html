@@ -9,43 +9,43 @@
 </head>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-<h1>WGdhwKZnCu7aKhXq9 (2020-12-19)</h1>
+<h1>WGdhwKZnCu7aKhXq9 (2021-03-24)</h1>
 <h2>Meta-data</h2>
 <dl><dt>Challenge name</dt><dd>unknown</dd>
 <dt>Creation time</dt><dd>2020-11-23</dd>
 <dt># sub-challenges</dt><dd>4</dd>
 <dt>Metric catalog</dt><dd>Example metric catalog</dd>
 </dl><h2>Overall metric statistics</h2>
-Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total model entries</dt><dd>125</dd>
-<dt>Total executions</dt><dd>124</dd>
-<dt>Total shares</dt><dd>1</dd>
-<dt>Total error messages</dt><dd>40</dd>
-<dt>Total warning messages</dt><dd>13</dd>
-<dt>Total solutions</dt><dd>84</d>
-<dt>Total sessions</dt><dd>8</d>
+Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.<dl><dt>Total model entries</dt><dd>393</dd>
+<dt>Total executions</dt><dd>390</dd>
+<dt>Total shares</dt><dd>3</dd>
+<dt>Total error messages</dt><dd>107</dd>
+<dt>Total warning messages</dt><dd>23</dd>
+<dt>Total solutions</dt><dd>283</d>
+<dt>Total sessions</dt><dd>26</d>
 <dt>Timed out re-executions</dt><dd>0</d>
 <dt>Rejected due to server errors</dt><dd>0</d>
 <dt>Inconsistent result reports</dt><dd>0</d>
 <dt>Inconsistent message reports</dt><dd>0</d>
 <dt>Total instance entries</dt><dd>0</dd>
-<dt>Total link entries</dt><dd>2</dd>
+<dt>Total link entries</dt><dd>4</dd>
 </dl><h2>Scalar metrics</h2>
-<dl><dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared.">Number of shared sessions</dt><dd>0</dd>
-<dt data-toggle="tooltip" title="Counts the number of shared models.">Shared models (model)</dt><dd>1</dd>
+<dl><dt data-toggle="tooltip" title="Counts the number of sessions for which an entry has been shared.">Number of shared sessions</dt><dd>2</dd>
+<dt data-toggle="tooltip" title="Counts the number of shared models.">Shared models (model)</dt><dd>3</dd>
 <dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages.">Shares with warnings</dt><dd>0</dd>
 <dt data-toggle="tooltip" title="Counts the number Alloy runtime errors (in contrast to parsing errors).">Alloy runtime errors</dt><dd>0</dd>
 <dt data-toggle="tooltip" title="Counts the number of shared models that had errors.">Shared errored models</dt><dd>0</dd>
-<dt data-toggle="tooltip" title="Counts the number Alloy parsing errors (in contrast to runtime errors).">Alloy static errors</dt><dd>40</dd>
+<dt data-toggle="tooltip" title="Counts the number Alloy parsing errors (in contrast to runtime errors).">Alloy static errors</dt><dd>107</dd>
 <dt data-toggle="tooltip" title="Counts the number of models from shared instances.">Shared models (instance)</dt><dd>0</dd>
-<dt data-toggle="tooltip" title="The average session length.">Average session</dt><dd>15.5</dd>
-<dt data-toggle="tooltip" title="The size of the longest session.">Longest session</dt><dd>43</dd>
-<dt data-toggle="tooltip" title="Counts the number of satisfiable executions that produced warning messages. Considers commands other than challenges.">Sat executions with warnings</dt><dd>6</dd>
-<dt data-toggle="tooltip" title="Counts the number of executed models that had errors. Considers commands other than challenges.">Executed errored models</dt><dd>40</dd>
-<dt data-toggle="tooltip" title="Counts the number of unsatisfiable executions. Considers commands other than challenges.">Unsat executions</dt><dd>65</dd>
+<dt data-toggle="tooltip" title="The average session length.">Average session</dt><dd>15.076923076923077</dd>
+<dt data-toggle="tooltip" title="The size of the longest session.">Longest session</dt><dd>76</dd>
+<dt data-toggle="tooltip" title="Counts the number of satisfiable executions that produced warning messages. Considers commands other than challenges.">Sat executions with warnings</dt><dd>13</dd>
+<dt data-toggle="tooltip" title="Counts the number of executed models that had errors. Considers commands other than challenges.">Executed errored models</dt><dd>107</dd>
+<dt data-toggle="tooltip" title="Counts the number of unsatisfiable executions. Considers commands other than challenges.">Unsat executions</dt><dd>64</dd>
 <dt data-toggle="tooltip" title="Counts the number of unsatisfiable executions that produced warning messages. Considers commands other than the challenges.">Unsat executions with warnings</dt><dd>0</dd>
 <dt data-toggle="tooltip" title="Counts the number of incorrect executions that produced warning messages.">Errored executions with warnings</dt><dd>0</dd>
-<dt data-toggle="tooltip" title="The average of session unsatisfiable execution ratio.">Average % unsatisfiable</dt><dd>0.30102600250626566</dd>
-<dt data-toggle="tooltip" title="Counts the number of satisfiable executions. Considers commands other than challenges.">Sat executions</dt><dd>19</dd>
+<dt data-toggle="tooltip" title="The average of session unsatisfiable execution ratio.">Average % unsatisfiable</dt><dd>0.37775145176460967</dd>
+<dt data-toggle="tooltip" title="Counts the number of satisfiable executions. Considers commands other than challenges.">Sat executions</dt><dd>219</dd>
 </dl><h2>Overall metrics</h2>
 <h3>Sessions by length</h3>
 <p>The number of sessions with a certain length.</p>
@@ -53,8 +53,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Sessionsbylength, {
    type: 'bar',
    data: {
-      labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43',],      datasets: [
-{backgroundColor: '#6c79ad', data: [2,,1,,,,,,,1,,,1,,,,,,,,,,1,,,,,,,1,,,,,,,,,,,,,1,]},]},
+      labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76',],      datasets: [
+{backgroundColor: '#6c79ad', data: [4,,2,1,1,,1,1,,2,1,2,3,1,,,,1,,,,,2,,,,,,,1,,,,,,,1,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,]},]},
    options: {
       responsive: false,
       legend: {
@@ -77,8 +77,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Warningsbytype, {
    type: 'bar',
    data: {
-      labels: ['Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}','Subset operator is redundant, because both subexpressions are always empty. Left type = {_} Right type = {_}','Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}','The join operation here always yields an empty set. Left type = {_} Right type = {_}','^_ is redundant since its domain and range are disjoint: {_}',],      datasets: [
-{backgroundColor: '#6c79ad', data: [2,1,2,7,1,]},]},
+      labels: ['- is irrelevant since the right expression is redundant. Parent\'s relevant type = {_} Left type = {_} Right type = {_}','This variable is unused.','Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}','Subset operator is redundant, because both subexpressions are always empty. Left type = {_} Right type = {_}','& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}','Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}','The join operation here always yields an empty set. Left type = {_} Right type = {_}','^_ is redundant since its domain and range are disjoint: {_}',],      datasets: [
+{backgroundColor: '#6c79ad', data: [1,4,3,1,2,2,9,1,]},]},
    options: {
       responsive: false,
       legend: {
@@ -101,8 +101,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Sessionsbyofsolvedchallenges, {
    type: 'bar',
    data: {
-      labels: ['0','1','2',],      datasets: [
-{backgroundColor: '#6c79ad', data: [2,3,3,]},]},
+      labels: ['0','1','2','3','4',],      datasets: [
+{backgroundColor: '#6c79ad', data: [4,7,8,6,1,]},]},
    options: {
       responsive: false,
       legend: {
@@ -125,8 +125,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
   var chart = new Chart(Errorsbytype, {
    type: 'bar',
    data: {
-      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','The name _ cannot be found.','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','This must be a set or relation. Instead, it has the following possible type(s): {_}','This must be a formula expression. Instead, it has the following possible type(s): {_}','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 1 possible tokens that can appear here: ) ','There are 3 possible tokens that can appear here: ,  { | ','^ can be used only with a binary relation. Instead, its possible type(s) are: {_}',],      datasets: [
-{backgroundColor: '#6c79ad', data: [2,1,3,7,2,1,10,3,7,1,1,1,1,]},]},
+      labels: ['There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ ','in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','This expression failed to be typechecked line _ column _ filename=_.als','The name _ cannot be found.','This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) ','& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}','There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ ','This must be a set or relation. Instead, it has the following possible type(s): {_}','There are 1 possible tokens that can appear here: [ ','There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ ','= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}','There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~ ','This cannot be an exactly-of expression.','This must be a formula expression. Instead, it has the following possible type(s): {_}','~ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 8 possible tokens that can appear here: NAME disj exh part private seq this var ','There are 1 possible tokens that can appear here: ) ','There are 3 possible tokens that can appear here: ,  : = ','^ can be used only with a binary relation. Instead, its possible type(s) are: {_}','There are 3 possible tokens that can appear here: ,  { | ','+ can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}',],      datasets: [
+{backgroundColor: '#6c79ad', data: [2,3,3,17,3,2,19,11,4,2,3,1,1,11,2,1,13,4,1,3,1,]},]},
    options: {
       responsive: false,
       legend: {
@@ -150,7 +150,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    data: {
       labels: ['0','1','2','3','4',],      datasets: [
-{backgroundColor: '#6c79ad', data: [119,2,2,1,1,]},]},
+{backgroundColor: '#6c79ad', data: [380,7,3,2,1,]},]},
    options: {
       responsive: false,
       legend: {
@@ -168,15 +168,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h2>Overall metrics, classified</h2>
-<h3>Execution results by challenge</h3>
-<p>The number of executions by challenge, classified by result. Errored executions are not considered.</p>
-<canvas id="Executionresultsbychallenge" ></canvas><script>
-  var chart = new Chart(Executionresultsbychallenge, {
+<h3>Execution results by command</h3>
+<p>The number of executions by command, classified by result. Errored executions are not considered. Considers commands other than challenges.</p>
+<canvas id="Executionresultsbycommand" ></canvas><script>
+  var chart = new Chart(Executionresultsbycommand, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['Inv1OK','Inv2OK','Inv3OK','Inv4OK',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [5,4,,10,]},{label: 'SAT', backgroundColor: '#f0e878', data: [2,6,17,40,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [8,25,47,139,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [19,18,10,17,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -215,7 +215,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['Inv1OK','Inv2OK','Inv3OK','Inv4OK',],      datasets: [
-{label: 'solved', backgroundColor: '#93e388', data: [4,2,,3,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [4,6,8,5,]},]},
+{label: 'solved', backgroundColor: '#93e388', data: [18,13,7,7,]},{label: 'unsolved', backgroundColor: '#f0e878', data: [8,13,19,19,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -253,8 +253,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13','2020-12-14','2020-12-15','2020-12-16','2020-12-17','2020-12-18','2020-12-19',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [10,1,,4,,,,,,,,3,,,,,,,,,,,,,1,,,]},{label: 'ERROR', backgroundColor: '#f06779', data: [4,6,,15,,,,,2,,,4,,,,,,,,,,,,,9,,,]},{label: 'SHARE', backgroundColor: 'null', data: [1,,,,,,,,,,,,,,,,,,,,,,,,,,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [11,23,,24,,,,,1,,,3,,,,,,,,,,,,,3,,,]},]},
+      labels: ['2020-11-23','2020-11-24','2020-11-25','2020-11-26','2020-11-27','2020-11-28','2020-11-29','2020-11-30','2020-12-01','2020-12-02','2020-12-03','2020-12-04','2020-12-05','2020-12-06','2020-12-07','2020-12-08','2020-12-09','2020-12-10','2020-12-11','2020-12-12','2020-12-13','2020-12-14','2020-12-15','2020-12-16','2020-12-17','2020-12-18','2020-12-19','2020-12-20','2020-12-21','2020-12-22','2020-12-23','2020-12-24','2020-12-25','2020-12-26','2020-12-27','2020-12-28','2020-12-29','2020-12-30','2020-12-31','2021-01-01','2021-01-02','2021-01-03','2021-01-04','2021-01-05','2021-01-06','2021-01-07','2021-01-08','2021-01-09','2021-01-10','2021-01-11','2021-01-12','2021-01-13','2021-01-14','2021-01-15','2021-01-16','2021-01-17','2021-01-18','2021-01-19','2021-01-20','2021-01-21','2021-01-22','2021-01-23','2021-01-24','2021-01-25','2021-01-26','2021-01-27','2021-01-28','2021-01-29','2021-01-30','2021-01-31','2021-02-01','2021-02-02','2021-02-03','2021-02-04','2021-02-05','2021-02-06','2021-02-07','2021-02-08','2021-02-09','2021-02-10','2021-02-11','2021-02-12','2021-02-13','2021-02-14','2021-02-15','2021-02-16','2021-02-17','2021-02-18','2021-02-19','2021-02-20','2021-02-21','2021-02-22','2021-02-23','2021-02-24','2021-02-25','2021-02-26','2021-02-27','2021-02-28','2021-03-01','2021-03-02','2021-03-03','2021-03-04','2021-03-05','2021-03-06','2021-03-07','2021-03-08','2021-03-09','2021-03-10','2021-03-11','2021-03-12','2021-03-13','2021-03-14','2021-03-15','2021-03-16','2021-03-17','2021-03-18','2021-03-19','2021-03-20','2021-03-21','2021-03-22','2021-03-23','2021-03-24',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [11,23,,24,,,,,1,,,3,,,,,,,,,,,,,3,,,,,,,,,,,,,,,,,,,,,,3,13,,9,8,115,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [10,1,,4,,,,,,,,3,,,,,,,,,,,,,1,,,1,3,,,,,,,,,,,,,,,,,,2,1,,8,3,20,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]},{label: 'ERROR', backgroundColor: '#f06779', data: [4,6,,15,,,,,2,,,4,,,,,,,,,,,,,9,,,,,,,,,,,,,,,,,,,,,,3,4,,4,,56,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]},{label: 'SHARE', backgroundColor: 'null', data: [1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -294,8 +294,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['10','11',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [3,2,]},{label: 'SAT', backgroundColor: '#f0e878', data: [,2,]},]},
+      labels: ['10','11','12',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [3,3,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [10,5,4,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -332,8 +332,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['11','12','13',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [,2,2,]},{label: 'SAT', backgroundColor: '#f0e878', data: [1,2,3,]},]},
+      labels: ['11','12','13','14','15',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [3,4,9,5,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [3,11,3,,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -370,8 +370,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['11','12','13','14','15','16','17',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [1,2,2,7,1,3,1,]},]},
+      labels: ['10','11','12','13','14','15','16','17',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [2,1,7,5,21,6,3,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,,,,7,2,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -408,8 +408,162 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['12','13','14','15','16',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [,,,10,,]},{label: 'SAT', backgroundColor: '#f0e878', data: [4,,19,16,1,]},]},
+      labels: ['10','11','12','13','14','15','16','17','18','19','20',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [1,,9,11,49,29,6,11,9,7,7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,,,,16,,,1,,,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Number of quantified variables</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring first-order quantifiers, grouped by result. Each declared variable is counts once.</p>
+<h4>Inv1OK</h4>
+<canvas id="NumberofquantifiedvariablesInv1OK" ></canvas><script>
+  var chart = new Chart(NumberofquantifiedvariablesInv1OK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1','2','3','4',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [3,,5,,,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [10,,5,,4,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv2OK</h4>
+<canvas id="NumberofquantifiedvariablesInv2OK" ></canvas><script>
+  var chart = new Chart(NumberofquantifiedvariablesInv2OK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1','2','3','4','5','6',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [6,,7,,8,,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [3,,9,,6,,,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv3OK</h4>
+<canvas id="NumberofquantifiedvariablesInv3OK" ></canvas><script>
+  var chart = new Chart(NumberofquantifiedvariablesInv3OK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1','2','3','4','5','6','7','8',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [3,,3,,17,,22,,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,,,2,,3,,5,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv4OK</h4>
+<canvas id="NumberofquantifiedvariablesInv4OK" ></canvas><script>
+  var chart = new Chart(NumberofquantifiedvariablesInv4OK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1','2','3','4','5','6','7','8','9','10',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [1,,9,,33,,61,,28,,7,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,11,,2,,4,,,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -449,7 +603,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [5,]},{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [8,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [19,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -487,7 +641,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [4,]},{label: 'SAT', backgroundColor: '#f0e878', data: [6,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [25,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [18,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -525,7 +679,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [17,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [10,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -563,7 +717,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [10,]},{label: 'SAT', backgroundColor: '#f0e878', data: [40,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [139,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [17,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -602,8 +756,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [5,]},{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},]},
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [8,,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [18,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -640,8 +794,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [4,]},{label: 'SAT', backgroundColor: '#f0e878', data: [6,]},]},
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [20,5,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [17,1,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -678,8 +832,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [17,]},]},
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [43,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [10,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -716,8 +870,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [10,]},{label: 'SAT', backgroundColor: '#f0e878', data: [40,]},]},
+      labels: ['0','1',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [98,41,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [17,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -749,7 +903,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h3>Number of lone/one quantifiers</h3>
-<p>The number of executions, for a particular challenge, by the number of occurring lone/one quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
+<p>The number of executions, for a particular challenge, by the number of occurring lone/one quantifiers, grouped by result. Each declared variable is counts once.</p>
 <h4>Inv1OK</h4>
 <canvas id="NumberofloneonequantifiersInv1OK" ></canvas><script>
   var chart = new Chart(NumberofloneonequantifiersInv1OK, {
@@ -757,7 +911,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [5,]},{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [8,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [19,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -794,8 +948,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [4,]},{label: 'SAT', backgroundColor: '#f0e878', data: [6,]},]},
+      labels: ['0','1','2',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [23,,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [18,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -832,8 +986,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [17,]},]},
+      labels: ['0','1','2',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [46,,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [10,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -871,7 +1025,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [10,]},{label: 'SAT', backgroundColor: '#f0e878', data: [40,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [139,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [17,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -903,15 +1057,15 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h3>Max nested quantifier level</h3>
-<p>The number of executions, for a particular challenge, by the maximum nested level of first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
+<p>The number of executions, for a particular challenge, by the maximum nested level of first-order quantifiers, grouped by result. Each declaration (possibly with multiple variables) counts once.</p>
 <h4>Inv1OK</h4>
 <canvas id="MaxnestedquantifierlevelInv1OK" ></canvas><script>
   var chart = new Chart(MaxnestedquantifierlevelInv1OK, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0','1',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [3,2,]},{label: 'SAT', backgroundColor: '#f0e878', data: [,2,]},]},
+      labels: ['0','1','2',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [3,5,,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [10,5,4,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -948,8 +1102,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0','1','2',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [,2,2,]},{label: 'SAT', backgroundColor: '#f0e878', data: [2,3,1,]},]},
+      labels: ['0','1','2','3',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [6,7,8,4,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [3,9,6,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -986,8 +1140,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [1,8,8,]},]},
+      labels: ['0','1','2','3',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [3,17,25,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,,5,5,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1024,8 +1178,8 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['1','2',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [5,5,]},{label: 'SAT', backgroundColor: '#f0e878', data: [6,34,]},]},
+      labels: ['0','1','2','3',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [1,11,88,39,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [,11,6,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1065,7 +1219,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [5,]},{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [8,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [19,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1103,7 +1257,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [4,]},{label: 'SAT', backgroundColor: '#f0e878', data: [6,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [25,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [18,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1141,7 +1295,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [16,,1,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [37,,10,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [3,,7,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1179,7 +1333,161 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [7,,3,]},{label: 'SAT', backgroundColor: '#f0e878', data: [28,,12,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [64,,75,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [14,,3,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h3>Number of reversed relation navigation</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring expressions of the shape "x.~r".</p>
+<h4>Inv1OK</h4>
+<canvas id="NumberofreversedrelationnavigationInv1OK" ></canvas><script>
+  var chart = new Chart(NumberofreversedrelationnavigationInv1OK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [8,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [19,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv2OK</h4>
+<canvas id="NumberofreversedrelationnavigationInv2OK" ></canvas><script>
+  var chart = new Chart(NumberofreversedrelationnavigationInv2OK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [25,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [18,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv3OK</h4>
+<canvas id="NumberofreversedrelationnavigationInv3OK" ></canvas><script>
+  var chart = new Chart(NumberofreversedrelationnavigationInv3OK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1','2',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [46,,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [10,,,]},]},
+   options: {
+	tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: function(value, context) {
+          if (value == 0) return '';
+          let dataArr = context.datasets;
+          let sum = 0;
+          dataArr.map(data => {
+              sum += data.data[value.index];
+          });
+          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
+        }
+      }
+    },      responsive: true,
+	   maintainAspectRatio: false,
+      legend: {
+         position: 'right'
+      },
+      scales: {
+         xAxes: [{
+            maxBarThickness: 100, stacked: true
+         }],
+         yAxes: [{
+            beginAtZero:true, stacked: true
+         }]
+      }
+   }
+});
+</script><h4>Inv4OK</h4>
+<canvas id="NumberofreversedrelationnavigationInv4OK" ></canvas><script>
+  var chart = new Chart(NumberofreversedrelationnavigationInv4OK, {
+   type: 'bar',
+   indexLabel: '#percent%',
+   data: {
+      labels: ['0','1','2','3','4',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [132,,6,,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [17,,,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1219,7 +1527,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [5,]},{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [8,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [19,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1257,7 +1565,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [4,]},{label: 'SAT', backgroundColor: '#f0e878', data: [6,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [25,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [18,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1295,7 +1603,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [17,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [47,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [10,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1333,7 +1641,7 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [10,]},{label: 'SAT', backgroundColor: '#f0e878', data: [40,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [139,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [17,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1364,170 +1672,16 @@ Overall statistics for this challenge. Note that for challenges correctness is u
       }
    }
 });
-</script><h3>Number of quantifiers</h3>
-<p>The number of executions, for a particular challenge, by the number of occurring first-order quantifiers, grouped by result. Multi-variable quantifiers are counted once.</p>
+</script><h3>Number of inverted navigation</h3>
+<p>The number of executions, for a particular challenge, by the number of occurring expressions of the shape "r.x".</p>
 <h4>Inv1OK</h4>
-<canvas id="NumberofquantifiersInv1OK" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersInv1OK, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1','2',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [3,,2,]},{label: 'SAT', backgroundColor: '#f0e878', data: [,,2,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>Inv2OK</h4>
-<canvas id="NumberofquantifiersInv2OK" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersInv2OK, {
+<canvas id="NumberofinvertednavigationInv1OK" ></canvas><script>
+  var chart = new Chart(NumberofinvertednavigationInv1OK, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0','1','2','3','4',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [,,2,,2,]},{label: 'SAT', backgroundColor: '#f0e878', data: [2,,3,,1,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>Inv3OK</h4>
-<canvas id="NumberofquantifiersInv3OK" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersInv3OK, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0','1','2','3','4','5','6',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [1,,2,,6,,8,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h4>Inv4OK</h4>
-<canvas id="NumberofquantifiersInv4OK" ></canvas><script>
-  var chart = new Chart(NumberofquantifiersInv4OK, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['2','3','4','5','6',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [5,,1,,4,]},{label: 'SAT', backgroundColor: '#f0e878', data: [4,,24,,12,]},]},
-   options: {
-	tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function(value, context) {
-          if (value == 0) return '';
-          let dataArr = context.datasets;
-          let sum = 0;
-          dataArr.map(data => {
-              sum += data.data[value.index];
-          });
-          return context.datasets[value.datasetIndex].label +": "+value.yLabel +' ('+Math.round(1000 / sum * value.yLabel) / 10 + '%)';
-        }
-      }
-    },      responsive: true,
-	   maintainAspectRatio: false,
-      legend: {
-         position: 'right'
-      },
-      scales: {
-         xAxes: [{
-            maxBarThickness: 100, stacked: true
-         }],
-         yAxes: [{
-            beginAtZero:true, stacked: true
-         }]
-      }
-   }
-});
-</script><h3>Number of inverted navigation expressions</h3>
-<p>The number of executions, for a particular challenge, by the number of occurring expressions of the shape x.~r, grouped by result.</p>
-<h4>Inv1OK</h4>
-<canvas id="NumberofinvertednavigationexpressionsInv1OK" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsInv1OK, {
-   type: 'bar',
-   indexLabel: '#percent%',
-   data: {
-      labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [5,]},{label: 'SAT', backgroundColor: '#f0e878', data: [2,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [7,,,,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [19,,,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1559,13 +1713,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>Inv2OK</h4>
-<canvas id="NumberofinvertednavigationexpressionsInv2OK" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsInv2OK, {
+<canvas id="NumberofinvertednavigationInv2OK" ></canvas><script>
+  var chart = new Chart(NumberofinvertednavigationInv2OK, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
       labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [4,]},{label: 'SAT', backgroundColor: '#f0e878', data: [6,]},]},
+{label: 'SAT', backgroundColor: '#f0e878', data: [25,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [18,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1597,13 +1751,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>Inv3OK</h4>
-<canvas id="NumberofinvertednavigationexpressionsInv3OK" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsInv3OK, {
+<canvas id="NumberofinvertednavigationInv3OK" ></canvas><script>
+  var chart = new Chart(NumberofinvertednavigationInv3OK, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0','1','2',],      datasets: [
-{label: 'SAT', backgroundColor: '#f0e878', data: [16,,1,]},]},
+      labels: ['0','1','2','3','4',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [37,,8,,2,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [3,,5,,2,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -1635,13 +1789,13 @@ Overall statistics for this challenge. Note that for challenges correctness is u
    }
 });
 </script><h4>Inv4OK</h4>
-<canvas id="NumberofinvertednavigationexpressionsInv4OK" ></canvas><script>
-  var chart = new Chart(NumberofinvertednavigationexpressionsInv4OK, {
+<canvas id="NumberofinvertednavigationInv4OK" ></canvas><script>
+  var chart = new Chart(NumberofinvertednavigationInv4OK, {
    type: 'bar',
    indexLabel: '#percent%',
    data: {
-      labels: ['0',],      datasets: [
-{label: 'UNSAT', backgroundColor: '#93e388', data: [10,]},{label: 'SAT', backgroundColor: '#f0e878', data: [40,]},]},
+      labels: ['0','1','2','3','4',],      datasets: [
+{label: 'SAT', backgroundColor: '#f0e878', data: [138,,,,1,]},{label: 'UNSAT', backgroundColor: '#93e388', data: [17,,,,,]},]},
    options: {
 	tooltips: {
       enabled: true,
@@ -2049,6 +2203,810 @@ Overall statistics for this challenge. Note that for challenges correctness is u
 </div>
 </div>
 </div>
+<a href="#item-ucquwtfpmLzLKnGKz" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-ucquwtfpmLzLKnGKz" class="glyphicon glyphicon-minus"></i>ucquwtfpmLzLKnGKz, 2020-12-20T23:16:34 (Inv1OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-ucquwtfpmLzLKnGKz"></div>
+<a href="#item-7iy8yLybciowhRd46" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-7iy8yLybciowhRd46" class="glyphicon glyphicon-chevron-right"></i>7iy8yLybciowhRd46, 2020-12-21T11:15:29 (Inv1OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-7iy8yLybciowhRd46"><a href="#item-cjS7rgqDv5N4z655G" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-cjS7rgqDv5N4z655G" class="glyphicon glyphicon-chevron-right"></i>cjS7rgqDv5N4z655G, 2020-12-21T11:17:16 (Inv2OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-cjS7rgqDv5N4z655G"><a href="#item-s89u9hXWmQ44L5ppu" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-s89u9hXWmQ44L5ppu" class="glyphicon glyphicon-chevron-right"></i>s89u9hXWmQ44L5ppu, 2020-12-21T11:23:50 (Inv3OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-s89u9hXWmQ44L5ppu"><a href="#item-3G9vWzoGdnh3CiBDz" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-3G9vWzoGdnh3CiBDz" class="glyphicon glyphicon-minus"></i>3G9vWzoGdnh3CiBDz, 2020-12-21T11:54:14 (model share)</a>
+  <div class="list-group collapse show" id="item-3G9vWzoGdnh3CiBDz"></div>
+</div>
+</div>
+</div>
+<a href="#item-JcCGgwaARWfWBY4AY" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-JcCGgwaARWfWBY4AY" class="glyphicon glyphicon-chevron-right"></i>JcCGgwaARWfWBY4AY, 2021-01-08T01:48 (Inv1OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-JcCGgwaARWfWBY4AY"><a href="#item-osM95CAjBq3yxxwRS" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-osM95CAjBq3yxxwRS" class="glyphicon glyphicon-chevron-right"></i>osM95CAjBq3yxxwRS, 2021-01-08T01:50:30 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+  <div class="list-group collapse show" id="item-osM95CAjBq3yxxwRS"><a href="#item-SCdiLvmtiEYzGTNSt" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-SCdiLvmtiEYzGTNSt" class="glyphicon glyphicon-chevron-right"></i>SCdiLvmtiEYzGTNSt, 2021-01-08T01:51:05 (Inv2OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-SCdiLvmtiEYzGTNSt"><a href="#item-rcc6rb8D7mgkr9akM" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-rcc6rb8D7mgkr9akM" class="glyphicon glyphicon-chevron-right"></i>rcc6rb8D7mgkr9akM, 2021-01-08T01:51:54 (Inv2OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-rcc6rb8D7mgkr9akM"><a href="#item-bhvK5YXXnLjp4Ybbs" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:50px">
+    <i id="icon-bhvK5YXXnLjp4Ybbs" class="glyphicon glyphicon-chevron-right"></i>bhvK5YXXnLjp4Ybbs, 2021-01-08T01:54:53 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-bhvK5YXXnLjp4Ybbs"><a href="#item-6s3B6zPQXuwjh7pvK" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:60px">
+    <i id="icon-6s3B6zPQXuwjh7pvK" class="glyphicon glyphicon-chevron-right"></i>6s3B6zPQXuwjh7pvK, 2021-01-08T01:58:40 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-6s3B6zPQXuwjh7pvK"><a href="#item-WYmsbvmmyXseY9dm5" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:70px">
+    <i id="icon-WYmsbvmmyXseY9dm5" class="glyphicon glyphicon-chevron-right"></i>WYmsbvmmyXseY9dm5, 2021-01-08T02:16:21 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-WYmsbvmmyXseY9dm5"><a href="#item-RXqyGkRXWuhcWyok3" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:80px">
+    <i id="icon-RXqyGkRXWuhcWyok3" class="glyphicon glyphicon-minus"></i>RXqyGkRXWuhcWyok3, 2021-01-08T02:16:35 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-RXqyGkRXWuhcWyok3"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="#item-sitAbxKpYmNF4ZhmW" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-sitAbxKpYmNF4ZhmW" class="glyphicon glyphicon-chevron-right"></i>sitAbxKpYmNF4ZhmW, 2021-01-09T18:17:58 (The name "Profile" cannot be found.)</a>
+  <div class="list-group collapse show" id="item-sitAbxKpYmNF4ZhmW"><a href="#item-bkhBm9TWQhFhkvL8G" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-bkhBm9TWQhFhkvL8G" class="glyphicon glyphicon-chevron-right"></i>bkhBm9TWQhFhkvL8G, 2021-01-09T18:18:06 (Inv1OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-bkhBm9TWQhFhkvL8G"><a href="#item-Segj9dR5dC3ZdZhok" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-Segj9dR5dC3ZdZhok" class="glyphicon glyphicon-chevron-right"></i>Segj9dR5dC3ZdZhok, 2021-01-09T18:18:35 (Inv1OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-Segj9dR5dC3ZdZhok"><a href="#item-LCjXy7C3EwPYGMooN" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-LCjXy7C3EwPYGMooN" class="glyphicon glyphicon-chevron-right"></i>LCjXy7C3EwPYGMooN, 2021-01-09T18:22:54 (Inv2OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-LCjXy7C3EwPYGMooN"><a href="#item-Y2vuTpWEznkBiWoXY" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:50px">
+    <i id="icon-Y2vuTpWEznkBiWoXY" class="glyphicon glyphicon-chevron-right"></i>Y2vuTpWEznkBiWoXY, 2021-01-09T18:23:46 (Inv2OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-Y2vuTpWEznkBiWoXY"><a href="#item-idLMPScmQomSF2TJB" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:60px">
+    <i id="icon-idLMPScmQomSF2TJB" class="glyphicon glyphicon-chevron-right"></i>idLMPScmQomSF2TJB, 2021-01-09T18:24:16 (Inv2OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-idLMPScmQomSF2TJB"><a href="#item-TaBzrQ5oabTpeo7yH" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:70px">
+    <i id="icon-TaBzrQ5oabTpeo7yH" class="glyphicon glyphicon-chevron-right"></i>TaBzrQ5oabTpeo7yH, 2021-01-09T18:27:49 (The name "Institucion" cannot be found.)</a>
+  <div class="list-group collapse show" id="item-TaBzrQ5oabTpeo7yH"><a href="#item-Erth83HWR2xDRM2Pb" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:80px">
+    <i id="icon-Erth83HWR2xDRM2Pb" class="glyphicon glyphicon-chevron-right"></i>Erth83HWR2xDRM2Pb, 2021-01-09T18:28:09 (Inv2OK,incorrect,check,This variable is unused.)</a>
+  <div class="list-group collapse show" id="item-Erth83HWR2xDRM2Pb"><a href="#item-s24Bc38fMWfdDhZLY" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:90px">
+    <i id="icon-s24Bc38fMWfdDhZLY" class="glyphicon glyphicon-chevron-right"></i>s24Bc38fMWfdDhZLY, 2021-01-09T18:28:38 (Inv2OK,incorrect,check,This variable is unused.)</a>
+  <div class="list-group collapse show" id="item-s24Bc38fMWfdDhZLY"><a href="#item-EGDzcTeJZGhb7rMDh" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:100px">
+    <i id="icon-EGDzcTeJZGhb7rMDh" class="glyphicon glyphicon-chevron-right"></i>EGDzcTeJZGhb7rMDh, 2021-01-09T18:31:44 (Inv2OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-EGDzcTeJZGhb7rMDh"><a href="#item-uMsN53pndotnKydre" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:110px">
+    <i id="icon-uMsN53pndotnKydre" class="glyphicon glyphicon-chevron-right"></i>uMsN53pndotnKydre, 2021-01-09T18:32:27 (Inv2OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-uMsN53pndotnKydre"><a href="#item-224vRdir3EssfcBoE" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:120px">
+    <i id="icon-224vRdir3EssfcBoE" class="glyphicon glyphicon-chevron-right"></i>224vRdir3EssfcBoE, 2021-01-09T18:35:37 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-224vRdir3EssfcBoE"><a href="#item-5BGZcafAfQmpX6g3G" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:130px">
+    <i id="icon-5BGZcafAfQmpX6g3G" class="glyphicon glyphicon-chevron-right"></i>5BGZcafAfQmpX6g3G, 2021-01-09T18:37:13 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-5BGZcafAfQmpX6g3G"><a href="#item-FB5HQ7uz49axQPyeS" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:140px">
+    <i id="icon-FB5HQ7uz49axQPyeS" class="glyphicon glyphicon-chevron-right"></i>FB5HQ7uz49axQPyeS, 2021-01-09T18:39:37 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)</a>
+  <div class="list-group collapse show" id="item-FB5HQ7uz49axQPyeS"><a href="#item-4jZyLJacNng3w9QHq" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:150px">
+    <i id="icon-4jZyLJacNng3w9QHq" class="glyphicon glyphicon-chevron-right"></i>4jZyLJacNng3w9QHq, 2021-01-09T18:39:52 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-4jZyLJacNng3w9QHq"><a href="#item-AZXBwLT76EAEerBuv" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:160px">
+    <i id="icon-AZXBwLT76EAEerBuv" class="glyphicon glyphicon-chevron-right"></i>AZXBwLT76EAEerBuv, 2021-01-09T18:40:09 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-AZXBwLT76EAEerBuv"><a href="#item-rE8S9uvA9uGW28sPW" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:170px">
+    <i id="icon-rE8S9uvA9uGW28sPW" class="glyphicon glyphicon-chevron-right"></i>rE8S9uvA9uGW28sPW, 2021-01-09T18:41:53 (in can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/User->this/Work})</a>
+  <div class="list-group collapse show" id="item-rE8S9uvA9uGW28sPW"><a href="#item-vFD2KZSaY9Y2QmgbZ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:180px">
+    <i id="icon-vFD2KZSaY9Y2QmgbZ" class="glyphicon glyphicon-minus"></i>vFD2KZSaY9Y2QmgbZ, 2021-01-09T18:42:03 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-vFD2KZSaY9Y2QmgbZ"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="#item-P5AAyb396BNmK6bwM" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-P5AAyb396BNmK6bwM" class="glyphicon glyphicon-chevron-right"></i>P5AAyb396BNmK6bwM, 2021-01-11T23:02:04 (Inv1OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-P5AAyb396BNmK6bwM"><a href="#item-ZsvuDzEBaGabqjKWh" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-ZsvuDzEBaGabqjKWh" class="glyphicon glyphicon-chevron-right"></i>ZsvuDzEBaGabqjKWh, 2021-01-11T23:03:18 (Inv1OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-ZsvuDzEBaGabqjKWh"><a href="#item-BMQ56ZmwtE2xtFdT9" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-BMQ56ZmwtE2xtFdT9" class="glyphicon glyphicon-chevron-right"></i>BMQ56ZmwtE2xtFdT9, 2021-01-11T23:04:25 (+ can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {univ->univ} Right type = {this/Institution})</a>
+  <div class="list-group collapse show" id="item-BMQ56ZmwtE2xtFdT9"><a href="#item-ENjAMSk99TBCMK8kR" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-ENjAMSk99TBCMK8kR" class="glyphicon glyphicon-chevron-right"></i>ENjAMSk99TBCMK8kR, 2021-01-11T23:05:17 (Inv2OK,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/User} Right type = {this/Institution})</a>
+  <div class="list-group collapse show" id="item-ENjAMSk99TBCMK8kR"><a href="#item-M4hvWrXs9Y6waEhf3" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:50px">
+    <i id="icon-M4hvWrXs9Y6waEhf3" class="glyphicon glyphicon-chevron-right"></i>M4hvWrXs9Y6waEhf3, 2021-01-11T23:07:57 (Inv2OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-M4hvWrXs9Y6waEhf3"><a href="#item-PPuHBNc2FXhqzTiCo" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:60px">
+    <i id="icon-PPuHBNc2FXhqzTiCo" class="glyphicon glyphicon-chevron-right"></i>PPuHBNc2FXhqzTiCo, 2021-01-11T23:14:59 (Inv3OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-PPuHBNc2FXhqzTiCo"><a href="#item-xdenbmArEhgTzs2nT" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:70px">
+    <i id="icon-xdenbmArEhgTzs2nT" class="glyphicon glyphicon-chevron-right"></i>xdenbmArEhgTzs2nT, 2021-01-11T23:18:03 (Inv3OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-xdenbmArEhgTzs2nT"><a href="#item-mDTRSf4znopRBnDrg" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:80px">
+    <i id="icon-mDTRSf4znopRBnDrg" class="glyphicon glyphicon-chevron-right"></i>mDTRSf4znopRBnDrg, 2021-01-11T23:18:15 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-mDTRSf4znopRBnDrg"><a href="#item-d64poXGgpvqcBzJis" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:90px">
+    <i id="icon-d64poXGgpvqcBzJis" class="glyphicon glyphicon-chevron-right"></i>d64poXGgpvqcBzJis, 2021-01-11T23:20:15 (& can be used only between 2 expressions of the same arity. Left type = {this/Work} Right type = {this/Work->this/Id})</a>
+  <div class="list-group collapse show" id="item-d64poXGgpvqcBzJis"><a href="#item-PKvGuWubp54brHK6W" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:100px">
+    <i id="icon-PKvGuWubp54brHK6W" class="glyphicon glyphicon-chevron-right"></i>PKvGuWubp54brHK6W, 2021-01-11T23:21:39 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-PKvGuWubp54brHK6W"><a href="#item-xg8v5eAWNWbCDC65g" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:110px">
+    <i id="icon-xg8v5eAWNWbCDC65g" class="glyphicon glyphicon-minus"></i>xg8v5eAWNWbCDC65g, 2021-01-11T23:22:10 (Inv4OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-xg8v5eAWNWbCDC65g"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="#item-Rjt7QP7BYmNdyRKsR" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-Rjt7QP7BYmNdyRKsR" class="glyphicon glyphicon-chevron-right"></i>Rjt7QP7BYmNdyRKsR, 2021-01-11T23:41:51 (Inv1OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-Rjt7QP7BYmNdyRKsR"><a href="#item-EQ755JLrwmx94ybn8" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-EQ755JLrwmx94ybn8" class="glyphicon glyphicon-chevron-right"></i>EQ755JLrwmx94ybn8, 2021-01-11T23:45:07 (The name "sorce" cannot be found.)</a>
+  <div class="list-group collapse show" id="item-EQ755JLrwmx94ybn8"><a href="#item-EwdFarWYYptffagYb" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-EwdFarWYYptffagYb" class="glyphicon glyphicon-chevron-right"></i>EwdFarWYYptffagYb, 2021-01-11T23:45:11 (in can be used only between 2 expressions of the same arity. Left type = {this/Source} Right type = {univ->this/Source})</a>
+  <div class="list-group collapse show" id="item-EwdFarWYYptffagYb"><a href="#item-DjHJPbAzkueL7emkn" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-DjHJPbAzkueL7emkn" class="glyphicon glyphicon-chevron-right"></i>DjHJPbAzkueL7emkn, 2021-01-11T23:45:24 (Inv2OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-DjHJPbAzkueL7emkn"><a href="#item-NAgamoiGBm6iMXzmF" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:50px">
+    <i id="icon-NAgamoiGBm6iMXzmF" class="glyphicon glyphicon-chevron-right"></i>NAgamoiGBm6iMXzmF, 2021-01-11T23:46:01 (Inv2OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-NAgamoiGBm6iMXzmF"><a href="#item-a6erQRBttyxTepeeB" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:60px">
+    <i id="icon-a6erQRBttyxTepeeB" class="glyphicon glyphicon-chevron-right"></i>a6erQRBttyxTepeeB, 2021-01-11T23:47:47 (Inv2OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-a6erQRBttyxTepeeB"><a href="#item-MEcoDWG8jm3ngmaT4" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:70px">
+    <i id="icon-MEcoDWG8jm3ngmaT4" class="glyphicon glyphicon-chevron-right"></i>MEcoDWG8jm3ngmaT4, 2021-01-11T23:47:52 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-MEcoDWG8jm3ngmaT4"><a href="#item-mjTLDXKRCJwhXkbE2" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:80px">
+    <i id="icon-mjTLDXKRCJwhXkbE2" class="glyphicon glyphicon-chevron-right"></i>mjTLDXKRCJwhXkbE2, 2021-01-11T23:47:53 (Inv2OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-mjTLDXKRCJwhXkbE2"><a href="#item-Bs8HbZTepKgDKAEKn" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:90px">
+    <i id="icon-Bs8HbZTepKgDKAEKn" class="glyphicon glyphicon-chevron-right"></i>Bs8HbZTepKgDKAEKn, 2021-01-11T23:55:01 (Inv2OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-Bs8HbZTepKgDKAEKn"><a href="#item-qGn78W2AKv4WRLAgy" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:100px">
+    <i id="icon-qGn78W2AKv4WRLAgy" class="glyphicon glyphicon-minus"></i>qGn78W2AKv4WRLAgy, 2021-01-11T23:57:29 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-qGn78W2AKv4WRLAgy"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="#item-Yx9N8JxBAEn9HFuvi" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-Yx9N8JxBAEn9HFuvi" class="glyphicon glyphicon-chevron-right"></i>Yx9N8JxBAEn9HFuvi, 2021-01-12T21:10:41 (Inv1OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-Yx9N8JxBAEn9HFuvi"><a href="#item-72iW5NWrydRThtb8r" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-72iW5NWrydRThtb8r" class="glyphicon glyphicon-chevron-right"></i>72iW5NWrydRThtb8r, 2021-01-12T21:11:02 (Inv1OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-72iW5NWrydRThtb8r"><a href="#item-kghxDwk5JgpZokcn8" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-kghxDwk5JgpZokcn8" class="glyphicon glyphicon-chevron-right"></i>kghxDwk5JgpZokcn8, 2021-01-12T21:13:19 (Inv2OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-kghxDwk5JgpZokcn8"><a href="#item-Bzhi3cQnkqMCnQapF" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-Bzhi3cQnkqMCnQapF" class="glyphicon glyphicon-chevron-right"></i>Bzhi3cQnkqMCnQapF, 2021-01-12T21:19:11 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-Bzhi3cQnkqMCnQapF"><a href="#item-g8PrKYqvNpED3FaWw" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:50px">
+    <i id="icon-g8PrKYqvNpED3FaWw" class="glyphicon glyphicon-chevron-right"></i>g8PrKYqvNpED3FaWw, 2021-01-12T21:22:37 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-g8PrKYqvNpED3FaWw"><a href="#item-SothKusMS45g2B4H6" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:60px">
+    <i id="icon-SothKusMS45g2B4H6" class="glyphicon glyphicon-chevron-right"></i>SothKusMS45g2B4H6, 2021-01-12T21:24:37 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-SothKusMS45g2B4H6"><a href="#item-urF8f7QFDGDxry5p8" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:70px">
+    <i id="icon-urF8f7QFDGDxry5p8" class="glyphicon glyphicon-chevron-right"></i>urF8f7QFDGDxry5p8, 2021-01-12T21:24:43 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-urF8f7QFDGDxry5p8"><a href="#item-FwRemKGKSRjFC57op" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:80px">
+    <i id="icon-FwRemKGKSRjFC57op" class="glyphicon glyphicon-chevron-right"></i>FwRemKGKSRjFC57op, 2021-01-12T21:40:17 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-FwRemKGKSRjFC57op"><a href="#item-nhh4Wfpm2rDBqApSo" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:90px">
+    <i id="icon-nhh4Wfpm2rDBqApSo" class="glyphicon glyphicon-chevron-right"></i>nhh4Wfpm2rDBqApSo, 2021-01-12T21:43:54 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-nhh4Wfpm2rDBqApSo"><a href="#item-LuQcDHFTekaQ6aYNd" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:100px">
+    <i id="icon-LuQcDHFTekaQ6aYNd" class="glyphicon glyphicon-chevron-right"></i>LuQcDHFTekaQ6aYNd, 2021-01-12T21:44:39 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-LuQcDHFTekaQ6aYNd"><a href="#item-aKSW6pGzLg8gzAJof" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:110px">
+    <i id="icon-aKSW6pGzLg8gzAJof" class="glyphicon glyphicon-chevron-right"></i>aKSW6pGzLg8gzAJof, 2021-01-12T21:45:28 (Inv3OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-aKSW6pGzLg8gzAJof"><a href="#item-rZSDM5tCEHd8QkaTx" class="more list-group-item list-group-item-info" data-toggle="collapse" style="padding-left:120px">
+    <i id="icon-rZSDM5tCEHd8QkaTx" class="glyphicon glyphicon-minus"></i>rZSDM5tCEHd8QkaTx, 2021-01-12T21:45:42 (model share)</a>
+  <div class="list-group collapse show" id="item-rZSDM5tCEHd8QkaTx"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="#item-PeEwhqKQHjNeRukNi" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-PeEwhqKQHjNeRukNi" class="glyphicon glyphicon-chevron-right"></i>PeEwhqKQHjNeRukNi, 2021-01-13T18:16:56 (Inv1OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-PeEwhqKQHjNeRukNi"><a href="#item-xLPEvrCxyhPvrTXTL" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-xLPEvrCxyhPvrTXTL" class="glyphicon glyphicon-chevron-right"></i>xLPEvrCxyhPvrTXTL, 2021-01-13T18:16:58 (Inv2OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-xLPEvrCxyhPvrTXTL"><a href="#item-ZvRNuu5nTgokKrYGB" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-ZvRNuu5nTgokKrYGB" class="glyphicon glyphicon-chevron-right"></i>ZvRNuu5nTgokKrYGB, 2021-01-13T18:16:59 (Inv3OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-ZvRNuu5nTgokKrYGB"><a href="#item-kxdRtwLzfARCgcMvK" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-kxdRtwLzfARCgcMvK" class="glyphicon glyphicon-chevron-right"></i>kxdRtwLzfARCgcMvK, 2021-01-13T18:17:45 (Inv3OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-kxdRtwLzfARCgcMvK"><a href="#item-FdNnTZdn5NdAa88vo" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:50px">
+    <i id="icon-FdNnTZdn5NdAa88vo" class="glyphicon glyphicon-chevron-right"></i>FdNnTZdn5NdAa88vo, 2021-01-13T18:22:44 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-FdNnTZdn5NdAa88vo"><a href="#item-szkM8RXrDHxJXjoWh" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:60px">
+    <i id="icon-szkM8RXrDHxJXjoWh" class="glyphicon glyphicon-chevron-right"></i>szkM8RXrDHxJXjoWh, 2021-01-13T18:23:56 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-szkM8RXrDHxJXjoWh"><a href="#item-LfdeLSbfLKvukBgZx" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:70px">
+    <i id="icon-LfdeLSbfLKvukBgZx" class="glyphicon glyphicon-chevron-right"></i>LfdeLSbfLKvukBgZx, 2021-01-13T18:25:06 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Id})</a>
+  <div class="list-group collapse show" id="item-LfdeLSbfLKvukBgZx"><a href="#item-o5gRnPRb2yS5G8tAw" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:80px">
+    <i id="icon-o5gRnPRb2yS5G8tAw" class="glyphicon glyphicon-chevron-right"></i>o5gRnPRb2yS5G8tAw, 2021-01-13T18:25:27 (This cannot be a legal relational join where left hand side is u . (this/User <: visible) . (this/Work <: ids) (type = {this/Id}) right hand side is id (type = {this/Id}))</a>
+  <div class="list-group collapse show" id="item-o5gRnPRb2yS5G8tAw"><a href="#item-JYQSzWN5QvpH7LGiK" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:90px">
+    <i id="icon-JYQSzWN5QvpH7LGiK" class="glyphicon glyphicon-chevron-right"></i>JYQSzWN5QvpH7LGiK, 2021-01-13T18:26:07 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-JYQSzWN5QvpH7LGiK"><a href="#item-aS5i4pzw3PfLvJpat" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:100px">
+    <i id="icon-aS5i4pzw3PfLvJpat" class="glyphicon glyphicon-chevron-right"></i>aS5i4pzw3PfLvJpat, 2021-01-13T18:29:03 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-aS5i4pzw3PfLvJpat"><a href="#item-zmF3nTLJEM34eB2E8" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:110px">
+    <i id="icon-zmF3nTLJEM34eB2E8" class="glyphicon glyphicon-chevron-right"></i>zmF3nTLJEM34eB2E8, 2021-01-13T18:30:38 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-zmF3nTLJEM34eB2E8"><a href="#item-saRfhDzRS8BtF5YJ6" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:120px">
+    <i id="icon-saRfhDzRS8BtF5YJ6" class="glyphicon glyphicon-chevron-right"></i>saRfhDzRS8BtF5YJ6, 2021-01-13T18:31:03 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-saRfhDzRS8BtF5YJ6"><a href="#item-KpjojA5KsJnKPdsPK" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:130px">
+    <i id="icon-KpjojA5KsJnKPdsPK" class="glyphicon glyphicon-chevron-right"></i>KpjojA5KsJnKPdsPK, 2021-01-13T18:31:23 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-KpjojA5KsJnKPdsPK"><a href="#item-97szMQdkknRFqeFLc" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:140px">
+    <i id="icon-97szMQdkknRFqeFLc" class="glyphicon glyphicon-minus"></i>97szMQdkknRFqeFLc, 2021-01-13T18:32:48 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-97szMQdkknRFqeFLc"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="#item-3qvySMHAMfxzMkhSt" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-3qvySMHAMfxzMkhSt" class="glyphicon glyphicon-chevron-right"></i>3qvySMHAMfxzMkhSt, 2021-01-13T20:12:36 (Inv1OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-3qvySMHAMfxzMkhSt"><a href="#item-KLQ8uGcmNbWHaqnsm" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-KLQ8uGcmNbWHaqnsm" class="glyphicon glyphicon-chevron-right"></i>KLQ8uGcmNbWHaqnsm, 2021-01-13T20:13:16 (Inv1OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-KLQ8uGcmNbWHaqnsm"><a href="#item-rXwaepdKrHK4kePNd" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-rXwaepdKrHK4kePNd" class="glyphicon glyphicon-chevron-right"></i>rXwaepdKrHK4kePNd, 2021-01-13T20:13:30 (Inv1OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-rXwaepdKrHK4kePNd"><a href="#item-Zm4wtdPyCNrp27eyr" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-Zm4wtdPyCNrp27eyr" class="glyphicon glyphicon-chevron-right"></i>Zm4wtdPyCNrp27eyr, 2021-01-13T20:15:08 (Inv2OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-Zm4wtdPyCNrp27eyr"><a href="#item-BjvCiu6CP2CNijiGn" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:50px">
+    <i id="icon-BjvCiu6CP2CNijiGn" class="glyphicon glyphicon-chevron-right"></i>BjvCiu6CP2CNijiGn, 2021-01-13T20:15:35 (There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~)</a>
+  <div class="list-group collapse show" id="item-BjvCiu6CP2CNijiGn"><a href="#item-TvSpapKu3YwpZrjzj" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:60px">
+    <i id="icon-TvSpapKu3YwpZrjzj" class="glyphicon glyphicon-chevron-right"></i>TvSpapKu3YwpZrjzj, 2021-01-13T20:16:23 (Inv2OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-TvSpapKu3YwpZrjzj"><a href="#item-6jJJjYv5YCWa6XWbt" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:70px">
+    <i id="icon-6jJJjYv5YCWa6XWbt" class="glyphicon glyphicon-chevron-right"></i>6jJJjYv5YCWa6XWbt, 2021-01-13T20:20:20 (This cannot be an exactly-of expression.)</a>
+  <div class="list-group collapse show" id="item-6jJJjYv5YCWa6XWbt"><a href="#item-TbySvMaWLCqHJQHY2" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:80px">
+    <i id="icon-TbySvMaWLCqHJQHY2" class="glyphicon glyphicon-chevron-right"></i>TbySvMaWLCqHJQHY2, 2021-01-13T20:20:57 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-TbySvMaWLCqHJQHY2"><a href="#item-mFr6HtDeaS7vj6Yzv" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:90px">
+    <i id="icon-mFr6HtDeaS7vj6Yzv" class="glyphicon glyphicon-chevron-right"></i>mFr6HtDeaS7vj6Yzv, 2021-01-13T20:23:57 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-mFr6HtDeaS7vj6Yzv"><a href="#item-S9LwYs3MCBxKWgohJ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:100px">
+    <i id="icon-S9LwYs3MCBxKWgohJ" class="glyphicon glyphicon-chevron-right"></i>S9LwYs3MCBxKWgohJ, 2021-01-13T20:24:35 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-S9LwYs3MCBxKWgohJ"><a href="#item-NP7aQqr9qRBExP5YD" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:110px">
+    <i id="icon-NP7aQqr9qRBExP5YD" class="glyphicon glyphicon-chevron-right"></i>NP7aQqr9qRBExP5YD, 2021-01-13T20:25:53 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-NP7aQqr9qRBExP5YD"><a href="#item-xGr2Wkq7MbzFemjBN" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:120px">
+    <i id="icon-xGr2Wkq7MbzFemjBN" class="glyphicon glyphicon-chevron-right"></i>xGr2Wkq7MbzFemjBN, 2021-01-13T20:26:03 (This must be a formula expression. Instead, it has the following possible type(s): {this/Source})</a>
+  <div class="list-group collapse show" id="item-xGr2Wkq7MbzFemjBN"><a href="#item-EC6JKTFi8obQpJGkc" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:130px">
+    <i id="icon-EC6JKTFi8obQpJGkc" class="glyphicon glyphicon-chevron-right"></i>EC6JKTFi8obQpJGkc, 2021-01-13T20:28:10 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-EC6JKTFi8obQpJGkc"><a href="#item-cHSHvZhgwJwtEdK7z" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:140px">
+    <i id="icon-cHSHvZhgwJwtEdK7z" class="glyphicon glyphicon-chevron-right"></i>cHSHvZhgwJwtEdK7z, 2021-01-13T20:30:28 (Inv3OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-cHSHvZhgwJwtEdK7z"><a href="#item-JZnzmkg7ctqjhtRc4" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:150px">
+    <i id="icon-JZnzmkg7ctqjhtRc4" class="glyphicon glyphicon-chevron-right"></i>JZnzmkg7ctqjhtRc4, 2021-01-13T20:34:36 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-JZnzmkg7ctqjhtRc4"><a href="#item-hyQhdzoxjYJCyov8h" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:160px">
+    <i id="icon-hyQhdzoxjYJCyov8h" class="glyphicon glyphicon-chevron-right"></i>hyQhdzoxjYJCyov8h, 2021-01-13T20:34:58 (There are 1 possible tokens that can appear here: [)</a>
+  <div class="list-group collapse show" id="item-hyQhdzoxjYJCyov8h"><a href="#item-Ek4T7PPT2ozcveGoL" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:170px">
+    <i id="icon-Ek4T7PPT2ozcveGoL" class="glyphicon glyphicon-chevron-right"></i>Ek4T7PPT2ozcveGoL, 2021-01-13T20:35:51 (There are 3 possible tokens that can appear here: ,  { |)</a>
+  <div class="list-group collapse show" id="item-Ek4T7PPT2ozcveGoL"><a href="#item-hXs8bwckhv8uPCjDK" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:180px">
+    <i id="icon-hXs8bwckhv8uPCjDK" class="glyphicon glyphicon-chevron-right"></i>hXs8bwckhv8uPCjDK, 2021-01-13T20:36:28 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-hXs8bwckhv8uPCjDK"><a href="#item-bGefksKBgeS4Ddzvo" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:190px">
+    <i id="icon-bGefksKBgeS4Ddzvo" class="glyphicon glyphicon-chevron-right"></i>bGefksKBgeS4Ddzvo, 2021-01-13T20:37:36 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-bGefksKBgeS4Ddzvo"><a href="#item-xwpTsiqSfedoyZrDz" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:200px">
+    <i id="icon-xwpTsiqSfedoyZrDz" class="glyphicon glyphicon-chevron-right"></i>xwpTsiqSfedoyZrDz, 2021-01-13T20:38:09 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-xwpTsiqSfedoyZrDz"><a href="#item-LSwzDd9hdCMgBr4Ts" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:210px">
+    <i id="icon-LSwzDd9hdCMgBr4Ts" class="glyphicon glyphicon-chevron-right"></i>LSwzDd9hdCMgBr4Ts, 2021-01-13T20:39:06 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-LSwzDd9hdCMgBr4Ts"><a href="#item-hqLFRvLCdJTksCH2d" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:220px">
+    <i id="icon-hqLFRvLCdJTksCH2d" class="glyphicon glyphicon-chevron-right"></i>hqLFRvLCdJTksCH2d, 2021-01-13T20:40:35 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-hqLFRvLCdJTksCH2d"><a href="#item-pm3G3ySLWPfsFzWvk" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:230px">
+    <i id="icon-pm3G3ySLWPfsFzWvk" class="glyphicon glyphicon-chevron-right"></i>pm3G3ySLWPfsFzWvk, 2021-01-13T20:43:13 (This expression failed to be typechecked line 43, column 60, filename=/tmp/alloy_heredoc6860503124819000351.als)</a>
+  <div class="list-group collapse show" id="item-pm3G3ySLWPfsFzWvk"><a href="#item-QEypNqZryKnmBaYcP" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:240px">
+    <i id="icon-QEypNqZryKnmBaYcP" class="glyphicon glyphicon-chevron-right"></i>QEypNqZryKnmBaYcP, 2021-01-13T20:43:25 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+  <div class="list-group collapse show" id="item-QEypNqZryKnmBaYcP"><a href="#item-gacATtzubAJn6mdv4" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:250px">
+    <i id="icon-gacATtzubAJn6mdv4" class="glyphicon glyphicon-chevron-right"></i>gacATtzubAJn6mdv4, 2021-01-13T20:43:31 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-gacATtzubAJn6mdv4"><a href="#item-Gayud4PDszaEndMJB" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:260px">
+    <i id="icon-Gayud4PDszaEndMJB" class="glyphicon glyphicon-chevron-right"></i>Gayud4PDszaEndMJB, 2021-01-13T20:44:50 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-Gayud4PDszaEndMJB"><a href="#item-4FkRpJ8pfPoiCGfdq" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:270px">
+    <i id="icon-4FkRpJ8pfPoiCGfdq" class="glyphicon glyphicon-chevron-right"></i>4FkRpJ8pfPoiCGfdq, 2021-01-13T20:46:23 (Inv4OK,incorrect,check,The join operation here always yields an empty set. Left type = {this/Work} Right type = {this/User->this/Work})</a>
+  <div class="list-group collapse show" id="item-4FkRpJ8pfPoiCGfdq"><a href="#item-Q8MwHWautKyhFryHJ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:280px">
+    <i id="icon-Q8MwHWautKyhFryHJ" class="glyphicon glyphicon-chevron-right"></i>Q8MwHWautKyhFryHJ, 2021-01-13T20:46:39 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-Q8MwHWautKyhFryHJ"><a href="#item-Chzrr8RQHCFDJoPgb" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:290px">
+    <i id="icon-Chzrr8RQHCFDJoPgb" class="glyphicon glyphicon-chevron-right"></i>Chzrr8RQHCFDJoPgb, 2021-01-13T20:47:08 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-Chzrr8RQHCFDJoPgb"><a href="#item-w3LLmo8KSdQk7FWw4" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:300px">
+    <i id="icon-w3LLmo8KSdQk7FWw4" class="glyphicon glyphicon-chevron-right"></i>w3LLmo8KSdQk7FWw4, 2021-01-13T20:47:55 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-w3LLmo8KSdQk7FWw4"><a href="#item-EYKRmyEuYsCYLSs9g" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:310px">
+    <i id="icon-EYKRmyEuYsCYLSs9g" class="glyphicon glyphicon-chevron-right"></i>EYKRmyEuYsCYLSs9g, 2021-01-13T20:54:02 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-EYKRmyEuYsCYLSs9g"><a href="#item-uRfN48AMNbH6n99SB" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:320px">
+    <i id="icon-uRfN48AMNbH6n99SB" class="glyphicon glyphicon-chevron-right"></i>uRfN48AMNbH6n99SB, 2021-01-13T20:55:12 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-uRfN48AMNbH6n99SB"><a href="#item-3uMhhsovPuiBmLMYR" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:330px">
+    <i id="icon-3uMhhsovPuiBmLMYR" class="glyphicon glyphicon-chevron-right"></i>3uMhhsovPuiBmLMYR, 2021-01-13T20:55:19 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-3uMhhsovPuiBmLMYR"><a href="#item-MHw5nzdewQYJdMMrb" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:340px">
+    <i id="icon-MHw5nzdewQYJdMMrb" class="glyphicon glyphicon-chevron-right"></i>MHw5nzdewQYJdMMrb, 2021-01-13T20:57:51 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-MHw5nzdewQYJdMMrb"><a href="#item-vqMypXh6bNSS52Fek" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:350px">
+    <i id="icon-vqMypXh6bNSS52Fek" class="glyphicon glyphicon-chevron-right"></i>vqMypXh6bNSS52Fek, 2021-01-13T21:00:04 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-vqMypXh6bNSS52Fek"><a href="#item-dNrp2APxdeS2yMjqF" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:360px">
+    <i id="icon-dNrp2APxdeS2yMjqF" class="glyphicon glyphicon-chevron-right"></i>dNrp2APxdeS2yMjqF, 2021-01-13T21:00:17 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-dNrp2APxdeS2yMjqF"><a href="#item-6TNxmjitqNvyFwoMD" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:370px">
+    <i id="icon-6TNxmjitqNvyFwoMD" class="glyphicon glyphicon-minus"></i>6TNxmjitqNvyFwoMD, 2021-01-13T21:01:02 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-6TNxmjitqNvyFwoMD"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="#item-imaMtvfNrRhDdz6WK" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-imaMtvfNrRhDdz6WK" class="glyphicon glyphicon-chevron-right"></i>imaMtvfNrRhDdz6WK, 2021-01-13T20:13:18 (Inv1OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-imaMtvfNrRhDdz6WK"><a href="#item-ZkdJRtkj3AwLMfi8u" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-ZkdJRtkj3AwLMfi8u" class="glyphicon glyphicon-chevron-right"></i>ZkdJRtkj3AwLMfi8u, 2021-01-13T20:14:26 (Inv2OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-ZkdJRtkj3AwLMfi8u"><a href="#item-zpuy27ZeEjibswQt5" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-zpuy27ZeEjibswQt5" class="glyphicon glyphicon-chevron-right"></i>zpuy27ZeEjibswQt5, 2021-01-13T20:17:13 (The name "user" cannot be found.)</a>
+  <div class="list-group collapse show" id="item-zpuy27ZeEjibswQt5"><a href="#item-wNw5DfXueZX9Nk3pr" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-wNw5DfXueZX9Nk3pr" class="glyphicon glyphicon-chevron-right"></i>wNw5DfXueZX9Nk3pr, 2021-01-13T20:17:19 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-wNw5DfXueZX9Nk3pr"><a href="#item-9PMKBpyKxpK2Cpw8N" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:50px">
+    <i id="icon-9PMKBpyKxpK2Cpw8N" class="glyphicon glyphicon-chevron-right"></i>9PMKBpyKxpK2Cpw8N, 2021-01-13T20:17:41 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-9PMKBpyKxpK2Cpw8N"><a href="#item-ED4gx4yyqFE9nWc2q" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:60px">
+    <i id="icon-ED4gx4yyqFE9nWc2q" class="glyphicon glyphicon-chevron-right"></i>ED4gx4yyqFE9nWc2q, 2021-01-13T20:20:44 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-ED4gx4yyqFE9nWc2q"><a href="#item-wMQWqaPKWFd2vBo8r" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:70px">
+    <i id="icon-wMQWqaPKWFd2vBo8r" class="glyphicon glyphicon-chevron-right"></i>wMQWqaPKWFd2vBo8r, 2021-01-13T20:20:46 (Inv3OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-wMQWqaPKWFd2vBo8r"><a href="#item-RYuQng6ThpqyNjoR8" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:80px">
+    <i id="icon-RYuQng6ThpqyNjoR8" class="glyphicon glyphicon-chevron-right"></i>RYuQng6ThpqyNjoR8, 2021-01-13T20:30:37 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-RYuQng6ThpqyNjoR8"><a href="#item-3BWHNis9kKrXsCzwb" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:90px">
+    <i id="icon-3BWHNis9kKrXsCzwb" class="glyphicon glyphicon-chevron-right"></i>3BWHNis9kKrXsCzwb, 2021-01-13T20:31:28 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-3BWHNis9kKrXsCzwb"><a href="#item-oQzHH8Z5JYMWEZRbg" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:100px">
+    <i id="icon-oQzHH8Z5JYMWEZRbg" class="glyphicon glyphicon-chevron-right"></i>oQzHH8Z5JYMWEZRbg, 2021-01-13T20:31:36 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-oQzHH8Z5JYMWEZRbg"><a href="#item-qnvkm5dDq783pNyvG" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:110px">
+    <i id="icon-qnvkm5dDq783pNyvG" class="glyphicon glyphicon-chevron-right"></i>qnvkm5dDq783pNyvG, 2021-01-13T20:33:20 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-qnvkm5dDq783pNyvG"><a href="#item-mWDrcQ49NCeSoPuNm" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:120px">
+    <i id="icon-mWDrcQ49NCeSoPuNm" class="glyphicon glyphicon-minus"></i>mWDrcQ49NCeSoPuNm, 2021-01-13T21:04:21 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-mWDrcQ49NCeSoPuNm"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="#item-Y9KNwbvWtxChwpfLs" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-Y9KNwbvWtxChwpfLs" class="glyphicon glyphicon-chevron-right"></i>Y9KNwbvWtxChwpfLs, 2021-01-13T21:49:25 (Inv1OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-Y9KNwbvWtxChwpfLs"><a href="#item-hqZj6LnFnCFmhybT6" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-hqZj6LnFnCFmhybT6" class="glyphicon glyphicon-chevron-right"></i>hqZj6LnFnCFmhybT6, 2021-01-13T21:51:12 (Inv2OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-hqZj6LnFnCFmhybT6"><a href="#item-khheqZ9hAdmDhFmNn" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-khheqZ9hAdmDhFmNn" class="glyphicon glyphicon-chevron-right"></i>khheqZ9hAdmDhFmNn, 2021-01-13T21:57:59 (This must be a formula expression. Instead, it has the following possible type(s): {this/Source})</a>
+  <div class="list-group collapse show" id="item-khheqZ9hAdmDhFmNn"><a href="#item-p7af6C5yAaovSkTrs" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-p7af6C5yAaovSkTrs" class="glyphicon glyphicon-chevron-right"></i>p7af6C5yAaovSkTrs, 2021-01-13T21:58:23 (This must be a formula expression. Instead, it has the following possible type(s): {this/Institution})</a>
+  <div class="list-group collapse show" id="item-p7af6C5yAaovSkTrs"><a href="#item-vsMP8TgtbCnPH7sGL" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:50px">
+    <i id="icon-vsMP8TgtbCnPH7sGL" class="glyphicon glyphicon-chevron-right"></i>vsMP8TgtbCnPH7sGL, 2021-01-13T21:58:40 (Inv2OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-vsMP8TgtbCnPH7sGL"><a href="#item-cb97iAYbKjexqBEBZ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:60px">
+    <i id="icon-cb97iAYbKjexqBEBZ" class="glyphicon glyphicon-chevron-right"></i>cb97iAYbKjexqBEBZ, 2021-01-13T22:00:08 (Inv2OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-cb97iAYbKjexqBEBZ"><a href="#item-yGoPvzv5MJZw7DFn8" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:70px">
+    <i id="icon-yGoPvzv5MJZw7DFn8" class="glyphicon glyphicon-chevron-right"></i>yGoPvzv5MJZw7DFn8, 2021-01-13T22:02:10 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+  <div class="list-group collapse show" id="item-yGoPvzv5MJZw7DFn8"><a href="#item-kB4hoAPKaRipDLWPw" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:80px">
+    <i id="icon-kB4hoAPKaRipDLWPw" class="glyphicon glyphicon-chevron-right"></i>kB4hoAPKaRipDLWPw, 2021-01-13T22:02:26 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+  <div class="list-group collapse show" id="item-kB4hoAPKaRipDLWPw"><a href="#item-Gy39ANLAG7rX4qGfa" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:90px">
+    <i id="icon-Gy39ANLAG7rX4qGfa" class="glyphicon glyphicon-chevron-right"></i>Gy39ANLAG7rX4qGfa, 2021-01-13T22:02:37 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+  <div class="list-group collapse show" id="item-Gy39ANLAG7rX4qGfa"><a href="#item-77KnNHyLGLrEYa5C4" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:100px">
+    <i id="icon-77KnNHyLGLrEYa5C4" class="glyphicon glyphicon-chevron-right"></i>77KnNHyLGLrEYa5C4, 2021-01-13T22:02:57 (Inv2OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-77KnNHyLGLrEYa5C4"><a href="#item-CBnPFyXcSpCnrkQb3" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:110px">
+    <i id="icon-CBnPFyXcSpCnrkQb3" class="glyphicon glyphicon-chevron-right"></i>CBnPFyXcSpCnrkQb3, 2021-01-13T22:03:10 (Inv2OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-CBnPFyXcSpCnrkQb3"><a href="#item-xR2hxYRXAsRiwjhAT" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:120px">
+    <i id="icon-xR2hxYRXAsRiwjhAT" class="glyphicon glyphicon-chevron-right"></i>xR2hxYRXAsRiwjhAT, 2021-01-13T22:03:22 (Inv2OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-xR2hxYRXAsRiwjhAT"><a href="#item-eyBzSfmHkPNvPSafr" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:130px">
+    <i id="icon-eyBzSfmHkPNvPSafr" class="glyphicon glyphicon-chevron-right"></i>eyBzSfmHkPNvPSafr, 2021-01-13T22:03:30 (Inv2OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-eyBzSfmHkPNvPSafr"><a href="#item-cmBgovkW58SMpdNQL" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:140px">
+    <i id="icon-cmBgovkW58SMpdNQL" class="glyphicon glyphicon-chevron-right"></i>cmBgovkW58SMpdNQL, 2021-01-13T22:03:59 (Inv2OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-cmBgovkW58SMpdNQL"><a href="#item-EJRn4GvJyYPk7b6SH" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:150px">
+    <i id="icon-EJRn4GvJyYPk7b6SH" class="glyphicon glyphicon-chevron-right"></i>EJRn4GvJyYPk7b6SH, 2021-01-13T22:09:14 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-EJRn4GvJyYPk7b6SH"><a href="#item-7PvpgEPP4cBDJgifZ" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:160px">
+    <i id="icon-7PvpgEPP4cBDJgifZ" class="glyphicon glyphicon-chevron-right"></i>7PvpgEPP4cBDJgifZ, 2021-01-13T22:09:20 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-7PvpgEPP4cBDJgifZ"><a href="#item-dEe5aW7qxo2uWpp2y" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:170px">
+    <i id="icon-dEe5aW7qxo2uWpp2y" class="glyphicon glyphicon-chevron-right"></i>dEe5aW7qxo2uWpp2y, 2021-01-13T22:14:17 (Inv3OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-dEe5aW7qxo2uWpp2y"><a href="#item-wQHGnAWZP7NCbH3ZZ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:180px">
+    <i id="icon-wQHGnAWZP7NCbH3ZZ" class="glyphicon glyphicon-chevron-right"></i>wQHGnAWZP7NCbH3ZZ, 2021-01-13T22:32:21 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-wQHGnAWZP7NCbH3ZZ"><a href="#item-ondqEGP4iaGCSkAbP" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:190px">
+    <i id="icon-ondqEGP4iaGCSkAbP" class="glyphicon glyphicon-chevron-right"></i>ondqEGP4iaGCSkAbP, 2021-01-13T22:32:49 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-ondqEGP4iaGCSkAbP"><a href="#item-Tp8nvb39zhbqEYTFa" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:200px">
+    <i id="icon-Tp8nvb39zhbqEYTFa" class="glyphicon glyphicon-chevron-right"></i>Tp8nvb39zhbqEYTFa, 2021-01-14T12:51:44 (Inv4OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-Tp8nvb39zhbqEYTFa"><a href="#item-AWXhTbmMLaCgYTAfj" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:210px">
+    <i id="icon-AWXhTbmMLaCgYTAfj" class="glyphicon glyphicon-chevron-right"></i>AWXhTbmMLaCgYTAfj, 2021-01-14T12:52:26 (Inv3OK,incorrect,check,This variable is unused.)</a>
+  <div class="list-group collapse show" id="item-AWXhTbmMLaCgYTAfj"><a href="#item-WGA4CSN5fdGWnyqjF" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:220px">
+    <i id="icon-WGA4CSN5fdGWnyqjF" class="glyphicon glyphicon-chevron-right"></i>WGA4CSN5fdGWnyqjF, 2021-01-14T12:52:49 (Inv3OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-WGA4CSN5fdGWnyqjF"><a href="#item-fQcMaaSj5GzAcHfbf" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:230px">
+    <i id="icon-fQcMaaSj5GzAcHfbf" class="glyphicon glyphicon-minus"></i>fQcMaaSj5GzAcHfbf, 2021-01-14T12:52:57 (Inv4OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-fQcMaaSj5GzAcHfbf"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="#item-pJtKj9z48jNyhC7yJ" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-pJtKj9z48jNyhC7yJ" class="glyphicon glyphicon-chevron-right"></i>pJtKj9z48jNyhC7yJ, 2021-01-13T22:26:21 (There are 1 possible tokens that can appear here: [)</a>
+  <div class="list-group collapse show" id="item-pJtKj9z48jNyhC7yJ"><a href="#item-n5BoJ6epbkHyN5M7X" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-n5BoJ6epbkHyN5M7X" class="glyphicon glyphicon-chevron-right"></i>n5BoJ6epbkHyN5M7X, 2021-01-13T22:26:44 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)</a>
+  <div class="list-group collapse show" id="item-n5BoJ6epbkHyN5M7X"><a href="#item-PPzp38vTwGq5LE2pa" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-PPzp38vTwGq5LE2pa" class="glyphicon glyphicon-chevron-right"></i>PPzp38vTwGq5LE2pa, 2021-01-13T22:26:50 (There are 3 possible tokens that can appear here: ,  : =)</a>
+  <div class="list-group collapse show" id="item-PPzp38vTwGq5LE2pa"><a href="#item-KFuwLCkgxJJoLZFcS" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-KFuwLCkgxJJoLZFcS" class="glyphicon glyphicon-chevron-right"></i>KFuwLCkgxJJoLZFcS, 2021-01-13T22:27:06 (There are 3 possible tokens that can appear here: ,  : =)</a>
+  <div class="list-group collapse show" id="item-KFuwLCkgxJJoLZFcS"><a href="#item-aoy3amK6shK4LLk82" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:50px">
+    <i id="icon-aoy3amK6shK4LLk82" class="glyphicon glyphicon-chevron-right"></i>aoy3amK6shK4LLk82, 2021-01-13T22:27:22 (There are 1 possible tokens that can appear here: [)</a>
+  <div class="list-group collapse show" id="item-aoy3amK6shK4LLk82"><a href="#item-wuSws8EJD3krFohoX" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:60px">
+    <i id="icon-wuSws8EJD3krFohoX" class="glyphicon glyphicon-chevron-right"></i>wuSws8EJD3krFohoX, 2021-01-13T22:27:43 (There are 1 possible tokens that can appear here: [)</a>
+  <div class="list-group collapse show" id="item-wuSws8EJD3krFohoX"><a href="#item-6ZTeQj9vsfCybrwHK" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:70px">
+    <i id="icon-6ZTeQj9vsfCybrwHK" class="glyphicon glyphicon-chevron-right"></i>6ZTeQj9vsfCybrwHK, 2021-01-13T22:28:12 (There are 3 possible tokens that can appear here: ,  : =)</a>
+  <div class="list-group collapse show" id="item-6ZTeQj9vsfCybrwHK"><a href="#item-bghYKaPDb8Qas4aw5" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:80px">
+    <i id="icon-bghYKaPDb8Qas4aw5" class="glyphicon glyphicon-chevron-right"></i>bghYKaPDb8Qas4aw5, 2021-01-13T22:28:26 (There are 3 possible tokens that can appear here: ,  : =)</a>
+  <div class="list-group collapse show" id="item-bghYKaPDb8Qas4aw5"><a href="#item-xu5LdChW5vvtQ2vKu" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:90px">
+    <i id="icon-xu5LdChW5vvtQ2vKu" class="glyphicon glyphicon-chevron-right"></i>xu5LdChW5vvtQ2vKu, 2021-01-13T22:28:37 (This expression failed to be typechecked line 42, column 56, filename=/tmp/alloy_heredoc2298808089797856399.als)</a>
+  <div class="list-group collapse show" id="item-xu5LdChW5vvtQ2vKu"><a href="#item-KuHJ4Frjmc4G7PGFx" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:100px">
+    <i id="icon-KuHJ4Frjmc4G7PGFx" class="glyphicon glyphicon-chevron-right"></i>KuHJ4Frjmc4G7PGFx, 2021-01-13T22:29:35 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-KuHJ4Frjmc4G7PGFx"><a href="#item-LQ8BnEKmiWSj9Zp8j" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:110px">
+    <i id="icon-LQ8BnEKmiWSj9Zp8j" class="glyphicon glyphicon-chevron-right"></i>LQ8BnEKmiWSj9Zp8j, 2021-01-13T22:30:24 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)</a>
+  <div class="list-group collapse show" id="item-LQ8BnEKmiWSj9Zp8j"><a href="#item-eneCNZJEhRRPApsja" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:120px">
+    <i id="icon-eneCNZJEhRRPApsja" class="glyphicon glyphicon-chevron-right"></i>eneCNZJEhRRPApsja, 2021-01-13T22:30:32 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-eneCNZJEhRRPApsja"><a href="#item-mcs5w7zEzjXgbJcvN" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:130px">
+    <i id="icon-mcs5w7zEzjXgbJcvN" class="glyphicon glyphicon-chevron-right"></i>mcs5w7zEzjXgbJcvN, 2021-01-13T22:31:25 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-mcs5w7zEzjXgbJcvN"><a href="#item-Ekrxi95q7HgsyKCdd" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:140px">
+    <i id="icon-Ekrxi95q7HgsyKCdd" class="glyphicon glyphicon-chevron-right"></i>Ekrxi95q7HgsyKCdd, 2021-01-13T22:32:31 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-Ekrxi95q7HgsyKCdd"><a href="#item-THgd4gfsw54bBKKR9" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:150px">
+    <i id="icon-THgd4gfsw54bBKKR9" class="glyphicon glyphicon-chevron-right"></i>THgd4gfsw54bBKKR9, 2021-01-13T22:33:08 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-THgd4gfsw54bBKKR9"><a href="#item-vsetuQt35x7BuTWWe" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:160px">
+    <i id="icon-vsetuQt35x7BuTWWe" class="glyphicon glyphicon-chevron-right"></i>vsetuQt35x7BuTWWe, 2021-01-13T22:34:31 (Inv4OK,incorrect,check,- is irrelevant since the right expression is redundant. Parent's relevant type = {none} Left type = {this/Work} Right type = {this/Work})</a>
+  <div class="list-group collapse show" id="item-vsetuQt35x7BuTWWe"><a href="#item-vfs4wkmA6GBTmkJ8h" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:170px">
+    <i id="icon-vfs4wkmA6GBTmkJ8h" class="glyphicon glyphicon-chevron-right"></i>vfs4wkmA6GBTmkJ8h, 2021-01-13T22:35:24 (There are 1 possible tokens that can appear here: ))</a>
+  <div class="list-group collapse show" id="item-vfs4wkmA6GBTmkJ8h"><a href="#item-Gu2gjhxr3DQhnSBQF" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:180px">
+    <i id="icon-Gu2gjhxr3DQhnSBQF" class="glyphicon glyphicon-chevron-right"></i>Gu2gjhxr3DQhnSBQF, 2021-01-13T22:35:35 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-Gu2gjhxr3DQhnSBQF"><a href="#item-F3f9ZFzeRgJiX9aNf" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:190px">
+    <i id="icon-F3f9ZFzeRgJiX9aNf" class="glyphicon glyphicon-chevron-right"></i>F3f9ZFzeRgJiX9aNf, 2021-01-13T22:36:23 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-F3f9ZFzeRgJiX9aNf"><a href="#item-vJjcBe3E6zAq42eTf" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:200px">
+    <i id="icon-vJjcBe3E6zAq42eTf" class="glyphicon glyphicon-chevron-right"></i>vJjcBe3E6zAq42eTf, 2021-01-13T22:37:16 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-vJjcBe3E6zAq42eTf"><a href="#item-7q7dJm8oYzNuhmToo" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:210px">
+    <i id="icon-7q7dJm8oYzNuhmToo" class="glyphicon glyphicon-chevron-right"></i>7q7dJm8oYzNuhmToo, 2021-01-13T22:37:55 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-7q7dJm8oYzNuhmToo"><a href="#item-dnxcFRcXcLm4muzjY" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:220px">
+    <i id="icon-dnxcFRcXcLm4muzjY" class="glyphicon glyphicon-chevron-right"></i>dnxcFRcXcLm4muzjY, 2021-01-13T22:40:26 (Inv1OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-dnxcFRcXcLm4muzjY"><a href="#item-8t2cK9YGbYYWkmjSH" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:230px">
+    <i id="icon-8t2cK9YGbYYWkmjSH" class="glyphicon glyphicon-chevron-right"></i>8t2cK9YGbYYWkmjSH, 2021-01-13T22:41:18 (The name "profule" cannot be found.)</a>
+  <div class="list-group collapse show" id="item-8t2cK9YGbYYWkmjSH"><a href="#item-75QSpd8je2avvfSbj" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:240px">
+    <i id="icon-75QSpd8je2avvfSbj" class="glyphicon glyphicon-chevron-right"></i>75QSpd8je2avvfSbj, 2021-01-13T22:41:25 (Inv2OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-75QSpd8je2avvfSbj"><a href="#item-pBLxAY9n4tN5QH6Mq" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:250px">
+    <i id="icon-pBLxAY9n4tN5QH6Mq" class="glyphicon glyphicon-chevron-right"></i>pBLxAY9n4tN5QH6Mq, 2021-01-13T22:42:03 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-pBLxAY9n4tN5QH6Mq"><a href="#item-Ame5hxtykTt63NHfW" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:260px">
+    <i id="icon-Ame5hxtykTt63NHfW" class="glyphicon glyphicon-chevron-right"></i>Ame5hxtykTt63NHfW, 2021-01-13T22:42:23 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-Ame5hxtykTt63NHfW"><a href="#item-YJhRb5qQPJojk32de" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:270px">
+    <i id="icon-YJhRb5qQPJojk32de" class="glyphicon glyphicon-chevron-right"></i>YJhRb5qQPJojk32de, 2021-01-13T22:44:07 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-YJhRb5qQPJojk32de"><a href="#item-qNPcJ6aAQGSEcmymJ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:280px">
+    <i id="icon-qNPcJ6aAQGSEcmymJ" class="glyphicon glyphicon-chevron-right"></i>qNPcJ6aAQGSEcmymJ, 2021-01-13T22:44:40 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-qNPcJ6aAQGSEcmymJ"><a href="#item-P5A9TvT2CEY7qbREm" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:290px">
+    <i id="icon-P5A9TvT2CEY7qbREm" class="glyphicon glyphicon-chevron-right"></i>P5A9TvT2CEY7qbREm, 2021-01-13T22:45:24 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-P5A9TvT2CEY7qbREm"><a href="#item-tu5WEFtXKXXKHBsLM" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:300px">
+    <i id="icon-tu5WEFtXKXXKHBsLM" class="glyphicon glyphicon-chevron-right"></i>tu5WEFtXKXXKHBsLM, 2021-01-13T22:51:49 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-tu5WEFtXKXXKHBsLM"><a href="#item-HnqEW5cXywgn9eydr" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:310px">
+    <i id="icon-HnqEW5cXywgn9eydr" class="glyphicon glyphicon-chevron-right"></i>HnqEW5cXywgn9eydr, 2021-01-13T22:53:30 (There are 1 possible tokens that can appear here: ))</a>
+  <div class="list-group collapse show" id="item-HnqEW5cXywgn9eydr"><a href="#item-M748dLa3aYMtRc8w6" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:320px">
+    <i id="icon-M748dLa3aYMtRc8w6" class="glyphicon glyphicon-chevron-right"></i>M748dLa3aYMtRc8w6, 2021-01-13T22:53:37 (There are 1 possible tokens that can appear here: ))</a>
+  <div class="list-group collapse show" id="item-M748dLa3aYMtRc8w6"><a href="#item-HCEWdQBvg2iiZZidR" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:330px">
+    <i id="icon-HCEWdQBvg2iiZZidR" class="glyphicon glyphicon-chevron-right"></i>HCEWdQBvg2iiZZidR, 2021-01-13T22:53:48 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-HCEWdQBvg2iiZZidR"><a href="#item-ow2GXbL53jBk3cwtR" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:340px">
+    <i id="icon-ow2GXbL53jBk3cwtR" class="glyphicon glyphicon-chevron-right"></i>ow2GXbL53jBk3cwtR, 2021-01-13T22:54:01 (There are 3 possible tokens that can appear here: ,  { |)</a>
+  <div class="list-group collapse show" id="item-ow2GXbL53jBk3cwtR"><a href="#item-QkSstKCniPDHYrobH" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:350px">
+    <i id="icon-QkSstKCniPDHYrobH" class="glyphicon glyphicon-chevron-right"></i>QkSstKCniPDHYrobH, 2021-01-13T22:54:05 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-QkSstKCniPDHYrobH"><a href="#item-oRxo3QnNNbyq7XtuM" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:360px">
+    <i id="icon-oRxo3QnNNbyq7XtuM" class="glyphicon glyphicon-chevron-right"></i>oRxo3QnNNbyq7XtuM, 2021-01-13T22:54:39 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-oRxo3QnNNbyq7XtuM"><a href="#item-enSKJy6p2P66Gkit7" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:370px">
+    <i id="icon-enSKJy6p2P66Gkit7" class="glyphicon glyphicon-chevron-right"></i>enSKJy6p2P66Gkit7, 2021-01-13T22:55:09 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-enSKJy6p2P66Gkit7"><a href="#item-ea8PuKjaiBGGQNLke" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:380px">
+    <i id="icon-ea8PuKjaiBGGQNLke" class="glyphicon glyphicon-chevron-right"></i>ea8PuKjaiBGGQNLke, 2021-01-13T22:56:32 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-ea8PuKjaiBGGQNLke"><a href="#item-pA7iBT6ddqGG4gZ7g" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:390px">
+    <i id="icon-pA7iBT6ddqGG4gZ7g" class="glyphicon glyphicon-chevron-right"></i>pA7iBT6ddqGG4gZ7g, 2021-01-13T22:57:03 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-pA7iBT6ddqGG4gZ7g"><a href="#item-D9yEvqPTzdruDW8Cc" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:400px">
+    <i id="icon-D9yEvqPTzdruDW8Cc" class="glyphicon glyphicon-chevron-right"></i>D9yEvqPTzdruDW8Cc, 2021-01-13T22:57:37 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-D9yEvqPTzdruDW8Cc"><a href="#item-tqr2hWjqSoFEW23fZ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:410px">
+    <i id="icon-tqr2hWjqSoFEW23fZ" class="glyphicon glyphicon-chevron-right"></i>tqr2hWjqSoFEW23fZ, 2021-01-13T22:59:09 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-tqr2hWjqSoFEW23fZ"><a href="#item-bvmMt4bCQNZHNT8Ez" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:420px">
+    <i id="icon-bvmMt4bCQNZHNT8Ez" class="glyphicon glyphicon-chevron-right"></i>bvmMt4bCQNZHNT8Ez, 2021-01-13T22:59:32 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-bvmMt4bCQNZHNT8Ez"><a href="#item-nnds48PCEaoBrXFgx" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:430px">
+    <i id="icon-nnds48PCEaoBrXFgx" class="glyphicon glyphicon-chevron-right"></i>nnds48PCEaoBrXFgx, 2021-01-13T23:00:23 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-nnds48PCEaoBrXFgx"><a href="#item-EL2sEYBeWskbEEF9E" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:440px">
+    <i id="icon-EL2sEYBeWskbEEF9E" class="glyphicon glyphicon-chevron-right"></i>EL2sEYBeWskbEEF9E, 2021-01-13T23:00:34 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-EL2sEYBeWskbEEF9E"><a href="#item-stETGM5rzqrgZgnAm" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:450px">
+    <i id="icon-stETGM5rzqrgZgnAm" class="glyphicon glyphicon-chevron-right"></i>stETGM5rzqrgZgnAm, 2021-01-13T23:01:07 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-stETGM5rzqrgZgnAm"><a href="#item-fiqDei2NJ3SmkGriC" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:460px">
+    <i id="icon-fiqDei2NJ3SmkGriC" class="glyphicon glyphicon-chevron-right"></i>fiqDei2NJ3SmkGriC, 2021-01-13T23:01:46 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-fiqDei2NJ3SmkGriC"><a href="#item-CkyLvW3tuhSvb9FEM" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:470px">
+    <i id="icon-CkyLvW3tuhSvb9FEM" class="glyphicon glyphicon-chevron-right"></i>CkyLvW3tuhSvb9FEM, 2021-01-13T23:02:40 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-CkyLvW3tuhSvb9FEM"><a href="#item-s22Wv7kzyphZts7aZ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:480px">
+    <i id="icon-s22Wv7kzyphZts7aZ" class="glyphicon glyphicon-chevron-right"></i>s22Wv7kzyphZts7aZ, 2021-01-13T23:10:02 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-s22Wv7kzyphZts7aZ"><a href="#item-jYJTztReJTSaPZr5Y" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:490px">
+    <i id="icon-jYJTztReJTSaPZr5Y" class="glyphicon glyphicon-chevron-right"></i>jYJTztReJTSaPZr5Y, 2021-01-13T23:12:58 (There are 1 possible tokens that can appear here: ))</a>
+  <div class="list-group collapse show" id="item-jYJTztReJTSaPZr5Y"><a href="#item-tqAteka6hsGNTGujY" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:500px">
+    <i id="icon-tqAteka6hsGNTGujY" class="glyphicon glyphicon-chevron-right"></i>tqAteka6hsGNTGujY, 2021-01-13T23:13:08 (There are 1 possible tokens that can appear here: ))</a>
+  <div class="list-group collapse show" id="item-tqAteka6hsGNTGujY"><a href="#item-s5g7xbB9Zy7AJAdKi" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:510px">
+    <i id="icon-s5g7xbB9Zy7AJAdKi" class="glyphicon glyphicon-chevron-right"></i>s5g7xbB9Zy7AJAdKi, 2021-01-13T23:13:23 (There are 1 possible tokens that can appear here: ))</a>
+  <div class="list-group collapse show" id="item-s5g7xbB9Zy7AJAdKi"><a href="#item-gdzbFs8Arp2GNoPAF" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:520px">
+    <i id="icon-gdzbFs8Arp2GNoPAF" class="glyphicon glyphicon-chevron-right"></i>gdzbFs8Arp2GNoPAF, 2021-01-13T23:13:32 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-gdzbFs8Arp2GNoPAF"><a href="#item-PKXZNcG7hmrjQBGth" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:530px">
+    <i id="icon-PKXZNcG7hmrjQBGth" class="glyphicon glyphicon-chevron-right"></i>PKXZNcG7hmrjQBGth, 2021-01-13T23:17:29 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-PKXZNcG7hmrjQBGth"><a href="#item-suAsTZAnjMXfabkoW" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:540px">
+    <i id="icon-suAsTZAnjMXfabkoW" class="glyphicon glyphicon-chevron-right"></i>suAsTZAnjMXfabkoW, 2021-01-13T23:24:22 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-suAsTZAnjMXfabkoW"><a href="#item-NoThS2Qgf6dexm4By" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:550px">
+    <i id="icon-NoThS2Qgf6dexm4By" class="glyphicon glyphicon-chevron-right"></i>NoThS2Qgf6dexm4By, 2021-01-13T23:24:32 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-NoThS2Qgf6dexm4By"><a href="#item-Bw5DLo2pnci2KZ4gF" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:560px">
+    <i id="icon-Bw5DLo2pnci2KZ4gF" class="glyphicon glyphicon-chevron-right"></i>Bw5DLo2pnci2KZ4gF, 2021-01-13T23:26:53 (The name "vsibile" cannot be found.)</a>
+  <div class="list-group collapse show" id="item-Bw5DLo2pnci2KZ4gF"><a href="#item-2FH4g26odFFWfg4YD" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:570px">
+    <i id="icon-2FH4g26odFFWfg4YD" class="glyphicon glyphicon-chevron-right"></i>2FH4g26odFFWfg4YD, 2021-01-13T23:26:59 (The name "visibile" cannot be found.)</a>
+  <div class="list-group collapse show" id="item-2FH4g26odFFWfg4YD"><a href="#item-c56JB5DEeYuWwZhK8" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:580px">
+    <i id="icon-c56JB5DEeYuWwZhK8" class="glyphicon glyphicon-chevron-right"></i>c56JB5DEeYuWwZhK8, 2021-01-13T23:27:05 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-c56JB5DEeYuWwZhK8"><a href="#item-gCMjA8uZhwXipFo3A" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:590px">
+    <i id="icon-gCMjA8uZhwXipFo3A" class="glyphicon glyphicon-chevron-right"></i>gCMjA8uZhwXipFo3A, 2021-01-13T23:31:16 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-gCMjA8uZhwXipFo3A"><a href="#item-FD7bYBh5iKXPPpYkv" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:600px">
+    <i id="icon-FD7bYBh5iKXPPpYkv" class="glyphicon glyphicon-chevron-right"></i>FD7bYBh5iKXPPpYkv, 2021-01-13T23:32:19 (There are 1 possible tokens that can appear here: ))</a>
+  <div class="list-group collapse show" id="item-FD7bYBh5iKXPPpYkv"><a href="#item-pZPpABypxaqLBZNAu" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:610px">
+    <i id="icon-pZPpABypxaqLBZNAu" class="glyphicon glyphicon-chevron-right"></i>pZPpABypxaqLBZNAu, 2021-01-13T23:32:25 (There are 1 possible tokens that can appear here: ))</a>
+  <div class="list-group collapse show" id="item-pZPpABypxaqLBZNAu"><a href="#item-En8e54noB37MDAHYo" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:620px">
+    <i id="icon-En8e54noB37MDAHYo" class="glyphicon glyphicon-chevron-right"></i>En8e54noB37MDAHYo, 2021-01-13T23:33:07 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+  <div class="list-group collapse show" id="item-En8e54noB37MDAHYo"><a href="#item-g6quMA9pZ6hniju2h" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:630px">
+    <i id="icon-g6quMA9pZ6hniju2h" class="glyphicon glyphicon-chevron-right"></i>g6quMA9pZ6hniju2h, 2021-01-13T23:33:25 (There are 1 possible tokens that can appear here: ))</a>
+  <div class="list-group collapse show" id="item-g6quMA9pZ6hniju2h"><a href="#item-cGyLmBNEKBpJcEo6H" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:640px">
+    <i id="icon-cGyLmBNEKBpJcEo6H" class="glyphicon glyphicon-chevron-right"></i>cGyLmBNEKBpJcEo6H, 2021-01-13T23:33:31 (There are 1 possible tokens that can appear here: ))</a>
+  <div class="list-group collapse show" id="item-cGyLmBNEKBpJcEo6H"><a href="#item-aTKAWuJcPFmFWcqmF" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:650px">
+    <i id="icon-aTKAWuJcPFmFWcqmF" class="glyphicon glyphicon-chevron-right"></i>aTKAWuJcPFmFWcqmF, 2021-01-13T23:33:37 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+  <div class="list-group collapse show" id="item-aTKAWuJcPFmFWcqmF"><a href="#item-49JEzWJ7QxFY4DPAx" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:660px">
+    <i id="icon-49JEzWJ7QxFY4DPAx" class="glyphicon glyphicon-chevron-right"></i>49JEzWJ7QxFY4DPAx, 2021-01-13T23:34:09 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+  <div class="list-group collapse show" id="item-49JEzWJ7QxFY4DPAx"><a href="#item-tgbHZ52KAvYTqHcFn" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:670px">
+    <i id="icon-tgbHZ52KAvYTqHcFn" class="glyphicon glyphicon-chevron-right"></i>tgbHZ52KAvYTqHcFn, 2021-01-13T23:34:29 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)</a>
+  <div class="list-group collapse show" id="item-tgbHZ52KAvYTqHcFn"><a href="#item-nGF9xjJYRk7BJ22pD" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:680px">
+    <i id="icon-nGF9xjJYRk7BJ22pD" class="glyphicon glyphicon-chevron-right"></i>nGF9xjJYRk7BJ22pD, 2021-01-13T23:34:39 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-nGF9xjJYRk7BJ22pD"><a href="#item-fXC6kwet6YGLQ7bir" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:690px">
+    <i id="icon-fXC6kwet6YGLQ7bir" class="glyphicon glyphicon-chevron-right"></i>fXC6kwet6YGLQ7bir, 2021-01-13T23:35:47 (There are 1 possible tokens that can appear here: ))</a>
+  <div class="list-group collapse show" id="item-fXC6kwet6YGLQ7bir"><a href="#item-XvF6qtQCbFc8FJsdh" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:700px">
+    <i id="icon-XvF6qtQCbFc8FJsdh" class="glyphicon glyphicon-chevron-right"></i>XvF6qtQCbFc8FJsdh, 2021-01-13T23:35:52 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-XvF6qtQCbFc8FJsdh"><a href="#item-EeXrM4XFqTgYXwJzk" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:710px">
+    <i id="icon-EeXrM4XFqTgYXwJzk" class="glyphicon glyphicon-chevron-right"></i>EeXrM4XFqTgYXwJzk, 2021-01-13T23:36:41 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-EeXrM4XFqTgYXwJzk"><a href="#item-8aogfjf7hXu56mCPX" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:720px">
+    <i id="icon-8aogfjf7hXu56mCPX" class="glyphicon glyphicon-chevron-right"></i>8aogfjf7hXu56mCPX, 2021-01-13T23:40:16 (This must be a formula expression. Instead, it has the following possible type(s): {this/Id})</a>
+  <div class="list-group collapse show" id="item-8aogfjf7hXu56mCPX"><a href="#item-KTW6jEbYDm9Kv4hZn" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:730px">
+    <i id="icon-KTW6jEbYDm9Kv4hZn" class="glyphicon glyphicon-chevron-right"></i>KTW6jEbYDm9Kv4hZn, 2021-01-13T23:41:35 (There are 1 possible tokens that can appear here: ))</a>
+  <div class="list-group collapse show" id="item-KTW6jEbYDm9Kv4hZn"><a href="#item-RWvQ5bXznHPMYwNwK" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:740px">
+    <i id="icon-RWvQ5bXznHPMYwNwK" class="glyphicon glyphicon-chevron-right"></i>RWvQ5bXznHPMYwNwK, 2021-01-13T23:41:41 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-RWvQ5bXznHPMYwNwK"><a href="#item-ZEp9HpcS2ySaYAPEm" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:750px">
+    <i id="icon-ZEp9HpcS2ySaYAPEm" class="glyphicon glyphicon-chevron-right"></i>ZEp9HpcS2ySaYAPEm, 2021-01-13T23:42:24 (This expression failed to be typechecked line 45, column 70, filename=/tmp/alloy_heredoc434981618894999154.als)</a>
+  <div class="list-group collapse show" id="item-ZEp9HpcS2ySaYAPEm"><a href="#item-L4LZiqZdK5AszNGyA" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:760px">
+    <i id="icon-L4LZiqZdK5AszNGyA" class="glyphicon glyphicon-minus"></i>L4LZiqZdK5AszNGyA, 2021-01-13T23:42:29 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-L4LZiqZdK5AszNGyA"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="#item-Yv2SZAbmvkDfew8Td" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-Yv2SZAbmvkDfew8Td" class="glyphicon glyphicon-chevron-right"></i>Yv2SZAbmvkDfew8Td, 2021-01-13T22:33 (The name "id" cannot be found.)</a>
+  <div class="list-group collapse show" id="item-Yv2SZAbmvkDfew8Td"><a href="#item-RaF8dECEWu9oEoPA6" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-RaF8dECEWu9oEoPA6" class="glyphicon glyphicon-chevron-right"></i>RaF8dECEWu9oEoPA6, 2021-01-13T22:33:31 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-RaF8dECEWu9oEoPA6"><a href="#item-3fmxitANynErRnKGL" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-3fmxitANynErRnKGL" class="glyphicon glyphicon-chevron-right"></i>3fmxitANynErRnKGL, 2021-01-13T22:36:26 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-3fmxitANynErRnKGL"><a href="#item-pzDRXSigBTGuz34P3" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-pzDRXSigBTGuz34P3" class="glyphicon glyphicon-chevron-right"></i>pzDRXSigBTGuz34P3, 2021-01-13T22:36:54 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-pzDRXSigBTGuz34P3"><a href="#item-RYh76MjdXAQmG2A8y" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:50px">
+    <i id="icon-RYh76MjdXAQmG2A8y" class="glyphicon glyphicon-chevron-right"></i>RYh76MjdXAQmG2A8y, 2021-01-13T22:38:18 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-RYh76MjdXAQmG2A8y"><a href="#item-jhCgnWD2hgooSrs7C" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:60px">
+    <i id="icon-jhCgnWD2hgooSrs7C" class="glyphicon glyphicon-chevron-right"></i>jhCgnWD2hgooSrs7C, 2021-01-13T22:38:27 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-jhCgnWD2hgooSrs7C"><a href="#item-LhMZusg2gyhEcAjig" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:70px">
+    <i id="icon-LhMZusg2gyhEcAjig" class="glyphicon glyphicon-chevron-right"></i>LhMZusg2gyhEcAjig, 2021-01-13T22:44:40 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-LhMZusg2gyhEcAjig"><a href="#item-4bAFcN4Hpvfzdi5Xb" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:80px">
+    <i id="icon-4bAFcN4Hpvfzdi5Xb" class="glyphicon glyphicon-chevron-right"></i>4bAFcN4Hpvfzdi5Xb, 2021-01-13T22:45:40 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-4bAFcN4Hpvfzdi5Xb"><a href="#item-YaaEvvZNkT7MnA4uD" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:90px">
+    <i id="icon-YaaEvvZNkT7MnA4uD" class="glyphicon glyphicon-chevron-right"></i>YaaEvvZNkT7MnA4uD, 2021-01-13T22:46:15 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-YaaEvvZNkT7MnA4uD"><a href="#item-F2cd6zn4CrXXLd2KW" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:100px">
+    <i id="icon-F2cd6zn4CrXXLd2KW" class="glyphicon glyphicon-chevron-right"></i>F2cd6zn4CrXXLd2KW, 2021-01-13T22:47:44 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-F2cd6zn4CrXXLd2KW"><a href="#item-aZ3qKnJ5LDSwouCc6" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:110px">
+    <i id="icon-aZ3qKnJ5LDSwouCc6" class="glyphicon glyphicon-chevron-right"></i>aZ3qKnJ5LDSwouCc6, 2021-01-13T22:48:14 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-aZ3qKnJ5LDSwouCc6"><a href="#item-4TPMcQSQcQ253uhmN" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:120px">
+    <i id="icon-4TPMcQSQcQ253uhmN" class="glyphicon glyphicon-chevron-right"></i>4TPMcQSQcQ253uhmN, 2021-01-13T22:49:42 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-4TPMcQSQcQ253uhmN"><a href="#item-XvSrvwRqoiM4AsAMR" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:130px">
+    <i id="icon-XvSrvwRqoiM4AsAMR" class="glyphicon glyphicon-minus"></i>XvSrvwRqoiM4AsAMR, 2021-01-13T23:14:34 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-XvSrvwRqoiM4AsAMR"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="#item-3KJMfKZE8f4EGP2vD" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-3KJMfKZE8f4EGP2vD" class="glyphicon glyphicon-chevron-right"></i>3KJMfKZE8f4EGP2vD, 2021-01-13T23:17:47 (Inv1OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-3KJMfKZE8f4EGP2vD"><a href="#item-r7Bg4QGBKhQAfN75i" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-r7Bg4QGBKhQAfN75i" class="glyphicon glyphicon-chevron-right"></i>r7Bg4QGBKhQAfN75i, 2021-01-13T23:19:09 (Inv2OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-r7Bg4QGBKhQAfN75i"><a href="#item-KPBk9f8Z7mBfMf4Ho" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-KPBk9f8Z7mBfMf4Ho" class="glyphicon glyphicon-chevron-right"></i>KPBk9f8Z7mBfMf4Ho, 2021-01-13T23:20:22 (The name "id" cannot be found.)</a>
+  <div class="list-group collapse show" id="item-KPBk9f8Z7mBfMf4Ho"><a href="#item-b38vy9MqrXhSBsskY" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-b38vy9MqrXhSBsskY" class="glyphicon glyphicon-chevron-right"></i>b38vy9MqrXhSBsskY, 2021-01-13T23:20:29 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-b38vy9MqrXhSBsskY"><a href="#item-uKjSFXfxNiTwYJAif" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:50px">
+    <i id="icon-uKjSFXfxNiTwYJAif" class="glyphicon glyphicon-chevron-right"></i>uKjSFXfxNiTwYJAif, 2021-01-13T23:22:56 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-uKjSFXfxNiTwYJAif"><a href="#item-mvvcAwkoMnusg68nJ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:60px">
+    <i id="icon-mvvcAwkoMnusg68nJ" class="glyphicon glyphicon-chevron-right"></i>mvvcAwkoMnusg68nJ, 2021-01-13T23:26:32 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-mvvcAwkoMnusg68nJ"><a href="#item-asLCTCkDwjDqYc9QF" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:70px">
+    <i id="icon-asLCTCkDwjDqYc9QF" class="glyphicon glyphicon-chevron-right"></i>asLCTCkDwjDqYc9QF, 2021-01-13T23:27:12 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-asLCTCkDwjDqYc9QF"><a href="#item-gxpFrjZ6AXj8iwFmS" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:80px">
+    <i id="icon-gxpFrjZ6AXj8iwFmS" class="glyphicon glyphicon-chevron-right"></i>gxpFrjZ6AXj8iwFmS, 2021-01-13T23:37:18 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-gxpFrjZ6AXj8iwFmS"><a href="#item-D72F2bdem2834cH6c" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:90px">
+    <i id="icon-D72F2bdem2834cH6c" class="glyphicon glyphicon-chevron-right"></i>D72F2bdem2834cH6c, 2021-01-13T23:37:25 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-D72F2bdem2834cH6c"><a href="#item-Xb5ZntpJiyP7qdzsY" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:100px">
+    <i id="icon-Xb5ZntpJiyP7qdzsY" class="glyphicon glyphicon-chevron-right"></i>Xb5ZntpJiyP7qdzsY, 2021-01-13T23:37:40 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-Xb5ZntpJiyP7qdzsY"><a href="#item-toiA4oJoSPPzXgRxM" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:110px">
+    <i id="icon-toiA4oJoSPPzXgRxM" class="glyphicon glyphicon-chevron-right"></i>toiA4oJoSPPzXgRxM, 2021-01-13T23:37:54 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})</a>
+  <div class="list-group collapse show" id="item-toiA4oJoSPPzXgRxM"><a href="#item-gPzqymCB4TzAZAuEJ" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:120px">
+    <i id="icon-gPzqymCB4TzAZAuEJ" class="glyphicon glyphicon-chevron-right"></i>gPzqymCB4TzAZAuEJ, 2021-01-13T23:38:15 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-gPzqymCB4TzAZAuEJ"><a href="#item-GpnCt3zp5bjiyg3BX" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:130px">
+    <i id="icon-GpnCt3zp5bjiyg3BX" class="glyphicon glyphicon-minus"></i>GpnCt3zp5bjiyg3BX, 2021-01-13T23:38:32 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-GpnCt3zp5bjiyg3BX"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="#item-p8y7tCXSPmQtorjzQ" class="more list-group-item list-group-item-danger" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-p8y7tCXSPmQtorjzQ" class="glyphicon glyphicon-chevron-right"></i>p8y7tCXSPmQtorjzQ, 2021-01-13T23:27:38 (The name "id" cannot be found.)</a>
+  <div class="list-group collapse show" id="item-p8y7tCXSPmQtorjzQ"><a href="#item-hxnD3kPQTANreufxn" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-hxnD3kPQTANreufxn" class="glyphicon glyphicon-chevron-right"></i>hxnD3kPQTANreufxn, 2021-01-13T23:28:05 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-hxnD3kPQTANreufxn"><a href="#item-DzeDTNekegFi63LYs" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-DzeDTNekegFi63LYs" class="glyphicon glyphicon-chevron-right"></i>DzeDTNekegFi63LYs, 2021-01-13T23:29:02 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-DzeDTNekegFi63LYs"><a href="#item-yenrPDq52r6Xx7fj4" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-yenrPDq52r6Xx7fj4" class="glyphicon glyphicon-chevron-right"></i>yenrPDq52r6Xx7fj4, 2021-01-13T23:32:49 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-yenrPDq52r6Xx7fj4"><a href="#item-fmRs9Dq4XMCx5wqKR" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:50px">
+    <i id="icon-fmRs9Dq4XMCx5wqKR" class="glyphicon glyphicon-minus"></i>fmRs9Dq4XMCx5wqKR, 2021-01-13T23:41:28 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-fmRs9Dq4XMCx5wqKR"></div>
+</div>
+</div>
+</div>
+</div>
+<a href="#item-x5ww895fy7TGseELA" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-x5ww895fy7TGseELA" class="glyphicon glyphicon-chevron-right"></i>x5ww895fy7TGseELA, 2021-01-13T23:57:35 (Inv4OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-x5ww895fy7TGseELA"><a href="#item-qFAZ2xmamcXgYico3" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-qFAZ2xmamcXgYico3" class="glyphicon glyphicon-chevron-right"></i>qFAZ2xmamcXgYico3, 2021-01-13T23:57:59 (Inv4OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-qFAZ2xmamcXgYico3"><a href="#item-b3CTAo6gh9zDFYgjt" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-b3CTAo6gh9zDFYgjt" class="glyphicon glyphicon-minus"></i>b3CTAo6gh9zDFYgjt, 2021-01-14T00:01:21 (Inv4OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-b3CTAo6gh9zDFYgjt"></div>
+</div>
+</div>
+<a href="#item-YZwnyt5wn5PJNbFyY" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-YZwnyt5wn5PJNbFyY" class="glyphicon glyphicon-chevron-right"></i>YZwnyt5wn5PJNbFyY, 2021-01-14T00:23:48 (Inv1OK,incorrect,check,This variable is unused.)</a>
+  <div class="list-group collapse show" id="item-YZwnyt5wn5PJNbFyY"><a href="#item-k66hCyXHDp7k982vt" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:20px">
+    <i id="icon-k66hCyXHDp7k982vt" class="glyphicon glyphicon-chevron-right"></i>k66hCyXHDp7k982vt, 2021-01-14T00:23:57 (Inv1OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-k66hCyXHDp7k982vt"><a href="#item-TedxxZDsaPYWZkGB8" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:30px">
+    <i id="icon-TedxxZDsaPYWZkGB8" class="glyphicon glyphicon-chevron-right"></i>TedxxZDsaPYWZkGB8, 2021-01-14T00:25:16 (Inv2OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-TedxxZDsaPYWZkGB8"><a href="#item-DyBsgcfgfmpJYQBa8" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:40px">
+    <i id="icon-DyBsgcfgfmpJYQBa8" class="glyphicon glyphicon-chevron-right"></i>DyBsgcfgfmpJYQBa8, 2021-01-14T00:31:06 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-DyBsgcfgfmpJYQBa8"><a href="#item-jkjFKFzWYgaXdbAtd" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:50px">
+    <i id="icon-jkjFKFzWYgaXdbAtd" class="glyphicon glyphicon-chevron-right"></i>jkjFKFzWYgaXdbAtd, 2021-01-14T00:31:24 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-jkjFKFzWYgaXdbAtd"><a href="#item-HZviJzYvuMWL3uA5P" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:60px">
+    <i id="icon-HZviJzYvuMWL3uA5P" class="glyphicon glyphicon-chevron-right"></i>HZviJzYvuMWL3uA5P, 2021-01-14T00:33:15 (Inv3OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-HZviJzYvuMWL3uA5P"><a href="#item-FqC2zdf8MaZMgogDC" class="more list-group-item list-group-item-warning" data-toggle="collapse" style="padding-left:70px">
+    <i id="icon-FqC2zdf8MaZMgogDC" class="glyphicon glyphicon-minus"></i>FqC2zdf8MaZMgogDC, 2021-01-14T00:33:19 (Inv4OK,incorrect,check,)</a>
+  <div class="list-group collapse show" id="item-FqC2zdf8MaZMgogDC"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="#item-atQCMFrNTW9S93sMg" class="more list-group-item list-group-item-success" data-toggle="collapse" style="padding-left:10px">
+    <i id="icon-atQCMFrNTW9S93sMg" class="glyphicon glyphicon-minus"></i>atQCMFrNTW9S93sMg, 2021-01-14T22:54:53 (Inv4OK,correct,check,)</a>
+  <div class="list-group collapse show" id="item-atQCMFrNTW9S93sMg"></div>
 </div>
 </div>
 </div><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

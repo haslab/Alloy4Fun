@@ -1,4 +1,4 @@
-4qsarDvHuiQttajaQ (2020-12-22)
+4qsarDvHuiQttajaQ (2021-03-24)
 
 * Meta-data
 Challenge name: unknown
@@ -7,13 +7,13 @@ Creation time: 2020-11-25
 Metric catalog: Example metric catalog
 
 * Overall metric statistics
-Total model entries: 1668
-Total executions: 1657
+Total model entries: 1914
+Total executions: 1903
 Total shares: 11
-Total error messages: 559
-Total warning messages: 332
-Total solutions: 1099
-Total sessions: 36
+Total error messages: 611
+Total warning messages: 353
+Total solutions: 1293
+Total sessions: 53
 Timed out re-executions: 0
 Rejected due to server errors: 0
 Inconsisistent result reports: 0
@@ -27,50 +27,50 @@ Shared models (model)	11
 Shares with warnings	1
 Alloy runtime errors	2
 Shared errored models	1
-Alloy static errors	556
+Alloy static errors	608
 Shared models (instance)	0
-Average session	46.02777777777778
+Average session	35.905660377358494
 Longest session	141
-Sat executions with warnings	186
-Executed errored models	558
-Unsat executions	929
+Sat executions with warnings	199
+Executed errored models	610
+Unsat executions	233
 Unsat executions with warnings	12
 Errored executions with warnings	2
-Average % unsatisfiable	0.2525137563021904
-Sat executions	170
+Average % unsatisfiable	0.2826390601723895
+Sat executions	1060
 
 * Overall metrics
 
 Sessions by length
-1	2
+1	4
 2	2
 3	2
 4	0
-5	0
+5	1
 6	0
 7	0
-8	0
-9	0
+8	4
+9	2
 10	0
 11	0
-12	0
-13	1
+12	1
+13	2
 14	0
 15	0
 16	0
 17	0
 18	0
-19	0
+19	1
 20	0
 21	0
 22	0
 23	2
 24	2
-25	0
+25	1
 26	0
-27	1
+27	3
 28	0
-29	0
+29	1
 30	0
 31	2
 32	0
@@ -78,7 +78,7 @@ Sessions by length
 34	1
 35	1
 36	1
-37	0
+37	1
 38	1
 39	1
 40	0
@@ -186,61 +186,61 @@ Sessions by length
 
 Warnings by type
 - is irrelevant since the right expression is redundant. Parent's relevant type = {_} Left type = {_} Right type = {_}	16
-Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}	11
+Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}	13
 <: is irrelevant because the result is always empty. Left type = {_} Right type = {_}	2
-This variable is unused.	59
-Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}	93
+This variable is unused.	65
+Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}	95
 Subset operator is redundant, because both subexpressions are always empty. Left type = {_} Right type = {_}	1
 The left expression of -> is irrelevant because the right expression is always empty. Left type = {_} Right type = {_}	1
-& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}	41
+& is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}	43
 Subset operator is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}	1
-Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}	28
-The join operation here always yields an empty set. Left type = {_} Right type = {_}	71
+Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}	30
+The join operation here always yields an empty set. Left type = {_} Right type = {_}	77
 ^_ is redundant since its domain and range are disjoint: {_}	2
-== is redundant, because the left and right expressions are always disjoint. Left type = {_} Right type = {_}	6
+== is redundant, because the left and right expressions are always disjoint. Left type = {_} Right type = {_}	7
 
 Sessions by # of solved challenges
-0	5
-1	4
-2	14
-3	13
+0	8
+1	6
+2	17
+3	22
 
 Errors by type
-There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	23
+There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	24
 There are 1 possible tokens that can appear here: : 	4
 There are 1 possible tokens that can appear here: [ 	3
-There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ 	15
-= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	10
+There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ 	20
+= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	12
 Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.	2
 The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".	13
 There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	5
-This must be a formula expression. Instead, it has the following possible type(s): {_}	55
+This must be a formula expression. Instead, it has the following possible type(s): {_}	56
 ~ can be used only with a binary relation. Instead, its possible type(s) are: {_}	4
-There are 8 possible tokens that can appear here: NAME disj exh part private seq this var 	6
-There are 1 possible tokens that can appear here: ) 	71
-!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	1
+There are 8 possible tokens that can appear here: NAME disj exh part private seq this var 	7
+There are 1 possible tokens that can appear here: ) 	76
+!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	2
 There are 36 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int lone no none once one pred seq set some sum this univ { ~ 	6
 There are 3 possible tokens that can appear here: ,  : = 	2
 ^ can be used only with a binary relation. Instead, its possible type(s) are: {_}	1
 != can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	2
-in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	8
-This expression failed to be typechecked line _ column _ filename=_.als	45
-The name _ cannot be found.	71
-This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	115
-& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	2
+in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	13
+This expression failed to be typechecked line _ column _ filename=_.als	47
+The name _ cannot be found.	76
+This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	126
+& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	4
 This must be an integer expression. Instead, it has the following possible type(s): {_}	1
-There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	29
-This must be a set or relation. Instead, it has the following possible type(s): {_}	54
+There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	32
+This must be a set or relation. Instead, it has the following possible type(s): {_}	61
 There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ 	1
 There are 1 possible tokens that can appear here: } 	1
-There are 3 possible tokens that can appear here: ,  { | 	9
+There are 3 possible tokens that can appear here: ,  { | 	10
 
 Models by number of warnings
-0	1467
-1	127
+0	1700
+1	137
 2	44
-3	18
-4	6
+3	19
+4	8
 5	3
 6	1
 7	0
@@ -250,21 +250,21 @@ Models by number of warnings
 
 * Overall metrics, classified
 
-Execution results by challenge
-m	UNSAT	SAT	
-prop1ok	75	189	
-prop2ok	56	191	
-prop3ok	39	549	
+Execution results by command
+m	SAT	UNSAT	
+prop1ok	234	100	
+prop2ok	214	79	
+prop3ok	612	54	
 
 Session results by challenge
 m	solved	unsolved	
-prop1ok	29	7	
-prop2ok	27	9	
-prop3ok	15	21	
+prop1ok	42	11	
+prop2ok	40	13	
+prop3ok	24	29	
 
 Model entries over time
-m	ERROR	UNSAT	SHARE	SAT	
-2020-11-25	0	0	1	3	
+m	SAT	ERROR	UNSAT	SHARE	
+2020-11-25	3	0	0	1	
 2020-11-26	0	0	0	0	
 2020-11-27	0	0	0	0	
 2020-11-28	0	0	0	0	
@@ -272,10 +272,10 @@ m	ERROR	UNSAT	SHARE	SAT
 2020-11-30	0	0	0	0	
 2020-12-01	0	0	0	0	
 2020-12-02	0	0	0	0	
-2020-12-03	525	157	8	854	
-2020-12-04	13	2	1	8	
+2020-12-03	854	525	157	8	
+2020-12-04	8	13	2	1	
 2020-12-05	0	0	0	0	
-2020-12-06	12	5	0	51	
+2020-12-06	51	12	5	0	
 2020-12-07	0	0	0	0	
 2020-12-08	0	0	0	0	
 2020-12-09	0	0	0	0	
@@ -285,186 +285,303 @@ m	ERROR	UNSAT	SHARE	SAT
 2020-12-13	0	0	0	0	
 2020-12-14	0	0	0	0	
 2020-12-15	0	0	0	0	
-2020-12-16	0	0	0	1	
-2020-12-17	7	5	0	12	
+2020-12-16	1	0	0	0	
+2020-12-17	12	7	5	0	
 2020-12-18	0	0	0	0	
 2020-12-19	0	0	0	0	
 2020-12-20	0	0	0	0	
-2020-12-21	1	1	1	0	
+2020-12-21	0	1	1	1	
 2020-12-22	0	0	0	0	
+2020-12-23	0	0	0	0	
+2020-12-24	0	0	0	0	
+2020-12-25	0	0	0	0	
+2020-12-26	0	0	0	0	
+2020-12-27	0	0	0	0	
+2020-12-28	0	0	0	0	
+2020-12-29	0	0	0	0	
+2020-12-30	0	0	0	0	
+2020-12-31	0	0	0	0	
+2021-01-01	0	0	0	0	
+2021-01-02	44	19	3	0	
+2021-01-03	0	0	0	0	
+2021-01-04	0	0	0	0	
+2021-01-05	0	0	0	0	
+2021-01-06	0	0	0	0	
+2021-01-07	8	6	5	0	
+2021-01-08	0	0	0	0	
+2021-01-09	0	0	0	0	
+2021-01-10	10	2	13	0	
+2021-01-11	3	3	3	0	
+2021-01-12	6	1	6	0	
+2021-01-13	54	21	28	0	
+2021-01-14	0	0	0	0	
+2021-01-15	0	0	0	0	
+2021-01-16	0	0	0	0	
+2021-01-17	0	0	0	0	
+2021-01-18	0	0	0	0	
+2021-01-19	0	0	0	0	
+2021-01-20	0	0	0	0	
+2021-01-21	0	0	0	0	
+2021-01-22	0	0	0	0	
+2021-01-23	4	0	5	0	
+2021-01-24	0	0	0	0	
+2021-01-25	0	0	0	0	
+2021-01-26	0	0	0	0	
+2021-01-27	0	0	0	0	
+2021-01-28	0	0	0	0	
+2021-01-29	0	0	0	0	
+2021-01-30	0	0	0	0	
+2021-01-31	0	0	0	0	
+2021-02-01	0	0	0	0	
+2021-02-02	0	0	0	0	
+2021-02-03	2	0	0	0	
+2021-02-04	0	0	0	0	
+2021-02-05	0	0	0	0	
+2021-02-06	0	0	0	0	
+2021-02-07	0	0	0	0	
+2021-02-08	0	0	0	0	
+2021-02-09	0	0	0	0	
+2021-02-10	0	0	0	0	
+2021-02-11	0	0	0	0	
+2021-02-12	0	0	0	0	
+2021-02-13	0	0	0	0	
+2021-02-14	0	0	0	0	
+2021-02-15	0	0	0	0	
+2021-02-16	0	0	0	0	
+2021-02-17	0	0	0	0	
+2021-02-18	0	0	0	0	
+2021-02-19	0	0	0	0	
+2021-02-20	0	0	0	0	
+2021-02-21	0	0	0	0	
+2021-02-22	0	0	0	0	
+2021-02-23	0	0	0	0	
+2021-02-24	0	0	0	0	
+2021-02-25	0	0	0	0	
+2021-02-26	0	0	0	0	
+2021-02-27	0	0	0	0	
+2021-02-28	0	0	0	0	
+2021-03-01	0	0	0	0	
+2021-03-02	0	0	0	0	
+2021-03-03	0	0	0	0	
+2021-03-04	0	0	0	0	
+2021-03-05	0	0	0	0	
+2021-03-06	0	0	0	0	
+2021-03-07	0	0	0	0	
+2021-03-08	0	0	0	0	
+2021-03-09	0	0	0	0	
+2021-03-10	0	0	0	0	
+2021-03-11	0	0	0	0	
+2021-03-12	0	0	0	0	
+2021-03-13	0	0	0	0	
+2021-03-14	0	0	0	0	
+2021-03-15	0	0	0	0	
+2021-03-16	0	0	0	0	
+2021-03-17	0	0	0	0	
+2021-03-18	0	0	0	0	
+2021-03-19	0	0	0	0	
+2021-03-20	0	0	0	0	
+2021-03-21	0	0	0	0	
+2021-03-22	0	0	0	0	
+2021-03-23	0	0	0	0	
+2021-03-24	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 
 Size in 10s of nodes
 
 prop1ok
-m	UNSAT	SAT	
-1	23	106	
-2	38	76	
-3	14	7	
+m	SAT	UNSAT	
+1	122	33	
+2	105	53	
+3	7	14	
 
 prop2ok
-m	UNSAT	SAT	
-1	0	1	
-2	4	115	
-3	52	73	
-4	0	2	
+m	SAT	UNSAT	
+1	1	0	
+2	119	7	
+3	92	72	
+4	2	0	
 
 prop3ok
-m	UNSAT	SAT	
-1	0	5	
-2	7	255	
-3	32	229	
-4	0	52	
-5	0	6	
-6	0	2	
+m	SAT	UNSAT	
+1	5	0	
+2	281	13	
+3	263	41	
+4	55	0	
+5	6	0	
+6	2	0	
+
+Number of quantified variables
+
+prop1ok
+m	SAT	UNSAT	
+0	56	33	
+1	151	55	
+2	25	12	
+3	2	0	
+
+prop2ok
+m	SAT	UNSAT	
+0	12	0	
+1	195	79	
+2	6	0	
+3	1	0	
+
+prop3ok
+m	SAT	UNSAT	
+0	49	0	
+1	205	0	
+2	201	17	
+3	152	37	
+4	5	0	
 
 Number of binary temporal operators
 
 prop1ok
-m	UNSAT	SAT	
-0	75	189	
+m	SAT	UNSAT	
+0	234	100	
 
 prop2ok
-m	UNSAT	SAT	
-0	56	180	
-1	0	11	
+m	SAT	UNSAT	
+0	203	79	
+1	11	0	
 
 prop3ok
-m	UNSAT	SAT	
-0	39	527	
-1	0	22	
+m	SAT	UNSAT	
+0	589	54	
+1	23	0	
 
 Max nested temporal operator level
 
 prop1ok
-m	UNSAT	SAT	
-0	0	27	
-1	72	144	
-2	3	18	
+m	SAT	UNSAT	
+0	47	0	
+1	169	97	
+2	18	3	
 
 prop2ok
-m	UNSAT	SAT	
-0	0	1	
-1	0	83	
-2	56	101	
-3	0	6	
+m	SAT	UNSAT	
+0	1	0	
+1	98	0	
+2	108	78	
+3	7	1	
 
 prop3ok
-m	UNSAT	SAT	
-0	0	7	
-1	0	264	
-2	39	232	
-3	0	46	
+m	SAT	UNSAT	
+0	8	0	
+1	318	0	
+2	240	54	
+3	46	0	
 
 Number of lone/one quantifiers
 
 prop1ok
-m	UNSAT	SAT	
-0	75	186	
-1	0	3	
+m	SAT	UNSAT	
+0	231	100	
+1	3	0	
 
 prop2ok
-m	UNSAT	SAT	
-0	56	191	
+m	SAT	UNSAT	
+0	214	79	
 
 prop3ok
-m	UNSAT	SAT	
-0	39	533	
-1	0	12	
-2	0	4	
+m	SAT	UNSAT	
+0	588	54	
+1	20	0	
+2	4	0	
 
 Max nested quantifier level
 
 prop1ok
-m	UNSAT	SAT	
-0	23	45	
-1	43	130	
-2	9	12	
-3	0	2	
+m	SAT	UNSAT	
+0	56	33	
+1	151	55	
+2	25	12	
+3	2	0	
 
 prop2ok
-m	UNSAT	SAT	
-0	0	10	
-1	56	175	
-2	0	6	
+m	SAT	UNSAT	
+0	12	0	
+1	195	79	
+2	7	0	
 
 prop3ok
-m	UNSAT	SAT	
-0	0	46	
-1	0	303	
-2	39	198	
-3	0	2	
+m	SAT	UNSAT	
+0	49	0	
+1	325	0	
+2	232	54	
+3	6	0	
 
 Number of disj quantifications
 
 prop1ok
-m	UNSAT	SAT	
-0	75	189	
+m	SAT	UNSAT	
+0	234	100	
 
 prop2ok
-m	UNSAT	SAT	
-0	56	191	
+m	SAT	UNSAT	
+0	213	79	
+1	1	0	
 
 prop3ok
-m	UNSAT	SAT	
-0	19	490	
-1	20	59	
+m	SAT	UNSAT	
+0	522	21	
+1	90	33	
+
+Number of reversed relation navigation
+
+prop1ok
+m	SAT	UNSAT	
+0	234	100	
+
+prop2ok
+m	SAT	UNSAT	
+0	214	79	
+
+prop3ok
+m	SAT	UNSAT	
+0	553	54	
+1	20	0	
+2	22	0	
+3	13	0	
+4	3	0	
+5	0	0	
+6	1	0	
 
 Number multiplicity arrows
 
 prop1ok
-m	UNSAT	SAT	
-0	75	189	
+m	SAT	UNSAT	
+0	234	100	
 
 prop2ok
-m	UNSAT	SAT	
-0	56	191	
+m	SAT	UNSAT	
+0	214	79	
 
 prop3ok
-m	UNSAT	SAT	
-0	39	549	
+m	SAT	UNSAT	
+0	612	54	
 
-Number of quantifiers
+Number of inverted navigation
 
 prop1ok
-m	UNSAT	SAT	
-0	23	45	
-1	43	130	
-2	9	12	
-3	0	2	
+m	SAT	UNSAT	
+0	232	100	
+1	2	0	
 
 prop2ok
-m	UNSAT	SAT	
-0	0	10	
-1	56	175	
-2	0	6	
+m	SAT	UNSAT	
+0	212	79	
+1	2	0	
 
 prop3ok
-m	UNSAT	SAT	
-0	0	46	
-1	0	200	
-2	15	184	
-3	24	118	
-4	0	1	
-
-Number of inverted navigation expressions
-
-prop1ok
-m	UNSAT	SAT	
-0	75	189	
-
-prop2ok
-m	UNSAT	SAT	
-0	56	191	
-
-prop3ok
-m	UNSAT	SAT	
-0	39	493	
-1	0	20	
-2	0	21	
-3	0	13	
-4	0	2	
+m	SAT	UNSAT	
+0	423	41	
+1	122	9	
+2	51	4	
+3	14	0	
+4	1	0	
+5	1	0	
 
 * Derivation tree
 4qsarDvHuiQttajaQ, 2020-11-25T08:50:21 (model share)
@@ -2135,3 +2252,249 @@ m	UNSAT	SAT
   J4u9GhbRnoZCG5Gue, 2020-12-21T11:47:52 (The name "Cliente" cannot be found.)
     sRCme7auFWFEmZQnp, 2020-12-21T11:47:58 (prop1ok,correct,check,)
       xw2ZELDKwAqvY8uQG, 2020-12-21T11:53:44 (model share)
+  E3ufyhhE3CZrgwtS9, 2021-01-02T14:33:12 (This cannot be a legal relational join where left hand side is c . (this/Client <: cards) (type = {this/Card}) right hand side is this/Unissued (type = {this/Unissued}))
+    ia8A4bJTZPwhjxkNR, 2021-01-02T14:33:19 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+      C2RqRXgjJT3dZpAGc, 2021-01-02T14:33:46 (This cannot be a legal relational join where left hand side is d (type = {this/Card}) right hand side is this/Unissued (type = {this/Unissued}))
+        CdvhESxpHvdtsjWNJ, 2021-01-02T14:34:43 (prop1ok,incorrect,check,This variable is unused.)
+          noXEDWZpoKAp2HckB, 2021-01-02T14:35:07 (prop1ok,incorrect,check,)
+            SqWyTrifcSFpZP348, 2021-01-02T14:35:39 (prop1ok,incorrect,check,)
+              TfxzSyuufiJMeNX97, 2021-01-02T14:36:26 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                Hav5nx5rjKAK9oaXx, 2021-01-02T14:36:30 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                  5Hk7ypa5kyH7qnFG2, 2021-01-02T14:36:36 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                    daLLGDhbyyAbPBekW, 2021-01-02T14:37:56 (prop1ok,incorrect,check,)
+                      ztALMXjkh9JnAjCPz, 2021-01-02T14:38:21 (prop1ok,incorrect,check,)
+                        u5BEC8mdjjJC5hRCt, 2021-01-02T14:38:28 (prop1ok,incorrect,check,)
+                          3Lvq7ZDWbCYZikB8A, 2021-01-02T14:39:16 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+                            rZowuE8SwY7vsrdAK, 2021-01-02T14:39:21 (prop1ok,incorrect,check,)
+                              X7cc9jp2h3GSCdtGc, 2021-01-02T14:39:30 (prop1ok,incorrect,check,This variable is unused.)
+                                npBxzqHD5SzKjbMat, 2021-01-02T14:39:42 (prop1ok,incorrect,check,This variable is unused.)
+                                  99KnkScJHW6b5939s, 2021-01-02T14:39:54 (prop1ok,incorrect,check,)
+                                    Kn3uvNHSoRYQYzR2W, 2021-01-02T14:40:08 (prop1ok,incorrect,check,)
+                                      9rRqiX6CoKfyYR4QS, 2021-01-02T14:42:45 (!in can be used only between 2 expressions of the same arity. Left type = {this/Card->this/Card->this/Status} Right type = {this/Unissued})
+                                        ppYNd8d6YpLTbcGq7, 2021-01-02T14:42:54 (prop1ok,incorrect,check,)
+                                          j7BpKrDX6Re2NgPgh, 2021-01-02T14:43:03 (prop1ok,incorrect,check,)
+                                            caRjPXNmae5nNTvwq, 2021-01-02T14:43:10 (prop1ok,correct,check,)
+                                              jPrRomDHeg9zRzTbm, 2021-01-02T14:43:58 (prop1ok,incorrect,check,)
+                                                cwo2KDYiWYPPq2MGW, 2021-01-02T14:44:20 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                                  tJFadZ8Km2uyJqxka, 2021-01-02T14:44:28 (This expression failed to be typechecked line 14, column 40, filename=/tmp/alloy_heredoc18120375893438632458.als)
+                                                    6RyaQTe78o9rdi7JT, 2021-01-02T14:44:40 (prop1ok,incorrect,check,)
+                                                      F6XS6cyxdf2wM4NN6, 2021-01-02T14:45:41 (prop1ok,incorrect,check,)
+                                                        LniLh4B4SGZxJ4yfw, 2021-01-02T14:46:03 (This expression failed to be typechecked line 14, column 37, filename=/tmp/alloy_heredoc5046408241449013606.als)
+                                                          AnLwsztwzoKnLmSpz, 2021-01-02T14:46:15 (prop1ok,correct,check,)
+  z8RZciSPd2hLnrABo, 2021-01-02T16:20:49 (in can be used only between 2 expressions of the same arity. Left type = {this/Client->this/Status} Right type = {this/Issued})
+    dCcT6Y5C3isseLn9H, 2021-01-02T16:21:13 (in can be used only between 2 expressions of the same arity. Left type = {this/Client->this/Status} Right type = {this/Issued})
+      HnxgwFoLj5So88kHw, 2021-01-02T16:22 (in can be used only between 2 expressions of the same arity. Left type = {this/Client->this/Status} Right type = {this/Issued})
+        XMZtZPxuabxc5jgev, 2021-01-02T16:22:20 (in can be used only between 2 expressions of the same arity. Left type = {this/Client->this/Status} Right type = {this/Issued})
+          GSFBeZcQR4sfJPWKv, 2021-01-02T16:22:39 (in can be used only between 2 expressions of the same arity. Left type = {this/Client->this/Status} Right type = {this/Issued})
+            fAyZ9wbnCLACEtQxg, 2021-01-02T16:22:57 (prop2ok,incorrect,check,)
+              wt3xiMKx3hEjvCJK6, 2021-01-02T16:23:03 (prop2ok,incorrect,check,)
+                RMe6mcpxoqrskd5wD, 2021-01-02T16:23:34 (prop2ok,incorrect,check,)
+                  yPCq7FAZsYXXLbP2b, 2021-01-02T16:24:26 (prop2ok,incorrect,check,)
+                    CtWdEm8Moktvtjgwx, 2021-01-02T16:25:03 (prop2ok,incorrect,check,)
+                      euqu7NvzHLTGpjXZs, 2021-01-02T16:25:20 (prop2ok,incorrect,check,)
+                        HyAXxLZsn846Tkbhy, 2021-01-02T16:26:05 (prop2ok,incorrect,check,)
+                          vBcWYu74qQHp5DjT9, 2021-01-02T16:26:29 (prop2ok,correct,check,)
+                            SQSEoKi2sKWzZDyB5, 2021-01-02T16:28:05 (prop3ok,incorrect,check,)
+                              sz586BLf8rC87SKqF, 2021-01-02T16:28:36 (prop3ok,incorrect,check,)
+                                GGdndjbpNHo6bCJ6R, 2021-01-02T16:28:51 (prop3ok,incorrect,check,)
+                                  X5sy4Mhex4PG9qb33, 2021-01-02T16:29:09 (prop3ok,incorrect,check,)
+                                    Dd6fLBr2ErrCQrRtN, 2021-01-02T16:30:13 (prop3ok,incorrect,check,)
+                                      YuyT5Tz6Wq2xSL6rR, 2021-01-02T16:30:41 (prop3ok,incorrect,check,)
+                                        i5AQKoWsuXkjuJRhp, 2021-01-02T16:30:53 (prop3ok,incorrect,check,)
+                                          B3od68K9e33xfhDib, 2021-01-02T16:31:08 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                                            29a9CMnHWuPe7vPFB, 2021-01-02T16:31:24 (There are 1 possible tokens that can appear here: ))
+                                              e53Lcj9yxoj4Ch2S8, 2021-01-02T16:31:32 (prop3ok,incorrect,check,)
+                                                eoumLnLEf3LcT8HJZ, 2021-01-02T16:32:22 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+                                                  AX6QMgpbgRKGvms5L, 2021-01-02T16:32:35 (prop3ok,incorrect,check,This variable is unused.)
+                                                    DDKrwjs6Ej57Lz5NM, 2021-01-02T16:32:56 (prop3ok,incorrect,check,)
+                                                      HPf7SRkJjGi7cpg7R, 2021-01-02T16:33:19 (prop3ok,incorrect,check,)
+                                                        ECu9TRxTEYJRm4dvP, 2021-01-02T16:35:12 (prop3ok,incorrect,check,)
+                                                          7ev6Tuxjx2Cnq2ndQ, 2021-01-02T16:35:47 (prop3ok,incorrect,check,)
+                                                            PcPiExKvmmaQAs3th, 2021-01-02T16:35:53 (prop3ok,incorrect,check,)
+                                                              rpzcZdnkmN8BvybEC, 2021-01-02T16:39:38 (prop3ok,incorrect,check,This variable is unused.)
+                                                                qhvRQFM7ikX5m7464, 2021-01-02T16:39:45 (prop3ok,incorrect,check,)
+                                                                  r7bDWRmNxooWjNcG2, 2021-01-02T16:40:53 (prop3ok,incorrect,check,)
+                                                                    FHDa7oc5fd8eJMTjr, 2021-01-02T16:41:04 (prop3ok,incorrect,check,)
+                                                                      GvpwZFyt4tKmjF5cA, 2021-01-02T16:42:53 (prop3ok,incorrect,check,)
+                                                                        ntowX5AnHvPed8shw, 2021-01-02T16:43:06 (prop3ok,incorrect,check,)
+                                                                          aHDtAf9gWSXMymHN7, 2021-01-02T16:43:54 (prop3ok,incorrect,check,)
+  5E8emNy38bm9kFMtP, 2021-01-07T22:35:50 (prop1ok,correct,check,)
+    a7A62aJtW9nGMRN7Z, 2021-01-07T22:44:38 (This cannot be a legal relational join where left hand side is c . (this/Card <: status) (type = {this/Status}) right hand side is this/Issued (type = {this/Issued}))
+      sKPBd2vgQgbPTsEc8, 2021-01-07T22:45:06 (This cannot be a legal relational join where left hand side is c . (this/Card <: status) (type = {this/Status}) right hand side is this/Issued (type = {this/Issued}))
+        P5tnhX9kMYj5eCnTJ, 2021-01-07T22:47:06 (This cannot be a legal relational join where left hand side is c . (this/Card <: status) (type = {this/Status}) right hand side is this/Issued (type = {this/Issued}))
+          YdFzJadadamEJq7ho, 2021-01-07T23:03:12 (prop2ok,correct,check,)
+            t6Tyih4nnMwDXR3RZ, 2021-01-07T23:03:20 (prop2ok,incorrect,check,)
+              vPXRKmFwq42B8pNcY, 2021-01-07T23:04:02 (prop2ok,incorrect,check,)
+                sZj2Z2AMxZrgpH4ne, 2021-01-07T23:04:28 (prop1ok,correct,check,)
+                  LaDnHynNuqT7hYkaw, 2021-01-07T23:04:56 (prop1ok,correct,check,)
+                    XzviW4dcLanY3nJ3s, 2021-01-07T23:05:10 (prop2ok,correct,check,)
+                      8dJswSEwwTZrKrHte, 2021-01-07T23:06:35 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+                        CGf5EbriKGG2y2cvR, 2021-01-07T23:08:01 (This cannot be a legal relational join where left hand side is c . (this/Card <: status) (type = {this/Status}) right hand side is this/Issued (type = {this/Issued}))
+                          hmmPKbx73Zp9Eq64N, 2021-01-07T23:13:41 (prop3ok,incorrect,check,)
+                            M7HqPx3wfNowaSRbc, 2021-01-07T23:21:49 (prop3ok,incorrect,check,)
+                              QuTzQYrotKLWAnwYT, 2021-01-07T23:22:24 (prop3ok,incorrect,check,)
+                                8szcdkCBAke7Cri9j, 2021-01-07T23:25:03 (The name "Cards" cannot be found.)
+                                  3gujYXiNnyraFhDN3, 2021-01-07T23:25:18 (prop3ok,incorrect,check,)
+                                    ZmYbXS5Qad7K4vLBJ, 2021-01-07T23:27:38 (prop3ok,incorrect,check,)
+                                      KFYy3cnDBhnj3uYBF, 2021-01-07T23:28:03 (prop3ok,incorrect,check,)
+  yst3e48N59crtrX3C, 2021-01-10T23:39:26 (prop1ok,incorrect,check,== is redundant, because the left and right expressions are always disjoint. Left type = {this/Card} Right type = {this/Unissued})
+    5bJ7knssjQ6NJBZkn, 2021-01-10T23:39:34 (prop1ok,incorrect,check,)
+      GyvY9M8GtdezBgBAi, 2021-01-10T23:39:44 (prop1ok,incorrect,check,)
+        ZPCB4YuKnjb9L7aj3, 2021-01-10T23:39:57 (prop1ok,incorrect,check,)
+          j5z3yKGF9adx849RE, 2021-01-10T23:40:25 (prop1ok,correct,check,)
+            EhzZR55JEuouTunFq, 2021-01-10T23:41:51 (prop1ok,correct,check,)
+              7tkGFw9vgiSbW2rSp, 2021-01-10T23:44:27 (prop2ok,correct,check,)
+                5bF7x6uKigZCsnMsN, 2021-01-10T23:51:47 (prop3ok,correct,check,)
+  qTvXqsgb4F7ZSGw9M, 2021-01-10T23:39:35 (prop1ok,incorrect,check,)
+    6kjyiHCjugqP9Z8yx, 2021-01-10T23:41:37 (prop1ok,correct,check,)
+      3xBWccAkFdozcsamw, 2021-01-10T23:43 (prop1ok,correct,check,)
+        rQrHRBLkfoYkXiSkj, 2021-01-10T23:43:09 (prop1ok,correct,check,)
+          H2L4CBp6uGJmwcdNe, 2021-01-10T23:44:36 (prop1ok,correct,check,)
+            FMBKrctWRrnL8cPNx, 2021-01-10T23:44:38 (prop2ok,correct,check,)
+              coCaT6x3nvZk67bN2, 2021-01-10T23:46:10 (prop3ok,incorrect,check,)
+                s99ATGxapaDfimHaa, 2021-01-10T23:46:20 (prop3ok,incorrect,check,)
+                  pjqALfShqQMifhL98, 2021-01-10T23:46:24 (prop3ok,incorrect,check,)
+                    QfqYFsRR84FfNepC5, 2021-01-10T23:51:38 (prop3ok,incorrect,check,)
+                      SpvoGBQDBc4yqJmc7, 2021-01-10T23:54:55 (There are 3 possible tokens that can appear here: ,  { |)
+                        RLC8MpF8Ce97vdjAd, 2021-01-10T23:55:11 (prop3ok,correct,check,)
+  yWQytqjt2ymcxsbz3, 2021-01-10T23:40:07 (prop1ok,incorrect,check,)
+    DHDNsqsK6mEaXALqb, 2021-01-10T23:41:28 (prop1ok,correct,check,)
+      kZBgHG5ybnxGnvnth, 2021-01-10T23:43:47 (The name "Cards" cannot be found.)
+        i8bkYwvaFNN3E3434, 2021-01-10T23:43:54 (prop2ok,correct,check,)
+          MqYX5g5uEHED3rWJJ, 2021-01-10T23:44:43 (prop2ok,correct,check,)
+  pqS2vdxSNGFupQMtE, 2021-01-11T22:24:49 (prop1ok,correct,check,)
+    ppCtzdhd99ikyBLzW, 2021-01-11T22:29:19 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+      PBx6mSGyeX788e4jN, 2021-01-11T22:29:30 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+        MwF6kSQRv8xgvfgZd, 2021-01-11T22:29:49 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+          Jb8iJBMxvBvda3Xyk, 2021-01-11T22:30:05 (prop2ok,incorrect,check,)
+            kgdZjSQafk7zMNLfw, 2021-01-11T22:30:52 (prop3ok,correct,check,)
+              PJ7Xqcg9EJY2D3JGo, 2021-01-11T22:31:39 (prop2ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Card} Right type = {this/Cancelled})
+                dzPExhNBBKoxQW7sq, 2021-01-11T22:31:53 (prop2ok,incorrect,check,)
+                  37hQkCjnzP28pRKH4, 2021-01-11T22:32:57 (prop2ok,correct,check,)
+  gJj4bNk4o5kaRGP7p, 2021-01-12T04:10:06 (prop1ok,incorrect,check,)
+    tFuSo6t5qbn49nFs6, 2021-01-12T04:10:48 (prop1ok,correct,check,)
+      9H89ZafXunHz4Sibw, 2021-01-12T04:12:24 (prop2ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Issued} Right type = {this/Cancelled})
+        6wJKAfdLNCgpSCvK3, 2021-01-12T04:14:24 (The name "Cards" cannot be found.)
+          pTz9P2Wb8obz2AMKv, 2021-01-12T04:14:30 (prop2ok,incorrect,check,)
+            wrpK3ZhM7vEExzaLr, 2021-01-12T04:16:20 (prop2ok,incorrect,check,)
+              qtixTzWJ9knoWeFFj, 2021-01-12T04:16:31 (prop2ok,correct,check,)
+                NubzB3RzBW2RNgwzw, 2021-01-12T04:17:56 (prop2ok,incorrect,check,)
+                  jFh4xDWXf2iCS5LnT, 2021-01-12T04:18:05 (prop2ok,correct,check,)
+                    fs5wir84gb4AuMsDL, 2021-01-12T04:18:35 (prop2ok,correct,check,)
+                      huBqvLeqbFF76hcis, 2021-01-12T04:19:07 (prop2ok,correct,check,)
+                        DuxWcXBZcRY2tFGGE, 2021-01-12T04:22:49 (prop3ok,incorrect,check,)
+                          vh4D2RNMWfmyjCPkL, 2021-01-12T04:24:18 (prop3ok,correct,check,)
+  DHs8pQWgYzycLQuRJ, 2021-01-13T00:43:25 (prop1ok,incorrect,check,)
+    eSisfrqCr6QAfhgb7, 2021-01-13T00:43:35 (prop1ok,correct,check,)
+      S75ZKPT5cS4bEN2o8, 2021-01-13T00:45:19 (The name "Cards" cannot be found.)
+        GEZmeftqiRScNfCii, 2021-01-13T00:45:26 (This cannot be a legal relational join where left hand side is this/Card . (this/Card <: status) (type = {this/Status}) right hand side is this/Issued (type = {this/Issued}))
+          JGW5wmuB6aLM8JQtC, 2021-01-13T00:45:43 (prop2ok,correct,check,)
+            QWQ3MTx7PkCXxubsM, 2021-01-13T00:50:01 (There are 1 possible tokens that can appear here: ))
+              X3RDPEsQ4yN2K9Prr, 2021-01-13T00:50:10 (prop3ok,incorrect,check,)
+                bTHFZHqBRHAdtjrsB, 2021-01-13T00:50:50 (prop3ok,incorrect,check,)
+  fR2WYkRDkXfbq96bf, 2021-01-13T12:16 (& can be used only between 2 expressions of the same arity. Left type = {this/Client->this/Status} Right type = {this/Unissued})
+    JbyS8WFYsnWBu2E6t, 2021-01-13T12:16:20 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Client->this/Status} Right type = {this/Unissued})
+      Pkt49ooWCFRdTPLaG, 2021-01-13T12:17:22 (prop1ok,incorrect,check,)
+        D2eWkiALTRECkmzMi, 2021-01-13T12:17:37 (prop1ok,correct,check,)
+          6sngsgk4w8awhMJgL, 2021-01-13T12:18:17 (prop2ok,incorrect,check,)
+            monoFiwQnw4oDEA5n, 2021-01-13T12:18:33 (prop2ok,correct,check,)
+              uLGfobZqazzDNbNRq, 2021-01-13T12:19:13 (prop3ok,incorrect,check,)
+                WtbaNuioDvcKGhTXP, 2021-01-13T12:20:54 (prop3ok,incorrect,check,)
+                  yXEii7reapLFrwXvN, 2021-01-13T12:22 (prop3ok,incorrect,check,)
+                    3R4XQKnXCGQYWzRLi, 2021-01-13T12:22:11 (prop3ok,incorrect,check,)
+                      jSYyhrfSfmmm6JkNQ, 2021-01-13T12:22:30 (prop3ok,incorrect,check,)
+                        mzcvQtxxFyoegSxoJ, 2021-01-13T12:22:39 (prop3ok,incorrect,check,)
+                          fQWRDgDwWA9f98pNB, 2021-01-13T12:22:45 (prop3ok,incorrect,check,)
+                            pvz5LuQoJcbMHbCmJ, 2021-01-13T12:22:56 (prop3ok,incorrect,check,)
+                              yjhkRjsq6PF9FGbhg, 2021-01-13T12:23:06 (prop3ok,incorrect,check,)
+                                EEP5p4cdBAKirm4e8, 2021-01-13T12:24:04 (prop3ok,incorrect,check,)
+                                  viQEFJQ559YEWwcwi, 2021-01-13T12:24:23 (prop3ok,incorrect,check,)
+                                    3wo5m6ZwFraL7w7Ho, 2021-01-13T12:24:40 (prop3ok,incorrect,check,)
+                                      739fmdDiNeLkkx7jg, 2021-01-13T12:25:16 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                        5eQL24yoxuDhYLBT6, 2021-01-13T12:25:23 (prop3ok,incorrect,check,)
+                                          txWJ5mf3hRu5DFakg, 2021-01-13T12:25:43 (prop3ok,incorrect,check,)
+                                            rLSR6WXnYsWTaH27A, 2021-01-13T12:25:51 (prop3ok,incorrect,check,)
+                                              rqeyZ3vWAMNgvgRC7, 2021-01-13T12:26:46 (prop3ok,incorrect,check,)
+                                                iXBxnTNY4eupkb2fD, 2021-01-13T12:28:08 (prop3ok,incorrect,check,)
+                                                  TGrWH95WHWNjPNSgD, 2021-01-13T12:28:15 (prop3ok,correct,check,)
+  vZoEMNxJkiX8gGzxq, 2021-01-13T16:05:22 (The name "Cliente" cannot be found.)
+    od9uHhDrbyGPWzpgW, 2021-01-13T16:05:29 (prop1ok,incorrect,check,)
+      sGxfXaJ3ad7gG8WYc, 2021-01-13T16:06:11 (prop1ok,incorrect,check,)
+        gHeBhreZh5LG43qya, 2021-01-13T16:06:21 (prop1ok,incorrect,check,)
+          ZHD6PpHrKbEeC9PS5, 2021-01-13T16:07:15 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+            ZfamaPe9gbAdSvwh6, 2021-01-13T16:07:25 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+              eojxiLNuhPCn3ufai, 2021-01-13T16:07:48 (prop1ok,incorrect,check,)
+                p8RbuiK7r6mciojvf, 2021-01-13T16:08:25 (prop1ok,incorrect,check,)
+  LpgrSuWpHF5hpbmuK, 2021-01-13T16:55:49 (& can be used only between 2 expressions of the same arity. Left type = {this/Client->this/Card} Right type = {this/Unissued})
+    oGthPMjnXaABAyLN9, 2021-01-13T16:55:56 (prop1ok,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Card} Right type = {this/Unissued})
+      TgvHz7LgREsina7Rv, 2021-01-13T16:56:10 (prop1ok,incorrect,check,)
+        juhnoE3y7c9n6APup, 2021-01-13T16:56:23 (prop1ok,correct,check,)
+          2B7zGAiCdZrBssmJ4, 2021-01-13T16:57:48 (prop2ok,correct,check,)
+            rSNwjca5SA4gkzbKL, 2021-01-13T16:59:04 (prop3ok,incorrect,check,)
+              6v7Mt3yu6EswXzFtk, 2021-01-13T16:59:19 (There are 1 possible tokens that can appear here: ))
+                oCzpcrwFqCWgExXBZ, 2021-01-13T16:59:24 (prop3ok,correct,check,)
+  6kBsdnD3YirNSzMYb, 2021-01-13T17:03:31 (This must be a formula expression. Instead, it has the following possible type(s): {none})
+    w2YvRbAYoKQ46QdZ5, 2021-01-13T17:03:40 (prop1ok,incorrect,check,& is irrelevant because the two subexpressions are always disjoint. Left type = {this/Unissued} Right type = {this/Client})
+      Bz9y5SKJCzJbHKuRR, 2021-01-13T17:04:55 (This cannot be a legal relational join where left hand side is cl . (this/Client <: cards) (type = {this/Card}) right hand side is this/Status (type = {this/Status}))
+        jHKLykdN4hRKsjHvj, 2021-01-13T17:05:40 (This cannot be a legal relational join where left hand side is cl . (this/Client <: cards) (type = {this/Card}) right hand side is this/Status (type = {this/Status}))
+          idhNpQWLJHF6o4s9B, 2021-01-13T17:05:53 (This cannot be a legal relational join where left hand side is cl . (this/Client <: cards) (type = {this/Card}) right hand side is this/Status (type = {this/Status}))
+            WyRLJbyKaqcBxxjQp, 2021-01-13T17:06:05 (prop1ok,incorrect,check,)
+              yWQZfu9sQtWb7yypW, 2021-01-13T17:06:20 (prop1ok,correct,check,)
+                PJEEFJkcgYdxdREFq, 2021-01-13T17:06:40 (prop1ok,correct,check,)
+                  cBgcweErumo9EtAda, 2021-01-13T17:06:45 (This cannot be a legal relational join where left hand side is cl . (this/Client <: cards) (type = {this/Card}) right hand side is this/Status (type = {this/Status}))
+                    apW2FqajfsMsGaQ8z, 2021-01-13T17:07:07 (prop1ok,correct,check,)
+                      o4AMhkzjWnXKDuxDx, 2021-01-13T17:12:31 (prop1ok,correct,check,)
+                        XBJwreTJ62uKrj6nC, 2021-01-13T17:12:35 (prop2ok,incorrect,check,)
+                          6QH9h9A6NNcKeSrwY, 2021-01-13T17:12:43 (prop2ok,incorrect,check,)
+                            JY2F9TTkNh36ey79t, 2021-01-13T17:13:52 (prop2ok,incorrect,check,)
+                              jZvPHsP7j6BoabeTx, 2021-01-13T17:14:16 (prop2ok,incorrect,check,)
+                                BdsQ8c6kFagRm3mPD, 2021-01-13T17:14:32 (prop2ok,correct,check,)
+                                  Kt2PitLkq4aXeLfL5, 2021-01-13T17:16:20 (prop2ok,correct,check,)
+                                    Z95588S53ajqDDif8, 2021-01-13T17:16:32 (prop2ok,correct,check,)
+                                      hZY9qXHH5TDybM6fA, 2021-01-13T17:18:40 (prop2ok,correct,check,)
+                                        M4BfCtDx2X2HLaw8Q, 2021-01-13T17:18:45 (prop3ok,correct,check,)
+                                          bMbBRfcdB2azjL3CN, 2021-01-13T17:18:54 (prop2ok,correct,check,)
+                                            RXKec5jrrKcm9HRBL, 2021-01-13T17:18:57 (prop3ok,correct,check,)
+                                              WtFiDoNpcBTgXLCeD, 2021-01-13T17:19:08 (prop3ok,correct,check,)
+                                                hGbenS9JJiYKTPAeB, 2021-01-13T17:36:22 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                  6s9pmcmTCHWNkRwGk, 2021-01-13T17:36:39 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                    vxjowo7TTGCLmAFhW, 2021-01-13T17:36:53 (prop3ok,incorrect,check,)
+                                                      K5RNMNiuk8As5TaK3, 2021-01-13T17:37:45 (prop3ok,correct,check,)
+  udqeeJArjkG9kLGzL, 2021-01-13T17:44:49 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {PrimitiveBoolean} Right type = {this/Unissued})
+    cJJ8nqJBk24PMThk7, 2021-01-13T17:45:01 (prop1ok,incorrect,check,)
+      Wt86qzPvL5icj2PWD, 2021-01-13T17:45:08 (prop1ok,incorrect,check,)
+        CgsfaM6b4oX8Kne6G, 2021-01-13T17:46:12 (prop1ok,incorrect,check,)
+          kyevtf29iu4cRMxow, 2021-01-13T17:46:21 (prop1ok,incorrect,check,)
+            8HfwsYMDGSZrz7oHF, 2021-01-13T17:46:44 (prop1ok,incorrect,check,)
+              sDKFQKcwQmdaoHtNQ, 2021-01-13T17:46:51 (prop1ok,incorrect,check,)
+                8Naa7CWeG6ET3RRLS, 2021-01-13T17:48:16 (prop1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Card} Right type = {this/Client->this/Card})
+                  ZYAbaoqTQyYCwkwx6, 2021-01-13T17:48:30 (prop1ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Card} Right type = {this/Client->this/Card})
+                    JC3tmgqEk7gGXtPpD, 2021-01-13T17:48:40 (prop1ok,correct,check,)
+                      R2ks2faf9pYPtbY5N, 2021-01-13T17:49:28 (prop1ok,correct,check,)
+                        jve54bXNWPnMwLtDR, 2021-01-13T17:49:52 (prop1ok,incorrect,check,)
+                          REJcxxmxJBys3KbqY, 2021-01-13T17:51:46 (prop1ok,correct,check,)
+                            wAmvKRkyn2cRngXvt, 2021-01-13T17:51:48 (prop2ok,correct,check,)
+                              697eywXL6wEnG9jKt, 2021-01-13T17:52:40 (prop2ok,correct,check,)
+                                HnftYbssgt6aqn39C, 2021-01-13T17:52:48 (prop2ok,incorrect,check,)
+                                  t9YnLuzTCk7fWv5v7, 2021-01-13T17:54:44 (There are 1 possible tokens that can appear here: ))
+                                    NouEB2fMk6cq7nAvc, 2021-01-13T17:54:48 (prop3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Card} Right type = {this/Client->this/Card})
+                                      wj5jsihGpWESqgSZG, 2021-01-13T17:55 (prop3ok,incorrect,check,)
+                                        jJsHjBBLgWHPKdQca, 2021-01-13T17:55:41 (There are 1 possible tokens that can appear here: ))
+                                          fP5De7QjMwPbpmsMp, 2021-01-13T17:55:48 (prop3ok,incorrect,check,)
+                                            NetNeFxDsJYExf78m, 2021-01-13T17:57:10 (prop3ok,incorrect,check,)
+                                              hsT2aqqxpC9wjD4Fo, 2021-01-13T17:57:57 (prop3ok,incorrect,check,)
+                                                uwrzEmfCW7GTthCee, 2021-01-13T17:58:29 (prop3ok,incorrect,check,)
+                                                  SMbCkT9S3FMxFZ8TL, 2021-01-13T17:58:39 (prop3ok,incorrect,check,)
+                                                    zB7M66JJwD5XhE9yb, 2021-01-13T18:00:51 (prop3ok,correct,check,)
+                                                      Q3ZP6GzKdNpFW9hQ9, 2021-01-13T18:01 (prop3ok,correct,check,)
+  J8eycP7tfjztNLXWY, 2021-01-23T17:48:34 (prop1ok,correct,check,)
+    JHvkKF6ibgzAJ8bq8, 2021-01-23T17:50:05 (prop2ok,correct,check,)
+      Xad95RiEeMZHg4NSZ, 2021-01-23T17:50:10 (prop2ok,incorrect,check,)
+        bprthQdLHjEf25dvA, 2021-01-23T17:51:48 (prop3ok,incorrect,check,)
+          ftTxhR7rgiQ75925R, 2021-01-23T17:51:59 (prop3ok,incorrect,check,)
+            nH484C7DqnacvGF8x, 2021-01-23T17:52:17 (prop3ok,correct,check,)
+              uGcTbtJKfeieJrvns, 2021-01-23T17:52:22 (prop3ok,incorrect,check,)
+                XxmerZgMRMmmMZfrr, 2021-01-23T17:52:30 (prop3ok,correct,check,)
+                  5KXmLa4yZwQdTs66u, 2021-01-23T17:52:44 (prop3ok,correct,check,)
+  j6mNF5kn9F6kfnmEs, 2021-02-03T22:58:08 (prop1ok,incorrect,check,)
+  6mqRrn6LZ3semCJAM, 2021-02-03T22:58:08 (prop1ok,incorrect,check,)

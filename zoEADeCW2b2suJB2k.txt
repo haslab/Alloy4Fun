@@ -1,4 +1,4 @@
-zoEADeCW2b2suJB2k (2020-12-22)
+zoEADeCW2b2suJB2k (2021-03-24)
 
 * Meta-data
 Challenge name: unknown
@@ -7,47 +7,47 @@ Creation time: 2019-10-03
 Metric catalog: Example metric catalog
 
 * Overall metric statistics
-Total model entries: 2355
-Total executions: 2336
-Total shares: 19
-Total error messages: 856
-Total warning messages: 494
-Total solutions: 1482
-Total sessions: 138
+Total model entries: 2602
+Total executions: 2581
+Total shares: 21
+Total error messages: 946
+Total warning messages: 526
+Total solutions: 1637
+Total sessions: 150
 Timed out re-executions: 0
 Rejected due to server errors: 23
 Inconsisistent result reports: 0
 Inconsisistent message reports: 0
 Total instance entries: 0
-Total link entries: 20
+Total link entries: 22
 
 * Scalar metrics
-Number of shared sessions	15
-Shared models (model)	19
+Number of shared sessions	16
+Shared models (model)	21
 Shares with warnings	0
 Alloy runtime errors	10
 Shared errored models	2
-Alloy static errors	844
+Alloy static errors	934
 Shared models (instance)	0
-Average session	16.97826086956522
+Average session	17.266666666666666
 Longest session	117
-Sat executions with warnings	276
-Executed errored models	854
-Unsat executions	1048
-Unsat executions with warnings	16
+Sat executions with warnings	299
+Executed errored models	944
+Unsat executions	497
+Unsat executions with warnings	17
 Errored executions with warnings	3
-Average % unsatisfiable	0.31296346789130647
-Sat executions	434
+Average % unsatisfiable	0.3162942913435412
+Sat executions	1140
 
 * Overall metrics
 
 Sessions by length
-1	19
+1	22
 2	12
 3	8
 4	8
 5	1
-6	11
+6	12
 7	5
 8	5
 9	1
@@ -57,28 +57,28 @@ Sessions by length
 13	1
 14	2
 15	0
-16	2
+16	3
 17	2
 18	3
 19	4
-20	1
+20	2
 21	4
 22	1
-23	2
+23	4
 24	1
 25	2
 26	1
 27	2
 28	2
-29	1
+29	2
 30	1
 31	0
 32	0
 33	1
 34	1
-35	0
+35	1
 36	1
-37	0
+37	1
 38	0
 39	0
 40	0
@@ -96,7 +96,7 @@ Sessions by length
 52	0
 53	0
 54	0
-55	1
+55	2
 56	0
 57	0
 58	0
@@ -162,122 +162,125 @@ Sessions by length
 
 Warnings by type
 == is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}	2
-Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}	38
+Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}	41
 <: is irrelevant because the result is always empty. Left type = {_} Right type = {_}	13
-This variable is unused.	53
+This variable is unused.	57
 The value of this expression does not contribute to the value of the parent. Parent's relevant type = {_} This expression's type = {_}	22
 :> is irrelevant because the result is always empty. Left type = {_} Right type = {_}	2
-Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}	45
+Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}	48
 Subset operator is redundant, because both subexpressions are always empty. Left type = {_} Right type = {_}	3
 & is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}	1
 Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}	19
-The join operation here always yields an empty set. Left type = {_} Right type = {_}	211
-^_ is redundant since its domain and range are disjoint: {_}	78
+The join operation here always yields an empty set. Left type = {_} Right type = {_}	224
+^_ is redundant since its domain and range are disjoint: {_}	87
 == is redundant, because the left and right expressions are always disjoint. Left type = {_} Right type = {_}	7
 
 Sessions by # of solved challenges
-0	51
+0	54
 1	15
 2	17
 3	21
-4	13
-5	12
-6	6
-7	3
+4	15
+5	13
+6	11
+7	4
 
 Errors by type
 There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	6
+Name cannot be resolved; possible incorrect function/predicate call; perhaps you used(_) when you should have used [ ]  _ The parameters are  _ so the arguments cannot be empty. 	2
 There are 1 possible tokens that can appear here: [ 	1
-There are 5 possible tokens that can appear here: enum fun let open pred 	3
-There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ 	14
+There are 5 possible tokens that can appear here: enum fun let open pred 	4
+There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ 	18
 There are 3 possible tokens that can appear here: NAME seq this 	1
-= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	12
+= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	14
 The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".	12
 Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.	9
 There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	2
-This must be a formula expression. Instead, it has the following possible type(s): {_}	97
-~ can be used only with a binary relation. Instead, its possible type(s) are: {_}	56
-There are 8 possible tokens that can appear here: NAME disj exh part private seq this var 	19
+This must be a formula expression. Instead, it has the following possible type(s): {_}	115
+~ can be used only with a binary relation. Instead, its possible type(s) are: {_}	67
+There are 8 possible tokens that can appear here: NAME disj exh part private seq this var 	20
 You must specify a scope for _ 	1
-There are 1 possible tokens that can appear here: ) 	17
+There are 1 possible tokens that can appear here: ) 	18
 This must be a unary set, but instead it has the following possible type(s): {_}	29
 !in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	2
 There are 3 possible tokens that can appear here: ,  : = 	1
-^ can be used only with a binary relation. Instead, its possible type(s) are: {_}	115
+^ can be used only with a binary relation. Instead, its possible type(s) are: {_}	129
 + can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	3
 != can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	2
-in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	142
-The name _ cannot be found.	64
-This expression failed to be typechecked line _ column _ filename=_.als	13
-This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	74
-& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	13
+in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	156
+The name _ cannot be found.	73
+This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	76
+This expression failed to be typechecked line _ column _ filename=_.als	14
+& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	14
 Syntax error at the \ character. HEX: \u5c)	1
-There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	37
-This must be a set or relation. Instead, it has the following possible type(s): {_}	40
+There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	39
+This must be a set or relation. Instead, it has the following possible type(s): {_}	43
 _ is already the name of a sig/parameter in this module.	5
  This name is ambiguous due to multiple matches: _ _ 	1
-There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ 	4
+There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ 	6
 There are 1 possible tokens that can appear here: = 	1
 There are 1 possible tokens that can appear here: } 	1
 Multiplicity expression not allowed here.	2
-* can be used only with a binary relation. Instead, its possible type(s) are: {_}	22
-There are 3 possible tokens that can appear here: ,  { | 	28
+* can be used only with a binary relation. Instead, its possible type(s) are: {_}	23
+There are 3 possible tokens that can appear here: ,  { | 	29
 There are 1 possible tokens that can appear here: . 	6
 
 Models by number of warnings
-0	2060
-1	158
-2	97
-3	24
+0	2283
+1	175
+2	103
+3	25
 4	10
 5	6
 
 * Overall metrics, classified
 
-Execution results by challenge
+Execution results by command
 m	SAT	UNSAT	
-inv1Ok	94	114	
-inv2Ok	35	91	
-inv3Ok	211	78	
-inv4Ok	314	46	
-inv5Ok	185	41	
-inv6Ok	29	57	
-inv7Ok	175	6	
+inv1Ok	108	127	
+inv2Ok	35	102	
+inv3Ok	227	89	
+inv4Ok	333	53	
+inv5Ok	191	49	
+inv6Ok	32	69	
+inv7Ok	209	7	
+run$1	4	0	
+bla	1	1	
 
 Session results by challenge
 m	solved	unsolved	
-inv1Ok	74	64	
-inv2Ok	68	70	
-inv3Ok	48	90	
-inv4Ok	20	118	
-inv5Ok	28	110	
-inv6Ok	38	100	
-inv7Ok	5	133	
+inv1Ok	83	67	
+inv2Ok	77	73	
+inv3Ok	55	95	
+inv4Ok	27	123	
+inv5Ok	36	114	
+inv6Ok	47	103	
+inv7Ok	6	144	
 
 Model entries over time
-m	ERROR	SAT	SHARE	UNSAT	
-2019-10-03	0	1	1	0	
+m	SAT	ERROR	UNSAT	SHARE	
+2019-10-03	1	0	0	1	
 2019-10-04	0	0	0	0	
 2019-10-05	0	0	0	0	
 2019-10-06	0	0	0	0	
 2019-10-07	0	0	0	0	
-2019-10-08	4	21	1	11	
+2019-10-08	21	4	11	1	
 2019-10-09	0	0	0	0	
 2019-10-10	0	0	0	0	
 2019-10-11	0	0	0	0	
-2019-10-12	3	10	0	5	
+2019-10-12	10	3	5	0	
 2019-10-13	0	0	0	0	
-2019-10-14	3	1	0	4	
+2019-10-14	1	3	4	0	
 2019-10-15	0	0	0	0	
-2019-10-16	3	19	0	3	
-2019-10-17	89	158	2	33	
-2019-10-18	17	11	0	0	
+2019-10-16	19	3	3	0	
+2019-10-17	158	89	33	2	
+2019-10-18	11	17	0	0	
 2019-10-19	0	0	0	0	
-2019-10-20	6	4	0	0	
-2019-10-21	17	22	0	6	
-2019-10-22	45	73	0	0	
-2019-10-23	11	18	0	0	
-2019-10-24	5	13	0	0	
+2019-10-20	4	6	0	0	
+2019-10-21	22	17	6	0	
+2019-10-22	73	45	0	0	
+2019-10-23	18	11	0	0	
+2019-10-24	13	5	0	0	
 2019-10-25	0	0	0	0	
 2019-10-26	0	0	0	0	
 2019-10-27	0	0	0	0	
@@ -285,7 +288,7 @@ m	ERROR	SAT	SHARE	UNSAT
 2019-10-29	0	0	0	0	
 2019-10-30	0	0	0	0	
 2019-10-31	0	0	0	0	
-2019-11-01	0	1	0	0	
+2019-11-01	1	0	0	0	
 2019-11-02	0	0	0	0	
 2019-11-03	0	0	0	0	
 2019-11-04	0	0	0	0	
@@ -294,8 +297,8 @@ m	ERROR	SAT	SHARE	UNSAT
 2019-11-07	0	0	0	0	
 2019-11-08	0	0	0	0	
 2019-11-09	0	0	0	0	
-2019-11-10	15	19	1	10	
-2019-11-11	18	45	2	24	
+2019-11-10	19	15	10	1	
+2019-11-11	45	18	24	2	
 2019-11-12	0	0	0	0	
 2019-11-13	0	0	0	0	
 2019-11-14	0	0	0	0	
@@ -303,8 +306,8 @@ m	ERROR	SAT	SHARE	UNSAT
 2019-11-16	0	0	0	0	
 2019-11-17	0	0	0	0	
 2019-11-18	0	0	0	0	
-2019-11-19	0	1	0	0	
-2019-11-20	34	30	0	3	
+2019-11-19	1	0	0	0	
+2019-11-20	30	34	3	0	
 2019-11-21	0	0	0	0	
 2019-11-22	0	0	0	0	
 2019-11-23	0	0	0	0	
@@ -344,17 +347,17 @@ m	ERROR	SAT	SHARE	UNSAT
 2019-12-27	0	0	0	0	
 2019-12-28	0	0	0	0	
 2019-12-29	0	0	0	0	
-2019-12-30	6	3	0	5	
+2019-12-30	3	6	5	0	
 2019-12-31	1	1	0	0	
 2020-01-01	0	0	0	0	
-2020-01-02	3	7	1	9	
+2020-01-02	7	3	9	1	
 2020-01-03	0	0	0	0	
 2020-01-04	0	0	0	0	
 2020-01-05	0	0	0	0	
 2020-01-06	0	0	0	0	
-2020-01-07	0	1	0	0	
-2020-01-08	33	32	0	8	
-2020-01-09	1	3	0	2	
+2020-01-07	1	0	0	0	
+2020-01-08	32	33	8	0	
+2020-01-09	3	1	2	0	
 2020-01-10	0	0	0	0	
 2020-01-11	0	0	0	0	
 2020-01-12	0	0	0	0	
@@ -364,11 +367,11 @@ m	ERROR	SAT	SHARE	UNSAT
 2020-01-16	0	0	0	0	
 2020-01-17	0	0	0	0	
 2020-01-18	0	0	0	0	
-2020-01-19	10	4	1	1	
+2020-01-19	4	10	1	1	
 2020-01-20	0	0	0	0	
-2020-01-21	3	5	0	2	
+2020-01-21	5	3	2	0	
 2020-01-22	0	0	0	0	
-2020-01-23	21	16	0	4	
+2020-01-23	16	21	4	0	
 2020-01-24	0	0	0	0	
 2020-01-25	0	0	0	0	
 2020-01-26	0	0	0	0	
@@ -394,7 +397,7 @@ m	ERROR	SAT	SHARE	UNSAT
 2020-02-15	0	0	0	0	
 2020-02-16	0	0	0	0	
 2020-02-17	0	0	0	0	
-2020-02-18	0	2	1	0	
+2020-02-18	2	0	0	1	
 2020-02-19	0	0	0	0	
 2020-02-20	0	0	0	0	
 2020-02-21	0	0	0	0	
@@ -439,7 +442,7 @@ m	ERROR	SAT	SHARE	UNSAT
 2020-03-31	0	0	0	0	
 2020-04-01	0	0	0	0	
 2020-04-02	0	0	0	0	
-2020-04-03	0	1	0	0	
+2020-04-03	1	0	0	0	
 2020-04-04	0	0	0	0	
 2020-04-05	0	0	0	0	
 2020-04-06	0	0	0	0	
@@ -451,13 +454,13 @@ m	ERROR	SAT	SHARE	UNSAT
 2020-04-12	0	0	0	0	
 2020-04-13	0	0	0	0	
 2020-04-14	0	0	0	0	
-2020-04-15	0	1	0	0	
-2020-04-16	0	1	0	0	
+2020-04-15	1	0	0	0	
+2020-04-16	1	0	0	0	
 2020-04-17	0	0	0	0	
 2020-04-18	0	0	0	0	
 2020-04-19	0	0	0	0	
 2020-04-20	0	0	0	0	
-2020-04-21	0	4	0	4	
+2020-04-21	4	0	4	0	
 2020-04-22	0	0	0	0	
 2020-04-23	0	0	0	0	
 2020-04-24	0	0	0	0	
@@ -470,10 +473,10 @@ m	ERROR	SAT	SHARE	UNSAT
 2020-05-01	0	0	0	0	
 2020-05-02	0	0	0	0	
 2020-05-03	0	0	0	0	
-2020-05-04	0	1	0	0	
+2020-05-04	1	0	0	0	
 2020-05-05	0	0	0	0	
 2020-05-06	0	0	0	0	
-2020-05-07	0	1	0	0	
+2020-05-07	1	0	0	0	
 2020-05-08	0	0	0	0	
 2020-05-09	0	0	0	0	
 2020-05-10	0	0	0	0	
@@ -489,7 +492,7 @@ m	ERROR	SAT	SHARE	UNSAT
 2020-05-20	0	0	0	0	
 2020-05-21	0	0	0	0	
 2020-05-22	0	0	0	0	
-2020-05-23	0	1	0	0	
+2020-05-23	1	0	0	0	
 2020-05-24	0	0	0	0	
 2020-05-25	0	0	0	0	
 2020-05-26	0	0	0	0	
@@ -502,12 +505,12 @@ m	ERROR	SAT	SHARE	UNSAT
 2020-06-02	0	0	0	0	
 2020-06-03	0	0	0	0	
 2020-06-04	0	0	0	0	
-2020-06-05	0	1	0	0	
+2020-06-05	1	0	0	0	
 2020-06-06	0	0	0	0	
 2020-06-07	0	0	0	0	
 2020-06-08	0	0	0	0	
 2020-06-09	0	0	0	0	
-2020-06-10	3	4	1	8	
+2020-06-10	4	3	8	1	
 2020-06-11	0	0	0	0	
 2020-06-12	0	0	0	0	
 2020-06-13	0	0	0	0	
@@ -525,9 +528,9 @@ m	ERROR	SAT	SHARE	UNSAT
 2020-06-25	0	0	0	0	
 2020-06-26	0	0	0	0	
 2020-06-27	0	0	0	0	
-2020-06-28	0	1	0	0	
+2020-06-28	1	0	0	0	
 2020-06-29	0	0	0	0	
-2020-06-30	0	1	1	0	
+2020-06-30	1	0	0	1	
 2020-07-01	0	0	0	0	
 2020-07-02	0	0	0	0	
 2020-07-03	0	0	0	0	
@@ -583,7 +586,7 @@ m	ERROR	SAT	SHARE	UNSAT
 2020-08-22	0	0	0	0	
 2020-08-23	0	0	0	0	
 2020-08-24	0	0	0	0	
-2020-08-25	0	1	0	0	
+2020-08-25	1	0	0	0	
 2020-08-26	0	0	0	0	
 2020-08-27	0	0	0	0	
 2020-08-28	0	0	0	0	
@@ -601,7 +604,7 @@ m	ERROR	SAT	SHARE	UNSAT
 2020-09-09	0	0	0	0	
 2020-09-10	0	0	0	0	
 2020-09-11	0	0	0	0	
-2020-09-12	9	7	0	12	
+2020-09-12	7	9	12	0	
 2020-09-13	0	0	0	0	
 2020-09-14	0	0	0	0	
 2020-09-15	0	0	0	0	
@@ -636,7 +639,7 @@ m	ERROR	SAT	SHARE	UNSAT
 2020-10-14	0	0	0	0	
 2020-10-15	0	0	0	0	
 2020-10-16	0	0	0	0	
-2020-10-17	0	1	0	0	
+2020-10-17	1	0	0	0	
 2020-10-18	0	0	0	0	
 2020-10-19	0	0	0	0	
 2020-10-20	0	0	0	0	
@@ -655,54 +658,146 @@ m	ERROR	SAT	SHARE	UNSAT
 2020-11-02	0	0	0	0	
 2020-11-03	0	0	0	0	
 2020-11-04	0	0	0	0	
-2020-11-05	43	62	1	44	
+2020-11-05	62	43	44	1	
 2020-11-06	0	0	0	0	
-2020-11-07	72	22	0	11	
+2020-11-07	22	72	11	0	
 2020-11-08	0	0	0	0	
-2020-11-09	19	20	0	6	
-2020-11-10	3	0	0	2	
-2020-11-11	9	11	0	4	
-2020-11-12	77	70	0	21	
-2020-11-13	11	6	0	0	
-2020-11-14	13	5	0	9	
+2020-11-09	20	19	6	0	
+2020-11-10	0	3	2	0	
+2020-11-11	11	9	4	0	
+2020-11-12	70	77	21	0	
+2020-11-13	6	11	0	0	
+2020-11-14	5	13	9	0	
 2020-11-15	0	0	0	0	
-2020-11-16	27	21	0	8	
-2020-11-17	14	3	0	10	
-2020-11-18	84	89	1	46	
-2020-11-19	40	80	1	20	
+2020-11-16	21	27	8	0	
+2020-11-17	3	14	10	0	
+2020-11-18	89	84	46	1	
+2020-11-19	80	40	20	1	
 2020-11-20	0	0	0	0	
 2020-11-21	0	0	0	0	
 2020-11-22	0	0	0	0	
-2020-11-23	12	38	0	32	
+2020-11-23	38	12	32	0	
 2020-11-24	0	0	0	0	
-2020-11-25	39	23	1	6	
-2020-11-26	1	4	0	5	
+2020-11-25	23	39	6	1	
+2020-11-26	4	1	5	0	
 2020-11-27	0	0	0	0	
 2020-11-28	0	0	0	0	
 2020-11-29	0	0	0	0	
-2020-11-30	6	9	1	9	
-2020-12-01	1	1	0	3	
-2020-12-02	0	1	0	5	
-2020-12-03	0	0	1	9	
-2020-12-04	7	4	0	5	
+2020-11-30	9	6	9	1	
+2020-12-01	1	1	3	0	
+2020-12-02	1	0	5	0	
+2020-12-03	0	0	9	1	
+2020-12-04	4	7	5	0	
 2020-12-05	0	0	0	0	
 2020-12-06	0	0	0	0	
 2020-12-07	0	0	0	0	
 2020-12-08	0	0	0	0	
 2020-12-09	0	0	0	0	
 2020-12-10	0	0	0	0	
-2020-12-11	0	1	0	2	
+2020-12-11	1	0	2	0	
 2020-12-12	0	0	0	0	
-2020-12-13	0	2	0	0	
-2020-12-14	2	0	0	1	
-2020-12-15	10	13	0	4	
+2020-12-13	2	0	0	0	
+2020-12-14	0	2	1	0	
+2020-12-15	13	10	4	0	
 2020-12-16	0	0	0	0	
 2020-12-17	0	0	0	0	
-2020-12-18	0	1	1	9	
+2020-12-18	1	0	9	1	
 2020-12-19	0	0	0	0	
-2020-12-20	4	15	0	9	
+2020-12-20	15	4	9	0	
 2020-12-21	0	0	0	0	
 2020-12-22	0	0	0	0	
+2020-12-23	0	0	0	0	
+2020-12-24	0	0	0	0	
+2020-12-25	0	0	0	0	
+2020-12-26	0	0	0	0	
+2020-12-27	0	0	0	0	
+2020-12-28	0	0	0	0	
+2020-12-29	0	0	0	0	
+2020-12-30	0	0	0	0	
+2020-12-31	0	0	0	0	
+2021-01-01	0	0	0	0	
+2021-01-02	0	0	0	0	
+2021-01-03	0	0	0	0	
+2021-01-04	0	0	0	0	
+2021-01-05	0	0	0	0	
+2021-01-06	0	0	0	0	
+2021-01-07	1	0	0	0	
+2021-01-08	0	0	0	0	
+2021-01-09	9	6	8	0	
+2021-01-10	0	0	0	0	
+2021-01-11	0	0	0	0	
+2021-01-12	25	16	15	2	
+2021-01-13	33	52	23	0	
+2021-01-14	22	16	17	0	
+2021-01-15	0	0	0	0	
+2021-01-16	0	0	0	0	
+2021-01-17	0	0	0	0	
+2021-01-18	0	0	0	0	
+2021-01-19	0	0	0	0	
+2021-01-20	0	0	0	0	
+2021-01-21	0	0	0	0	
+2021-01-22	0	0	0	0	
+2021-01-23	0	0	0	0	
+2021-01-24	0	0	0	0	
+2021-01-25	0	0	0	0	
+2021-01-26	0	0	0	0	
+2021-01-27	0	0	0	0	
+2021-01-28	0	0	0	0	
+2021-01-29	1	0	0	0	
+2021-01-30	0	0	0	0	
+2021-01-31	0	0	0	0	
+2021-02-01	0	0	0	0	
+2021-02-02	0	0	0	0	
+2021-02-03	0	0	0	0	
+2021-02-04	0	0	0	0	
+2021-02-05	0	0	0	0	
+2021-02-06	0	0	0	0	
+2021-02-07	0	0	0	0	
+2021-02-08	0	0	0	0	
+2021-02-09	0	0	0	0	
+2021-02-10	0	0	0	0	
+2021-02-11	0	0	0	0	
+2021-02-12	0	0	0	0	
+2021-02-13	0	0	0	0	
+2021-02-14	0	0	0	0	
+2021-02-15	0	0	0	0	
+2021-02-16	0	0	0	0	
+2021-02-17	0	0	0	0	
+2021-02-18	0	0	0	0	
+2021-02-19	0	0	0	0	
+2021-02-20	0	0	0	0	
+2021-02-21	0	0	0	0	
+2021-02-22	0	0	0	0	
+2021-02-23	0	0	0	0	
+2021-02-24	0	0	0	0	
+2021-02-25	0	0	0	0	
+2021-02-26	1	0	0	0	
+2021-02-27	0	0	0	0	
+2021-02-28	0	0	0	0	
+2021-03-01	0	0	0	0	
+2021-03-02	0	0	0	0	
+2021-03-03	0	0	0	0	
+2021-03-04	0	0	0	0	
+2021-03-05	0	0	0	0	
+2021-03-06	0	0	0	0	
+2021-03-07	0	0	0	0	
+2021-03-08	0	0	0	0	
+2021-03-09	0	0	0	0	
+2021-03-10	0	0	0	0	
+2021-03-11	0	0	0	0	
+2021-03-12	0	0	0	0	
+2021-03-13	0	0	0	0	
+2021-03-14	0	0	0	0	
+2021-03-15	0	0	0	0	
+2021-03-16	0	0	0	0	
+2021-03-17	0	0	0	0	
+2021-03-18	0	0	0	0	
+2021-03-19	0	0	0	0	
+2021-03-20	0	0	0	0	
+2021-03-21	0	0	0	0	
+2021-03-22	0	0	0	0	
+2021-03-23	0	0	0	0	
+2021-03-24	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 
@@ -710,360 +805,400 @@ Size in 10s of nodes
 
 inv1Ok
 m	SAT	UNSAT	
-1	90	114	
+1	104	127	
 2	3	0	
 3	1	0	
 
 inv2Ok
 m	SAT	UNSAT	
-0	21	90	
+0	21	101	
 1	13	1	
 2	1	0	
 
 inv3Ok
 m	SAT	UNSAT	
-1	30	0	
-2	170	71	
+1	36	0	
+2	180	82	
 3	5	1	
 4	6	6	
 
 inv4Ok
 m	SAT	UNSAT	
-1	23	0	
-2	178	22	
-3	103	23	
+1	25	0	
+2	192	25	
+3	106	27	
 4	7	0	
 5	3	1	
 
 inv5Ok
 m	SAT	UNSAT	
-1	5	0	
-2	130	0	
-3	34	38	
-4	14	2	
+1	6	0	
+2	134	0	
+3	34	46	
+4	15	2	
 5	2	1	
 
 inv6Ok
 m	SAT	UNSAT	
-1	21	38	
-2	7	18	
+1	24	48	
+2	7	20	
 3	1	1	
 
 inv7Ok
 m	SAT	UNSAT	
-1	7	0	
-2	78	1	
-3	55	0	
-4	9	2	
-5	13	2	
+1	9	0	
+2	82	1	
+3	70	0	
+4	19	3	
+5	16	2	
 6	12	1	
 7	1	0	
+
+Number of quantified variables
+
+inv1Ok
+m	SAT	UNSAT	
+0	87	18	
+1	16	109	
+2	1	0	
+3	4	0	
+
+inv2Ok
+m	SAT	UNSAT	
+0	17	101	
+1	13	1	
+2	5	0	
+
+inv3Ok
+m	SAT	UNSAT	
+0	49	0	
+1	97	7	
+2	68	75	
+3	13	1	
+4	0	6	
+
+inv4Ok
+m	SAT	UNSAT	
+0	80	12	
+1	118	2	
+2	83	12	
+3	33	22	
+4	18	5	
+5	1	0	
+
+inv5Ok
+m	SAT	UNSAT	
+0	33	0	
+1	76	3	
+2	52	42	
+3	20	3	
+4	5	1	
+5	5	0	
+
+inv6Ok
+m	SAT	UNSAT	
+0	4	31	
+1	22	22	
+2	6	12	
+3	0	3	
+4	0	1	
+
+inv7Ok
+m	SAT	UNSAT	
+0	71	0	
+1	33	1	
+2	3	0	
+3	57	3	
+4	34	3	
+5	6	0	
+6	3	0	
+7	2	0	
 
 Number of binary temporal operators
 
 inv1Ok
 m	SAT	UNSAT	
-0	94	114	
+0	108	127	
 
 inv2Ok
 m	SAT	UNSAT	
-0	35	91	
+0	35	102	
 
 inv3Ok
 m	SAT	UNSAT	
-0	211	78	
+0	227	89	
 
 inv4Ok
 m	SAT	UNSAT	
-0	314	46	
+0	333	53	
 
 inv5Ok
 m	SAT	UNSAT	
-0	185	41	
+0	191	49	
 
 inv6Ok
 m	SAT	UNSAT	
-0	29	57	
+0	32	69	
 
 inv7Ok
 m	SAT	UNSAT	
-0	175	6	
+0	209	7	
 
 Max nested temporal operator level
 
 inv1Ok
 m	SAT	UNSAT	
-0	94	114	
+0	105	126	
+1	3	1	
 
 inv2Ok
 m	SAT	UNSAT	
-0	35	91	
+0	35	101	
+1	0	1	
 
 inv3Ok
 m	SAT	UNSAT	
-0	210	78	
-1	1	0	
+0	223	89	
+1	4	0	
 
 inv4Ok
 m	SAT	UNSAT	
-0	314	46	
+0	333	53	
 
 inv5Ok
 m	SAT	UNSAT	
-0	185	41	
+0	191	49	
 
 inv6Ok
 m	SAT	UNSAT	
-0	29	57	
+0	32	69	
 
 inv7Ok
 m	SAT	UNSAT	
-0	175	6	
+0	209	7	
 
 Number of lone/one quantifiers
 
 inv1Ok
 m	SAT	UNSAT	
-0	94	114	
+0	108	127	
 
 inv2Ok
 m	SAT	UNSAT	
-0	30	90	
+0	30	101	
 1	5	1	
 
 inv3Ok
 m	SAT	UNSAT	
-0	197	77	
+0	213	88	
 1	14	1	
 
 inv4Ok
 m	SAT	UNSAT	
-0	313	46	
+0	332	53	
 1	1	0	
 
 inv5Ok
 m	SAT	UNSAT	
-0	185	41	
+0	191	49	
 
 inv6Ok
 m	SAT	UNSAT	
-0	29	57	
+0	32	69	
 
 inv7Ok
 m	SAT	UNSAT	
-0	175	6	
+0	209	7	
 
 Max nested quantifier level
 
 inv1Ok
 m	SAT	UNSAT	
-0	74	16	
-1	15	98	
+0	87	18	
+1	16	109	
 2	5	0	
 
 inv2Ok
 m	SAT	UNSAT	
-0	17	90	
+0	17	101	
 1	18	1	
 
 inv3Ok
 m	SAT	UNSAT	
-0	43	0	
-1	95	6	
-2	72	71	
+0	49	0	
+1	101	7	
+2	76	81	
 3	1	1	
 
 inv4Ok
 m	SAT	UNSAT	
-0	78	12	
-1	125	9	
-2	83	20	
-3	23	5	
+0	80	12	
+1	136	12	
+2	88	23	
+3	24	6	
 4	5	0	
 
 inv5Ok
 m	SAT	UNSAT	
-0	32	0	
-1	96	34	
-2	50	6	
+0	33	0	
+1	100	42	
+2	51	6	
 3	7	1	
 
 inv6Ok
 m	SAT	UNSAT	
-0	3	24	
-1	20	19	
-2	6	13	
+0	4	31	
+1	22	22	
+2	6	15	
 3	0	0	
 4	0	1	
 
 inv7Ok
 m	SAT	UNSAT	
-0	68	0	
-1	29	1	
-2	46	2	
-3	26	3	
+0	71	0	
+1	35	1	
+2	61	3	
+3	36	3	
 4	6	0	
 
 Number of disj quantifications
 
 inv1Ok
 m	SAT	UNSAT	
-0	94	114	
+0	108	127	
 
 inv2Ok
 m	SAT	UNSAT	
-0	35	91	
+0	35	102	
 
 inv3Ok
 m	SAT	UNSAT	
-0	208	78	
+0	224	89	
 1	3	0	
 
 inv4Ok
 m	SAT	UNSAT	
-0	314	46	
+0	333	53	
 
 inv5Ok
 m	SAT	UNSAT	
-0	182	36	
-1	3	5	
+0	188	42	
+1	3	7	
 
 inv6Ok
 m	SAT	UNSAT	
-0	29	57	
+0	32	69	
 
 inv7Ok
 m	SAT	UNSAT	
-0	173	6	
+0	207	7	
+1	2	0	
+
+Number of reversed relation navigation
+
+inv1Ok
+m	SAT	UNSAT	
+0	102	127	
+1	6	0	
+
+inv2Ok
+m	SAT	UNSAT	
+0	35	102	
+
+inv3Ok
+m	SAT	UNSAT	
+0	222	89	
+1	5	0	
+
+inv4Ok
+m	SAT	UNSAT	
+0	333	53	
+
+inv5Ok
+m	SAT	UNSAT	
+0	189	49	
+1	2	0	
+
+inv6Ok
+m	SAT	UNSAT	
+0	31	69	
+1	1	0	
+
+inv7Ok
+m	SAT	UNSAT	
+0	207	7	
 1	2	0	
 
 Number multiplicity arrows
 
 inv1Ok
 m	SAT	UNSAT	
-0	94	114	
+0	108	127	
 
 inv2Ok
 m	SAT	UNSAT	
-0	35	91	
+0	35	102	
 
 inv3Ok
 m	SAT	UNSAT	
-0	210	78	
+0	226	89	
 1	1	0	
 
 inv4Ok
 m	SAT	UNSAT	
-0	314	46	
+0	333	53	
 
 inv5Ok
 m	SAT	UNSAT	
-0	185	41	
+0	191	49	
 
 inv6Ok
 m	SAT	UNSAT	
-0	29	57	
+0	32	69	
 
 inv7Ok
 m	SAT	UNSAT	
-0	161	6	
+0	195	7	
 1	6	0	
 2	8	0	
 
-Number of quantifiers
+Number of inverted navigation
 
 inv1Ok
 m	SAT	UNSAT	
-0	74	16	
-1	15	98	
-2	1	0	
-3	4	0	
-
-inv2Ok
-m	SAT	UNSAT	
-0	17	90	
-1	13	1	
-2	5	0	
-
-inv3Ok
-m	SAT	UNSAT	
-0	43	0	
-1	91	6	
-2	66	65	
-3	11	1	
-4	0	6	
-
-inv4Ok
-m	SAT	UNSAT	
-0	78	12	
-1	109	2	
-2	76	9	
-3	33	19	
-4	17	4	
-5	1	0	
-
-inv5Ok
-m	SAT	UNSAT	
-0	32	0	
-1	73	3	
-2	51	34	
-3	20	3	
-4	4	1	
-5	5	0	
-
-inv6Ok
-m	SAT	UNSAT	
-0	3	24	
-1	20	19	
-2	6	10	
-3	0	3	
-4	0	1	
-
-inv7Ok
-m	SAT	UNSAT	
-0	68	0	
-1	27	1	
-2	2	0	
-3	43	2	
-4	24	3	
-5	6	0	
-6	3	0	
-7	2	0	
-
-Number of inverted navigation expressions
-
-inv1Ok
-m	SAT	UNSAT	
-0	88	114	
+0	102	127	
 1	6	0	
 
 inv2Ok
 m	SAT	UNSAT	
-0	35	91	
+0	32	102	
+1	3	0	
 
 inv3Ok
 m	SAT	UNSAT	
-0	207	78	
-1	4	0	
+0	211	89	
+1	15	0	
+2	1	0	
 
 inv4Ok
 m	SAT	UNSAT	
-0	314	46	
+0	326	53	
+1	7	0	
 
 inv5Ok
 m	SAT	UNSAT	
-0	183	41	
+0	189	49	
 1	2	0	
 
 inv6Ok
 m	SAT	UNSAT	
-0	28	57	
-1	1	0	
+0	28	69	
+1	4	0	
 
 inv7Ok
 m	SAT	UNSAT	
-0	173	6	
-1	2	0	
+0	200	7	
+1	9	0	
 
 * Derivation tree
 zoEADeCW2b2suJB2k, 2019-10-03T12:18:41 (model share)
@@ -3444,3 +3579,250 @@ zoEADeCW2b2suJB2k, 2019-10-03T12:18:41 (model share)
                                       x9K93gzGNo3mPMSkk, 2020-12-20T22:27:08 (inv7Ok,incorrect,check,)
                                         zM7aCbvhYahhH547M, 2020-12-20T22:30:24 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
                                           ArLcNWXAmbo6dsFLH, 2020-12-20T22:30:37 (inv7Ok,correct,check,)
+  FWpdGJicAuiCqLGqX, 2021-01-07T06:45:50 (inv1Ok,incorrect,check,)
+  EesnDRRanh2YJnyTs, 2021-01-09T17:21:09 (inv1Ok,incorrect,check,)
+    mdKTgvMZcJvkwL296, 2021-01-09T17:21:25 (inv1Ok,incorrect,check,)
+      LihA4odjN2e2tCdjm, 2021-01-09T17:21:49 (There are 3 possible tokens that can appear here: ,  { |)
+        bLymDBLdfWr2fJrmj, 2021-01-09T17:21:59 (inv1Ok,correct,check,)
+          aeoJm226vTxmmhpit, 2021-01-09T17:22:17 (inv2Ok,correct,check,)
+            yKCMh6HwBnyDSKaq4, 2021-01-09T17:32:15 (inv2Ok,correct,check,)
+              noMLo8NNAxsLAnvx3, 2021-01-09T17:32:20 (inv3Ok,incorrect,check,)
+                dD9qGFrnPrycM4xvt, 2021-01-09T17:32:42 (inv3Ok,incorrect,check,)
+                  TwbKun99AgPjbcpfm, 2021-01-09T17:34:51 (inv3Ok,incorrect,check,)
+                    fmhMYfGaJmrGSvheC, 2021-01-09T17:35:01 (inv3Ok,incorrect,check,)
+                      GP6i7ootq2HytbQWM, 2021-01-09T17:35:24 (inv3Ok,incorrect,check,)
+                        J9vfWCM57wZyE8RD8, 2021-01-09T17:35:37 (inv3Ok,incorrect,check,)
+                          up4HdAn7KA2vZys8d, 2021-01-09T17:44:44 (inv3Ok,correct,check,)
+                            pvEzzmGzBq4cD9qS9, 2021-01-09T18:01:16 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                              R8dbexM7cQFnnoi2D, 2021-01-09T18:01:24 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                dDNPaQWusLrsfGZWs, 2021-01-09T18:01:32 (inv4Ok,incorrect,check,This variable is unused.)
+                                  FbjPyLZ7Gzw4HHKDs, 2021-01-09T18:01:57 (inv4Ok,correct,check,)
+                                    QJzRP56vQdBhTMZSv, 2021-01-09T18:24:55 (The name "States" cannot be found.)
+                                      QQZ9eHWE8cLisFa7K, 2021-01-09T18:25 (inv5Ok,correct,check,)
+                                        GouR3xZZmnvLZRna7, 2021-01-09T18:30:19 (The name "e" cannot be found.)
+                                          De886eNr957TvF4uH, 2021-01-09T18:30:27 (The name "e" cannot be found.)
+                                            aZSAHJXjv6cKSskRo, 2021-01-09T18:31:18 (inv6Ok,correct,check,)
+                                              4hukhzBcCwfoLZnSy, 2021-01-09T18:31:42 (inv6Ok,correct,check,)
+  pwxvanJ7AqNxzwv2p, 2021-01-12T00:44:56 (inv2Ok,correct,check,)
+    L3oX7qSmqK7xMq2kW, 2021-01-12T00:45:46 (inv1Ok,incorrect,check,)
+      r4u98pnDQtyXX9Y7S, 2021-01-12T00:46:38 (inv1Ok,incorrect,check,)
+        JB9Yr5iybWfrGxZim, 2021-01-12T00:46:44 (inv1Ok,incorrect,check,)
+          fdc4iJzeoP23PhvPu, 2021-01-12T00:48:19 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/State} Right type = {none->none->none})
+            WRMQMhXahWn6nZ2PY, 2021-01-12T00:48:32 (inv1Ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/State->this/Event->this/State} Right type = {this/Event})
+              sPSx3jCWvPtRAiHjb, 2021-01-12T00:51:03 (inv1Ok,correct,check,)
+                F8SgtzdFKLoxKKZX9, 2021-01-12T00:51:52 (inv6Ok,correct,check,)
+                  dC4xaQ84yQeBMaHWM, 2021-01-12T00:58:19 (= can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/State->this/State} Right type = {univ})
+                    jetgMQeqiH98fgzG8, 2021-01-12T00:58:28 (inv5Ok,incorrect,check,)
+                      HBkpCfW4RgPDfgCZk, 2021-01-12T01:14:10 (inv7Ok,incorrect,check,)
+                        bRFQpAEvxKw9tHTRh, 2021-01-12T01:14:15 (inv7Ok,incorrect,check,)
+                          Z5ysTm9iKTzxRF9ND, 2021-01-12T01:14:24 (inv7Ok,incorrect,check,)
+                            ngcMxCPtTjyqhmHoQ, 2021-01-12T01:14:48 (inv7Ok,incorrect,check,)
+                              Q9NLsdAgM3CTivtRq, 2021-01-12T01:14:55 (inv5Ok,correct,check,)
+                                WZzgojj8mv7otPyr3, 2021-01-12T01:14:59 (inv4Ok,correct,check,)
+                                  sRWPsCcPWvjYMJkKc, 2021-01-12T01:15:01 (inv3Ok,correct,check,)
+                                    XETykzj77LqJiFcc2, 2021-01-12T01:15:02 (inv2Ok,correct,check,)
+                                      jK8EW9rARxgWBPNEy, 2021-01-12T01:15:03 (inv1Ok,correct,check,)
+                                        iDaYQgPqC2unNgCHr, 2021-01-12T01:16:45 (inv7Ok,incorrect,check,)
+                                          ueuPXewT6XcpW3dYM, 2021-01-12T01:18:52 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                                            4gDpNWNbhpmDe9oFB, 2021-01-12T01:19:19 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                                              3XmB8y8DtTF6hTMrg, 2021-01-12T01:20:20 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+  enorfAfA8swr4xtoS, 2021-01-12T19:57:50 (inv1Ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Event->this/State} Right type = {this/Event})
+    qDga8fo9C8S8nbisz, 2021-01-12T19:58:36 (inv1Ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Event->this/State} Right type = {this/Event})
+      9eZNKC5rNGq9X9jGe, 2021-01-12T19:59:30 (inv1Ok,correct,check,)
+        ovHJcAHiAXwPoxXhT, 2021-01-12T20:00:49 (in can be used only between 2 expressions of the same arity. Left type = {this/State} Right type = {none->none->none})
+          KeKRN2yHsfKSt4TjD, 2021-01-12T20:00:57 (This expression failed to be typechecked line 18, column 4, filename=/tmp/alloy_heredoc11480406600808451926.als)
+            hAnLjPL78Et2ttMHw, 2021-01-12T20:01:36 (in can be used only between 2 expressions of the same arity. Left type = {this/State} Right type = {this/State->this/Event->this/State})
+              cFwd2DcgTMbcixBBF, 2021-01-12T20:01:47 (inv1Ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Event} Right type = {this/State->this/Event->this/State})
+                Mu2zxfJQXvBcmPQQo, 2021-01-12T20:02:36 (inv2Ok,correct,check,)
+                  ZwvGcfxJb9dyzdH6j, 2021-01-12T20:03:37 (inv3Ok,incorrect,check,)
+                    M3Bahvmg6DLLEj2Bc, 2021-01-12T20:04:09 (inv3Ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Event->this/State} Right type = {this/Event})
+                      mSDBnnoTR6XoaQ3g7, 2021-01-12T20:08:18 (The name "state" cannot be found.)
+                        x98qaJ42dJDRFAv6C, 2021-01-12T20:08:24 (inv3Ok,incorrect,check,)
+                          ajnBbYo5H95c54cfB, 2021-01-12T20:09:07 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                            ZuEDnkznvZaaojkQA, 2021-01-12T20:09:10 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                              D5Rfyn7EC4iC5aerY, 2021-01-12T20:09:16 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                                DgwYWaYw735etqzCr, 2021-01-12T20:09:30 (inv1Ok,incorrect,check,)
+                                  gtxGC8NpW9iCnWmQs, 2021-01-12T20:09:33 (inv3Ok,incorrect,check,)
+                                    zzCjrN8GnCTWKqKDk, 2021-01-12T20:09:54 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                                      fzDPM56S7AYCcxSxi, 2021-01-12T20:10:19 (inv1Ok,incorrect,check,)
+                                        SW8Awa2HxoBReHqhn, 2021-01-12T20:10:41 (inv1Ok,correct,check,)
+                                          wsfBpj6itTYrnCKXH, 2021-01-12T20:11:50 (* can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                                            oEdTotozGZENZ9M2s, 2021-01-12T20:12:16 (inv4Ok,correct,check,)
+                                              CZKo29Q4vTxkMCzBv, 2021-01-12T20:14:08 (inv5Ok,correct,check,)
+                                                wY83dTpfaszTpWWzX, 2021-01-12T20:14:41 (inv6Ok,correct,check,)
+                                                  3XKE6PwrwJEytvSEe, 2021-01-12T20:16:39 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                                                    RcC3w4M5AXS5GmMvs, 2021-01-12T20:17 (There are 5 possible tokens that can appear here: enum fun let open pred)
+                                                      5rJyt6LqTmXfx4Afg, 2021-01-12T20:17:07 (inv7Ok,incorrect,check,)
+                                                        Aq3jPgHvYdTDFL4Nv, 2021-01-12T20:17:28 (inv7Ok,incorrect,check,)
+                                                          nt9JzeytQKDWPTcas, 2021-01-12T21:50:52 (inv7Ok,incorrect,check,)
+                                                            evrR7RLQQh9hh9N5Q, 2021-01-12T21:51:30 (inv7Ok,incorrect,check,)
+                                                              ntSHSZYX88oquqAC8, 2021-01-12T21:51:34 (inv7Ok,incorrect,check,)
+                                                                xCfF5sug5a9PZG9Yi, 2021-01-12T21:52:01 (model share)
+                                                                  PHwPeBWMKkec75mvJ, 2021-01-12T21:52:04 (model share)
+                                                                    6uxzpp2j3zD8bwc7z, 2021-01-12T21:53:59 (inv1Ok,correct,check,)
+                                                                      tB7g5Bxkno96Rgxzs, 2021-01-12T21:54 (inv7Ok,incorrect,check,)
+  h9c8iudBkceXWMGNe, 2021-01-13T17:42:59 (inv1Ok,correct,check,)
+    SRkG4YZqxLE2kudCg, 2021-01-13T17:43:02 (inv2Ok,correct,check,)
+      KL3J3932ZAcTQPaHs, 2021-01-13T17:43:05 (inv3Ok,correct,check,)
+        piDuP2FMkhNZSNG7z, 2021-01-13T17:43:08 (inv4Ok,correct,check,)
+          8CG9j5ZMvmKbq4Pq9, 2021-01-13T17:43:11 (inv5Ok,correct,check,)
+            xh2FJigqSqtWN8jMT, 2021-01-13T17:43:15 (inv6Ok,correct,check,)
+              TyBquE72m8CQN8kNY, 2021-01-13T17:43:18 (inv7Ok,incorrect,check,)
+                kNf7hQNb47vtRszoh, 2021-01-13T17:44:58 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                  EnAtniGaKmK8oGH7c, 2021-01-13T17:45:38 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                    WjQ9RotA2u7awYy4d, 2021-01-13T17:46:20 (in can be used only between 2 expressions of the same arity. Left type = {this/State} Right type = {this/Event->this/State})
+                      Pp7fh5HGrc3DTT9iC, 2021-01-13T17:46:46 (& can be used only between 2 expressions of the same arity. Left type = {this/State} Right type = {this/Event->this/State})
+                        Gbn75jtDWnfzY6yaT, 2021-01-13T17:47:02 (inv7Ok,incorrect,check,^ s . (this/State <: trans) is redundant since its domain and range are disjoint: {this/Event->this/State})
+                          c3QMKKTsMzX8w2Qxf, 2021-01-13T17:49:04 (inv7Ok,incorrect,check,^ s . (this/State <: trans) is redundant since its domain and range are disjoint: {this/Event->this/State})
+                            XPyhBFSgutNnFKT8C, 2021-01-13T18:05:13 (in can be used only between 2 expressions of the same arity. Left type = {this/State} Right type = {this/Event->this/State})
+                              4omCSPSuJgy6AmPzj, 2021-01-13T18:05:35 (inv7Ok,incorrect,check,^ this/Init . (this/State <: trans) is redundant since its domain and range are disjoint: {this/Event->this/State})
+                                hoTR4AJ4ZCDMKBHHg, 2021-01-13T18:06:14 (inv7Ok,incorrect,check,^ s . (this/State <: trans) is redundant since its domain and range are disjoint: {this/Event->this/State})
+  FEgQ296ekcqrF5PZC, 2021-01-13T22:36:52 (inv1Ok,correct,check,)
+    Xa7WMotkEzR5bbkun, 2021-01-13T22:41:11 (inv2Ok,correct,check,)
+      gGLdh3Pj3W4DutmQc, 2021-01-13T22:47:04 (inv3Ok,incorrect,check,)
+        a8Day9amkffoBS7nc, 2021-01-13T22:47:53 (inv3Ok,correct,check,)
+          gbmbT6dB89BAGDf9Y, 2021-01-13T22:48:02 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Event})
+            ArMzp5PoozAJisYJp, 2021-01-13T22:48:09 (There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~)
+              jumZ6F9XDkGMudkzL, 2021-01-13T22:48:26 (The name "I" cannot be found.)
+                GBxQbw7vqtq3EpuPz, 2021-01-13T22:48:37 (The name "I" cannot be found.)
+                  QRR4KXHeWqHLDCGcY, 2021-01-13T22:48:47 (inv3Ok,correct,check,)
+                    42mKL9ao3GX7nyMmQ, 2021-01-13T22:48:56 (inv3Ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Event} Right type = {this/State->this/Event})
+                      fRSmbebWKKkqLkjux, 2021-01-13T22:49:13 (inv3Ok,correct,check,)
+                        it6wJfmJPWqAevLTx, 2021-01-13T22:49:24 (inv3Ok,correct,check,)
+                          zoMbN9Tq234d77fFf, 2021-01-13T22:50:42 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/State})
+                            ghy5KQinBkomvG7ZP, 2021-01-13T22:55:36 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+                              v95xsWhiKeT6PTJZr, 2021-01-13T22:55:44 (inv4Ok,incorrect,check,)
+                                cwKtvigZxa6RjsX2N, 2021-01-13T22:56:12 (This must be a formula expression. Instead, it has the following possible type(s): {this/State})
+                                  asNidowAafY5ALgNR, 2021-01-13T22:56:32 (There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~)
+                                    5DC8xKEp3ueQpTidN, 2021-01-13T22:56:38 (This must be a formula expression. Instead, it has the following possible type(s): {this/State})
+                                      KqFHbvCZi7poS64pa, 2021-01-13T22:56:51 (inv4Ok,incorrect,check,)
+                                        Fz3fPdK6Qp6TLS2To, 2021-01-13T22:57:14 (inv4Ok,incorrect,check,)
+                                          KfDmmpA8Ya8zRhzir, 2021-01-13T22:58 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a correct call to fun this/function. The parameters are   s: {this/State} so the arguments cannot be empty.)
+                                            EqGEufwAAbkkWfwwC, 2021-01-13T22:58:24 (Name cannot be resolved; possible incorrect function/predicate call; perhaps you used ( ) when you should have used [ ]  This cannot be a correct call to fun this/function. The parameters are   s: {this/State} so the arguments cannot be empty.)
+                                              LFbZ4dCW7pWqYkfoL, 2021-01-13T23:05:29 (inv4Ok,correct,check,)
+                                                nQmrtzg4CfQd6ZoxL, 2021-01-13T23:13:16 (inv5Ok,correct,check,)
+                                                  9dEzqm3qnnG5n8obv, 2021-01-13T23:14:13 (inv6Ok,incorrect,check,)
+                                                    acWpra5fJpQr5roRH, 2021-01-13T23:14:38 (inv6Ok,correct,check,)
+                                                      iy5Y6vfwD3FXNmfGS, 2021-01-13T23:15:54 (inv6Ok,correct,check,)
+                                                        inBGWH8nFaCKm4bzv, 2021-01-13T23:19:21 (inv7Ok,incorrect,check,)
+                                                          Jwuho7hjkmeHMLeQb, 2021-01-13T23:20:19 (inv7Ok,incorrect,check,)
+                                                            fwi3rB4eFmX7Tpk2y, 2021-01-13T23:21:20 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                                              9gejYBkav9tLKtQHL, 2021-01-13T23:21:26 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                                                tKD6ph35QursESDev, 2021-01-13T23:22:05 (inv7Ok,incorrect,check,)
+                                                                  m3cdYnrZWFRSiP3JD, 2021-01-13T23:22:46 (inv7Ok,incorrect,check,)
+                                                                    feCXvNyQq4cFvnSy6, 2021-01-13T23:23:35 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                                                      yKxuCysauLBb6ptAh, 2021-01-13T23:23:50 (inv7Ok,incorrect,check,)
+                                                                        7upTcADLPeH5PHSt8, 2021-01-13T23:24:08 (inv7Ok,incorrect,check,)
+                                                                          XLzqLahv5HjNqxi53, 2021-01-13T23:25:36 (inv7Ok,correct,check,)
+  PuzeRyyxPQtE5rEXj, 2021-01-13T22:45:18 (inv1Ok,correct,check,)
+    FsJcgrKEoEur6Rcoo, 2021-01-13T22:45:29 (inv2Ok,correct,check,)
+      Bifc9f49Hkq8tqmtr, 2021-01-13T22:46:58 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+        yGwGJYqnrYodh7W5r, 2021-01-13T22:47:34 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/State})
+          qt8S4wLiBMPBfs5to, 2021-01-13T22:47:44 (This cannot be a legal relational join where left hand side is e (type = {this/Event}) right hand side is this/State (type = {this/State}))
+            Xn5pvgPPhPr3QufHH, 2021-01-13T22:47:57 (inv3Ok,incorrect,check,)
+              SjPsRa6DaR3CJnMHE, 2021-01-13T22:48:24 (inv3Ok,correct,check,)
+                KGZw2HY8eaK4qJGbP, 2021-01-13T22:48:56 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                  xKFMeXw7bznfv2rfC, 2021-01-13T22:49:29 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                    z8CvNxBt4yWbm2dT3, 2021-01-13T22:49:38 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                      TgWRY4C2oLuSMufWg, 2021-01-13T22:50:10 (in can be used only between 2 expressions of the same arity. Left type = {this/State} Right type = {this/Event->this/State})
+                        izADnr3Qin2Knzzt2, 2021-01-13T22:50:30 (inv4Ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/State} Right type = {this/Event})
+                          K4mGS8F5NQBoXWkLD, 2021-01-13T22:50:41 (inv4Ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/State} Right type = {this/Event->this/State})
+                            gJJPT7PWqy8Mj76ZY, 2021-01-13T22:50:53 (in can be used only between 2 expressions of the same arity. Left type = {this/State} Right type = {this/Event->this/State->this/State})
+                              FbLFnB9dTtPpenfxP, 2021-01-13T22:51:02 (in can be used only between 2 expressions of the same arity. Left type = {this/State} Right type = {this/State->this/Event->this/State})
+                                QGqZvBt5rj2D2GzEW, 2021-01-13T22:51:08 (in can be used only between 2 expressions of the same arity. Left type = {this/State} Right type = {this/Event->this/State})
+                                  b7Mbs9drd4zWFmqXC, 2021-01-13T22:52:09 (There are 1 possible tokens that can appear here: ))
+                                    GJmbx5xdXw5zQe8cw, 2021-01-13T22:52:15 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                                      qWDGtc6fMsSy7iXaB, 2021-01-13T22:53:44 (This must be a formula expression. Instead, it has the following possible type(s): {none})
+                                        oCXZSEqNnn6XwwLwX, 2021-01-13T22:53:50 (inv4Ok,incorrect,check,^ s . (this/State <: trans) is redundant since its domain and range are disjoint: {this/Event->this/State})
+                                          58DPtNbPepv3EGKnz, 2021-01-13T22:54:08 (inv4Ok,incorrect,check,^ s . (this/State <: trans) is redundant since its domain and range are disjoint: {this/Event->this/State})
+                                            yaTqagSpRsATsBEr4, 2021-01-13T22:55:05 (inv4Ok,incorrect,check,^ i . (this/State <: trans) is redundant since its domain and range are disjoint: {this/Event->this/State})
+                                              GkyJizCKRxNh4oRrW, 2021-01-13T22:56:12 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+                                                H5sb3p3h8Nd2DYw7W, 2021-01-13T22:57:49 (The name "s" cannot be found.)
+                                                  M4YBsDHGQrsbGrost, 2021-01-13T22:57:52 (This must be a formula expression. Instead, it has the following possible type(s): {this/Event})
+                                                    tmSn2s59o2vpMWLXQ, 2021-01-13T22:58 (This must be a formula expression. Instead, it has the following possible type(s): {this/Event->this/State})
+                                                      WGf64ryHpyJKT8DBq, 2021-01-13T22:58:05 (This must be a formula expression. Instead, it has the following possible type(s): {this/Event->this/State})
+                                                        SfnTb2nppwfjsypS3, 2021-01-13T23:00:57 (This must be a formula expression. Instead, it has the following possible type(s): {this/Event->this/State})
+                                                          RTQaj6D8PNcetoYXy, 2021-01-13T23:01:33 (This cannot be a legal relational join where left hand side is this/Init (type = {this/State}) right hand side is this/Event (type = {this/Event}))
+                                                            hyawTdq6azgghZPdZ, 2021-01-13T23:01:48 (This must be a formula expression. Instead, it has the following possible type(s): {this/State->this/Event})
+                                                              9fZcW9tz2SoKZyoXz, 2021-01-13T23:02:02 (in can be used only between 2 expressions of the same arity. Left type = {this/State->this/Event} Right type = {this/State->this/Event->this/State})
+                                                                99EbgjpqmqHWLzis7, 2021-01-13T23:02:20 (in can be used only between 2 expressions of the same arity. Left type = {this/Event} Right type = {this/State->this/Event->this/State})
+                                                                  pkCBcNzr4MgvuJtW4, 2021-01-13T23:02:45 (in can be used only between 2 expressions of the same arity. Left type = {this/Event} Right type = {this/Event->this/State})
+                                                                    zrj9xHRnkG2ZkrQHY, 2021-01-13T23:04:16 (inv6Ok,correct,check,)
+                                                                      bZdNykzA3GBbLw9Nu, 2021-01-13T23:04:52 (inv4Ok,incorrect,check,)
+                                                                        C5KzGyrqShD3Ys4wA, 2021-01-13T23:05:20 (inv4Ok,incorrect,check,)
+                                                                          SEj78YyBdYr8e6HnF, 2021-01-13T23:05:37 (inv4Ok,incorrect,check,)
+                                                                            gYjM2rTJqmTZjpsg3, 2021-01-13T23:05:47 (inv4Ok,incorrect,check,)
+                                                                              Ws4kqz9BHqKbXgDuM, 2021-01-13T23:06:51 (inv3Ok,correct,check,)
+                                                                                mLBJo7S765JcqsgE4, 2021-01-13T23:07:54 (inv4Ok,incorrect,check,^ this/Init . (this/State <: trans) is redundant since its domain and range are disjoint: {this/Event->this/State})
+                                                                                  9ATcPdTCME5JapEj4, 2021-01-13T23:08:02 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/State})
+                                                                                    fHeDRhApHsvWT7Rd6, 2021-01-13T23:08:07 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                                                                                      AxXoZcJ6vXKguhgzj, 2021-01-13T23:08:12 (inv4Ok,incorrect,check,)
+                                                                                        x7y7GAkykeZdY6W83, 2021-01-13T23:09:29 (This must be a formula expression. Instead, it has the following possible type(s): {this/State})
+                                                                                          6QSXdhRZAERD9gRf7, 2021-01-13T23:09:42 (inv5Ok,incorrect,check,)
+                                                                                            HXCj9dMT4GefLcKW7, 2021-01-13T23:09:52 (This must be a formula expression. Instead, it has the following possible type(s): {this/State})
+                                                                                              gGAiTiTaLkobdHaxf, 2021-01-13T23:09:57 (This must be a formula expression. Instead, it has the following possible type(s): {this/Event->this/Event->this/State})
+                                                                                                vTTYnLcbHEbZFKopY, 2021-01-13T23:10 (This must be a formula expression. Instead, it has the following possible type(s): {this/State})
+                                                                                                  8dHtTj4ZX8adp7L7K, 2021-01-13T23:10:16 (This must be a formula expression. Instead, it has the following possible type(s): {this/Event->this/State->this/Event})
+                                                                                                    HSoSgcW6Rbaz5qLSo, 2021-01-13T23:10:25 (This must be a formula expression. Instead, it has the following possible type(s): {none})
+                                                                                                      yRSRBERSA6fJzTCcM, 2021-01-13T23:11:58 (inv6Ok,correct,check,)
+                                                                                                        AwznRZL9M5vFAHd6Y, 2021-01-13T23:12 (inv7Ok,incorrect,check,)
+                                                                                                          vyMmCWaPZ6dpZt3fo, 2021-01-13T23:12:38 (in can be used only between 2 expressions of the same arity. Left type = {this/State} Right type = {this/Event->this/State})
+                                                                                                            afwwZwpS5o3StiYbe, 2021-01-13T23:12:47 (inv7Ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/State} Right type = {this/Event})
+                                                                                                              FsNN6fhG5cKFkX57D, 2021-01-13T23:13:53 (inv4Ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/State} Right type = {this/Event})
+  jRyPaT7JrwYeN85YL, 2021-01-14T00:09:18 (inv1Ok,correct,check,)
+    GQNwmuXudcoZJrs3f, 2021-01-14T00:09:35 (inv2Ok,correct,check,)
+      xjGprvcZzctXBsh9o, 2021-01-14T00:11 (inv3Ok,incorrect,check,)
+        PW7NCTCBwbyxvzBs3, 2021-01-14T00:14:15 (inv3Ok,incorrect,check,)
+          mGpPSxoyL3cwRu7wJ, 2021-01-14T00:14:30 (There are 8 possible tokens that can appear here: NAME disj exh part private seq this var)
+            HR3BS47qkjWPf2gRE, 2021-01-14T00:14:43 (inv3Ok,incorrect,check,)
+              foSvqn2hhA4js7HmG, 2021-01-14T00:15:30 (in can be used only between 2 expressions of the same arity. Left type = {this/State} Right type = {this/Event->this/State})
+                d2vSLNpLa23zwbf7P, 2021-01-14T00:15:45 (inv4Ok,incorrect,check,)
+                  j69MdxbzD2QLcPiy6, 2021-01-14T00:15:50 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                    ThGGCNSpP2yXSRXqZ, 2021-01-14T00:16:01 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                      fTLanNPWeKriYq7Ar, 2021-01-14T00:16:08 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                        oGiMTtdoLkcmX6vTR, 2021-01-14T00:16:19 (inv4Ok,incorrect,check,)
+                          tfEdm7frEynmtTQ92, 2021-01-14T00:17:39 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+                            ditrNdswjt338u4Ak, 2021-01-14T00:17:49 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+                              Gu2KhPue8wpTvBM39, 2021-01-14T00:18 (inv5Ok,incorrect,check,)
+                                q5gHN2s7dACdRPyH9, 2021-01-14T00:18:22 (inv5Ok,incorrect,check,This variable is unused.)
+                                  9a3D5cJSBGB3hK2Sk, 2021-01-14T00:18:27 (inv5Ok,incorrect,check,)
+                                    5fYd3d7FbtCS39KRx, 2021-01-14T00:18:52 (inv5Ok,incorrect,check,)
+                                      8ab6witx2nqahMWDa, 2021-01-14T00:19:23 (inv5Ok,correct,check,)
+                                        DKQZNc9dYdysjM7gy, 2021-01-14T00:20:06 (inv6Ok,incorrect,check,This variable is unused.)
+                                          KfLhft5cB8i7yZHsJ, 2021-01-14T00:20:15 (inv6Ok,incorrect,check,)
+                                            GNfSjc3d5j6mjmfnE, 2021-01-14T00:20:35 (inv6Ok,correct,check,)
+                                              yEYWyXTeEnDNLHD4n, 2021-01-14T00:21:19 (in can be used only between 2 expressions of the same arity. Left type = {this/State} Right type = {this/Event->this/State})
+                                                dStAm2fTogjf4XykS, 2021-01-14T00:21:28 (The name "e" cannot be found.)
+                                                  7yLYxWFX66PzEKfPg, 2021-01-14T00:21:34 (inv7Ok,incorrect,check,^ s . (this/State <: trans) is redundant since its domain and range are disjoint: {this/Event->this/State})
+                                                    NWf9jj5k8tx9Ai44x, 2021-01-14T00:21:42 (inv7Ok,incorrect,check,)
+                                                      MdMFLiDqsRd8265X6, 2021-01-14T00:21:47 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                                                        G7GYs3vfgxGmwCkRy, 2021-01-14T00:21:53 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/State->this/Event->this/State})
+                                                          mSYW6MqrTixEwM2J7, 2021-01-14T00:21:59 (inv7Ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Event} Right type = {this/State->this/Event})
+  Tza4pW6Cwnu8pfY7J, 2021-01-14T00:50:12 (inv1Ok,correct,check,)
+    uKXZk8tarQGbge2nN, 2021-01-14T00:50:13 (inv2Ok,correct,check,)
+      Seu5zaTTCK4TTMB7w, 2021-01-14T00:50:14 (inv3Ok,correct,check,)
+        epiRihKFpGR3WBo4K, 2021-01-14T00:50:16 (inv4Ok,correct,check,)
+          46bXj8Z4Tjcizr8Qj, 2021-01-14T00:50:17 (inv5Ok,correct,check,)
+            Xao9dPfBmJhrThSw2, 2021-01-14T00:50:19 (inv6Ok,correct,check,)
+  BxCZPno6JNEBKgzgE, 2021-01-14T00:57:35 (inv1Ok,correct,check,The join operation here always yields an empty set. Left type = {this/Event} Right type = {this/State->this/Event})
+    5KTbGd2aX2B78ZJpi, 2021-01-14T00:57:48 (inv1Ok,correct,check,)
+      XePFmmukxvcYnhNe4, 2021-01-14T00:57:52 (inv2Ok,correct,check,)
+        sTnAggtzHZijNK4K9, 2021-01-14T00:57:54 (inv3Ok,correct,check,)
+          KxCMRQ6mZ85RcTj9B, 2021-01-14T00:57:56 (inv4Ok,incorrect,check,)
+            susmRdc25Dig9sQZZ, 2021-01-14T00:58:01 (inv5Ok,correct,check,)
+              rJgkLMfheB29Kbbix, 2021-01-14T00:58:04 (inv6Ok,correct,check,)
+                F9AdDA4hJY7Jwta62, 2021-01-14T01:02:05 (This must be a formula expression. Instead, it has the following possible type(s): {this/State->this/State})
+                  ywRD2dpMXPXxGzAGn, 2021-01-14T01:02:57 (This must be a formula expression. Instead, it has the following possible type(s): {this/State->this/State})
+                    mNSqzvEnggFxY593Y, 2021-01-14T01:03:35 (This must be a formula expression. Instead, it has the following possible type(s): {this/State->this/State})
+                      Wwa6ki7swP6fnmxyD, 2021-01-14T01:05:05 (This must be a formula expression. Instead, it has the following possible type(s): {this/State->this/State})
+                        vWNA3EfK6FpkWW7nH, 2021-01-14T01:06:12 (inv4Ok,correct,check,)
+                          jTckgtFwRHPatEudM, 2021-01-14T01:11:12 (inv7Ok,incorrect,check,)
+                            j9CxuCze8JCaJKHTk, 2021-01-14T01:12:16 (inv7Ok,incorrect,check,)
+                              gt5BvqcXQAPxATqYM, 2021-01-14T01:12:38 (inv7Ok,incorrect,check,)
+                                ppFd3ajhTtcoXB883, 2021-01-14T01:14 (inv7Ok,incorrect,check,)
+                                  4ZqBLsMcGwHY6PXhQ, 2021-01-14T01:15:13 (The name "onlyState" cannot be found.)
+                                    DCn64uDPKRsBwhxos, 2021-01-14T01:15:20 (inv7Ok,incorrect,check,)
+                                      EQZFfH3QATYbbJqWX, 2021-01-14T01:16:37 (inv7Ok,incorrect,check,)
+                                        ERkuQ8NwH7DLurhmd, 2021-01-14T01:18:46 (inv7Ok,incorrect,check,)
+  YbwpkYRhn3QF5RJR2, 2021-01-29T11:20:09 (inv1Ok,incorrect,check,)
+  sfyMdPKDgFKH5xM2y, 2021-02-26T09:12:54 (inv1Ok,incorrect,check,)

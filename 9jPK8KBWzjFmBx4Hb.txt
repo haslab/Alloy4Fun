@@ -1,4 +1,4 @@
-9jPK8KBWzjFmBx4Hb (2020-12-22)
+9jPK8KBWzjFmBx4Hb (2021-03-24)
 
 * Meta-data
 Challenge name: unknown
@@ -7,13 +7,13 @@ Creation time: 2019-10-31
 Metric catalog: Example metric catalog
 
 * Overall metric statistics
-Total model entries: 4907
-Total executions: 4871
+Total model entries: 5254
+Total executions: 5218
 Total shares: 36
-Total error messages: 833
-Total warning messages: 22
-Total solutions: 4039
-Total sessions: 103
+Total error messages: 881
+Total warning messages: 23
+Total solutions: 4338
+Total sessions: 112
 Timed out re-executions: 0
 Rejected due to server errors: 7
 Inconsisistent result reports: 0
@@ -27,17 +27,17 @@ Shared models (model)	36
 Shares with warnings	0
 Alloy runtime errors	15
 Shared errored models	1
-Alloy static errors	817
+Alloy static errors	865
 Shared models (instance)	0
-Average session	47.13592233009709
+Average session	46.44642857142857
 Longest session	265
-Sat executions with warnings	18
-Executed errored models	832
-Unsat executions	2727
+Sat executions with warnings	19
+Executed errored models	880
+Unsat executions	1436
 Unsat executions with warnings	1
 Errored executions with warnings	3
-Average % unsatisfiable	0.3525788425414868
-Sat executions	1312
+Average % unsatisfiable	0.3653920324449171
+Sat executions	2902
 
 * Overall metrics
 
@@ -46,13 +46,13 @@ Sessions by length
 2	5
 3	2
 4	1
-5	3
-6	2
+5	4
+6	3
 7	4
 8	4
 9	2
 10	2
-11	0
+11	1
 12	1
 13	0
 14	0
@@ -62,7 +62,7 @@ Sessions by length
 18	2
 19	2
 20	0
-21	0
+21	1
 22	2
 23	1
 24	1
@@ -72,9 +72,9 @@ Sessions by length
 28	0
 29	1
 30	0
-31	0
+31	1
 32	0
-33	0
+33	1
 34	2
 35	0
 36	1
@@ -91,7 +91,7 @@ Sessions by length
 47	2
 48	0
 49	0
-50	0
+50	1
 51	2
 52	0
 53	1
@@ -130,7 +130,7 @@ Sessions by length
 86	0
 87	0
 88	1
-89	0
+89	1
 90	0
 91	0
 92	1
@@ -142,7 +142,7 @@ Sessions by length
 98	0
 99	0
 100	0
-101	1
+101	2
 102	1
 103	0
 104	0
@@ -310,126 +310,127 @@ Sessions by length
 
 Warnings by type
 == is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}	5
-This variable is unused.	10
+This variable is unused.	11
 Subset operator is redundant, because the left and right expressions always have the same value. Left type = {_} Right type = {_}	7
 
 Sessions by # of solved challenges
 0	13
 1	16
-2	8
+2	9
 3	5
-4	5
+4	6
 5	1
-6	3
+6	4
 7	7
 8	7
 9	0
-10	4
-11	3
+10	5
+11	4
 12	3
-13	3
-14	2
+13	4
+14	3
 15	1
 16	2
 17	6
-18	4
+18	6
 19	6
 20	4
 
 Errors by type
-There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	27
+There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	28
 There are 5 possible tokens that can appear here: enum fun let open pred 	7
-There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ 	95
+There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ 	97
 = can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	2
 The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".	17
 Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.	15
 There are 28 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	16
-This must be a formula expression. Instead, it has the following possible type(s): {_}	70
+This must be a formula expression. Instead, it has the following possible type(s): {_}	72
 There are 8 possible tokens that can appear here: NAME disj exh part private seq this var 	5
 ~ can be used only with a binary relation. Instead, its possible type(s) are: {_}	1
 This must be a unary set, but instead it has the following possible type(s): {_}	1
-There are 1 possible tokens that can appear here: ) 	60
+There are 1 possible tokens that can appear here: ) 	64
 There are 36 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int lone no none once one pred seq set some sum this univ { ~ 	4
 There are 3 possible tokens that can appear here: ,  : = 	2
 + can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	1
-in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	38
-This expression failed to be typechecked line _ column _ filename=_.als	91
-The name _ cannot be found.	136
+in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	41
+The name _ cannot be found.	151
+This expression failed to be typechecked line _ column _ filename=_.als	95
 This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	7
+& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	1
 Syntax error at the \ character. HEX: \u5c)	1
-There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	94
-This must be a set or relation. Instead, it has the following possible type(s): {_}	108
+There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	99
+This must be a set or relation. Instead, it has the following possible type(s): {_}	116
 Syntax error at the ´ character. HEX: \ub4)	2
 There are 23 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ disj fun iden int none pred seq sum this univ { ~ 	1
 There are 31 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq set some sum this univ { ~ 	1
-There are 3 possible tokens that can appear here: ,  { | 	31
+There are 3 possible tokens that can appear here: ,  { | 	34
 
 Models by number of warnings
-0	4885
-1	22
+0	5231
+1	23
 
 * Overall metrics, classified
 
-Execution results by challenge
+Execution results by command
 m	UNSAT	SAT	
-prop1Ok	113	34	
-prop2Ok	71	131	
-prop3Ok	90	11	
-prop4Ok	98	124	
-prop5Ok	59	347	
-prop6Ok	106	255	
-prop7Ok	87	47	
-prop8Ok	53	257	
-prop9Ok	82	86	
-prop10Ok	48	271	
-prop11Ok	71	114	
-prop12Ok	32	365	
-prop13Ok	75	36	
-prop14Ok	59	91	
-prop15Ok	44	47	
-prop16Ok	44	93	
-prop17Ok	43	99	
-prop18Ok	43	176	
-prop19Ok	43	64	
-prop20Ok	51	79	
+prop1Ok	123	35	
+prop2Ok	82	145	
+prop3Ok	99	11	
+prop4Ok	107	126	
+prop5Ok	64	362	
+prop6Ok	118	270	
+prop7Ok	96	53	
+prop8Ok	56	282	
+prop9Ok	88	89	
+prop10Ok	52	298	
+prop11Ok	81	133	
+prop12Ok	36	377	
+prop13Ok	81	39	
+prop14Ok	66	95	
+prop15Ok	49	52	
+prop16Ok	50	95	
+prop17Ok	47	101	
+prop18Ok	45	196	
+prop19Ok	44	64	
+prop20Ok	52	79	
 
 Session results by challenge
 m	solved	unsolved	
-prop1Ok	66	37	
-prop2Ok	53	50	
-prop3Ok	64	39	
-prop4Ok	57	46	
-prop5Ok	41	62	
-prop6Ok	49	54	
-prop7Ok	54	49	
-prop8Ok	32	71	
-prop9Ok	49	54	
-prop10Ok	33	70	
-prop11Ok	40	63	
-prop12Ok	19	84	
-prop13Ok	42	61	
-prop14Ok	31	72	
-prop15Ok	30	73	
-prop16Ok	28	75	
-prop17Ok	28	75	
-prop18Ok	22	81	
-prop19Ok	26	77	
-prop20Ok	22	81	
+prop1Ok	74	38	
+prop2Ok	60	52	
+prop3Ok	72	40	
+prop4Ok	65	47	
+prop5Ok	45	67	
+prop6Ok	57	55	
+prop7Ok	62	50	
+prop8Ok	35	77	
+prop9Ok	55	57	
+prop10Ok	37	75	
+prop11Ok	46	66	
+prop12Ok	21	91	
+prop13Ok	47	65	
+prop14Ok	35	77	
+prop15Ok	34	78	
+prop16Ok	32	80	
+prop17Ok	31	81	
+prop18Ok	24	88	
+prop19Ok	27	85	
+prop20Ok	23	89	
 
 Model entries over time
-m	ERROR	UNSAT	SAT	SHARE	
-2019-10-31	276	307	506	12	
-2019-11-01	19	46	97	1	
+m	UNSAT	ERROR	SAT	SHARE	
+2019-10-31	307	276	506	12	
+2019-11-01	46	19	97	1	
 2019-11-02	1	1	4	0	
 2019-11-03	0	0	0	0	
-2019-11-04	31	36	80	3	
+2019-11-04	36	31	80	3	
 2019-11-05	0	0	0	0	
-2019-11-06	1	9	12	1	
-2019-11-07	0	1	2	0	
+2019-11-06	9	1	12	1	
+2019-11-07	1	0	2	0	
 2019-11-08	0	0	0	0	
 2019-11-09	0	0	0	0	
 2019-11-10	0	0	0	0	
-2019-11-11	10	37	30	2	
+2019-11-11	37	10	30	2	
 2019-11-12	0	0	0	0	
 2019-11-13	0	0	0	0	
 2019-11-14	0	0	0	0	
@@ -481,14 +482,14 @@ m	ERROR	UNSAT	SAT	SHARE
 2019-12-30	0	0	0	0	
 2019-12-31	0	0	0	0	
 2020-01-01	0	0	0	0	
-2020-01-02	0	16	6	0	
-2020-01-03	2	8	4	2	
+2020-01-02	16	0	6	0	
+2020-01-03	8	2	4	2	
 2020-01-04	0	0	0	0	
 2020-01-05	0	0	0	0	
 2020-01-06	0	0	0	0	
 2020-01-07	0	0	0	0	
-2020-01-08	9	22	11	1	
-2020-01-09	18	8	17	0	
+2020-01-08	22	9	11	1	
+2020-01-09	8	18	17	0	
 2020-01-10	0	0	0	0	
 2020-01-11	0	0	0	0	
 2020-01-12	0	0	0	0	
@@ -498,7 +499,7 @@ m	ERROR	UNSAT	SAT	SHARE
 2020-01-16	0	0	0	0	
 2020-01-17	0	0	0	0	
 2020-01-18	0	0	0	0	
-2020-01-19	20	35	73	1	
+2020-01-19	35	20	73	1	
 2020-01-20	0	0	4	0	
 2020-01-21	0	0	0	0	
 2020-01-22	0	0	0	0	
@@ -662,7 +663,7 @@ m	ERROR	UNSAT	SAT	SHARE
 2020-06-28	0	0	0	0	
 2020-06-29	0	0	0	0	
 2020-06-30	0	0	0	0	
-2020-07-01	0	1	1	0	
+2020-07-01	1	0	1	0	
 2020-07-02	0	0	0	0	
 2020-07-03	0	0	0	0	
 2020-07-04	0	0	0	0	
@@ -802,41 +803,133 @@ m	ERROR	UNSAT	SAT	SHARE
 2020-11-15	0	0	0	0	
 2020-11-16	0	0	0	0	
 2020-11-17	0	0	0	0	
-2020-11-18	4	1	4	0	
-2020-11-19	7	11	35	0	
+2020-11-18	1	4	4	0	
+2020-11-19	11	7	35	0	
 2020-11-20	0	0	0	0	
 2020-11-21	0	0	0	0	
 2020-11-22	0	0	0	0	
-2020-11-23	40	67	157	1	
-2020-11-24	52	75	222	4	
-2020-11-25	70	132	241	5	
-2020-11-26	130	265	538	2	
-2020-11-27	2	7	14	0	
-2020-11-28	1	8	54	0	
-2020-11-29	3	12	41	0	
+2020-11-23	67	40	157	1	
+2020-11-24	75	52	222	4	
+2020-11-25	132	70	241	5	
+2020-11-26	265	130	538	2	
+2020-11-27	7	2	14	0	
+2020-11-28	8	1	54	0	
+2020-11-29	12	3	41	0	
 2020-11-30	0	0	0	0	
-2020-12-01	59	30	182	0	
-2020-12-02	14	41	109	0	
-2020-12-03	8	10	12	1	
-2020-12-04	2	21	69	0	
+2020-12-01	30	59	182	0	
+2020-12-02	41	14	109	0	
+2020-12-03	10	8	12	1	
+2020-12-04	21	2	69	0	
 2020-12-05	0	0	26	0	
 2020-12-06	0	0	0	0	
 2020-12-07	0	0	0	0	
-2020-12-08	1	5	45	0	
-2020-12-09	4	10	12	0	
+2020-12-08	5	1	45	0	
+2020-12-09	10	4	12	0	
 2020-12-10	0	0	0	0	
 2020-12-11	3	3	19	0	
-2020-12-12	9	12	15	0	
-2020-12-13	2	25	15	0	
-2020-12-14	7	5	17	0	
+2020-12-12	12	9	15	0	
+2020-12-13	25	2	15	0	
+2020-12-14	5	7	17	0	
 2020-12-15	0	0	0	0	
-2020-12-16	7	25	32	0	
+2020-12-16	25	7	32	0	
 2020-12-17	0	0	0	0	
 2020-12-18	0	0	0	0	
 2020-12-19	0	0	0	0	
 2020-12-20	0	0	0	0	
 2020-12-21	0	0	0	0	
 2020-12-22	0	0	0	0	
+2020-12-23	0	0	0	0	
+2020-12-24	0	0	0	0	
+2020-12-25	0	0	0	0	
+2020-12-26	0	0	0	0	
+2020-12-27	0	0	0	0	
+2020-12-28	0	0	0	0	
+2020-12-29	0	0	0	0	
+2020-12-30	0	0	0	0	
+2020-12-31	0	0	0	0	
+2021-01-01	0	0	0	0	
+2021-01-02	0	0	0	0	
+2021-01-03	0	0	0	0	
+2021-01-04	0	0	0	0	
+2021-01-05	0	0	0	0	
+2021-01-06	0	0	0	0	
+2021-01-07	20	0	1	0	
+2021-01-08	31	9	49	0	
+2021-01-09	4	0	2	0	
+2021-01-10	0	0	0	0	
+2021-01-11	0	0	0	0	
+2021-01-12	9	0	7	0	
+2021-01-13	28	29	77	0	
+2021-01-14	32	10	39	0	
+2021-01-15	0	0	0	0	
+2021-01-16	0	0	0	0	
+2021-01-17	0	0	0	0	
+2021-01-18	0	0	0	0	
+2021-01-19	0	0	0	0	
+2021-01-20	0	0	0	0	
+2021-01-21	0	0	0	0	
+2021-01-22	0	0	0	0	
+2021-01-23	0	0	0	0	
+2021-01-24	0	0	0	0	
+2021-01-25	0	0	0	0	
+2021-01-26	0	0	0	0	
+2021-01-27	0	0	0	0	
+2021-01-28	0	0	0	0	
+2021-01-29	0	0	0	0	
+2021-01-30	0	0	0	0	
+2021-01-31	0	0	0	0	
+2021-02-01	0	0	0	0	
+2021-02-02	0	0	0	0	
+2021-02-03	0	0	0	0	
+2021-02-04	0	0	0	0	
+2021-02-05	0	0	0	0	
+2021-02-06	0	0	0	0	
+2021-02-07	0	0	0	0	
+2021-02-08	0	0	0	0	
+2021-02-09	0	0	0	0	
+2021-02-10	0	0	0	0	
+2021-02-11	0	0	0	0	
+2021-02-12	0	0	0	0	
+2021-02-13	0	0	0	0	
+2021-02-14	0	0	0	0	
+2021-02-15	0	0	0	0	
+2021-02-16	0	0	0	0	
+2021-02-17	0	0	0	0	
+2021-02-18	0	0	0	0	
+2021-02-19	0	0	0	0	
+2021-02-20	0	0	0	0	
+2021-02-21	0	0	0	0	
+2021-02-22	0	0	0	0	
+2021-02-23	0	0	0	0	
+2021-02-24	0	0	0	0	
+2021-02-25	0	0	0	0	
+2021-02-26	0	0	0	0	
+2021-02-27	0	0	0	0	
+2021-02-28	0	0	0	0	
+2021-03-01	0	0	0	0	
+2021-03-02	0	0	0	0	
+2021-03-03	0	0	0	0	
+2021-03-04	0	0	0	0	
+2021-03-05	0	0	0	0	
+2021-03-06	0	0	0	0	
+2021-03-07	0	0	0	0	
+2021-03-08	0	0	0	0	
+2021-03-09	0	0	0	0	
+2021-03-10	0	0	0	0	
+2021-03-11	0	0	0	0	
+2021-03-12	0	0	0	0	
+2021-03-13	0	0	0	0	
+2021-03-14	0	0	0	0	
+2021-03-15	0	0	0	0	
+2021-03-16	0	0	0	0	
+2021-03-17	0	0	0	0	
+2021-03-18	0	0	0	0	
+2021-03-19	0	0	0	0	
+2021-03-20	0	0	0	0	
+2021-03-21	0	0	0	0	
+2021-03-22	0	0	0	0	
+2021-03-23	0	0	0	0	
+2021-03-24	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 
@@ -844,818 +937,218 @@ Size in 10s of nodes
 
 prop1Ok
 m	UNSAT	SAT	
-1	0	19	
-2	107	15	
+1	0	20	
+2	117	15	
 3	4	0	
 4	2	0	
 
 prop2Ok
 m	UNSAT	SAT	
-2	71	126	
+2	82	140	
 3	0	5	
 
 prop3Ok
 m	UNSAT	SAT	
-1	89	9	
+1	98	9	
 2	1	2	
 
 prop4Ok
 m	UNSAT	SAT	
-1	75	15	
-2	19	68	
+1	82	17	
+2	21	68	
 3	4	35	
 4	0	6	
 
 prop5Ok
 m	UNSAT	SAT	
-2	6	71	
-3	50	172	
-4	3	98	
-5	0	5	
+2	6	75	
+3	54	178	
+4	4	100	
+5	0	8	
 6	0	1	
 
 prop6Ok
 m	UNSAT	SAT	
 1	0	8	
-2	74	87	
-3	32	140	
-4	0	18	
+2	78	88	
+3	40	153	
+4	0	19	
 5	0	2	
 
 prop7Ok
 m	UNSAT	SAT	
-1	63	15	
-2	23	30	
+1	69	19	
+2	26	32	
 3	1	2	
 
 prop8Ok
 m	UNSAT	SAT	
 2	0	6	
-3	0	50	
-4	40	116	
-5	13	78	
-6	0	7	
+3	0	57	
+4	42	118	
+5	14	90	
+6	0	11	
 
 prop9Ok
 m	UNSAT	SAT	
-2	70	54	
-3	12	23	
+2	74	56	
+3	14	24	
 4	0	9	
 
 prop10Ok
 m	UNSAT	SAT	
 1	0	4	
-2	43	129	
-3	0	122	
-4	5	9	
+2	47	138	
+3	0	139	
+4	5	10	
 5	0	7	
 
 prop11Ok
 m	UNSAT	SAT	
-2	12	35	
-3	21	46	
-4	38	32	
+2	12	36	
+3	25	51	
+4	44	45	
 5	0	1	
 
 prop12Ok
 m	UNSAT	SAT	
-2	0	16	
-3	24	76	
-4	8	232	
+2	0	17	
+3	24	81	
+4	12	238	
 5	0	40	
 6	0	1	
 
 prop13Ok
 m	UNSAT	SAT	
 2	0	1	
-3	27	9	
-4	48	26	
+3	28	9	
+4	53	29	
 
 prop14Ok
 m	UNSAT	SAT	
 2	0	1	
 3	2	9	
-4	36	52	
+4	43	56	
 5	8	18	
 6	11	6	
 7	2	5	
 
 prop15Ok
 m	UNSAT	SAT	
-2	0	11	
-3	44	24	
-4	0	12	
+2	0	13	
+3	48	25	
+4	1	14	
 
 prop16Ok
 m	UNSAT	SAT	
 2	0	14	
-3	29	31	
-4	15	48	
+3	32	32	
+4	18	49	
 
 prop17Ok
 m	UNSAT	SAT	
-1	0	1	
-2	27	27	
-3	14	40	
+1	0	2	
+2	29	27	
+3	16	41	
 4	2	26	
 5	0	5	
 
 prop18Ok
 m	UNSAT	SAT	
-3	0	2	
-4	0	7	
-5	40	157	
+3	0	3	
+4	0	10	
+5	42	173	
 6	3	9	
 7	0	1	
 
 prop19Ok
 m	UNSAT	SAT	
 4	0	7	
-5	41	51	
+5	42	51	
 6	2	6	
 
 prop20Ok
 m	UNSAT	SAT	
 3	0	1	
 4	0	2	
-5	49	76	
+5	50	76	
 6	2	0	
 
-Number of binary temporal operators
+Number of quantified variables
 
 prop1Ok
 m	UNSAT	SAT	
-0	113	34	
-
-prop2Ok
-m	UNSAT	SAT	
-0	71	88	
-1	0	0	
-2	0	43	
-
-prop3Ok
-m	UNSAT	SAT	
-0	90	11	
-
-prop4Ok
-m	UNSAT	SAT	
-0	98	120	
-1	0	0	
-2	0	4	
-
-prop5Ok
-m	UNSAT	SAT	
-0	59	328	
-1	0	0	
-2	0	19	
-
-prop6Ok
-m	UNSAT	SAT	
-0	106	200	
-1	0	0	
-2	0	55	
-
-prop7Ok
-m	UNSAT	SAT	
-0	87	47	
-
-prop8Ok
-m	UNSAT	SAT	
-0	53	256	
-1	0	0	
-2	0	1	
-
-prop9Ok
-m	UNSAT	SAT	
-0	82	81	
-1	0	0	
-2	0	5	
-
-prop10Ok
-m	UNSAT	SAT	
-0	48	253	
-1	0	0	
-2	0	18	
-
-prop11Ok
-m	UNSAT	SAT	
-0	71	114	
-
-prop12Ok
-m	UNSAT	SAT	
-0	30	309	
-1	0	0	
-2	2	56	
-
-prop13Ok
-m	UNSAT	SAT	
-0	71	28	
-1	0	0	
-2	4	8	
-
-prop14Ok
-m	UNSAT	SAT	
-0	59	84	
-1	0	0	
-2	0	7	
-
-prop15Ok
-m	UNSAT	SAT	
-0	44	47	
-
-prop16Ok
-m	UNSAT	SAT	
-0	44	91	
-1	0	0	
-2	0	2	
-
-prop17Ok
-m	UNSAT	SAT	
-0	43	78	
-1	0	0	
-2	0	21	
-
-prop18Ok
-m	UNSAT	SAT	
-0	27	76	
-1	0	0	
-2	16	100	
-
-prop19Ok
-m	UNSAT	SAT	
-0	0	12	
-1	0	0	
-2	43	52	
-
-prop20Ok
-m	UNSAT	SAT	
-0	0	6	
-1	0	0	
-2	51	73	
-
-Max nested temporal operator level
-
-prop1Ok
-m	UNSAT	SAT	
-0	85	21	
-1	26	11	
-2	2	2	
-
-prop2Ok
-m	UNSAT	SAT	
-0	0	20	
-1	71	80	
-2	0	31	
-
-prop3Ok
-m	UNSAT	SAT	
-0	0	8	
-1	90	1	
-2	0	2	
-
-prop4Ok
-m	UNSAT	SAT	
-0	0	5	
-1	98	72	
-2	0	43	
-3	0	4	
-
-prop5Ok
-m	UNSAT	SAT	
-0	0	7	
-1	0	217	
-2	59	116	
-3	0	7	
-
-prop6Ok
-m	UNSAT	SAT	
-0	0	4	
-1	0	113	
-2	89	114	
-3	17	23	
-4	0	1	
-
-prop7Ok
-m	UNSAT	SAT	
-0	0	13	
-1	85	21	
-2	2	11	
-3	0	2	
-
-prop8Ok
-m	UNSAT	SAT	
-0	0	10	
-1	0	126	
-2	53	102	
-3	0	19	
-
-prop9Ok
-m	UNSAT	SAT	
-0	0	2	
-1	82	53	
-2	0	30	
-3	0	1	
-
-prop10Ok
-m	UNSAT	SAT	
-0	0	5	
-1	0	95	
-2	48	142	
-3	0	28	
-4	0	1	
-
-prop11Ok
-m	UNSAT	SAT	
-1	0	77	
-2	71	36	
-3	0	1	
-
-prop12Ok
-m	UNSAT	SAT	
-0	0	8	
-1	0	68	
-2	18	197	
-3	14	82	
-4	0	10	
-
-prop13Ok
-m	UNSAT	SAT	
-0	0	1	
-1	41	13	
-2	33	22	
-3	1	0	
-
-prop14Ok
-m	UNSAT	SAT	
-0	0	3	
-1	0	51	
-2	59	34	
-3	0	3	
-
-prop15Ok
-m	UNSAT	SAT	
-0	0	2	
-1	0	26	
-2	44	19	
-
-prop16Ok
-m	UNSAT	SAT	
-1	0	48	
-2	44	40	
-3	0	5	
-
-prop17Ok
-m	UNSAT	SAT	
-0	0	2	
-1	0	7	
-2	43	72	
-3	0	16	
-4	0	2	
-
-prop18Ok
-m	UNSAT	SAT	
-0	0	2	
-1	0	25	
-2	43	132	
-3	0	17	
-
-prop19Ok
-m	UNSAT	SAT	
-1	0	24	
-2	43	34	
-3	0	6	
-
-prop20Ok
-m	UNSAT	SAT	
-0	0	1	
-1	0	4	
-2	51	69	
-3	0	5	
-
-Number of lone/one quantifiers
-
-prop1Ok
-m	UNSAT	SAT	
-0	113	34	
-
-prop2Ok
-m	UNSAT	SAT	
-0	71	131	
-
-prop3Ok
-m	UNSAT	SAT	
-0	90	11	
-
-prop4Ok
-m	UNSAT	SAT	
-0	98	124	
-
-prop5Ok
-m	UNSAT	SAT	
-0	59	347	
-
-prop6Ok
-m	UNSAT	SAT	
-0	106	255	
-
-prop7Ok
-m	UNSAT	SAT	
-0	87	47	
-
-prop8Ok
-m	UNSAT	SAT	
-0	53	257	
-
-prop9Ok
-m	UNSAT	SAT	
-0	82	86	
-
-prop10Ok
-m	UNSAT	SAT	
-0	48	271	
-
-prop11Ok
-m	UNSAT	SAT	
-0	71	114	
-
-prop12Ok
-m	UNSAT	SAT	
-0	32	365	
-
-prop13Ok
-m	UNSAT	SAT	
-0	75	36	
-
-prop14Ok
-m	UNSAT	SAT	
-0	59	91	
-
-prop15Ok
-m	UNSAT	SAT	
-0	44	47	
-
-prop16Ok
-m	UNSAT	SAT	
-0	44	93	
-
-prop17Ok
-m	UNSAT	SAT	
-0	43	99	
-
-prop18Ok
-m	UNSAT	SAT	
-0	43	176	
-
-prop19Ok
-m	UNSAT	SAT	
-0	43	64	
-
-prop20Ok
-m	UNSAT	SAT	
-0	51	79	
-
-Max nested quantifier level
-
-prop1Ok
-m	UNSAT	SAT	
-0	110	29	
-1	3	5	
-
-prop2Ok
-m	UNSAT	SAT	
-0	71	128	
-1	0	3	
-
-prop3Ok
-m	UNSAT	SAT	
-0	89	10	
-1	1	1	
-
-prop4Ok
-m	UNSAT	SAT	
-0	75	19	
-1	23	105	
-
-prop5Ok
-m	UNSAT	SAT	
-0	6	108	
-1	53	239	
-
-prop6Ok
-m	UNSAT	SAT	
-0	41	39	
-1	65	216	
-
-prop7Ok
-m	UNSAT	SAT	
-0	63	15	
-1	24	32	
-
-prop8Ok
-m	UNSAT	SAT	
-0	0	72	
-1	53	175	
-2	0	10	
-
-prop9Ok
-m	UNSAT	SAT	
-0	44	20	
-1	38	66	
-
-prop10Ok
-m	UNSAT	SAT	
-0	43	46	
-1	5	225	
-
-prop11Ok
-m	UNSAT	SAT	
-0	17	62	
-1	54	52	
-
-prop12Ok
-m	UNSAT	SAT	
-0	0	18	
-1	32	347	
-
-prop13Ok
-m	UNSAT	SAT	
-0	0	7	
-1	75	29	
-
-prop14Ok
-m	UNSAT	SAT	
-0	2	24	
-1	57	67	
-
-prop15Ok
-m	UNSAT	SAT	
-0	0	17	
-1	44	30	
-
-prop16Ok
-m	UNSAT	SAT	
-0	0	18	
-1	44	75	
-
-prop17Ok
-m	UNSAT	SAT	
-0	2	15	
-1	41	84	
-
-prop18Ok
-m	UNSAT	SAT	
-0	0	8	
-1	43	168	
-
-prop19Ok
-m	UNSAT	SAT	
-0	0	4	
-1	43	60	
-
-prop20Ok
-m	UNSAT	SAT	
-0	0	1	
-1	51	78	
-
-Number of disj quantifications
-
-prop1Ok
-m	UNSAT	SAT	
-0	113	34	
-
-prop2Ok
-m	UNSAT	SAT	
-0	71	131	
-
-prop3Ok
-m	UNSAT	SAT	
-0	90	11	
-
-prop4Ok
-m	UNSAT	SAT	
-0	98	124	
-
-prop5Ok
-m	UNSAT	SAT	
-0	59	347	
-
-prop6Ok
-m	UNSAT	SAT	
-0	106	255	
-
-prop7Ok
-m	UNSAT	SAT	
-0	87	47	
-
-prop8Ok
-m	UNSAT	SAT	
-0	53	257	
-
-prop9Ok
-m	UNSAT	SAT	
-0	82	86	
-
-prop10Ok
-m	UNSAT	SAT	
-0	48	271	
-
-prop11Ok
-m	UNSAT	SAT	
-0	71	114	
-
-prop12Ok
-m	UNSAT	SAT	
-0	32	365	
-
-prop13Ok
-m	UNSAT	SAT	
-0	75	36	
-
-prop14Ok
-m	UNSAT	SAT	
-0	59	91	
-
-prop15Ok
-m	UNSAT	SAT	
-0	44	47	
-
-prop16Ok
-m	UNSAT	SAT	
-0	44	93	
-
-prop17Ok
-m	UNSAT	SAT	
-0	43	99	
-
-prop18Ok
-m	UNSAT	SAT	
-0	43	176	
-
-prop19Ok
-m	UNSAT	SAT	
-0	43	64	
-
-prop20Ok
-m	UNSAT	SAT	
-0	51	79	
-
-Number multiplicity arrows
-
-prop1Ok
-m	UNSAT	SAT	
-0	113	34	
-
-prop2Ok
-m	UNSAT	SAT	
-0	71	131	
-
-prop3Ok
-m	UNSAT	SAT	
-0	90	11	
-
-prop4Ok
-m	UNSAT	SAT	
-0	98	124	
-
-prop5Ok
-m	UNSAT	SAT	
-0	59	347	
-
-prop6Ok
-m	UNSAT	SAT	
-0	106	255	
-
-prop7Ok
-m	UNSAT	SAT	
-0	87	47	
-
-prop8Ok
-m	UNSAT	SAT	
-0	53	257	
-
-prop9Ok
-m	UNSAT	SAT	
-0	82	86	
-
-prop10Ok
-m	UNSAT	SAT	
-0	48	271	
-
-prop11Ok
-m	UNSAT	SAT	
-0	71	114	
-
-prop12Ok
-m	UNSAT	SAT	
-0	32	365	
-
-prop13Ok
-m	UNSAT	SAT	
-0	75	36	
-
-prop14Ok
-m	UNSAT	SAT	
-0	59	91	
-
-prop15Ok
-m	UNSAT	SAT	
-0	44	47	
-
-prop16Ok
-m	UNSAT	SAT	
-0	44	93	
-
-prop17Ok
-m	UNSAT	SAT	
-0	43	99	
-
-prop18Ok
-m	UNSAT	SAT	
-0	43	176	
-
-prop19Ok
-m	UNSAT	SAT	
-0	43	64	
-
-prop20Ok
-m	UNSAT	SAT	
-0	51	79	
-
-Number of quantifiers
-
-prop1Ok
-m	UNSAT	SAT	
-0	110	29	
+0	120	30	
 1	0	0	
 2	3	5	
 
 prop2Ok
 m	UNSAT	SAT	
-0	71	128	
+0	82	142	
 1	0	0	
 2	0	3	
 
 prop3Ok
 m	UNSAT	SAT	
-0	89	10	
+0	98	10	
 1	0	0	
 2	1	1	
 
 prop4Ok
 m	UNSAT	SAT	
-0	75	19	
+0	82	21	
 1	0	0	
-2	23	105	
+2	25	105	
 
 prop5Ok
 m	UNSAT	SAT	
-0	6	108	
+0	6	114	
 1	0	0	
-2	53	239	
+2	58	248	
 
 prop6Ok
 m	UNSAT	SAT	
-0	41	39	
+0	43	39	
 1	0	0	
-2	65	216	
+2	75	231	
 
 prop7Ok
 m	UNSAT	SAT	
-0	63	15	
+0	69	19	
 1	0	0	
-2	24	32	
+2	27	34	
 
 prop8Ok
 m	UNSAT	SAT	
-0	0	72	
+0	0	83	
 1	0	0	
-2	43	152	
+2	45	152	
 3	0	0	
-4	10	33	
+4	11	47	
 
 prop9Ok
 m	UNSAT	SAT	
-0	44	20	
+0	47	21	
 1	0	0	
-2	38	66	
+2	41	68	
 
 prop10Ok
 m	UNSAT	SAT	
-0	43	46	
+0	47	46	
 1	0	0	
-2	5	225	
+2	5	252	
 
 prop11Ok
 m	UNSAT	SAT	
-0	17	62	
+0	18	63	
 1	0	0	
-2	54	52	
+2	63	70	
 
 prop12Ok
 m	UNSAT	SAT	
-0	0	18	
+0	0	19	
 1	0	0	
-2	32	344	
+2	36	355	
 3	0	0	
 4	0	3	
 
@@ -1663,133 +1156,829 @@ prop13Ok
 m	UNSAT	SAT	
 0	0	7	
 1	0	0	
-2	75	29	
+2	81	32	
 
 prop14Ok
 m	UNSAT	SAT	
 0	2	24	
 1	0	0	
-2	57	67	
+2	64	71	
 
 prop15Ok
 m	UNSAT	SAT	
-0	0	17	
+0	0	19	
 1	0	0	
-2	44	30	
+2	49	33	
 
 prop16Ok
 m	UNSAT	SAT	
 0	0	18	
 1	0	0	
-2	44	75	
+2	50	77	
 
 prop17Ok
 m	UNSAT	SAT	
-0	2	15	
+0	2	16	
 1	0	0	
-2	41	84	
+2	45	85	
 
 prop18Ok
 m	UNSAT	SAT	
-0	0	8	
+0	0	9	
 1	0	0	
-2	43	168	
+2	45	187	
 
 prop19Ok
 m	UNSAT	SAT	
 0	0	4	
 1	0	0	
-2	43	60	
+2	44	60	
 
 prop20Ok
 m	UNSAT	SAT	
 0	0	1	
 1	0	0	
-2	51	78	
+2	52	78	
 
-Number of inverted navigation expressions
+Number of binary temporal operators
 
 prop1Ok
 m	UNSAT	SAT	
-0	113	34	
+0	123	35	
 
 prop2Ok
 m	UNSAT	SAT	
-0	71	131	
+0	82	96	
+1	0	0	
+2	0	49	
 
 prop3Ok
 m	UNSAT	SAT	
-0	90	11	
+0	99	11	
 
 prop4Ok
 m	UNSAT	SAT	
-0	98	124	
+0	107	122	
+1	0	0	
+2	0	4	
 
 prop5Ok
 m	UNSAT	SAT	
-0	59	347	
+0	64	343	
+1	0	0	
+2	0	19	
 
 prop6Ok
 m	UNSAT	SAT	
-0	106	255	
+0	118	215	
+1	0	0	
+2	0	55	
 
 prop7Ok
 m	UNSAT	SAT	
-0	87	47	
+0	96	53	
 
 prop8Ok
 m	UNSAT	SAT	
-0	53	256	
+0	56	281	
 1	0	0	
 2	0	1	
 
 prop9Ok
 m	UNSAT	SAT	
-0	82	86	
+0	88	84	
+1	0	0	
+2	0	5	
 
 prop10Ok
 m	UNSAT	SAT	
-0	48	271	
+0	52	280	
+1	0	0	
+2	0	18	
 
 prop11Ok
 m	UNSAT	SAT	
-0	71	114	
+0	81	133	
 
 prop12Ok
 m	UNSAT	SAT	
-0	32	365	
+0	31	318	
+1	0	0	
+2	5	59	
 
 prop13Ok
 m	UNSAT	SAT	
-0	75	36	
+0	77	31	
+1	0	0	
+2	4	8	
 
 prop14Ok
 m	UNSAT	SAT	
-0	59	91	
+0	66	88	
+1	0	0	
+2	0	7	
 
 prop15Ok
 m	UNSAT	SAT	
-0	44	47	
+0	49	52	
 
 prop16Ok
 m	UNSAT	SAT	
-0	44	93	
+0	50	93	
+1	0	0	
+2	0	2	
 
 prop17Ok
 m	UNSAT	SAT	
-0	43	99	
+0	47	80	
+1	0	0	
+2	0	21	
 
 prop18Ok
 m	UNSAT	SAT	
-0	43	176	
+0	28	90	
+1	0	0	
+2	17	106	
 
 prop19Ok
 m	UNSAT	SAT	
-0	43	64	
+0	0	12	
+1	0	0	
+2	44	52	
 
 prop20Ok
 m	UNSAT	SAT	
-0	51	79	
+0	0	6	
+1	0	0	
+2	52	73	
+
+Max nested temporal operator level
+
+prop1Ok
+m	UNSAT	SAT	
+0	92	22	
+1	29	11	
+2	2	2	
+
+prop2Ok
+m	UNSAT	SAT	
+0	0	22	
+1	82	86	
+2	0	37	
+
+prop3Ok
+m	UNSAT	SAT	
+0	0	8	
+1	99	1	
+2	0	2	
+
+prop4Ok
+m	UNSAT	SAT	
+0	0	6	
+1	107	72	
+2	0	44	
+3	0	4	
+
+prop5Ok
+m	UNSAT	SAT	
+0	0	7	
+1	0	230	
+2	64	118	
+3	0	7	
+
+prop6Ok
+m	UNSAT	SAT	
+0	0	4	
+1	0	124	
+2	100	118	
+3	18	23	
+4	0	1	
+
+prop7Ok
+m	UNSAT	SAT	
+0	0	17	
+1	94	23	
+2	2	11	
+3	0	2	
+
+prop8Ok
+m	UNSAT	SAT	
+0	0	12	
+1	0	144	
+2	56	107	
+3	0	19	
+
+prop9Ok
+m	UNSAT	SAT	
+0	0	2	
+1	88	54	
+2	0	32	
+3	0	1	
+
+prop10Ok
+m	UNSAT	SAT	
+0	0	5	
+1	0	105	
+2	52	157	
+3	0	30	
+4	0	1	
+
+prop11Ok
+m	UNSAT	SAT	
+1	0	83	
+2	81	46	
+3	0	4	
+
+prop12Ok
+m	UNSAT	SAT	
+0	0	8	
+1	0	72	
+2	19	203	
+3	17	83	
+4	0	11	
+
+prop13Ok
+m	UNSAT	SAT	
+0	0	1	
+1	47	13	
+2	33	24	
+3	1	1	
+
+prop14Ok
+m	UNSAT	SAT	
+0	0	3	
+1	0	54	
+2	66	34	
+3	0	4	
+
+prop15Ok
+m	UNSAT	SAT	
+0	0	2	
+1	0	30	
+2	49	20	
+
+prop16Ok
+m	UNSAT	SAT	
+1	0	50	
+2	50	40	
+3	0	5	
+
+prop17Ok
+m	UNSAT	SAT	
+0	0	3	
+1	0	7	
+2	47	73	
+3	0	16	
+4	0	2	
+
+prop18Ok
+m	UNSAT	SAT	
+0	0	4	
+1	0	34	
+2	45	141	
+3	0	17	
+
+prop19Ok
+m	UNSAT	SAT	
+1	0	24	
+2	44	34	
+3	0	6	
+
+prop20Ok
+m	UNSAT	SAT	
+0	0	1	
+1	0	4	
+2	52	69	
+3	0	5	
+
+Number of lone/one quantifiers
+
+prop1Ok
+m	UNSAT	SAT	
+0	123	35	
+
+prop2Ok
+m	UNSAT	SAT	
+0	82	145	
+
+prop3Ok
+m	UNSAT	SAT	
+0	99	11	
+
+prop4Ok
+m	UNSAT	SAT	
+0	107	126	
+
+prop5Ok
+m	UNSAT	SAT	
+0	64	362	
+
+prop6Ok
+m	UNSAT	SAT	
+0	118	269	
+1	0	0	
+2	0	1	
+
+prop7Ok
+m	UNSAT	SAT	
+0	96	53	
+
+prop8Ok
+m	UNSAT	SAT	
+0	56	282	
+
+prop9Ok
+m	UNSAT	SAT	
+0	88	89	
+
+prop10Ok
+m	UNSAT	SAT	
+0	52	298	
+
+prop11Ok
+m	UNSAT	SAT	
+0	81	133	
+
+prop12Ok
+m	UNSAT	SAT	
+0	36	375	
+1	0	0	
+2	0	2	
+
+prop13Ok
+m	UNSAT	SAT	
+0	81	39	
+
+prop14Ok
+m	UNSAT	SAT	
+0	66	95	
+
+prop15Ok
+m	UNSAT	SAT	
+0	49	52	
+
+prop16Ok
+m	UNSAT	SAT	
+0	50	95	
+
+prop17Ok
+m	UNSAT	SAT	
+0	47	101	
+
+prop18Ok
+m	UNSAT	SAT	
+0	45	196	
+
+prop19Ok
+m	UNSAT	SAT	
+0	44	64	
+
+prop20Ok
+m	UNSAT	SAT	
+0	52	79	
+
+Max nested quantifier level
+
+prop1Ok
+m	UNSAT	SAT	
+0	120	30	
+1	3	5	
+
+prop2Ok
+m	UNSAT	SAT	
+0	82	142	
+1	0	3	
+
+prop3Ok
+m	UNSAT	SAT	
+0	98	10	
+1	1	1	
+
+prop4Ok
+m	UNSAT	SAT	
+0	82	21	
+1	25	105	
+
+prop5Ok
+m	UNSAT	SAT	
+0	6	114	
+1	58	248	
+
+prop6Ok
+m	UNSAT	SAT	
+0	43	39	
+1	75	231	
+
+prop7Ok
+m	UNSAT	SAT	
+0	69	19	
+1	27	34	
+
+prop8Ok
+m	UNSAT	SAT	
+0	0	83	
+1	56	188	
+2	0	11	
+
+prop9Ok
+m	UNSAT	SAT	
+0	47	21	
+1	41	68	
+
+prop10Ok
+m	UNSAT	SAT	
+0	47	46	
+1	5	252	
+
+prop11Ok
+m	UNSAT	SAT	
+0	18	63	
+1	63	70	
+
+prop12Ok
+m	UNSAT	SAT	
+0	0	19	
+1	36	358	
+
+prop13Ok
+m	UNSAT	SAT	
+0	0	7	
+1	81	32	
+
+prop14Ok
+m	UNSAT	SAT	
+0	2	24	
+1	64	71	
+
+prop15Ok
+m	UNSAT	SAT	
+0	0	19	
+1	49	33	
+
+prop16Ok
+m	UNSAT	SAT	
+0	0	18	
+1	50	77	
+
+prop17Ok
+m	UNSAT	SAT	
+0	2	16	
+1	45	85	
+
+prop18Ok
+m	UNSAT	SAT	
+0	0	9	
+1	45	187	
+
+prop19Ok
+m	UNSAT	SAT	
+0	0	4	
+1	44	60	
+
+prop20Ok
+m	UNSAT	SAT	
+0	0	1	
+1	52	78	
+
+Number of disj quantifications
+
+prop1Ok
+m	UNSAT	SAT	
+0	123	35	
+
+prop2Ok
+m	UNSAT	SAT	
+0	82	145	
+
+prop3Ok
+m	UNSAT	SAT	
+0	99	11	
+
+prop4Ok
+m	UNSAT	SAT	
+0	107	126	
+
+prop5Ok
+m	UNSAT	SAT	
+0	64	362	
+
+prop6Ok
+m	UNSAT	SAT	
+0	118	270	
+
+prop7Ok
+m	UNSAT	SAT	
+0	96	53	
+
+prop8Ok
+m	UNSAT	SAT	
+0	56	281	
+1	0	0	
+2	0	1	
+
+prop9Ok
+m	UNSAT	SAT	
+0	88	89	
+
+prop10Ok
+m	UNSAT	SAT	
+0	52	298	
+
+prop11Ok
+m	UNSAT	SAT	
+0	81	133	
+
+prop12Ok
+m	UNSAT	SAT	
+0	36	377	
+
+prop13Ok
+m	UNSAT	SAT	
+0	81	39	
+
+prop14Ok
+m	UNSAT	SAT	
+0	66	95	
+
+prop15Ok
+m	UNSAT	SAT	
+0	49	52	
+
+prop16Ok
+m	UNSAT	SAT	
+0	50	95	
+
+prop17Ok
+m	UNSAT	SAT	
+0	47	101	
+
+prop18Ok
+m	UNSAT	SAT	
+0	45	196	
+
+prop19Ok
+m	UNSAT	SAT	
+0	44	64	
+
+prop20Ok
+m	UNSAT	SAT	
+0	52	79	
+
+Number of reversed relation navigation
+
+prop1Ok
+m	UNSAT	SAT	
+0	123	35	
+
+prop2Ok
+m	UNSAT	SAT	
+0	82	145	
+
+prop3Ok
+m	UNSAT	SAT	
+0	99	11	
+
+prop4Ok
+m	UNSAT	SAT	
+0	107	126	
+
+prop5Ok
+m	UNSAT	SAT	
+0	64	360	
+1	0	0	
+2	0	2	
+
+prop6Ok
+m	UNSAT	SAT	
+0	118	270	
+
+prop7Ok
+m	UNSAT	SAT	
+0	96	53	
+
+prop8Ok
+m	UNSAT	SAT	
+0	56	281	
+1	0	0	
+2	0	1	
+
+prop9Ok
+m	UNSAT	SAT	
+0	88	89	
+
+prop10Ok
+m	UNSAT	SAT	
+0	52	298	
+
+prop11Ok
+m	UNSAT	SAT	
+0	81	133	
+
+prop12Ok
+m	UNSAT	SAT	
+0	36	377	
+
+prop13Ok
+m	UNSAT	SAT	
+0	81	39	
+
+prop14Ok
+m	UNSAT	SAT	
+0	66	95	
+
+prop15Ok
+m	UNSAT	SAT	
+0	49	52	
+
+prop16Ok
+m	UNSAT	SAT	
+0	50	95	
+
+prop17Ok
+m	UNSAT	SAT	
+0	47	101	
+
+prop18Ok
+m	UNSAT	SAT	
+0	45	196	
+
+prop19Ok
+m	UNSAT	SAT	
+0	44	64	
+
+prop20Ok
+m	UNSAT	SAT	
+0	52	79	
+
+Number multiplicity arrows
+
+prop1Ok
+m	UNSAT	SAT	
+0	123	35	
+
+prop2Ok
+m	UNSAT	SAT	
+0	82	145	
+
+prop3Ok
+m	UNSAT	SAT	
+0	99	11	
+
+prop4Ok
+m	UNSAT	SAT	
+0	107	126	
+
+prop5Ok
+m	UNSAT	SAT	
+0	64	362	
+
+prop6Ok
+m	UNSAT	SAT	
+0	118	270	
+
+prop7Ok
+m	UNSAT	SAT	
+0	96	53	
+
+prop8Ok
+m	UNSAT	SAT	
+0	56	282	
+
+prop9Ok
+m	UNSAT	SAT	
+0	88	89	
+
+prop10Ok
+m	UNSAT	SAT	
+0	52	298	
+
+prop11Ok
+m	UNSAT	SAT	
+0	81	133	
+
+prop12Ok
+m	UNSAT	SAT	
+0	36	377	
+
+prop13Ok
+m	UNSAT	SAT	
+0	81	39	
+
+prop14Ok
+m	UNSAT	SAT	
+0	66	95	
+
+prop15Ok
+m	UNSAT	SAT	
+0	49	52	
+
+prop16Ok
+m	UNSAT	SAT	
+0	50	95	
+
+prop17Ok
+m	UNSAT	SAT	
+0	47	101	
+
+prop18Ok
+m	UNSAT	SAT	
+0	45	196	
+
+prop19Ok
+m	UNSAT	SAT	
+0	44	64	
+
+prop20Ok
+m	UNSAT	SAT	
+0	52	79	
+
+Number of inverted navigation
+
+prop1Ok
+m	UNSAT	SAT	
+0	123	35	
+
+prop2Ok
+m	UNSAT	SAT	
+0	82	145	
+
+prop3Ok
+m	UNSAT	SAT	
+0	99	11	
+
+prop4Ok
+m	UNSAT	SAT	
+0	107	126	
+
+prop5Ok
+m	UNSAT	SAT	
+0	64	359	
+1	0	0	
+2	0	3	
+
+prop6Ok
+m	UNSAT	SAT	
+0	118	270	
+
+prop7Ok
+m	UNSAT	SAT	
+0	96	53	
+
+prop8Ok
+m	UNSAT	SAT	
+0	56	264	
+1	0	0	
+2	0	14	
+3	0	0	
+4	0	4	
+
+prop9Ok
+m	UNSAT	SAT	
+0	88	89	
+
+prop10Ok
+m	UNSAT	SAT	
+0	52	298	
+
+prop11Ok
+m	UNSAT	SAT	
+0	81	133	
+
+prop12Ok
+m	UNSAT	SAT	
+0	36	377	
+
+prop13Ok
+m	UNSAT	SAT	
+0	81	39	
+
+prop14Ok
+m	UNSAT	SAT	
+0	66	95	
+
+prop15Ok
+m	UNSAT	SAT	
+0	49	52	
+
+prop16Ok
+m	UNSAT	SAT	
+0	50	95	
+
+prop17Ok
+m	UNSAT	SAT	
+0	47	101	
+
+prop18Ok
+m	UNSAT	SAT	
+0	45	196	
+
+prop19Ok
+m	UNSAT	SAT	
+0	44	64	
+
+prop20Ok
+m	UNSAT	SAT	
+0	52	79	
 
 * Derivation tree
 9jPK8KBWzjFmBx4Hb, 2019-10-31T10:28:19 (model share)
@@ -6706,3 +6895,350 @@ m	UNSAT	SAT
                                                                                                                             otxvPuapceC3aJTmv, 2020-12-16T18:28:49 (prop19Ok,correct,check,)
                                                                                                                               vSCEZMDEqtd2As4ri, 2020-12-16T18:31:21 (prop20Ok,correct,check,)
                                                                                                                               FLagLPb8vEXZK4ro5, 2020-12-16T18:31:27 (prop20Ok,correct,check,)
+  vqNQs258RTS8dxWop, 2021-01-07T10:02:42 (prop1Ok,correct,check,)
+    CcKFd5DKNZ4c2dWqB, 2021-01-07T10:06:24 (prop5Ok,correct,check,)
+      uw4PkxHHiCQ4D5Kj4, 2021-01-07T10:06:58 (prop1Ok,correct,check,)
+        PRYrcrJmoGggBGPbH, 2021-01-07T10:07:01 (prop2Ok,incorrect,check,)
+          Fzt7vPk5pmR8gjqxL, 2021-01-07T10:07:07 (prop3Ok,correct,check,)
+            6iQ5NZHTdpYP8MiPu, 2021-01-07T10:07:12 (prop4Ok,correct,check,)
+              4x9iwKz5EeKTpti4u, 2021-01-07T10:07:15 (prop5Ok,correct,check,)
+                dxMro6FMEs6i5dMcu, 2021-01-07T10:07:18 (prop6Ok,correct,check,)
+                  5ZDCvrepHpvR95viC, 2021-01-07T10:07:21 (prop7Ok,correct,check,)
+                    eF49T9AL9oFSFCpXs, 2021-01-07T10:07:24 (prop8Ok,correct,check,)
+                      xDXtQKDuMaTZJJDYo, 2021-01-07T10:07:28 (prop9Ok,correct,check,)
+                        mMufXgn4X4LBw2RiF, 2021-01-07T10:07:35 (prop10Ok,correct,check,)
+                          p3ons2di5kYKzv4ko, 2021-01-07T10:07:38 (prop11Ok,correct,check,)
+                            YM83YtuYNYX3fNoeF, 2021-01-07T10:07:45 (prop13Ok,correct,check,)
+                              SRS3Bk7cCCmetfYBn, 2021-01-07T10:07:54 (prop14Ok,correct,check,)
+                                2cjojBix5RgQ4JNDX, 2021-01-07T10:07:59 (prop15Ok,correct,check,)
+                                  F7Zrvf6sTDPRh3zQL, 2021-01-07T10:08:01 (prop16Ok,correct,check,)
+                                    4xdrGJQnJNJQMHfq8, 2021-01-07T10:08:07 (prop17Ok,correct,check,)
+                                      yzcaG9b2NWqLuFTRz, 2021-01-07T10:08:11 (prop18Ok,correct,check,)
+                                        nLEuyd3p2ospkGPri, 2021-01-07T10:08:15 (prop19Ok,correct,check,)
+                                          QhKvJf8W8BD42Npnw, 2021-01-07T10:08:17 (prop20Ok,correct,check,)
+  6yu6TYTZcX4Yq9iW3, 2021-01-08T02:44:29 (prop1Ok,correct,check,)
+    fw2JgmvjvqampAvqK, 2021-01-08T02:47:32 (prop2Ok,correct,check,)
+      LNvFLdpg48m5Jy8BN, 2021-01-08T02:48:36 (prop2Ok,incorrect,check,)
+        pGGhLv2w6bNgXSmnt, 2021-01-08T02:48:50 (prop2Ok,incorrect,check,)
+          PX2mZrN5JBCJtDCRw, 2021-01-08T02:48:59 (prop2Ok,incorrect,check,)
+            Wk7gHg24Tdu28wzgE, 2021-01-08T02:49:04 (prop2Ok,correct,check,)
+              x8YexHDzwPXdHMg8e, 2021-01-08T02:49:17 (prop3Ok,correct,check,)
+                f26YSRatW8wKYhy3R, 2021-01-08T02:49:34 (The name "eventualy" cannot be found.)
+                  T8zv5ueGqJ92qDcaa, 2021-01-08T02:49:41 (prop4Ok,correct,check,)
+                    9mvk7rRX744CbJvz2, 2021-01-08T02:50:11 (prop5Ok,incorrect,check,)
+                      P39yawp86TdtCRzxB, 2021-01-08T02:52:17 (prop5Ok,incorrect,check,)
+                        o52nuBCmtYiNSjgsX, 2021-01-08T02:53:22 (prop5Ok,incorrect,check,)
+                          osRoavzckka83ezpK, 2021-01-08T02:53:37 (prop5Ok,incorrect,check,)
+                            TibRkeX2wRgaiPF2r, 2021-01-08T03:17:47 (prop5Ok,incorrect,check,)
+                              z9HWK9n52MbyXiqWB, 2021-01-08T03:18:26 (prop5Ok,incorrect,check,)
+                                8B2JjDN3tpjgTnRus, 2021-01-08T03:18:36 (prop5Ok,incorrect,check,)
+                                  rouvA4qTCLEKGqAv5, 2021-01-08T03:19:31 (prop6Ok,incorrect,check,)
+                                    J9oJpTuxFRpj3eMvt, 2021-01-08T03:19:55 (prop6Ok,incorrect,check,)
+                                      8rwJ2pw5aNpusgToz, 2021-01-08T03:20:07 (prop6Ok,incorrect,check,)
+                                        G9tbbKTJGCzKW4b7N, 2021-01-08T03:20:22 (prop6Ok,incorrect,check,)
+                                          tZ9C2Yve3MAncuXKg, 2021-01-08T03:20:34 (prop6Ok,correct,check,)
+                                            FiNKbTyH4XSYQ8pN2, 2021-01-08T03:20:57 (prop6Ok,correct,check,)
+                                              cFHuENpZpLj5oSvrJ, 2021-01-08T03:21:09 (prop6Ok,incorrect,check,)
+                                                pKoEcY32AWrygDPex, 2021-01-08T03:21:24 (prop6Ok,incorrect,check,)
+                                                  ZtkqM84ejCtqe8qLZ, 2021-01-08T03:21:30 (prop6Ok,correct,check,)
+                                                    CKoJ9YFv5T9ZakwP8, 2021-01-08T03:22:24 (prop7Ok,correct,check,)
+                                                      kb3LbAcw27hevoHAv, 2021-01-08T03:23:12 (in can be used only between 2 expressions of the same arity. Left type = {this/File->this/File} Right type = {this/File})
+                                                        dBsGLeC8Wcb5NfYae, 2021-01-08T03:23:29 (prop8Ok,incorrect,check,)
+                                                          xM5nyoJAcg6XEmC9e, 2021-01-08T03:24:02 (prop1Ok,correct,check,)
+                                                            yzjWkQwCi63qHAEqs, 2021-01-08T03:24:04 (prop2Ok,correct,check,)
+                                                              wLmEAfA2cp6WB5XmA, 2021-01-08T03:24:07 (prop3Ok,correct,check,)
+                                                                TKn8zYtDBgPAHJfkm, 2021-01-08T03:24:10 (prop4Ok,correct,check,)
+                                                                  umd8WeTYthg6pgzgR, 2021-01-08T03:24:15 (prop5Ok,incorrect,check,)
+                                                                    ZToshcfjEdMozwGHs, 2021-01-08T03:24:27 (prop6Ok,correct,check,)
+                                                                      DTnBTe8tsnGqYcDwM, 2021-01-08T03:24:30 (prop7Ok,correct,check,)
+                                                                        fbZpJtRYmcT3YF3xx, 2021-01-08T03:24:33 (prop8Ok,incorrect,check,)
+                                                                          L5BQjBAc4e7QGjjhk, 2021-01-08T03:26:41 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                                                            FbKKT7nYbguMLSb2Y, 2021-01-08T03:26:52 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                                                                              6uwQYDkt7oHEv4egq, 2021-01-08T03:27:31 (prop9Ok,correct,check,)
+                                                                                PgyjBLWpjQWYhHnzC, 2021-01-08T03:27:50 (prop9Ok,incorrect,check,)
+                                                                                  j2QWhyikPZmMPF7am, 2021-01-08T03:28:34 (prop10Ok,correct,check,)
+                                                                                    EMApPnbReRMgk4BCk, 2021-01-08T03:29:57 (prop11Ok,incorrect,check,)
+                                                                                      epkhLwgB45YMRHfjS, 2021-01-08T03:31:53 (prop11Ok,incorrect,check,)
+                                                                                        p62SzRnRTexqLHxSc, 2021-01-08T03:33:26 (prop11Ok,incorrect,check,)
+                                                                                          NhKLu53zgSYerapCC, 2021-01-08T03:34:04 (prop11Ok,incorrect,check,)
+                                                                                            AmJ8yoTbXPPoTwAsF, 2021-01-08T03:35:22 (prop11Ok,correct,check,)
+                                                                                              6nCH2Q7F2XeaKw6Wq, 2021-01-08T03:35:59 (There are 3 possible tokens that can appear here: ,  { |)
+                                                                                                XmnWPRRHr2cPMfnZq, 2021-01-08T03:36:56 (This must be a formula expression. Instead, it has the following possible type(s): {this/File})
+                                                                                                  4MAQDs6gPeguNFYZY, 2021-01-08T03:37:12 (This must be a formula expression. Instead, it has the following possible type(s): {this/File})
+                                                                                                    9JYTLwzCinaGRRKY7, 2021-01-08T03:37:59 (prop11Ok,incorrect,check,)
+                                                                                                      9RxDDSvjuiRHYhqdZ, 2021-01-08T03:38:12 (prop11Ok,correct,check,)
+                                                                                                        hTLc82Ko77MixRA6w, 2021-01-08T03:38:41 (prop11Ok,incorrect,check,)
+                                                                                                          JzdZQCo6dtZDobo77, 2021-01-08T03:38:48 (prop11Ok,incorrect,check,)
+                                                                                                            yPRRpT3ZxsjKfy7TL, 2021-01-08T03:38:54 (prop11Ok,incorrect,check,)
+                                                                                                              R5gcehEaenFnQiHKS, 2021-01-08T03:39:16 (prop11Ok,incorrect,check,)
+                                                                                                                AwHcAA8QFv9MqQ27e, 2021-01-08T03:39:23 (prop11Ok,incorrect,check,)
+                                                                                                                  tGXGjKuAeQJiwctak, 2021-01-08T03:39:29 (prop11Ok,correct,check,)
+                                                                                                                    fgKdBuqMyARAswm4B, 2021-01-08T03:40:29 (The name "f" cannot be found.)
+                                                                                                                      iWz23DFYWPC2KWFHc, 2021-01-08T03:40:54 (prop12Ok,incorrect,check,)
+                                                                                                                        Ye6k9WgSfb6coqJi4, 2021-01-08T03:42:37 (The name "f" cannot be found.)
+                                                                                                                          sYbjm5XN7ZNm9Btzq, 2021-01-08T03:42:59 (prop12Ok,incorrect,check,)
+                                                                                                                            8ZosTdKugDXSvYJPT, 2021-01-08T03:43:08 (prop12Ok,incorrect,check,)
+                                                                                                                              NJgA46eX6jHTzK3TW, 2021-01-08T03:43:21 (prop12Ok,correct,check,)
+                                                                                                                                seQtpB9dWTCAfmxSo, 2021-01-08T03:43:38 (prop12Ok,incorrect,check,)
+                                                                                                                                  TSvSdhcqPa9jGMc5Y, 2021-01-08T03:48:10 (prop13Ok,incorrect,check,)
+                                                                                                                                    stAeeMZLb3SKfAaQr, 2021-01-08T03:48:19 (prop13Ok,incorrect,check,)
+                                                                                                                                      mbvu2PwRPMKkrW9SR, 2021-01-08T03:48:44 (prop13Ok,incorrect,check,)
+                                                                                                                                        2DyAmxceCRYtY62HH, 2021-01-08T03:49:15 (prop13Ok,correct,check,)
+                                                                                                                                          hykw2Kcy4ASz9TGv6, 2021-01-08T03:52:36 (prop14Ok,correct,check,)
+                                                                                                                                            jNeJThnXoPKfD44ki, 2021-01-08T03:52:52 (prop14Ok,incorrect,check,)
+                                                                                                                                              yoqEvitNko3jA5LXh, 2021-01-08T03:52:58 (prop14Ok,correct,check,)
+                                                                                                                                                SDt8PqhjGxyedcJYj, 2021-01-08T03:53:23 (prop14Ok,correct,check,)
+                                                                                                                                                  L3yfCEFsitKNnbQ2i, 2021-01-08T04:01:48 (prop15Ok,correct,check,)
+                                                                                                                                                    Bn7YrcAy5q2cTjY38, 2021-01-08T04:01:54 (prop16Ok,correct,check,)
+                                                                                                                                                      ehzmBCa3RASM2GKWX, 2021-01-08T04:03:36 (prop16Ok,correct,check,)
+                                                                                                                                                        F4Ck9fPu8GvDHnrgz, 2021-01-08T04:05:36 (prop12Ok,correct,check,)
+                                                                                                                                                          gwdcwa3mQW3WHAxRK, 2021-01-08T04:10:05 (prop12Ok,correct,check,)
+                                                                                                                                                            pe3erXMdqdbnM6iSb, 2021-01-08T04:10:14 (prop16Ok,correct,check,)
+                                                                                                                                                              2tcW9wcANStzK5S5C, 2021-01-08T04:10:19 (prop17Ok,incorrect,check,)
+                                                                                                                                                                iW6ZLyKsjLmPuoQxW, 2021-01-08T04:11:15 (prop17Ok,incorrect,check,)
+                                                                                                                                                                  CpCCNcyeL5DXeRRkG, 2021-01-08T04:15:11 (prop18Ok,incorrect,check,)
+                                                                                                                                                                    AFT4gFyS8m93CSFdF, 2021-01-08T04:15:55 (prop18Ok,incorrect,check,)
+                                                                                                                                                                      wRAE5yCztipAaKqas, 2021-01-08T04:16:21 (prop18Ok,incorrect,check,)
+                                                                                                                                                                        zEzT5f72uzYudEzyu, 2021-01-08T04:16:51 (prop18Ok,incorrect,check,)
+                                                                                                                                                                          dNKjZrCiAiQK56wu3, 2021-01-08T04:17:08 (prop18Ok,incorrect,check,)
+                                                                                                                                                                            oivT9pBECZFsYCGWq, 2021-01-08T04:17:19 (prop18Ok,incorrect,check,)
+                                                                                                                                                                              ZXmB8Q9qwwERJwvqZ, 2021-01-08T04:18:09 (prop18Ok,incorrect,check,)
+                                                                                                                                                                                CkAdkqNkn2sbgQxuc, 2021-01-08T04:18:43 (prop18Ok,incorrect,check,)
+                                                                                                                                                                                  H4PY2caqHXT7SBt6H, 2021-01-08T04:20:43 (prop18Ok,incorrect,check,)
+  3GYptLraC4EYLKLRe, 2021-01-09T18:11:25 (prop1Ok,correct,check,)
+    42GsEmaBnxZZBaETL, 2021-01-09T18:12:53 (prop2Ok,incorrect,check,)
+      ZFZZMaTYaQ2hMsu8u, 2021-01-09T18:14:10 (prop2Ok,correct,check,)
+        7ESfSb32R6tTTpKcG, 2021-01-09T18:14:33 (prop3Ok,correct,check,)
+          KSSJJ9pAq7PXqufSP, 2021-01-09T18:14:51 (prop4Ok,correct,check,)
+            3cE2weNqJTa3fkcBt, 2021-01-09T18:15:56 (prop5Ok,incorrect,check,)
+  TrcaDcuFH8bPwdicu, 2021-01-12T01:36:26 (prop6Ok,incorrect,check,)
+    Hk9Zfu6HdPgPiv2Dt, 2021-01-12T01:36:59 (prop6Ok,incorrect,check,)
+      NeDZLAqYTtGT3vBMf, 2021-01-12T01:37:21 (prop6Ok,correct,check,)
+        zE4gwFkXmqBEkGsRE, 2021-01-12T01:37:42 (prop7Ok,incorrect,check,)
+          6JsAp43W6iNbahrCL, 2021-01-12T01:38:44 (prop7Ok,correct,check,)
+  45vjSQXZKKbJ9Wa3v, 2021-01-12T22:03:41 (prop1Ok,correct,check,)
+    K8Zdgnh6zxFzRzeRA, 2021-01-12T22:04:06 (prop2Ok,correct,check,)
+      s252yjjeQAmX64Ykt, 2021-01-12T22:04:23 (prop2Ok,correct,check,)
+        24REb2qJWpGWfqGRf, 2021-01-12T22:04:25 (prop3Ok,correct,check,)
+          xGmZLm3xfSsijrvoK, 2021-01-12T22:05:02 (prop4Ok,incorrect,check,)
+            LghXgXpJpoad9L7rA, 2021-01-12T22:05:05 (prop4Ok,correct,check,)
+              4KMZ5tcY4i6dkPxwu, 2021-01-12T22:06:23 (prop5Ok,incorrect,check,)
+                zFfR6azJJ3h5Kbwpj, 2021-01-12T22:06:43 (prop5Ok,incorrect,check,)
+                  iuNYYpGnaxdP8yBqN, 2021-01-12T22:07:21 (prop6Ok,correct,check,)
+                    yctNbpdAYaMPxinjf, 2021-01-12T22:07:33 (prop7Ok,correct,check,)
+                      tGam2CchNBq52q4dj, 2021-01-12T22:08:28 (prop8Ok,incorrect,check,)
+  oCzxkHzXqZAgFQJY6, 2021-01-13T12:55:30 (prop1Ok,incorrect,check,)
+    rMAHAax6Jy6qBFfkk, 2021-01-13T12:55:45 (prop1Ok,correct,check,)
+      kaqQRcX5AAGCY6ZMY, 2021-01-13T12:56:12 (prop2Ok,incorrect,check,)
+        uurAvii4uiHftr3v4, 2021-01-13T12:56:44 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+          Kdv8TM5oMMwoxSHFv, 2021-01-13T12:57:01 (prop2Ok,incorrect,check,)
+            mSY7CHDbFYR92d2qT, 2021-01-13T12:58:40 (prop2Ok,correct,check,)
+              ANwymr8vjRN4rTGdu, 2021-01-13T12:58:51 (prop3Ok,correct,check,)
+                irhMQjoRCPgf8mjr6, 2021-01-13T12:59:15 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                  fBqeAJDCiCpoHsGzj, 2021-01-13T12:59:41 (prop4Ok,incorrect,check,)
+                    idqLqD8wgKMqBGYHf, 2021-01-13T12:59:50 (prop4Ok,correct,check,)
+                      DDrPjp4vvCrBcjdxb, 2021-01-13T13:01:18 (prop5Ok,incorrect,check,)
+                        4x4PddQj6X8NQdurk, 2021-01-13T13:04:37 (prop5Ok,incorrect,check,)
+                          SJgyH2hDhpCkYaGFF, 2021-01-13T13:06:26 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                            kqmcCtw94SBES2Ziv, 2021-01-13T13:06:40 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                              rNEGFdrFA3pMQ7b6Y, 2021-01-13T13:06:53 (prop6Ok,incorrect,check,)
+                                XyigaKNhmDA4b6tc7, 2021-01-13T13:07:17 (prop6Ok,incorrect,check,)
+                                  xy3Lk3uAnHyTHPSpF, 2021-01-13T13:07:44 (prop6Ok,incorrect,check,)
+                                    KJbMC8trTEH6WtECH, 2021-01-13T13:08:54 (prop6Ok,incorrect,check,)
+                                      8wmLZcyTi9nkJjuKw, 2021-01-13T13:09:09 (prop6Ok,incorrect,check,)
+                                        KfyGS2TY3DMhJXZyu, 2021-01-13T13:09:15 (prop6Ok,correct,check,)
+                                          DxmjF3Z7BZXBhzEiG, 2021-01-13T13:09:28 (prop7Ok,incorrect,check,)
+                                            Cp2NfxNMiuEM35nud, 2021-01-13T13:09:40 (prop7Ok,correct,check,)
+                                              a2DrBqXAbhx2KkGRs, 2021-01-13T13:12:03 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+                                                czsLt4sdTi8LHRuBF, 2021-01-13T13:13:04 (The name "Link" cannot be found.)
+                                                  ebvLL4Ez8bry4jpGo, 2021-01-13T13:13:09 (in can be used only between 2 expressions of the same arity. Left type = {this/File->this/File} Right type = {this/File})
+                                                    cBJK7SAaNPZfR6A29, 2021-01-13T13:13:44 (& can be used only between 2 expressions of the same arity. Left type = {this/File->this/File} Right type = {this/File})
+                                                      Ptqkd3XYBRLQxEeQA, 2021-01-13T13:14:36 (prop8Ok,incorrect,check,)
+                                                        uyuLgE8gPGXWh3Bjs, 2021-01-13T13:14:52 (prop8Ok,incorrect,check,)
+                                                          nSyczHSJzKwQ9MCMu, 2021-01-13T13:18:53 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                            NG3P3PNXg93xg3GRB, 2021-01-13T13:19:08 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                                                              6MQ7bCjd8Xmvg3c6f, 2021-01-13T13:19:32 (prop8Ok,incorrect,check,)
+                                                                N2sQ9QY7tWpgkdXBX, 2021-01-13T13:21:08 (prop8Ok,incorrect,check,)
+                                                                  St2mWCv4ZCBhyCrLG, 2021-01-13T13:22:14 (prop8Ok,incorrect,check,)
+                                                                    pvKHPjDMyaMfKSYSe, 2021-01-13T13:22:36 (prop8Ok,incorrect,check,)
+                                                                      62ipFbaKuvkhD2AMC, 2021-01-13T13:23:27 (prop8Ok,incorrect,check,)
+                                                                        oFgCEKJMbEdJNZA9j, 2021-01-13T13:23:57 (prop8Ok,incorrect,check,)
+                                                                          ys5HNL3zjncqutkRh, 2021-01-13T13:24:24 (prop8Ok,incorrect,check,)
+                                                                            aHH5AaXcRJQq63bas, 2021-01-13T13:26:12 (prop8Ok,incorrect,check,)
+                                                                              qBsDZkZpitsGJ4e5c, 2021-01-13T13:27:01 (prop8Ok,incorrect,check,)
+                                                                                CtmMJ4z3BfSL27uRN, 2021-01-13T13:27:18 (prop8Ok,incorrect,check,)
+                                                                                  HGeEiLaBthFWZ3Pr8, 2021-01-13T13:28:03 (prop9Ok,correct,check,)
+                                                                                    mz7M7urRrmBJwemTx, 2021-01-13T13:28:38 (prop10Ok,incorrect,check,)
+                                                                                      8TjhjB5EjnL5xmAJz, 2021-01-13T13:28:51 (This expression failed to be typechecked line 67, column 2, filename=/tmp/alloy_heredoc7288251083556150141.als)
+                                                                                        kp8isditwY4wf6oA6, 2021-01-13T13:31:22 (prop10Ok,incorrect,check,)
+                                                                                          4jS3g9tWz2xJMF7Yp, 2021-01-13T13:31:36 (prop10Ok,incorrect,check,)
+                                                                                            PsRqqbcdyvWKppPCe, 2021-01-13T13:32:12 (This expression failed to be typechecked line 67, column 2, filename=/tmp/alloy_heredoc15140647438891270859.als)
+                                                                                              pR4pffvuBhke5mZD6, 2021-01-13T13:33 (prop10Ok,incorrect,check,)
+                                                                                                njc2jA43rLybwHZqq, 2021-01-13T13:33:11 (prop10Ok,incorrect,check,)
+                                                                                                  qdt9m7a49jDm9LjKd, 2021-01-13T13:35:09 (prop10Ok,incorrect,check,)
+                                                                                                    Hr9h4NK6zKGTf4Tsa, 2021-01-13T13:35:26 (prop10Ok,incorrect,check,)
+                                                                                                      jiQwnJEALokD3fRJn, 2021-01-13T13:37:10 (The name "f" cannot be found.)
+                                                                                                        C2iKMiLozehAErT9H, 2021-01-13T13:37:21 (The name "f" cannot be found.)
+                                                                                                          sniDX6A6rZczDpPfk, 2021-01-13T13:37:32 (The name "f" cannot be found.)
+                                                                                                            QoMsFjq5rhjLKyMEB, 2021-01-13T13:37:40 (The name "f" cannot be found.)
+                                                                                                              Et5DXGYxNyG8ju55f, 2021-01-13T13:37:54 (The name "f" cannot be found.)
+                                                                                                                tFyejSTPZkmBRpyR6, 2021-01-13T13:38:03 (The name "f" cannot be found.)
+                                                                                                                  Xk8GGKEXnudLgaPS3, 2021-01-13T13:38:13 (The name "f" cannot be found.)
+                                                                                                                    WdbXzmF2PXgyq2EF5, 2021-01-13T13:38:18 (The name "a" cannot be found.)
+                                                                                                                      u5vbWnHmbWYXkSFJu, 2021-01-13T13:39:12 (prop11Ok,incorrect,check,)
+                                                                                                                        a5FD4nsczCrzBQiSx, 2021-01-13T13:39:56 (prop11Ok,incorrect,check,)
+                                                                                                                          4nykCCrfSuJQvq7qe, 2021-01-13T13:40:05 (prop11Ok,incorrect,check,)
+                                                                                                                            bNE7jtzJmxk9osNoG, 2021-01-13T13:40:21 (prop11Ok,correct,check,)
+                                                                                                                              cghbJ8G6DwEtXxpFQ, 2021-01-13T13:43:47 (prop10Ok,incorrect,check,)
+                                                                                                                                TgAqMesvA72PPHMfk, 2021-01-13T13:43:59 (prop10Ok,incorrect,check,)
+                                                                                                                                  AcypBbFjo9cKzyFPu, 2021-01-13T13:44:30 (prop10Ok,incorrect,check,)
+                                                                                                                                    wXQaBJhEbYyHgRYSf, 2021-01-13T13:45:17 (prop10Ok,incorrect,check,)
+                                                                                                                                      M4Cw8mKBSYXCtMFXB, 2021-01-13T13:45:48 (There are 3 possible tokens that can appear here: ,  { |)
+                                                                                                                                        AxuY7Q5FXqxE2dyaa, 2021-01-13T13:45:58 (prop10Ok,incorrect,check,)
+                                                                                                                                          voZFJaZJDE7oDaQBv, 2021-01-13T13:46:52 (prop12Ok,incorrect,check,)
+                                                                                                                                            xPNhiDWp3e73fqhiK, 2021-01-13T13:47:02 (prop12Ok,incorrect,check,)
+                                                                                                                                              LMk5XQjTNq7L52b4a, 2021-01-13T13:47:31 (prop12Ok,incorrect,check,)
+                                                                                                                                                22zRyfABgb5KY5Fkr, 2021-01-13T13:47:58 (prop12Ok,incorrect,check,)
+                                                                                                                                                  ptZgT2jt4qfDSoWzk, 2021-01-13T13:48:12 (prop12Ok,incorrect,check,)
+                                                                                                                                                    7ci8qfMakNeGu5BFH, 2021-01-13T13:49:15 (prop13Ok,correct,check,)
+                                                                                                                                                      e22GKrjBtS5PfopQc, 2021-01-13T13:50:23 (prop14Ok,incorrect,check,This variable is unused.)
+                                                                                                                                                        ubKn6psz2bkdpEr2r, 2021-01-13T13:50:34 (prop14Ok,incorrect,check,)
+                                                                                                                                                          JDhgYD2Xczh5PwFYc, 2021-01-13T13:51:03 (prop14Ok,incorrect,check,)
+                                                                                                                                                            G5A2z845vi4on4hkE, 2021-01-13T13:51:12 (The name "alwyas" cannot be found.)
+                                                                                                                                                              ReKh8J9AbHhJwWLof, 2021-01-13T13:51:18 (prop14Ok,correct,check,)
+                                                                                                                                                                WhJTqBfhbxeFECtXd, 2021-01-13T13:51:34 (There are 1 possible tokens that can appear here: ))
+                                                                                                                                                                  d9nwbb2dy72jotmcv, 2021-01-13T13:51:40 (prop14Ok,correct,check,)
+                                                                                                                                                                    8dGsMmTLHjnmmJkSe, 2021-01-13T13:52:23 (prop15Ok,incorrect,check,)
+                                                                                                                                                                      FqBuLmdjNJuzY4J82, 2021-01-13T13:52:33 (prop15Ok,incorrect,check,)
+                                                                                                                                                                        bgrFC2ibk8F8poBiG, 2021-01-13T13:52:47 (prop15Ok,incorrect,check,)
+                                                                                                                                                                          4LHsirTkdz9MkzAmo, 2021-01-13T13:53:01 (prop15Ok,incorrect,check,)
+                                                                                                                                                                            rymH9s5PDhAwwjcgN, 2021-01-13T13:53:11 (prop15Ok,incorrect,check,)
+                                                                                                                                                                              BBrjj5pxt98ETW2Ne, 2021-01-13T13:53:20 (prop15Ok,correct,check,)
+                                                                                                                                                                                Lw46Ghy7bchmFnEWZ, 2021-01-13T13:53:25 (prop15Ok,correct,check,)
+                                                                                                                                                                                  AhGgzTMgt9XFrSZG6, 2021-01-13T13:54:17 (This expression failed to be typechecked line 97, column 31, filename=/tmp/alloy_heredoc181040184275912921.als)
+                                                                                                                                                                                    S99Ps5QptDBwSvBMg, 2021-01-13T13:54:36 (prop16Ok,incorrect,check,)
+                                                                                                                                                                                      5v5oDkh3umGWNbMKn, 2021-01-13T13:54:48 (prop16Ok,correct,check,)
+                                                                                                                                                                                        joQtZrntYDXMS9LRh, 2021-01-13T13:55:37 (prop17Ok,correct,check,)
+                                                                                                                                                                                          aB7ZputLP4JDkcTWe, 2021-01-13T13:56:12 (prop5Ok,incorrect,check,)
+                                                                                                                                                                                            3cGh6zxH6ZroLa5fv, 2021-01-13T13:58:06 (prop17Ok,correct,check,)
+                                                                                                                                                                                              sqjermYutcw9vh8RS, 2021-01-13T13:58:18 (prop13Ok,correct,check,)
+                                                                                                                                                                                                MYPrEMe6Wu4unsW9v, 2021-01-13T13:59:22 (prop18Ok,incorrect,check,)
+                                                                                                                                                                                                  2YFnxixsDNBnhYhuD, 2021-01-13T13:59:33 (prop18Ok,incorrect,check,)
+                                                                                                                                                                                                    ancEyCaXYKohHuQGP, 2021-01-13T13:59:50 (prop18Ok,incorrect,check,)
+                                                                                                                                                                                                      eShLGDAJ9HzHTCLm8, 2021-01-13T14:00:16 (prop18Ok,incorrect,check,)
+                                                                                                                                                                                                        HodSqRYc2N6TvJvzv, 2021-01-13T14:01:45 (prop18Ok,incorrect,check,)
+                                                                                                                                                                                                          bPS5AFpxE3Jji9gQn, 2021-01-13T14:01:57 (prop18Ok,incorrect,check,)
+  QGBogqszyyLv6faTZ, 2021-01-13T22:43:02 (prop1Ok,correct,check,)
+    cPSEmEXa8dtiZXkmk, 2021-01-13T22:43:21 (The name "files" cannot be found.)
+      xhZi4T5xMAm6ah6Th, 2021-01-13T22:43:26 (prop2Ok,incorrect,check,)
+        dxE4haneHx6FYvqFK, 2021-01-13T22:44:45 (prop2Ok,correct,check,)
+          E8WTA6Y4epLmbSnqM, 2021-01-13T22:44:55 (prop3Ok,correct,check,)
+            mw2kiBwgWJkyyRkSf, 2021-01-13T22:45:24 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+              S7GMJBazGyqNoiKBc, 2021-01-13T22:45:38 (prop4Ok,correct,check,)
+                Ek4jwrNAqWxFPHtcb, 2021-01-13T22:49:06 (prop5Ok,incorrect,check,)
+                  w75vJpsABExenhWog, 2021-01-13T22:49:11 (prop5Ok,correct,check,)
+                    X2vAE7exghxKcEGKW, 2021-01-13T22:50:09 (There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~)
+                      dHaWSKJjCJoLNcEzQ, 2021-01-13T22:50:28 (prop6Ok,incorrect,check,)
+                        iwBBbjYm4WBZgeBpm, 2021-01-13T22:51:03 (prop6Ok,correct,check,)
+                          pvTkz5hzxwi7xSowv, 2021-01-13T22:51:20 (There are 3 possible tokens that can appear here: ,  { |)
+                            snDmP9GBFrXxvpFfM, 2021-01-13T22:51:30 (prop7Ok,correct,check,)
+                              q5GSz2hB4YiAw2wuw, 2021-01-13T22:54:18 (This expression failed to be typechecked line 58, column 43, filename=/tmp/alloy_heredoc4847011137983214949.als)
+                                Tbnd6jutRTM9yPES7, 2021-01-13T22:54:29 (prop8Ok,incorrect,check,)
+                                  RoXhZLWpwMdYzMfye, 2021-01-13T22:59:44 (prop8Ok,incorrect,check,)
+                                    BLDFMEhPyqfHPhNPp, 2021-01-13T22:59:52 (prop8Ok,incorrect,check,)
+                                      9aSMxz7yEkxBuLyke, 2021-01-13T23:00:08 (prop8Ok,incorrect,check,)
+                                        jeCqWxsPYgRnBhsxo, 2021-01-13T23:00:15 (prop8Ok,incorrect,check,)
+                                          DdREojs3jcKtbeEAW, 2021-01-13T23:00:24 (prop8Ok,incorrect,check,)
+                                            g2oAfDHxAct9xvc2f, 2021-01-13T23:00:52 (prop9Ok,incorrect,check,)
+                                              nR97ntxcRCNS89jfK, 2021-01-13T23:01:30 (prop9Ok,correct,check,)
+                                                wZdg95QKoJbPRYuAk, 2021-01-13T23:01:45 (prop10Ok,incorrect,check,)
+                                                  2yvBrwC7ndtxrE2iW, 2021-01-13T23:02:03 (prop10Ok,incorrect,check,)
+                                                    JPvaBMjQ6pM2b4ASD, 2021-01-13T23:02:26 (prop10Ok,incorrect,check,)
+                                                      uea9qkzurfMX7cZCS, 2021-01-13T23:02:41 (prop8Ok,incorrect,check,)
+                                                        Mt9JgkgDBjTXfbwWY, 2021-01-13T23:03:39 (prop11Ok,incorrect,check,)
+                                                          NA9PKcNWfsYrTzzTn, 2021-01-13T23:03:44 (prop11Ok,incorrect,check,)
+                                                            ke985bD6fvXAC8JBE, 2021-01-13T23:04:05 (prop11Ok,incorrect,check,)
+                                                              yw9cGqqmNYJJ5ou5J, 2021-01-13T23:04:14 (prop11Ok,correct,check,)
+                                                                JZwRpbYRSWKYB7zzg, 2021-01-13T23:05:11 (prop11Ok,correct,check,)
+                                                                  v3JQMp2nth5ebnBLJ, 2021-01-13T23:05:16 (prop13Ok,correct,check,)
+  mDrfmrWQLsjiYH94M, 2021-01-14T00:11:20 (prop1Ok,correct,check,)
+    zyMmXacGry8bijrMb, 2021-01-14T00:11:44 (prop2Ok,incorrect,check,)
+      QJqJvSfnwmbE3b3a8, 2021-01-14T00:12:22 (prop2Ok,incorrect,check,)
+        fkg5Ek6Xt2Sq8Q464, 2021-01-14T00:12:31 (prop2Ok,incorrect,check,)
+          GwLt2Wa44YWFWFKCW, 2021-01-14T00:12:36 (prop2Ok,correct,check,)
+            oc9byxqq9osjLph8x, 2021-01-14T00:12:42 (prop2Ok,correct,check,)
+              FaakCfMQyvsDMgr7b, 2021-01-14T00:13:10 (prop3Ok,correct,check,)
+                Skex4dME5vb8cXr4o, 2021-01-14T00:13:28 (prop4Ok,correct,check,)
+                  CqfLLPxLgRQSLfqrS, 2021-01-14T00:14:08 (prop5Ok,correct,check,)
+                    BYJCvT4be3aQW3NZi, 2021-01-14T00:15:24 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                      DNqW8HDhSnttWd766, 2021-01-14T00:15:52 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                        8LHTWNSoRomG28ixp, 2021-01-14T00:16:05 (There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~)
+                          s9yX29jhHJgTFG5mZ, 2021-01-14T00:16:16 (prop6Ok,correct,check,)
+                            bWoHCvdX8B3bE99RH, 2021-01-14T00:16:26 (prop6Ok,correct,check,)
+                              ZHWD8JWxMtHvJuLd5, 2021-01-14T00:17:38 (prop7Ok,incorrect,check,)
+                                qCKtMD6ZwWpMK8ZJx, 2021-01-14T00:18:47 (prop7Ok,incorrect,check,)
+                                  oJX3KPapvZJhuPhxL, 2021-01-14T00:18:55 (prop7Ok,correct,check,)
+                                    XXcEQcsZYK9NbuvmP, 2021-01-14T00:20:30 (in can be used only between 2 expressions of the same arity. Left type = {this/File->this/File} Right type = {this/File})
+                                      89QCKgKjn9jBsgDqq, 2021-01-14T00:22:50 (prop8Ok,correct,check,)
+                                        gWuZgq5hCQJr5Kgch, 2021-01-14T00:23:50 (prop9Ok,correct,check,)
+                                          B4T8ci8nEiikCCCDZ, 2021-01-14T00:24:42 (prop10Ok,incorrect,check,)
+                                            RamhcwJuPdokiQRvu, 2021-01-14T00:24:57 (prop10Ok,incorrect,check,)
+                                              FPCY3Pjm9TQSsEAeX, 2021-01-14T00:25:12 (prop10Ok,incorrect,check,)
+                                                vvgL6AtLQE4o3LWyW, 2021-01-14T00:25:18 (prop10Ok,incorrect,check,)
+                                                  amywQsdco6zxZL4YG, 2021-01-14T00:25:28 (prop10Ok,incorrect,check,)
+                                                    u2YJf7hokhZiMrDKh, 2021-01-14T00:27:12 (prop10Ok,incorrect,check,)
+                                                      bmB7FLnXd3bTjBBMu, 2021-01-14T00:28:25 (prop10Ok,correct,check,)
+                                                        gGkaM4yyQxtmNrJu5, 2021-01-14T00:29:45 (prop11Ok,incorrect,check,)
+                                                          JajsKoqy5uAvsvzLS, 2021-01-14T00:30:09 (prop11Ok,incorrect,check,)
+                                                            xzFj3P7GS4f22ipDa, 2021-01-14T00:30:12 (prop11Ok,correct,check,)
+                                                              PjtzPSLM57jJJZExo, 2021-01-14T00:31:20 (prop12Ok,incorrect,check,)
+  f9PKXHWoNq4TswCnm, 2021-01-14T00:38:05 (prop1Ok,correct,check,)
+    CqgpW2sq8YdFteibS, 2021-01-14T00:38:44 (prop2Ok,incorrect,check,)
+      MBrdfx5Ng9TchrKhe, 2021-01-14T00:38:54 (prop2Ok,incorrect,check,)
+        FeeQyeBi9Wv9dQWsn, 2021-01-14T00:49:03 (prop2Ok,incorrect,check,)
+          pf2nwc2BPhy4PB9rY, 2021-01-14T00:49:35 (prop2Ok,correct,check,)
+            h7RzkcdyycPGz6hk6, 2021-01-14T00:49:59 (prop3Ok,correct,check,)
+              pkNJSw8fkdoCMbRn4, 2021-01-14T00:50:27 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                fzAjgyhSC8pncgwqm, 2021-01-14T00:50:35 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+                  3w5miv9PQCQPjdRyq, 2021-01-14T00:50:50 (prop4Ok,correct,check,)
+                    qWWhJPGwJw3FwNxHT, 2021-01-14T00:51:19 (There are 1 possible tokens that can appear here: ))
+                      zfYzFF4RYQcS6j4DP, 2021-01-14T00:51:29 (There are 1 possible tokens that can appear here: ))
+                        uetRtQSR6poox3a3Q, 2021-01-14T00:52:46 (prop6Ok,incorrect,check,)
+                          49vCECce4sDJijnBg, 2021-01-14T00:52:54 (prop6Ok,correct,check,)
+                            Csn6mvXKNt3saq4yS, 2021-01-14T00:53:17 (prop7Ok,incorrect,check,)
+                              a3jkTdZiBnosf2wRA, 2021-01-14T00:53:36 (prop7Ok,incorrect,check,)
+                                sWf2eDbYu2B2Gva36, 2021-01-14T00:53:53 (prop7Ok,correct,check,)
+                                  ETXLZf2j57A9NBx88, 2021-01-14T00:54:45 (prop8Ok,incorrect,check,)
+                                    xiE8kXPqQcXDGozq9, 2021-01-14T00:54:58 (prop8Ok,incorrect,check,)
+                                      8m7zW8vfchkXxudvu, 2021-01-14T00:55:39 (prop8Ok,incorrect,check,)
+                                        9SRJbeKooCFdRHtBq, 2021-01-14T00:56:24 (There are 1 possible tokens that can appear here: ))
+                                          grEBkfgRPQTjYqHd2, 2021-01-14T00:56:33 (The name "Protecteed" cannot be found.)
+                                            b89HJGtJMzSHFJKDz, 2021-01-14T00:56:37 (prop9Ok,incorrect,check,)
+                                              tP7z59XrR3SnhW4bX, 2021-01-14T00:56:44 (prop9Ok,correct,check,)
+                                                ntozswcdmXmzssEkS, 2021-01-14T00:57:18 (prop10Ok,incorrect,check,)
+                                                  Sy6S6dnfqHKgGp3wz, 2021-01-14T00:57:24 (prop10Ok,incorrect,check,)
+                                                    yf4Xt76H8Aaz5WcZG, 2021-01-14T00:57:28 (prop10Ok,incorrect,check,)
+                                                      Y37NATD6zpZ63tatS, 2021-01-14T00:57:32 (prop10Ok,incorrect,check,)
+                                                        v3vXGQ6FCKkxE4o4y, 2021-01-14T00:57:59 (prop10Ok,incorrect,check,)
+                                                          Mb9z3CDpc8KbC5sqk, 2021-01-14T00:58:06 (prop10Ok,incorrect,check,)
+                                                            5ARiCeiTvtSba9gn4, 2021-01-14T00:59:06 (prop11Ok,incorrect,check,)
+                                                              sgdu7yWN8wpAtBzLg, 2021-01-14T00:59:16 (prop11Ok,correct,check,)
+                                                                nC5r8ExqD44iR2iqW, 2021-01-14T00:59:57 (prop12Ok,incorrect,check,)
+                                                                  TzYnigamsbekwQcXb, 2021-01-14T01:01:12 (prop5Ok,correct,check,)
+                                                                    NyGmofDpq5CazdMvS, 2021-01-14T01:01:29 (prop8Ok,correct,check,)
+                                                                      ToAx362XAheqAiGBi, 2021-01-14T01:01:42 (prop10Ok,correct,check,)
+                                                                        sNBt6cnyG2RS4eaoP, 2021-01-14T01:01:57 (prop11Ok,correct,check,)
+                                                                          sPQMeLkFBtWSsQnQu, 2021-01-14T01:01:59 (prop12Ok,incorrect,check,)
+                                                                            HxSL2v8YsSSN9wvo8, 2021-01-14T01:02:14 (prop12Ok,correct,check,)
+                                                                              NRmgpkE8mNL6miHEx, 2021-01-14T01:02:32 (prop13Ok,correct,check,)
+                                                                                4Mx5Y5PwxSykv46sq, 2021-01-14T01:03:07 (prop14Ok,correct,check,)
+                                                                                  kJ443Gq95y3pK8w7J, 2021-01-14T01:03:29 (prop15Ok,correct,check,)
+                                                                                    wKcB46afmk8gt4D62, 2021-01-14T01:03:52 (prop16Ok,incorrect,check,)
+                                                                                      zGAWPgcFwJZCYiYdE, 2021-01-14T01:04:02 (prop16Ok,correct,check,)
+                                                                                        ERapfoBnsQe5ohxr6, 2021-01-14T01:04:40 (prop17Ok,correct,check,)
+                                                                                          uQ9f5uf6A6sdr2ko8, 2021-01-14T01:05:05 (prop18Ok,incorrect,check,)
+                                                                                            7cp4jgbuExAPj5Luq, 2021-01-14T01:05:25 (prop18Ok,incorrect,check,)
+                                                                                              33RcNNnHqqcvLhHvy, 2021-01-14T01:05:29 (prop18Ok,incorrect,check,)
+                                                                                                rm8Fz9TKvPzeCTK33, 2021-01-14T01:05:47 (prop18Ok,incorrect,check,)
+                                                                                                  d3PCNeheCQ37uMCdj, 2021-01-14T01:05:54 (prop18Ok,incorrect,check,)
+                                                                                                    ZJ4LnQF2pS3wLYE6B, 2021-01-14T01:06:11 (prop18Ok,correct,check,)

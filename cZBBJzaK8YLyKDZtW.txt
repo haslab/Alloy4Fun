@@ -1,4 +1,4 @@
-cZBBJzaK8YLyKDZtW (2020-12-22)
+cZBBJzaK8YLyKDZtW (2021-03-24)
 
 * Meta-data
 Challenge name: unknown
@@ -7,37 +7,37 @@ Creation time: 2020-11-11
 Metric catalog: Example metric catalog
 
 * Overall metric statistics
-Total model entries: 1151
-Total executions: 1146
-Total shares: 5
-Total error messages: 365
-Total warning messages: 109
-Total solutions: 782
-Total sessions: 47
+Total model entries: 1286
+Total executions: 1279
+Total shares: 7
+Total error messages: 403
+Total warning messages: 129
+Total solutions: 877
+Total sessions: 56
 Timed out re-executions: 0
 Rejected due to server errors: 0
 Inconsisistent result reports: 0
 Inconsisistent message reports: 0
 Total instance entries: 0
-Total link entries: 6
+Total link entries: 8
 
 * Scalar metrics
-Number of shared sessions	4
-Shared models (model)	5
+Number of shared sessions	5
+Shared models (model)	7
 Shares with warnings	0
-Alloy runtime errors	2
+Alloy runtime errors	7
 Shared errored models	1
-Alloy static errors	362
+Alloy static errors	395
 Shared models (instance)	0
-Average session	24.404255319148938
+Average session	22.892857142857142
 Longest session	97
-Sat executions with warnings	79
-Executed errored models	364
-Unsat executions	588
+Sat executions with warnings	87
+Executed errored models	402
+Unsat executions	224
 Unsat executions with warnings	12
-Errored executions with warnings	2
-Average % unsatisfiable	0.37905627679946763
-Sat executions	194
+Errored executions with warnings	6
+Average % unsatisfiable	0.3798596163583658
+Sat executions	653
 
 * Overall metrics
 
@@ -46,29 +46,29 @@ Sessions by length
 2	1
 3	4
 4	3
-5	3
+5	4
 6	2
 7	1
-8	1
-9	1
+8	2
+9	2
 10	0
-11	0
+11	1
 12	1
 13	0
 14	0
-15	3
-16	1
+15	4
+16	2
 17	2
 18	0
-19	1
+19	2
 20	1
 21	0
 22	1
 23	2
 24	0
-25	1
+25	2
 26	1
-27	1
+27	2
 28	1
 29	0
 30	0
@@ -143,91 +143,95 @@ Sessions by length
 Warnings by type
 Subset operator is redundant, because the right subexpression is always empty. Left type = {_} Right type = {_}	12
 - is irrelevant since the right expression is redundant. Parent's relevant type = {_} Left type = {_} Right type = {_}	2
-This variable is unused.	17
+This variable is unused.	21
 :> is irrelevant because the result is always empty. Left type = {_} Right type = {_}	1
-Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}	29
+Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {_} Right type = {_}	33
 & is irrelevant because the two subexpressions are always disjoint. Left type = {_} Right type = {_}	7
-Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}	2
-The join operation here always yields an empty set. Left type = {_} Right type = {_}	36
+Subset operator is redundant, because the left subexpression is always empty. Left type = {_} Right type = {_}	5
+The join operation here always yields an empty set. Left type = {_} Right type = {_}	42
+^_ is redundant since its domain and range are disjoint: {_}	3
 == is redundant, because the left and right expressions are always disjoint. Left type = {_} Right type = {_}	3
 
 Sessions by # of solved challenges
 0	3
 1	12
-2	7
-3	25
+2	9
+3	32
 
 Errors by type
-There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	7
-in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	20
-The name _ cannot be found.	51
-This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	74
-This expression failed to be typechecked line _ column _ filename=_.als	17
-- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	3
-& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	3
-There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	22
-This must be a set or relation. Instead, it has the following possible type(s): {_}	51
-There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ 	1
+There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~ 	8
+- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	4
 There are 37 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { ~ 	4
 There are 5 possible tokens that can appear here: enum fun let open pred 	1
 = can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {_} Right type = {_}	3
-* can be used only with a binary relation. Instead, its possible type(s) are: {_}	1
-Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.	2
+Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.	7
 The "all x" construct is no longer supported. If you know the range of possible values of x, consider rewriting it as "x == set_of_all_possible_values".	3
-This must be a formula expression. Instead, it has the following possible type(s): {_}	74
+This must be a formula expression. Instead, it has the following possible type(s): {_}	79
 There are 1 possible tokens that can appear here: ' 	1
+~ can be used only with a binary relation. Instead, its possible type(s) are: {_}	9
 There are 8 possible tokens that can appear here: NAME disj exh part private seq this var 	11
-~ can be used only with a binary relation. Instead, its possible type(s) are: {_}	5
-!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	2
 This must be a unary set, but instead it has the following possible type(s): {_}	4
-There are 1 possible tokens that can appear here: ) 	4
+There are 1 possible tokens that can appear here: ) 	6
+!in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	2
+There are 3 possible tokens that can appear here: ,  : = 	2
+^ can be used only with a binary relation. Instead, its possible type(s) are: {_}	1
+in can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	25
+This cannot be a legal relational join where left hand side is _(_) right hand side is _(_) 	77
+This expression failed to be typechecked line _ column _ filename=_.als	17
+The name _ cannot be found.	58
+& can be used only between 2 expressions of the same arity. Left type = {_} Right type = {_}	3
+There are 38 possible tokens that can appear here: ! # ( * @ Int NAME NUMBER STRING String Time ^ after all always before disj eventually fun historically iden int let lone no none once one pred seq set some sum this univ { } ~ 	22
+This must be a set or relation. Instead, it has the following possible type(s): {_}	53
+There are 25 possible tokens that can appear here: ( * @ Int NAME NUMBER STRING String Time ^ all fun iden let lone no none one seq some sum this univ { ~ 	1
+* can be used only with a binary relation. Instead, its possible type(s) are: {_}	1
 There are 3 possible tokens that can appear here: ,  { | 	1
 
 Models by number of warnings
-0	1058
-1	77
-2	16
+0	1181
+1	84
+2	18
+3	3
 
 * Overall metrics, classified
 
-Execution results by challenge
+Execution results by command
 m	UNSAT	SAT	
-inv1ok	71	165	
-inv2ok	56	265	
-inv3ok	67	158	
+inv1ok	82	189	
+inv2ok	66	292	
+inv3ok	76	172	
 
 Session results by challenge
 m	solved	unsolved	
-inv1ok	41	6	
-inv2ok	30	17	
-inv3ok	30	17	
+inv1ok	50	6	
+inv2ok	38	18	
+inv3ok	38	18	
 
 Model entries over time
-m	UNSAT	SAT	SHARE	ERROR	
-2020-11-11	0	4	1	0	
-2020-11-12	157	437	3	269	
-2020-11-13	8	6	0	9	
-2020-11-14	1	7	0	1	
+m	ERROR	UNSAT	SAT	SHARE	
+2020-11-11	0	0	4	1	
+2020-11-12	269	157	437	3	
+2020-11-13	9	8	6	0	
+2020-11-14	1	1	7	0	
 2020-11-15	0	0	0	0	
-2020-11-16	0	3	0	1	
-2020-11-17	2	3	0	2	
-2020-11-18	2	4	0	0	
-2020-11-19	1	10	0	4	
+2020-11-16	1	0	3	0	
+2020-11-17	2	2	3	0	
+2020-11-18	0	2	4	0	
+2020-11-19	4	1	10	0	
 2020-11-20	0	0	0	0	
 2020-11-21	0	0	0	0	
 2020-11-22	0	0	0	0	
 2020-11-23	0	0	0	0	
-2020-11-24	4	4	0	3	
-2020-11-25	2	1	0	0	
-2020-11-26	7	60	0	20	
+2020-11-24	3	4	4	0	
+2020-11-25	0	2	1	0	
+2020-11-26	20	7	60	0	
 2020-11-27	0	0	0	0	
 2020-11-28	0	0	0	0	
 2020-11-29	0	0	0	0	
-2020-11-30	5	7	0	0	
+2020-11-30	0	5	7	0	
 2020-12-01	0	0	0	0	
 2020-12-02	0	0	0	0	
 2020-12-03	0	0	0	0	
-2020-12-04	2	35	0	43	
+2020-12-04	43	2	35	0	
 2020-12-05	0	0	0	0	
 2020-12-06	0	0	0	0	
 2020-12-07	0	0	0	0	
@@ -243,9 +247,101 @@ m	UNSAT	SAT	SHARE	ERROR
 2020-12-17	0	0	0	0	
 2020-12-18	0	0	0	0	
 2020-12-19	0	0	0	0	
-2020-12-20	1	5	1	6	
-2020-12-21	2	2	0	6	
+2020-12-20	6	1	5	1	
+2020-12-21	6	2	2	0	
 2020-12-22	0	0	0	0	
+2020-12-23	0	0	0	0	
+2020-12-24	0	0	0	0	
+2020-12-25	0	0	0	0	
+2020-12-26	0	0	0	0	
+2020-12-27	0	0	0	0	
+2020-12-28	0	0	0	0	
+2020-12-29	0	0	0	0	
+2020-12-30	0	0	0	0	
+2020-12-31	0	0	0	0	
+2021-01-01	0	0	0	0	
+2021-01-02	0	0	0	0	
+2021-01-03	0	0	0	0	
+2021-01-04	0	0	0	0	
+2021-01-05	0	0	0	0	
+2021-01-06	0	0	0	0	
+2021-01-07	0	0	0	0	
+2021-01-08	5	2	20	0	
+2021-01-09	0	0	0	0	
+2021-01-10	10	13	16	0	
+2021-01-11	0	0	0	0	
+2021-01-12	0	0	0	0	
+2021-01-13	8	12	22	2	
+2021-01-14	0	0	0	0	
+2021-01-15	0	0	0	0	
+2021-01-16	0	0	0	0	
+2021-01-17	0	0	0	0	
+2021-01-18	0	0	0	0	
+2021-01-19	0	0	0	0	
+2021-01-20	0	0	0	0	
+2021-01-21	0	0	0	0	
+2021-01-22	0	0	0	0	
+2021-01-23	15	3	7	0	
+2021-01-24	0	0	0	0	
+2021-01-25	0	0	0	0	
+2021-01-26	0	0	0	0	
+2021-01-27	0	0	0	0	
+2021-01-28	0	0	0	0	
+2021-01-29	0	0	0	0	
+2021-01-30	0	0	0	0	
+2021-01-31	0	0	0	0	
+2021-02-01	0	0	0	0	
+2021-02-02	0	0	0	0	
+2021-02-03	0	0	0	0	
+2021-02-04	0	0	0	0	
+2021-02-05	0	0	0	0	
+2021-02-06	0	0	0	0	
+2021-02-07	0	0	0	0	
+2021-02-08	0	0	0	0	
+2021-02-09	0	0	0	0	
+2021-02-10	0	0	0	0	
+2021-02-11	0	0	0	0	
+2021-02-12	0	0	0	0	
+2021-02-13	0	0	0	0	
+2021-02-14	0	0	0	0	
+2021-02-15	0	0	0	0	
+2021-02-16	0	0	0	0	
+2021-02-17	0	0	0	0	
+2021-02-18	0	0	0	0	
+2021-02-19	0	0	0	0	
+2021-02-20	0	0	0	0	
+2021-02-21	0	0	0	0	
+2021-02-22	0	0	0	0	
+2021-02-23	0	0	0	0	
+2021-02-24	0	0	0	0	
+2021-02-25	0	0	0	0	
+2021-02-26	0	0	0	0	
+2021-02-27	0	0	0	0	
+2021-02-28	0	0	0	0	
+2021-03-01	0	0	0	0	
+2021-03-02	0	0	0	0	
+2021-03-03	0	0	0	0	
+2021-03-04	0	0	0	0	
+2021-03-05	0	0	0	0	
+2021-03-06	0	0	0	0	
+2021-03-07	0	0	0	0	
+2021-03-08	0	0	0	0	
+2021-03-09	0	0	0	0	
+2021-03-10	0	0	0	0	
+2021-03-11	0	0	0	0	
+2021-03-12	0	0	0	0	
+2021-03-13	0	0	0	0	
+2021-03-14	0	0	0	0	
+2021-03-15	0	0	0	0	
+2021-03-16	0	0	0	0	
+2021-03-17	0	0	0	0	
+2021-03-18	0	0	0	0	
+2021-03-19	0	0	0	0	
+2021-03-20	0	0	0	0	
+2021-03-21	0	0	0	0	
+2021-03-22	0	0	0	0	
+2021-03-23	0	0	0	0	
+2021-03-24	0	0	0	0	
 
 * Metrics by sub-challenge, classified
 
@@ -253,167 +349,190 @@ Size in 10s of nodes
 
 inv1ok
 m	UNSAT	SAT	
-2	58	98	
-3	13	53	
-4	0	14	
+2	64	110	
+3	18	64	
+4	0	15	
 
 inv2ok
 m	UNSAT	SAT	
-2	2	52	
-3	54	183	
+2	2	55	
+3	64	207	
 4	0	29	
 5	0	1	
 
 inv3ok
 m	UNSAT	SAT	
-2	0	17	
-3	43	119	
-4	23	16	
-5	1	6	
+2	0	19	
+3	51	125	
+4	24	20	
+5	1	8	
+
+Number of quantified variables
+
+inv1ok
+m	UNSAT	SAT	
+0	18	111	
+1	61	55	
+2	3	12	
+3	0	10	
+4	0	1	
+
+inv2ok
+m	UNSAT	SAT	
+0	10	16	
+1	53	220	
+2	3	26	
+3	0	24	
+4	0	6	
+
+inv3ok
+m	UNSAT	SAT	
+0	11	24	
+1	42	122	
+2	20	23	
+3	3	3	
 
 Number of binary temporal operators
 
 inv1ok
 m	UNSAT	SAT	
-0	71	165	
+0	82	189	
 
 inv2ok
 m	UNSAT	SAT	
-0	56	265	
+0	66	292	
 
 inv3ok
 m	UNSAT	SAT	
-0	67	158	
+0	76	172	
 
 Max nested temporal operator level
 
 inv1ok
 m	UNSAT	SAT	
-0	71	165	
+0	82	189	
 
 inv2ok
 m	UNSAT	SAT	
-0	56	265	
+0	66	292	
 
 inv3ok
 m	UNSAT	SAT	
-0	67	158	
+0	76	172	
 
 Number of lone/one quantifiers
 
 inv1ok
 m	UNSAT	SAT	
-0	68	163	
+0	79	187	
 1	3	1	
 2	0	1	
 
 inv2ok
 m	UNSAT	SAT	
-0	56	263	
+0	66	290	
 1	0	2	
 
 inv3ok
 m	UNSAT	SAT	
-0	67	154	
+0	76	168	
 1	0	4	
 
 Max nested quantifier level
 
 inv1ok
 m	UNSAT	SAT	
-0	13	96	
-1	55	55	
-2	3	14	
+0	18	111	
+1	61	61	
+2	3	17	
 
 inv2ok
 m	UNSAT	SAT	
-0	7	15	
-1	49	227	
-2	0	23	
+0	10	16	
+1	56	251	
+2	0	25	
 
 inv3ok
 m	UNSAT	SAT	
-0	8	22	
-1	39	127	
-2	20	9	
+0	11	24	
+1	43	139	
+2	22	9	
 
 Number of disj quantifications
 
 inv1ok
 m	UNSAT	SAT	
-0	71	163	
-1	0	2	
-
-inv2ok
-m	UNSAT	SAT	
-0	53	265	
-1	3	0	
-
-inv3ok
-m	UNSAT	SAT	
-0	67	153	
-1	0	5	
-
-Number multiplicity arrows
-
-inv1ok
-m	UNSAT	SAT	
-0	68	155	
-1	3	10	
-
-inv2ok
-m	UNSAT	SAT	
-0	56	262	
+0	82	186	
 1	0	3	
 
-inv3ok
-m	UNSAT	SAT	
-0	67	157	
-1	0	1	
-
-Number of quantifiers
-
-inv1ok
-m	UNSAT	SAT	
-0	13	96	
-1	55	53	
-2	3	8	
-3	0	8	
-
 inv2ok
 m	UNSAT	SAT	
-0	7	15	
-1	46	196	
-2	3	26	
-3	0	22	
-4	0	6	
+0	63	290	
+1	3	2	
 
 inv3ok
 m	UNSAT	SAT	
-0	8	22	
-1	38	116	
-2	18	17	
-3	3	3	
+0	76	161	
+1	0	11	
 
-Number of inverted navigation expressions
+Number of reversed relation navigation
 
 inv1ok
 m	UNSAT	SAT	
-0	63	140	
-1	8	22	
+0	73	163	
+1	9	23	
 2	0	3	
 
 inv2ok
 m	UNSAT	SAT	
-0	44	221	
-1	12	34	
+0	54	243	
+1	12	39	
 2	0	9	
 3	0	1	
 
 inv3ok
 m	UNSAT	SAT	
-0	67	152	
-1	0	6	
+0	75	166	
+1	1	6	
+
+Number multiplicity arrows
+
+inv1ok
+m	UNSAT	SAT	
+0	79	179	
+1	3	10	
+
+inv2ok
+m	UNSAT	SAT	
+0	66	289	
+1	0	3	
+
+inv3ok
+m	UNSAT	SAT	
+0	76	171	
+1	0	1	
+
+Number of inverted navigation
+
+inv1ok
+m	UNSAT	SAT	
+0	27	175	
+1	55	14	
+
+inv2ok
+m	UNSAT	SAT	
+0	25	213	
+1	41	76	
+2	0	3	
+
+inv3ok
+m	UNSAT	SAT	
+0	58	147	
+1	18	18	
+2	0	4	
+3	0	2	
+4	0	0	
+5	0	1	
 
 * Derivation tree
 cZBBJzaK8YLyKDZtW, 2020-11-11T18:29:14 (model share)
@@ -1567,3 +1686,138 @@ cZBBJzaK8YLyKDZtW, 2020-11-11T18:29:14 (model share)
                                           Mqz89kon3EjAjcnPW, 2020-12-21T11:13:17 (inv3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Track})
                                             GJTjwCaaqBiaFnizu, 2020-12-21T11:13:49 (inv3ok,incorrect,check,The join operation here always yields an empty set. Left type = {this/Track->this/Signal} Right type = {this/Track})
                                               eimkYDoMnmTaZPm9c, 2020-12-21T11:14:16 (inv3ok,correct,check,)
+  CwhTM7vCCCzdntnRq, 2021-01-08T01:10:44 (inv1ok,incorrect,check,)
+    9qPzdcgKSk4zSu5hS, 2021-01-08T01:12:06 (inv1ok,correct,check,)
+      xMzcFZEAa8SX6hTT7, 2021-01-08T01:16:10 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+        fnW2i7Guqe8MRJjEW, 2021-01-08T01:16:22 (This must be a set or relation. Instead, it has the following possible type(s): {PrimitiveBoolean})
+          w5sC4pFHFb5na6xFB, 2021-01-08T01:16:37 (inv2ok,incorrect,check,)
+            XDs9Y6NxAn7QrAX9a, 2021-01-08T01:16:44 (inv2ok,incorrect,check,)
+              4vgMzcfjXhuP5vz2y, 2021-01-08T01:17:14 (inv2ok,incorrect,check,)
+                3uwASPSQov5v92oGx, 2021-01-08T01:17:43 (There are 29 possible tokens that can appear here: # ( * @ Int NAME NUMBER STRING String Time ^ all disj fun iden int let lone no none one pred seq some sum this univ { ~)
+                  tGvKR4fjhRuvgWDqt, 2021-01-08T01:22:07 (inv2ok,incorrect,check,)
+                    QLn632GmKQo3vMb74, 2021-01-08T01:22:36 (inv2ok,incorrect,check,)
+                      G8gdL2Av3vJq6sexY, 2021-01-08T01:23:42 (inv2ok,incorrect,check,)
+                        7Tn7ENWZ2uhaCEJf6, 2021-01-08T01:25:26 (inv2ok,incorrect,check,)
+                          q5BLuqKaQnnRA5zpX, 2021-01-08T01:30:40 (inv3ok,incorrect,check,)
+                            TgDr5XAYZnm5WkjkM, 2021-01-08T01:31:25 (inv3ok,incorrect,check,)
+                              EQNEDCSCehySsNf8o, 2021-01-08T01:32:41 (There are 3 possible tokens that can appear here: ,  : =)
+                                RJoJwLJACL4FCx97Z, 2021-01-08T01:34:37 (The name "track" cannot be found.)
+                                  YvKrcjYJN8Xxc8Ku6, 2021-01-08T01:34:48 (inv3ok,correct,check,)
+                                    YER2FfAa2cNurRBEg, 2021-01-08T01:37:12 (inv2ok,incorrect,check,)
+                                      vmWGgZs5AdiBmWvmW, 2021-01-08T01:39:30 (inv2ok,incorrect,check,)
+                                        ySHmgPdfciEAbH5ub, 2021-01-08T01:39:39 (inv2ok,incorrect,check,)
+                                          sNg9LLGYYZXXr3Nny, 2021-01-08T01:41:43 (inv2ok,incorrect,check,)
+                                            WGsjbwww7Tym4dANo, 2021-01-08T01:41:51 (inv2ok,incorrect,check,)
+                                              ao6eLeyDojwCM3T7z, 2021-01-08T01:41:55 (inv2ok,incorrect,check,)
+                                                dwYXTDnZGzJuzmkAW, 2021-01-08T01:42:04 (inv2ok,incorrect,check,)
+                                                  3cLKpYrxFioJkE4JE, 2021-01-08T01:42:07 (inv2ok,incorrect,check,)
+                                                    Q4aZrSL3eQ7jLvodj, 2021-01-08T01:42:50 (inv2ok,incorrect,check,)
+                                                      fJqB28LxJdQxyNeYN, 2021-01-08T01:43:07 (inv2ok,incorrect,check,)
+  mLCgWXqCPzBT7Y7tT, 2021-01-10T23:14:42 (inv1ok,incorrect,check,)
+    QoMNMgTefdFwpCMYQ, 2021-01-10T23:16:07 (inv1ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Track->this/Track} Right type = {this/Signal->this/Signal})
+      XiiHNoDyvSEwWikNv, 2021-01-10T23:17:05 (inv1ok,correct,check,)
+        5jRpCP5JK2BgcW9mx, 2021-01-10T23:20:42 (There are 1 possible tokens that can appear here: ))
+          YGsJwFkwLFx8NKW5G, 2021-01-10T23:20:48 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Track})
+            nxtQ6RpEZ3XaDAvFT, 2021-01-10T23:21:41 (inv2ok,correct,check,)
+              3YztbpFWR3gJnoDQs, 2021-01-10T23:22:19 (inv3ok,incorrect,check,)
+                6Ey49ziKdJBjv6rtr, 2021-01-10T23:22:33 (inv3ok,incorrect,check,)
+                  zgNLANJoQiigk7ec6, 2021-01-10T23:23:01 (inv3ok,correct,check,)
+  xwPMQuzHBz7DeYyfH, 2021-01-10T23:14:51 (inv1ok,incorrect,check,)
+    YNp9zzmykBAie9nAK, 2021-01-10T23:16:38 (The name "singal" cannot be found.)
+      JugjyttNEZ5745AXr, 2021-01-10T23:16:43 (inv1ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Signal->this/Signal} Right type = {this/Track->this/Track})
+        EmbCwsSMbv5pbzeRu, 2021-01-10T23:16:50 (inv1ok,correct,check,)
+          4WHLmh3puYGH8rNi7, 2021-01-10T23:17:39 (inv1ok,correct,check,)
+            ZwnJERwFx94GqDFwr, 2021-01-10T23:21:06 (This cannot be a legal relational join where left hand side is this/Track - this/Junction (type = {this/Track}) right hand side is this/Track - this/Junction (type = {this/Track}))
+              aQi3M6jxBCXXRDckf, 2021-01-10T23:21:24 (This cannot be a legal relational join where left hand side is this/Track - this/Junction (type = {this/Track}) right hand side is this/Track - this/Junction (type = {this/Track}))
+                cs9MMCC8ThfcWyfM4, 2021-01-10T23:21:44 (inv2ok,correct,check,)
+                  mXjAHmz3DgCSQhyJY, 2021-01-10T23:21:53 (- can be used only between 2 expressions of the same arity, or between 2 integer expressions. Left type = {this/Track->this/Track} Right type = {this/Junction})
+                    YPKz3MSb7EmPc6hjx, 2021-01-10T23:21:59 (inv2ok,correct,check,)
+                      RA5LMtnHJQcJ75mnT, 2021-01-10T23:25:37 (inv3ok,correct,check,)
+  qfwgcJYnHfr6zcEYS, 2021-01-10T23:15:26 (The name "singnal" cannot be found.)
+    7X664PfsDePKNtkmg, 2021-01-10T23:15:31 (inv1ok,incorrect,check,)
+      Y5ET6qkMt9p7Xyg9f, 2021-01-10T23:15:51 (inv1ok,incorrect,check,)
+        kxX8Dq7QtqxjLjfnT, 2021-01-10T23:17:23 (inv1ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Signal->this/Signal} Right type = {this/Track->this/Track})
+          7TzM8t5GJ4YnMRWtK, 2021-01-10T23:17:33 (There are 1 possible tokens that can appear here: ))
+            mLxhrLxhTtfBd9C9X, 2021-01-10T23:17:43 (inv1ok,incorrect,check,Subset operator is redundant, because the left and right subexpressions are always disjoint. Left type = {this/Signal->this/Signal} Right type = {this/Track->this/Track})
+              6e9hv9HCk3F7GGA6E, 2021-01-10T23:18:07 (inv1ok,correct,check,)
+                ZqppiAbSo4iYHzKSZ, 2021-01-10T23:18:36 (inv1ok,correct,check,)
+                  cfxeYWy4DcntzGEBi, 2021-01-10T23:21:37 (inv2ok,incorrect,check,This variable is unused.)
+                    ruvfKkJeKHsnee8rc, 2021-01-10T23:22:46 (inv2ok,incorrect,check,)
+                      ixP6C34tDP4vWcuoz, 2021-01-10T23:22:52 (inv2ok,incorrect,check,This variable is unused.)
+                        EBjfDz8BAQAjPKANj, 2021-01-10T23:24:14 (inv2ok,incorrect,check,)
+                          83axw74Fpb9f84iP5, 2021-01-10T23:25:14 (inv2ok,correct,check,)
+                            ihSDFbGKRf2ZmuwsK, 2021-01-10T23:26:07 (The name "Tracks" cannot be found.)
+                              hXNiKnDjQRfdqMDER, 2021-01-10T23:26:11 (inv3ok,incorrect,check,)
+                                4shQhnYxFf25qN5iA, 2021-01-10T23:26:25 (inv3ok,incorrect,check,)
+                                  NwZ5MrBJoeCZ66eBn, 2021-01-10T23:28:08 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+                                    Sh6iokEBeFJeAmsrT, 2021-01-10T23:28:15 (inv3ok,correct,check,)
+                                      wLJba3YhKupsQP6YR, 2021-01-10T23:29:07 (inv3ok,correct,check,)
+  4wpLwveQ59R7wCqAu, 2021-01-13T15:43:18 (inv1ok,correct,check,)
+    tAYkWEq5k9kXqfvAP, 2021-01-13T15:46:09 (inv2ok,incorrect,check,)
+      ZYtjqv3tTYhiqMysW, 2021-01-13T15:46:18 (inv2ok,incorrect,check,)
+        iiHbQD83WGSi9fTJS, 2021-01-13T15:47:17 (inv2ok,incorrect,check,)
+          5E5583LSuSC4YLfcF, 2021-01-13T15:48:20 (inv2ok,correct,check,)
+  zNRWLkLSmmW5bFBBn, 2021-01-13T16:34:14 (inv1ok,correct,check,)
+    bWNEtsu79nij7PxLe, 2021-01-13T16:34:56 (inv2ok,incorrect,check,)
+      enixczPwPi3ATPnha, 2021-01-13T16:35:10 (inv2ok,incorrect,check,)
+        4tNSFqgcKahbrsEjr, 2021-01-13T16:35:38 (inv2ok,correct,check,)
+          aptoWDJB4Se7SSXen, 2021-01-13T16:38:09 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+            unnN3XRCXKkBNBBbg, 2021-01-13T16:38:43 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+              R4DznkE3E9rPhMKLh, 2021-01-13T16:39:17 (inv3ok,incorrect,check,)
+                7L4w8PPSJ96PcE8Q8, 2021-01-13T16:39:19 (This must be a formula expression. Instead, it has the following possible type(s): {this/Signal})
+                  4joTYe4fgi325XAbt, 2021-01-13T16:39:31 (inv3ok,incorrect,check,)
+                    8rxbJJ6HSs3YZustn, 2021-01-13T16:40:12 (inv3ok,incorrect,check,)
+                      m4JamC8xcKi7iZfXB, 2021-01-13T16:40:30 (inv3ok,incorrect,check,)
+                        W2FvsihK5PbpgKzm5, 2021-01-13T16:41:16 (inv3ok,incorrect,check,)
+                          SJKD7uEybtob6DjQe, 2021-01-13T16:41:35 (This must be a formula expression. Instead, it has the following possible type(s): {this/Track})
+                            hWDGTC9zpqHmCJk3T, 2021-01-13T16:42:17 (This cannot be a legal relational join where left hand side is t2 (type = {this/Track}) right hand side is t1 . (this/Track <: prox) (type = {this/Track}))
+                              jJrckEuwYGarkdfjJ, 2021-01-13T16:42:50 (inv3ok,incorrect,check,)
+                                cDRdiwBYTyYsfjiFB, 2021-01-13T16:43:15 (inv3ok,correct,check,)
+  99SixBR8n6vhC2jwX, 2021-01-13T19:53:29 (inv1ok,incorrect,check,)
+    JRGX6meQPPWuEoEmu, 2021-01-13T19:54:31 (There are 3 possible tokens that can appear here: ,  : =)
+      nLkkhEYN6CdWzrZJz, 2021-01-13T19:54:40 (inv1ok,incorrect,check,)
+        yQ2K68JoSQmb28NeH, 2021-01-13T19:55:25 (inv1ok,incorrect,check,)
+          QgcAMMAQ6NontXL2i, 2021-01-13T19:56:15 (inv1ok,incorrect,check,)
+            G7hcBLSZwsuze2W3T, 2021-01-13T19:56:34 (inv1ok,incorrect,check,)
+              v4rfdw8GFcAEWkybZ, 2021-01-13T19:56:49 (inv1ok,incorrect,check,)
+                ZMKY3LkHPdiPj5cxR, 2021-01-13T19:58 (inv1ok,incorrect,check,)
+                  niuhujtPc282cfpfX, 2021-01-13T19:58:32 (inv1ok,incorrect,check,)
+                    chZnknu5tPBA4M5mf, 2021-01-13T20:01:33 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+                      NgrWuGCyWBT3y9YBX, 2021-01-13T20:01:40 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+                        udJCxH4Grvbdjxs2Y, 2021-01-13T20:01:46 (inv1ok,correct,check,)
+                          uqzqA4uETtntsM8pb, 2021-01-13T20:06:06 (inv2ok,incorrect,check,)
+                            5LqyL7Q9c6ejnEx4u, 2021-01-13T20:06:37 (inv2ok,correct,check,)
+                              GJ7Y7hYv5NtuEJAdE, 2021-01-13T20:08:26 (inv3ok,correct,check,)
+  GSxfWBBqs4yLT9fke, 2021-01-13T19:54:31 (inv1ok,incorrect,check,)
+    8TNtipeTW5jX7GBym, 2021-01-13T19:55:10 (inv1ok,incorrect,check,)
+      B5bj4LgdDGZbsEL2s, 2021-01-13T19:55:18 (inv1ok,correct,check,)
+        A7ui75Zuy9qWXh8Po, 2021-01-13T19:58:27 (inv2ok,correct,check,)
+          3FH5SMJBoBgLAgSrs, 2021-01-13T20:04:52 (inv2ok,correct,check,)
+            tR4puA324PGifkFtN, 2021-01-13T20:04:54 (inv3ok,correct,check,)
+              CNZ98mYhjiaThnJNP, 2021-01-13T20:09:13 (model share)
+                2bHNPYQJ7uQpT4gTX, 2021-01-13T20:09:22 (model share)
+  f6sYBbyPnKoqBsMZ4, 2021-01-23T16:19:42 (in can be used only between 2 expressions of the same arity. Left type = {this/Signal} Right type = {univ->univ})
+    ZCtsKkyrEjTPrdWMN, 2021-01-23T16:20:04 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Signal})
+      oybrHe4GSqLygi74G, 2021-01-23T16:21:02 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+        7xgaGHz4CFcZF6M3Y, 2021-01-23T16:21:07 (^ can be used only with a binary relation. Instead, its possible type(s) are: {this/Signal})
+          PQRNvryjJrgp653MC, 2021-01-23T16:21:19 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Signal})
+            K7F54FGHQ8TXT3ZSC, 2021-01-23T16:21:44 (in can be used only between 2 expressions of the same arity. Left type = {this/Signal} Right type = {univ->univ})
+              5zSD6HM49NiEXTuzc, 2021-01-23T16:24:07 (inv1ok,incorrect,check,)
+                76SkycFSfbLABZbsH, 2021-01-23T16:24:22 (in can be used only between 2 expressions of the same arity. Left type = {this/Track} Right type = {univ->univ})
+                  KwdudGb3MWc7aCh5R, 2021-01-23T16:25:11 (~ can be used only with a binary relation. Instead, its possible type(s) are: {this/Signal})
+                    93WpR9rZio8i6aYc5, 2021-01-23T16:25:19 (inv1ok,incorrect,check,)
+                      h54WcWLANkXp8fTrW, 2021-01-23T16:25:28 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+                        TfZdvTCwqtNG5xDY3, 2021-01-23T16:26:52 (The name "t" cannot be found.)
+                          5x7AXvMqtELeHAafa, 2021-01-23T16:26:56 (in can be used only between 2 expressions of the same arity. Left type = {none} Right type = {univ->univ})
+                            5EhReyQE3TngCTmPZ, 2021-01-23T16:27:04 (in can be used only between 2 expressions of the same arity. Left type = {this/Track} Right type = {univ->univ})
+                              fTyDmhyu8qnmEMQW8, 2021-01-23T16:28:30 (The name "singal" cannot be found.)
+                                CGdGA3Q3JvDzCi56p, 2021-01-23T16:28:37 (inv1ok,incorrect,check,)
+                                  uaB3BmaZXuhTKvmXd, 2021-01-23T16:28:45 (inv1ok,incorrect,check,^ (this/Track <: signal) is redundant since its domain and range are disjoint: {this/Track->this/Signal})
+                                    XZqNgjzKhAQPkPBRF, 2021-01-23T16:29:28 (inv1ok,incorrect,check,^ (this/Track <: signal) is redundant since its domain and range are disjoint: {this/Track->this/Signal})
+                                      zrY5PmnZkbYbchk78, 2021-01-23T16:30:25 (The name "singal" cannot be found.)
+                                        X9KhiFv9agLxDBNSz, 2021-01-23T16:30:32 (Analysis cannot be performed since it requires higher-order quantification that could not be skolemized.)
+                                          NM5XveWkjpuf2Rd2Y, 2021-01-23T16:30:43 (inv1ok,correct,check,)
+                                            6t9S9KGfpStPHRQaR, 2021-01-23T17:14:45 (inv2ok,correct,check,)
+                                              RZLCefmM483CpK4nZ, 2021-01-23T17:15:57 (inv3ok,incorrect,check,)
+                                                oCmwx5k3ZvCy8u3wb, 2021-01-23T17:16:53 (inv3ok,incorrect,check,)
+                                                  Biodxfq6qDjzR8xRh, 2021-01-23T17:18:13 (inv3ok,correct,check,)
