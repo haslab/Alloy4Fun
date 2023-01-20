@@ -124,7 +124,9 @@ function handleExecuteModel(err, result) {
     if (result.instances)
         result = result.instances
 
-    storeInstances(result)
+    if (!Session.get('frozen-message'))
+        storeInstances(result)
+    
     if (Array.isArray(result)) result = result[0]
 
     // if there error returned by Alloy
@@ -159,11 +161,13 @@ function handleExecuteModel(err, result) {
         } else {
             log_messages.push(result.check ? `Counter-example found. ${command} is invalid.` : `Instance found. ${command} is consistent.`)
             log_classes.push(result.check ? 'log-wrong' : 'log-complete')
-            initGraphViewer('instance')
-            resetPositions()
-            resetState()
-            updateGraph(result.instance[currentState()])
-            newInstanceSetup()
+            if (!Session.get('frozen-message')) {
+                initGraphViewer('instance')
+                resetPositions()
+                resetState()
+                updateGraph(result.instance[currentState()])
+                newInstanceSetup()
+            }
         }
 
         Session.set('log-message', log_messages)

@@ -84,7 +84,11 @@ Model.attachSchema(new SimpleSchema({
     /** the timestamp. */
     time: {
         type: String
-    }
+    },
+    frozenmsg: {
+        type: String,
+        optional: true
+    },
 }))
 
 Model.publicFields = {

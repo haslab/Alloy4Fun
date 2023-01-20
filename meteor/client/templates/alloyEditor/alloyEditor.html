@@ -112,6 +112,12 @@
                     {{/each}}
                 </div>
 
+                <div class="col-lg-6 col-xs-10 col-xs-offset-1" id="log" {{showFrozen}}>
+                    {{#each frozenmsgs}}
+                        <p class="{{class}}">{{message}}</p>
+                    {{/each}}
+                </div>
+
                 <!-- Instance Viewer -->
                 <div class="col-lg-8 col-lg-offset-0 col-xs-10 col-xs-offset-1" {{showInstance}}>
                     <div id="instanceViewer" class="instanceViewer col-xs-12">

@@ -238,6 +238,10 @@ body {
     background-color: rgba(113, 29, 30, 0.76);
 }
 
+.editor-info-mark {
+    background-color: #99ccff;
+}
+
 .editor-error-mark {
     background-color: #811;
 }

@@ -9,6 +9,7 @@ import { cmdChanged, isUnsatInstance, prevState, nextState,
     lastState, currentState, setCurrentState, storeInstances, 
     getCurrentState, getCurrentTrace } from '../../lib/editor/state'
 import { staticProjection, savePositions, applyPositions } from '../../lib/visualizer/projection'
+import { markEditorInfo } from '../../lib/editor/feedback'
 
 Template.alloyEditor.helpers({
     /**
@@ -29,7 +30,7 @@ Template.alloyEditor.helpers({
     nextInstEnabled() {
         const instanceIndex = Session.get('currentInstance')
         const maxInstanceNumber = Session.get('maxInstance')
-        const enab = !Session.get('model-updated') && instanceIndex !== maxInstanceNumber
+        const enab = !Session.get('frozen-message') && !Session.get('model-updated') && instanceIndex !== maxInstanceNumber
         return enab ? '' : 'disabled'
     },
 
@@ -39,7 +40,7 @@ Template.alloyEditor.helpers({
      */
     prevInstEnabled() {
         const instanceIndex = Session.get('currentInstance')
-        const enab = !Session.get('model-updated') && instanceIndex !== 0
+        const enab = !Session.get('frozen-message') && !Session.get('model-updated') && instanceIndex !== 0
         return enab ? '' : 'disabled'
     },
 
@@ -75,7 +76,7 @@ Template.alloyEditor.helpers({
      * been already shared and is not showing a static shared instance.
      */
     shareInstEnabled() {
-        const enab = !Session.get('inst-shared') && !Session.get('from-instance')
+        const enab = !Session.get('frozen-message') && !Session.get('inst-shared') && !Session.get('from-instance')
         return enab ? '' : 'disabled'
     },
 
@@ -98,6 +99,11 @@ Template.alloyEditor.helpers({
         const s = Session.get('from-instance')
         return (s || m > 0 || (m > 0 && (m !== 1 || !isUnsatInstance(0)))) ? '' : 'hidden'
     },
+
+    showFrozen() {
+        return Session.get('frozen-message') ? '' : 'hidden'
+    },
+
 
     /**
      * The list of commands, including those hidden inherited.
@@ -141,6 +147,17 @@ Template.alloyEditor.helpers({
     /**
      * The logging messages to be presented.
      */
+    frozenmsgs() {
+        messages = Session.get('frozen-message')
+        if (messages == "") {
+            return []
+        } else if (Array.isArray(messages) && Array.isArray(classes)) {
+            return messages.map((msg, i) => ({ message: msg, class: 'log-warning' }))
+        } else {
+            return [{ message: messages, class: 'log-warning' }]
+        }
+    },
+
     logs() {
         messages = Session.get('log-message')
         classes = Session.get('log-class')
@@ -157,6 +174,7 @@ Template.alloyEditor.helpers({
             return [{ message: messages, class: classes }]
         }
     },
+
 
     /**
      * The current private model sharing URL.
@@ -218,7 +236,7 @@ Template.alloyEditor.events({
         if (e.ctrlKey && e.key === 'e') $('#exec > button').trigger('click')
 
         // clear all marks
-        textEditor.doc.getAllMarks().forEach(marker => marker.clear())
+        textEditor.doc.getAllMarks().forEach(marker => (marker.className != 'editor-info-mark') ? marker.clear() : null)
     },
     'click #exec > button': executeModel,
     'change .command-selection > select'() {
@@ -275,6 +293,12 @@ Template.alloyEditor.onRendered(() => {
         // update the textEditor
         textEditor.setValue(model.code)
 
+        Session.set('frozen-message',model.frozenmsg)
+        if(model.frozenmark)
+            markEditorInfo(model.frozenmark[0],model.frozenmark[1],model.frozenmark[2],model.frozenmark[3])
+
+        console.log(model.frozenmsg)
+
         // retrieve the shared theme
         const themeData = model.theme
         if (themeData) {
@@ -290,7 +314,8 @@ Template.alloyEditor.onRendered(() => {
         // if a shared instance, process it
         if (model.instance) {
             Session.set('from-instance', true)
-            Session.set('log-message', 'Static shared instance. Execute model to iterate.')
+            if (!model.frozenmsg)
+                Session.set('log-message', 'Static shared instance. Execute model to iterate.')
             Session.set('log-class', 'log-info')
             initGraphViewer('instance')
             // load graph JSON data

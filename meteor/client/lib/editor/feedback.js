@@ -49,6 +49,10 @@ export function markEditorError(line, col, line2, col2) {
     markEditor({ line: line, ch: col }, { line: line2, ch: col2 + 1 }, "editor-error-mark")
 }
 
+export function markEditorInfo(line, col, line2, col2) {
+    markEditor({ line: line, ch: col }, { line: line2, ch: col2 + 1 }, "editor-info-mark")
+}
+
 /**
  * Mark the text in the editor with a warning
  *

@@ -33,7 +33,8 @@ export function cmdChanged() {
 export function modelExecuted() {
     Session.set('model-updated', false)
     instChanged()
-    Session.set('from-instance', false)
+    if (!Session.get('frozen-message'))
+        Session.set('from-instance', false)
 }
 
 /**
