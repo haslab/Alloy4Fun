@@ -236,7 +236,7 @@ Template.alloyEditor.events({
         if (e.ctrlKey && e.key === 'e') $('#exec > button').trigger('click')
 
         // clear all marks
-        textEditor.doc.getAllMarks().forEach(marker => (marker.className != 'editor-info-mark') ? marker.clear() : null)
+        textEditor.doc.getAllMarks().forEach(marker => !marker.className.includes("-info-") ? marker.clear() : null);
     },
     'click #exec > button': executeModel,
     'change .command-selection > select'() {

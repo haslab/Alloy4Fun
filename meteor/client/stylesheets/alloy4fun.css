@@ -238,8 +238,12 @@ body {
     background-color: rgba(113, 29, 30, 0.76);
 }
 
+.editor-info-freeze {
+    background-color: #fa04;
+}
+
 .editor-info-mark {
-    background-color: #99ccff;
+    background-color: #993605;
 }
 
 .editor-error-mark {

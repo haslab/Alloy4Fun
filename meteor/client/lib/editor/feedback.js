@@ -27,12 +27,13 @@ export function displayError(err) {
  * @param {Object} to the ending position to mark
  * @param {String} className the className that will be applied to the mark
  */
-export function markEditor(from, to, className) {
+export function markEditor(from, to, className, readOnly) {
     const options = {
         className: className,
         clearWhenEmpty: true,
         inclusiveLeft: true,
-        inclusiveRight: true
+        inclusiveRight: true,
+        readOnly: readOnly
     }
     textEditor.markText(from, to, options)
 }
@@ -46,11 +47,12 @@ export function markEditor(from, to, className) {
  * @param {Number} col2 the collumn of the last character to mark
  */
 export function markEditorError(line, col, line2, col2) {
-    markEditor({ line: line, ch: col }, { line: line2, ch: col2 + 1 }, "editor-error-mark")
+    markEditor({ line: line, ch: col }, { line: line2, ch: col2 + 1 }, "editor-error-mark", false)
 }
 
 export function markEditorInfo(line, col, line2, col2) {
-    markEditor({ line: line, ch: col }, { line: line2, ch: col2 + 1 }, "editor-info-mark")
+    markEditor({ line: line, ch: 1 }, { line: line2, ch: 999 }, "editor-info-freeze", true)
+    markEditor({ line: line, ch: col }, { line: line2, ch: col2 + 1 }, "editor-info-mark", true)
 }
 
 /**
@@ -62,5 +64,5 @@ export function markEditorInfo(line, col, line2, col2) {
  * @param {Number} col2 the collumn of the last character to mark
  */
 export function markEditorWarning(line, col, line2, col2) {
-    markEditor({ line: line, ch: col }, { line: line2, ch: col2 + 1 }, "editor-warning-mark")
+    markEditor({ line: line, ch: col }, { line: line2, ch: col2 + 1 }, "editor-warning-mark", false)
 }
