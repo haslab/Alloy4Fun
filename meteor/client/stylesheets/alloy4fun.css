@@ -66,13 +66,7 @@ body {
     height: 51px;
 }
 
-.cm-comments-alloy {
-    color: gray;
-}
-
-.cm-comment {
-    color: #777;
-}
+.cm-s-twilight .cm-commentB  { color:#777; font-style:italic; font-weight:bold; }
 
 .copyrights-block {
     margin: 0 auto;

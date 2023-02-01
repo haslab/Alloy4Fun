@@ -143,7 +143,7 @@ function handleExecuteModel(err, result) {
     }
     // else, show instance or unsat
     else {
-        const command = getCommandLabel()
+        command = getCommandLabel().split(" ")[1].replace(/_/g," ")
 
         log_messages = []
         log_classes = []
@@ -156,7 +156,7 @@ function handleExecuteModel(err, result) {
             markEditorWarning(result.line - 1, result.column - 1, result.line2 - 1, result.column2 - 1)
         }
         if (result.unsat) {
-            log_messages.push(result.check ? `No counter-examples. ${command} may be valid.` : `No instance found. ${command} may be inconsistent.`)
+            log_messages.push(result.check ? `No counter-example found. ${command} may be valid.` : `No instance found. ${command} may be inconsistent.`)
             log_classes.push(result.check ? 'log-complete' : 'log-wrong')
         } else {
             log_messages.push(result.check ? `Counter-example found. ${command} is invalid.` : `Instance found. ${command} is consistent.`)
