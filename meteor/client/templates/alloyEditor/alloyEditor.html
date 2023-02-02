@@ -53,7 +53,7 @@
                                 <span class="cbutton__text">Play</span><i class="legend">{{executeLabel}}</i>
                             </button>
                         </div>
-
+                        {{#if showNext}}
                         <div id="skip" class="col-lg-12 col-md-4 col-xs-4">
                             <button class="cbutton cbutton--effect-boris" {{nextEnabled}}>
                                  <div class="col-xs-12">
@@ -64,6 +64,7 @@
                                 <span class="cbutton__text">Next</span><i class="legend">Next Challenge</i>
                             </button>
                         </div>
+                        {{/if}}
                         {{#if showShareButtons}}
                         <div id="genUrl" class="col-lg-12 col-md-4 col-xs-4 text-center permalink">
                             <button id="genurlbtn" class="cbutton cbutton--effect-boris" {{shareModelEnabled}}>

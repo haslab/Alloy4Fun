@@ -74,9 +74,11 @@ Template.alloyEditor.helpers({
     nextEnabled() {
         const enab = (Session.get('unsat') || Session.get('timeout')) && Session.get('frozen-next')
         return enab ? '' : 'disabled'   
-        return 
     },
 
+    showNext() {
+        return Session.get('frozen-message')
+    },
     /**
      * Whether to enable the downloading of the derivation tree, if currently
      * on a shared private link.
@@ -355,7 +357,8 @@ Template.alloyEditor.onRendered(() => {
     // add click effects to buttons
     buttonsEffects()
 
-    timer = Meteor.setTimeout(disableExec, 10*1000)
+    if (Session.get("frozen-message"))
+        timer = Meteor.setTimeout(disableExec, 10*1000)
 })
 
 /**

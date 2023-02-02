@@ -161,7 +161,7 @@ function handleExecuteModel(err, result) {
             if (Session.get('frozen-message'))
                 textEditor.setOption("readOnly",true)
         } else {
-            log_messages.push(result.check ? (Session.get('frozen-message')?`The specification is still incorrect.`:`Counter-example found. ${command} is invalid.`) : `Instance found. ${command} is consistent.`)
+            log_messages.push(result.check ? (Session.get('frozen-message')?`The specification is still incorrect. Please try again.`:`Counter-example found. ${command} is invalid.`) : `Instance found. ${command} is consistent.`)
             log_classes.push(result.check ? 'log-wrong' : 'log-complete')
             if (!Session.get('frozen-message')) {
                 initGraphViewer('instance')
