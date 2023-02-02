@@ -156,10 +156,10 @@ function handleExecuteModel(err, result) {
             markEditorWarning(result.line - 1, result.column - 1, result.line2 - 1, result.column2 - 1)
         }
         if (result.unsat) {
-            log_messages.push(result.check ? `No counter-example found. ${command} may be valid.` : `No instance found. ${command} may be inconsistent.`)
+            log_messages.push(result.check ? (Session.get('frozen-message')?`The incorrect specification has been fixed.`:`No counter-example found. ${command} may be valid.`) : `No instance found. ${command} may be inconsistent.`)
             log_classes.push(result.check ? 'log-complete' : 'log-wrong')
         } else {
-            log_messages.push(result.check ? `Counter-example found. ${command} is invalid.` : `Instance found. ${command} is consistent.`)
+            log_messages.push(result.check ? (Session.get('frozen-message')?`The specification is still incorrect.`:`Counter-example found. ${command} is invalid.`) : `Instance found. ${command} is consistent.`)
             log_classes.push(result.check ? 'log-wrong' : 'log-complete')
             if (!Session.get('frozen-message')) {
                 initGraphViewer('instance')

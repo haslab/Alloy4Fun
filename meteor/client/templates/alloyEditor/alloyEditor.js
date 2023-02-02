@@ -49,7 +49,7 @@ Template.alloyEditor.helpers({
      * already shared and the model is not empty.
      */
     shareModelEnabled() {
-        const enab = !Session.get('model-shared')
+        const enab = !Session.get('model-shared') && !Session.get('frozen-message')
         return enab ? '' : 'disabled'
     },
 
@@ -294,10 +294,6 @@ Template.alloyEditor.onRendered(() => {
         textEditor.setValue(model.code)
 
         Session.set('frozen-message',model.frozenmsg)
-        if(model.frozenmark)
-            markEditorInfo(model.frozenmark[0],model.frozenmark[1],model.frozenmark[2],model.frozenmark[3])
-
-        console.log(model.frozenmsg)
 
         // retrieve the shared theme
         const themeData = model.theme
