@@ -89,6 +89,10 @@ Model.attachSchema(new SimpleSchema({
         type: String,
         optional: true
     },
+    frozennxt: {
+        type: String,
+        optional: true
+    },
 }))
 
 Model.publicFields = {

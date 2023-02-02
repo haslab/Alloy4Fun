@@ -156,7 +156,7 @@ function handleExecuteModel(err, result) {
             markEditorWarning(result.line - 1, result.column - 1, result.line2 - 1, result.column2 - 1)
         }
         if (result.unsat) {
-            log_messages.push(result.check ? (Session.get('frozen-message')?`The incorrect specification has been fixed. Skip to the next challenge.`:`No counter-example found. ${command} may be valid.`) : `No instance found. ${command} may be inconsistent.`)
+            log_messages.push(result.check ? (Session.get('frozen-message')?('The incorrect specification has been fixed.'+(Session.get('frozen-next')?' Please skip to the next challenge.':'You have completed all the challenges.')):`No counter-example found. ${command} may be valid.`) : `No instance found. ${command} may be inconsistent.`)
             log_classes.push(result.check ? 'log-complete' : 'log-wrong')
             if (Session.get('frozen-message'))
                 textEditor.setOption("readOnly",true)

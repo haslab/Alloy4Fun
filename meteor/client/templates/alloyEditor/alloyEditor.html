@@ -58,7 +58,7 @@
                             <button class="cbutton cbutton--effect-boris" {{nextEnabled}}>
                                  <div class="col-xs-12">
                                  <span class="fa-stack">
-                                    <i class="cbutton__icon fas fa-arrow-right fa-stack-2x"></i>
+                                    <i class="cbutton__icon fas {{nextShape}} fa-stack-2x"></i>
                                 </span>
                                 </div>
                                 <span class="cbutton__text">Next</span><i class="legend">Next Challenge</i>
@@ -138,7 +138,7 @@
                             <i class="cbutton__icon fa fa-fw fa-arrow-left auto-margin"></i>
                         </button>
                         <button id="nextTrace" class="cbutton {{isVariableModel}}">
-                            <i class="cbutton__icon fa fa-fw {{nextShape}} auto-margin"></i>
+                            <i class="cbutton__icon fa fa-fw {{nextInstShape}} auto-margin"></i>
                         </button>
                         <div id="currentTrace" class="{{isVariableModel}}">{{currentTrace}}</div>
                         <div style="clear: both;"></div>

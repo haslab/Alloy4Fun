@@ -101,6 +101,22 @@ export function getCurrentTrace() {
     return instances[instanceIndex]
 }
 
+export function disableExec() {
+    if (Session.get('unsat')) return
+    console.log("timed out")
+    Session.set('timeout',true)
+
+    log_messages = []
+    log_classes = []
+
+    log_messages.push('This challenge has timed out. '+(Session.get('frozen-next')?' Please skip to the next challenge.':'You have completed all the challenges.'))
+    log_classes.push('log-warning')
+    textEditor.setOption("readOnly",true)
+
+    Session.set('log-message', log_messages)
+    Session.set('log-class', log_classes)
+}
+
 /**
  * Sets the next known instance as the current one and returns it.
  *

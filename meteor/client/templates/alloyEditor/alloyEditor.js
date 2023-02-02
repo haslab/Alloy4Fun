@@ -7,7 +7,7 @@ import { downloadTree } from '../../lib/editor/downloadTree'
 import { copyToClipboard } from '../../lib/editor/clipboard'
 import { cmdChanged, isUnsatInstance, prevState, nextState, 
     lastState, currentState, setCurrentState, storeInstances, 
-    getCurrentState, getCurrentTrace } from '../../lib/editor/state'
+    getCurrentState, getCurrentTrace, disableExec } from '../../lib/editor/state'
 import { staticProjection, savePositions, applyPositions } from '../../lib/visualizer/projection'
 import { markEditorInfo } from '../../lib/editor/feedback'
 
@@ -19,7 +19,7 @@ Template.alloyEditor.helpers({
     execEnabled() {
         const commands = Session.get('commands')
         const running = Session.get('is_running')
-        const enab = !running && Session.get('model-updated') && commands.length > 0 && (!Session.get('frozen-message') || !Session.get('unsat'))
+        const enab = !running && Session.get('model-updated') && commands.length > 0 && (!Session.get('frozen-message') || (!Session.get('unsat') && !Session.get('timeout')))
         return enab ? '' : 'disabled'
     },
 
@@ -72,7 +72,7 @@ Template.alloyEditor.helpers({
     },
 
     nextEnabled() {
-        const enab = Session.get('unsat')
+        const enab = (Session.get('unsat') || Session.get('timeout')) && Session.get('frozen-next')
         return enab ? '' : 'disabled'   
         return 
     },
@@ -190,6 +190,10 @@ Template.alloyEditor.helpers({
         }
     },
 
+    nextShape() {
+        return Session.get('frozen-next') ? 'fa-arrow-right' : 'fa-times'
+    },
+
 
     /**
      * The current private model sharing URL.
@@ -221,7 +225,7 @@ Template.alloyEditor.helpers({
         return (state != 0) ? '' : 'disabled'
     },
 
-    nextShape() {
+    nextInstShape() {
         Session.get('inst-updated')
         const state = currentState()
         const last = lastState()
@@ -254,6 +258,11 @@ Template.alloyEditor.events({
         textEditor.doc.getAllMarks().forEach(marker => !marker.className.includes("-info-") ? marker.clear() : null);
     },
     'click #exec > button': executeModel,
+    'click #skip > button'() {
+        Router.go("/"+Session.get('frozen-next'))
+        Meteor.clearTimeout(timer)
+        Session.clear()
+    },
     'change .command-selection > select'() {
         cmdChanged()
     },
@@ -309,6 +318,7 @@ Template.alloyEditor.onRendered(() => {
         textEditor.setValue(model.code)
 
         Session.set('frozen-message',model.frozenmsg)
+        Session.set('frozen-next',model.frozennxt)
 
         // retrieve the shared theme
         const themeData = model.theme
@@ -344,6 +354,8 @@ Template.alloyEditor.onRendered(() => {
     }
     // add click effects to buttons
     buttonsEffects()
+
+    timer = Meteor.setTimeout(disableExec, 10*1000)
 })
 
 /**
