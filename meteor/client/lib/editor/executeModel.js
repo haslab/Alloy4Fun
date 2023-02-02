@@ -143,7 +143,7 @@ function handleExecuteModel(err, result) {
     }
     // else, show instance or unsat
     else {
-        command = getCommandLabel().split(" ")[1].replace(/_/g," ")
+        command = getCommandLabel()
 
         log_messages = []
         log_classes = []
@@ -156,8 +156,10 @@ function handleExecuteModel(err, result) {
             markEditorWarning(result.line - 1, result.column - 1, result.line2 - 1, result.column2 - 1)
         }
         if (result.unsat) {
-            log_messages.push(result.check ? (Session.get('frozen-message')?`The incorrect specification has been fixed.`:`No counter-example found. ${command} may be valid.`) : `No instance found. ${command} may be inconsistent.`)
+            log_messages.push(result.check ? (Session.get('frozen-message')?`The incorrect specification has been fixed. Skip to the next challenge.`:`No counter-example found. ${command} may be valid.`) : `No instance found. ${command} may be inconsistent.`)
             log_classes.push(result.check ? 'log-complete' : 'log-wrong')
+            if (Session.get('frozen-message'))
+                textEditor.setOption("readOnly",true)
         } else {
             log_messages.push(result.check ? (Session.get('frozen-message')?`The specification is still incorrect.`:`Counter-example found. ${command} is invalid.`) : `Instance found. ${command} is consistent.`)
             log_classes.push(result.check ? 'log-wrong' : 'log-complete')
@@ -169,7 +171,7 @@ function handleExecuteModel(err, result) {
                 newInstanceSetup()
             }
         }
-
+        Session.set('unsat',result.unsat)
         Session.set('log-message', log_messages)
         Session.set('log-class', log_classes)
     }

@@ -19,7 +19,7 @@ Template.alloyEditor.helpers({
     execEnabled() {
         const commands = Session.get('commands')
         const running = Session.get('is_running')
-        const enab = !running && Session.get('model-updated') && commands.length > 0
+        const enab = !running && Session.get('model-updated') && commands.length > 0 && (!Session.get('frozen-message') || !Session.get('unsat'))
         return enab ? '' : 'disabled'
     },
 
@@ -49,7 +49,7 @@ Template.alloyEditor.helpers({
      * already shared and the model is not empty.
      */
     shareModelEnabled() {
-        const enab = !Session.get('model-shared') && !Session.get('frozen-message')
+        const enab = !Session.get('model-shared')
         return enab ? '' : 'disabled'
     },
 
@@ -60,6 +60,21 @@ Template.alloyEditor.helpers({
     showModelLinks() {
         const enab = Session.get('model-shared')
         return enab
+    },
+
+    showShareButtons() {
+        const enab = !Session.get('frozen-message')
+        return enab
+    },
+
+    executeLabel() {
+        return Session.get('frozen-message')?"Test specification":"Execute"
+    },
+
+    nextEnabled() {
+        const enab = Session.get('unsat')
+        return enab ? '' : 'disabled'   
+        return 
     },
 
     /**

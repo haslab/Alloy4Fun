@@ -50,9 +50,21 @@
                                     {{/if}}
                                 </span>
                                 </div>
-                                <span class="cbutton__text">Play</span><i class="legend">Execute</i>
+                                <span class="cbutton__text">Play</span><i class="legend">{{executeLabel}}</i>
                             </button>
                         </div>
+
+                        <div id="skip" class="col-lg-12 col-md-4 col-xs-4">
+                            <button class="cbutton cbutton--effect-boris" {{nextEnabled}}>
+                                 <div class="col-xs-12">
+                                 <span class="fa-stack">
+                                    <i class="cbutton__icon fas fa-arrow-right fa-stack-2x"></i>
+                                </span>
+                                </div>
+                                <span class="cbutton__text">Next</span><i class="legend">Next Challenge</i>
+                            </button>
+                        </div>
+                        {{#if showShareButtons}}
                         <div id="genUrl" class="col-lg-12 col-md-4 col-xs-4 text-center permalink">
                             <button id="genurlbtn" class="cbutton cbutton--effect-boris" {{shareModelEnabled}}>
                                 <div class="col-xs-12">
@@ -67,6 +79,7 @@
                                 <span class="cbutton__text">Download derivations</span><i class="legend">Download derivations</i>
                             </button>
                         </div>
+                        {{/if}}
                     </div>
                 </div>
 
@@ -137,6 +150,7 @@
                 </div>
 
                 <div class="text-center" {{showInstance}}>
+                {{#if showShareButtons}}
                 <div id="prev" class="col-lg-4 col-md-4 col-xs-4 col-lg-offset-0  col-md-offset-2 col-xs-offset-2">
                     <button class="cbutton cbutton--effect-boris" {{prevInstEnabled}}>
                         <div class="col-xs-12">
@@ -164,7 +178,7 @@
                         </button>
                     </div>
                 </div>
-
+                {{/if}}
                 {{#if showInstanceLinks}}
                 <div id="url-instance-permalink" class="col-lg-4 col-md-12 col-xs-12">
                     <div class="text-center">
