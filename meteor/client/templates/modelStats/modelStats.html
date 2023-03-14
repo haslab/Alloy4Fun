@@ -1,0 +1,144 @@
+
+<template name="treeNodeTemplate" >
+    <a href="#item-{{_id}}" class="more list-group-item {{class}}" data-toggle="collapse" style="padding-left:{{padding}}px">
+    <i id="icon-Fhmj9LDmCatfj9mgd" class="glyphicon glyphicon-chevron-right"></i>{{_id}}, {{time}}. {{cmd_n}} {{state}}{{printMsg}}</a>
+    {{#if hasChildren}}
+      <div class="list-group collapse show" id="item-{{_id}}">
+        {{#each children}}
+          {{> treeNodeTemplate}}
+        {{/each}}
+      </div>
+    {{/if}}
+</template>
+
+<template name="graphNodeTemplate" >
+    <div id="graph" class="graph"></div>
+</template>
+
+
+<template name="modelStats">
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <!-- page head -->
+            <div id="headTitle" class="col-xs-12">
+                <h1 class="page-header">Alloy4Fun
+                </h1>
+            </div>
+
+        </div>
+
+
+        <div>
+        
+        <p>Statistics consider <i>challenges</i> all <i>check</i> commands in the <i>root</i> model. Unless explicitly stated, executions statistics include <i>all</i> commands, including those that are introduced by the user in a session. Recall that for challenges <i>correctness</i> is unsatisfiability.</p>
+        
+        <dl>
+        <dt>Challenge name</dt><dd>{{getName}}</dd>
+        <dt>Creation time</dt><dd>{{getDate}}</dd>
+        <dt># sub-challenges</dt><dd>{{getNumChallenges}}</dd>
+        <dt>Metric catalog</dt><dd>{{getCatalog}}</dd>
+        </dl>
+        <dl>
+        {{#each cmd in getScalars}}
+        <dt>{{cmd.name}} <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" title={{cmd.desc}}></i></dt><dd>{{round cmd.value}}</dd>
+        {{/each}}
+        </dl> 
+        
+        {{#each cmd in getBars}}
+        <h3>{{cmd.name}} <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" title={{cmd.desc}}></i></h3>
+
+        <canvas id = {{cmd.name}} ></canvas>
+        {{/each}}
+
+        {{#each cmd in getClassified}}
+
+        <h3>{{cmd.name}} <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" title={{cmd.desc}}></i></h3>
+
+        <canvas id={{cmd.name}} ></canvas>
+        {{/each}}
+
+        {{#each cmd in getChallenges}}
+
+        <h3>{{cmd.name}} <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" title={{cmd.desc}}></i></h3>
+
+        <ul id="{{cmd.name}}">
+        {{#each cmd2 in cmd.challenges}}
+        <li id="{{cmd2.challenge}}" class="{{cselected cmd.name cmd2.challenge}} chselect">{{cmd2.challenge}}</li>
+        {{/each}}
+        </ul>
+
+        <canvas id=g{{cmd.name}} ></canvas>
+
+        {{/each}}
+
+        <h3>Submission graph <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" title="Each node represents a set of syntatically equivalent submissions to a challenge, and weighted edges the number of subsequent submissions. A sequence of submissions is a sequence of syntatically correct entries for the same challenge (other entries are removed and the session shortcircuited)."></i></h3>
+        <ul>
+        {{# each x in graphItems}}
+        <li id="graph{{x.challenge}}" class="{{gselected x.challenge}} grselect">{{x.challenge}}</li>
+        {{/each}}
+        </ul>
+        {{>graphNodeTemplate}}
+        
+
+        <!--
+        <h3>Full derivation tree</h3>
+        <div class="just-padding">
+        <div class="list-group list-group-root well">
+        {{#each treeItems}}
+        {{>treeNodeTemplate}}
+        {{/each}}
+        </div>
+        </div>
+        -->
+
+        <footer class="footer">
+            <div class="container">
+                <div id="information" class="text-center col-xs-12">
+                    <p>Privacy Policy: Alloy4Fun logs all user interactions, including code and options, which may be analyzed and made public for research purposes. Do not share confidential information. However, Alloy4Fun does not collect any personally identifiable information.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div id="logos" class="text-center col-lg-10 col-md-12 col-xs-12 col-lg-offset-1 col-md-offset-0 col-xs-offset-0">
+                    <div class="col-lg-6 col-xs-6">                        
+                    <p class="text-left"><img src="https://github.githubassets.com/favicon.ico" style="height:16px;"/> <a target="_blank" href="https://github.com/haslab/Alloy4Fun">Alloy4Fun</a> developed by:</p>
+                    </div>
+                    <div class="col-lg-6 col-xs-6">                        
+                    <p class="text-left">Funded by:</p>
+                    </div>
+                    <div class="col-xs-6">                        
+                    <div class="col-lg-3 col-md-3 col-xs-3">
+                        <img class="img-responsive" src="/Logo_INESCTEC.png"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-3">
+                        <img class="img-responsive" src="/Logo_UM.png"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-3">
+                        <img class="img-responsive" src="/Logo_FEUP.png"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-3">
+                    </div>
+                    </div>
+                    <div class="col-xs-6">                        
+                    <div class="col-lg-3 col-md-3 col-xs-3">
+                        <img class="img-responsive" src="/Logo_FCT.png"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-3">
+                        <img class="img-responsive" src="/Logo_Compete2020.png"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-3">
+                        <img class="img-responsive" src="/Logo_Portugal2020.png"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-3">
+                        <img class="img-responsive" src="/Logo_UE.png"/>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+</template>
