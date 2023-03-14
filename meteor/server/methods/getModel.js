@@ -1,4 +1,5 @@
 import { Meteor } from 'meteor/meteor'
+import { Model } from '../../lib/collections/model'
 import { extractSecrets,
     getCommandsFromCode,
     containsValidSecret } from '../../lib/editor/text'

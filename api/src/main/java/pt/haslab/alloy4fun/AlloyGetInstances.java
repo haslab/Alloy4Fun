@@ -15,7 +15,6 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
-import edu.mit.csail.sdg.alloy4.Pos;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -132,7 +131,7 @@ public class AlloyGetInstances {
 		return Response.ok(res).build();
 	}
 
-	static private String batchAdd(InstancesRequest req,List<ErrorWarning> warnings) throws Err {
+	static private String batchAdd(InstancesRequest req, List<ErrorWarning> warnings) throws Err {
 		JsonArrayBuilder solsArrayJSON = Json.createArrayBuilder();
 		A4Solution ans = RestApplication.getSol(req.sessionId);
 		Command cmd = RestApplication.getCommand(req.sessionId);

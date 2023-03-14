@@ -283,6 +283,9 @@ Template.alloyEditor.events({
     },
     'click #genInstanceUrl > button': shareInstance,
     'click #downloadTree > button': downloadTree,
+    'click #statistics > button'(linkId) {
+        Router.go("/stats/"+Router.current().params._id)
+    },
     'click .clipboardbutton'(evt) {
         copyToClipboard(evt)
     }

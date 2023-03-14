@@ -18,3 +18,9 @@ swarm:
       handlers:
       - FILE
       - CONSOLE
+  undertow:
+    servers:
+      default-server:
+        http-listeners:
+          default:
+            max-post-size: 2147483648

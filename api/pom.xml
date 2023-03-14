@@ -19,6 +19,11 @@
 					</execution>
 				</executions>
 			</plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.2</version>
+         </plugin>
 		</plugins>
 	</build>
 	<properties>
@@ -29,6 +34,7 @@
 		<version.wildfly-swarm>2.7.0.Final</version.wildfly-swarm>
 	</properties>
 	<dependencies>
+
 		<dependency>
   			<groupId>io.thorntail</groupId>
   			<artifactId>logging</artifactId>
@@ -57,6 +63,11 @@
 			<artifactId>javax.json</artifactId>
 			<version>1.0.4</version>
 		</dependency>
+		<dependency>
+  		<groupId>ModelMetrics</groupId>
+  		<artifactId>ModelMetrics</artifactId>
+  		<version>0.0.1</version>
+  	</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
@@ -73,7 +84,8 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-		</dependencies>
+  	
+  		</dependencies>
 	</dependencyManagement>
 	<repositories>
 		<repository>

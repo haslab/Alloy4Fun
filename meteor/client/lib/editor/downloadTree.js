@@ -19,6 +19,15 @@ export function downloadTree() {
     })
 }
 
+export function createTree() {
+    const linkId = Router.current().params._id
+    Meteor.call('downloadTree', linkId, (err, res) => {
+        if (err) return displayError(err)
+        const d = new Date()
+        Session.set('derivation',descendantsToTree(res))
+    })
+}
+
 /**
  * Converts a list of flat descendants into a tree object using Hashmap and
  * DFS.
@@ -42,11 +51,13 @@ export function descendantsToTree(res) {
     // depth first search to obtain recursive tree structure
     let current; const
         queue = [root]
+    root.depth = 0
     while (queue.length) {
         current = queue.shift()
         current.children = current.children || []
         hashmap[current._id].forEach((model) => {
             queue.push(model)
+            model.depth = current.depth + 1
             current.children.push(model)
         })
     }

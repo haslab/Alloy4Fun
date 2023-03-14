@@ -27,8 +27,6 @@ Meteor.methods({
             // insert the new model
             const new_nav_id = Navigation.insert(new_nav)
 
-            console.log('new nav op: '+new_nav_id)
-            
 
     }
 })
