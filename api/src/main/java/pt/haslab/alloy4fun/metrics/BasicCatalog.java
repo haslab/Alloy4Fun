@@ -141,21 +141,21 @@ public class BasicCatalog {
 		return new Object[] { db.warnings().size() };
 	}
 	
-	@MetricMethod(rule = "Unsat executions with warnings", description = "The number of unsatisfiable executions that produced warning messages.", group = 12)
+	@MetricMethod(rule = "Unsat executions w/ warnings", description = "The number of unsatisfiable executions that produced warning messages.", group = 12)
 	public static Object[] correctWarning(@ForAllExecutions A4FExecution exe) {
 		if (exe.result() != UNSAT || exe.wns.isEmpty())
 			return null;
 		return new Object[] { exe.result() };
 	}
 
-	@MetricMethod(rule = "Sat executions with warnings", description = "The number of satisfiable executions that produced warning messages.", group = 12)
+	@MetricMethod(rule = "Sat executions w/ warnings", description = "The number of satisfiable executions that produced warning messages.", group = 12)
 	public static Object[] incorrectWarning(@ForAllExecutions A4FExecution exe) {
 		if (exe.result() != SAT || exe.wns.isEmpty())
 			return null;
 		return new Object[] { exe.result() };
 	}
 
-	@MetricMethod(rule = "Error executions with warnings", description = "The number of errored executions that produced warning messages.", group = 12)
+	@MetricMethod(rule = "Error executions w/ warnings", description = "The number of errored executions that produced warning messages.", group = 12)
 	public static Object[] erroredWarning(@ForAllExecutions A4FExecution exe) {
 		if (exe.result() != ERROR || exe.wns.isEmpty())
 			return null;

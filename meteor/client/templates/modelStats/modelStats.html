@@ -31,7 +31,7 @@
 
 
         <div>
-        
+        <div class="group">
         <p>Statistics consider <i>challenges</i> all <i>check</i> commands in the <i>root</i> model. Unless explicitly stated, executions statistics include <i>all</i> commands, including those that are introduced by the user in a session. Recall that for challenges <i>correctness</i> is unsatisfiability.</p>
         
         <dl>
@@ -45,7 +45,9 @@
         <dt>{{cmd.name}} <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" title={{cmd.desc}}></i></dt><dd>{{round cmd.value}}</dd>
         {{/each}}
         </dl> 
-        
+    </div>
+        <div class="group">
+
         {{#each cmd in getBars}}
         <h3>{{cmd.name}} <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" title={{cmd.desc}}></i></h3>
 
@@ -73,6 +75,9 @@
 
         {{/each}}
 
+</div>
+        <div class="group">
+
         <h3>Submission graph <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" title="Each node represents a set of syntatically equivalent submissions to a challenge, and weighted edges the number of subsequent submissions. A sequence of submissions is a sequence of syntatically correct entries for the same challenge (other entries are removed and the session shortcircuited)."></i></h3>
         <ul>
         {{# each x in graphItems}}
@@ -81,7 +86,7 @@
         </ul>
         {{>graphNodeTemplate}}
         
-
+</div>
         <!--
         <h3>Full derivation tree</h3>
         <div class="just-padding">
