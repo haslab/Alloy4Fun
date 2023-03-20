@@ -246,7 +246,7 @@ public class AlloyGetStats {
 		statsJSON.add("challenges", metricArray);
 		Map<String,Integer> nodeIds = new HashMap<>();
 		int nodeCtr = 0;
-		
+		System.out.println(stats.graphEdges());
 		JsonArrayBuilder graphArray = Json.createArrayBuilder();
 		for (String cld : stats.graphNodes().keySet()) {
 			JsonObjectBuilder graphDict = Json.createObjectBuilder();
@@ -254,15 +254,18 @@ public class AlloyGetStats {
 			for (Node nd : stats.graphNodes().get(cld).values()) {
 				nodeArray.add(toJson(nd,nodeCtr));
 				nodeIds.put(nd.label, nodeCtr);
+				System.out.println("nd: "+nd.label+" -> "+nodeCtr);
 				nodeCtr++;
 			}
 			JsonArrayBuilder edgeArray = Json.createArrayBuilder();
-			for (Entry<String, Entry<String, Integer>> nd : stats.graphEdges().get(cld).entrySet()) {
-				JsonObjectBuilder edgeDict = Json.createObjectBuilder();
-				edgeDict.add("from", nodeIds.get(nd.getKey()));
-				edgeDict.add("to", nodeIds.get(nd.getValue().getKey()));
-				edgeDict.add("value", nd.getValue().getValue());
-				edgeArray.add(edgeDict);
+			for (Entry<String, Map<String, Integer>> nd : stats.graphEdges().get(cld).entrySet()) {
+				for (Entry<String, Integer> to : nd.getValue().entrySet()) {
+					JsonObjectBuilder edgeDict = Json.createObjectBuilder();
+					edgeDict.add("from", nodeIds.get(nd.getKey()));
+					edgeDict.add("to", nodeIds.get(to.getKey()));
+					edgeDict.add("value", to.getValue());
+					edgeArray.add(edgeDict);
+				}
 			}
 			
 			graphDict.add("challenge", cld);

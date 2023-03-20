@@ -371,7 +371,7 @@ public class ModelStats {
 		return getA4f().nodes;
 	}
 
-	public Map<String, Map<String, Entry<String, Integer>>> graphEdges() {
+	public Map<String, Map<String, Map<String, Integer>>> graphEdges() {
 		return getA4f().edges;
 	}
 

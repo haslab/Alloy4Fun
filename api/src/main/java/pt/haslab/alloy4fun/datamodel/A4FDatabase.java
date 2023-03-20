@@ -66,7 +66,7 @@ public class A4FDatabase {
 	
 	private Map<String,Map<String,String>> normalized = new TreeMap<>();
 	public final Map<String,Map<String,Node>> nodes = new TreeMap<>();
-	public final Map<String,Map<String,Entry<String,Integer>>> edges = new TreeMap<>();
+	public final Map<String,Map<String,Map<String,Integer>>> edges = new TreeMap<>();
 
 	
 	/* The names of the predicates to be filled in the challenges (actually, currently empty preds in root). */
@@ -144,8 +144,11 @@ public class A4FDatabase {
 					nodes.computeIfAbsent(chl, x -> new HashMap<>()).computeIfAbsent(mdl_norm, x -> new Node(mdl.result().toString(), mdl_norm)).increase();
 					for (A4FModel cld : mdl.childrenCmd(chl)) {
 						String cld_norm = normalized.get(chl).get(cld.id);
-						if (cld_norm != null)
-							edges.computeIfAbsent(chl, x -> new HashMap<>()).compute(mdl_norm, (x,y) -> y==null?new AbstractMap.SimpleEntry<>(cld_norm,1):new AbstractMap.SimpleEntry<>(cld_norm,y.getValue()+1));
+						if (cld_norm != null) {
+							edges.computeIfAbsent(chl, x -> new HashMap<>())
+								.computeIfAbsent(mdl_norm, x -> new HashMap<>())
+								.compute(cld_norm, (x,y) -> y==null?1:y+1);
+						}
 					}
 				}
 			}
