@@ -14,7 +14,7 @@ Meteor.methods({
       */
     getStats(linkId) {
         return new Promise((resolve, reject) => {
-
+            
             const link = Link.findOne(linkId)
             if (!link) return // undefined if link does not exist
             const model = Model.findOne(link.model_id)
@@ -28,7 +28,10 @@ Meteor.methods({
             const instances = Instance.find().fetch()
 
             const navigations = Navigation.find().fetch()
-              
+
+            console.log(links, models, instances)
+
+
             HTTP.call('POST', `${Meteor.settings.env.API_URL}/getStats`, {
                 data: {
                     model: model._id, models, instances, links, navigations

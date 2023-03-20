@@ -292,6 +292,9 @@ Template.alloyEditor.events({
 })
 
 Template.alloyEditor.onRendered(() => {
+
+    window.onbeforeunload = function () {return false;}
+
     Session.set('model-updated', false)
     Session.set('inst-updated', false)
     Session.set('inst-shared', false)
@@ -361,7 +364,7 @@ Template.alloyEditor.onRendered(() => {
     buttonsEffects()
 
     if (Session.get("frozen-message"))
-        timer = Meteor.setTimeout(disableExec, 10*1000)
+        timer = Meteor.setTimeout(disableExec, 5*60*1000)
 })
 
 /**
