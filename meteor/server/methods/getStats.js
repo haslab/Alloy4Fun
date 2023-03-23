@@ -29,9 +29,6 @@ Meteor.methods({
 
             const navigations = Navigation.find().fetch()
 
-            console.log(links, models, instances)
-
-
             HTTP.call('POST', `${Meteor.settings.env.API_URL}/getStats`, {
                 data: {
                     model: model._id, models, instances, links, navigations
@@ -48,7 +45,8 @@ Meteor.methods({
                     name: content.name,
                     scalars: content.scalars
                 }
-
+                console.log(content.graphs[0].nodes)
+                console.log(content.graphs[0].edges)
                 Stats.insert(new_stats)  
 
                 // resolve the promise

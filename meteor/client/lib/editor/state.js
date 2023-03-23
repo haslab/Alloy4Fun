@@ -109,7 +109,7 @@ export function disableExec() {
     log_messages = []
     log_classes = []
 
-    log_messages.push('This challenge has timed out. '+(Session.get('frozen-next')?' Please skip to the next challenge.':' You have completed all the challenges.'))
+    log_messages.push('This challenge has timed out. '+(Session.get('frozen-next')?' Please skip to the next challenge.':' You have completed all the challenges. Please proceed to the <a href="https://questionpro.com/t/AXF6uZxWj3">final questionnaire</a>.'))
     log_classes.push('log-warning')
     textEditor.setOption("readOnly",true)
 
