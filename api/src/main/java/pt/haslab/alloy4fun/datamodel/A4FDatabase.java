@@ -160,21 +160,22 @@ public class A4FDatabase {
 			System.out.println("Could not find parent model "+id);
 			return null;
 		}
-		A4FModel mdl = models.get(id);
+		if (id.equals(root().id))
+			return root();
 
+		A4FModel mdl = models.get(id);
+		
 		A4FModel parent = mdl.parent;
 
 		if (parent != null)
 			return mdl;
 		
-		if(!mdl.id.equals(this.model_id)) {
-			try {
-				parent = calculateDerivTree(mdl.parent_entry,reexecute);
+		try {
+			parent = calculateDerivTree(mdl.parent_entry,reexecute);
 
-				mdl.setParent(parent);
-			} catch (Exception e) {
-				System.out.println("Problems with derivationOf of "+id);
-			}
+			mdl.setParent(parent);
+		} catch (Exception e) {
+			System.out.println("Problems with derivationOf of "+id);
 		}
 		
 		String model = mdl.code;
@@ -211,9 +212,6 @@ public class A4FDatabase {
 						normalized.computeIfAbsent(preds.get(f.label), x -> new HashMap<String,String>()).put(mdl.id,ast);
 					}
 				}
-						
-				
-				
 				
 				final Command cmd = wrl.getAllCommands().get(((A4FExecution) mdl).cmd_index);
 				Err err = null;
