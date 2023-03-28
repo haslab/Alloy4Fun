@@ -105,9 +105,9 @@ public final class NormalizeExpr extends VisitReturn<Expr> {
     @Override
     public Expr visit(ExprLet x) {
     	Expr a = visitThis(x.expr);
-    	Expr b = visitThis(x.sub);
     	ExprVar nv = ExprVar.make(null, ""+vcounter++);
     	renames.put(x.var, nv);
+    	Expr b = visitThis(x.sub);
     	return ExprLet.make(null, nv, a, b);
     }
 
