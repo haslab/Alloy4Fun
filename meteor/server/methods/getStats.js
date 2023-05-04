@@ -1,5 +1,4 @@
 import { Meteor } from 'meteor/meteor'
-import { Stats } from '../../lib/collections/stats'
 
 Meteor.methods({
 
@@ -19,40 +18,21 @@ Meteor.methods({
             if (!link) return // undefined if link does not exist
             const model = Model.findOne(link.model_id)
 
-            const models = Model.find({
-              original: model._id
-            }).fetch()
-
-            const links = Link.find().fetch()
-
-            const instances = Instance.find().fetch()
-
-            const navigations = Navigation.find().fetch()
-
             HTTP.call('POST', `${Meteor.settings.env.API_URL}/getStats`, {
                 data: {
-                    model: model._id, models, instances, links, navigations
+                    model: model._id
                 }
             }, (error, result) => {
 
                 if (error) reject(error)
+                else {
+                  const content = JSON.parse(result.content)
 
-                const content = JSON.parse(result.content)
-                
-                const new_stats = {
-                    time: content.time, 
-                    model: content.model,
-                    name: content.name,
-                    scalars: content.scalars
+                  // resolve the promise
+                  resolve({
+                      stats: content
+                  })
                 }
-                console.log(content.graphs[0].nodes)
-                console.log(content.graphs[0].edges)
-                Stats.insert(new_stats)  
-
-                // resolve the promise
-                resolve({
-                    stats: content
-                })
             })
         })
     }
