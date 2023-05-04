@@ -306,6 +306,7 @@ Template.alloyEditor.onRendered(() => {
     Session.set('local-secrets', false)
     Session.set('model-shared', false)
     Session.set('from-instance', false)
+    Session.set('instances', [])
 
     // if there's subscribed data, process it
     if (Router.current().data && textEditor) {
@@ -342,6 +343,7 @@ Template.alloyEditor.onRendered(() => {
 
         // if a shared instance, process it
         if (model.instance) {
+
             Session.set('from-instance', true)
             if (!model.frozenmsg)
                 Session.set('log-message', 'Static shared instance. Execute model to iterate.')
@@ -356,6 +358,7 @@ Template.alloyEditor.onRendered(() => {
                 cy.zoom(model.instance.graph.zoom)
                 cy.pan(model.instance.graph.pan)
             }
+
         }
     } else { // else, a new model
         Session.set('from_private', undefined)

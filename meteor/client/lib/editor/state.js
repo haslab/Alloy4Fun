@@ -4,8 +4,6 @@
  * @module client/lib/editor/state
  */
 
-/** @var instances The received instances */
-let instances = []
 
 /**
  * Updates the state when the model has been changed.
@@ -74,11 +72,12 @@ export function storeInstances(allInstances) {
     const instanceIndex = Session.get('currentInstance')
     const maxInstanceNumber = Session.get('maxInstance')
     if (allInstances.alloy_error || allInstances[0].cnt == 0) {
-        instances = allInstances
+        Session.set('instances',allInstances)
         Session.set('currentInstance', 0)
         Session.set('maxInstance', (allInstances[0] && !allInstances[0].unsat)?allInstances.length:-1)
     } else { // a continuation batch of instances
-        instances = instances.concat(allInstances)
+
+        Session.set('instances',Session.get('instances').concat(allInstances))
         Session.set('maxInstance', maxInstanceNumber + allInstances.length)
     }
 }
@@ -91,11 +90,13 @@ export function storeInstances(allInstances) {
 export function getCurrentState() {
     const instanceIndex = Session.get('currentInstance')
     const stateIndex = Session.get('currentState')
+    const instances = Session.get('instances')
     if (!instances[instanceIndex]) return undefined
     return instances[instanceIndex].instance[stateIndex]
 }
 
 export function getCurrentTrace() {
+    const instances = Session.get('instances')
     if (!instances) return undefined
     const instanceIndex = Session.get('currentInstance')
     return instances[instanceIndex]
@@ -126,6 +127,7 @@ export function getNextInstance() {
     const instanceIndex = Session.get('currentInstance')
     const stateIndex = Session.get('currentState')
     Session.set('currentInstance', instanceIndex + 1)
+    const instances = Session.get('instances')
     if (!instances[instanceIndex + 1])
         return undefined
     else if (instances[instanceIndex + 1].unsat)
@@ -143,12 +145,14 @@ export function getPreviousInstance() {
     const instanceIndex = Session.get('currentInstance')
     const stateIndex = Session.get('currentState')
     Session.set('currentInstance', instanceIndex - 1)
+    const instances = Session.get('instances')
     return instances[instanceIndex - 1].instance[stateIndex]
 }
 
 export function nextState() {
     const stateIndex = Session.get('currentState')
     const instanceIndex = Session.get('currentInstance')
+    const instances = Session.get('instances')
     if (stateIndex + 1 == instances[instanceIndex].instance.length)
         Session.set('currentState',instances[instanceIndex].loop)
     else
@@ -169,6 +173,8 @@ export function setCurrentState(st) {
 }
 
 export function lastState() {
+    const instances = Session.get('instances')
+
     if (!instances || instances.length == 0)
         return -1
     const instanceIndex = Session.get('currentInstance')
@@ -191,6 +197,7 @@ export function prevState() {
  * @returns whether the instance is unsat
  */
 export function isUnsatInstance(i) {
+    const instances = Session.get('instances')
     return instances[i].unsat
 }
 
