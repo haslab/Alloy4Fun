@@ -51,6 +51,11 @@ Template.rightClickMenu.helpers({
         return (currentlyProjectedSigs.length == 0) ? 'hidden' : ''
     },
 
+    showAttrLabel(event) {
+        Session.get('theme-changed')
+        return relationSettings.isShowAsAttributesOn(event) ? 'Hide' : 'Show'
+    },
+
     hideAtomLabel(event) {
         Session.get('theme-changed')
         if (sigSettings.getAtomVisibility(event))

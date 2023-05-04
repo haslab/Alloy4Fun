@@ -3,6 +3,7 @@ relationSettings = (function relationSettings() {
     let edgeStyles = []
     let showAsArcs = []
     let showAsAttributes = []
+    let edges = []
 
     /**
      * Initialize relation settings structures.
@@ -12,6 +13,7 @@ relationSettings = (function relationSettings() {
         edgeStyles = (settings && settings.edgeStyles) || []
         showAsArcs = (settings && settings.showAsArcs) || []
         showAsAttributes = (settings && settings.showAsAttributes) || []
+        edges = []
     }
 
     /**
@@ -190,10 +192,12 @@ relationSettings = (function relationSettings() {
      * @param {Object} nodeEle the cytoscape node element
      */
     function getAttributeLabel(nodeEle) {
-
+        // cash edges which may disappear
+        if (cy.edges().length > edges.length)
+            edges = cy.edges()
         const aux = {}
         // retrieve all outgoing edges
-        cy.edges().forEach(edge => {
+        edges.forEach(edge => {
             // if show as attribute, add tuple to map for later processing
             if (edge.data().source === nodeEle.data().id)
             if (edge.data().relation && isShowAsAttributesOn(rel_id(edge.data()))) {
