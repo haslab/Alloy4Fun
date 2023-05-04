@@ -63,6 +63,11 @@
 			<artifactId>javax.json</artifactId>
 			<version>1.0.4</version>
 		</dependency>
+		<dependency>
+		    <groupId>org.mongodb</groupId>
+		    <artifactId>mongo-java-driver</artifactId>
+		    <version>3.12.13</version>
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>

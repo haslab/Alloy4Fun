@@ -38,7 +38,7 @@ public class AlloyGetProjection {
 		Request req;
 		try {
 			req = parseJSON(body);
-			A4Solution sol = RestApplication.getSol(req.uuid,req.index);
+			A4Solution sol = SolutionManager.getSol(req.uuid,req.index);
 			File tempFile = File.createTempFile("a4f", "als");
 			tempFile.deleteOnExit();
 			LOGGER.info("Projecting "+req.type+" at "+req.index);

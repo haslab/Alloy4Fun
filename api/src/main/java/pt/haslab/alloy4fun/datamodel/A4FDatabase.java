@@ -1,13 +1,11 @@
 package pt.haslab.alloy4fun.datamodel;
 
-import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.concurrent.Callable;
@@ -37,10 +35,10 @@ import edu.mit.csail.sdg.translator.A4Options;
 import edu.mit.csail.sdg.translator.A4Solution;
 import edu.mit.csail.sdg.translator.TranslateAlloyToKodkod;
 import pt.haslab.alloy4fun.datamodel.A4FExecution.RESULT;
+import pt.haslab.alloy4fun.graph.Node;
 import pt.haslab.alloy4fun.metrics.SessionMetrics;
 import pt.haslab.alloy4fun.metrics.utils.NormalizeExpr;
 import pt.haslab.alloy4fun.metrics.utils.PrintExpr;
-import pt.haslab.alloy4fun.graph.Node;
 
 public class A4FDatabase {
 
@@ -139,6 +137,7 @@ public class A4FDatabase {
 	public void calculateGraph() {
 		for (String chl : challengeLabels()) {
 			for (A4FExecution mdl : executions.values()) {
+				
 				String mdl_norm = normalized.get(chl).get(mdl.id);
 				if (mdl_norm != null) {
 					nodes.computeIfAbsent(chl, x -> new HashMap<>()).computeIfAbsent(mdl_norm, x -> new Node(mdl.result().toString(), mdl_norm)).increase();
@@ -322,6 +321,10 @@ public class A4FDatabase {
 	public Map<String, A4FLink> links() {
 		return links;
 	}
+	
+	public Map<String, List<A4FNavigation>> navigations() {
+		return navigations;
+	}
 
 	public List<String> timeouts() {
 		if (!reexecuted)
@@ -394,12 +397,89 @@ public class A4FDatabase {
 		module_name = or.getModelName();
 		
 		for (String id : models().keySet())
-			calculateDerivTree(id,true);
+			calculateDerivTree(id,false);
+		
+		System.out.println(normalized.keySet());
+		
+//		// merge sessions
+//		Map<String, Map<String,Session>> merge = new TreeMap<>();
+//		Comparator<String> comparator = new Comparator<String>() {
+//		    public int compare(String o1, String o2) {
+//		    	int c = ((Character) o2.charAt(0)).compareTo(((Character) o1.charAt(0)));
+//		        if (c != 0) return c;
+//		        else return (Integer.valueOf(o1.substring(1))).compareTo(Integer.valueOf(o2.substring(1)));
+//		    }
+//		};
+//		for (A4FModel m : root().children()) {
+//			Session s = new Session(m);
+//			getSession(m,s);
+//			merge.computeIfAbsent(m.id.split("-")[1], x -> new TreeMap<String,Session>(comparator)).put(m.id.split("-")[2], s);
+//		}
+		
+//		StringBuilder sb = new StringBuilder();
+//		for (String p : merge.keySet()) {
+//			sb.append(p);
+//			for (String c : merge.get(p).keySet()) {
+//				Session s = merge.get(p).get(c);
+//				sb.append("\t");
+//				sb.append(s.frst_dt == null?"--":s.frst_dt.toLocalTime());
+//				sb.append("\t");
+//				sb.append(s.r.size());
+//				sb.append("\t");
+//				sb.append(s.is_solved);
+//				sb.append("\t");
+//				sb.append(s.last_dt == null?"--":s.last_dt.toLocalTime());
+//				sb.append("\t");
+//				sb.append(s.has_fork);
+//			}
+//			sb.append("\n");
+//		}
+//		System.out.println(sb.toString());
 		
 		calculateGraph();
 
 	}
 	
+	
+//	private void getSession (A4FModel m, Session s) {
+//		if (s.is_solved && m.time.compareTo(s.last_dt) > 0) {
+//			System.out.println("Already solved: "+m.id);
+//		}
+//		if (!m.id.equals(s.origin)) {
+//			s.r.add(m);
+//			if (m.time.compareTo(s.last_dt) > 0)
+//				s.last_dt = m.time;
+//		}
+//		if (m.children().size()>1)
+//			s.has_fork = true;
+//		if ((m instanceof A4FExecution) && ((A4FExecution) m).result() == RESULT.UNSAT) 
+//			s.is_solved = true;
+//
+//		for (A4FModel c : m.children())
+//			getSession(c,s);
+//	}
+//	
+//	private class Session {
+//
+//		public Session(A4FModel m) {
+//			origin = m.id;
+//			if (m.children.size() > 0) {
+//				frst_dt = m.children.get(0).time;
+//				last_dt = m.time;
+//			}
+//			for (A4FModel c : m.children) 
+//				if (c.time.compareTo(frst_dt) < 0)
+//					frst_dt = c.time;
+//		}
+//		LocalDateTime last_dt;
+//		LocalDateTime frst_dt;
+//		List<A4FModel> r = new ArrayList<>(); 
+//		boolean has_fork = false;
+//		boolean is_solved = false;
+//		
+//		String origin;
+//	}
+//	
 	public String getModule_name() {
 		return module_name;
 	}

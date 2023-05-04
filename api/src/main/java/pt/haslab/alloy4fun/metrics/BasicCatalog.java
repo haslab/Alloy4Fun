@@ -268,7 +268,6 @@ public class BasicCatalog {
 		AggregateVisitor<Integer> qnt = new AggregateVisitor<Integer>((k, l) -> k + l + 1, 1,
 				db.challengPreds()) {
 		};
-
 		return new Object[] { exe.cmd_name, exe.command().formula.accept(qnt) / 10, exe.result() };
 	}
 	

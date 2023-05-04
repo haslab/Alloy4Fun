@@ -3,18 +3,20 @@ package pt.haslab.alloy4fun;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
-import java.util.stream.Collectors;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeoutException;
+import java.util.stream.Collectors;
 
 import javax.json.Json;
-import javax.json.JsonObjectBuilder;
 import javax.json.JsonArrayBuilder;
 import javax.json.JsonObject;
+import javax.json.JsonObjectBuilder;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -25,11 +27,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import edu.mit.csail.sdg.alloy4.Err;
-import pt.haslab.alloy4fun.datamodel.A4FDatabase;
-import pt.haslab.alloy4fun.datamodel.A4FInstance;
-import pt.haslab.alloy4fun.datamodel.A4FLink;
-import pt.haslab.alloy4fun.datamodel.A4FModel;
-import pt.haslab.alloy4fun.datamodel.A4FNavigation;
 import pt.haslab.alloy4fun.graph.Node;
 import pt.haslab.alloy4fun.metrics.MetricMethod;
 import pt.haslab.alloy4fun.metrics.MetricSuite;
@@ -45,31 +42,10 @@ public class AlloyGetStats {
 	
 	@POST
 	@Produces("text/json")
-	public Response doGet(String body) throws IOException, Err, IllegalAccessException, IllegalArgumentException, InvocationTargetException, SecurityException {
+	public Response doGet(String body) throws IOException, Err, IllegalAccessException, IllegalArgumentException, InvocationTargetException, SecurityException, InterruptedException, ExecutionException {
 		StatsRequest req = parseJSON(body);
 		LOGGER.info("Received a stats request for session: "+req.model);
-		LOGGER.debug("# models: "+req.models.size());
-		LOGGER.debug("# links: "+req.links.size());
-		LOGGER.debug("# instances: "+req.instances.size());
-		LOGGER.debug("# navigations: "+req.navigations.size());
 
-		LOGGER.info("Running stats for "+req.model+".");
-
-		A4FDatabase a4f = new A4FDatabase(req.model);
-
-		for (A4FModel model : req.models.values())
-			a4f.addModel(model);
-		
-		for (A4FLink link : req.links)
-			a4f.addLink(link);
-
-		for (A4FInstance inst : req.instances)
-			a4f.addInstance(inst);
-
-		for (A4FNavigation nav : req.navigations)
-			a4f.addNavigation(nav);
-		
-		a4f.processRoot();
 		
 		Class<?> catalog = OnlineCatalog.class;
 		MetricSuite suite = catalog.getAnnotation(MetricSuite.class);
@@ -77,22 +53,27 @@ public class AlloyGetStats {
 			throw new IllegalArgumentException("Invalid catalog annotations.");
 		catalog_name = suite.description().isEmpty()?catalog.getName():suite.description();
 		
-		ModelStats stats = new ModelStats(req.model, a4f);
-		stats.processMetrics(catalog.getMethods());
-    	
+		ModelStats stats;
+		try {
+			stats = StatsManager.getStats(req.model,catalog);
+		} catch (TimeoutException e) {
+			LOGGER.info("Timed out.");
+			return Response.status(500	, "Stats calculation timed out").build();
+		}
+
 		LOGGER.info("Responding with solutions.");
-		return Response.ok(statsToJson(stats,a4f)).build();
+		return Response.ok(statsToJson(stats)).build();
 	}
 
-	private String statsToJson(ModelStats stats, A4FDatabase a4f) {
+	private String statsToJson(ModelStats stats) {
 
 		JsonObjectBuilder statsJSON = Json.createObjectBuilder();
 
 		statsJSON.add("model", stats.root_id);
 		statsJSON.add("time", stats.timestamp.toString());
-		statsJSON.add("name", a4f.getModule_name());
+		statsJSON.add("name", stats.getA4f().getModule_name());
 		statsJSON.add("catalog", catalog_name);
-		statsJSON.add("nchallenges", a4f.challengeLabels().size());
+		statsJSON.add("nchallenges", stats.getA4f().challengeLabels().size());
 
 		JsonArrayBuilder metricArray = Json.createArrayBuilder();
 
@@ -162,7 +143,7 @@ public class AlloyGetStats {
 				if (stats.indexedGroupedStats(rulename) != null) {
 					JsonArrayBuilder idxsJSON = Json.createArrayBuilder();
 					JsonObjectBuilder metricDict = Json.createObjectBuilder();
-					Map<Object,JsonArrayBuilder> series = new HashMap();
+					Map<Object,JsonArrayBuilder> series = new HashMap<Object,JsonArrayBuilder>();
 					Set<Object> all_series = stats.indexedGroupedStats(rulename).values().stream()
 									.map(x -> x.keySet())
 									.flatMap(x -> x.stream())
@@ -206,7 +187,7 @@ public class AlloyGetStats {
 					for (Entry<String, Map<Object, Map<Object, Double>>> challenges : stats.challengeIndexedGroupedStats(rulename).entrySet()) {
 						JsonObjectBuilder challengeDict = Json.createObjectBuilder();
 						JsonArrayBuilder indicesArray = Json.createArrayBuilder();
-						Map<Object,JsonArrayBuilder> flat_series = new HashMap();
+						Map<Object,JsonArrayBuilder> flat_series = new HashMap<Object,JsonArrayBuilder>();
 						
 						Set<Object> all_series = challenges.getValue().values().stream()
 								.map(x -> x.keySet())
@@ -246,7 +227,6 @@ public class AlloyGetStats {
 		statsJSON.add("challenges", metricArray);
 		Map<String,Integer> nodeIds = new HashMap<>();
 		int nodeCtr = 0;
-		System.out.println(stats.graphEdges());
 		JsonArrayBuilder graphArray = Json.createArrayBuilder();
 		for (String cld : stats.graphNodes().keySet()) {
 			JsonObjectBuilder graphDict = Json.createObjectBuilder();
@@ -254,19 +234,21 @@ public class AlloyGetStats {
 			for (Node nd : stats.graphNodes().get(cld).values()) {
 				nodeArray.add(toJson(nd,nodeCtr));
 				nodeIds.put(nd.label, nodeCtr);
-				System.out.println("nd: "+nd.label+" -> "+nodeCtr);
 				nodeCtr++;
 			}
 			JsonArrayBuilder edgeArray = Json.createArrayBuilder();
-			for (Entry<String, Map<String, Integer>> nd : stats.graphEdges().get(cld).entrySet()) {
-				for (Entry<String, Integer> to : nd.getValue().entrySet()) {
-					JsonObjectBuilder edgeDict = Json.createObjectBuilder();
-					edgeDict.add("from", nodeIds.get(nd.getKey()));
-					edgeDict.add("to", nodeIds.get(to.getKey()));
-					edgeDict.add("value", to.getValue());
-					edgeArray.add(edgeDict);
+			if (stats.graphEdges().get(cld) == null)
+				System.out.println("** No edges for "+cld+"!");
+			else
+				for (Entry<String, Map<String, Integer>> nd : stats.graphEdges().get(cld).entrySet()) {
+					for (Entry<String, Integer> to : nd.getValue().entrySet()) {
+						JsonObjectBuilder edgeDict = Json.createObjectBuilder();
+						edgeDict.add("from", nodeIds.get(nd.getKey()));
+						edgeDict.add("to", nodeIds.get(to.getKey()));
+						edgeDict.add("value", to.getValue());
+						edgeArray.add(edgeDict);
+					}
 				}
-			}
 			
 			graphDict.add("challenge", cld);
 			graphDict.add("nodes", nodeArray);
@@ -297,16 +279,6 @@ public class AlloyGetStats {
 	static private StatsRequest parseJSON(String body) {
 		JSONObject jo = new JSONObject(body);
 		StatsRequest req = new StatsRequest(jo.getString("model"));
-		for (Object v : jo.getJSONArray("models")) {
-			A4FModel mdl = A4FModel.fromJSON((JSONObject) v);
-			req.models.put(mdl.id,mdl);
-		}
-		for (Object v : jo.getJSONArray("instances"))
-			req.instances.add(new A4FInstance((JSONObject) v));
-		for (Object v : jo.getJSONArray("links"))
-			req.links.add(new A4FLink((JSONObject) v));
-		for (Object v : jo.getJSONArray("navigations"))
-			req.navigations.add(new A4FNavigation((JSONObject) v));
 		return req;
 	}
 }

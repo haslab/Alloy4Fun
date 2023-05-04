@@ -53,14 +53,14 @@ public class AlloyGetInstances {
 		List<ErrorWarning> warnings = new ArrayList<ErrorWarning>();
 
 		// parent session open, close it
-		if (RestApplication.alive(req.parentId)) {
+		if (SolutionManager.alive(req.parentId)) {
 			LOGGER.info("Found the parent session alive ("+req.parentId+").");
 			// TODO: this does not shutdown the timeout thread waiting to remove, thread will remain until timeout
-			RestApplication.remove(req.parentId);
+			SolutionManager.remove(req.parentId);
 		}
 
 		// session open, recover solution object
-		if (RestApplication.alive(req.sessionId)) { 
+		if (SolutionManager.alive(req.sessionId)) { 
 			LOGGER.info("Found the current session alive ("+req.sessionId+").");
 			res = batchAdd(req,warnings);
 		}
@@ -110,7 +110,7 @@ public class AlloyGetInstances {
 			Command command = world.getAllCommands().get(req.commandIndex);
 			try {
 				A4Solution ans = TranslateAlloyToKodkod.execute_command(rep, world.getAllReachableSigs(), command, opt);
-				RestApplication.add(req.sessionId,ans,command,world.getAllFunc());
+				SolutionManager.add(req.sessionId,ans,command,world.getAllFunc());
 
 				res = batchAdd(req,warnings);
 
@@ -133,15 +133,15 @@ public class AlloyGetInstances {
 
 	static private String batchAdd(InstancesRequest req, List<ErrorWarning> warnings) throws Err {
 		JsonArrayBuilder solsArrayJSON = Json.createArrayBuilder();
-		A4Solution ans = RestApplication.getSol(req.sessionId);
-		Command cmd = RestApplication.getCommand(req.sessionId);
-		int cnt = RestApplication.getCnt(req.sessionId);
-		Iterable<Func> skolems = RestApplication.getSkolem(req.sessionId);
+		A4Solution ans = SolutionManager.getSol(req.sessionId);
+		Command cmd = SolutionManager.getCommand(req.sessionId);
+		int cnt = SolutionManager.getCnt(req.sessionId);
+		Iterable<Func> skolems = SolutionManager.getSkolem(req.sessionId);
 		for (int n = 0; n < req.numberOfInstances && ans.satisfiable(); n++) {
 			solsArrayJSON.add(answerToJson(req.sessionId, ans, skolems, warnings, cmd, cnt));
-			RestApplication.next(req.sessionId);
-			ans = RestApplication.getSol(req.sessionId);
-			cnt = RestApplication.getCnt(req.sessionId);
+			SolutionManager.next(req.sessionId);
+			ans = SolutionManager.getSol(req.sessionId);
+			cnt = SolutionManager.getCnt(req.sessionId);
 		}
 		if (!ans.satisfiable())
 			solsArrayJSON.add(answerToJson(req.sessionId, ans, skolems, warnings, cmd, cnt));
