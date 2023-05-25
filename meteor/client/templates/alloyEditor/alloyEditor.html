@@ -37,7 +37,7 @@
                  Next Instance : next div -->
                 <div class="col-lg-4 col-md-12 col-xs-12">
                     <div class="text-center">
-                        <div id="exec" class="col-lg-12 col-md-4 col-xs-4">
+                        <div id="exec" class="col-lg-12 col-md-3 col-xs-3">
                             <button class="cbutton cbutton--effect-boris" {{execEnabled}}>
                                  <div class="col-xs-12">
                                  <span class="fa-stack">
@@ -54,7 +54,7 @@
                             </button>
                         </div>
                         {{#if showNext}}
-                        <div id="skip" class="col-lg-12 col-md-4 col-xs-4">
+                        <div id="skip" class="col-lg-12 col-md-3 col-xs-3">
                             <button class="cbutton cbutton--effect-boris" {{nextEnabled}}>
                                  <div class="col-xs-12">
                                  <span class="fa-stack">
@@ -66,21 +66,21 @@
                         </div>
                         {{/if}}
                         {{#if showShareButtons}}
-                        <div id="genUrl" class="col-lg-12 col-md-4 col-xs-4 text-center permalink">
+                        <div id="genUrl" class="col-lg-12 col-md-3 col-xs-3 text-center permalink">
                             <button id="genurlbtn" class="cbutton cbutton--effect-boris" {{shareModelEnabled}}>
                                 <div class="col-xs-12">
                                     <i class="cbutton__icon fas fa-link fa-2x"></i></div>
                                 <span class="cbutton__text">GenUrl</span><i class="legend">Share model</i>
                             </button>
                         </div>
-                        <div id="downloadTree" class="col-lg-12 col-md-4 col-xs-4">
+                        <div id="downloadTree" class="col-lg-12 col-md-3 col-xs-3">
                             <button class="cbutton cbutton--effect-boris" {{downloadTreeEnabled}}>
                                 <div class="col-xs-12">
                                     <i class="cbutton__icon fas fa-download fa-2x"></i></div>
                                 <span class="cbutton__text">Download derivations</span><i class="legend">Download derivations</i>
                             </button>
                         </div>
-                        <div id="statistics" class="col-lg-12 col-md-4 col-xs-4">
+                        <div id="statistics" class="col-lg-12 col-md-3 col-xs-3">
                             <button class="cbutton cbutton--effect-boris" {{downloadTreeEnabled}}>
                                 <div class="col-xs-12">
                                     <i class="cbutton__icon fas fa-bar-chart fa-2x"></i></div>
@@ -104,7 +104,7 @@
                             <div class="col-xs-12">
                                 <button class="clipboardbutton cbutton cbutton--effect-boris" data-clipboard-text={{publicModelURL}}>
                                     <i class="far fa-clipboard"></i>
-                                    <i class="legend">copy to clipboard</i>
+                                    <i class="legend">Copy to clipboard</i>
                                 </button>
                             </div>
                         </span>
@@ -118,7 +118,7 @@
                             <div class="col-xs-12">
                                 <button class="clipboardbutton cbutton cbutton--effect-boris" data-clipboard-text={{privateModelURL}}>
                                     <i class="far fa-clipboard"></i>
-                                    <i class="legend">copy to clipboard</i>
+                                    <i class="legend">Copy to clipboard</i>
                                 </button>
                             </div>
                         </span>
@@ -199,7 +199,7 @@
                             <div class="col-xs-12">
                                 <button class="clipboardbutton cbutton cbutton--effect-boris" data-clipboard-text={{instanceURL}}>
                                     <i class="far fa-clipboard"></i>
-                                    <i class="legend">copy to clipboard</i>
+                                    <i class="legend">Copy to clipboard</i>
                                 </button>
                             </div>
                         </span>
@@ -212,7 +212,7 @@
                 <div class="container">
                     <div id="information" class="text-center col-xs-12">
                         {{#if showShareButtons}}
-                        <p>To get started check out these <a target="_blank" href="https://github.com/haslab/Alloy4Fun/wiki/Examples">examples</a>. More information about Alloy is available at <a target="_blank" href="http://alloytools.org">AlloyTools</a>. </p>{{/if}}     
+                        <p>To get started with Alloy4Fun check out this <a target="_blank" href="https://haslab.github.io/formal-software-design/teaching-alloy/index.html">introduction</a>, along with some example challenges. More information about Alloy is available at <a target="_blank" href="http://alloytools.org">AlloyTools</a>. </p>{{/if}}     
                         <p>Privacy Policy: Alloy4Fun logs all user interactions, including code and options, which may be analyzed and made public for research purposes. Do not share confidential information. However, Alloy4Fun does not collect any personally identifiable information.
                         </p>
                     </div>
