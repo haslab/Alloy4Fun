@@ -16,6 +16,9 @@ relationSettings = (function relationSettings() {
         edges = []
     }
 
+    function reset() {
+        edges = []
+    }
     /**
      * Export relation settings structures as object.
      */
@@ -255,6 +258,7 @@ relationSettings = (function relationSettings() {
         updateShowAsAttributes,
         updateShowAsArcs,
         getAllHiddenRels,
-        rel_id
+        rel_id,
+        reset
     }
 }())

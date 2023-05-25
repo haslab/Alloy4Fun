@@ -8,6 +8,7 @@ updateGraph = function (instance,v) {
     cy.remove(cy.elements())
     // Add new ones.
     generalSettings.resetHierarchy()
+    relationSettings.reset()
     allNodes = getAtoms(instance)
     cy.add(allNodes)
     cy.add(getEdges(instance))
