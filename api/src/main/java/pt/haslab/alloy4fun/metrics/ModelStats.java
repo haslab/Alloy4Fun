@@ -16,10 +16,6 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
-import edu.mit.csail.sdg.alloy4.A4Reporter;
-import edu.mit.csail.sdg.ast.Command;
-import edu.mit.csail.sdg.parser.CompModule;
-import edu.mit.csail.sdg.parser.CompUtil;
 import pt.haslab.alloy4fun.datamodel.A4FDatabase;
 import pt.haslab.alloy4fun.datamodel.A4FModel;
 import pt.haslab.alloy4fun.graph.Node;
@@ -62,50 +58,6 @@ public class ModelStats {
 	/* The creation date of the challenge (i.e., of the root model). */
 	public LocalDate getChallengeDate() {
 		return root.time.toLocalDate();
-	}
-
-	/*-----------------------------------------------------------*/
-
-	/*
-	 * Total number of registered server errors found. If re-execution disabled,
-	 * will be empty.
-	 */
-	public int getTotalServerErrors() {
-		return getA4f().server_errors().size();
-	}
-
-	/*
-	 * Total number of solutions for execution entries found. If re-execution
-	 * disabled, will be empty.
-	 */
-	public int getTotalSolutions() {
-		return getA4f().solutions().size();
-	}
-
-	/*
-	 * Total number of entries where an error state was registered, but re-execution
-	 * was successful. Should only be != 0 for legacy models. If re-execution
-	 * disabled, will be empty.
-	 */
-	public int getTotalInconsistentRes() {
-		return getA4f().inconsistentRes().size();
-	}
-
-	/*
-	 * Total number of entries where an error message was registered, but
-	 * re-execution was successful. Should only be != 0 for legacy models. If
-	 * re-execution disabled, will be empty.
-	 */
-	public int getTotalInconsistentMsg() {
-		return getA4f().inconsistentMsg().size();
-	}
-
-	/*
-	 * Total number of re-executions that timed out. If re-execution disabled, will
-	 * be empty.
-	 */
-	public int getTotalTimeouts() {
-		return getA4f().timeouts().size();
 	}
 
 	/*-----------------------------------------------------------*/

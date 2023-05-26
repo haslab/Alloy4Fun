@@ -3,10 +3,12 @@ swarm:
     loggers:
       pt.haslab.alloy4fun:
         level: DEBUG
+      kodkod.engine.config:
+        level: WARNING
     console-handlers:
       CONSOLE:
         autoflush: true
-        level: INFO
+        level: DEBUG
     periodic-rotating-file-handlers:
       FILE:
         file:
@@ -14,7 +16,7 @@ swarm:
         suffix: ".yyyy-MM-dd"
         level: DEBUG   
     root-logger:
-      level: INFO
+      level: WARNING
       handlers:
       - FILE
       - CONSOLE

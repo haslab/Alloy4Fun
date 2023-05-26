@@ -20,19 +20,19 @@ import pt.haslab.alloy4fun.datamodel.A4FExecution.RESULT;
 public class MetricHTMLPrinter {
 	
 	private final static Map<String,String> colors = Stream.of(new String[][] {
-		  { "unsolved", "#f0e878" }, 
-		  { RESULT.SAT.toString(), "#f0e878" }, 
-		  { "solved", "#93e388" }, 
-		  { RESULT.UNSAT.toString(), "#93e388" }, 
-		  { RESULT.ERROR.toString(), "#f06779" }, 
-		  { "warning", "ffffff" }, 
-		  { "model share", "#6c79ad" }, 
-		  { "instance share", "#6179ad" }, 
+		  { "unsolved", "#F2EFD5" }, 
+		  { RESULT.SAT.toString(), "#F2EFD5" }, 
+		  { "solved", "#D1E6D6" }, 
+		  { RESULT.UNSAT.toString(), "#D1E6D6" }, 
+		  { RESULT.ERROR.toString(), "#F6CCD5" }, 
+		  { "warning", "#C7DAEB" }, 
+		  { "SHARE", "#C1C1DE" }, 
+		  { "model share", "#C1C1DE" }, 
+		  { "instance share", "#C1C1DE" }, 
 		}).collect(Collectors.toMap(data -> data[0], data -> data[1]));
 
 	
 	private static void printDerivTree(A4FModel obj, int indent, FileWriter fw) throws IOException {
-		 
 		String cls;
 		if (obj instanceof A4FExecution) {
 			if (((A4FExecution) obj).result() == RESULT.ERROR)
@@ -54,7 +54,6 @@ public class MetricHTMLPrinter {
 			printDerivTree(entry, indent+1, fw);
 		}
 		fw.write("</div>\n");
-		
 	}
 	
 	private static String printShortObj(A4FModel obj) {
@@ -89,9 +88,10 @@ public class MetricHTMLPrinter {
 		final String model_json = args[0];
 		final String link_json = all?args[1]:null;
 		final String instance_json = all?args[2]:null;
-		final String original_id = args[all?3:1];
-		final Class<?> catalog = Class.forName(args[all?4:2]);
-		ModelStats stats = MetricRunner.run(original_id,model_json,link_json,instance_json,catalog);
+		final String nav_json = all?args[3]:null;
+		final String original_id = args[all?4:1];
+		final Class<?> catalog = Class.forName(args[all?5:2]);
+		ModelStats stats = MetricRunner.run(original_id,model_json,link_json,instance_json,nav_json,catalog);
 
 		FileWriter fw = new FileWriter(original_id+".html");
 		
@@ -115,15 +115,6 @@ public class MetricHTMLPrinter {
 		fw.write("<dt>Creation time</dt><dd>"+stats.getChallengeDate()+"</dd>\n");
 		fw.write("<dt># sub-challenges</dt><dd>"+stats.getA4f().challengeLabels().size()+"</dd>\n");
 		fw.write("<dt>Metric catalog</dt><dd>"+MetricRunner.getCatalogName()+"</dd>\n");
-		fw.write("</dl>");		
-		fw.write("<h2>Overall metric statistics</h2>\n");
-		fw.write("Overall statistics for this challenge. Note that for challenges correctness is unsatisfiability. Totals may contain executions of commands other than the sub-challenges, if declared by the user.");
-		fw.write("<dl>");		
-//		fw.write("<dt>Total solutions</dt><dd>"+stats.getTotalSolutions()+"</d>\n");
-//		fw.write("<dt>Timed out re-executions</dt><dd>"+stats.getTotalTimeouts()+"</d>\n");
-//		fw.write("<dt>Rejected due to server errors</dt><dd>"+stats.getTotalServerErrors()+"</d>\n");
-//		fw.write("<dt>Inconsistent result reports</dt><dd>"+stats.getTotalInconsistentRes()+"</d>\n");
-//		fw.write("<dt>Inconsistent message reports</dt><dd>"+stats.getTotalInconsistentMsg()+"</d>\n");
 		fw.write("</dl>");		
 		
 		fw.write("<h2>Scalar metrics</h2>\n");

@@ -15,7 +15,7 @@ public class MetricRunner {
 
 	private static Logger LOGGER = LoggerFactory.getLogger(MetricRunner.class);
 
-	private final static boolean REEXECUTE = false; 
+	private final static boolean REEXECUTE = true; 
 	
 	private static Class<?> catalog;
 	private static String catalog_name; 
@@ -28,12 +28,13 @@ public class MetricRunner {
 		final String model_json = args[0];
 		final String link_json = all?args[1]:null;
 		final String instance_json = all?args[2]:null;
-		final String original_id = args[all?3:1];
-		final Class<?> catalog = Class.forName(args[all?4:2]);
-		run(original_id,model_json,link_json,instance_json,catalog);
+		final String nav_json = all?args[3]:null;
+		final String original_id = args[all?4:1];
+		final Class<?> catalog = Class.forName(args[all?5:2]);
+		run(original_id,model_json,link_json,instance_json,nav_json,catalog);
 	}
 	
-	public static ModelStats run(String model_id, String model_json, String link_json, String instance_json, Class<?> catalog) throws JSONException, IOException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, SecurityException {
+	public static ModelStats run(String model_id, String model_json, String link_json, String instance_json, String nav_json, Class<?> catalog) throws JSONException, IOException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, SecurityException {
 		String jline;
 		a4f = new A4FDatabase(model_id);
 
@@ -41,6 +42,11 @@ public class MetricRunner {
 		while ((jline = file.readLine()) != null)
 			a4f.addModel(new JSONObject(jline));
 		file.close();
+		
+		if (a4f.getModel(model_id) == null) {
+			LOGGER.error("Model not found in database: "+model_id);
+			throw new IllegalArgumentException("Model not found in database: "+model_id);
+		}
 		
 		if (link_json != null) {
 			file = new BufferedReader(new FileReader(link_json));
@@ -55,35 +61,30 @@ public class MetricRunner {
 				a4f.addInstance(new JSONObject(jline));
 			file.close();
 		}
-		a4f.processRoot();
+		
+		a4f.processRoot(REEXECUTE);
 
 		MetricRunner.catalog = catalog;
 		MetricSuite suite = MetricRunner.getCatalog().getAnnotation(MetricSuite.class);
-		if (suite == null)
+		if (suite == null) {
+			LOGGER.error("Invalid catalog annotations.");
 			throw new IllegalArgumentException("Invalid catalog annotations.");
+		}
 		MetricRunner.catalog_name = suite.description().isEmpty()?catalog.getName():suite.description();
 		
-    	System.out.println("* Creating derivation tree (includes execution)...");
+    	LOGGER.debug(String.format("Creating derivation tree (re-execution = %s)",REEXECUTE));
 
-    	
 		if (REEXECUTE)
 			for (String id: a4f.serverErrors())
 				a4f.models().remove(id);
+
+		LOGGER.info("Challenge labels: "+a4f.challengeLabels());
 		
 		stats = new ModelStats(model_id, a4f);
-		LOGGER.info(stats.toString());
 
-		if (REEXECUTE) {
-			System.out.println("Solutions: "+stats.getTotalSolutions());
-			System.out.println("Timeouts: "+stats.getTotalTimeouts());
-			System.out.println("Rejected: "+stats.getTotalServerErrors());
-			System.out.println("Inconsistent msg: "+stats.getTotalInconsistentMsg());
-			System.out.println("Inconsistent res: "+stats.getTotalInconsistentRes());
-		}
-		
-    	System.out.println("* Processing metrics...");
+    	LOGGER.info("Processing metrics");
 		stats.processMetrics(catalog.getMethods());
-		System.out.println("* Done.");
+		LOGGER.info("Done.");
     	
 		return stats;
 	}
@@ -93,7 +94,6 @@ public class MetricRunner {
 	}
 	
 	public static ModelStats getStats() {
-		LOGGER.info(stats.toString());
 		return stats;
 	}
 	

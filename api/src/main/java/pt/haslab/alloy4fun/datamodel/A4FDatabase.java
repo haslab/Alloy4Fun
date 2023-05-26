@@ -19,7 +19,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import edu.mit.csail.sdg.alloy4.A4Reporter;
 import edu.mit.csail.sdg.alloy4.Err;
@@ -66,7 +69,8 @@ public class A4FDatabase {
 	public final Map<String,Map<String,Node>> nodes = new TreeMap<>();
 	public final Map<String,Map<String,Map<String,Integer>>> edges = new TreeMap<>();
 
-	
+	private static Logger LOGGER = LoggerFactory.getLogger(A4FDatabase.class);
+
 	/* The names of the predicates to be filled in the challenges (actually, currently empty preds in root). */
     public Set<String> challengPreds() {
 		return new HashSet<String>(preds.keySet());
@@ -89,6 +93,12 @@ public class A4FDatabase {
 				executions.put(mdl.id,(A4FExecution) mdl);
 			else
 				shares.put(mdl.id,(A4FShare) mdl);
+			// when model database provided as tree
+			if (obj.has("children")) {
+				JSONArray arr = obj.getJSONArray("children");
+				for (int i = 0; i < arr.length(); i++)
+					addModel(arr.getJSONObject(i));
+			}
 		}		
 	}
 
@@ -137,9 +147,8 @@ public class A4FDatabase {
 	public void calculateGraph() {
 		for (String chl : challengeLabels()) {
 			for (A4FExecution mdl : executions.values()) {
-				
-				String mdl_norm = normalized.get(chl).get(mdl.id);
-				if (mdl_norm != null) {
+				if (normalized.containsKey(chl) && normalized.get(chl).containsKey(mdl.id)) {
+					String mdl_norm = normalized.get(chl).get(mdl.id);
 					nodes.computeIfAbsent(chl, x -> new HashMap<>()).computeIfAbsent(mdl_norm, x -> new Node(mdl.result().toString(), mdl_norm)).increase();
 					for (A4FModel cld : mdl.childrenCmd(chl)) {
 						String cld_norm = normalized.get(chl).get(cld.id);
@@ -229,7 +238,7 @@ public class A4FDatabase {
 						solutions.put(sol, id);
 					} catch (TimeoutException e) {
 						timeouts.add(id);
-						System.out.println("Timed out: "+mdl.id);
+						LOGGER.warn("Timed out during execution: "+mdl.id);
 					} catch (InterruptedException e) {
 					} catch (ExecutionException e) {
 						if (e.getCause() instanceof Err) {
@@ -249,12 +258,12 @@ public class A4FDatabase {
 						executions.remove(id);
 						solutions.remove(sol);
 						server_errors.add(id);
-						System.out.println("Server error, disregarded during analysis: "+((A4FExecution) mdl).msg+" ("+mdl.id+")");
+						LOGGER.warn("Server error, disregarded during analysis: "+((A4FExecution) mdl).msg+" ("+mdl.id+")");
 					} else if (((A4FExecution) mdl).result() == RESULT.ERROR && err == null) {
-						System.out.println("Had error result registered but ran ok: "+((A4FExecution) mdl).msg.replace("\n", " ")+" ("+mdl.id+")");
+						LOGGER.warn("Had error result registered but ran ok: "+((A4FExecution) mdl).msg.replace("\n", " ")+" ("+mdl.id+")");
 						inconsistent_res.add(id);
 					} else if (((A4FExecution) mdl).msg != null && wns.isEmpty() && err == null) {
-						System.out.println("Had error message registered but ran ok: "+((A4FExecution) mdl).msg.replace("\n", " ")+" ("+mdl.id+")");
+						LOGGER.warn("Had error message registered but ran ok: "+((A4FExecution) mdl).msg.replace("\n", " ")+" ("+mdl.id+")");
 						inconsistent_msg.add(id);
 					}
 				}
@@ -370,11 +379,13 @@ public class A4FDatabase {
 	}
 
 	/* The metrics for a session starting given entry. */
+	// TODO: make this accessible from the session itself
 	public SessionMetrics sessionMetrics(A4FModel start) {
 		return SessionMetrics.sessionMetrics(start);
 	}
 
-	public void processRoot() {
+	public void processRoot(boolean reexecute) {
+		this.reexecuted = reexecute;
 		CompModule or = CompUtil.parseEverything_fromString(new A4Reporter(),models.get(model_id).code);
 		challenges = or.getAllCommands().stream().filter(c -> c.check).map(c -> c.label).collect(Collectors.toList());
 		preds = new HashMap<>();
@@ -397,7 +408,7 @@ public class A4FDatabase {
 		module_name = or.getModelName();
 		
 		for (String id : models().keySet())
-			calculateDerivTree(id,false);
+			calculateDerivTree(id,reexecute);
 		
 		System.out.println(normalized.keySet());
 		

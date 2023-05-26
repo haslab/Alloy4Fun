@@ -1,7 +1,6 @@
 package pt.haslab.alloy4fun.metrics;
 
 import java.util.Arrays;
-import java.util.Set;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -13,7 +12,6 @@ import java.util.ArrayList;
 
 import edu.mit.csail.sdg.alloy4.A4Reporter;
 import edu.mit.csail.sdg.alloy4.Err;
-import edu.mit.csail.sdg.alloy4.ErrorWarning;
 import edu.mit.csail.sdg.ast.Decl;
 import edu.mit.csail.sdg.ast.ExprBinary;
 import edu.mit.csail.sdg.ast.ExprCall;

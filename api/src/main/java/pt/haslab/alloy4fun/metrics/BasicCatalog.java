@@ -1,7 +1,7 @@
 package pt.haslab.alloy4fun.metrics;
 
 import java.util.Set;
-
+import java.time.LocalDate;
 import java.util.List;
 
 import static pt.haslab.alloy4fun.datamodel.A4FExecution.RESULT.*;
@@ -239,11 +239,11 @@ public class BasicCatalog {
 	
 	@MetricMethod(rule = "Entries over time", description = "The number of model entries by date, classified by type and result.", group = 0)
 	public static Object[] resultsTime(@ForAllModels A4FModel entry) {
-		if (entry instanceof A4FShare)
-			return new Object[] { entry.time.toLocalDate(), "SHARE" };
-		else {
-			return new Object[] { entry.time.toLocalDate(), ((A4FExecution) entry).result() };
-		}
+		LocalDate date = entry.time.toLocalDate();
+		if (entry instanceof A4FExecution)
+			return new Object[] { date, ((A4FExecution) entry).result() };
+		else
+			return new Object[] { date, "SHARE" };
 	}
 
 	@MetricMethod(rule = "Execution results by command", description = "The number of executions by command, classified by result. Errored executions are not considered.", group = 2)
