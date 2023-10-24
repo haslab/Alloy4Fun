@@ -261,30 +261,30 @@ public class BasicCatalog {
 	
 	/* ------------- */
 
-	@MetricMethod(rule = "Size in 10s of nodes", description = "The number of executions, for a particular challenge, by the size of a command AST in tens of nodes, grouped by result. Considers the complete model (not just the challenge predicate).")
-	public static Object[] nodeSize10(@A4FDB A4FDatabase db, @ForAllExecutions A4FExecution exe) {
-		if (!db.challengeLabels().contains(exe.cmd_name))
-			return null;
-		AggregateVisitor<Integer> qnt = new AggregateVisitor<Integer>((k, l) -> k + l + 1, 1,
-				db.challengPreds()) {
-		};
-		return new Object[] { exe.cmd_name, exe.command().formula.accept(qnt) / 10, exe.result() };
-	}
+//	@MetricMethod(rule = "Size in 10s of nodes", description = "The number of executions, for a particular challenge, by the size of a command AST in tens of nodes, grouped by result. Considers the complete model (not just the challenge predicate).")
+//	public static Object[] nodeSize10(@A4FDB A4FDatabase db, @ForAllExecutions A4FExecution exe) {
+//		if (!db.challengeLabels().contains(exe.cmd_name))
+//			return null;
+//		AggregateVisitor<Integer> qnt = new AggregateVisitor<Integer>((k, l) -> k + l + 1, 1,
+//				db.challengPreds()) {
+//		};
+//		return new Object[] { exe.cmd_name, exe.command().formula.accept(qnt) / 10, exe.result() };
+//	}
 	
-	@MetricMethod(rule = "Number of quantified variables", description = "The number of executions, for a particular challenge, by the number of occurring first-order quantifiers, grouped by result. Each declared variable counts once. Considers the complete model (not just the challenge predicate).")
-	public static Object[] numQuants(@A4FDB A4FDatabase db, @ForAllExecutions A4FExecution entry) {
-		if (!db.challengeLabels().contains(entry.cmd_name))
-			return null;
-		AggregateVisitor<Integer> qnt = new AggregateVisitor<Integer>(Integer::sum, 0, db.challengPreds()) {
-
-			@Override
-			public Integer visit(ExprQt x) {
-				return (counting?x.count():0) + super.visit(x);
-			}
-
-		};
-
-		return new Object[] { entry.cmd_name, entry.command().formula.accept(qnt), entry.result() };
-
-	}
+//	@MetricMethod(rule = "Number of quantified variables", description = "The number of executions, for a particular challenge, by the number of occurring first-order quantifiers, grouped by result. Each declared variable counts once. Considers the complete model (not just the challenge predicate).")
+//	public static Object[] numQuants(@A4FDB A4FDatabase db, @ForAllExecutions A4FExecution entry) {
+//		if (!db.challengeLabels().contains(entry.cmd_name))
+//			return null;
+//		AggregateVisitor<Integer> qnt = new AggregateVisitor<Integer>(Integer::sum, 0, db.challengPreds()) {
+//
+//			@Override
+//			public Integer visit(ExprQt x) {
+//				return (counting?x.count():0) + super.visit(x);
+//			}
+//
+//		};
+//
+//		return new Object[] { entry.cmd_name, entry.command().formula.accept(qnt), entry.result() };
+//
+//	}
 }
