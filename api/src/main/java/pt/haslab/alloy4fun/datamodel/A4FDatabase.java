@@ -276,6 +276,8 @@ public class A4FDatabase {
 				System.out.println("alarm");
 				e.printStackTrace();
 			}
+			if (mdl instanceof A4FExecution && ((A4FExecution) mdl).result() != RESULT.ERROR)
+				LOGGER.warn("Had no error but got error: "+e.msg+" ("+mdl.id +")");
 			errors.put(e, id);
 			mdl.error = e;
 		} catch (Exception e) {

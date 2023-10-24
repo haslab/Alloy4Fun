@@ -68,6 +68,17 @@
 		    <artifactId>mongo-java-driver</artifactId>
 		    <version>3.12.13</version>
 		</dependency>
+		   <dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-api</artifactId>
+       <version>1.7.5</version>
+   </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+            <scope>runtime</scope>
+        </dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
