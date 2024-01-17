@@ -13,3 +13,14 @@ import './methods/navInstance'
 
 import './publications/modelFromLink'
 import './publications/statsFromLink'
+
+/**
+  If the database is empty, seeds a set of default models after startup.
+*/
+Meteor.startup(() => {
+    if (!Model.find().count()) {
+        // if there are no models, insert default ones
+        const res = seedWithModels()
+        console.log(`Seeded Database with ${res} models`)
+    }
+})

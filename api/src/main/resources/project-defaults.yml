@@ -2,7 +2,7 @@ swarm:
   logging:
     loggers:
       pt.haslab.alloy4fun:
-        level: DEBUG
+        level: INFO
       kodkod.engine.config:
         level: WARNING
     console-handlers:
@@ -16,7 +16,7 @@ swarm:
         suffix: ".yyyy-MM-dd"
         level: DEBUG   
     root-logger:
-      level: WARNING
+      level: INFO
       handlers:
       - FILE
       - CONSOLE

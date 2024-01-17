@@ -1,6 +1,6 @@
 {
     "env": {
-        "API_URL": "http://localhost:8080",
+        "API_URL": "http://api:4001",
         "MAX_INSTANCES": 10
     },
     "public": {
