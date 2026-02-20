@@ -14,15 +14,15 @@ Alloy4Fun is built on top of [Alloy 6](https://alloytools.org/) and is currently
 
 ## Publications about developing/using Alloy4Fun
 
-- J. Pereira: [A web-based social environment for Alloy](https://haslab.github.io/TRUST/papers/JosePereira.pdf). MSc thesis, School of Engineering of the University of Minho. December, 2016.
-- N. Macedo, A. Cunha, J. Pereira, R. Carvalho, R. Silva, A. C. R. Paiva, M. S. Ramalho, and D. Silva. [Experiences on teaching Alloy with an automated assessment platform](https://haslab.github.io/TRUST/papers/abz20a.pdf). In proceedings of the 7th International Conference on Rigorous State Based Methods, volume 12071 of LNCS, pages 61-77. Springer, 2020.
-- N. Macedo, A. Cunha, J. Pereira, R. Carvalho, R. Silva, A. C. R. Paiva, M. S. Ramalho, and D. Silva. Experiences on teaching Alloy with an automated assessment platform. Science of Computer Programming, volume 211, pages 102690. Elsevier, 2021.
-- J. Cerqueira. [Automatic repair of behavioural specifications](https://haslab.github.io/SpecRep/pubs/JCerqueira22.pdf). MSc thesis, School of Engineering of the University of Minho. December, 2022.
-- J. Cerqueira, A. Cunha and N. Macedo. [Timely specification repair for Alloy 6](https://haslab.github.io/SpecRep/pubs/SEFM22.pdf). In the proceedings of the 20th International Conference on Software Engineering and Formal Methods (SEFM), volume 13550 of LNCS, pages 288-303. Springer, 2022.
-- A. Barros. [Data-driven hint generation for Alloy using historical student submissions](https://haslab.github.io/SpecRep/pubs/ABarros23.pdf). MSc thesis, Faculty of Engineering of the University of Porto. July, 2023.
-- H. Neto. [Mining hints for fixing formal specifications](https://haslab.github.io/SpecRep/pubs/HNeto23.pdf). MSc thesis, School of Engineering of the University of Minho. December, 2023.
-- A. Cunha, N. Macedo, J. C. Campos, I. Margolis and E. Sousa. [Assessing the impact of hints in learning formal specification](https://haslab.github.io/SpecRep/pubs/SEET-ICSE24.pdf). In the proceedings of the 46th International Conference on Software Engineering: Software Engineering Education and Training (SEET@ICSE), pages 151-161. ACM, 2024.
-- A. Barros, H. Neto, A. Cunha, N. Macedo and Ana C. R. Paiva. [Alloy repair hint generation based on historical data](https://haslab.github.io/SpecRep/pubs/FM24.pdf). In the proceedings of the 26th International Symposium on Formal Methods (FM), volume 14934 of LNCS, pages 104-121. Springer, 2024.
+- J. Pereira: [A web-based social environment for Alloy](https://hdl.handle.net/1822/47719). MSc thesis, School of Engineering of the University of Minho. December, 2016.
+- N. Macedo, A. Cunha, J. Pereira, R. Carvalho, R. Silva, A. C. R. Paiva, M. S. Ramalho, and D. Silva. [Experiences on teaching Alloy with an automated assessment platform](https://doi.org/10.1007/978-3-030-48077-6_5). In proceedings of the 7th International Conference on Rigorous State Based Methods, volume 12071 of LNCS, pages 61-77. Springer, 2020.
+- N. Macedo, A. Cunha, J. Pereira, R. Carvalho, R. Silva, A. C. R. Paiva, M. S. Ramalho, and D. Silva. [Experiences on teaching Alloy with an automated assessment platform](https://doi.org/10.1016/j.scico.2021.102690). Science of Computer Programming, volume 211, pages 102690. Elsevier, 2021.
+- J. Cerqueira. [Automatic repair of behavioural specifications](https://hdl.handle.net/1822/84347). MSc thesis, School of Engineering of the University of Minho. December, 2022.
+- J. Cerqueira, A. Cunha and N. Macedo. [Timely specification repair for Alloy 6](https://doi.org/10.1007/978-3-031-17108-6_18). In the proceedings of the 20th International Conference on Software Engineering and Formal Methods (SEFM), volume 13550 of LNCS, pages 288-303. Springer, 2022.
+- A. Barros. [Data-driven hint generation for Alloy using historical student submissions](https://hdl.handle.net/10216/151936). MSc thesis, Faculty of Engineering of the University of Porto. July, 2023.
+- H. Neto. [Mining hints for fixing formal specifications](https://hdl.handle.net/1822/92831). MSc thesis, School of Engineering of the University of Minho. December, 2023.
+- A. Cunha, N. Macedo, J. C. Campos, I. Margolis and E. Sousa. [Assessing the impact of hints in learning formal specification](https://doi.org/10.1145/3639474.3640050). In the proceedings of the 46th International Conference on Software Engineering: Software Engineering Education and Training (SEET@ICSE), pages 151-161. ACM, 2024.
+- A. Barros, H. Neto, A. Cunha, N. Macedo and Ana C. R. Paiva. [Alloy repair hint generation based on historical data](https://doi.org/10.1007/978-3-031-71177-0_8). In the proceedings of the 26th International Symposium on Formal Methods (FM), volume 14934 of LNCS, pages 104-121. Springer, 2024.
 
 ## Datasets
 
