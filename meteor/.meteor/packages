@@ -21,14 +21,8 @@ session@1.2.1
 aldeed:collection2@4.0.4
 iron:router
 twbs:bootstrap
-jeremy:selectize
-risul:bootstrap-colorpicker
-rochal:slimscroll
-zardak:soap
 cwaring:modernizr
-propercursive:zeroclipboard
 kevohagan:sweetalert
-benjaminrh:jquery-blockui
 perak:codemirror
 fortawesome:fontawesome
 fetch
