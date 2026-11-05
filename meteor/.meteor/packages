@@ -19,6 +19,5 @@ shell-server@0.5.0            # Server-side component of the `meteor shell` comm
 
 session@1.2.1
 aldeed:collection2@4.0.4
-iron:router
 fetch
 meteortesting:mocha

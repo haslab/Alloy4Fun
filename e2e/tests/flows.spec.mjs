@@ -142,3 +142,27 @@ test('the statistics page loads for a shared model', async ({ page, context }) =
     expect(statsErrors).toEqual([])
     expect(errors).toEqual([])
 })
+
+test('an unknown link opens an empty editor without errors', async ({ page }) => {
+    const errors = await openApp(page, '/doesNotExist00000')
+    await expect(page.locator('#exec > button')).toBeVisible()
+    expect((await getCode(page)).trim()).toBe('')
+    expect(errors).toEqual([])
+})
+
+test('a path matching no route shows the not-found page', async ({ page }) => {
+    await page.goto('/no/such/page/here')
+    await expect(page.locator('body')).toContainText('404')
+})
+
+test('clicking a shared link navigates in-app without reloading', async ({ page }) => {
+    await openApp(page)
+    await setCode(page, PUBLIC_CODE)
+    const links = await shareModel(page)
+    await page.evaluate(() => { window.__marker = 'same-page' })
+    page.on('dialog', (d) => d.dismiss())
+    await page.locator('#url-permalink a.urlinfo').first().click()
+    await expect.poll(() => new URL(page.url()).pathname).toBe(pathOf(links.public))
+    await expect.poll(() => getCode(page)).toContain('sig A')
+    expect(await page.evaluate(() => window.__marker)).toBe('same-page')
+})
