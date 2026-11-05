@@ -1026,9 +1026,7 @@
         }
       }
     },
-    "getStats/unknown": {
-      "timeout": true
-    },
+    "getStats/unknown": {},
     "publish/modelFromLink": {
       "events": [
         {

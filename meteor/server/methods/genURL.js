@@ -16,7 +16,7 @@ Meteor.methods({
       *
       * @return The 'id' of the model link, used in Share Model option
       */
-    genURL(code, currentModelId, themeData) {
+    async genURL(code, currentModelId, themeData) {
         // a new model is always created, regardless of having secrets or not
         const model = {
             time: new Date().toLocaleString(),
@@ -26,10 +26,10 @@ Meteor.methods({
         }
 
         // insert new model
-        const modelId = Model.insert(model)
+        const modelId = await Model.insertAsync(model)
 
         // generate the public link
-        const publicLinkId = Link.insert({
+        const publicLinkId = await Link.insertAsync({
             model_id: modelId,
             private: false
         })
@@ -39,15 +39,15 @@ Meteor.methods({
         let original
         if (containsValidSecret(code) || !currentModelId) {
             original = modelId
-            privateLinkId = Link.insert({
+            privateLinkId = await Link.insertAsync({
                 model_id: modelId,
                 private: true
             })
         } else {
-            original = Model.findOne(currentModelId).original
+            original = (await Model.findOneAsync(currentModelId)).original
         }
 
-        Model.update({ _id: modelId }, { $set: { original } })
+        await Model.updateAsync({ _id: modelId }, { $set: { original } })
 
         return {
             public: publicLinkId,

@@ -32,6 +32,6 @@ kevohagan:sweetalert
 benjaminrh:jquery-blockui
 perak:codemirror
 fortawesome:fontawesome
-http@1.4.2
+fetch
 meteortesting:mocha
 practicalmeteor:chai

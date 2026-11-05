@@ -15,8 +15,8 @@ Meteor.methods({
       * @param {String} id the document id
       * @return the respective model or instance
       */
-    getModel(id) {
-        return getModelFromLink(id) || getModelFromInstance(id)
+    async getModel(id) {
+        return (await getModelFromLink(id)) || getModelFromInstance(id)
     }
 })
 
@@ -29,15 +29,15 @@ Meteor.methods({
   * @param {String} linkId the potential link id
   * @return the respective model
   */
-function getModelFromLink(linkId) {
-    const link = Link.findOne(linkId)
+async function getModelFromLink(linkId) {
+    const link = await Link.findOneAsync(linkId)
     if (!link) return // undefined if link does not exist
-    const model = Model.findOne(link.model_id)
+    const model = await Model.findOneAsync(link.model_id)
 
     // if the link is public, hide the secrets and retrieve the secrets commands
     // from the root (original)
     if (!link.private) {
-        const o = Model.findOne(model.original)
+        const o = await Model.findOneAsync(model.original)
         const secs = extractSecrets(o.code).secret
         model.code = extractSecrets(model.code).public
         // register secret commands
@@ -57,13 +57,13 @@ function getModelFromLink(linkId) {
   * @param {String} instanceId the potential instance id
   * @return the model associated with the instance
   */
-function getModelFromInstance(instanceId) {
-    const instance = Instance.findOne(instanceId)
+async function getModelFromInstance(instanceId) {
+    const instance = await Instance.findOneAsync(instanceId)
     if (!instance) return // undefined if instance does not exist
-    const model = Model.findOne(instance.model_id)
+    const model = await Model.findOneAsync(instance.model_id)
 
     if (!containsValidSecret(model.code)) {
-        const o = Model.findOne(model.original)
+        const o = await Model.findOneAsync(model.original)
         const secs = extractSecrets(o.code).secret
         model.code = extractSecrets(model.code).public
         // register secret commands
