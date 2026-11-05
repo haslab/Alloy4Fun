@@ -1,3 +1,4 @@
+import { Mongo } from 'meteor/mongo'
 import SimpleSchema from 'simpl-schema'
 import 'meteor/aldeed:collection2/static'
 
@@ -11,7 +12,8 @@ import 'meteor/aldeed:collection2/static'
  * the public link is created.
  */
 
-Link = new Meteor.Collection('Link')
+const Link = new Mongo.Collection('Link')
+globalThis.Link = Link
 
 Link.attachSchema(new SimpleSchema({
     _id: {

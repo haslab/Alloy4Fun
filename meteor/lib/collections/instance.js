@@ -1,3 +1,4 @@
+import { Mongo } from 'meteor/mongo'
 import SimpleSchema from 'simpl-schema'
 import 'meteor/aldeed:collection2/static'
 
@@ -5,7 +6,8 @@ import 'meteor/aldeed:collection2/static'
  * An instance created by executing a command of an Alloy model.
  */
 
-Instance = new Meteor.Collection('Instance')
+const Instance = new Mongo.Collection('Instance')
+globalThis.Instance = Instance
 
 Instance.attachSchema(new SimpleSchema({
     _id: {

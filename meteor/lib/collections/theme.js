@@ -1,3 +1,4 @@
+import { Mongo } from 'meteor/mongo'
 import SimpleSchema from 'simpl-schema'
 import 'meteor/aldeed:collection2/static'
 
@@ -6,7 +7,8 @@ import 'meteor/aldeed:collection2/static'
  * Must be saved so that shared models can keep the instances appearance
  */
 
-Theme = new Meteor.Collection('Theme')
+const Theme = new Mongo.Collection('Theme')
+globalThis.Theme = Theme
 
 Theme.attachSchema(new SimpleSchema({
     _id: {

@@ -1,3 +1,4 @@
+import { Mongo } from 'meteor/mongo'
 import SimpleSchema from 'simpl-schema'
 import 'meteor/aldeed:collection2/static'
 
@@ -5,7 +6,8 @@ import 'meteor/aldeed:collection2/static'
  * TODO
  */
 
-Navigation = new Meteor.Collection('Navigation')
+const Navigation = new Mongo.Collection('Navigation')
+globalThis.Navigation = Navigation
 
 Navigation.attachSchema(new SimpleSchema({
     _id: {

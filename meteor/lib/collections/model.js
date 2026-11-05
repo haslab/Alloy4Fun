@@ -1,3 +1,4 @@
+import { Mongo } from 'meteor/mongo'
 import SimpleSchema from 'simpl-schema'
 import 'meteor/aldeed:collection2/static'
 
@@ -13,7 +14,8 @@ import 'meteor/aldeed:collection2/static'
  * stores additional information.
  */
 
-Model = new Meteor.Collection('Model')
+const Model = new Mongo.Collection('Model')
+globalThis.Model = Model
 
 Model.attachSchema(new SimpleSchema({
     _id: {
