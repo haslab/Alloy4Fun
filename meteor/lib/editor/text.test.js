@@ -316,7 +316,7 @@ fact Quizz {
         all d: Department | one  Company.isDirectorOf.d
     all e: Employee   | lone Company.isDirectorOf[e]
 }`
-        let private = `//SECRET
+        let private_code = `//SECRET
 assert validQuizz {
         all d: Department | one  Company.isDirectorOf.d 
     all e: Employee   | lone Company.isDirectorOf[e]
@@ -324,10 +324,10 @@ assert validQuizz {
 
 //SECRET
 check validQuizz for 5`
-        code = public_code + private
+        code = public_code + private_code
         res = extractSecrets(code)
         chai.assert.equal(res.public, public_code)
-        chai.assert.equal(res.secret, private)
+        chai.assert.equal(res.secret, private_code)
 
         code = 
 `//SECRET
