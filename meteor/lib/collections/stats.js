@@ -1,3 +1,6 @@
+import SimpleSchema from 'simpl-schema'
+import 'meteor/aldeed:collection2/static'
+
 /**
  * Alloy models created through the editor feature. A model may be derived
  * from another one, and also store the original root for efficiency purposes.

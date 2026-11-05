@@ -1,3 +1,6 @@
+import SimpleSchema from 'simpl-schema'
+import 'meteor/aldeed:collection2/static'
+
 /**
  * TODO
  */

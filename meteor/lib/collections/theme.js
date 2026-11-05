@@ -1,3 +1,6 @@
+import SimpleSchema from 'simpl-schema'
+import 'meteor/aldeed:collection2/static'
+
 /**
  * Theme that a user specified
  * Must be saved so that shared models can keep the instances appearance

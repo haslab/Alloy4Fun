@@ -1,3 +1,6 @@
+import SimpleSchema from 'simpl-schema'
+import 'meteor/aldeed:collection2/static'
+
 /**
  * An instance created by executing a command of an Alloy model.
  */

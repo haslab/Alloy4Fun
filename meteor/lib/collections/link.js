@@ -1,3 +1,6 @@
+import SimpleSchema from 'simpl-schema'
+import 'meteor/aldeed:collection2/static'
+
 /**
  * A link creates identifiers to access registed models. The identifier of the
  * link acts as the address of the resource.
