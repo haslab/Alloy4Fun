@@ -20,11 +20,5 @@ shell-server@0.5.0            # Server-side component of the `meteor shell` comm
 session@1.2.1
 aldeed:collection2@4.0.4
 iron:router
-twbs:bootstrap
-cwaring:modernizr
-kevohagan:sweetalert
-perak:codemirror
-fortawesome:fontawesome
 fetch
 meteortesting:mocha
-practicalmeteor:chai

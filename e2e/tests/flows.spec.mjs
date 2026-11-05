@@ -102,11 +102,12 @@ test('a shared instance can be reopened from its link', async ({ page, context }
     await expect(page.locator('#instance canvas').first()).toBeVisible({ timeout: 60_000 })
     const link = page.locator('#url-instance-permalink a.urlinfo')
     // an early click can be lost while the instance is still being rendered
+    let href
     await expect(async () => {
         if (!(await link.isVisible())) await page.locator('#genInstanceUrl > button').click({ timeout: 2_000 })
         await expect(link).toBeVisible({ timeout: 4_000 })
+        href = await link.getAttribute('href', { timeout: 2_000 })
     }).toPass({ timeout: 30_000 })
-    const href = await link.getAttribute('href')
 
     const reopened = await context.newPage()
     await openApp(reopened, pathOf(href))

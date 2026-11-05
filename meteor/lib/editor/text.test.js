@@ -1,7 +1,4 @@
-import {
-    chai,
-    assert
-} from 'meteor/practicalmeteor:chai';
+import chai, { assert } from 'chai'
 import {
     isParagraph,
     containsValidSecret,
