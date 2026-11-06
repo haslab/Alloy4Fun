@@ -14,7 +14,7 @@ set -eu
 
 P=${A4F_HOME:-$(cd "$(dirname "$0")" && pwd)}   # install dir = where this script lives
 H=$(dirname "$P")                                  # service user's home
-OLD=${A4F_OLD:-$H/old-stack}              # retired Meteor 1.8 checkout (rollback only)
+OLD=${A4F_OLD:-}                                   # retired Meteor 1.8 checkout; only for the one-off cutover/rollback
 STAGE=$H/stage
 TOOL=$H/.meteor/packages/meteor-tool/3.5.4/mt-os.linux.x86_64/dev_bundle
 ROOT_URL=${ROOT_URL:-http://localhost}
@@ -22,8 +22,8 @@ MONGO_PORT=27017      # new mongod runs as an unprivileged user, so it cannot us
 APP_PORT=80
 API_PORT=4001
 OLD_MONGO_PORT=81
-OLD_DBPATH=$OLD/meteor/.meteor/local/db
-SETTINGS_FILE=$P/settings.json   # Meteor settings for production; template: deploy/settings.production.json
+OLD_DBPATH=${OLD:-/nonexistent}/meteor/.meteor/local/db
+SETTINGS_FILE=$P/settings.json   # Meteor settings for production; template: deploy/settings.production.example.json
 
 die() { echo "ERROR: $*" >&2; exit 1; }
 listening() { ss -ltn | awk '{print $4}' | grep -qE "[:.]$1\$"; }
@@ -48,7 +48,7 @@ start_api() {
 }
 
 start_app() {
-  [ -f "$SETTINGS_FILE" ] || die "missing $SETTINGS_FILE (copy deploy/settings.production.json there)"
+  [ -f "$SETTINGS_FILE" ] || die "missing $SETTINGS_FILE (copy deploy/settings.production.example.json there and edit it)"
   (cd $P/bundle; MONGO_URL="mongodb://127.0.0.1:$MONGO_PORT/meteor?replicaSet=meteor" \
     MONGO_OPLOG_URL="mongodb://127.0.0.1:$MONGO_PORT/local?replicaSet=meteor" \
     ROOT_URL=$ROOT_URL PORT=$APP_PORT METEOR_SETTINGS="$(cat $SETTINGS_FILE)" \
@@ -234,6 +234,7 @@ status)
   counts $MONGO_PORT 2>/dev/null || true
   ;;
 rollback)
+  [ -d "$OLD" ] || die "set A4F_OLD to the retired Meteor 1.8 checkout"
   touch $P/stopped
   echo "== stopping the new stack"
   stop_new
@@ -241,7 +242,7 @@ rollback)
   wait_gone 80 || die "port 80 still in use"
   echo "== starting the OLD stack exactly as the old crontab did"
   (cd $OLD/api; sudo nohup java -Dthorntail.http.port=4001 -Djava.net.preferIPv4Stack=true -jar target/alloy4fun-api-thorntail.jar >/dev/null 2>&1 &)
-  (cd $OLD/meteor; sudo nohup meteor run --allow-superuser --settings settings.json --port 80 >> /var/log/old-app.log 2>&1 &)
+  (cd $OLD/meteor; sudo nohup meteor run --allow-superuser --settings settings.json --port 80 >> $P/logs/old-app.log 2>&1 &)
   echo "old stack starting (Meteor takes ~1 min). Restore the old crontab lines too."
   ;;
 *)

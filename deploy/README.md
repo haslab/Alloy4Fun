@@ -90,7 +90,7 @@ Two programs, two mechanisms:
 - **Meteor app**: one JSON settings file with the same structure everywhere (`env.API_URL`, `env.MAX_INSTANCES`, `public.QUESTIONNAIRE_URL`; `public` is sent to browsers).
   - Development: [meteor/settings.json](../meteor/settings.json) (committed, safe defaults: API on 4001), used by `meteor run --settings settings.json`.
   - Production: `a4f-prod/settings.json`, which exists only on the server. `a4f.sh start` passes it as `METEOR_SETTINGS` and refuses to start without it.
-    Template: [settings.production.json](settings.production.json). One-time setup: `scp deploy/settings.production.json <user>@<host>:~/a4f-prod/settings.json`.
+    Template: [settings.production.example.json](settings.production.example.json) (placeholder values; the real questionnaire URL is set only on the server, never committed). One-time setup: `scp deploy/settings.production.example.json <user>@<host>:~/a4f-prod/settings.json`.
     To change a value, edit that file and run `a4f.sh stop && a4f.sh start`.
 - **Java API**: `-D` JVM flags with defaults in the code (`alloy4fun.mongo.host|port|db`, `alloy4fun.stats.maxage`). Production overrides only what differs (Mongo port 27017, max age 600000) in `start` in `a4f.sh`.
 
@@ -104,7 +104,6 @@ Ports, `ROOT_URL`, `MONGO_URL` and `MONGO_OPLOG_URL` are infrastructure, not set
   and skips its run while `deploy` or another command holds `a4f-prod/lock`. Install once in the **service user's** crontab (`crontab -e`, not root's):
   `* * * * * $HOME/a4f-prod/a4f.sh watchdog`. Test: `kill $(cat a4f-prod/app.pid)`, wait up to a minute, check `a4f.sh status` and `watchdog.log`.
   It only checks that ports are open, not that the app responds; a hung (not dead) process needs a manual restart (`a4f.sh stop && a4f.sh start`). Always use `a4f.sh stop`, never `kill`, for planned stops.
-- Retired setup (Meteor 1.8 `meteor run` as root with its own Mongo on :81) is kept in `the old checkout`
-  as a last-resort rollback of the 2026-11-06 migration (`a4f.sh rollback`, loses data written since).
+- The retired Meteor 1.8 setup can be kept as a last-resort rollback of the migration: set `A4F_OLD` to its checkout and run `a4f.sh rollback` (loses data written since).
 - Logs: `a4f-prod/logs/{app,api,mongod,boot}.log`, plus the API's `a4f-prod/target/alloy4fun.log.<date>`. Rotated by logrotate (weekly, 4 kept, compressed; API daily files 7 kept) using [logrotate.conf](logrotate.conf).
   One-time install: `scp deploy/logrotate.conf <user>@<host>:~/a4f-prod/`, then on the host `sed "s|A4F_DIR|$HOME/a4f-prod|; s|A4F_USER|$(id -un)|; s|A4F_GROUP|$(id -gn)|" ~/a4f-prod/logrotate.conf | sudo tee /etc/logrotate.d/alloy4fun`; check with `sudo logrotate -d /etc/logrotate.d/alloy4fun` (dry run) and, to force once, `sudo logrotate -f /etc/logrotate.d/alloy4fun`.
