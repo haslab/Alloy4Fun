@@ -21,3 +21,17 @@ import './methods/navInstance'
 
 import './publications/modelFromLink'
 import './publications/statsFromLink'
+import { seedWithModels } from './seed'
+
+/**
+  If the database is empty, seeds a set of default models after startup.
+*/
+Meteor.startup(async () => {
+    if (!(await Model.find().countAsync())) {
+        try {
+            console.log(`Seeded Database with ${await seedWithModels()} models`)
+        } catch (e) {
+            console.warn('Database is empty and could not be seeded (missing private/*.json?):', e.message)
+        }
+    }
+})
