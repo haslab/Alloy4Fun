@@ -83,6 +83,21 @@ Anything written after the dump is lost.
 3. Reach it with `ssh -L 3200:localhost:3200 mcunha@<host>`. Production data contains study participants' work:
    keep dumps off shared machines and delete copies when done.
 
+## Where each setting lives
+
+Settings reach three different programs through three different mechanisms. In production all of them are set in `a4f-prod/a4f.sh`
+(the top variables and the `start` function); `settings.json` in the repo is only for local development and is not used on the server.
+
+| Setting | Read by | Mechanism | Local dev | Production (`a4f.sh`) |
+|---|---|---|---|---|
+| `API_URL`, `MAX_INSTANCES` | Meteor server | `env.*` in the Meteor settings JSON | `meteor/settings.json` | `SETTINGS_JSON` -> `METEOR_SETTINGS` |
+| `QUESTIONNAIRE_URL` | Meteor client | `public.*` in the same JSON (sent to browsers) | optional in `settings.json` (has a default) | `SETTINGS_JSON` |
+| `MONGO_URL`, `MONGO_OPLOG_URL`, `PORT`, `ROOT_URL` | Meteor server | environment variables | set by `meteor run` (Mongo on port+1) | `start` |
+| Mongo host/port/db, stats max age, HTTP port | Java API | `-Dalloy4fun.*` / `-Dthorntail.http.port` JVM flags | defaults (localhost:3001, db `meteor`, 1 day, port from the command) | `start` |
+
+So: to change the study questionnaire or the number of instances, edit `SETTINGS_JSON` in `a4f.sh`; to change ports or Mongo location,
+edit the variables at the top of `a4f.sh`. Then `a4f.sh stop && a4f.sh start`.
+
 ## Facts and gotchas
 
 - MongoDB 4.0.2 binary: `a4f-prod/mongod`, taken from the Meteor 1.8.0_1 tool. Do not start a newer `mongod` on these data files (it would upgrade them irreversibly); `/usr/bin/mongod` is 3.6.8 and too old.
