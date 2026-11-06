@@ -21,7 +21,7 @@ APP_PORT=80
 API_PORT=4001
 OLD_MONGO_PORT=81
 OLD_DBPATH=$OLD/meteor/.meteor/local/db
-SETTINGS_JSON='{ "env": { "API_URL": "http://localhost:4001", "MAX_INSTANCES": 10 }, "public": { "QUESTIONNAIRE_URL": "https://example.org/questionnaire" } }'
+SETTINGS_FILE=$P/settings.json   # Meteor settings for production; template: deploy/settings.production.json
 
 die() { echo "ERROR: $*" >&2; exit 1; }
 listening() { ss -ltn | awk '{print $4}' | grep -qE "[:.]$1\$"; }
@@ -46,9 +46,10 @@ start_api() {
 }
 
 start_app() {
+  [ -f "$SETTINGS_FILE" ] || die "missing $SETTINGS_FILE (copy deploy/settings.production.json there)"
   (cd $P/bundle; MONGO_URL="mongodb://127.0.0.1:$MONGO_PORT/meteor?replicaSet=meteor" \
     MONGO_OPLOG_URL="mongodb://127.0.0.1:$MONGO_PORT/local?replicaSet=meteor" \
-    ROOT_URL=$ROOT_URL PORT=$APP_PORT METEOR_SETTINGS="$SETTINGS_JSON" \
+    ROOT_URL=$ROOT_URL PORT=$APP_PORT METEOR_SETTINGS="$(cat $SETTINGS_FILE)" \
     nohup $P/node main.js >> $P/logs/app.log 2>&1 & echo $! > $P/app.pid)
 }
 

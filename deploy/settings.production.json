@@ -1,0 +1,9 @@
+{
+    "env": {
+        "API_URL": "http://localhost:4001",
+        "MAX_INSTANCES": 10
+    },
+    "public": {
+        "QUESTIONNAIRE_URL": "https://example.org/questionnaire"
+    }
+}
