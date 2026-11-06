@@ -4,8 +4,8 @@
  * @module client/lib/editor/state
  */
 
-// the study's final questionnaire; override with settings.public.QUESTIONNAIRE_URL
-export const QUESTIONNAIRE_URL = (Meteor.settings && Meteor.settings.public && Meteor.settings.public.QUESTIONNAIRE_URL) || 'https://questionpro.com/t/AXF6uZxWj3'
+// final questionnaire link of a study; set it per deployment with settings.public.QUESTIONNAIRE_URL
+export const QUESTIONNAIRE_URL = (Meteor.settings && Meteor.settings.public && Meteor.settings.public.QUESTIONNAIRE_URL) || '#'
 
 /**
  * Updates the state when the model has been changed.

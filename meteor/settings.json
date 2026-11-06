@@ -4,6 +4,6 @@
         "MAX_INSTANCES": 10
     },
     "public": {
-        "QUESTIONNAIRE_URL": "https://questionpro.com/t/AXF6uZxWj3"
+        "QUESTIONNAIRE_URL": "https://example.org/questionnaire"
     }
 }
