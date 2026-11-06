@@ -4,21 +4,22 @@ services:
     build:
       context: ./meteor/
     ports:
-      - "3010:3000"
+      - "3000:3000"
     links:
       - mongo
       - api
-    env_file:
-      - .env
+    volumes:
+       - ./task_jsons:/usr/src/app/private/
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/meteor
+    platform: linux/amd64
   mongo:
     image: mongo:latest
     command: mongod --storageEngine=wiredTiger
-    volumes:
-      - ./data/db:/data/db
     ports:
       - "27017:27017"
   api:
     build:
       context: ./api/
-    ports:
-      - "8081:8080" # if access id needed from the outside (otherwise no need)
+    expose: 
+      - "4001"
