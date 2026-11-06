@@ -85,24 +85,21 @@ Anything written after the dump is lost.
 
 ## Where each setting lives
 
-Settings reach three different programs through three different mechanisms. In production all of them are set in `a4f-prod/a4f.sh`
-(the top variables and the `start` function); `settings.json` in the repo is only for local development and is not used on the server.
+Two programs, two mechanisms:
 
-| Setting | Read by | Mechanism | Local dev | Production (`a4f.sh`) |
-|---|---|---|---|---|
-| `API_URL`, `MAX_INSTANCES` | Meteor server | `env.*` in the Meteor settings JSON | `meteor/settings.json` | `SETTINGS_JSON` -> `METEOR_SETTINGS` |
-| `QUESTIONNAIRE_URL` | Meteor client | `public.*` in the same JSON (sent to browsers) | optional in `settings.json` (has a default) | `SETTINGS_JSON` |
-| `MONGO_URL`, `MONGO_OPLOG_URL`, `PORT`, `ROOT_URL` | Meteor server | environment variables | set by `meteor run` (Mongo on port+1) | `start` |
-| Mongo host/port/db, stats max age, HTTP port | Java API | `-Dalloy4fun.*` / `-Dthorntail.http.port` JVM flags | defaults (localhost:3001, db `meteor`, 1 day, port from the command) | `start` |
+- **Meteor app**: one JSON settings file with the same structure everywhere (`env.API_URL`, `env.MAX_INSTANCES`, `public.QUESTIONNAIRE_URL`; `public` is sent to browsers).
+  - Development: [meteor/settings.json](../meteor/settings.json) (committed, safe defaults: API on 4001), used by `meteor run --settings settings.json`.
+  - Production: `a4f-prod/settings.json`, which exists only on the server. `a4f.sh start` passes it as `METEOR_SETTINGS` and refuses to start without it.
+    Template: [settings.production.json](settings.production.json). One-time setup: `scp deploy/settings.production.json mcunha@<host>:/home/mcunha/a4f-prod/settings.json`.
+    To change a value, edit that file and run `a4f.sh stop && a4f.sh start`.
+- **Java API**: `-D` JVM flags with defaults in the code (`alloy4fun.mongo.host|port|db`, `alloy4fun.stats.maxage`). Production overrides only what differs (Mongo port 27017, max age 600000) in `start` in `a4f.sh`.
 
-So: to change the study questionnaire or the number of instances, edit `SETTINGS_JSON` in `a4f.sh`; to change ports or Mongo location,
-edit the variables at the top of `a4f.sh`. Then `a4f.sh stop && a4f.sh start`.
+Ports, `ROOT_URL`, `MONGO_URL` and `MONGO_OPLOG_URL` are infrastructure, not settings: they are the variables at the top of `a4f.sh` and the `start_app` function.
 
 ## Facts and gotchas
 
 - MongoDB 4.0.2 binary: `a4f-prod/mongod`, taken from the Meteor 1.8.0_1 tool. Do not start a newer `mongod` on these data files (it would upgrade them irreversibly); `/usr/bin/mongod` is 3.6.8 and too old.
 - API options (defaults in parentheses): `-Dalloy4fun.mongo.host` (localhost), `.mongo.port` (3001; production uses 27017), `.mongo.db` (meteor), `.stats.maxage` ms (1 day; production 600000).
-- Settings in `a4f.sh` (`SETTINGS_JSON`): `env.API_URL`, `env.MAX_INSTANCES`, `public.QUESTIONNAIRE_URL`. Change them there; they are passed as `METEOR_SETTINGS`.
 - Crash recovery: nothing restarts the stack after a crash, only a reboot does (`a4f.sh start`). Check `a4f.sh status`.
 - Retired setup (Meteor 1.8 `meteor run` as root with its own Mongo on :81) is kept in `~/A4FStudy/Alloy4Fun`
   as a last-resort rollback of the 2026-11-06 migration (`a4f.sh rollback`, loses data written since).
