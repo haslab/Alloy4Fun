@@ -1,7 +1,7 @@
 #!/bin/bash
 # Alloy4Fun production tooling for the Meteor 3 stack (no Docker).
-# Run as user svcuser (uses sudo where needed). Commands:
-#   prepare   non-disruptive: stop staging, lay out /home/svcuser/a4f-prod, grant port-80 capability
+# Run as the unprivileged service user, from the install directory (uses sudo where needed). Commands:
+#   prepare   non-disruptive: stop staging, lay out the install directory, grant port-80 capability
 #   cutover   DOWNTIME: stop old stack, final dump, restore into a NEW dbpath, start new stack
 #   start     start mongod + API + app (used by @reboot)
 #   stop      stop the new stack
@@ -9,14 +9,16 @@
 #   rollback  stop the new stack and start the OLD stack again (old source + old data untouched)
 #   deploy <meteor.tar.gz> [api.jar]   routine release: dump DB, swap code, health-check, auto-revert
 #   release-rollback                   go back to the previous release (code only, data is kept)
+#   watchdog  restart whichever of mongod/API/app is down (run every minute from cron); no-op after 'stop'
 set -eu
 
-P=${A4F_HOME:-/home/svcuser/a4f-prod}
-OLD=/home/svcuser/old-stack
-STAGE=/home/svcuser/stage
-TOOL=/home/svcuser/.meteor/packages/meteor-tool/3.5.4/mt-os.linux.x86_64/dev_bundle
+P=${A4F_HOME:-$(cd "$(dirname "$0")" && pwd)}   # install dir = where this script lives
+H=$(dirname "$P")                                  # service user's home
+OLD=${A4F_OLD:-$H/old-stack}              # retired Meteor 1.8 checkout (rollback only)
+STAGE=$H/stage
+TOOL=$H/.meteor/packages/meteor-tool/3.5.4/mt-os.linux.x86_64/dev_bundle
 ROOT_URL=${ROOT_URL:-http://localhost}
-MONGO_PORT=27017      # new mongod runs as svcuser, so it cannot use port 81
+MONGO_PORT=27017      # new mongod runs as an unprivileged user, so it cannot use port 81
 APP_PORT=80
 API_PORT=4001
 OLD_MONGO_PORT=81
@@ -30,7 +32,7 @@ counts() { mongo --quiet --port "$1" meteor --eval 'db.getMongo().setSlaveOk(); 
 
 start_mongod() {
   $P/mongod --bind_ip 127.0.0.1 --port $MONGO_PORT --dbpath $P/db --oplogSize 8 --replSet meteor --noauth \
-    --fork --logpath $P/logs/mongod.log >/dev/null
+    --fork --logpath $P/logs/mongod.log >/dev/null 9>&-
   for i in $(seq 1 30); do mongo --quiet --port $MONGO_PORT --eval 'db.version()' >/dev/null 2>&1 && break; sleep 1; done
   mongo --quiet --port $MONGO_PORT --eval "if(!rs.status().ok){printjson(rs.initiate({_id:'meteor',members:[{_id:0,host:'127.0.0.1:$MONGO_PORT'}]}))}" >/dev/null
   for i in $(seq 1 30); do
@@ -42,7 +44,7 @@ start_mongod() {
 start_api() {
   (cd $P; nohup java -Dalloy4fun.mongo.port=$MONGO_PORT -Dalloy4fun.stats.maxage=600000 \
     -Dthorntail.http.port=$API_PORT -Djava.net.preferIPv4Stack=true -jar alloy4fun-api-thorntail.jar \
-    >> $P/logs/api.log 2>&1 & echo $! > $P/api.pid)
+    >> $P/logs/api.log 2>&1 9>&- & echo $! > $P/api.pid)
 }
 
 start_app() {
@@ -50,7 +52,7 @@ start_app() {
   (cd $P/bundle; MONGO_URL="mongodb://127.0.0.1:$MONGO_PORT/meteor?replicaSet=meteor" \
     MONGO_OPLOG_URL="mongodb://127.0.0.1:$MONGO_PORT/local?replicaSet=meteor" \
     ROOT_URL=$ROOT_URL PORT=$APP_PORT METEOR_SETTINGS="$(cat $SETTINGS_FILE)" \
-    nohup $P/node main.js >> $P/logs/app.log 2>&1 & echo $! > $P/app.pid)
+    nohup $P/node main.js >> $P/logs/app.log 2>&1 9>&- & echo $! > $P/app.pid)
 }
 
 stop_new() {
@@ -91,6 +93,13 @@ prune() {
   done
   ls -t $P/backup/pre-*.gz 2>/dev/null | tail -n +4 | xargs -r rm -f
 }
+
+# One mutating command at a time; the watchdog just skips its run if another command holds the lock.
+case "${1:-}" in
+status|"") ;;
+*) mkdir -p $P; exec 9>$P/lock
+   if [ "$1" = watchdog ]; then flock -n 9 || exit 0; else flock 9; fi ;;
+esac
 
 case "${1:-}" in
 prepare)
@@ -148,7 +157,7 @@ cutover)
   echo "CUTOVER DONE. Now update the crontab (see instructions) and smoke-test with a browser."
   ;;
 start)
-  mkdir -p $P/logs
+  mkdir -p $P/logs; rm -f $P/stopped
   start_mongod; start_api
   wait_api || echo "WARNING: API did not answer in time" >&2
   start_app
@@ -209,7 +218,15 @@ release-rollback)
   app_healthy && echo "rolled back to $(readlink $P/bundle)" || die "app not healthy after rollback (see $P/logs/app.log)"
   ;;
 stop)
+  touch $P/stopped   # tells the watchdog this is intentional
   stop_new
+  ;;
+watchdog)
+  [ -f $P/stopped ] && exit 0
+  log() { echo "$(date '+%F %T') watchdog: $*" >> $P/logs/watchdog.log; }
+  listening $MONGO_PORT || { log "mongod down, restarting"; start_mongod; }
+  listening $API_PORT || { log "API down, restarting"; start_api; wait_api || log "API did not answer in time"; }
+  listening $APP_PORT || { log "app down, restarting"; start_app; }
   ;;
 status)
   ss -ltnp 2>/dev/null | grep -E ":($APP_PORT|$API_PORT|$MONGO_PORT|$OLD_MONGO_PORT)\b" || echo "nothing listening"
@@ -217,6 +234,7 @@ status)
   counts $MONGO_PORT 2>/dev/null || true
   ;;
 rollback)
+  touch $P/stopped
   echo "== stopping the new stack"
   stop_new
   sudo pkill -TERM -f "[a]4f-prod/node" 2>/dev/null || true

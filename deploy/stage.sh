@@ -4,12 +4,13 @@
 # Usage: ./stage.sh setup | up | status | down
 set -eu
 
-S=/home/svcuser/stage
-DUMP=${DUMP:-$(ls -t /home/svcuser/meteor-*.gz | head -1)}
+S=$(cd "$(dirname "$0")" && pwd)   # staging dir = where this script lives
+H=$(dirname "$S")
+DUMP=${DUMP:-$(ls -t $H/meteor-*.gz | head -1)}
 MONGO_PORT=3301
 API_PORT=4101
 APP_PORT=3200
-METEOR_TOOL=$(ls -d /home/svcuser/.meteor/packages/meteor-tool/3.5.4/mt-os.linux.x86_64/dev_bundle)
+METEOR_TOOL=$(ls -d $H/.meteor/packages/meteor-tool/3.5.4/mt-os.linux.x86_64/dev_bundle)
 NODE=$METEOR_TOOL/bin/node
 NPM=$METEOR_TOOL/bin/npm
 
@@ -35,7 +36,7 @@ up)
   if [ "$(mongo --quiet --port $MONGO_PORT meteor --eval 'db.Model.count()')" = "0" ]; then
     mongorestore --port $MONGO_PORT --gzip --archive="$DUMP" --nsInclude='meteor.*' --drop
   fi
-  (cd /home/svcuser/stage; nohup java -Dalloy4fun.mongo.port=$MONGO_PORT -Dalloy4fun.stats.maxage=600000 \
+  (cd $S; nohup java -Dalloy4fun.mongo.port=$MONGO_PORT -Dalloy4fun.stats.maxage=600000 \
     -Dthorntail.http.port=$API_PORT -Djava.net.preferIPv4Stack=true -jar alloy4fun-api-thorntail.jar \
     > $S/logs/api.log 2>&1 & echo $! > $S/api.pid)
   (cd $S/bundle; MONGO_URL="mongodb://127.0.0.1:$MONGO_PORT/meteor?replicaSet=meteor" \
