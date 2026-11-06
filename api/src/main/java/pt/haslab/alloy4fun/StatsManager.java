@@ -36,7 +36,10 @@ import pt.haslab.alloy4fun.metrics.ModelStats;
 public class StatsManager extends Application {
 	
 	private static int TIMEOUT = 600;
-	private static int MAXAGE = 1000*60*60*24;
+	private static int MAXAGE = Integer.getInteger("alloy4fun.stats.maxage", 1000*60*60*24);
+	private static String MONGO_HOST = System.getProperty("alloy4fun.mongo.host", "localhost");
+	private static int MONGO_PORT = Integer.getInteger("alloy4fun.mongo.port", 3001);
+	private static String MONGO_DB = System.getProperty("alloy4fun.mongo.db", "meteor");
 
 	private static Logger LOGGER = LoggerFactory.getLogger(StatsManager.class);
 	
@@ -50,8 +53,8 @@ public class StatsManager extends Application {
 	public static ModelStats getStats(String req, Class<?> catalog) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, SecurityException, InterruptedException, ExecutionException, TimeoutException {
 
 		Future<ModelStats> res = running.computeIfAbsent(req, z -> executorService.submit(() -> {
-			MongoClient mongoClient = new MongoClient("localhost", 3001);
-			MongoDatabase database = mongoClient.getDatabase("meteor");
+			MongoClient mongoClient = new MongoClient(MONGO_HOST, MONGO_PORT);
+			MongoDatabase database = mongoClient.getDatabase(MONGO_DB);
 			FindIterable<Document> models = database.getCollection("Model").find(eq("original", req));
 			FindIterable<Document> insts = database.getCollection("Instance").find();
 			FindIterable<Document> links = database.getCollection("Link").find();
