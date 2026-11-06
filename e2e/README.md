@@ -23,4 +23,6 @@ npm test                   # browser flows
 Overrides: `E2E_BASE_URL`, and for the baseline `E2E_DDP_URL`, `E2E_MONGO_URL`, `E2E_MONGO_DB` (see `baseline/run.mjs`).
 `npm run baseline:record` rewrites `expected.json`; only do so on the original Meteor 2.9 app.
 
+The comparison masks plain `YYYY-MM-DD` day buckets and sorts arrays of named entries (e.g. stats scalars), because the API does not guarantee their order (`canonicalize` in `lib/normalize.mjs`).
+
 Known: the app logs a Bootstrap/jQuery version `pageerror`; the flows whitelist it.

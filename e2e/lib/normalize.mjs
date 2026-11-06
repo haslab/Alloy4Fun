@@ -24,3 +24,19 @@ export function makeNormalizer() {
     }
     return walk
 }
+
+/**
+ * Canonical form applied to both the recorded and the current result before
+ * comparing: day buckets (YYYY-MM-DD) depend on the run date, and the API does
+ * not guarantee the order of named entries such as the stats scalars.
+ */
+export function canonicalize(v) {
+    if (typeof v === 'string') return /^\d{4}-\d{2}-\d{2}$/.test(v) ? '<DAY>' : v
+    if (Array.isArray(v)) {
+        const items = v.map(canonicalize)
+        const named = items.length > 1 && items.every((x) => x && typeof x === 'object' && typeof x.name === 'string')
+        return named ? items.sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0)) : items
+    }
+    if (v && typeof v === 'object') return Object.fromEntries(Object.entries(v).map(([k, x]) => [k, canonicalize(x)]))
+    return v
+}

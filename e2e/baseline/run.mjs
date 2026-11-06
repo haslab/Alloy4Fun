@@ -14,7 +14,7 @@ import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { MongoClient } from 'mongodb'
 import { DdpClient } from '../lib/ddp.mjs'
-import { makeNormalizer } from '../lib/normalize.mjs'
+import { makeNormalizer, canonicalize } from '../lib/normalize.mjs'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const DDP_URL = process.env.E2E_DDP_URL || 'ws://127.0.0.1:3000/websocket'
@@ -142,7 +142,7 @@ async function main() {
     mkdirSync(actualDir, { recursive: true })
     writeFileSync(join(actualDir, 'result.json'), `${JSON.stringify(result, null, 2)}\n`)
 
-    const differences = diff(JSON.parse(readFileSync(expectedFile, 'utf8')), result)
+    const differences = diff(canonicalize(JSON.parse(readFileSync(expectedFile, 'utf8'))), canonicalize(result))
     if (!differences.length) {
         console.log(`OK: ${Object.keys(calls).length} scenarios match the baseline`)
         return
