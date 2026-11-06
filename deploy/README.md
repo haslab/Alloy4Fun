@@ -90,7 +90,7 @@ Two programs, two mechanisms:
 - **Meteor app**: one JSON settings file with the same structure everywhere (`env.API_URL`, `env.MAX_INSTANCES`, `public.QUESTIONNAIRE_URL`; `public` is sent to browsers).
   - Development: [meteor/settings.json](../meteor/settings.json) (committed, safe defaults: API on 4001), used by `meteor run --settings settings.json`.
   - Production: `a4f-prod/settings.json`, which exists only on the server. `a4f.sh start` passes it as `METEOR_SETTINGS` and refuses to start without it.
-    Template: [settings.production.example.json](settings.production.example.json) (placeholder values; the real questionnaire URL is set only on the server, never committed). One-time setup: `scp deploy/settings.production.example.json <user>@<host>:~/a4f-prod/settings.json`.
+    Template: [settings.production.example.json](settings.production.example.json) (placeholder values; the real questionnaire URL is set only on the server, never committed). One-time setup: `scp deploy/settings.production.example.json <user>@<host>:~/a4f-prod/settings.json`, then edit it on the host (real questionnaire URL).
     To change a value, edit that file and run `a4f.sh stop && a4f.sh start`.
 - **Java API**: `-D` JVM flags with defaults in the code (`alloy4fun.mongo.host|port|db`, `alloy4fun.stats.maxage`). Production overrides only what differs (Mongo port 27017, max age 600000) in `start` in `a4f.sh`.
 
