@@ -16,11 +16,9 @@ import { getCommandIndex,
     isUnsatInstance,
     getCommandLabel,
     resetState,
-    currentState } from './state'
+    currentState,
+    QUESTIONNAIRE_URL } from './state'
 import { resetPositions,newInstanceSetup } from '../visualizer/projection'
-
-// the study's final questionnaire; override with settings.public.QUESTIONNAIRE_URL
-const QUESTIONNAIRE_URL = (Meteor.settings && Meteor.settings.public && Meteor.settings.public.QUESTIONNAIRE_URL) || 'https://questionpro.com/t/AXF6uZxWj3'
 
 const no_more_msg = 'No more satisfying instances!'
 

@@ -4,6 +4,8 @@
  * @module client/lib/editor/state
  */
 
+// the study's final questionnaire; override with settings.public.QUESTIONNAIRE_URL
+export const QUESTIONNAIRE_URL = (Meteor.settings && Meteor.settings.public && Meteor.settings.public.QUESTIONNAIRE_URL) || 'https://questionpro.com/t/AXF6uZxWj3'
 
 /**
  * Updates the state when the model has been changed.
@@ -110,7 +112,7 @@ export function disableExec() {
     log_messages = []
     log_classes = []
 
-    log_messages.push('This challenge has timed out. '+(Session.get('frozen-next')?' Please skip to the next challenge.':' You have completed all the challenges. Please proceed to the <a href="https://questionpro.com/t/AXF6uZxWj3">final questionnaire</a>.'))
+    log_messages.push('This challenge has timed out. '+(Session.get('frozen-next')?' Please skip to the next challenge.':' You have completed all the challenges. Please proceed to the <a href="'+QUESTIONNAIRE_URL+'">final questionnaire</a>.'))
     log_classes.push('log-warning')
     textEditor.setOption("readOnly",true)
 
