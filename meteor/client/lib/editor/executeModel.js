@@ -16,7 +16,8 @@ import { getCommandIndex,
     isUnsatInstance,
     getCommandLabel,
     resetState,
-    currentState } from './state'
+    currentState,
+    QUESTIONNAIRE_URL } from './state'
 import { resetPositions,newInstanceSetup } from '../visualizer/projection'
 
 const no_more_msg = 'No more satisfying instances!'
@@ -156,7 +157,7 @@ function handleExecuteModel(err, result) {
             markEditorWarning(result.line - 1, result.column - 1, result.line2 - 1, result.column2 - 1)
         }
         if (result.unsat) {
-            log_messages.push(result.check ? (Session.get('frozen-message')?('The incorrect specification has been fixed.'+(Session.get('frozen-next')?' Please skip to the next challenge.':' You have completed all the challenges. Please proceed to the <a href="https://questionpro.com/t/AXF6uZxWj3">final questionnaire</a>.')):`No counter-example found. ${command} may be valid.`) : `No instance found. ${command} may be inconsistent.`)
+            log_messages.push(result.check ? (Session.get('frozen-message')?('The incorrect specification has been fixed.'+(Session.get('frozen-next')?' Please skip to the next challenge.':' You have completed all the challenges. Please proceed to the <a href="'+QUESTIONNAIRE_URL+'">final questionnaire</a>.')):`No counter-example found. ${command} may be valid.`) : `No instance found. ${command} may be inconsistent.`)
             log_classes.push(result.check ? 'log-complete' : 'log-wrong')
             if (Session.get('frozen-message'))
                 textEditor.setOption("readOnly",true)

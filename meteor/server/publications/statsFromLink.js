@@ -1,12 +1,15 @@
 /**
  * Publishes the link information to the client
  */
-Meteor.publish('statsFromLink', function (linkId) {
-
+Meteor.publish('statsFromLink', async function (linkId) {
     const publication = this
-    Meteor.call('getStats', linkId, (err, model) => {
-	    // see https://docs.meteor.com/api/pubsub.html#Subscription-added
-        if (!err) publication.added('Stats', linkId, model)
-        publication.ready()
-    })
+
+    try {
+        const model = await Meteor.callAsync('getStats', linkId)
+        // see https://docs.meteor.com/api/pubsub.html#Subscription-added
+        publication.added('Stats', linkId, model)
+    } catch (err) {
+        // unavailable stats are published as nothing
+    }
+    publication.ready()
 })

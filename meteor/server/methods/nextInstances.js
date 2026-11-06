@@ -1,3 +1,4 @@
+import { postApi } from '../lib/api'
 import { extractSecrets,
     containsValidSecret } from '../../lib/editor/text'
 
@@ -13,36 +14,27 @@ Meteor.methods({
       *
       * @returns the instance data and the id of the new saved model
       */
-    nextInstances(code, commandIndex, currentModelId) {
-        return new Promise((resolve, reject) => {
-            // must send model in case session has expired and must be restarted
-            // if no secrets, try to extract from original
-            let code_with_secrets = code
-            if (currentModelId && !containsValidSecret(code)) {
-                const o = Model.findOne(currentModelId).original
-                code_with_secrets = code + extractSecrets(Model.findOne(o).code).secret
-            }
+    async nextInstances(code, commandIndex, currentModelId) {
+        // must send model in case session has expired and must be restarted
+        // if no secrets, try to extract from original
+        let code_with_secrets = code
+        if (currentModelId && !containsValidSecret(code)) {
+            const o = (await Model.findOneAsync(currentModelId)).original
+            code_with_secrets = code + extractSecrets((await Model.findOneAsync(o)).code).secret
+        }
 
-            // call webservice to get instances
-            HTTP.call('POST', `${Meteor.settings.env.API_URL}/getInstances`, {
-                data: {
-                    model: code_with_secrets,
-                    numberOfInstances: Meteor.settings.env.MAX_INSTANCES,
-                    commandIndex,
-                    sessionId: currentModelId,
-                    parentId: ''
-                }
-            }, (error, result) => {
-                if (error) reject(error)
+        // call webservice to get instances
+        const content = JSON.parse(await postApi('/getInstances', {
+            model: code_with_secrets,
+            numberOfInstances: Meteor.settings.env.MAX_INSTANCES,
+            commandIndex,
+            sessionId: currentModelId,
+            parentId: ''
+        }))
 
-                const content = JSON.parse(result.content)
-
-                // resolve the promise
-                resolve({
-                    instances: content,
-                    newModelId: currentModelId
-                })
-            })
-        })
+        return {
+            instances: content,
+            newModelId: currentModelId
+        }
     }
 })

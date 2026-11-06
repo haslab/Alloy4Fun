@@ -1,3 +1,7 @@
+import { Mongo } from 'meteor/mongo'
+import SimpleSchema from 'simpl-schema'
+import 'meteor/aldeed:collection2/static'
+
 /**
  * Alloy models created through the editor feature. A model may be derived
  * from another one, and also store the original root for efficiency purposes.
@@ -10,7 +14,8 @@
  * stores additional information.
  */
 
-Stats = new Meteor.Collection('Stats')
+const Stats = new Mongo.Collection('Stats')
+globalThis.Stats = Stats
 
 Stats.attachSchema(new SimpleSchema({
     _id: {

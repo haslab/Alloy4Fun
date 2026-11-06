@@ -12,6 +12,8 @@ Alloy4Fun is live at http://alloy4fun.inesctec.pt, and you can get started with 
  * [Travis CI](https://travis-ci.org/) is used for continuous integration through the [.travis.yml](.travis.yml) file.
 
 # Contributing and Development Guidelines
+**Releasing to production** (no Docker; cron-started Mongo + Java API + Meteor bundle): see [deploy/README.md](deploy/README.md).
+
 You can contribute by looking at the [issues](issues/) section.
 
 **INFO:** The application contains three main services/containers:
@@ -37,6 +39,10 @@ Since the meteor instance running inside docker is static and has to be built ev
 
 To have real-time updates while you develop meteor you can run it on your computer (after `cd meteor`) with `npm start`.
 
+The app uses **Meteor 3.5.4** (Node 24). Install the [Meteor CLI](https://docs.meteor.com/install) and run `meteor npm install` once. To run it without docker use `meteor run --settings settings.json --port 3000` (not port 80, as Meteor's Mongo needs port+1). The Java API currently only runs on Java 8 and connects to Meteor's Mongo at `localhost:3001`, database `meteor`.
+
+`e2e/` contains a regression harness (a DDP baseline and browser tests) that should pass before any deployment, see [e2e/README.md](e2e/README.md).
+
 
 ## API
 Since the API is essentially an Alloy4Fun webservice a local jar file is used for stability purposes the lib folder structure is required for maven to detect the local repository. 
@@ -56,7 +62,7 @@ Meteor will run locally on port **3000** and on port **3010** in docker so that 
 # Testing
 Unit tests are enabled on both client and server code, with the appropriate chromedriver packages needed for integration and acceptance tests. 
 
-To run the tests just do `npm test`
+To run the (server-side) unit tests do `TEST_CLIENT=0 npm test` inside `meteor`.
 
 ## Linter
 Linter is also installed and configured but not included in the CI pipeline, to run the linter you can do `npm run lint` inside the `meteor` folder. To run linter without the `--fix` option do `eslint .`.

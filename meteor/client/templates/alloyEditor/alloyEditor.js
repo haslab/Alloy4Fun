@@ -386,17 +386,10 @@ function buttonsEffects() {
     }
 
     const support = {
-        animations: Modernizr.cssanimations
+        animations: true
     }
 
-    const animEndEventNames = {
-        WebkitAnimation: 'webkitAnimationEnd',
-        OAnimation: 'oAnimationEnd',
-        msAnimation: 'MSAnimationEnd',
-        animation: 'animationend'
-    }
-
-    const animEndEventName = animEndEventNames[Modernizr.prefixed('animation')]
+    const animEndEventName = 'animationend'
 
     const onEndAnimation = function (el, callback) {
         const onEndCallbackFn = function (ev) {

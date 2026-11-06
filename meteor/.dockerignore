@@ -1,0 +1,4 @@
+node_modules
+.meteor/local
+*.json.bak
+*_study_*.json

@@ -13,9 +13,9 @@ Meteor.methods({
       *
       * @return the id of the new instance
       */
-    storeInstance(modelId, command, instance, themeData) {
-        Model.update({ _id: modelId }, { $set: { theme: themeData } })
-        return Instance.insert({
+    async storeInstance(modelId, command, instance, themeData) {
+        await Model.updateAsync({ _id: modelId }, { $set: { theme: themeData } })
+        return Instance.insertAsync({
             model_id: modelId,
             cmd_i: command,
             graph: instance,

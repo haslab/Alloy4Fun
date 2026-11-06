@@ -4,6 +4,9 @@
  * @module client/lib/editor/feedback
  */
 
+import swal from 'sweetalert'
+import 'sweetalert/dist/sweetalert.css'
+
 /**
  * Display meteor error to the user and report in the console.
  *

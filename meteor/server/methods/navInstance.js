@@ -14,7 +14,7 @@ Meteor.methods({
       *
       * @returns the instance data and the id of the new saved model
       */
-    navInstance(operation, instIndex, currentModelId) {
+    async navInstance(operation, instIndex, currentModelId) {
     
             const new_nav = {
                 time: new Date().toLocaleString(),
@@ -25,7 +25,7 @@ Meteor.methods({
             }
 
             // insert the new model
-            const new_nav_id = Navigation.insert(new_nav)
+            await Navigation.insertAsync(new_nav)
 
 
     }

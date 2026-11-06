@@ -1,0 +1,15 @@
+{
+    "name": "alloy4fun-e2e",
+    "private": true,
+    "type": "module",
+    "description": "Behaviour baseline and end-to-end tests used to guard the Meteor migration",
+    "scripts": {
+        "baseline:record": "node baseline/run.mjs record",
+        "baseline:compare": "node baseline/run.mjs compare",
+        "test": "playwright test"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.60.0",
+        "mongodb": "^6.12.0"
+    }
+}

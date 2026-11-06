@@ -1,4 +1,5 @@
 import { Meteor } from 'meteor/meteor'
+import { postApi } from '../lib/api'
 
 Meteor.methods({
 
@@ -11,30 +12,12 @@ Meteor.methods({
       * @param {String} id the document id
       * @return the respective model or instance
       */
-    getStats(linkId) {
-        return new Promise((resolve, reject) => {
-            
-            const link = Link.findOne(linkId)
-            if (!link) return // undefined if link does not exist
-            const model = Model.findOne(link.model_id)
+    async getStats(linkId) {
+        const link = await Link.findOneAsync(linkId)
+        if (!link) return // undefined if link does not exist
+        const model = await Model.findOneAsync(link.model_id)
 
-            HTTP.call('POST', `${Meteor.settings.env.API_URL}/getStats`, {
-                data: {
-                    model: model._id
-                }
-            }, (error, result) => {
-
-                if (error) reject(error)
-                else {
-                  const content = JSON.parse(result.content)
-
-                  // resolve the promise
-                  resolve({
-                      stats: content
-                  })
-                }
-            })
-        })
+        const content = JSON.parse(await postApi('/getStats', { model: model._id }))
+        return { stats: content }
     }
 })
-

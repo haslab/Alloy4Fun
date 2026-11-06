@@ -1,3 +1,5 @@
+import { postApi } from '../lib/api'
+
 Meteor.methods({
     /**
       * Meteor method to validate an Alloy model. This will call the Alloy API
@@ -7,16 +9,7 @@ Meteor.methods({
       *
       * @returns a JSON file with {success [, errorMessage, errorLocation]}
       */
-    validate(code) {
-        return new Promise((resolve, reject) => {
-            HTTP.call('POST', `${Meteor.settings.env.API_URL}/validate`, {
-                data: {
-                    model: code
-                }
-            }, (error, result) => {
-                if (error) reject(error)
-                resolve(result.content)
-            })
-        })
+    async validate(code) {
+        return postApi('/validate', { model: code })
     }
 })
