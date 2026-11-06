@@ -11,6 +11,7 @@ describe('downloadTree', () => {
             }
         })), JSON.stringify({
             _id: '1',
+            depth: 0,
             children: []
         }))
     })
@@ -35,6 +36,6 @@ describe('downloadTree', () => {
             root: {
                 _id: '1'
             }
-        })), '{"_id":"1","children":[{"_id":2,"derivationOf":1,"children":[{"_id":3,"derivationOf":2,"children":[]},{"_id":4,"derivationOf":2,"children":[{"_id":6,"derivationOf":4,"children":[]}]}]},{"_id":5,"derivationOf":1,"children":[]}]}')
+        })), '{"_id":"1","depth":0,"children":[{"_id":2,"derivationOf":1,"depth":1,"children":[{"_id":3,"derivationOf":2,"depth":2,"children":[]},{"_id":4,"derivationOf":2,"depth":2,"children":[{"_id":6,"derivationOf":4,"depth":3,"children":[]}]}]},{"_id":5,"derivationOf":1,"depth":1,"children":[]}]}')
     })
 })
