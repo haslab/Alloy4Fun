@@ -12,6 +12,8 @@ Alloy4Fun is live at http://alloy4fun.inesctec.pt, and you can get started with 
  * [Travis CI](https://travis-ci.org/) is used for continuous integration through the [.travis.yml](.travis.yml) file.
 
 # Contributing and Development Guidelines
+**Releasing to production** (no Docker; cron-started Mongo + Java API + Meteor bundle): see [deploy/README.md](deploy/README.md).
+
 You can contribute by looking at the [issues](issues/) section.
 
 **INFO:** The application contains three main services/containers:

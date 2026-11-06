@@ -7,9 +7,11 @@
 #   stop      stop the new stack
 #   status    show processes, ports, doc counts
 #   rollback  stop the new stack and start the OLD stack again (old source + old data untouched)
+#   deploy <meteor.tar.gz> [api.jar]   routine release: dump DB, swap code, health-check, auto-revert
+#   release-rollback                   go back to the previous release (code only, data is kept)
 set -eu
 
-P=/home/mcunha/a4f-prod
+P=${A4F_HOME:-/home/mcunha/a4f-prod}
 OLD=/home/mcunha/A4FStudy/Alloy4Fun
 STAGE=/home/mcunha/stage
 TOOL=/home/mcunha/.meteor/packages/meteor-tool/3.5.4/mt-os.linux.x86_64/dev_bundle
@@ -56,6 +58,37 @@ stop_new() {
   sleep 2
   mongo --quiet --port $MONGO_PORT admin --eval 'db.shutdownServer({force:true})' >/dev/null 2>&1 || true
   wait_gone $MONGO_PORT || die "new mongod still listening on $MONGO_PORT"
+}
+
+stop_app() {
+  [ -f $P/app.pid ] && kill "$(cat $P/app.pid)" 2>/dev/null || true
+  wait_gone $APP_PORT || die "app still listening on $APP_PORT"
+}
+stop_api() {
+  [ -f $P/api.pid ] && kill "$(cat $P/api.pid)" 2>/dev/null || true
+  wait_gone $API_PORT || die "API still listening on $API_PORT"
+}
+wait_api() {
+  # a GET on a POST-only JAX-RS path answers 405 once deployed (404/000 before)
+  for i in $(seq 1 120); do
+    c=$(curl -s -o /dev/null -w '%{http_code}' localhost:$API_PORT/getInstances || true)
+    [ "$c" != "404" ] && [ "$c" != "000" ] && return 0; sleep 1
+  done
+  return 1
+}
+app_healthy() {
+  for i in $(seq 1 60); do
+    [ "$(curl -s -o /dev/null -w '%{http_code}' localhost:$APP_PORT/ || true)" = "200" ] && return 0; sleep 1
+  done
+  return 1
+}
+prune() {
+  # keep the 3 newest releases and pre-deploy dumps, never the current/previous release
+  keep="$(readlink $P/bundle 2>/dev/null || true) $(cat $P/previous-bundle 2>/dev/null || true)"
+  for d in $(ls -dt $P/releases/*/ 2>/dev/null | tail -n +4); do
+    case " $keep " in *" ${d%/}/bundle "*) ;; *) rm -rf "$d";; esac
+  done
+  ls -t $P/backup/pre-*.gz 2>/dev/null | tail -n +4 | xargs -r rm -f
 }
 
 case "${1:-}" in
@@ -116,12 +149,63 @@ cutover)
 start)
   mkdir -p $P/logs
   start_mongod; start_api
-  # a GET on a POST-only JAX-RS path answers 405 once deployed (404/000 before)
-  for i in $(seq 1 120); do
-    c=$(curl -s -o /dev/null -w '%{http_code}' localhost:$API_PORT/getInstances || true)
-    [ "$c" != "404" ] && [ "$c" != "000" ] && break; sleep 1
-  done
+  wait_api || echo "WARNING: API did not answer in time" >&2
   start_app
+  ;;
+deploy)
+  B=${2:?usage: a4f.sh deploy <meteor.tar.gz> [alloy4fun-api-thorntail.jar]}; J=${3:-}
+  [ -f "$B" ] || die "$B not found"
+  [ -z "$J" ] || [ -f "$J" ] || die "$J not found"
+  listening $MONGO_PORT || die "mongod is not running ($0 start first)"
+  stamp=$(date +%Y%m%d-%H%M%S); R=$P/releases/$stamp
+  mkdir -p $R $P/backup
+  tar -xzf "$B" -C $R
+  want=$(cat $R/bundle/.node_version.txt 2>/dev/null | head -1); have=$($P/node -v)
+  [ -z "$want" ] || [ "$want" = "$have" ] || die "bundle needs Node $want but $P/node is $have: replace $P/node (copy from the Meteor tool, then setcap cap_net_bind_service)"
+  (cd $R/bundle/programs/server && PATH=$TOOL/bin:$PATH npm install --omit=dev --cache $P/npm-cache --no-audit --no-fund)
+  [ -d $R/bundle/programs/server/node_modules/@meteorjs ] || die "npm install did not produce node_modules"
+
+  # first deploy: turn the plain bundle directory into a symlinked release
+  if [ ! -L $P/bundle ]; then
+    mkdir -p $P/releases/initial && mv $P/bundle $P/releases/initial/bundle
+    ln -sfn $P/releases/initial/bundle $P/bundle
+  fi
+  echo "== database backup"
+  mongodump --port $MONGO_PORT --db meteor --forceTableScan --gzip --archive=$P/backup/pre-$stamp.gz
+
+  readlink $P/bundle > $P/previous-bundle
+  rm -f $P/previous-jar
+  stop_app
+  ln -sfn $R/bundle $P/bundle
+  if [ -n "$J" ]; then
+    stop_api
+    cp $P/alloy4fun-api-thorntail.jar $P/alloy4fun-api-thorntail.jar.prev
+    cp "$J" $P/alloy4fun-api-thorntail.jar
+    echo 1 > $P/previous-jar
+    start_api
+    wait_api || echo "WARNING: API did not answer in time" >&2
+  fi
+  start_app
+  if app_healthy; then
+    echo "DEPLOY OK: $stamp (previous: $(cat $P/previous-bundle)). Now smoke-test in the browser."
+    prune
+  else
+    echo "app not healthy (see $P/logs/app.log): reverting" >&2
+    "$0" release-rollback
+    exit 1
+  fi
+  ;;
+release-rollback)
+  [ -f $P/previous-bundle ] || die "no previous release recorded"
+  stop_app
+  ln -sfn "$(cat $P/previous-bundle)" $P/bundle
+  if [ -f $P/previous-jar ] && [ -f $P/alloy4fun-api-thorntail.jar.prev ]; then
+    stop_api
+    cp $P/alloy4fun-api-thorntail.jar.prev $P/alloy4fun-api-thorntail.jar
+    start_api; wait_api || true
+  fi
+  start_app
+  app_healthy && echo "rolled back to $(readlink $P/bundle)" || die "app not healthy after rollback (see $P/logs/app.log)"
   ;;
 stop)
   stop_new
@@ -142,6 +226,6 @@ rollback)
   echo "old stack starting (Meteor takes ~1 min). Restore the old crontab lines too."
   ;;
 *)
-  sed -n '2,9p' "$0"; exit 1
+  sed -n '2,11p' "$0"; exit 1
   ;;
 esac
