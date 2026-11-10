@@ -7,6 +7,24 @@ The Alloy4Fun is a web platform to support the teaching of the Alloy formal meth
 
 Alloy4Fun is built on top of [Alloy 6](https://alloytools.org/) and is currently deployed at [alloy4fun.inesctec.pt](http://alloy4fun.inesctec.pt/).
 
+## Getting started with some challenges
+
+Below is a curated list of Alloy4Fun challenges.
+
+### Structural models and relational logic
+
+* [File system trash can](http://alloy4fun.inesctec.pt/WJdLnDL78m7mM7W4J)
+* [Course enrolment management](http://alloy4fun.inesctec.pt/i5u2pjKJt6Bz227QT)
+* [Graph properties](http://alloy4fun.inesctec.pt/28fwdmjL79X4SQ9EP)
+* [Labelled transition system](http://alloy4fun.inesctec.pt/gqS3qTTn4B62NYmJX)
+* [CV management platform](http://alloy4fun.inesctec.pt/jn66RoJRwGZhW3zd5)
+* [Automated production line](http://alloy4fun.inesctec.pt/PKy7chamCieZyCix5)
+
+### Dynamic models and temporal logic
+* [Dynamic file system trash can](http://alloy4fun.inesctec.pt/irRLJn7qbQq3xMFGp)
+* [Train station](http://alloy4fun.inesctec.pt/HDSYav6cKZ6ygy5N9)
+
+
 ## Tutorials on teaching with Alloy4Fun
 
 - A [tutorial](https://haslab.github.io/Alloy4Fun/tutorial.html) at the 9th International Conference on Rigorous State-Based Methods, [ABZ'23](https://abz2023.loria.fr/) ([slides](https://nmacedo.github.io/talks/ABZ23.pdf))
