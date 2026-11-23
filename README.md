@@ -69,6 +69,9 @@ Linter is also installed and configured but not included in the CI pipeline, to 
 
 To include the linter in the CI pipeline (first make sure all linter errors are fixed) and then add the following to the [package.json](meteor/package.json) `scripts`: `"pretest": "npm run lint --silent"`
 
+# Datasets
+  * [Data](https://github.com/haslab/Alloy4Fun/wiki/EM-19-10) from the 19/29 formal methods course at Universidade do Minho (as reported in the ABZ'20 submission).
+
 # Team
 Alloy4fun has been developed by [INESC TEC](http://inesctec.pt) with members from:
  * [HASLab](https://haslab.uminho.pt)
