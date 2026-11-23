@@ -9,7 +9,7 @@ import { cmdChanged, isUnsatInstance, prevState, nextState,
     lastState, currentState, setCurrentState, storeInstances, 
     getCurrentState, getCurrentTrace, disableExec } from '../../lib/editor/state'
 import { staticProjection, savePositions, applyPositions } from '../../lib/visualizer/projection'
-import { markEditorInfo } from '../../lib/editor/feedback'
+import { clearEditorMarks } from '../../lib/editor/feedback'
 
 Template.alloyEditor.helpers({
     /**
@@ -254,10 +254,11 @@ Template.alloyEditor.helpers({
 
 Template.alloyEditor.events({
     keydown(e) {
-        if (e.ctrlKey && e.key === 'e') $('#exec > button').trigger('click')
+        if (e.ctrlKey && e.key === 'e') {
+            $('#exec > button').trigger('click')
+        }
 
-        // clear all marks
-        textEditor.doc.getAllMarks().forEach(marker => !marker.className.includes("-info-") ? marker.clear() : null);
+        clearEditorMarks()
     },
     'click #exec > button': executeModel,
     'click #skip > button'() {

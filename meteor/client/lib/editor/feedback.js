@@ -6,7 +6,14 @@
 
 import swal from 'sweetalert'
 import 'sweetalert/dist/sweetalert.css'
+import {
+    markEditorRange,
+    clearEditorMarks as clearMarks
+} from '/imports/editor/EditorFeedback'
 
+export function clearEditorMarks() {
+    clearMarks(textEditor.view)
+}
 /**
  * Display meteor error to the user and report in the console.
  *
@@ -24,48 +31,24 @@ export function displayError(err) {
 }
 
 /**
- * Mark the text in the editor
- *
- * @param {Object} from the starting position to mark
- * @param {Object} to the ending position to mark
- * @param {String} className the className that will be applied to the mark
+ * Mark text in the CodeMirror 6 editor. Positions retain the CodeMirror 5
+ * convention used by the existing Alloy4Fun callers: zero-based line/ch.
  */
 export function markEditor(from, to, className, readOnly) {
-    const options = {
-        className: className,
-        clearWhenEmpty: true,
-        inclusiveLeft: true,
-        inclusiveRight: true,
-        readOnly: readOnly
-    }
-    textEditor.markText(from, to, options)
+    markEditorRange(textEditor.view, from, to, className, readOnly)
 }
 
-/**
- * Mark the text in the editor with an error
- *
- * @param {Number} line the line of the first character to mark
- * @param {Number} col the collumn of the first character to mark
- * @param {Number} line2 the line of the last character to mark
- * @param {Number} col2 the collumn of the last character to mark
- */
+/** Mark the text in the editor with an error. */
 export function markEditorError(line, col, line2, col2) {
-    markEditor({ line: line, ch: col }, { line: line2, ch: col2 + 1 }, "editor-error-mark", false)
+    markEditor({ line, ch: col }, { line: line2, ch: col2 + 1 }, 'editor-error-mark', false)
 }
 
 export function markEditorInfo(line, col, line2, col2) {
-    markEditor({ line: line, ch: 1 }, { line: line2, ch: 999 }, "editor-info-freeze", true)
-    markEditor({ line: line, ch: col }, { line: line2, ch: col2 + 1 }, "editor-info-mark", true)
+    markEditor({ line, ch: 1 }, { line: line2, ch: 999 }, 'editor-info-freeze', true)
+    markEditor({ line, ch: col }, { line: line2, ch: col2 + 1 }, 'editor-info-mark', true)
 }
 
-/**
- * Mark the text in the editor with a warning
- *
- * @param {Number} line the line of the first character to mark
- * @param {Number} col the collumn of the first character to mark
- * @param {Number} line2 the line of the last character to mark
- * @param {Number} col2 the collumn of the last character to mark
- */
+/** Mark the text in the editor with a warning. */
 export function markEditorWarning(line, col, line2, col2) {
-    markEditor({ line: line, ch: col }, { line: line2, ch: col2 + 1 }, "editor-warning-mark", false)
+    markEditor({ line, ch: col }, { line: line2, ch: col2 + 1 }, 'editor-warning-mark', false)
 }

@@ -23,7 +23,7 @@ const routes = [
         pattern: /^\/stats\/([^/]+)\/?$/,
         template: 'modelStats',
         subscription: 'statsFromLink',
-        data: (id) => Stats.findOne(id) || { code: 'Unable to retrieve Model from Link' }
+        data: (id) => Stats.findOne(id) || { stats: { error: 'Unable to retrieve statistics from this link' } }
     },
     {
         pattern: /^\/([^/]+)\/?$/,
