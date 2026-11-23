@@ -26,16 +26,20 @@ function defineAlloyMode() {
             token: 'secret',
             sol: false
         }, {
+            regex: /\/\*\*/,
+            token: 'commentB',
+            next: 'commentB' // Jump to comment mode.
+        }, {
             regex: /\/\*/,
             token: 'comment',
             next: 'comment' // Jump to comment mode.
         }, {
+            // Line comment.
+            regex: /(\/\/.*)|(--.*)/,
+            token: 'comment'
+        }, {
             regex: /(\+\+ )|=>|<=>|\+\+|=<|->|>=|\|\||<:|:>|&&|!=|\+|-|&|\.|~|\*|\^|!|#|\'/,
             token: 'operator'
-        }, {
-            // Line comment.
-            regex: /\/\/.*/,
-            token: 'comment'
         }, {
             regex: /(\s+|\||{|})[0-9]+](?:\b)/,
             token: [null, 'number']
@@ -52,6 +56,15 @@ function defineAlloyMode() {
             dedent: true
         }],
         // Modes allow applying a different set of rules to different contexts.
+        commentB: [{
+            // When the comment block end tag is found...
+            regex: /.*?\*\//,
+            token: 'commentB',
+            next: 'start' // ...go back to start mode.
+        }, {
+            regex: /.*/,
+            token: 'commentB'
+        }],
         comment: [{
             // When the comment block end tag is found...
             regex: /.*?\*\//,
@@ -61,7 +74,6 @@ function defineAlloyMode() {
             regex: /.*/,
             token: 'comment'
         }
-
         ],
         // Simple Mode additional settings, check documentation for more information.
         meta: {
