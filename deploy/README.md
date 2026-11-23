@@ -6,7 +6,7 @@ Production runs three processes as an unprivileged service user (`<user>` below)
 | Process | What | Port |
 |---|---|---|
 | MongoDB 4.0.2 | single-node replica set `meteor`, data in `a4f-prod/db` | 27017 (localhost) |
-| Java API | Thorntail jar, Java 11 | 4001 |
+| Java API | Quarkus uber-JAR, Java 17 | 4001 |
 | Meteor app | built bundle on Meteor's Node 24 | 80 |
 
 Releases live in `a4f-prod/releases/<timestamp>/bundle`; `a4f-prod/bundle` is a symlink to the active one.
@@ -15,10 +15,12 @@ A code release never touches the database files.
 ## 1. Develop and validate locally (every change)
 
 1. Branch from `study`, commit with explicit `git add <paths>` (this repo's folders contain many untracked data exports that must never be committed).
-2. Start the stack (the API only runs on Java 8; macOS `java_home -v 8` does not see the Oracle plugin JRE, so use its full path):
+2. Start the stack with the Quarkus API:
    ```
-   cd api && "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java" \
-     -Dthorntail.http.port=4001 -Djava.net.preferIPv4Stack=true -jar target/alloy4fun-api-thorntail.jar
+   cd api-quarkus && java \
+     -Dquarkus.http.port=4001 -Dalloy4fun.mongo.port=3001 \
+     -Dalloy4fun.mongo.db=meteor \
+     -jar target/alloy4fun-api-quarkus-0.1.0-SNAPSHOT-runner.jar
    cd meteor && meteor npm install && meteor run --settings settings.json --port 3000
    ```
    `settings.json` needs `env.API_URL=http://localhost:4001`. Keep local edits of that file out of commits.
@@ -38,7 +40,7 @@ A code release never touches the database files.
 From the commit you will deploy (clean checkout of `study`):
 ```
 deploy/build.sh              # Meteor bundle only
-deploy/build.sh --with-api   # also rebuild the Java API (JDK 17); only when api/ changed
+deploy/build.sh --with-api   # also rebuild the Quarkus API (JDK 17); only when api-quarkus/ changed
 ```
 This writes `/tmp/a4f-release/meteor.tar.gz` (+ jar, `COMMIT`, `SHA256SUMS`). Build on your machine: the production host has 2 GB RAM and
 should not run `meteor build`. Note that if `meteor/.meteor/release` changes (new Meteor version), the bundle needs that version's Node:
@@ -48,9 +50,9 @@ To update it: copy `<meteor-tool>/dev_bundle/bin/node` to `a4f-prod/node` and ru
 ## 3. Deploy
 
 ```
-scp /tmp/a4f-release/{meteor.tar.gz,alloy4fun-api-thorntail.jar} <user>@<host>:~/
+scp /tmp/a4f-release/{meteor.tar.gz,alloy4fun-api-quarkus.jar} <user>@<host>:~/
 ssh <user>@<host>
-~/a4f-prod/a4f.sh deploy ~/meteor.tar.gz [~/alloy4fun-api-thorntail.jar]
+~/a4f-prod/a4f.sh deploy ~/meteor.tar.gz [~/alloy4fun-api-quarkus.jar]
 ```
 `deploy` does, in order: unpack and `npm install` the new bundle (errors are shown), check the Node version, **dump the database**
 to `a4f-prod/backup/pre-<timestamp>.gz`, stop the app, switch the symlink, optionally swap the jar (restarting the API),
@@ -92,7 +94,7 @@ Two programs, two mechanisms:
   - Production: `a4f-prod/settings.json`, which exists only on the server. `a4f.sh start` passes it as `METEOR_SETTINGS` and refuses to start without it.
     Template: [settings.production.example.json](settings.production.example.json) (placeholder values; the real questionnaire URL is set only on the server, never committed). One-time setup: `scp deploy/settings.production.example.json <user>@<host>:~/a4f-prod/settings.json`, then edit it on the host (real questionnaire URL).
     To change a value, edit that file and run `a4f.sh stop && a4f.sh start`.
-- **Java API**: `-D` JVM flags with defaults in the code (`alloy4fun.mongo.host|port|db`, `alloy4fun.stats.maxage`). Production overrides only what differs (Mongo port 27017, max age 600000) in `start` in `a4f.sh`.
+- **Java API**: `-D` JVM flags with defaults in the code (`alloy4fun.mongo.host|port|db`, `alloy4fun.stats.maxage`). Production overrides Mongo port 27017, database `meteor`, and max age 600000 in `start` in `a4f.sh`.
 
 Ports, `ROOT_URL`, `MONGO_URL` and `MONGO_OPLOG_URL` are infrastructure, not settings: they are the variables at the top of `a4f.sh` and the `start_app` function.
 

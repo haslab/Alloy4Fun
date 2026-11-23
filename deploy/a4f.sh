@@ -42,8 +42,8 @@ start_mongod() {
 }
 
 start_api() {
-  (cd $P; nohup java -Dalloy4fun.mongo.port=$MONGO_PORT -Dalloy4fun.stats.maxage=600000 \
-    -Dthorntail.http.port=$API_PORT -Djava.net.preferIPv4Stack=true -jar alloy4fun-api-thorntail.jar \
+  (cd $P; nohup java -Dalloy4fun.mongo.port=$MONGO_PORT -Dalloy4fun.mongo.db=meteor -Dalloy4fun.stats.maxage=600000 \
+    -Dquarkus.http.port=$API_PORT -jar alloy4fun-api-quarkus.jar \
     >> $P/logs/api.log 2>&1 9>&- & echo $! > $P/api.pid)
 }
 
@@ -108,7 +108,7 @@ prepare)
   mkdir -p $P/db $P/logs $P/backup
   [ -d $P/bundle ] || cp -a $STAGE/bundle $P/bundle
   cp -n $STAGE/mongod $P/mongod
-  cp -n $STAGE/alloy4fun-api-thorntail.jar $P/
+  cp -n $STAGE/alloy4fun-api-quarkus.jar $P/
   cp -f $TOOL/bin/node $P/node
   sudo setcap 'cap_net_bind_service=+ep' $P/node
   getcap $P/node
@@ -124,7 +124,7 @@ cutover)
 
   echo "== stopping old Java API and Meteor"
   sudo pkill -TERM -f '[m]eteor run --allow-superuser' || true
-  sudo pkill -TERM -f '[a]lloy4fun-api-thorntail.jar' || true
+  sudo pkill -TERM -f '[a]lloy4fun-api-quarkus.jar' || true
   wait_gone 80 || die "port 80 still in use"
   wait_gone 4001 || die "port 4001 still in use"
   if listening $OLD_MONGO_PORT; then
@@ -163,7 +163,7 @@ start)
   start_app
   ;;
 deploy)
-  B=${2:?usage: a4f.sh deploy <meteor.tar.gz> [alloy4fun-api-thorntail.jar]}; J=${3:-}
+  B=${2:?usage: a4f.sh deploy <meteor.tar.gz> [alloy4fun-api-quarkus.jar]}; J=${3:-}
   [ -f "$B" ] || die "$B not found"
   [ -z "$J" ] || [ -f "$J" ] || die "$J not found"
   listening $MONGO_PORT || die "mongod is not running ($0 start first)"
@@ -189,8 +189,8 @@ deploy)
   ln -sfn $R/bundle $P/bundle
   if [ -n "$J" ]; then
     stop_api
-    cp $P/alloy4fun-api-thorntail.jar $P/alloy4fun-api-thorntail.jar.prev
-    cp "$J" $P/alloy4fun-api-thorntail.jar
+    cp $P/alloy4fun-api-quarkus.jar $P/alloy4fun-api-quarkus.jar.prev
+    cp "$J" $P/alloy4fun-api-quarkus.jar
     echo 1 > $P/previous-jar
     start_api
     wait_api || echo "WARNING: API did not answer in time" >&2
@@ -209,9 +209,9 @@ release-rollback)
   [ -f $P/previous-bundle ] || die "no previous release recorded"
   stop_app
   ln -sfn "$(cat $P/previous-bundle)" $P/bundle
-  if [ -f $P/previous-jar ] && [ -f $P/alloy4fun-api-thorntail.jar.prev ]; then
+  if [ -f $P/previous-jar ] && [ -f $P/alloy4fun-api-quarkus.jar.prev ]; then
     stop_api
-    cp $P/alloy4fun-api-thorntail.jar.prev $P/alloy4fun-api-thorntail.jar
+    cp $P/alloy4fun-api-quarkus.jar.prev $P/alloy4fun-api-quarkus.jar
     start_api; wait_api || true
   fi
   start_app

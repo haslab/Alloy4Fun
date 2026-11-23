@@ -20,6 +20,10 @@
 
     <div class="container-fluid">
 
+        {{#if statsError}}
+        <div class="alert alert-danger" role="alert">{{statsError}}</div>
+        {{/if}}
+
         <div class="row">
             <!-- page head -->
             <div id="headTitle" class="col-xs-12">

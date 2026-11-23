@@ -14,10 +14,16 @@ Meteor.methods({
       */
     async getStats(linkId) {
         const link = await Link.findOneAsync(linkId)
-        if (!link) return // undefined if link does not exist
+        if (!link) throw new Meteor.Error('stats-link-not-found', 'The requested statistics link does not exist')
         const model = await Model.findOneAsync(link.model_id)
+        if (!model) throw new Meteor.Error('stats-model-not-found', 'The model for this statistics link does not exist')
 
-        const content = JSON.parse(await postApi('/getStats', { model: model._id }))
-        return { stats: content }
+        try {
+            const content = JSON.parse(await postApi('/getStats', { model: model._id }))
+            return { stats: content }
+        } catch (error) {
+            const detail = error.response?.content || error.message
+            throw new Meteor.Error('stats-api-failed', `Statistics could not be calculated: ${detail}`)
+        }
     }
 })

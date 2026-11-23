@@ -211,6 +211,7 @@ public class A4FDatabase {
 			
 
 			if (mdl instanceof A4FExecution) {
+				final Command cmd = wrl.getAllCommands().get(((A4FExecution) mdl).cmd_index);
 				
 				for (Func f : wrl.getAllFunc()) {
 					if (((A4FExecution) mdl).cmd_name != null && (((A4FExecution) mdl).cmd_name).equals(preds.get(f.label))) {
@@ -219,9 +220,12 @@ public class A4FDatabase {
 							ast = ExprConstant.TRUE.toString();
 						normalized.computeIfAbsent(preds.get(f.label), x -> new HashMap<String,String>()).put(mdl.id,ast);
 					}
-				}
-				
-				final Command cmd = wrl.getAllCommands().get(((A4FExecution) mdl).cmd_index);
+					}
+					if (cmd.check && !normalized.getOrDefault(((A4FExecution) mdl).cmd_name, new HashMap<>()).containsKey(mdl.id)) {
+						String ast = cmd.formula.accept(new NormalizeExpr()).accept(new PrintExpr()).toString();
+						normalized.computeIfAbsent(((A4FExecution) mdl).cmd_name, x -> new HashMap<String,String>()).put(mdl.id, ast);
+					}
+					
 				Err err = null;
 				executions.get(id).setCommand(cmd);
 				if (reexecute) {
@@ -388,6 +392,8 @@ public class A4FDatabase {
 
 	public void processRoot(boolean reexecute) {
 		this.reexecuted = reexecute;
+		if (!models.containsKey(model_id))
+			throw new IllegalArgumentException("Root model not found: " + model_id);
 		CompModule or = CompUtil.parseEverything_fromString(new A4Reporter(),models.get(model_id).code);
 		challenges = or.getAllCommands().stream().filter(c -> c.check).map(c -> c.label).collect(Collectors.toList());
 		preds = new HashMap<>();

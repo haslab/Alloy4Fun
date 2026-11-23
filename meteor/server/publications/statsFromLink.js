@@ -9,7 +9,9 @@ Meteor.publish('statsFromLink', async function (linkId) {
         // see https://docs.meteor.com/api/pubsub.html#Subscription-added
         publication.added('Stats', linkId, model)
     } catch (err) {
-        // unavailable stats are published as nothing
+        publication.added('Stats', linkId, {
+            stats: { error: err.reason || err.message || 'Statistics are unavailable' }
+        })
     }
     publication.ready()
 })

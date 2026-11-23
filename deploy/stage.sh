@@ -37,7 +37,7 @@ up)
     mongorestore --port $MONGO_PORT --gzip --archive="$DUMP" --nsInclude='meteor.*' --drop
   fi
   (cd $S; nohup java -Dalloy4fun.mongo.port=$MONGO_PORT -Dalloy4fun.stats.maxage=600000 \
-    -Dthorntail.http.port=$API_PORT -Djava.net.preferIPv4Stack=true -jar alloy4fun-api-thorntail.jar \
+    -Dalloy4fun.mongo.db=meteor -Dquarkus.http.port=$API_PORT -jar alloy4fun-api-quarkus.jar \
     > $S/logs/api.log 2>&1 & echo $! > $S/api.pid)
   (cd $S/bundle; MONGO_URL="mongodb://127.0.0.1:$MONGO_PORT/meteor?replicaSet=meteor" \
     MONGO_OPLOG_URL="mongodb://127.0.0.1:$MONGO_PORT/local?replicaSet=meteor" \

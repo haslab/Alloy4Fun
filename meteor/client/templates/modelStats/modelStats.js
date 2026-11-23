@@ -25,15 +25,15 @@ Template.treeNodeTemplate.helpers({
     },
 
     hasChildren() {
-        return this.children.length > 0
+        return (this.children || []).length > 0
     },
 
     children() {
-        return this.children
+        return this.children || []
     },
 
     padding() {
-        return this.depth*10
+        return (this.depth || 0)*10
     },
 
     class() {
@@ -64,7 +64,8 @@ Template.treeNodeTemplate.events({
 })
 
 Template.modelStats.treeItems = function() {
-  return [Session.get('derivation')];
+  const derivation = Session.get('derivation')
+  return derivation ? [derivation] : []
 
 };
 
@@ -84,6 +85,10 @@ Template.modelStats.events({
 })
 
 Template.modelStats.helpers({
+
+    statsError() {
+        return Router.current()?.data()?.stats?.error
+    },
 
     cselected(x,y) {
       if (Session.get("chlsSelected")[x] == Session.get("chlsMaps")[x+y])
@@ -107,39 +112,39 @@ Template.modelStats.helpers({
     },
 
     getName() {
-        return Router.current().data().stats.name
+        return Router.current()?.data()?.stats?.name || ''
     },
 
     getDate() {
-        return Router.current().data().stats.time
+        return Router.current()?.data()?.stats?.time || ''
     },
 
     getCatalog() {
-        return Router.current().data().stats.catalog
+        return Router.current()?.data()?.stats?.catalog || ''
     },
 
     getNumChallenges() {
-        return Router.current().data().stats.nchallenges
+        return Router.current()?.data()?.stats?.nchallenges || 0
     },
 
     getScalars() {
-        return Router.current().data().stats.scalars
+        return Router.current()?.data()?.stats?.scalars || []
     },
 
     getBars() {
-        return Router.current().data().stats.bars
+        return Router.current()?.data()?.stats?.bars || []
     },
 
     getClassified() {
-        return Router.current().data().stats.classified
+        return Router.current()?.data()?.stats?.classified || []
     },
 
     getChallenges() {
-        return Router.current().data().stats.challenges
+        return Router.current()?.data()?.stats?.challenges || []
     },
 
     graphItems() {
-        return Router.current().data().stats.graphs
+        return Router.current()?.data()?.stats?.graphs || []
     },
 
 })
@@ -153,7 +158,8 @@ function getColor(label) {
 }
 
 function drawGraph() {
-    var gs = Router.current().data().stats.graphs
+    var gs = Router.current()?.data()?.stats?.graphs || []
+    if (gs.length === 0) return
     const g = gs[Session.get("currentgraph")]
     nodes = g.nodes
     edges = g.edges 
@@ -222,7 +228,8 @@ function drawCharts(c) {
 }
 
 Template.graphNodeTemplate.onRendered(() => {
-    var gs = Router.current().data().stats.graphs
+    var gs = Router.current()?.data()?.stats?.graphs || []
+    if (gs.length === 0) return
     gdict = {}
     for (xx in gs) 
         gdict["graph"+gs[xx].challenge] = xx
@@ -264,7 +271,9 @@ function options() {
 
 Template.modelStats.onRendered(() => {
 
-    var bs = Router.current().data().stats.bars
+    if (Router.current()?.data()?.stats?.error) return
+
+    var bs = Router.current()?.data()?.stats?.bars || []
     for (c in bs) {
         is = []
         minr = 0
@@ -303,7 +312,7 @@ Template.modelStats.onRendered(() => {
 
     }
 
-    var cs = Router.current().data().stats.classified
+    var cs = Router.current()?.data()?.stats?.classified || []
     for (c in cs) {
         var datasets = []
         for (x in cs[c].series) 
@@ -319,7 +328,7 @@ Template.modelStats.onRendered(() => {
 
     }
 
-    var cs = Router.current().data().stats.challenges
+    var cs = Router.current()?.data()?.stats?.challenges || []
     chlsSelected = {}
     chlsMaps = {}
     for (c in cs) {

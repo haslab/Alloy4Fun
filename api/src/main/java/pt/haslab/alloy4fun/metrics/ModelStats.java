@@ -120,6 +120,8 @@ public class ModelStats {
 	private <T> List<T> normalizeIndices(Set<T> idxs) {
 
 		List<T> norm_idsx;
+		if (idxs.isEmpty())
+			return new ArrayList<>();
 		Iterator<T> it = idxs.iterator();
 		T x = it.next();
 		if (x instanceof Integer) {
@@ -133,7 +135,8 @@ public class ModelStats {
 					|| i.equals(LocalDate.now()); i = i.plusDays(1))
 				aux.add(i);
 			norm_idsx = (List<T>) aux;
-		} else if (x instanceof String && idxs.contains(getA4f().challengeLabels().get(0))) {
+		} else if (x instanceof String && !getA4f().challengeLabels().isEmpty()
+				&& idxs.contains(getA4f().challengeLabels().get(0))) {
 			norm_idsx = (List<T>) getA4f().challengeLabels();
 			List<T> aux = new ArrayList<T>(idxs);
 			aux.removeAll(norm_idsx);
