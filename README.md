@@ -39,19 +39,15 @@ Since the meteor instance running inside docker is static and has to be built ev
 
 To have real-time updates while you develop meteor you can run it on your computer (after `cd meteor`) with `npm start`.
 
-The app uses **Meteor 3.5.4** (Node 24). Install the [Meteor CLI](https://docs.meteor.com/install) and run `meteor npm install` once. To run it without docker use `meteor run --settings settings.json --port 3000` (not port 80, as Meteor's Mongo needs port+1). The Java API currently only runs on Java 8 and connects to Meteor's Mongo at `localhost:3001`, database `meteor`.
+The app uses **Meteor 3.5.4** (Node 24). Install the [Meteor CLI](https://docs.meteor.com/install) and run `meteor npm install` once. To run it without Docker use `meteor run --settings settings.json --port 3000` (not port 80, as Meteor's Mongo needs port+1). The Alloy Web API and A4F Stats API run as separate Java 17 Quarkus services on ports 4001 and 4002; see [deployment instructions](deploy/README.md).
 
 `e2e/` contains a regression harness (a DDP baseline and browser tests) that should pass before any deployment, see [e2e/README.md](e2e/README.md).
 
 
-## API
-Since the API is essentially an Alloy4Fun webservice a local jar file is used for stability purposes the lib folder structure is required for maven to detect the local repository. 
-
-To run the **api** isolated do `cd api` and then `docker build -t alloy4fun-api . && docker run -p 8080:8080 alloy4fun-api` for now it can be accessed at [http://localhost:8080/](http://localhost:8080/)
-
-You can also run it **outside docker**, just take a look at its [Dockerfile](api/Dockerfile), essentially you need:
- 1. `mvn clean install`
- 1. `java -Djava.net.preferIPv4Stack=true -jar /home/target/alloy4fun-api-swarm.jar`
+## APIs
+The generic Alloy Web API is maintained as a separate project; the A4F-specific
+`/getStats` service remains in `api-quarkus/`. See each project's README and
+the [deployment instructions](deploy/README.md) for building and running them.
 
 ## Database
 The database is saved to a volume in `data/db/` and backups can be made by copying this folder elsewhere. 

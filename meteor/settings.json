@@ -1,6 +1,7 @@
 {
     "env": {
         "API_URL": "http://localhost:4001",
+        "STATS_API_URL": "http://localhost:4002",
         "MAX_INSTANCES": 10
     },
     "public": {

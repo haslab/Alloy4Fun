@@ -413,7 +413,7 @@ public class A4FDatabase {
 			String prd = c.formula.accept(query);
 			preds.put(prd,c.label);
 		}
-		module_name = or.getModelName();
+		module_name = or.getModuleName();
 		
 		for (String id : models().keySet())
 			calculateDerivTree(id,reexecute);

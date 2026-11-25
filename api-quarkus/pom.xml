@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pt.uminho.haslab</groupId>
-    <artifactId>alloy4fun-api-quarkus</artifactId>
+    <artifactId>alloy4fun-stats-api-quarkus</artifactId>
     <version>0.1.0-SNAPSHOT</version>
 
     <properties>
@@ -41,8 +41,8 @@
         </dependency>
         <dependency>
             <groupId>org.alloytools</groupId>
-            <artifactId>Alloy</artifactId>
-            <version>6.1.0</version>
+            <artifactId>org.alloytools.alloy.dist</artifactId>
+            <version>6.2.0</version>
         </dependency>
         <dependency>
             <groupId>org.json</groupId>
@@ -71,35 +71,8 @@
         </dependency>
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>alloy4fun-local</id>
-            <url>file://${project.basedir}/../api/lib</url>
-        </repository>
-    </repositories>
-
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>build-helper-maven-plugin</artifactId>
-                <version>3.5.0</version>
-                <executions>
-                    <execution>
-                        <id>legacy-metrics-source</id>
-                        <phase>generate-sources</phase>
-                        <goals><goal>add-source</goal></goals>
-                        <configuration>
-                            <sources>
-                                <source>../api/src/main/java/pt/haslab/alloy4fun/datamodel</source>
-                                <source>../api/src/main/java/pt/haslab/alloy4fun/graph</source>
-                                <source>../api/src/main/java/pt/haslab/alloy4fun/metrics</source>
-                                <source>../api/src/main/java/pt/haslab/alloy4fun/utils</source>
-                            </sources>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
             <plugin>
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-maven-plugin</artifactId>

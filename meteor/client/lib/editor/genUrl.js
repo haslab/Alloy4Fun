@@ -7,23 +7,20 @@
 import { displayError } from './feedback'
 import { modelShared,
     getCommandIndex,
-    instShared,
-    currentState,
-    getCurrentTrace } from './state'
-import { savePositions } from '../visualizer/projection'
+    instShared } from './state'
+import { captureVisualizerPositions, visualizerPreferences, shareInstanceDocument } from '../visualizer/graphManipulationImpl'
+
+function currentThemeData() {
+    return visualizerPreferences()
+}
 
 /**
  * Store and share the current model and generate the sharing URLs.
  */
 export function shareModel() {
-    const themeData = {
-        sigSettings: sigSettings.data(),
-        relationSettings: relationSettings.data(),
-        generalSettings: generalSettings.data(),
-        currentFramePosition,
-        currentlyProjectedSigs,
-        nodePositions
-    }
+    captureVisualizerPositions()
+    const themeData = currentThemeData()
+    Session.set('visualizer-preferences', themeData)
 
     const modelToShare = textEditor.getValue()
     Meteor.call('genURL', modelToShare, Session.get('last_id'), themeData, handleShareModel)
@@ -34,17 +31,10 @@ export function shareModel() {
  * respective model is already stored due to the execution.
  */
 export function shareInstance() {
-    savePositions()
-    const themeData = {
-        sigSettings: sigSettings.data(),
-        relationSettings: relationSettings.data(),
-        generalSettings: generalSettings.data(),
-        currentState: currentState(),
-        currentFramePosition,
-        currentlyProjectedSigs,
-        nodePositions
-    }
-    Meteor.call('storeInstance', Session.get('last_id'), getCommandIndex(), getCurrentTrace(), themeData, handleShareInstance)
+    const document = shareInstanceDocument()
+    if (!document) return displayError('There is no instance to share', '')
+    captureVisualizerPositions()
+    Meteor.call('storeInstance', Session.get('last_id'), getCommandIndex(), document, handleShareInstance)
 }
 
 /**

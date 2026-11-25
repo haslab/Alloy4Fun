@@ -1,8 +1,8 @@
-# Alloy4Fun Quarkus API
+# Alloy4Fun Stats API
 
-This is the Quarkus API used by the Meteor 3 application. The existing
-Thorntail API under `api/` is retained as a compatibility reference during the
-2.0 migration.
+This Quarkus service contains Alloy4Fun's `/getStats` endpoint. The generic
+Alloy endpoints (`/validate`, `/getInstances`, `/getProjection`) live in the
+independent `alloy-web-api` project/repository. Meteor uses both services.
 
 Build with Java 17 or newer:
 
@@ -11,16 +11,18 @@ cd api-quarkus
 mvn package
 ```
 
-Run the uber-JAR on port 4101:
+Run the uber-JAR on port 4002:
 
 ```sh
-java -Dquarkus.http.port=4101 \
+java -Dquarkus.http.port=4002 \
   -Dalloy4fun.mongo.port=3001 \
   -Dalloy4fun.mongo.db=meteor \
-  -jar target/alloy4fun-api-quarkus-0.1.0-SNAPSHOT-runner.jar
+  -jar target/alloy4fun-stats-api-quarkus-0.1.0-SNAPSHOT-runner.jar
 ```
 
-The API reads the MongoDB connection from `alloy4fun.mongo.host`,
+The service reads the MongoDB connection from `alloy4fun.mongo.host`,
 `alloy4fun.mongo.port`, and `alloy4fun.mongo.db` system properties, with
 defaults suitable for local Meteor development. Each endpoint should pass the
-API compatibility baseline in `api/e2e/` before release.
+API compatibility tests in the standalone Alloy Web API project and A4F's
+integration tests should pass before release. The legacy Thorntail API under
+`api/` is not part of the runtime stack.

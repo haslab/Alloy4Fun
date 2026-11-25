@@ -5,10 +5,6 @@ import { shareModel, shareInstance } from '../../lib/editor/genUrl'
 import { executeModel, nextInstance, prevInstance } from '../../lib/editor/executeModel'
 import { createTree } from '../../lib/editor/downloadTree'
 import { copyToClipboard } from '../../lib/editor/clipboard'
-import { cmdChanged, isUnsatInstance, prevState, nextState, 
-    lastState, currentState, setCurrentState, storeInstances, 
-    getCurrentState, getCurrentTrace, disableExec } from '../../lib/editor/state'
-import { staticProjection, savePositions, applyPositions } from '../../lib/visualizer/projection'
 import { markEditorInfo } from '../../lib/editor/feedback'
 import { Model } from '../../../lib/collections/model'
 

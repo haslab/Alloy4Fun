@@ -12,7 +12,7 @@ Meteor.methods({
       *
       * @param {String} code the Alloy model to be shared
       * @param {String} currentModelId the id of the current model
-      * @param {Object} themeData the theme information for cytoscape
+      * @param {Object} themeData the standalone visualizer preferences
       *
       * @return The 'id' of the model link, used in Share Model option
       */

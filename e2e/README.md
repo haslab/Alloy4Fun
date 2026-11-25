@@ -8,8 +8,10 @@ Two checks that must pass before and after every migration step.
 
 ## Prerequisites
 
-- Alloy API on port 4001 (`java -Dthorntail.http.port=4001 -Djava.net.preferIPv4Stack=true -jar api/target/alloy4fun-api-thorntail.jar`, Java 8).
-- Meteor app on port 3000 (`cd meteor && meteor run --settings settings.json --port 3000`), with `API_URL` pointing to the API.
+- Alloy Web API on port 4001 (from a separate checkout of `alloy-web-api`, run `mvn package`, then its Quarkus runner JAR).
+- Alloy4Fun Stats API on port 4002 (`cd api-quarkus && mvn package`, then run its Quarkus runner JAR).
+- Meteor app on port 3000 (`cd meteor && meteor run --settings settings.json --port 3000`), with `API_URL` and `STATS_API_URL` pointing to those services.
+- Set `ALLOY_WEB_API_DIR` to the path of the standalone API checkout when building the combined release bundle with `deploy/build.sh --with-api`.
 - `cd e2e && npm install`. Tests use the locally installed Google Chrome
   (`E2E_CHANNEL=chromium` to use Playwright's bundled browser instead).
 

@@ -15,10 +15,8 @@ import { getCommandIndex,
     instChanged,
     isUnsatInstance,
     getCommandLabel,
-    resetState,
-    currentState,
     QUESTIONNAIRE_URL } from './state'
-import { resetPositions,newInstanceSetup } from '../visualizer/projection'
+import { clearVisualizerPositions, initGraphViewer, updateGraph } from '../visualizer/graphManipulationImpl'
 
 const no_more_msg = 'No more satisfying instances!'
 
@@ -73,9 +71,8 @@ export function nextInstance() {
             log_classes.push('log-info')
             Session.set('log-class',log_classes)
         } else {
-            resetPositions()
-            updateGraph(ni)
-            newInstanceSetup()
+            clearVisualizerPositions()
+            updateGraph(ni, false, true)
             instChanged()
             Meteor.call('navInstance', 0, Session.get('currentInstance'), Session.get('last_id'))
         }
@@ -98,9 +95,8 @@ export function prevInstance() {
 
     const ni = getPreviousInstance()
     if (typeof ni !== 'undefined') {
-        resetPositions()
-        updateGraph(ni)
-        newInstanceSetup()
+        clearVisualizerPositions()
+        updateGraph(ni, false, true)
         instChanged()
         Meteor.call('navInstance', 1, Session.get('currentInstance'), Session.get('last_id'))
     }
@@ -164,16 +160,18 @@ function handleExecuteModel(err, result) {
         } else {
             log_messages.push(result.check ? (Session.get('frozen-message')?`The specification is still incorrect. Please try again.`:`Counter-example found. ${command} is invalid.`) : `Instance found. ${command} is consistent.`)
             log_classes.push(result.check ? 'log-wrong' : 'log-complete')
-            if (!Session.get('frozen-message')) {
-                initGraphViewer('instance')
-                resetPositions()
-                resetState()
-                updateGraph(result.instance[currentState()])
-                newInstanceSetup()
-            }
         }
         Session.set('unsat',result.unsat)
         Session.set('log-message', log_messages)
         Session.set('log-class', log_classes)
+        // Keep execution feedback independent of graph rendering. A visualizer
+        // error must not prevent the solver's success message from appearing.
+        if (!result.unsat && !Session.get('frozen-message')) {
+            initGraphViewer('instance', {
+                preferences: Session.get('visualizer-preferences')
+            })
+            clearVisualizerPositions()
+            updateGraph(result, false, true)
+        }
     }
 }

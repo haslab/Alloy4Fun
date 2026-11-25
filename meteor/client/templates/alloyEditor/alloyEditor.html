@@ -76,7 +76,7 @@
                         <div id="statistics" class="col-lg-12 col-md-3 col-xs-3">
                             <button class="cbutton cbutton--effect-boris" {{downloadTreeEnabled}}>
                                 <div class="col-xs-12">
-                                    <i class="cbutton__icon fas fa-bar-chart fa-2x"></i></div>
+                                    <i class="cbutton__icon fas fa-chart-bar fa-2x"></i></div>
                                 <span class="cbutton__text">Statistics</span><i class="legend">Statistics</i>
                             </button>
                         </div>
@@ -142,18 +142,8 @@
                 <!-- Instance Viewer -->
                 <div class="col-lg-8 col-lg-offset-0 col-xs-10 col-xs-offset-1" {{showInstance}}>
                     <div id="instanceViewer" class="instanceViewer col-xs-12">
-                        <button id="prevTrace" class="cbutton {{isVariableModel}}" {{prevEnabled}}>
-                            <i class="cbutton__icon fa fa-fw fa-arrow-left auto-margin"></i>
-                        </button>
-                        <button id="nextTrace" class="cbutton {{isVariableModel}}">
-                            <i class="cbutton__icon fa fa-fw {{nextInstShape}} auto-margin"></i>
-                        </button>
-                        <div id="currentTrace" class="{{isVariableModel}}">{{currentTrace}}</div>
-                        <div style="clear: both;"></div>
-                        {{> frameNavigation}}
                         <div class="empty-instance {{isEmptyInstance}}">EMPTY INSTANCE</div>
                         <div id="instance"></div>
-                        {{> rightClickMenu}}
                     </div>
                 </div>
 
@@ -162,7 +152,7 @@
                 <div id="prev" class="col-lg-4 col-md-4 col-xs-4 col-lg-offset-0  col-md-offset-2 col-xs-offset-2">
                     <button class="cbutton cbutton--effect-boris" {{prevInstEnabled}}>
                         <div class="col-xs-12">
-                            <i class="cbutton__icon fa fa-step-backward fa-2x"></i></div>
+                            <i class="cbutton__icon fas fa-step-backward fa-2x"></i></div>
                         <span class="cbutton__text">Backward</span><i class="legend">Previous instance</i>
                     </button>
                 </div>
@@ -170,7 +160,7 @@
                 <div id="next" class="col-lg-4 col-md-4 col-xs-4 col-lg-offset-0 col-md-offset-0 col-xs-offset-0">
                     <button class="cbutton cbutton--effect-boris" {{nextInstEnabled}}>
                         <div class="col-xs-12">
-                            <i class="cbutton__icon fa fa-step-forward fa-2x"></i></div>
+                            <i class="cbutton__icon fas fa-step-forward fa-2x"></i></div>
                         <span class="cbutton__text">Forward</span><i class="legend">Next instance</i>
                     </button>
                 </div>
@@ -180,7 +170,7 @@
                     <div id="genInstanceUrl" class="text-center permalink">
                         <button id="geninstanceurlbtn" class="cbutton cbutton--effect-boris" {{shareInstEnabled}}>
                             <div class="col-xs-12">
-                                <i class="cbutton__icon fa fa-link fa-2x"></i>
+                                <i class="cbutton__icon fas fa-link fa-2x"></i>
                             </div>
                             <span class="cbutton__text">GenInstanceUrl</span><i class="legend">Share instance</i>
                         </button>

@@ -21,6 +21,7 @@ import edu.mit.csail.sdg.ast.ExprITE;
 import edu.mit.csail.sdg.ast.ExprLet;
 import edu.mit.csail.sdg.ast.ExprList;
 import edu.mit.csail.sdg.ast.Expr;
+import edu.mit.csail.sdg.ast.Func;
 import edu.mit.csail.sdg.ast.ExprQt;
 import edu.mit.csail.sdg.ast.ExprQt.Op;
 import edu.mit.csail.sdg.ast.VisitReturn;
@@ -106,6 +107,21 @@ public class MetricCatalog extends BasicCatalog {
 					public Map<String,Expr> visit(ExprConstant x) throws Err {
 						Map<String,Expr> ans = new HashMap<>();
         		    	return ans;
+					}
+
+					@Override
+					public Map<String,Expr> visit(edu.mit.csail.sdg.parser.Macro x) throws Err {
+						return x.body.accept(this);
+					}
+
+					@Override
+					public Map<String,Expr> visit(Func x) throws Err {
+						return x.getBody().accept(this);
+					}
+
+					@Override
+					public Map<String,Expr> visit(edu.mit.csail.sdg.ast.Assert x) throws Err {
+						return x.expr.accept(this);
 					}
 
 					@Override

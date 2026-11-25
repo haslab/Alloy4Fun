@@ -14,9 +14,12 @@ import edu.mit.csail.sdg.ast.ExprQt;
 import edu.mit.csail.sdg.ast.ExprUnary;
 import edu.mit.csail.sdg.ast.ExprUnary.Op;
 import edu.mit.csail.sdg.ast.ExprVar;
+import edu.mit.csail.sdg.ast.Func;
+import edu.mit.csail.sdg.ast.Assert;
 import edu.mit.csail.sdg.ast.Sig;
 import edu.mit.csail.sdg.ast.Sig.Field;
 import edu.mit.csail.sdg.ast.VisitReturn;
+import edu.mit.csail.sdg.parser.Macro;
 
 /**
  * Immutable; this class rearranges the AST to promote as many clauses up to the
@@ -163,5 +166,23 @@ public final class PrintExpr extends VisitReturn<StringBuilder> {
     	String[] lbls = x.label.split("this/");
     	a.append(lbls[lbls.length-1]);
         return a;
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public StringBuilder visit(Macro x) throws Err {
+        return visitThis(x.body);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public StringBuilder visit(Func x) throws Err {
+        return visitThis(x.getBody());
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public StringBuilder visit(Assert x) throws Err {
+        return visitThis(x.expr);
     }
 }

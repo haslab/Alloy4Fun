@@ -3,11 +3,11 @@
 # Run as the unprivileged service user, from the install directory (uses sudo where needed). Commands:
 #   prepare   non-disruptive: stop staging, lay out the install directory, grant port-80 capability
 #   cutover   DOWNTIME: stop old stack, final dump, restore into a NEW dbpath, start new stack
-#   start     start mongod + API + app (used by @reboot)
+#   start     start mongod + both APIs + app (used by @reboot)
 #   stop      stop the new stack
 #   status    show processes, ports, doc counts
 #   rollback  stop the new stack and start the OLD stack again (old source + old data untouched)
-#   deploy <meteor.tar.gz> [api.jar]   routine release: dump DB, swap code, health-check, auto-revert
+#   deploy <meteor.tar.gz> [alloy-web-api.jar alloy4fun-stats-api.jar]   routine release
 #   release-rollback                   go back to the previous release (code only, data is kept)
 #   watchdog  restart whichever of mongod/API/app is down (run every minute from cron); no-op after 'stop'
 set -eu
@@ -21,6 +21,7 @@ ROOT_URL=${ROOT_URL:-http://localhost}
 MONGO_PORT=27017      # new mongod runs as an unprivileged user, so it cannot use port 81
 APP_PORT=80
 API_PORT=4001
+STATS_API_PORT=4002
 OLD_MONGO_PORT=81
 OLD_DBPATH=${OLD:-/nonexistent}/meteor/.meteor/local/db
 SETTINGS_FILE=$P/settings.json   # Meteor settings for production; template: deploy/settings.production.example.json
@@ -41,14 +42,25 @@ start_mongod() {
   die "mongod did not become primary (see $P/logs/mongod.log)"
 }
 
-start_api() {
-  (cd $P; nohup java -Dalloy4fun.mongo.port=$MONGO_PORT -Dalloy4fun.mongo.db=meteor -Dalloy4fun.stats.maxage=600000 \
-    -Dquarkus.http.port=$API_PORT -jar alloy4fun-api-quarkus.jar \
+start_web_api() {
+  (cd $P; nohup java -Dquarkus.http.port=$API_PORT -jar alloy-web-api.jar \
     >> $P/logs/api.log 2>&1 9>&- & echo $! > $P/api.pid)
+}
+start_stats_api() {
+  (cd $P; nohup java -Dalloy4fun.mongo.port=$MONGO_PORT -Dalloy4fun.mongo.db=meteor -Dalloy4fun.stats.maxage=600000 \
+    -Dquarkus.http.port=$STATS_API_PORT -jar alloy4fun-stats-api.jar \
+    >> $P/logs/stats-api.log 2>&1 9>&- & echo $! > $P/stats-api.pid)
+}
+start_api() {
+  [ -f "$P/alloy-web-api.jar" ] || die "missing $P/alloy-web-api.jar"
+  [ -f "$P/alloy4fun-stats-api.jar" ] || die "missing $P/alloy4fun-stats-api.jar"
+  start_web_api
+  start_stats_api
 }
 
 start_app() {
   [ -f "$SETTINGS_FILE" ] || die "missing $SETTINGS_FILE (copy deploy/settings.production.example.json there and edit it)"
+  grep -q '"STATS_API_URL"' "$SETTINGS_FILE" || die "add env.STATS_API_URL to $SETTINGS_FILE (normally http://localhost:$STATS_API_PORT)"
   (cd $P/bundle; MONGO_URL="mongodb://127.0.0.1:$MONGO_PORT/meteor?replicaSet=meteor" \
     MONGO_OPLOG_URL="mongodb://127.0.0.1:$MONGO_PORT/local?replicaSet=meteor" \
     ROOT_URL=$ROOT_URL PORT=$APP_PORT METEOR_SETTINGS="$(cat $SETTINGS_FILE)" \
@@ -58,7 +70,10 @@ start_app() {
 stop_new() {
   [ -f $P/app.pid ] && kill "$(cat $P/app.pid)" 2>/dev/null || true
   [ -f $P/api.pid ] && kill "$(cat $P/api.pid)" 2>/dev/null || true
+  [ -f $P/stats-api.pid ] && kill "$(cat $P/stats-api.pid)" 2>/dev/null || true
   sleep 2
+  wait_gone $API_PORT || die "Alloy Web API still listening on $API_PORT"
+  wait_gone $STATS_API_PORT || die "Alloy4Fun Stats API still listening on $STATS_API_PORT"
   mongo --quiet --port $MONGO_PORT admin --eval 'db.shutdownServer({force:true})' >/dev/null 2>&1 || true
   wait_gone $MONGO_PORT || die "new mongod still listening on $MONGO_PORT"
 }
@@ -69,13 +84,16 @@ stop_app() {
 }
 stop_api() {
   [ -f $P/api.pid ] && kill "$(cat $P/api.pid)" 2>/dev/null || true
+  [ -f $P/stats-api.pid ] && kill "$(cat $P/stats-api.pid)" 2>/dev/null || true
   wait_gone $API_PORT || die "API still listening on $API_PORT"
+  wait_gone $STATS_API_PORT || die "Stats API still listening on $STATS_API_PORT"
 }
 wait_api() {
-  # a GET on a POST-only JAX-RS path answers 405 once deployed (404/000 before)
   for i in $(seq 1 120); do
-    c=$(curl -s -o /dev/null -w '%{http_code}' localhost:$API_PORT/getInstances || true)
-    [ "$c" != "404" ] && [ "$c" != "000" ] && return 0; sleep 1
+    c1=$(curl -s -o /dev/null -w '%{http_code}' localhost:$API_PORT/getInstances || true)
+    c2=$(curl -s -o /dev/null -w '%{http_code}' localhost:$STATS_API_PORT/getStats || true)
+    [ "$c1" != "404" ] && [ "$c1" != "000" ] && [ "$c2" != "404" ] && [ "$c2" != "000" ] && return 0
+    sleep 1
   done
   return 1
 }
@@ -108,7 +126,8 @@ prepare)
   mkdir -p $P/db $P/logs $P/backup
   [ -d $P/bundle ] || cp -a $STAGE/bundle $P/bundle
   cp -n $STAGE/mongod $P/mongod
-  cp -n $STAGE/alloy4fun-api-quarkus.jar $P/
+  cp -n $STAGE/alloy-web-api.jar $P/
+  cp -n $STAGE/alloy4fun-stats-api.jar $P/
   cp -f $TOOL/bin/node $P/node
   sudo setcap 'cap_net_bind_service=+ep' $P/node
   getcap $P/node
@@ -127,6 +146,7 @@ cutover)
   sudo pkill -TERM -f '[a]lloy4fun-api-quarkus.jar' || true
   wait_gone 80 || die "port 80 still in use"
   wait_gone 4001 || die "port 4001 still in use"
+  wait_gone 4002 || die "port 4002 still in use"
   if listening $OLD_MONGO_PORT; then
     mongo --quiet --port $OLD_MONGO_PORT admin --eval 'db.shutdownServer({force:true})' >/dev/null 2>&1 || true
     wait_gone $OLD_MONGO_PORT || die "old mongod still on $OLD_MONGO_PORT"
@@ -163,9 +183,12 @@ start)
   start_app
   ;;
 deploy)
-  B=${2:?usage: a4f.sh deploy <meteor.tar.gz> [alloy4fun-api-quarkus.jar]}; J=${3:-}
+  B=${2:?usage: a4f.sh deploy <meteor.tar.gz> [alloy-web-api.jar alloy4fun-stats-api.jar]}; J=${3:-}; S=${4:-}
   [ -f "$B" ] || die "$B not found"
   [ -z "$J" ] || [ -f "$J" ] || die "$J not found"
+  [ -z "$S" ] || [ -f "$S" ] || die "$S not found"
+  [ -z "$J" ] && [ -z "$S" ] || { [ -n "$J" ] && [ -n "$S" ] || die "supply both API JARs"; }
+  grep -q '"STATS_API_URL"' "$SETTINGS_FILE" || die "add env.STATS_API_URL to $SETTINGS_FILE before deploying"
   listening $MONGO_PORT || die "mongod is not running ($0 start first)"
   stamp=$(date +%Y%m%d-%H%M%S); R=$P/releases/$stamp
   mkdir -p $R $P/backup
@@ -184,14 +207,16 @@ deploy)
   mongodump --port $MONGO_PORT --db meteor --forceTableScan --gzip --archive=$P/backup/pre-$stamp.gz
 
   readlink $P/bundle > $P/previous-bundle
-  rm -f $P/previous-jar
+  rm -f $P/previous-apis
   stop_app
   ln -sfn $R/bundle $P/bundle
   if [ -n "$J" ]; then
     stop_api
-    cp $P/alloy4fun-api-quarkus.jar $P/alloy4fun-api-quarkus.jar.prev
-    cp "$J" $P/alloy4fun-api-quarkus.jar
-    echo 1 > $P/previous-jar
+    cp $P/alloy-web-api.jar $P/alloy-web-api.jar.prev
+    cp $P/alloy4fun-stats-api.jar $P/alloy4fun-stats-api.jar.prev
+    cp "$J" $P/alloy-web-api.jar
+    cp "$S" $P/alloy4fun-stats-api.jar
+    echo 1 > $P/previous-apis
     start_api
     wait_api || echo "WARNING: API did not answer in time" >&2
   fi
@@ -209,9 +234,10 @@ release-rollback)
   [ -f $P/previous-bundle ] || die "no previous release recorded"
   stop_app
   ln -sfn "$(cat $P/previous-bundle)" $P/bundle
-  if [ -f $P/previous-jar ] && [ -f $P/alloy4fun-api-quarkus.jar.prev ]; then
+  if [ -f $P/previous-apis ] && [ -f $P/alloy-web-api.jar.prev ] && [ -f $P/alloy4fun-stats-api.jar.prev ]; then
     stop_api
-    cp $P/alloy4fun-api-quarkus.jar.prev $P/alloy4fun-api-quarkus.jar
+    cp $P/alloy-web-api.jar.prev $P/alloy-web-api.jar
+    cp $P/alloy4fun-stats-api.jar.prev $P/alloy4fun-stats-api.jar
     start_api; wait_api || true
   fi
   start_app
@@ -225,11 +251,12 @@ watchdog)
   [ -f $P/stopped ] && exit 0
   log() { echo "$(date '+%F %T') watchdog: $*" >> $P/logs/watchdog.log; }
   listening $MONGO_PORT || { log "mongod down, restarting"; start_mongod; }
-  listening $API_PORT || { log "API down, restarting"; start_api; wait_api || log "API did not answer in time"; }
+  if ! listening $API_PORT; then log "Alloy Web API down, restarting"; start_web_api; fi
+  if ! listening $STATS_API_PORT; then log "Alloy4Fun Stats API down, restarting"; start_stats_api; fi
   listening $APP_PORT || { log "app down, restarting"; start_app; }
   ;;
 status)
-  ss -ltnp 2>/dev/null | grep -E ":($APP_PORT|$API_PORT|$MONGO_PORT|$OLD_MONGO_PORT)\b" || echo "nothing listening"
+  ss -ltnp 2>/dev/null | grep -E ":($APP_PORT|$API_PORT|$STATS_API_PORT|$MONGO_PORT|$OLD_MONGO_PORT)\b" || echo "nothing listening"
   echo "app http: $(curl -s -o /dev/null -w '%{http_code}' localhost:$APP_PORT/)"
   counts $MONGO_PORT 2>/dev/null || true
   ;;

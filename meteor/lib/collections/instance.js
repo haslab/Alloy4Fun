@@ -21,7 +21,7 @@ Instance.attachSchema(new SimpleSchema({
     cmd_i: {
         type: Number
     },
-    /** the entire cytoscape graph. */
+    /** canonical JSON instance document consumed by alloy-a4f-visualizer. */
     graph: {
         type: Object,
         blackbox: true

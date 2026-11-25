@@ -1,14 +1,15 @@
 import classie from 'classie'
 import 'qtip2/src/core.css'
+import { Tracker } from 'meteor/tracker'
 import { getCommandsFromCode } from '../../../lib/editor/text'
 import { shareModel, shareInstance } from '../../lib/editor/genUrl'
 import { executeModel, nextInstance, prevInstance } from '../../lib/editor/executeModel'
 import { downloadTree } from '../../lib/editor/downloadTree'
 import { copyToClipboard } from '../../lib/editor/clipboard'
-import { cmdChanged, isUnsatInstance, prevState, nextState, 
-    lastState, currentState, setCurrentState, storeInstances, 
-    getCurrentState, getCurrentTrace, disableExec } from '../../lib/editor/state'
-import { staticProjection, savePositions, applyPositions } from '../../lib/visualizer/projection'
+import { cmdChanged, isUnsatInstance,
+    storeInstances,
+    disableExec } from '../../lib/editor/state'
+import { initGraphViewer, updateGraph, visualizerIsEmpty } from '../../lib/visualizer/graphManipulationImpl'
 import { clearEditorMarks } from '../../lib/editor/feedback'
 
 Template.alloyEditor.helpers({
@@ -221,34 +222,9 @@ Template.alloyEditor.helpers({
         return `${window.location.origin}/${id}`
     },
 
-    prevEnabled() {
-        Session.get('inst-updated')
-        const state = currentState()
-        return (state != 0) ? '' : 'disabled'
-    },
-
-    nextInstShape() {
-        Session.get('inst-updated')
-        const state = currentState()
-        const last = lastState()
-        return (state == last - 1) ? 'fa-undo' : 'fa-arrow-right'
-    },
-
-    currentTrace() {
-        Session.get('inst-updated')
-        const state = currentState()
-        return state || 0
-    },
-
-    isVariableModel() {
-        Session.get('inst-updated')
-        return (getCurrentTrace() && getCurrentTrace().static) ? 'hidden' : ''
-    },
-
     isEmptyInstance() {
         Session.get('inst-updated')
-        if (typeof cy === 'undefined') return 'hidden'
-        return (cy.nodes(':visible').length == 0) ? '' : 'hidden'
+        return visualizerIsEmpty() ? '' : 'hidden'
     }
 })
 
@@ -272,16 +248,6 @@ Template.alloyEditor.events({
     'click #genUrl > button': shareModel,
     'click #prev > button': prevInstance,
     'click #next > button': nextInstance,
-    'click #nextTrace'() {       
-        savePositions() 
-        updateGraph(nextState(),true)
-        applyPositions()
-    },
-    'click #prevTrace'() {
-        savePositions()
-        updateGraph(prevState(),true)
-        applyPositions()
-    },
     'click #genInstanceUrl > button': shareInstance,
     'click #downloadTree > button': downloadTree,
     'click #statistics > button'(linkId) {
@@ -292,27 +258,49 @@ Template.alloyEditor.events({
     }
 })
 
-Template.alloyEditor.onRendered(() => {
+Template.alloyEditor.onRendered(function () {
 
     window.onbeforeunload = function () {return false;}
 
     Session.set('model-updated', false)
     Session.set('inst-updated', false)
     Session.set('inst-shared', false)
-    Session.set('frame-updated', false)
     Session.set('currentInstance', 0)
-    Session.set('currentState', 0)
     Session.set('maxInstance', -1)
     Session.set('commands', [])
     Session.set('local-secrets', false)
     Session.set('model-shared', false)
     Session.set('from-instance', false)
     Session.set('instances', [])
+    Session.set('visualizer-preferences', undefined)
 
-    // if there's subscribed data, process it
-    if (Router.current().data && textEditor) {
-        // load the model from controller
-        const model = Router.current().data()
+    // The route's publication may become ready before its document is present
+    // in Minimongo. Wait reactively for the actual document before initializing
+    // a shared model/instance; onRendered itself only runs once.
+    const template = this
+    if (textEditor) {
+        const initialRoute = Router.current()
+        if (!initialRoute || !initialRoute.data) Session.set('from_private', undefined)
+        let modelLoaded = false
+        template.autorun((computation) => {
+            const route = Router.current()
+            const model = route && route.data && route.data()
+            if (modelLoaded || !model || !model._id || !route.data) return
+            modelLoaded = true
+            computation.stop()
+            Tracker.nonreactive(() => loadRouteModel(model))
+        })
+    } else { // else, a new model
+        Session.set('from_private', undefined)
+    }
+    // add click effects to buttons
+    buttonsEffects()
+
+    if (Session.get("frozen-message"))
+        timer = Meteor.setTimeout(disableExec, 5*60*1000)
+})
+
+function loadRouteModel(model) {
         // save the loaded model id for later derivations
         Session.set('last_id', model.model_id)
         // whether the followed link was private
@@ -331,16 +319,9 @@ Template.alloyEditor.onRendered(() => {
         Session.set('frozen-next',model.frozennxt)
 
         // retrieve the shared theme
+        // Themes are model-owned; shared instances inherit their model theme.
         const themeData = model.theme
-        if (themeData) {
-            setCurrentState(themeData.currentState)
-            sigSettings.init(themeData.sigSettings)
-            relationSettings.init(themeData.relationSettings)
-            generalSettings.init(themeData.generalSettings)
-            currentFramePosition = themeData.currentFramePosition
-            currentlyProjectedSigs = themeData.currentlyProjectedSigs
-            if (currentlyProjectedSigs.length !== 0) staticProjection()
-        }
+        if (themeData) Session.set('visualizer-preferences', themeData)
 
         // if a shared instance, process it
         if (model.instance) {
@@ -349,27 +330,18 @@ Template.alloyEditor.onRendered(() => {
             if (!model.frozenmsg)
                 Session.set('log-message', 'Static shared instance. Execute model to iterate.')
             Session.set('log-class', 'log-info')
-            initGraphViewer('instance')
-            // load graph JSON data
-            if (cy && model.instance.graph.instance[0].types) {
-                storeInstances([model.instance.graph])
-                updateGraph(getCurrentState())
-                nodePositions = themeData.nodePositions
-                applyPositions()
-                cy.zoom(model.instance.graph.zoom)
-                cy.pan(model.instance.graph.pan)
+            // A shared instance is canonical JSON; the visualizer builds the
+            // graph from it and owns the viewport and interactions.
+            const sharedDocument = model.instance.document || model.instance.graph
+            const sharedStates = sharedDocument && (sharedDocument.states || sharedDocument.instance)
+            if (Array.isArray(sharedStates) && sharedStates[0] && sharedStates[0].types) {
+                initGraphViewer('instance')
+                storeInstances([sharedDocument])
+                updateGraph(sharedDocument, false, true)
             }
 
         }
-    } else { // else, a new model
-        Session.set('from_private', undefined)
-    }
-    // add click effects to buttons
-    buttonsEffects()
-
-    if (Session.get("frozen-message"))
-        timer = Meteor.setTimeout(disableExec, 5*60*1000)
-})
+}
 
 /**
  * Add effects to all buttons of the template.

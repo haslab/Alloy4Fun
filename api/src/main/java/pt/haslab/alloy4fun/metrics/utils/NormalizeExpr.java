@@ -20,9 +20,12 @@ import edu.mit.csail.sdg.ast.ExprQt;
 import edu.mit.csail.sdg.ast.ExprUnary;
 import edu.mit.csail.sdg.ast.ExprUnary.Op;
 import edu.mit.csail.sdg.ast.ExprVar;
+import edu.mit.csail.sdg.ast.Func;
+import edu.mit.csail.sdg.ast.Assert;
 import edu.mit.csail.sdg.ast.Sig;
 import edu.mit.csail.sdg.ast.Sig.Field;
 import edu.mit.csail.sdg.ast.VisitReturn;
+import edu.mit.csail.sdg.parser.Macro;
 
 /**
  * Immutable; this class rearranges the AST to promote as many clauses up to the
@@ -127,5 +130,23 @@ public final class NormalizeExpr extends VisitReturn<Expr> {
     @Override
     public Expr visit(Field x) {
         return x;
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public Expr visit(Macro x) throws Err {
+        return visitThis(x.body);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public Expr visit(Func x) throws Err {
+        return visitThis(x.getBody());
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public Expr visit(Assert x) throws Err {
+        return visitThis(x.expr);
     }
 }

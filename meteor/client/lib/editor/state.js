@@ -16,7 +16,6 @@ export function modelChanged() {
     Session.set('log-message', '')
     Session.set('log-class', '')
     Session.set('currentInstance', 0)
-    Session.set('currentState', 0)
     Session.set('maxInstance', -1)
 }
 
@@ -73,7 +72,7 @@ export function instShared() {
 export function storeInstances(allInstances) {
     const instanceIndex = Session.get('currentInstance')
     const maxInstanceNumber = Session.get('maxInstance')
-    if (allInstances.alloy_error || allInstances[0].cnt == 0) {
+    if (allInstances.alloy_error || allInstances[0].cnt == 0 || Array.isArray(allInstances[0].states)) {
         Session.set('instances',allInstances)
         Session.set('currentInstance', 0)
         Session.set('maxInstance', (allInstances[0] && !allInstances[0].unsat)?allInstances.length:-1)
@@ -89,14 +88,6 @@ export function storeInstances(allInstances) {
  *
  * @returns the current stored instance.
  */
-export function getCurrentState() {
-    const instanceIndex = Session.get('currentInstance')
-    const stateIndex = Session.get('currentState')
-    const instances = Session.get('instances')
-    if (!instances[instanceIndex]) return undefined
-    return instances[instanceIndex].instance[stateIndex]
-}
-
 export function getCurrentTrace() {
     const instances = Session.get('instances')
     if (!instances) return undefined
@@ -127,15 +118,11 @@ export function disableExec() {
  */
 export function getNextInstance() {
     const instanceIndex = Session.get('currentInstance')
-    const stateIndex = Session.get('currentState')
     Session.set('currentInstance', instanceIndex + 1)
     const instances = Session.get('instances')
     if (!instances[instanceIndex + 1])
         return undefined
-    else if (instances[instanceIndex + 1].unsat)
-        return instances[instanceIndex + 1]
-    else 
-        return instances[instanceIndex + 1].instance[stateIndex]
+    return instances[instanceIndex + 1]
 }
 
 /**
@@ -145,51 +132,9 @@ export function getNextInstance() {
  */
 export function getPreviousInstance() {
     const instanceIndex = Session.get('currentInstance')
-    const stateIndex = Session.get('currentState')
     Session.set('currentInstance', instanceIndex - 1)
     const instances = Session.get('instances')
-    return instances[instanceIndex - 1].instance[stateIndex]
-}
-
-export function nextState() {
-    const stateIndex = Session.get('currentState')
-    const instanceIndex = Session.get('currentInstance')
-    const instances = Session.get('instances')
-    if (stateIndex + 1 == instances[instanceIndex].instance.length)
-        Session.set('currentState',instances[instanceIndex].loop)
-    else
-        Session.set('currentState',stateIndex+1)
-    return getCurrentState()
-}
-
-export function resetState() {
-    Session.set('currentState',0)
-}
-
-export function currentState() {
-    return Session.get('currentState')
-}
-
-export function setCurrentState(st) {
-    Session.set('currentState',st) 
-}
-
-export function lastState() {
-    const instances = Session.get('instances')
-
-    if (!instances || instances.length == 0)
-        return -1
-    const instanceIndex = Session.get('currentInstance')
-    if (!instances[instanceIndex] || !instances[instanceIndex].instance)
-        return -1
-    return instances[instanceIndex].instance.length
-}
-
-export function prevState() {
-    const stateIndex = Session.get('currentState')
-    if (stateIndex > 0)
-        Session.set('currentState',stateIndex-1)
-    return getCurrentState()
+    return instances[instanceIndex - 1]
 }
 
 /**

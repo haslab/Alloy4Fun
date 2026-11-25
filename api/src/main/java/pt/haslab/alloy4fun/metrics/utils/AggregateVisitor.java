@@ -12,9 +12,12 @@ import edu.mit.csail.sdg.ast.ExprList;
 import edu.mit.csail.sdg.ast.ExprQt;
 import edu.mit.csail.sdg.ast.ExprUnary;
 import edu.mit.csail.sdg.ast.ExprVar;
+import edu.mit.csail.sdg.ast.Func;
+import edu.mit.csail.sdg.ast.Assert;
 import edu.mit.csail.sdg.ast.Sig;
 import edu.mit.csail.sdg.ast.VisitReturn;
 import edu.mit.csail.sdg.ast.Sig.Field;
+import edu.mit.csail.sdg.parser.Macro;
 
 public class AggregateVisitor<T> extends VisitReturn<T> {
 	
@@ -86,6 +89,21 @@ public class AggregateVisitor<T> extends VisitReturn<T> {
 	@Override
 	public T visit(Field x) throws Err {
 		return stop;
+	}
+
+	@Override
+	public T visit(Macro x) throws Err {
+		return x.body.accept(this);
+	}
+
+	@Override
+	public T visit(Func x) throws Err {
+		return x.getBody().accept(this);
+	}
+
+	@Override
+	public T visit(Assert x) throws Err {
+		return x.expr.accept(this);
 	}
 
 }
